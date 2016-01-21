@@ -1,0 +1,57 @@
+/* ==========================================================================
+   General page layout for site
+   ========================================================================== */
+
+//main body content container
+.g-container{
+	position: relative;
+    padding-right: $gutter;
+    padding-left: $gutter;
+    margin-right: auto;
+    margin-left: auto;
+    @media (min-width: 800px){
+	    width: 650px;
+	}
+	@media (min-width: 1000px){
+	    width: 850px;
+	}
+	@media (min-width: 1200px){
+	    width: 950px;
+	}
+}
+
+//larger container
+.g-container-lg{
+	position: relative;
+    padding-right: $gutter;
+    padding-left: $gutter;
+    margin-right: auto;
+    margin-left: auto;
+    @media (min-width: 800px){
+	    width: 750px;
+	}
+	@media (min-width: 1000px){
+	    width: 950px;
+	}
+	@media (min-width: 1200px){
+	    width: 1150px;
+	}
+}
+
+//smaller container
+.g-container-sm{
+	position: relative;
+    padding-right: $gutter;
+    padding-left: $gutter;
+    margin-right: auto;
+    margin-left: auto;
+    @media (min-width: 800px){
+	    width: 600px;
+	}
+	@media (min-width: 1000px){
+	    width: 700px;
+	}
+	@media (min-width: 1200px){
+	    width: 800px;
+	}
+}

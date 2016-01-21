@@ -1,0 +1,42 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+//Vendor css files
+@import "../vendor/themify-icons/themify-icons";
+@import "../vendor/fancyBox/source/jquery.fancybox";
+
+//Helpers
+@import "helpers/_variables";
+@import "helpers/_helpers";
+@import "helpers/_mixins";
+
+//Base
+@import "base/_general";
+
+//Components
+@import "components/_buttons";
+@import "components/_fancy-box";
+@import "components/_footer";
+@import "components/_forms";
+@import "components/_header";
+@import "components/_pagination";
+@import "components/_panels";
+@import "components/_tables";
+@import "components/_type";
+
+//Layout
+@import "layout/_grid";
+@import "layout/_f-grid";
+@import "layout/_layout";
+
+//Pages
+@import "pages/_contact";
+@import "pages/_global";
+@import "pages/_homepage";
+
+
+
+

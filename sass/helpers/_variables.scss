@@ -1,0 +1,212 @@
+/* ==========================================================================
+   Global Variables
+   ========================================================================== */
+
+/* ======================= Colours ======================== */
+
+
+$primary-1: #BF9456;
+$primary-2: #DAC27C;
+$primary-4: #8e793e;
+$primary-3: #ad974f;
+
+$primary-1: #7D325F;
+$primary-2: #4E4E4C;
+$primary-3: #797672;
+$primary-4: #ABA9A6;
+
+
+$grey-1: #231f20;
+$grey-2: #4E4E4C;
+$grey-3: #797672;
+$grey-4: #ABA9A6;
+
+$primary-bg-color: #FFF;
+$secondary-bg-color: #f9f9f9;
+$tertiary-bg-color: #f4f4f4;
+$quaternary-bg-color: #eaeaea;
+
+$border-color: $grey-4;
+$border-color-2: $quaternary-bg-color;
+
+$error-color: #B11414;
+
+$body-bg-color: $secondary-bg-color;
+
+
+
+/* ======================= Misc ======================== */
+
+//Default box shadaw
+$box-shadow: 1px 1px 1px $grey-2;
+
+//Default border radius
+$border-radius: 0px;
+
+/* ======================= Links/Type ======================== */
+
+//Links
+$link-color: $primary-1;
+$link-hover-color: darken($primary-1, 15%);
+
+//Secondary link color
+$link-color-secondary: #fff;
+$link-hover-color-secondary: darken(#fff, 5%);
+
+//Type
+$heading-font: "adelle", serif;
+$heading-font-weight: 300;
+$heading-color: $grey-1;
+$heading-color-secondary: $grey-2;
+
+$body-font: 'source-sans-pro', sans-serif; 
+$body-font-weight: 400;
+$body-font-weight-bold: 400;
+
+$text-color: $grey-2;
+$text-color-light: $grey-3;
+$text-color-dark: $grey-1;
+
+$heading-link-color: darken($primary-1, 15%);
+$heading-hover-color: darken($primary-1, 25%);
+
+$base-font-size: 18px;
+$base-line-height: 1.4em;
+
+/* ======================= Buttons ======================== */
+
+$btn-font-size: 16px;
+$btn-line-height: 16px;
+$btn-padding: 9px 20px;
+$btn-text-align: center;
+$btn-border-radius: $border-radius;
+$btn-font-family: $body-font;
+
+//Icon buttons
+$btn-icon-padding: 8px 10px;
+$btn-icon-font-size: 17px;
+
+//Small button
+$btn-sm-padding: 7px 15px;
+$btn-sm-font-size: 14px;
+$btn-sm-line-height: 14px;
+
+//Large button
+$btn-lg-padding: 16px 25px;
+$btn-lg-font-size: 16px;
+$btn-lg-line-height: 16px;
+
+//Primary button
+$btn-primary-bg: $primary-1;
+$btn-primary-border: $primary-1;
+$btn-primary-color: #fff;
+
+$btn-primary-hover-bg: darken($primary-1, 5%);
+$btn-primary-hover-border: darken($primary-1, 5%);
+$btn-primary-hover-color: #fff;
+
+$btn-primary-active-bg: darken($primary-1, 10%);
+$btn-primary-active-border: darken($primary-1, 10%);
+$btn-primary-hover-color: #fff;
+
+//Secondary button
+$btn-secondary-bg: darken($primary-1, 15%);
+$btn-secondary-border: darken($primary-1, 15%);
+$btn-secondary-color: #fff;
+
+$btn-secondary-hover-bg: darken($primary-1, 20%);
+$btn-secondary-hover-border: darken($primary-1, 20%);
+$btn-secondary-hover-color: #fff;
+
+$btn-secondary-active-bg: darken($primary-1, 25%);
+$btn-secondary-active-border: darken($primary-1, 25%);
+$btn-secondary-hover-color: #fff;
+
+//Tertiary button
+$btn-tertiary-bg: #fff;
+$btn-tertiary-border: $primary-1;
+$btn-tertiary-color: $primary-1;
+
+$btn-tertiary-hover-bg: $primary-1;
+$btn-tertiary-hover-border: $primary-1;
+$btn-tertiary-hover-color: #fff;
+
+$btn-tertiary-active-bg: darken($primary-1, 10%);
+$btn-tertiary-active-border: darken($primary-1, 10%);
+$btn-tertiary-active-color: #fff;
+
+//Quaternary button
+$btn-quaternary-bg: #fff;
+$btn-quaternary-border: $grey-1;
+$btn-quaternary-color: $grey-1;
+
+$btn-quaternary-hover-bg: $grey-2;
+$btn-quaternary-hover-border: $grey-2;
+$btn-quaternary-hover-color: #fff;
+
+$btn-quaternary-active-bg: darken($grey-2, 15%);
+$btn-quaternary-active-border: darken($grey-2, 15%);
+$btn-quaternary-active-color: #fff;
+
+//Disabled button
+$btn-disabled-bg: $grey-4;
+$btn-disabled-border: $grey-4;
+$btn-disabled-color: #fff;
+
+
+/* ======================= Forms ======================== */
+
+$input-border-color: $border-color;
+$input-active-border-color: $grey-3;
+$input-border-radius: $border-radius;
+$input-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+$select-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+$input-color: $grey-2;
+$input-placeholder-color: $grey-4;
+$radio-active-color: $primary-1;
+$checkbox-active-color: $primary-1;
+
+
+/* ======================= Tables ======================== */
+
+$table-padding: 5px 10px;
+$table-border-color: $border-color;
+$table-striped-bg-color: $tertiary-bg-color;
+$table-hover-bg-color: lighten($primary-1,40%);
+
+
+/* ======================= Panels ======================== */
+
+$panel-bg-color: #fff;
+$panel-padding: 40px;
+$panel-border-radius: $border-radius;
+$panel-border: 1px solid $border-color;
+
+
+/* ======================= Defaults ======================== */
+
+//Default box-sizing
+$box-sizing: border-box;
+
+//Default transitions
+$transition1-default: all 0.1s ease-in;
+$transition2-default: all 0.3s ease-in;
+$transition3-default: all 0.7s ease-in;
+
+/* ======================= Responsive ======================== */
+
+//Repsonsive breakpoints
+$min-break-desktop: 1101px;
+$max-break-desktop: 1100px;
+
+$min-break-tablet: 921px;
+$max-break-tablet: 920px;
+$min-break-mobile: 481px;
+$max-break-mobile: 480px;
+
+//Grid system variables
+$gutter: 15px;
+$smaller-gutter: 10px;
+
+
+

@@ -1,0 +1,34 @@
+/* ==========================================================================
+   Global Footer
+   ========================================================================== */
+
+footer{
+	text-align: center;
+	padding: 3em 0;
+	background-color: $grey-1;
+	a{
+		color: #fff;
+	}
+	ul{
+		list-style-type: none;
+		padding: 0;
+		li{
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+			a{
+				text-decoration: none;
+				color: #fff;
+				font-size: 1.5em;
+				padding: .5em;
+			}
+		}
+	}
+	.g-footer-links{
+		a{
+			display: block;
+			font-size: .75em;
+			margin-top: .3em;
+		}
+	}
+}

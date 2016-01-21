@@ -1,0 +1,108 @@
+/* ==========================================================================
+   Global Style Guide Page --- This file is just for this testing/style guide site - NOT part pf global CSS
+   ========================================================================== */
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    from {background-color: transparent; color: $link-color; }
+    to {background-color: $primary-1; color: #fff;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {background-color: transparent; color: $link-color; }
+    to {background-color: $primary-1; color: #fff;}
+}
+
+body.testing{
+	padding-bottom: 60px;
+	header{
+
+	}
+	.g-container{
+		position: relative;
+		.testing-body-container{
+			margin-left: 170px;
+		}
+		.testing-sidebar{
+			position: fixed;
+			width: 140px;
+			ul.testing-menu{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				text-align: right;
+				li{
+					margin: 0 0 10px;
+					a{
+						padding: 5px 10px;
+						border-right: 1px solid transparent;
+						@extend .transition;
+						border-radius: 10px;
+						&.active{
+							// border-right: 15px solid $primary-1;
+							// color: $link-hover-color;
+							background-color: $primary-1;
+							color: #fff;
+							-webkit-animation-name: example; /* Chrome, Safari, Opera */
+							-webkit-animation-duration: .5s; /* Chrome, Safari, Opera */
+							animation-name: example;
+							animation-duration: .5s;
+						}
+					}
+				}
+			}
+		}
+		@media (max-width: $max-break-tablet) {
+			.testing-body-container{
+				margin-left: 0;
+			}
+			.testing-sidebar{
+				display: none;
+			}
+		}
+	}
+	pre{
+	    margin: 1.5em 0 3.5em;
+		font-size: 14px;
+		line-height: 1.5em;
+		display: block;
+		font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+		width: 100%;
+		height: 100%;
+		xmp{
+			margin: 0;
+			padding: 15px;
+			color: $grey-1;
+			background-color: $primary-bg-color;
+			border: 1px solid $border-color;
+			border-radius: $border-radius;
+		    white-space: pre;
+    		overflow-x: auto;
+    		width: 100%;
+			height: 100%;
+		}
+	}
+	.testing-arrow-up{
+		position: fixed;
+		bottom: 15px;
+		right: 15px;
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		background-color: rgba(0,0,0,.1);
+		z-index: 2000;
+	}
+	.testing-unit{
+		background-color: $grey-1;
+		height: 50px;
+	}
+	.testing-bg{
+		height: 50px;
+		border: 1px solid $border-color;
+	}
+	.testing-dark-bg{
+		background-color: $grey-1;
+	}
+}

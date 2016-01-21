@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Type
+   ========================================================================== */
+
+//Headings 
+
+h1, h2, h3, h4, h5, h6{
+	font-family: $heading-font;
+	color: $heading-color;
+	font-weight: $heading-font-weight;
+	a{
+		@extend .transition;
+		color: $heading-link-color;
+		text-decoration: none;
+		&:hover, &:focus {
+			text-decoration: none;
+			color: $heading-hover-color;
+		}
+	}
+}
+
+h1{
+	font-size: 2.3em;
+}
+
+h2{
+	font-size: 1.7em;;
+}
+
+h3{
+	font-size: 1.4em;
+	color: $heading-color-secondary;
+}
+
+h4{
+	font-size: 1.1em;
+	color: $heading-color-secondary;
+}
+
+h5{
+	font-size: 1em;
+}
+
+h6{
+	font-size: .9em;
+}
+
+h1, h2, h3, h4, h5, h6{
+	line-height: 1.2em;
+	margin: 1em 0 0.5em;
+}
+
+

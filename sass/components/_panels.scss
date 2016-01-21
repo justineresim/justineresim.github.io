@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Panels
+   ========================================================================== */
+
+//work
+.g-panel{
+	position: relative;
+	@extend .g-clearfix;
+	padding: 3em 0 3em 2em;
+	@media (max-width: $max-break-tablet) {
+	    padding: 1.5em 0 6em 0;
+	}
+	h2{
+		margin-top: 0;
+	}
+	p{
+		@extend .g-font-size-small;
+	}
+	.g-img{
+		width: 35%;
+		height: 100%;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    @media (max-width: $max-break-tablet) {
+	    	width: 100%;
+	    	height: 200px;
+	    	background-size: auto 100% !important;
+	    }
+	}
+	.g-text{
+		width: 65%;
+		margin-left: 35%;
+		margin-top: 0;
+		@media (max-width: $max-break-tablet) {
+	    	width: 100%;
+	    	margin-left: 0;
+	    	margin-top: 200px;
+	    }
+	}
+}
+
+.g-results{
+	margin-bottom: 4em;
+	.g-panel:last-child{
+		margin-bottom: 2em;
+	}
+}
+
+//homepage featured work
+.g-featured{
+	text-align: center;
+	h3{
+		margin-top: 0;
+	}
+	a.g-img{
+		width: 100%;
+		height: 200px;
+	    position: relative;
+	    display: block;
+	    &:hover{
+	    	opacity: .7;
+	    }
+	}
+}
