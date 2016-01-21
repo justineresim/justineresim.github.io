@@ -4723,57 +4723,53 @@ body.testing .testing-dark-bg {
 .g-company {
   height: 150px;
   width: 100%;
-  background-color: #fff;
+  background-color: #ccc;
   background-size: 40% auto;
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* line 16, ../sass/pages/_homepage.scss */
-.g-company.back {
-  background-color: #fff;
-}
 
-/* line 21, ../sass/pages/_homepage.scss */
+/* line 18, ../sass/pages/_homepage.scss */
 .g-ads {
   text-align: center;
   margin: 1em 0 0 0;
 }
-/* line 24, ../sass/pages/_homepage.scss */
+/* line 21, ../sass/pages/_homepage.scss */
 .g-ads span {
   font-size: 100px;
   display: block;
 }
 
-/* line 33, ../sass/pages/_homepage.scss */
+/* line 30, ../sass/pages/_homepage.scss */
 .g-hp-contact {
   padding: 2em 0;
 }
 
 /* entire container, keeps perspective */
-/* line 38, ../sass/pages/_homepage.scss */
+/* line 35, ../sass/pages/_homepage.scss */
 .flip-container {
   perspective: 1000;
 }
 
 /* flip the pane when hovered */
-/* line 43, ../sass/pages/_homepage.scss */
+/* line 40, ../sass/pages/_homepage.scss */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
   transform: rotateY(180deg);
 }
 
-/* line 47, ../sass/pages/_homepage.scss */
+/* line 44, ../sass/pages/_homepage.scss */
 .flip-container, .flipper {
   height: 150px;
 }
 
-/* line 51, ../sass/pages/_homepage.scss */
-.front, .back {
+/* line 48, ../sass/pages/_homepage.scss */
+.front {
   width: 100%;
   height: 150px;
 }
 
 /* flip speed goes here */
-/* line 57, ../sass/pages/_homepage.scss */
+/* line 54, ../sass/pages/_homepage.scss */
 .flipper {
   transition: 1s;
   transform-style: preserve-3d;
@@ -4781,8 +4777,8 @@ body.testing .testing-dark-bg {
 }
 
 /* hide back of pane during swap */
-/* line 65, ../sass/pages/_homepage.scss */
-.front, .back {
+/* line 62, ../sass/pages/_homepage.scss */
+.front {
   backface-visibility: hidden;
   position: absolute;
   top: 0;
@@ -4790,7 +4786,7 @@ body.testing .testing-dark-bg {
 }
 
 /* front pane, placed above back */
-/* line 74, ../sass/pages/_homepage.scss */
+/* line 71, ../sass/pages/_homepage.scss */
 .front {
   z-index: 2;
   /* for firefox 31 */
@@ -4798,7 +4794,8 @@ body.testing .testing-dark-bg {
 }
 
 /* back, initially hidden pane */
-/* line 81, ../sass/pages/_homepage.scss */
-.back {
+/* line 78, ../sass/pages/_homepage.scss */
+.front + .front {
   transform: rotateY(180deg);
+  background-color: #fff;
 }
