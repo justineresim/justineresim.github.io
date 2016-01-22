@@ -2857,37 +2857,46 @@ a.fancybox-close:before {
    ========================================================================== */
 /* line 5, ../sass/components/_footer.scss */
 footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
   text-align: center;
-  padding: 3em 0;
+  padding: 2.5em 0;
   background-color: #231f20;
 }
-/* line 9, ../sass/components/_footer.scss */
+/* line 13, ../sass/components/_footer.scss */
 footer a {
   color: #fff;
 }
-/* line 12, ../sass/components/_footer.scss */
+/* line 16, ../sass/components/_footer.scss */
 footer ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 15, ../sass/components/_footer.scss */
+/* line 19, ../sass/components/_footer.scss */
 footer ul li {
   margin: 0;
   padding: 0;
   display: inline-block;
 }
-/* line 19, ../sass/components/_footer.scss */
+/* line 23, ../sass/components/_footer.scss */
 footer ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 1.5em;
   padding: .5em;
 }
-/* line 28, ../sass/components/_footer.scss */
+/* line 32, ../sass/components/_footer.scss */
 footer .g-footer-links a {
   display: block;
   font-size: .75em;
   margin-top: .3em;
+}
+
+/* line 41, ../sass/components/_footer.scss */
+body.contact footer, body.work footer, body.styles footer {
+  position: relative;
 }
 
 /* ==========================================================================
@@ -3147,16 +3156,15 @@ header ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  text-align: center;
   width: 100%;
 }
-/* line 13, ../sass/components/_header.scss */
+/* line 12, ../sass/components/_header.scss */
 header ul li {
   padding: 0;
   margin: 0;
   display: inline-block;
 }
-/* line 17, ../sass/components/_header.scss */
+/* line 16, ../sass/components/_header.scss */
 header ul li a {
   font-family: "adelle", serif;
   display: inline-block;
@@ -4576,6 +4584,101 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Page Transition Animations
+============================================================================= */
+/* leaving animations ----------------------------------------- */
+/* rotate and fall */
+@keyframes rotateFall {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+    animation-timing-function: ease-out;
+  }
+  40% {
+    transform: rotateZ(17deg);
+  }
+  60% {
+    transform: rotateZ(16deg);
+  }
+  100% {
+    transform: translateY(100%) rotateZ(17deg);
+  }
+}
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* rotate out newspaper */
+@keyframes rotateOutNewspaper {
+  to {
+    transform: translateZ(-3000px) rotateZ(360deg);
+    opacity: 0;
+  }
+}
+/* entering animations --------------------------------------- */
+/* scale up */
+@keyframes scaleUp {
+  from {
+    opacity: 0.3;
+    -webkit-transform: scale(0.8);
+  }
+}
+/* slide in from the right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/* slide in from the bottom */
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* home -------------------------- */
+/* line 112, ../sass/layout/_layout.scss */
+.page.home.ng-enter {
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* about ------------------------ */
+/* line 116, ../sass/layout/_layout.scss */
+.page.contact.ng-enter {
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* contact ---------------------- */
+/* line 121, ../sass/layout/_layout.scss */
+.page.work.ng-enter {
+  animation: fadeIn 0.5s ease-in;
+}
+
 /* ==========================================================================
    Homepage Specific Styles
    ========================================================================== */
@@ -4610,33 +4713,34 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
   }
 }
-/* line 19, ../sass/pages/_global.scss */
+/* line 18, ../sass/pages/_global.scss */
 body.styles .g-container {
   position: relative;
 }
-/* line 21, ../sass/pages/_global.scss */
+/* line 20, ../sass/pages/_global.scss */
 body.styles .g-container .testing-body-container {
   margin-left: 170px;
   padding-bottom: 60px;
 }
-/* line 25, ../sass/pages/_global.scss */
+/* line 24, ../sass/pages/_global.scss */
 body.styles .g-container .testing-sidebar {
   position: fixed;
   width: 140px;
 }
-/* line 28, ../sass/pages/_global.scss */
+/* line 27, ../sass/pages/_global.scss */
 body.styles .g-container .testing-sidebar ul.testing-menu {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-align: right;
 }
-/* line 33, ../sass/pages/_global.scss */
+/* line 32, ../sass/pages/_global.scss */
 body.styles .g-container .testing-sidebar ul.testing-menu li {
   margin: 0 0 10px;
 }
-/* line 35, ../sass/pages/_global.scss */
+/* line 34, ../sass/pages/_global.scss */
 body.styles .g-container .testing-sidebar ul.testing-menu li a {
+  display: inline-block;
   padding: 5px 10px;
   border-right: 1px solid transparent;
   border-radius: 10px;
@@ -4722,7 +4826,7 @@ body.home .f-container-container {
   position: fixed;
   margin-top: -70px;
   padding-top: 70px;
-  padding-bottom: 220px;
+  padding-bottom: 201px;
   bottom: 0;
   z-index: 100;
 }
@@ -4732,25 +4836,24 @@ body.home .f-container {
   padding-bottom: 0;
 }
 /* line 22, ../sass/pages/_homepage.scss */
-body.home footer {
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-}
-/* line 27, ../sass/pages/_homepage.scss */
 body.home header {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
 }
+/* line 28, ../sass/pages/_homepage.scss */
+body.home .page.home {
+  width: 100%;
+  height: 100%;
+}
 
-/* line 36, ../sass/pages/_homepage.scss */
+/* line 35, ../sass/pages/_homepage.scss */
 .g-hp-section, .g-homepage .line.no-gutter {
   margin-bottom: 5em;
 }
 
-/* line 40, ../sass/pages/_homepage.scss */
+/* line 39, ../sass/pages/_homepage.scss */
 .g-company {
   height: 150px;
   width: 100%;
@@ -4760,47 +4863,47 @@ body.home header {
   background-repeat: no-repeat;
 }
 
-/* line 49, ../sass/pages/_homepage.scss */
+/* line 48, ../sass/pages/_homepage.scss */
 .g-ads {
   text-align: center;
   margin: 1em 0 0 0;
 }
-/* line 52, ../sass/pages/_homepage.scss */
+/* line 51, ../sass/pages/_homepage.scss */
 .g-ads span {
   font-size: 100px;
   display: block;
 }
 
-/* line 61, ../sass/pages/_homepage.scss */
+/* line 60, ../sass/pages/_homepage.scss */
 .g-hp-contact {
   padding: 2em 0;
 }
 
 /* entire container, keeps perspective */
-/* line 66, ../sass/pages/_homepage.scss */
+/* line 65, ../sass/pages/_homepage.scss */
 .flip-container {
   perspective: 1000;
 }
 
 /* flip the pane when hovered */
-/* line 71, ../sass/pages/_homepage.scss */
+/* line 70, ../sass/pages/_homepage.scss */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
   transform: rotateY(180deg);
 }
 
-/* line 75, ../sass/pages/_homepage.scss */
+/* line 74, ../sass/pages/_homepage.scss */
 .flip-container, .flipper {
   height: 150px;
 }
 
-/* line 79, ../sass/pages/_homepage.scss */
+/* line 78, ../sass/pages/_homepage.scss */
 .front {
   width: 100%;
   height: 150px;
 }
 
 /* flip speed goes here */
-/* line 85, ../sass/pages/_homepage.scss */
+/* line 84, ../sass/pages/_homepage.scss */
 .flipper {
   transition: 1s;
   transform-style: preserve-3d;
@@ -4808,7 +4911,7 @@ body.home header {
 }
 
 /* hide back of pane during swap */
-/* line 93, ../sass/pages/_homepage.scss */
+/* line 92, ../sass/pages/_homepage.scss */
 .front {
   backface-visibility: hidden;
   position: absolute;
@@ -4817,7 +4920,7 @@ body.home header {
 }
 
 /* front pane, placed above back */
-/* line 102, ../sass/pages/_homepage.scss */
+/* line 101, ../sass/pages/_homepage.scss */
 .front {
   z-index: 2;
   /* for firefox 31 */
@@ -4825,7 +4928,7 @@ body.home header {
 }
 
 /* back, initially hidden pane */
-/* line 109, ../sass/pages/_homepage.scss */
+/* line 108, ../sass/pages/_homepage.scss */
 .front + .front {
   transform: rotateY(180deg);
   background-color: #fff;

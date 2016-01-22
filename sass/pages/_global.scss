@@ -31,7 +31,8 @@ body.styles{
 				text-align: right;
 				li{
 					margin: 0 0 10px;
-					a{
+					a{	
+						display: inline-block;
 						padding: 5px 10px;
 						border-right: 1px solid transparent;
 						@extend .transition;

@@ -1,7 +1,7 @@
 //Angular JS 
 
 
-var myApp = angular.module('angularApp', ['ngRoute']);
+var myApp = angular.module('angularApp', ['ngRoute', 'ngAnimate']);
 
 
 // configure our routes

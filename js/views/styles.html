@@ -1,22 +1,22 @@
 
-    <a class="testing-arrow-up testing-scroll-up"><span class="ti-angle-up"></span></a>
+    <a ng-click="scrollToTop()" class="testing-arrow-up testing-scroll-up"><span class="ti-angle-up"></span></a>
     <div class="g-container">
         <div class="testing-sidebar">
             <div class="testing-sidebar-inner">
                 <ul class="testing-menu">
-                    <li><a class="test-scroll active" scroll="#headings">Headings</a></li>
-                    <li><a class="test-scroll" scroll="#text">Body Text</a></li>
-                    <li><a class="test-scroll" scroll="#icons">Icons</a></li>
-                    <li><a class="test-scroll" scroll="#links">Links</a></li>
-                    <li><a class="test-scroll" scroll="#buttons">Buttons</a></li>
-                    <li><a class="test-scroll" scroll="#colours">Colours</a></li>
-                    <li><a class="test-scroll" scroll="#forms">Forms</a></li>
-                    <li><a class="test-scroll" scroll="#tables">Tables</a></li>
-                    <li><a class="test-scroll" scroll="#lists">Lists</a></li>
-                    <li><a class="test-scroll" scroll="#pagination">Pagination</a></li>
-                    <li><a class="test-scroll" scroll="#image-gallery">Image Gallery</a></li>
-                    <li><a class="test-scroll" scroll="#grid">Grid System</a></li>
-                    <li><a class="test-scroll" scroll="#fgrid">Fixed Ratio Grid System</a></li>
+                    <li><a ng-class="{'active':selected === '#headings'}" ng-click="selected='#headings';" class="test-scroll" scroll="#headings">Headings</a></li>
+                    <li><a ng-class="{'active':selected === '#text'}" ng-click="selected='#text';" class="test-scroll" scroll="#text">Body Text</a></li>
+                    <li><a ng-class="{'active':selected === '#icons'}" ng-click="selected='#icons';" class="test-scroll" scroll="#icons">Icons</a></li>
+                    <li><a ng-class="{'active':selected === '#links'}" ng-click="selected='#links';" class="test-scroll" scroll="#links">Links</a></li>
+                    <li><a ng-class="{'active':selected === '#buttons'}" ng-click="selected='#buttons';"class="test-scroll" scroll="#buttons">Buttons</a></li>
+                    <li><a ng-class="{'active':selected === '#colours'}" ng-click="selected='#colours';"class="test-scroll" scroll="#colours">Colours</a></li>
+                    <li><a ng-class="{'active':selected === '#forms'}" ng-click="selected='#forms';"class="test-scroll" scroll="#forms">Forms</a></li>
+                    <li><a ng-class="{'active':selected === '#tables'}" ng-click="selected='#tables';"class="test-scroll" scroll="#tables">Tables</a></li>
+                    <li><a ng-class="{'active':selected === '#lists'}" ng-click="selected='#lists';"class="test-scroll" scroll="#lists">Lists</a></li>
+                    <li><a ng-class="{'active':selected === '#pagination'}" ng-click="selected='#pagination';"class="test-scroll" scroll="#pagination">Pagination</a></li>
+                    <li><a ng-class="{'active':selected === '#image-gallery'}" ng-click="selected='#image-gallery';"class="test-scroll" scroll="#image-gallery">Image Gallery</a></li>
+                    <li><a ng-class="{'active':selected === '#grid'}" ng-click="selected='#grid';"class="test-scroll" scroll="#grid">Grid System</a></li>
+                    <li><a ng-class="{'active':selected === '#fgrid'}" ng-click="selected='#fgrid';"lass="test-scroll" scroll="#fgrid">Fixed Ratio Grid System</a></li>
                 </ul>
             </div>
         </div>
