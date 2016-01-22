@@ -14,15 +14,12 @@
     to {background-color: $primary-1; color: #fff;}
 }
 
-body.testing{
-	padding-bottom: 60px;
-	header{
-
-	}
+body.styles{
 	.g-container{
 		position: relative;
 		.testing-body-container{
 			margin-left: 170px;
+			padding-bottom: 60px;
 		}
 		.testing-sidebar{
 			position: fixed;

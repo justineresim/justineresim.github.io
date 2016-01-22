@@ -2198,7 +2198,7 @@ a.g-link-color-secondary:hover, a.g-link-color-secondary:focus, a.g-link-color-s
 }
 
 /* line 85, ../sass/helpers/_helpers.scss */
-.transition, a, a.g-external-link:hover span.ti-arrow-top-right, .g-btn, button.g-btn, .g-form-control, .g-pagination a, table.g-table.g-table-hover > tbody > tr:hover, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, body.testing .g-container .testing-sidebar ul.testing-menu li a {
+.transition, a, a.g-external-link:hover span.ti-arrow-top-right, .g-btn, button.g-btn, .g-form-control, .g-pagination a, table.g-table.g-table-hover > tbody > tr:hover, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, body.styles .g-container .testing-sidebar ul.testing-menu li a {
   -webkit-transition: all 0.1s ease-in;
   -moz-transition: all 0.1s ease-in;
   -o-transition: all 0.1s ease-in;
@@ -2429,9 +2429,10 @@ a.g-link-color-secondary:hover, a.g-link-color-secondary:focus, a.g-link-color-s
 /* line 20, ../sass/base/_general.scss */
 html {
   -webkit-tap-highlight-color: transparent;
+  height: 100%;
 }
 
-/* line 24, ../sass/base/_general.scss */
+/* line 25, ../sass/base/_general.scss */
 body {
   font-family: "source-sans-pro", sans-serif;
   color: #4E4E4C;
@@ -2443,20 +2444,23 @@ body {
   font-weight: 400;
   padding: 0;
   margin: 0;
-  border: 10px solid #fff;
 }
 /* line 36, ../sass/base/_general.scss */
 body b, body strong {
   font-weight: 400;
 }
 @media (max-width: 480px) {
-  /* line 24, ../sass/base/_general.scss */
+  /* line 25, ../sass/base/_general.scss */
   body {
     font-size: 90%;
   }
 }
+/* line 42, ../sass/base/_general.scss */
+body.home {
+  height: 100%;
+}
 
-/* line 45, ../sass/base/_general.scss */
+/* line 48, ../sass/base/_general.scss */
 input,
 button,
 select,
@@ -2466,63 +2470,63 @@ textarea {
   line-height: inherit;
 }
 
-/* line 57, ../sass/base/_general.scss */
+/* line 60, ../sass/base/_general.scss */
 a {
   color: #7D325F;
   text-decoration: none;
   cursor: pointer;
 }
-/* line 62, ../sass/base/_general.scss */
+/* line 65, ../sass/base/_general.scss */
 a:hover, a:focus, a:active {
   color: #461c35;
   text-decoration: none;
 }
-/* line 66, ../sass/base/_general.scss */
+/* line 69, ../sass/base/_general.scss */
 a.g-disabled {
   opacity: .5;
   pointer-events: none;
 }
 
-/* line 72, ../sass/base/_general.scss */
+/* line 75, ../sass/base/_general.scss */
 a.g-external-link {
   text-decoration: none;
 }
-/* line 75, ../sass/base/_general.scss */
+/* line 78, ../sass/base/_general.scss */
 a.g-external-link:hover span.ti-arrow-top-right {
   position: absolute;
   font-size: 1.2em;
   line-height: 1em;
 }
 
-/* line 85, ../sass/base/_general.scss */
+/* line 88, ../sass/base/_general.scss */
 hr {
   border: none;
   border-top: 1px solid #ABA9A6;
   margin: 0.7em 0 1.5em;
 }
-/* line 89, ../sass/base/_general.scss */
+/* line 92, ../sass/base/_general.scss */
 hr.g-secondary {
   border-top: 1px solid #eaeaea;
 }
 
-/* line 94, ../sass/base/_general.scss */
+/* line 97, ../sass/base/_general.scss */
 p {
   margin: 0 0 .8em;
 }
-/* line 96, ../sass/base/_general.scss */
+/* line 99, ../sass/base/_general.scss */
 p + p {
   margin: 0 0 1.4em;
 }
 
-/* line 103, ../sass/base/_general.scss */
+/* line 106, ../sass/base/_general.scss */
 ul, ol {
   margin: 0 0 1.4em 0;
 }
-/* line 105, ../sass/base/_general.scss */
+/* line 108, ../sass/base/_general.scss */
 ul li, ol li {
   margin-bottom: 0.7em;
 }
-/* line 108, ../sass/base/_general.scss */
+/* line 111, ../sass/base/_general.scss */
 ul ul, ul ol, ol ul, ol ol {
   margin: 0.7em 0 0 0;
 }
@@ -4606,42 +4610,39 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
   }
 }
-/* line 17, ../sass/pages/_global.scss */
-body.testing {
-  padding-bottom: 60px;
-}
-/* line 22, ../sass/pages/_global.scss */
-body.testing .g-container {
+/* line 19, ../sass/pages/_global.scss */
+body.styles .g-container {
   position: relative;
 }
-/* line 24, ../sass/pages/_global.scss */
-body.testing .g-container .testing-body-container {
+/* line 21, ../sass/pages/_global.scss */
+body.styles .g-container .testing-body-container {
   margin-left: 170px;
+  padding-bottom: 60px;
 }
-/* line 27, ../sass/pages/_global.scss */
-body.testing .g-container .testing-sidebar {
+/* line 25, ../sass/pages/_global.scss */
+body.styles .g-container .testing-sidebar {
   position: fixed;
   width: 140px;
 }
-/* line 30, ../sass/pages/_global.scss */
-body.testing .g-container .testing-sidebar ul.testing-menu {
+/* line 28, ../sass/pages/_global.scss */
+body.styles .g-container .testing-sidebar ul.testing-menu {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-align: right;
 }
-/* line 35, ../sass/pages/_global.scss */
-body.testing .g-container .testing-sidebar ul.testing-menu li {
+/* line 33, ../sass/pages/_global.scss */
+body.styles .g-container .testing-sidebar ul.testing-menu li {
   margin: 0 0 10px;
 }
-/* line 37, ../sass/pages/_global.scss */
-body.testing .g-container .testing-sidebar ul.testing-menu li a {
+/* line 35, ../sass/pages/_global.scss */
+body.styles .g-container .testing-sidebar ul.testing-menu li a {
   padding: 5px 10px;
   border-right: 1px solid transparent;
   border-radius: 10px;
 }
-/* line 42, ../sass/pages/_global.scss */
-body.testing .g-container .testing-sidebar ul.testing-menu li a.active {
+/* line 40, ../sass/pages/_global.scss */
+body.styles .g-container .testing-sidebar ul.testing-menu li a.active {
   background-color: #7D325F;
   color: #fff;
   -webkit-animation-name: example;
@@ -4652,17 +4653,17 @@ body.testing .g-container .testing-sidebar ul.testing-menu li a.active {
   animation-duration: .5s;
 }
 @media (max-width: 920px) {
-  /* line 57, ../sass/pages/_global.scss */
-  body.testing .g-container .testing-body-container {
+  /* line 55, ../sass/pages/_global.scss */
+  body.styles .g-container .testing-body-container {
     margin-left: 0;
   }
-  /* line 60, ../sass/pages/_global.scss */
-  body.testing .g-container .testing-sidebar {
+  /* line 58, ../sass/pages/_global.scss */
+  body.styles .g-container .testing-sidebar {
     display: none;
   }
 }
-/* line 65, ../sass/pages/_global.scss */
-body.testing pre {
+/* line 63, ../sass/pages/_global.scss */
+body.styles pre {
   margin: 1.5em 0 3.5em;
   font-size: 14px;
   line-height: 1.5em;
@@ -4671,8 +4672,8 @@ body.testing pre {
   width: 100%;
   height: 100%;
 }
-/* line 73, ../sass/pages/_global.scss */
-body.testing pre xmp {
+/* line 71, ../sass/pages/_global.scss */
+body.styles pre xmp {
   margin: 0;
   padding: 15px;
   color: #231f20;
@@ -4684,8 +4685,8 @@ body.testing pre xmp {
   width: 100%;
   height: 100%;
 }
-/* line 86, ../sass/pages/_global.scss */
-body.testing .testing-arrow-up {
+/* line 84, ../sass/pages/_global.scss */
+body.styles .testing-arrow-up {
   position: fixed;
   bottom: 15px;
   right: 15px;
@@ -4696,30 +4697,60 @@ body.testing .testing-arrow-up {
   background-color: rgba(0, 0, 0, 0.1);
   z-index: 2000;
 }
-/* line 97, ../sass/pages/_global.scss */
-body.testing .testing-unit {
+/* line 95, ../sass/pages/_global.scss */
+body.styles .testing-unit {
   background-color: #231f20;
   height: 50px;
 }
-/* line 101, ../sass/pages/_global.scss */
-body.testing .testing-bg {
+/* line 99, ../sass/pages/_global.scss */
+body.styles .testing-bg {
   height: 50px;
   border: 1px solid #ABA9A6;
 }
-/* line 105, ../sass/pages/_global.scss */
-body.testing .testing-dark-bg {
+/* line 103, ../sass/pages/_global.scss */
+body.styles .testing-dark-bg {
   background-color: #231f20;
 }
 
 /* ==========================================================================
    Homepage Specific Styles
    ========================================================================== */
-/* line 5, ../sass/pages/_homepage.scss */
+/* line 8, ../sass/pages/_homepage.scss */
+body.home .f-container-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  margin-top: -70px;
+  padding-top: 70px;
+  padding-bottom: 220px;
+  bottom: 0;
+  z-index: 100;
+}
+/* line 18, ../sass/pages/_homepage.scss */
+body.home .f-container {
+  height: 100%;
+  padding-bottom: 0;
+}
+/* line 22, ../sass/pages/_homepage.scss */
+body.home footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+/* line 27, ../sass/pages/_homepage.scss */
+body.home header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* line 36, ../sass/pages/_homepage.scss */
 .g-hp-section, .g-homepage .line.no-gutter {
   margin-bottom: 5em;
 }
 
-/* line 9, ../sass/pages/_homepage.scss */
+/* line 40, ../sass/pages/_homepage.scss */
 .g-company {
   height: 150px;
   width: 100%;
@@ -4729,47 +4760,47 @@ body.testing .testing-dark-bg {
   background-repeat: no-repeat;
 }
 
-/* line 18, ../sass/pages/_homepage.scss */
+/* line 49, ../sass/pages/_homepage.scss */
 .g-ads {
   text-align: center;
   margin: 1em 0 0 0;
 }
-/* line 21, ../sass/pages/_homepage.scss */
+/* line 52, ../sass/pages/_homepage.scss */
 .g-ads span {
   font-size: 100px;
   display: block;
 }
 
-/* line 30, ../sass/pages/_homepage.scss */
+/* line 61, ../sass/pages/_homepage.scss */
 .g-hp-contact {
   padding: 2em 0;
 }
 
 /* entire container, keeps perspective */
-/* line 35, ../sass/pages/_homepage.scss */
+/* line 66, ../sass/pages/_homepage.scss */
 .flip-container {
   perspective: 1000;
 }
 
 /* flip the pane when hovered */
-/* line 40, ../sass/pages/_homepage.scss */
+/* line 71, ../sass/pages/_homepage.scss */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
   transform: rotateY(180deg);
 }
 
-/* line 44, ../sass/pages/_homepage.scss */
+/* line 75, ../sass/pages/_homepage.scss */
 .flip-container, .flipper {
   height: 150px;
 }
 
-/* line 48, ../sass/pages/_homepage.scss */
+/* line 79, ../sass/pages/_homepage.scss */
 .front {
   width: 100%;
   height: 150px;
 }
 
 /* flip speed goes here */
-/* line 54, ../sass/pages/_homepage.scss */
+/* line 85, ../sass/pages/_homepage.scss */
 .flipper {
   transition: 1s;
   transform-style: preserve-3d;
@@ -4777,7 +4808,7 @@ body.testing .testing-dark-bg {
 }
 
 /* hide back of pane during swap */
-/* line 62, ../sass/pages/_homepage.scss */
+/* line 93, ../sass/pages/_homepage.scss */
 .front {
   backface-visibility: hidden;
   position: absolute;
@@ -4786,7 +4817,7 @@ body.testing .testing-dark-bg {
 }
 
 /* front pane, placed above back */
-/* line 71, ../sass/pages/_homepage.scss */
+/* line 102, ../sass/pages/_homepage.scss */
 .front {
   z-index: 2;
   /* for firefox 31 */
@@ -4794,7 +4825,7 @@ body.testing .testing-dark-bg {
 }
 
 /* back, initially hidden pane */
-/* line 78, ../sass/pages/_homepage.scss */
+/* line 109, ../sass/pages/_homepage.scss */
 .front + .front {
   transform: rotateY(180deg);
   background-color: #fff;

@@ -38,53 +38,62 @@
 	
 </head>
 
-<body ng-app="angularApp">
+<body ng-app="angularApp" class="{{bodyClass}}" ng-class="{{bodyClass}}">
 
-	
-<header>
-	<nav class="g-container-lg g-clearfix">
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a>About</a></li>
-			<li><a href="/work.html">Work</a></li>
-			<li><a>Inspiration</a></li>
-			<li><a href="/contact.html">Contact</a></li>
-		</ul>
-	</nav>
-</header>
+	<div ng-controller="HomeCtrl">
+		<header>
+			<nav class="g-container-lg g-clearfix">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 
+		<!-- 	Load page templetes here -->
+		<div ng-view></div>
 
-<div ng-include="'/js/views/home.html'"></div>
-
-	
-<footer class="g-clear">
-	<div class="g-container-sm">
-		<ul>
-			<li><a><span class="ti-linkedin"></span></a></li>
-			<li><a><span class="ti-instagram"></span></a></li>
-			<li><a><span class="ti-facebook"></span></a></li>
-		</ul>
-		<div class="g-footer-links">
-			<a><span class="g-icon-left ti-email"></span>justine@justinelileikis.com</a>
-			<a>Contact Me</a>
-		</div>
 	</div>
-</footer>
 
-<!-- jQuery Includes -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		
+	<footer class="g-clear">
+		<div class="g-container-sm">
+			<ul>
+				<li><a><span class="ti-linkedin"></span></a></li>
+				<li><a><span class="ti-instagram"></span></a></li>
+				<li><a><span class="ti-facebook"></span></a></li>
+			</ul>
+			<div class="g-footer-links">
+				<a><span class="g-icon-left ti-email"></span>justine@justinelileikis.com</a>
+				<a>Contact Me</a>
+			</div>
+		</div>
+	</footer>
 
-<!-- Angular -->
-<script src="vendor/angular/angular.min.js"></script>
+	<!-- jQuery Includes -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-<script src="js/angularApp.js"></script>
-<script src="js/controllers/home.js"></script>
+	<!-- Angular -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
 
-<!-- jQuery Image Gallery - fancyBox - http://fancyapps.com/fancybox/ -->
-<script src="vendor/fancyBox/source/jquery.fancybox.pack.min.js"></script>
+	<script src="js/angularApp.js"></script>
 
-<!-- Main js file -->
-<script src="js/scripts.js"></script>
+	<script src="js/controllers/home.js"></script>
+	<script src="js/controllers/work.js"></script>
+	<script src="js/controllers/contact.js"></script>
+	<script src="js/controllers/styles.js"></script>
+
+	<!-- Google maps -->
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+	<!-- jQuery Image Gallery - fancyBox - http://fancyapps.com/fancybox/ -->
+	<script src="vendor/fancyBox/source/jquery.fancybox.pack.min.js"></script>
+
+	<!-- Main js file -->
+	<script src="js/scripts.js"></script>
+
 </body>
 
 </html>

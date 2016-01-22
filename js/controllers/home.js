@@ -1,9 +1,11 @@
-myApp.controller('HomeCtrl', function ($scope) {
+myApp.controller('HomeCtrl', function ($scope, $rootScope) {
 
-      $scope.fancyBox = function(par) {
+    $rootScope.bodyClass = 'home';
+
+    $scope.fancyBox = function(par) {
         var className = '.fancy-box-'+par;
         openFancyBox(className);
-      }
+    }
 
     $scope.companies = [
         ["chrysler-white.png", "chrysler.png"],
