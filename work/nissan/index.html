@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head >
+    <meta charset="utf-8">
+    <title>Infinity Pricing Tool - Global Style Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Infinity Pricing Tool, Global Style Guide">
+    <meta name="author" content="Justine Lileikis, Autodata Solutions">
+
+    <!-- Global CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Test Sheet Specific CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+      <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body ng-app="angularApp">
+
+    <div class="test-header-container">
+        <div class="container test-header">
+            <h1 class="app-heading text-uppercase">Infinity Pricing Tool - Global Style Guide<span id="test-menu-control" class="pull-right icon-keyboard-arrow-down"></span></h1>
+            <ul id="test-navigation-list">
+                <li><a class="test-scroll" scroll="#test-typography">Typography</a></li>
+                <li><a class="test-scroll" scroll="#test-buttons">Buttons</a></li>
+                <li><a class="test-scroll" scroll="#test-messages">Messages</a></li>
+                <li><a class="test-scroll" scroll="#test-modals">Modal Dialogs</a></li>
+                <li><a class="test-scroll" scroll="#test-tooltips">Tooltips</a></li>
+                <li><a class="test-scroll" scroll="#test-containers">Content Containers</a></li>
+                <li><a class="test-scroll" scroll="#test-tabs">Tabs</a></li>
+                <li><a class="test-scroll" scroll="#test-tables">Tables</a></li>
+                <li><a class="test-scroll" scroll="#test-forms">Forms</a></li>
+                <li><a class="test-scroll" scroll="#test-datepicker">Date Picker</a></li>
+                <li><a class="test-scroll" scroll="#test-pagination">Pagination</a></li>
+                <li><a class="test-scroll" scroll="#test-notes">Notes</a></li>
+                <li><a href="layout.html">Main Page Layout</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="test-body-container">
+        <div class="container">
+            <div class="test-scroll-top app-action-icons">
+                <div class="icon-keyboard-arrow-up test-scroll" scroll="#test-typography"></div>
+            </div>
+            <h2 id="test-typography" class="text-uppercase">Typography</h2>
+            <hr>
+            <h1> h1 Heading </h1>
+            <xmp><h1> h1 Heading </h1></xmp>
+            <h2> h2 Heading </h2>
+            <xmp><h2> h2 Heading </h2></xmp>
+            <h3> h3 Heading </h3>
+            <xmp><h3> h3 Heading </h3></xmp>
+            <h4> h4 Heading </h4>
+            <xmp><h4> h4 Heading </h4></xmp>
+            <br>
+            <p>This is a paragraph.</p>
+            <xmp><p>This is a paragraph.</p></xmp>
+            <br>
+            <strong>Bold Text</strong>
+            <xmp><strong>Bold Text</strong></xmp>
+            <br>
+            <em>Italic Text</em>
+            <xmp><em>Italic Text</em></xmp>
+            <br>
+            <strong><em>Bold Italic Text</em></strong>
+            <xmp><strong><em>Bold Italic Text</em></strong></xmp>
+            <br>
+            <a>Default Link</a>
+            <xmp><a>Default Link</a></xmp>
+            <br>
+            <p>*Use <strong>strong</strong> and <em>em</em> tags for <strong>bold</strong> and <em>italic</em> text in HTML. In style sheets define the font family (ie. <strong>font-family: "InfinitiMetaPro-Bold";</strong> for bold). Do not use <strong>font-weight: bold;</strong> or <strong>font-style: italic;</strong> in style sheets. Web fonts are being used and this will not render them correctly.</p>
+            <p>* Add <strong>class="text-uppercase"</strong> for uppercase. See <a href="http://www.w3schools.com/bootstrap/default.asp">http://www.w3schools.com/bootstrap/default.asp</a> and <a href="http://getbootstrap.com/css/">http://getbootstrap.com/css/</a> for more CSS classes.</p>
+            <br>
+            <h2 id="test-buttons" class="text-uppercase">Buttons</h2>
+            <hr>
+            <h3 class="text-uppercase">Main Buttons</h3>
+            <button class="app-button-primary">Primary Button</button>
+            <button class="app-button-primary app-button-active">Primary Button - Active State</button>
+            <xmp><button class="app-button-primary">Primary Button</button>
+<button class="app-button-primary app-button-active">Primary Button - Active State</button></xmp>
+            <button class="app-button-secondary">Secondary Button</button>
+            <button class="app-button-secondary app-button-active">Secondary Button - Active State</button>
+            <xmp><button class="app-button-secondary">Secondary Button</button>
+<button class="app-button-secondary app-button-active">Secondary Button - Active State</button></xmp>
+            <button class="app-button-disabled">Disabled Button</button>
+            <xmp><button class="app-button-disabled">Disabled Button</button></xmp>
+            <br>
+            <h3 class="text-uppercase">Small Buttons</h3>
+            <p>*Button <strong>class="app-button-small"</strong> may be added/removed to all buttons.</p>
+            <br>
+            <button class="app-button-primary app-button-small">Small Button</button>
+            <xmp><button class="app-button-primary app-button-small">Small Button</button></xmp>
+            <button class="app-button-secondary app-button-small">Small Button</button>
+            <xmp><button class="app-button-secondary app-button-small">Small Button</button></xmp>
+            <button class="app-button-disabled app-button-small">Small Disabled Button</button>
+            <xmp><button class="app-button-disabled app-button-small">Small Disabled Button</button></xmp>
+            <br>
+            <h3 class="text-uppercase">Buttons with Icons</h3>
+            <h4 class="text-uppercase">Icon Buttons</h4>
+            <button class="app-button-primary app-button-small app-icon-only-button"><span class="icon-plus"></span></button>
+            <xmp><button class="app-button-primary app-button-small app-icon-only-button"><span class="icon-plus"></span></button></xmp>
+            <button class="app-button-secondary app-button-small app-icon-only-button"><span class="icon-plus"></span></button>
+            <xmp><button class="app-button-secondary app-button-small app-icon-only-button"><span class="icon-plus"></span></button></xmp>
+            <button class="app-button-disabled app-button-small app-icon-only-button"><span class="icon-plus"></span></button>
+            <xmp><button class="app-button-disabled app-button-small app-icon-only-button"><span class="icon-plus"></span></button></xmp>
+            <br>
+            <h4 class="text-uppercase">Icon and Text Button</h4>
+            <button class="app-button-primary app-icon-button"><span class="icon-plus"></span><span class="app-icon-button-text">Primary Button</span></button>
+            <xmp><button class="app-button-primary app-icon-button"><span class="icon-plus"></span><span class="app-icon-button-text">Primary Button</span></button></xmp>
+            <button class="app-button-secondary app-icon-button"><span class="icon-plus"></span><span class="app-icon-button-text">Secondary Button</span></button>
+            <xmp><button class="app-button-secondary app-icon-button"><span class="icon-plus"></span><span class="app-icon-button-text">Secondary Button</span></button></xmp>
+            <button class="app-button-disabled app-icon-button"><span class="icon-plus"></span><span class="app-icon-button-text">Disabled Button</span></button>
+            <xmp><button class="app-button-disabled app-icon-button"><span class="icon-plus"></span><span class="app-icon-button-text">Disabled Button</span></button></xmp>
+            <br>
+            <h4 class="text-uppercase">Icon and Text Button - icon right aligned</h4>
+            <button class="app-button-primary app-icon-button app-icon-right"><span class="app-icon-button-text">Primary Button</span><span class="icon-keyboard-arrow-right"></span></button>
+            <xmp><button class="app-button-primary app-icon-button app-icon-right"><span class="app-icon-button-text">Primary Button</span><span class="icon-keyboard-arrow-right"></span></button></xmp>
+            <button class="app-button-secondary app-icon-button app-icon-right"><span class="app-icon-button-text">Secondary Button</span><span class="icon-keyboard-arrow-right"></span></button>
+            <xmp><button class="app-button-secondary app-icon-button app-icon-right"><span class="app-icon-button-text">Secondary Button</span><span class="icon-keyboard-arrow-right"></span></button></xmp>
+            <button class="app-button-disabled app-icon-button app-icon-right"><span class="app-icon-button-text">Disabled Button</span><span class="icon-keyboard-arrow-right"></span></button>
+            <xmp><button class="app-button-disabled app-icon-button app-icon-right"><span class="app-icon-button-text">Disabled Button</span><span class="icon-keyboard-arrow-right"></span></button></xmp>
+            <br>
+            <h3 class="text-uppercase">Toggle Buttons</h3>
+            <div class="app-buttons-toggle app-toggle-active clearfix">
+                <button class="app-button-secondary app-button-small app-button-selected">Yes</button>
+                <button class="app-button-secondary app-button-small">No</button>
+            </div>
+<xmp><div class="app-buttons-toggle app-toggle-active clearfix">
+    <button class="app-button-secondary app-button-small app-button-selected">Yes</button>
+    <button class="app-button-secondary app-button-small">No</button>
+</div></xmp>
+            <div class="app-buttons-toggle app-toggle-disabled clearfix">
+                <button class="app-button-secondary app-button-small app-button-selected">Toggle On</button>
+                <button class="app-button-disabled app-button-small">Disabled</button>
+            </div>
+<xmp><div class="app-buttons-toggle app-toggle-disabled clearfix">
+    <button class="app-button-secondary app-button-small app-button-selected">Toggle On</button>
+    <button class="app-button-disabled app-button-small">Disabled</button>
+</div></xmp>
+
+            <br>
+            <h2 id="test-messages" class="text-uppercase">Messages</h2>
+            <hr>
+            <h3 class="text-uppercase">Information Messages</h3>
+            <a class="test-show-message" message="#test-information-message">Click to display Information Message</a>
+            <div id="test-information-message" class="app-message app-message-information">
+                <span class="icon-warning2"></span>
+                <div class="app-message-text">Information Message</div>
+                <span class="icon-delete"></span>
+            </div>
+<xmp><div id="test-information-message" class="app-message app-message-information">
+    <span class="icon-warning2"></span>
+    <div class="app-message-text">Information Message</div>
+    <span class="icon-delete"></span>
+</div></xmp>
+            <a class="test-show-message" message="#test-confirmation-message">Click to display Confirmation Message</a>
+            <div id="test-confirmation-message" class="app-message app-message-confirmation">
+                <span class="icon-checkmark"></span>
+                <div class="app-message-text">Confirmation Message</div>
+                <span class="icon-delete"></span>
+            </div>
+<xmp><div id="test-confirmation-message" class="app-message app-message-confirmation">
+    <span class="icon-checkmark"></span>
+    <div class="app-message-text">Confirmation Message</div>
+    <span class="icon-delete"></span>
+</div></xmp>
+
+            <a class="test-show-message" message="#test-warning-message">Click to display Warning Message</a>
+            <div id="test-warning-message" class="app-message app-message-warning">
+                <span class="icon-warning2"></span>
+                <div class="app-message-text">Warning Message</div>
+                <span class="icon-delete"></span>
+            </div>
+<xmp><div id="test-warning-message" class="app-message app-message-warning">
+    <span class="icon-warning2"></span>
+    <div class="app-message-text">Information Message</div>
+    <span class="icon-delete"></span>
+</div></xmp>
+
+            <a class="test-show-message" message="#test-alert-message">Click to display Alert Message</a>
+            <div id="test-alert-message" class="app-message app-message-alert">
+                <span class="icon-warning2"></span>
+                <div class="app-message-text">Alert Message</div>
+                <span class="icon-delete"></span>
+            </div>
+<xmp><div id="test-alert-message" class="app-message app-message-alert">
+    <span class="icon-warning2"></span>
+    <div class="app-message-text">Alert Message</div>
+    <span class="icon-delete"></span>
+</div></xmp>
+            <br>
+            <h2 id="test-modals" class="text-uppercase">Modal Dialogs</h2>
+            <p>*Modal Dialogs created off of Bootstrap Modals. See <a href="http://getbootstrap.com/javascript/#modals" target="_blank">http://getbootstrap.com/javascript/#modals</a> for more information.</p>
+            <hr>
+            <h3 class="text-uppercase">Primary Modal Dialog</h3>
+
+            <!-- trigger modal -->
+            <a data-toggle="modal" data-target="#myModal">
+                Launch Demo Modal
+            </a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="icon-delete"></span></span></button>
+                            <h2 id="myModalLabel">Modal title</h2>
+                        </div>
+                        <div class="modal-body">
+                        <p>
+                            In aliquet nunc mi, vitae faucibus ligula blandit eu. In laoreet dui odio, vel blandit ante semper sed. Quisque imperdiet posuere dolor id vulputate. Praesent ipsum velit, scelerisque ut sapien ac, porta mattis leo. Fusce efficitur, ante at hendrerit lacinia, orci massa malesuada nisl, id cursus lacus sem quis massa. Pellentesque sit amet volutpat odio, sed vestibulum nulla. Suspendisse accumsan, turpis sed mollis maximus, erat metus sodales nunc, ac imperdiet erat felis id felis.
+                        </p>
+                        <p>
+                            Mauris eu pharetra sapien. Nam fermentum ultricies sapien, eget fermentum est hendrerit non. Phasellus ut sem urna. Integer posuere maximus consectetur. Nunc ut sollicitudin eros. Cras gravida dictum orci id feugiat. Maecenas nunc justo, commodo in viverra at, ullamcorper quis ante. Pellentesque cursus interdum ipsum, at ornare mi interdum sit amet. Ut vel molestie sapien. Suspendisse id mi porttitor, viverra erat vitae, maximus nunc.
+                        </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="app-button-primary" data-dismiss="modal">Save & Close</button>
+                            <button class="app-button-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<xmp><!-- trigger modal -->
+<a data-toggle="modal" data-target="#myModal">
+    Launch Demo Modal
+</a>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="icon-delete"></span></span></button>
+                <h2 id="myModalLabel">Modal title</h2>
+            </div>
+            <div class="modal-body">
+                <p>
+                    In aliquet nunc mi, vitae faucibus ligula blandit eu. In laoreet dui odio, vel blandit ante semper sed. Quisque imperdiet posuere dolor id vulputate. Praesent ipsum velit, scelerisque ut sapien ac, porta mattis leo. Fusce efficitur, ante at hendrerit lacinia, orci massa malesuada nisl, id cursus lacus sem quis massa. Pellentesque sit amet volutpat odio, sed vestibulum nulla. Suspendisse accumsan, turpis sed mollis maximus, erat metus sodales nunc, ac imperdiet erat felis id felis.
+                </p>
+                <p>
+                    Mauris eu pharetra sapien. Nam fermentum ultricies sapien, eget fermentum est hendrerit non. Phasellus ut sem urna. Integer posuere maximus consectetur. Nunc ut sollicitudin eros. Cras gravida dictum orci id feugiat. Maecenas nunc justo, commodo in viverra at, ullamcorper quis ante. Pellentesque cursus interdum ipsum, at ornare mi interdum sit amet. Ut vel molestie sapien. Suspendisse id mi porttitor, viverra erat vitae, maximus nunc.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="app-button-primary" data-dismiss="modal">Save & Close</button>
+                <button class="app-button-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div></xmp>
+            <h3 class="text-uppercase">Primary Modal Dialog - No header or footer</h3>
+
+            <!-- trigger modal -->
+            <a data-toggle="modal" data-target="#myModal2">
+                Launch Demo Modal
+            </a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="icon-delete"></span></span></button>
+                            <p>
+                                In aliquet nunc mi, vitae faucibus ligula blandit eu. In laoreet dui odio, vel blandit ante semper sed. Quisque imperdiet posuere dolor id vulputate. Praesent ipsum velit, scelerisque ut sapien ac, porta mattis leo. Fusce efficitur, ante at hendrerit lacinia, orci massa malesuada nisl, id cursus lacus sem quis massa. Pellentesque sit amet volutpat odio, sed vestibulum nulla. Suspendisse accumsan, turpis sed mollis maximus, erat metus sodales nunc, ac imperdiet erat felis id felis.
+                            </p>
+                            <p>
+                                Mauris eu pharetra sapien. Nam fermentum ultricies sapien, eget fermentum est hendrerit non. Phasellus ut sem urna. Integer posuere maximus consectetur. Nunc ut sollicitudin eros. Cras gravida dictum orci id feugiat. Maecenas nunc justo, commodo in viverra at, ullamcorper quis ante. Pellentesque cursus interdum ipsum, at ornare mi interdum sit amet. Ut vel molestie sapien. Suspendisse id mi porttitor, viverra erat vitae, maximus nunc.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<xmp><!-- trigger modal -->
+<a data-toggle="modal" data-target="#myModal2">
+    Launch Demo Modal
+</a>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="icon-delete"></span></span></button>
+                <p>
+                    In aliquet nunc mi, vitae faucibus ligula blandit eu. In laoreet dui odio, vel blandit ante semper sed. Quisque imperdiet posuere dolor id vulputate. Praesent ipsum velit, scelerisque ut sapien ac, porta mattis leo. Fusce efficitur, ante at hendrerit lacinia, orci massa malesuada nisl, id cursus lacus sem quis massa. Pellentesque sit amet volutpat odio, sed vestibulum nulla. Suspendisse accumsan, turpis sed mollis maximus, erat metus sodales nunc, ac imperdiet erat felis id felis.
+                </p>
+                <p>
+                    Mauris eu pharetra sapien. Nam fermentum ultricies sapien, eget fermentum est hendrerit non. Phasellus ut sem urna. Integer posuere maximus consectetur. Nunc ut sollicitudin eros. Cras gravida dictum orci id feugiat. Maecenas nunc justo, commodo in viverra at, ullamcorper quis ante. Pellentesque cursus interdum ipsum, at ornare mi interdum sit amet. Ut vel molestie sapien. Suspendisse id mi porttitor, viverra erat vitae, maximus nunc.
+                </p>
+            </div>
+        </div>
+    </div>
+</div></xmp>
+
+            <h3 class="text-uppercase">Warning Modal Dialog</h3>
+
+            <!-- trigger modal -->
+            <a data-toggle="modal" data-target="#myModal3">
+                Launch Warning Modal
+            </a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+                <div class="modal-dialog app-modal-warning">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="icon-delete"></span></span></button>
+                            <h2 id="myModalLabel2">Warning</h2>
+                        </div>
+                        <div class="modal-body">
+                            <span class="icon-warning"></span>
+                            <p>
+                                In aliquet nunc mi, vitae faucibus ligula blandit eu. In laoreet dui odio, vel blandit ante semper sederat felis id felis.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="app-button-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<xmp><!-- trigger modal -->
+<a data-toggle="modal" data-target="#myModal3">
+    Launch Warning Modal
+</a>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+    <div class="modal-dialog app-modal-warning">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="icon-delete"></span></span></button>
+                <h2 id="myModalLabel2">Warning</h2>
+            </div>
+            <div class="modal-body">
+                <span class="icon-warning"></span>
+                <p>
+                    In aliquet nunc mi, vitae faucibus ligula blandit eu. In laoreet dui odio, vel blandit ante semper sederat felis id felis.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="app-button-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div></xmp>
+
+            <h3 class="text-uppercase">Spinner Modal Dialog</h3>
+
+            <!-- trigger modal -->
+            <a data-toggle="modal" data-target="#myModal4">
+                Launch Spinner Modal
+            </a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog app-modal-loading">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="images/loading.GIF"/>
+                            <p>Loading Please Wait...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<xmp> <!-- trigger modal -->
+<a data-toggle="modal" data-target="#myModal4">
+    Launch Spinner Modal
+</a>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog app-modal-loading">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/loading.GIF"/>
+                <p>Loading Please Wait...</p>
+            </div>
+        </div>
+    </div>
+</div></xmp>
+
+            <br>
+            <h2 id="test-tooltips" class="text-uppercase">Tooltips</h2>
+            <p>*Tooltips are build off of Bootstraps Tooltips. See <a href="http://getbootstrap.com/javascript/#tooltips" target="_blank">http://getbootstrap.com/javascript/#tooltips</a> for more information.</p>
+            <p>*When using action icons wrap them in <strong>class="app-action-icons"</strong> and <strong>class="app-icon-left"</strong> (for left aligned icons) or <strong>class="app-icon-right"</strong> (for right aligned icons)</p>
+            <hr>
+
+            <div class="app-action-icons app-icons-left">
+                <span class="icon-edit" data-toggle="tooltip" title="Edit"></span><span class="icon-sync" data-toggle="tooltip" title="Refresh"></span><span class="icon-copy" data-toggle="tooltip" title="Copy"></span><span class="icon-delete" data-toggle="tooltip" title="Delete"></span>
+            </div>
+
+<xmp><div class="app-action-icons app-icons-left">
+    <span class="icon-edit" data-toggle="tooltip" title="Edit"></span><span class="icon-copy" data-toggle="tooltip" title="Copy"></span><span class="icon-delete" data-toggle="tooltip" title="Delete"></span>
+</div></xmp>
+
+
+            <br>
+            <h2 id="test-containers" class="text-uppercase">Content Containers</h2>
+            <hr>
+            <h3 class="text-uppercase">Primary Container</h3>
+        <div class="app-primary-container">
+            <div class="app-container-header clearfix">
+                <p class="pull-left">Primary Container Title</p>
+                <div class="pull-right">
+                    <button class="app-button-primary app-button-small app-icon-only-button"><span class="icon-plus"></span></button>
+                    <button class="app-button-secondary app-button-small app-icon-only-button"><span class="icon-edit"></span></button>
+                </div>
+            </div>
+            <div class="app-container-body">
+                <p>Quisque lorem felis, sollicitudin ac neque eu, commodo scelerisque eros. Cras pulvinar vehicula felis, a hendrerit nulla dignissim tristique.</p>
+                <p>Nulla consectetur felis id pretium ultrices. Nulla a aliquam sem. Integer quis magna dapibus, semper massa ac, pretium orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam lacinia lacus enim, ut malesuada lectus euismod et. In hac habitasse platea dictumst. Phasellus varius sem quis sapien consectetur porta. Sed eget semper libero, nec faucibus odio.</p>
+            </div>
+        </div>
+
+<xmp><div class="app-primary-container">
+    <div class="app-container-header clearfix">
+        <p class="pull-left">Primary Container Title</p>
+        <div class="pull-right">
+            <button class="app-button-primary app-button-small app-icon-only-button"><span class="icon-plus"></span></button>
+            <button class="app-button-secondary app-button-small app-icon-only-button"><span class="icon-edit"></span></button>
+        </div>
+    </div>
+    <div class="app-container-body">
+        <p>Quisque lorem felis, sollicitudin ac neque eu, commodo scelerisque eros. Cras pulvinar vehicula felis, a hendrerit nulla dignissim tristique.</p>
+        <p>Nulla consectetur felis id pretium ultrices. Nulla a aliquam sem. Integer quis magna dapibus, semper massa ac, pretium orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam lacinia lacus enim, ut malesuada lectus euismod et. In hac habitasse platea dictumst. Phasellus varius sem quis sapien consectetur porta. Sed eget semper libero, nec faucibus odio.</p>
+    </div>
+</div></xmp>
+
+            <h3 class="text-uppercase">Primary Container - No Action Icons</h3>
+            <div class="app-primary-container">
+                <div class="app-container-header">
+                    <p>Primary Container Title</p>
+                </div>
+                <div class="app-container-body">
+                    <p>Morbi sed aliquam metus. Vivamus ligula purus, maximus ac enim nec, condimentum ullamcorper ex. Vivamus purus enim, rutrum quis hendrerit at, rutrum ut augue. Quisque hendrerit tempor neque, tempor maximus velit tincidunt quis. Phasellus tempor efficitur sem id maximus. Vestibulum quis orci nulla. Ut ac venenatis felis. Nullam eu libero mauris. Donec sit amet dapibus mi, vel dapibus ante.</p>
+                </div>
+            </div>
+
+<xmp><div class="app-primary-container">
+    <div class="app-container-header">
+        <p>Primary Container Title</p>
+    </div>
+    <div class="app-container-body">
+        <p>Morbi sed aliquam metus. Vivamus ligula purus, maximus ac enim nec, condimentum ullamcorper ex. Vivamus purus enim, rutrum quis hendrerit at, rutrum ut augue. Quisque hendrerit tempor neque, tempor maximus velit tincidunt quis. Phasellus tempor efficitur sem id maximus. Vestibulum quis orci nulla. Ut ac venenatis felis. Nullam eu libero mauris. Donec sit amet dapibus mi, vel dapibus ante.</p>
+    </div>
+</div></xmp>
+
+            <br>
+            <h3 class="text-uppercase">Expandable Container</h3>
+            <p>*Expandable Containers are built off of Bootstraps Accordion. See <a href="http://getbootstrap.com/javascript/#collapse-example-accordion" target="_blank">http://getbootstrap.com/javascript/#collapse-example-accordion</a> for more information. </p>
+            <hr>
+
+            <div class="app-container-expandable panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading clearfix" role="tab" id="headingOne">
+                        <h4 class="app-expandable-heading pull-left" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <span class="icon-keyboard-arrow-down"></span>Collapsible Group Item #1
+                        </h4>
+                        <div class="app-action-icons app-icons-right pull-right"><span class="icon-edit"></span><span class="icon-delete"></span></div>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <p>Praesent vitae tellus eleifend odio lacinia convallis. Cras sed congue eros, ac fermentum enim. Fusce a varius nisl. Phasellus dapibus ante vitae lorem posuere accumsan. Cras fermentum maximus mi ut luctus. Nullam placerat, neque nec vehicula pharetra, velit neque lobortis lectus, at dignissim mi elit in risus. Maecenas tempus enim nec lacus tincidunt maximus. Etiam facilisis ipsum eget sapien euismod iaculis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="app-expandable-heading collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <span class="icon-keyboard-arrow-right"></span>Collapsible Group Item #2
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            <p>Nunc et dui nisi. Donec fermentum et ipsum eu elementum. Integer elit neque, aliquam et risus vitae, rhoncus consectetur felis. Praesent sed mi dui. Morbi sed rutrum nunc. Suspendisse et neque ullamcorper, lobortis nunc eu, feugiat lorem. Curabitur porta ac sapien eu bibendum. Nulla ultrices sit amet nulla in consequat. Sed mollis velit ac nibh venenatis, sagittis sagittis dolor efficitur. Aenean nec diam sit amet massa sollicitudin sollicitudin. Fusce at egestas lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris vitae rhoncus tellus.</p>
+                            <p>Fusce ut consequat sapien, non cursus est. Maecenas eu aliquet velit. Duis congue et arcu at sagittis. Suspendisse non eleifend leo. Phasellus eu tempor erat, in sodales nibh. Sed mollis lacus a mi suscipit, sed varius ex gravida. Integer efficitur orci lectus, eget venenatis ipsum vehicula consequat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<xmp><div class="app-container-expandable panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+        <div class="panel-heading clearfix" role="tab" id="headingOne">
+            <h4 class="app-expandable-heading pull-left" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span class="icon-keyboard-arrow-down"></span>Collapsible Group Item #1
+            </h4>
+            <div class="app-action-icons app-icons-right pull-right"><span class="icon-edit"></span><span class="icon-delete"></span></div>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+            <p>Praesent vitae tellus eleifend odio lacinia convallis. Cras sed congue eros, ac fermentum enim. Fusce a varius nisl. Phasellus dapibus ante vitae lorem posuere accumsan. Cras fermentum maximus mi ut luctus. Nullam placerat, neque nec vehicula pharetra, velit neque lobortis lectus, at dignissim mi elit in risus. Maecenas tempus enim nec lacus tincidunt maximus. Etiam facilisis ipsum eget sapien euismod iaculis.</p>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="app-expandable-heading collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <span class="icon-keyboard-arrow-right"></span>Collapsible Group Item #2
+            </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+                <p>Nunc et dui nisi. Donec fermentum et ipsum eu elementum. Integer elit neque, aliquam et risus vitae, rhoncus consectetur felis. Praesent sed mi dui. Morbi sed rutrum nunc. Suspendisse et neque ullamcorper, lobortis nunc eu, feugiat lorem. Curabitur porta ac sapien eu bibendum. Nulla ultrices sit amet nulla in consequat. Sed mollis velit ac nibh venenatis, sagittis sagittis dolor efficitur. Aenean nec diam sit amet massa sollicitudin sollicitudin. Fusce at egestas lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris vitae rhoncus tellus.</p>
+                <p>Fusce ut consequat sapien, non cursus est. Maecenas eu aliquet velit. Duis congue et arcu at sagittis. Suspendisse non eleifend leo. Phasellus eu tempor erat, in sodales nibh. Sed mollis lacus a mi suscipit, sed varius ex gravida. Integer efficitur orci lectus, eget venenatis ipsum vehicula consequat.</p>
+            </div>
+        </div>
+    </div>
+</div></xmp>
+
+            <br>
+            <h3 class="text-uppercase">Expandable Container - With Angular.JS</h3>
+            <p>*Expandable Containers built off of UI Bootstraps Accordion. See <a href="http://angular-ui.github.io/bootstrap/#/accordion" target="_blank">http://angular-ui.github.io/bootstrap/#/accordion</a> for more information. (dependencies: AngularJS and Bootstrap CSS) </p>
+            <p>*Custom templates built by Autodata - \global-css\js\ui-bootstrap-custom-tpls-0.12.1.js</p>
+            <hr>
+
+            <div ng-controller="AccordionDemoCtrl">
+
+                <button class="app-button-primary" ng-click="status.open = !status.open">Toggle last panel</button>
+                <button class="app-button-primary" ng-click="status.isFirstDisabled = ! status.isFirstDisabled">Enable / Disable first panel</button>
+                <br><br>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" ng-model="oneAtATime">
+                        Open only one at a time
+                    </label>
+                </div>
+                <br>
+                <accordion close-others="oneAtATime">
+                    <accordion-group heading="Static Header, initially expanded" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+                        This content is straight in the template.
+                    </accordion-group>
+                    <accordion-group heading="{{group.title}}" ng-repeat="group in groups">
+                        {{group.content}}
+                    </accordion-group>
+                    <accordion-group heading="Dynamic Body Content">
+                        <p>The body of the accordion group grows to fit the contents</p>
+                        <button class="btn btn-default btn-sm" ng-click="addItem()">Add Item</button>
+                        <div ng-repeat="item in items">{{item}}</div>
+                    </accordion-group>
+                    <accordion-group is-open="status.open">
+                        <accordion-heading>
+                            <span class="pull-right" ng-class="{'icon-keyboard-arrow-down': status.open, 'icon-keyboard-arrow-right': !status.open}"></span>I can have markup, too!
+                        </accordion-heading>
+                        This is just some content to illustrate fancy headings.
+                    </accordion-group>
+                </accordion>
+
+            </div>
+
+<xmp ng-non-bindable> <div ng-controller="AccordionDemoCtrl" >
+
+    <button class="app-button-primary" ng-click="status.open = !status.open">Toggle last panel</button>
+    <button class="app-button-primary" ng-click="status.isFirstDisabled = ! status.isFirstDisabled">Enable / Disable first panel</button>
+    <br><br>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" ng-model="oneAtATime">
+            Open only one at a time
+        </label>
+    </div>
+    <br>
+    <accordion close-others="oneAtATime">
+        <accordion-group heading="Static Header, initially expanded" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+            This content is straight in the template.
+        </accordion-group>
+        <accordion-group heading="{{group.title}}" ng-repeat="group in groups">
+            {{group.content}}
+        </accordion-group>
+        <accordion-group heading="Dynamic Body Content">
+            <p>The body of the accordion group grows to fit the contents</p>
+            <button class="btn btn-default btn-sm" ng-click="addItem()">Add Item</button>
+            <div ng-repeat="item in items">{{item}}</div>
+        </accordion-group>
+        <accordion-group is-open="status.open">
+            <accordion-heading>
+                <span class="pull-right" ng-class="{'icon-keyboard-arrow-down': status.open, 'icon-keyboard-arrow-right': !status.open}"></span>I can have markup, too!
+            </accordion-heading>
+            This is just some content to illustrate fancy headings.
+        </accordion-group>
+    </accordion>
+
+</div></xmp>
+
+            <br>
+            <h2 id="test-tabs" class="text-uppercase">Tabs</h2>
+            <p>*Tabs are built off of Bootstraps Tabs. See <a href="http://getbootstrap.com/javascript/#tabs" target="_blank">http://getbootstrap.com/javascript/#tabs</a> for more information. </p>
+            <hr>
+
+
+            <div class="app-tabs" role="tabpanel">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                    <li role="presentation"><a class="app-tab-disabled" href="#about" aria-controls="about" role="tab" data-toggle="tab">Messages</a></li>
+                    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                    <!-- optional buttons -->
+                    <li class="app-tab-buttons">
+                        <button class="app-button-primary app-button-small app-icon-only-button"><span class="icon-plus"></span></button>
+                        <button class="app-button-secondary app-button-small app-icon-only-button"><span class="icon-edit"></span></button>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        <div class="app-tab-heading clearfix">
+                            <h4>Home Tab Title</h4>
+                        </div>
+                        <div class="app-tab-body">
+                            <p>Fusce id purus in nisl finibus blandit hendrerit ut urna. Pellentesque vulputate fermentum erat, non placerat nulla tristique quis. Phasellus a sagittis elit. Quisque vel accumsan risus. Vestibulum porttitor libero at elit sollicitudin, et dictum nisi eleifend. Integer at erat condimentum turpis scelerisque scelerisque interdum id lacus. Integer urna risus, hendrerit quis placerat feugiat, pulvinar vel odio.</p>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="profile">
+                        <div class="app-tab-heading">
+                            <h4>Profile Tab Title</h4>
+                        </div>
+                        <div class="app-tab-body">
+                            <p>Duis fermentum, ipsum consequat convallis suscipit, risus lacus vulputate libero, vel ullamcorper neque mi sed felis. Aenean sit amet ultricies ipsum. Curabitur commodo in nisi sit amet interdum. Vivamus vel iaculis sem, sed semper dui. Donec et mollis ipsum. Praesent vel velit interdum, facilisis metus a, varius libero. Morbi luctus eu sapien et ultrices.</p>
+                            <p>Ut quis ante dictum, dictum massa id, auctor diam. Nam ut porttitor lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque nec erat urna. Nullam et lacus facilisis, laoreet tortor at, blandit nisl. </p>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="about">
+                        <div class="app-tab-body">
+                            <p>Ut quis ante dictum, dictum massa id, auctor diam. Nam ut porttitor lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque nec erat urna. Nullam et lacus facilisis, laoreet tortor at, blandit nisl. </p>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="settings">
+                        <div class="app-tab-body">
+                            <p>Duis fermentum, ipsum consequat convallis suscipit, risus lacus vulputate libero, vel ullamcorper neque mi sed felis. Aenean sit amet ultricies ipsum. Curabitur commodo in nisi sit amet interdum. Vivamus vel iaculis sem, sed semper dui. Donec et mollis ipsum. Praesent vel velit interdum, facilisis metus a, varius libero. Morbi luctus eu sapien et ultrices.</p>
+                            <p>Vivamus non justo sed velit sodales scelerisque. Proin elementum, urna a imperdiet tempor, velit mi pulvinar lacus, vel aliquet augue elit ac mi. Quisque sapien velit, ornare a leo non, bibendum ornare urna. Quisque suscipit mi dui, bibendum interdum tellus rutrum a.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+<xmp> <div class="app-tabs" role="tabpanel">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+        <li role="presentation"><a class="app-tab-disabled" href="#about" aria-controls="about" role="tab" data-toggle="tab">Messages</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+        <!-- optional buttons -->
+        <li class="app-tab-buttons">
+            <button class="app-button-primary app-button-small app-icon-only-button"><span class="icon-plus"></span></button>
+            <button class="app-button-secondary app-button-small app-icon-only-button"><span class="icon-edit"></span></button>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+            <div class="app-tab-heading clearfix">
+                <h4>Home Tab Title</h4>
+            </div>
+            <div class="app-tab-body">
+                <p>Fusce id purus in nisl finibus blandit hendrerit ut urna. Pellentesque vulputate fermentum erat, non placerat nulla tristique quis. Phasellus a sagittis elit. Quisque vel accumsan risus. Vestibulum porttitor libero at elit sollicitudin, et dictum nisi eleifend. Integer at erat condimentum turpis scelerisque scelerisque interdum id lacus. Integer urna risus, hendrerit quis placerat feugiat, pulvinar vel odio.</p>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile">
+            <div class="app-tab-heading">
+                <h4>Profile Tab Title</h4>
+            </div>
+            <div class="app-tab-body">
+                <p>Duis fermentum, ipsum consequat convallis suscipit, risus lacus vulputate libero, vel ullamcorper neque mi sed felis. Aenean sit amet ultricies ipsum. Curabitur commodo in nisi sit amet interdum. Vivamus vel iaculis sem, sed semper dui. Donec et mollis ipsum. Praesent vel velit interdum, facilisis metus a, varius libero. Morbi luctus eu sapien et ultrices.</p>
+                <p>Ut quis ante dictum, dictum massa id, auctor diam. Nam ut porttitor lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque nec erat urna. Nullam et lacus facilisis, laoreet tortor at, blandit nisl. </p>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="about">
+            <div class="app-tab-body">
+                <p>Ut quis ante dictum, dictum massa id, auctor diam. Nam ut porttitor lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque nec erat urna. Nullam et lacus facilisis, laoreet tortor at, blandit nisl. </p>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="settings">
+            <div class="app-tab-body">
+                <p>Duis fermentum, ipsum consequat convallis suscipit, risus lacus vulputate libero, vel ullamcorper neque mi sed felis. Aenean sit amet ultricies ipsum. Curabitur commodo in nisi sit amet interdum. Vivamus vel iaculis sem, sed semper dui. Donec et mollis ipsum. Praesent vel velit interdum, facilisis metus a, varius libero. Morbi luctus eu sapien et ultrices.</p>
+                <p>Vivamus non justo sed velit sodales scelerisque. Proin elementum, urna a imperdiet tempor, velit mi pulvinar lacus, vel aliquet augue elit ac mi. Quisque sapien velit, ornare a leo non, bibendum ornare urna. Quisque suscipit mi dui, bibendum interdum tellus rutrum a.</p>
+            </div>
+        </div>
+    </div>
+
+</div></xmp>
+
+
+            <br>
+            <h2 id="test-tables" class="text-uppercase">Tables</h2>
+            <p>*Tables are built off of Bootstraps Tables. See <a href="http://getbootstrap.com/css/#tables" target="_blank">http://getbootstrap.com/css/#tables</a> for more information. </p>
+            <hr>
+            <div class="table-responsive">
+                <table class="app-table table table-striped table-bordered table-hover">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td class="app-table-read-only">Eve</td>
+                        <td>Jackson<button class="app-button-secondary app-button-small app-icon-only-button pull-right"><span class="icon-dots-three-horizontal"></span></button></td>
+                        <td><span class="icon-reorder"></span>94</td>
+                        <td class="app-table-status app-table-status-queue"><span class="icon-clock"></span>In Queue</td>
+                        <td class="app-action-icons app-icons-left"><span class="icon-edit"></span><span class="icon-copy"></span><span class="icon-sync"></span><span class="icon-delete"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="app-table-read-only">Jason</td>
+                        <td>Jackson<button class="app-button-secondary app-button-small app-icon-only-button pull-right"><span class="icon-dots-three-horizontal"></span></td>
+                        <td><span class="icon-reorder"></span>66</td>
+                        <td class="app-table-status app-table-status-processing"><span class="icon-processing"></span>Processing</td>
+                        <td class="app-action-icons app-icons-left"><span class="icon-edit"></span><span class="icon-copy"></span><span class="icon-sync"></span><span class="icon-delete"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="app-table-read-only">Sandra</td>
+                        <td>Smith<button class="app-button-secondary app-button-small app-icon-only-button pull-right"><span class="icon-dots-three-horizontal"></span></td>
+                        <td><span class="icon-reorder"></span>12</td>
+                        <td class="app-table-status app-table-status-complete"><span class="icon-checkmark"></span>Complete</td>
+                        <td class="app-action-icons app-icons-left"><span class="icon-edit"></span><span class="icon-copy"></span><span class="icon-sync"></span><span class="icon-delete"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="app-table-read-only">Jesse</td>
+                        <td>Smith<button class="app-button-secondary app-button-small app-icon-only-button pull-right"><span class="icon-dots-three-horizontal"></span></td>
+                        <td><span class="icon-reorder"></span>44</td>
+                        <td class="app-table-status app-table-status-complete"><span class="icon-checkmark"></span>Complete</td>
+                        <td class="app-action-icons app-icons-left"><span class="icon-edit"></span><span class="icon-copy"></span><span class="icon-sync"></span><span class="icon-delete"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="app-table-read-only">Jessica</td>
+                        <td>Adam<button class="app-button-secondary app-button-small app-icon-only-button pull-right"><span class="icon-dots-three-horizontal"></span></td>
+                        <td><span class="icon-reorder"></span>33</td>
+                        <td class="app-table-status app-table-status-processing"><span class="icon-processing"></span>Processing</td>
+                        <td class="app-action-icons app-icons-left"><span class="icon-edit"></span><span class="icon-copy"></span><span class="icon-sync"></span><span class="icon-delete"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="app-table-read-only">Angela</td>
+                        <td>McGee<button class="app-button-secondary app-button-small app-icon-only-button pull-right"><span class="icon-dots-three-horizontal"></span></td>
+                        <td><span class="icon-reorder"></span>45</td>
+                        <td class="app-table-status app-table-status-failed"><span class="icon-warning"></span>Failed</td>
+                        <td class="app-action-icons app-icons-left"><span class="icon-edit"></span><span class="icon-copy"></span><span class="icon-sync"></span><span class="icon-delete"></span></td>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td colspan="100%" class="app-table-pagination clearfix">
+                                <span class="app-pagination-controls pull-left">
+                                    <span class="icon-controller-jump-to-start"></span><span class="icon-triangle-left"></span><button class="app-button-secondary app-button-small app-button-active">1</button><button class="app-button-secondary app-button-small">2</button><span class="icon-triangle-right"></span><span class="icon-controller-next"></span>
+                                </span>
+                                <span class="pull-right">
+                                    Displaying 1-10 of 30 items
+                                </span>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+<xmp><div class="table-responsive">
+    <table class="app-table table table-striped table-bordered table-hover">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td class="app-table-read-only">Eve</td>
+            <td>Jackson<button class="app-button-secondary app-button-small app-icon-only-button pull-right"><span class="icon-dots-three-horizontal"></span></button></td>
+            <td><span class="icon-reorder"></span>94</td>
+            <td class="app-table-status app-table-status-queue"><span class="icon-clock"></span>In Queue</td>
+            <td class="app-action-icons app-icons-left"><span class="icon-edit"></span><span class="icon-copy"></span><span class="icon-sync"></span><span class="icon-delete"></span></td>
+        </tr>
+        <tr>
+            <td class="app-table-read-only">Jason</td>
+            <td>Jackson<button class="app-button-secondary app-button-small app-icon-only-button pull-right"><span class="icon-dots-three-horizontal"></span></td>
+            <td><span class="icon-reorder"></span>66</td>
+            <td class="app-table-status app-table-status-processing"><span class="icon-processing"></span>Processing</td>
+            <td class="app-action-icons app-icons-left"><span class="icon-edit"></span><span class="icon-copy"></span><span class="icon-sync"></span><span class="icon-delete"></span></td>
+        </tr>
+        <tr>
+            <td class="app-table-read-only">Sandra</td>
+            <td>Smith<button class="app-button-secondary app-button-small app-icon-only-button pull-right"><span class="icon-dots-three-horizontal"></span></td>
+            <td><span class="icon-reorder"></span>12</td>
+            <td class="app-table-status app-table-status-complete"><span class="icon-checkmark"></span>Complete</td>
+            <td class="app-action-icons app-icons-left"><span class="icon-edit"></span><span class="icon-copy"></span><span class="icon-sync"></span><span class="icon-delete"></span></td>
+        </tr>
+        <tr>
+            <td class="app-table-read-only">Jesse</td>
+            <td>Smith<button class="app-button-secondary app-button-small app-icon-only-button pull-right"><span class="icon-dots-three-horizontal"></span></td>
+            <td><span class="icon-reorder"></span>44</td>
+            <td class="app-table-status app-table-status-complete"><span class="icon-checkmark"></span>Complete</td>
+            <td class="app-action-icons app-icons-left"><span class="icon-edit"></span><span class="icon-copy"></span><span class="icon-sync"></span><span class="icon-delete"></span></td>
+        </tr>
+        <tr>
+            <td class="app-table-read-only">Jessica</td>
+            <td>Adam<button class="app-button-secondary app-button-small app-icon-only-button pull-right"><span class="icon-dots-three-horizontal"></span></td>
+            <td><span class="icon-reorder"></span>33</td>
+            <td class="app-table-status app-table-status-processing"><span class="icon-processing"></span>Processing</td>
+            <td class="app-action-icons app-icons-left"><span class="icon-edit"></span><span class="icon-copy"></span><span class="icon-sync"></span><span class="icon-delete"></span></td>
+        </tr>
+        <tr>
+            <td class="app-table-read-only">Angela</td>
+            <td>McGee<button class="app-button-secondary app-button-small app-icon-only-button pull-right"><span class="icon-dots-three-horizontal"></span></td>
+            <td><span class="icon-reorder"></span>45</td>
+            <td class="app-table-status app-table-status-failed"><span class="icon-warning"></span>Failed</td>
+            <td class="app-action-icons app-icons-left"><span class="icon-edit"></span><span class="icon-copy"></span><span class="icon-sync"></span><span class="icon-delete"></span></td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="100%" class="app-table-pagination clearfix">
+                    <span class="app-table-pagination-controls pull-left">
+                        <span class="icon-controller-jump-to-start"></span><span class="icon-triangle-left"></span><button class="app-button-secondary app-button-small app-button-active">1</button><button class="app-button-secondary app-button-small">2</button><span class="icon-triangle-right"></span><span class="icon-controller-next"></span>
+                    </span>
+                    <span class="pull-right">
+                        Displaying 1-10 of 30 items
+                    </span>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div></xmp>
+
+            <br>
+            <h2 id="test-forms" class="text-uppercase">Forms</h2>
+            <p>*Forms are built off of Bootstraps Forms. See <a href="http://getbootstrap.com/css/?#forms" target="_blank">http://getbootstrap.com/css/?#forms</a> for more information. </p>
+            <hr>
+
+            <form class="app-form">
+                <h3 class="app-form-heading">Form Heading</h3>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address:</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                </div>
+                <div class="form-group app-form-error">
+                    <label for="exampleInputPassword1">Password:</label>
+                    <input type="password" class="form-control app-form-input-error" id="exampleInputPassword1" placeholder="Password"><span class="icon-warning2"></span>
+                </div>
+                <div class="form-group disabled">
+                    <label for="exampleInputEmail1">Email address 2:</label>
+                    <input disabled type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                </div>
+                <div class="form-group disabled">
+                    <label for="exampleInputEmail1">Country:</label>
+                    <select disabled class="form-control">
+                        <option>Canada</option>
+                        <option>US</option>
+                        <option>Germany</option>
+                        <option>China</option>
+                        <option>Japan</option>
+                    </select>
+                </div>
+                <div class="form-group app-form-error">
+                    <label for="exampleInputEmail1">Sex:</label>
+                    <select class="form-control app-form-input-error">
+                        <option>Select One</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                    <span class="icon-warning2"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="app-button-primary app-button-small">Submit</button>
+                </div>
+            </form>
+
+<xmp><form class="app-form">
+    <h3 class="app-form-heading">Form Heading</h3>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address:</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+    </div>
+    <div class="form-group app-form-error">
+        <label for="exampleInputPassword1">Password:</label>
+        <input type="password" class="form-control app-form-input-error" id="exampleInputPassword1" placeholder="Password"><span class="icon-warning2"></span>
+    </div>
+    <div class="form-group disabled">
+        <label for="exampleInputEmail1">Email address 2:</label>
+        <input disabled type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+    </div>
+    <div class="form-group disabled">
+        <label for="exampleInputEmail1">Country:</label>
+        <select disabled class="form-control">
+            <option>Canada</option>
+            <option>US</option>
+            <option>Germany</option>
+            <option>China</option>
+            <option>Japan</option>
+        </select>
+    </div>
+    <div class="form-group app-form-error">
+        <label for="exampleInputEmail1">Sex:</label>
+        <select class="form-control app-form-input-error">
+            <option>Select One</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+        <span class="icon-warning2"></span>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="app-button-primary app-button-small">Submit</button>
+    </div>
+</form></xmp>
+
+            <form class="app-form app-grid-form">
+                <h3 class="app-form-heading">Grid Form - for customizing form group widths</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>Email address:</label>
+                            <input type="email" class="form-control" placeholder="Enter email">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>Password:</label>
+                            <input type="password" class="form-control app-form-input-error" placeholder="Password">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Email address 2:</label>
+                            <input disabled type="email" class="form-control" placeholder="Enter email">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Country:</label>
+                            <select class="form-control">
+                                <option>Canada</option>
+                                <option>US</option>
+                                <option>Germany</option>
+                                <option>China</option>
+                                <option>Japan</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Sex:</label>
+                            <select class="form-control app-form-input-error">
+                                <option>Select One</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+<xmp><form class="app-form app-grid-form">
+    <h3 class="app-form-heading">Grid Form - for customizing form group widths</h3>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Email address:</label>
+                <input type="email" class="form-control" placeholder="Enter email">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="password" class="form-control app-form-input-error" placeholder="Password">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-5">
+            <div class="form-group">
+                <label>Email address 2:</label>
+                <input disabled type="email" class="form-control" placeholder="Enter email">
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Country:</label>
+                <select class="form-control">
+                    <option>Canada</option>
+                    <option>US</option>
+                    <option>Germany</option>
+                    <option>China</option>
+                    <option>Japan</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Sex:</label>
+                <select class="form-control app-form-input-error">
+                    <option>Select One</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</form></xmp>
+
+            <form class="app-form form-inline">
+                <h3 class="app-form-heading">Inline Form</h3>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address:</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                </div>
+                <div class="form-group app-form-error">
+                    <label for="exampleInputPassword1">Password:</label>
+                    <input type="password" class="form-control app-form-input-error" id="exampleInputPassword1" placeholder="Password"><span class="icon-warning2"></span>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Country:</label>
+                    <select class="form-control">
+                        <option>Canada</option>
+                        <option>US</option>
+                        <option>Germany</option>
+                        <option>China</option>
+                        <option>Japan</option>
+                    </select>
+                </div>
+                <div class="form-group app-form-error">
+                    <label for="exampleInputEmail1">Sex:</label>
+                    <select class="form-control app-form-input-error">
+                        <option>Select One</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                    <span class="icon-warning2"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="app-button-primary app-button-small">Submit</button>
+                </div>
+            </form>
+
+<xmp><form class="app-form form-inline">
+    <h3 class="app-form-heading">Inline Form</h3>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address:</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+    </div>
+    <div class="form-group app-form-error">
+        <label for="exampleInputPassword1">Password:</label>
+        <input type="password" class="form-control app-form-input-error" id="exampleInputPassword1" placeholder="Password"><span class="icon-warning2"></span>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Country:</label>
+        <select class="form-control">
+            <option>Canada</option>
+            <option>US</option>
+            <option>Germany</option>
+            <option>China</option>
+            <option>Japan</option>
+        </select>
+    </div>
+    <div class="form-group app-form-error">
+        <label for="exampleInputEmail1">Sex:</label>
+        <select class="form-control app-form-input-error">
+            <option>Select One</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+        <span class="icon-warning2"></span>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="app-button-primary app-button-small">Submit</button>
+    </div>
+</form></xmp>
+
+            <h3 class="app-form-heading">Checkboxes</h3>
+            <div class="app-form-label">Label:</div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Option one
+                </label>
+            </div>
+            <div class="checkbox disabled">
+                <label>
+                    <input type="checkbox" value="" disabled>
+                    Option two is disabled
+                </label>
+            </div>
+
+<xmp><h3 class="app-form-heading">Checkboxes</h3>
+<div class="app-form-label">Label:</div>
+<div class="checkbox">
+    <label>
+        <input type="checkbox" value="">
+        Option one
+    </label>
+</div>
+<div class="checkbox disabled">
+    <label>
+        <input type="checkbox" value="" disabled>
+        Option two is disabled
+    </label>
+</div></xmp>
+
+            <h3 class="app-form-heading">Radio Buttons</h3>
+            <div class="app-form-label">Label:</div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Option one
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Option two
+                </label>
+            </div>
+            <div class="radio disabled">
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                    Option three is disabled
+                </label>
+            </div>
+
+<xmp><h3 class="app-form-heading">Radio Buttons</h3>
+<div class="app-form-label">Label:</div>
+<div class="radio">
+    <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        Option one
+    </label>
+</div>
+<div class="radio">
+    <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+        Option two
+    </label>
+</div>
+<div class="radio disabled">
+    <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+        Option three is disabled
+    </label>
+</div></xmp>
+
+
+            <h3 class="app-form-heading">Checkboxes - Inline</h3>
+            <div class="app-form-label">Label:</div>
+            <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox1" value="option1">Option 1
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox2" value="option2">Option 2
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox3" value="option3">Option 3
+            </label>
+
+<xmp><h3 class="app-form-heading">Checkboxes - Inline</h3>
+<div class="app-form-label">Label:</div>
+<label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox1" value="option1">Option 1
+</label>
+<label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox2" value="option2">Option 2
+</label>
+<label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox3" value="option3">Option 3
+</label></xmp>
+
+            <h3 class="app-form-heading">Radio Buttons - Inline</h3>
+            <div class="app-form-label">Label:</div>
+            <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Option 1
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">Option 2
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">Option 3
+            </label>
+
+<xmp><h3 class="app-form-heading">Radio Buttons - Inline</h3>
+<div class="app-form-label">Label:</div>
+<label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Option 1
+</label>
+<label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">Option 2
+</label>
+<label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">Option 3
+</label></xmp>
+
+            <br>
+            <h2 id="test-datepicker" class="text-uppercase">Date Picker</h2>
+            <p>*Datepicker built from UI Bootstrap. See <a href="http://angular-ui.github.io/bootstrap/#/datepicker" target="_blank">http://angular-ui.github.io/bootstrap/#/datepicker</a> for more information. (dependencies: AngularJS and Bootstrap CSS)</p>
+            <p>*Custom templates built by Autodata - \global-css\js\ui-bootstrap-custom-tpls-0.12.1.js</p>
+
+            <hr>
+
+            <div ng-controller="DatepickerDemoCtrl">   <!-- Angular JS - date picker controller -->
+
+                <h3 class="text-uppercase">Basic Date Picker</h3>
+
+                <h4>Inline:</h4>
+
+                <!-- Inline Date Picker -->
+                <div class="app-date-picker-inline">
+                    <datepicker ng-model="dt" min-date="minDate" show-weeks="true"></datepicker>
+                </div>
+
+                <p>Selected date is: <strong>{{dt | date:'fullDate' }}</strong></p>
+                <br>
+
+                <div class="app-form">
+                    <!-- Basic Popup Date Picker -->
+                    <div class="form-group">
+                        <label>Popup:</label>
+                        <div class="app-form-input-button">
+                            <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                            <button type="button" class="app-button-secondary app-button-small app-icon-only-button app-button-attached" ng-click="open($event)"><span class="icon-calendar"></span></button>
+                        </div>
+                    </div>
+                    <!-- Change Date Picker Format -->
+                    <div class="form-group">
+                        <label>Format:</label>
+                        <select class="form-control" ng-model="format" ng-options="f for f in formats"><option></option></select>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Change Date -->
+                <button class="app-button-secondary app-button-small" ng-click="today()">Today</button>
+                <button class="app-button-secondary app-button-small" ng-click="dt='2009-08-24'">2009-08-24</button>
+                <button class="app-button-secondary app-button-small" ng-click="clear()">Clear</button>
+                <button class="app-button-secondary app-button-small" ng-click="toggleMin()">Min date</button>
+
+<xmp ng-non-bindable><h4>Inline:</h4>
+
+<!-- Inline Date Picker -->
+<div class="app-date-picker-inline">
+    <datepicker ng-model="dt" min-date="minDate" show-weeks="true"></datepicker>
+</div>
+
+<p>Selected date is: <strong>{{dt | date:'fullDate' }}</strong></p>
+<br>
+
+<div class="app-form">
+    <!-- Basic Popup Date Picker -->
+    <div class="form-group">
+        <label>Popup:</label>
+        <div class="app-form-input-button">
+            <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+            <button type="button" class="app-button-secondary app-button-small app-icon-only-button app-button-attached" ng-click="open($event)"><span class="icon-calendar"></span></button>
+        </div>
+    </div>
+    <!-- Change Date Picker Format -->
+    <div class="form-group">
+        <label>Format:</label>
+        <select class="form-control" ng-model="format" ng-options="f for f in formats"><option></option></select>
+    </div>
+</div>
+<br>
+
+<!-- Change Date -->
+<button class="app-button-secondary app-button-small" ng-click="today()">Today</button>
+<button class="app-button-secondary app-button-small" ng-click="dt='2009-08-24'">2009-08-24</button>
+<button class="app-button-secondary app-button-small" ng-click="clear()">Clear</button>
+<button class="app-button-secondary app-button-small" ng-click="toggleMin()">Min date</button></xmp>
+
+                <!-- Inline Date Picker HTML example (no functionality) -->
+                <h3 class="text-uppercase">Inline Form - HTML Date Picker Popup (no functionality included)</h3>
+                <br>
+                <div class="app-form form-inline">
+                    <div class="form-group">
+                        <label>Popup:</label>
+                        <div class="app-form-input-button">
+                            <input type="text" class="form-control" />
+                            <button type="button" class="app-button-secondary app-button-small app-icon-only-button app-button-attached"><span class="icon-calendar"></span></button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Popup:</label>
+                        <div class="app-form-input-button">
+                            <input type="text" class="form-control" />
+                            <button type="button" class="app-button-secondary app-button-small app-icon-only-button app-button-attached"><span class="icon-calendar"></span></button>
+                        </div>
+                    </div>
+                </div>
+
+<xmp><div class="app-form form-inline">
+    <div class="form-group">
+        <label>Popup:</label>
+        <div class="app-form-input-button">
+            <input type="text" class="form-control" />
+            <button type="button" class="app-button-secondary app-button-small app-icon-only-button app-button-attached"><span class="icon-calendar"></span></button>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Popup:</label>
+        <div class="app-form-input-button">
+            <input type="text" class="form-control" />
+            <button type="button" class="app-button-secondary app-button-small app-icon-only-button app-button-attached"><span class="icon-calendar"></span></button>
+        </div>
+    </div>
+</div></xmp>
+
+            </div>    <!-- End of date picker controller -->
+
+            <br>
+            <h2 id="test-pagination" class="text-uppercase">Pagination</h2>
+            <hr>
+
+            <div ng-controller="PaginationDemoCtrl">
+                <h3 class="text-uppercase">Default</h3>
+                <pagination total-items="totalItems" ng-model="currentPage" ng-change="pageChanged()"></pagination>
+                <br>
+                <pagination boundary-links="true" total-items="totalItems" ng-model="currentPage"></pagination>
+                <br>
+                <pagination direction-links="false" boundary-links="true" total-items="totalItems" ng-model="currentPage"></pagination>
+                <br>
+                <pagination direction-links="false" total-items="totalItems" ng-model="currentPage" num-pages="smallnumPages"></pagination>
+                <br>
+                <pre>The selected page no: {{currentPage}}</pre>
+                <button class="app-button-primary" ng-click="setPage(3)">Set current page to: 3</button>
+
+<xmp ng-non-bindable><pagination total-items="totalItems" ng-model="currentPage" ng-change="pageChanged()"></pagination>
+<br>
+<pagination boundary-links="true" total-items="totalItems" ng-model="currentPage"></pagination>
+<br>
+<pagination direction-links="false" boundary-links="true" total-items="totalItems" ng-model="currentPage"></pagination>
+<br>
+<pagination direction-links="false" total-items="totalItems" ng-model="currentPage" num-pages="smallnumPages"></pagination>
+<br>
+<pre>The selected page no: {{currentPage}}</pre>
+<button class="app-button-primary" ng-click="setPage(3)">Set current page to: 3</button></xmp>
+
+                <h3 class="text-uppercase">Pager</h3>
+                <pager total-items="totalItems" ng-model="currentPage"></pager>
+
+<xmp ng-non-bindable><pager total-items="totalItems" ng-model="currentPage"></pager></xmp>
+
+
+                <h3 class="text-uppercase">Limit the maximum visible buttons</h3>
+                <br>
+                <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" boundary-links="true"></pagination>
+                <br>
+                <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" boundary-links="true" rotate="false" num-pages="numPages"></pagination>
+                <br>
+                <pre>Page: {{bigCurrentPage}} / {{numPages}}</pre>
+
+<xmp ng-non-bindable> <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" boundary-links="true"></pagination>
+<br>
+<pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" boundary-links="true" rotate="false" num-pages="numPages"></pagination>
+<br>
+<pre>Page: {{bigCurrentPage}} / {{numPages}}</pre></xmp>
+
+
+
+            </div>    <!-- End of PaginationDemoCtrl-->
+
+
+            <br>
+            <h2 id="test-notes" class="text-uppercase">Notes</h2>
+            <hr>
+            <p>All CSS classes created by Autodata that are in Global CSS (variables.less, global.less and layout.less) have the prefix 'app-' (with the exception of icons which have the prefix 'icon-', icons.less). Styles specific to this style guide site have the prefix 'test-' (styles.less). All other CSS classes belong to Bootstrap, see <a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com/</a> for more information.</p>
+
+        </div>
+      </div>
+
+
+    <!-- jQuery -->
+    <script src="libraries/jquery/jquery-1.11.2.js"></script>
+
+    <!-- Bootstrap JS Files -->
+    <script src="libraries/bootstrap-3.3.4-dist/js/bootstrap.js"></script>
+
+    <!-- Angular JS File -->
+    <script src="libraries/angular/angular-1.2.16.js"></script>
+
+    <!-- UI Bootstrap - date picker - http://angular-ui.github.io/bootstrap/#/datepicker -  includes custom templates created by autodata -->
+    <script src="libraries/UI-Bootstrap/ui-bootstrap-0.12.1.js"></script>
+    <script src="libraries/UI-Bootstrap/templates.js"></script>
+
+    <!-- Angular JS files -->
+    <script src="js/angularApp.js"></script>
+    <script src="js/controllers/pagination.js"></script>
+    <script src="js/controllers/datepicker.js"></script>
+    <script src="js/controllers/accordion.js"></script>
+
+    <!-- Main JS File -->
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

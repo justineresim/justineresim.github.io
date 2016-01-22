@@ -1,0 +1,101 @@
+/*
+Styles.less  -- Nissan Infinifi Pricing - Styles specific to this testing global page only
+
+=============================================================================================*\
+  WARNING!
+  This CSS file is a LESS generated file. Do not under any circumstance hand edit this file, any updates
+  has to follow the process in place.
+\*=============================================================================================*/
+
+.test-body-container {
+    padding: 80px 0 40px;
+}
+.test-header-container {
+    background-color: #2b2627;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.test-header-container .test-header {
+    position: relative;
+}
+.test-header-container .test-header h1 {
+    margin: 0;
+    color: #fff;
+}
+.test-header-container .test-header h1 #test-menu-control {
+    cursor: pointer;
+}
+.app-buttons-toggle {
+    max-width: 220px;
+}
+#test-navigation-list {
+    line-height: 25px;
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    position: absolute;
+    right: 0;
+    margin: 20px 15px 0 0;
+    display: none;
+}
+@media (max-width: 767px) {
+    #test-navigation-list {
+        width: 100%;
+        margin: 22px 0 0 0;
+    }
+}
+#test-navigation-list li {
+    padding: 0;
+    margin: 0;
+}
+#test-navigation-list li a {
+    padding: 7px 15px;
+    display: block;
+    border-top: 1px solid #ccc;
+    width: 180px;
+}
+@media (max-width: 767px) {
+    #test-navigation-list li a {
+        width: 100%;
+    }
+}
+#test-navigation-list li a:hover {
+    color: #fff;
+    background-color: #581c6e;
+    text-decoration: none;
+}
+xmp {
+    max-width: 100%;
+    overflow-x: auto;
+    border: 1px solid #EAEAEA;
+    padding: 20px 20px 25px;
+    background-color: #FAFAFA;
+    border-radius: 5px;
+    margin: 15px 0 25px;
+    display: block;
+}
+.test-scroll-top {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(85, 92, 101, 0.8);
+    z-index: 10;
+}
+@media (min-width: 768px) {
+    .test-scroll-top {
+        bottom: 10px;
+        right: 10px;
+    }
+}
+.test-scroll-top .icon-keyboard-arrow-up {
+    font-size: 30px;
+    color: #ffffff;
+}
+.test-scroll-top .icon-keyboard-arrow-up:hover {
+    color: #2b2627;
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="utf-8">
+    <title>Infinity Pricing Tool - Global Style Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Infinity Pricing Tool, Global Style Guide">
+    <meta name="author" content="Justine Lileikis, Autodata Solutions">
+
+    <!-- Global CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Test Sheet Specific CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-app="angularApp">
+
+
+<div id="app-container">
+
+    <div class="app-header-container">
+        <div class="app-header-logo pull-left">
+            <img class="app-large-logo" src="images/img-hdr-Infiniti-logo.png"/>
+            <img class="app-small-logo" src="images/logo.png"/>
+        </div>
+        <div class="app-header">
+            <div class="app-heading">Infinity Pricing Tool</div>
+            <div class="app-username">Welcome John Smith<span class="icon-keyboard-arrow-down"></span></div>
+            <div class="app-user-menu">
+                <a>Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-navigation-container">
+        <div class="app-menu-heading">
+            <h3 class="text-uppercase"><span class="icon-keyboard-arrow-left"></span><span class="app-menu-heading-text">Menu</span></h3>
+        </div>
+        <ul id="app-navigation-list">
+            <li><span class="icon-car"></span><span class="app-menu-item">Component Pricing</span><span class="icon-keyboard-arrow-right"></span></li>
+            <li><span class="icon-calculator"></span><span class="app-menu-item">Price Set</span><span class="icon-keyboard-arrow-right"></span></li>
+            <li><span class="icon-settings"></span><span class="app-menu-item">Configuration</span><span class="icon-keyboard-arrow-right"></span>
+                <ul class="app-navigation-second-list">
+                    <li><span class="app-menu-item-second">Model Setup</span></li>
+                    <li><span class="app-menu-item-second">Exchange Rates</span></li>
+                </ul>
+            </li>
+            <li><span class="icon-file"></span><span class="app-menu-item">IP Sheets</span><span class="icon-keyboard-arrow-right"></span>
+                <ul class="app-navigation-second-list">
+                    <li><span class="app-menu-item-second">Generate IP Sheets</span></li>
+                    <li><span class="app-menu-item-second">IP Sheet Templates</span></li>
+                </ul>
+            </li>
+            <li class="app-page-active"><span class="icon-stats-dots"></span><span class="app-menu-item">Metrics</span><span class="icon-keyboard-arrow-right"></span></li>
+            <li><span class="icon-external-link"></span><span class="app-menu-item">Reporting</span><span class="icon-keyboard-arrow-right"></span></li>
+        </ul>
+    </div>
+
+    <div class="app-body-container">
+        <div class="app-body">
+            <div class="app-page-title">
+                <h1>Metrics</h1>
+            </div>
+            <div ng-controller='MetricsController' class="app-body-inner">
+
+
+                <div class="app-primary-container">
+                    <div class="app-container-body">
+
+                        <form class="app-form">
+                            <div class="form-group">
+                                <label for="metrics-event">Event:</label>
+                                <select id="metrics-event" class="form-control">
+                                    <option ng-repeat="i in events" id="{{i.id}}">{{i.desc}}</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="metrics-source">Source System:</label>
+                                <select id="metrics-source" class="form-control">
+                                    <option ng-repeat="items in source" id="{{items.id}}">{{items.desc}}</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Date range from:</label>
+                                <div class="app-form-input-button">
+                                    <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="dateFrom" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                    <button type="button" class="app-button-secondary app-button-small app-icon-only-button app-button-attached" ng-click="open($event, 'dateFrom')"><span class="icon-calendar"></span></button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>To:</label>
+                                <div class="app-form-input-button">
+                                    <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt2" is-open="dateTo" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                    <button type="button" class="app-button-secondary app-button-small app-icon-only-button app-button-attached" ng-click="open($event, 'dateTo')"><span class="icon-calendar"></span></button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button ng-click="metricsFilters=true" type="submit" class="app-button-primary app-button-small">Go</button>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+
+
+                <div class="app-primary-container" ng-show="metricsFilters">
+                    <div class="app-container-body">
+
+                        <form class="app-form">
+                            <div ng-repeat="i in filters" id="{{i.id}}" class="form-group">
+                                <label for="metrics-model">{{i.desc}}</label>
+                                <select id="metrics-model" class="form-control">
+                                    <option ng-repeat="filterDesc in i.types" id="{{filterDesc.id}}">{{filterDesc.desc}}</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button ng-click="metricsResults = true" type="submit" class="app-button-primary app-button-small">Filter Results</button>
+                            </div>
+                        </form>
+
+                        <hr>
+
+                        <div ng-show="metricsResults" class="table-responsive">
+                            <table class="app-table table table-bordered table-hover">
+                                <tr>
+                                    <th>Date/Time</th>
+                                    <th>User</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>8-Jan-2015 11:00AM</td>
+                                    <td>{userID}</td>
+                                    <td>{componentName1}, New Price: {amount}, Previous Price: {amount}</td>
+                                </tr>
+                                <tr>
+                                    <td class="app-table-empty"></td>
+                                    <td class="app-table-empty"></td>
+                                    <td>{componentName2}, New Price: {amount}, Previous Price: {amount}</td>
+                                </tr>
+                                <tr>
+                                    <td class="app-table-empty"></td>
+                                    <td class="app-table-empty"></td>
+                                    <td>{componentName3}, New Price: {amount}, Previous Price: {amount}</td>
+                                </tr>
+                                <tr>
+                                    <td class="app-table-empty"></td>
+                                    <td class="app-table-empty"></td>
+                                    <td>{componentName4}, New Price: {amount}, Previous Price: {amount}</td>
+                                </tr>
+                                <tr>
+                                    <td>15-Jan-2015 09:00AM</td>
+                                    <td>{userID}</td>
+                                    <td>{componentName1}, New Price: {amount}, Previous Price: {amount}</td>
+                                </tr>
+                                <tr>
+                                    <td class="app-table-empty"></td>
+                                    <td class="app-table-empty"></td>
+                                    <td>{componentName2}, New Price: {amount}, Previous Price: {amount}</td>
+                                </tr>
+                                <tr>
+                                    <td class="app-table-empty"></td>
+                                    <td class="app-table-empty"></td>
+                                    <td>{componentName3}, New Price: {amount}, Previous Price: {amount}</td>
+                                </tr>
+                                <tr>
+                                    <td class="app-table-empty"></td>
+                                    <td class="app-table-empty"></td>
+                                    <td>{componentName4}, New Price: {amount}, Previous Price: {amount}</td>
+                                </tr>
+                                <tr>
+                                    <td>23-Feb-2015 8:00AM</td>
+                                    <td>{userID}</td>
+                                    <td>{componentName1}, New Price: {amount}, Previous Price: {amount}</td>
+                                </tr>
+                                <tr>
+                                    <td class="app-table-empty"></td>
+                                    <td class="app-table-empty"></td>
+                                    <td>{componentName2}, New Price: {amount}, Previous Price: {amount}</td>
+                                </tr>
+                                <tr>
+                                    <td class="app-table-empty"></td>
+                                    <td class="app-table-empty"></td>
+                                    <td>{componentName3}, New Price: {amount}, Previous Price: {amount}</td>
+                                </tr>
+                                <tr>
+                                    <td class="app-table-empty"></td>
+                                    <td class="app-table-empty"></td>
+                                    <td>{componentName4}, New Price: {amount}, Previous Price: {amount}</td>
+                                </tr>
+                                <tfoot>
+                                <tr>
+                                    <td colspan="100%" class="app-table-pagination clearfix">
+                                         <span class="pull-left">
+                                            <pagination boundary-links="true" total-items="totalItems" ng-model="currentPage" items-per-page="perPage" num-pages="numPages"></pagination>
+                                        </span>
+                                        <span class="pull-right">
+                                            Page: {{currentPage}} / {{numPages}}
+                                        </span>
+                                    </td>
+                                </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="app-footer">
+        <div class="app-footer-text">
+            @ 2015 Infinity
+        </div>
+    </div>
+
+</div>
+
+      <!-- jQuery -->
+    <script src="libraries/jquery/jquery-1.11.2.js"></script>
+
+    <!-- Bootstrap JS Files -->
+    <script src="libraries/bootstrap-3.3.4-dist/js/bootstrap.js"></script>
+
+    <!-- Angular JS File -->
+    <script src="libraries/angular/angular-1.2.16.js"></script>
+
+    <!-- UI Bootstrap - date picker - http://angular-ui.github.io/bootstrap/#/datepicker -  includes custom templates created by autodata -->
+    <script src="libraries/UI-Bootstrap/ui-bootstrap-0.12.1.js"></script>
+    <script src="libraries/UI-Bootstrap/templates.js"></script>
+
+    <!-- Angular JS files -->
+    <script src="js/angularApp.js"></script>
+    <script src="js/controllers/navigation.js"></script>
+    <script src="js/controllers/metrics.js"></script>
+
+    <!-- Main JS File -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

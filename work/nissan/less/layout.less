@@ -1,0 +1,223 @@
+//
+// Layout.less  -- Nissan Infinifi Pricing - main/global layout of app
+// --------------------------------------------------
+
+/*=============================================================================================*\
+  WARNING!
+  This CSS file is a LESS generated file. Do not under any circumstance hand edit this file, any updates
+  has to follow the process in place.
+\*=============================================================================================*/
+
+// General styles
+
+html, body, #app-container{
+  height: 100%;
+}
+
+//------------Layout Elements------------
+
+.app-header-container{
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  .app-header-logo{
+    background-color: @header-logo-background-color;
+    text-align: center;
+    @media (max-width: @screen-xs-max){
+      margin-right: 10px;
+    }
+    .app-large-logo{
+      padding: 17px 60px 20px 60px;
+      @media (max-width: @screen-xs-max){
+        display: none;
+      }
+    }
+    .app-small-logo{
+      display: none;
+      width: 76px;
+      height: auto;
+      padding: 12.5px 10px;
+      @media (max-width: @screen-xs-max){
+        display: block;
+      }
+    }
+  }
+  .app-header{
+    background-color: @header-background-color;
+    padding: 30px 20px 20px 20px;
+    @media (min-width: @screen-sm){
+      height: 78px;
+    }
+    @media (max-width: @screen-xs-max){
+      padding: 15px;
+      text-align: right;
+    }
+    .app-heading{
+      color: @header-heading-color;
+      font-family: "InfinitiMetaPro-Bold";
+      font-size: 14px;
+      text-transform: uppercase;
+      padding-left: 10px;
+      float: none;
+      @media (min-width: @screen-sm){
+        padding-left: 20px;
+        display: inline-block;
+        font-size: 18px;
+        float: left;
+      }
+    }
+    .app-username{
+      float: none;
+      cursor: pointer;
+      color: @header-username-color;
+      @media (min-width: @screen-sm){
+        display: inline-block;
+        float: right;
+      }
+      [class^="icon-"], [class*=" icon-"] {
+        color:@header-user-menu-icon-color;
+        margin: 0 8px 0 5px;
+        font-size: 16px;
+      }
+    }
+    .app-user-menu{
+      text-align: left;
+      position: fixed;
+      right: 20px;
+      top: 60px;
+      width: 85px;
+      background-color: @header-user-menu-bg-color;
+      padding: 10px;
+      -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+      box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+      display: none;
+      @media (max-width: @screen-xs-max){
+        right: 15px;
+      }
+      &:after{
+        bottom: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        border-bottom-color: @header-user-menu-bg-color;
+        border-width: 7px;
+        right: 10px;
+      }
+    }
+  }
+}
+
+.app-navigation-container{
+  position: fixed;
+  margin-top: 78px;
+  z-index: 5;
+  background-color: @nav-bg-color;
+  width: 259px;
+  padding:  0 20px;
+  @media (max-width: @screen-xs-max){
+    margin-top: 65px;
+  }
+  .app-menu-heading{
+    border-bottom: 1px solid @grey2;
+    cursor: pointer;
+    h3{
+      .transition;
+      &:hover, &:hover [class^="icon-"], [class*=" icon-"]{
+        color: @nav-hover-color;
+      }
+    }
+    [class^="icon-"], [class*=" icon-"] {
+      .transition;
+      font-size: 16px;
+      color: @accent-light-grey;
+      margin: 0 10px 0 12px;
+    }
+  }
+
+  #app-navigation-list{
+    list-style: none;
+    font-weight: bold;
+    padding: 10px 0 0 0;
+    color: @nav-color;
+    li{
+      cursor: pointer;
+      padding: 8px;
+      .transition;
+      border: 1px solid @nav-bg-color;
+      [class^="icon-"], [class*=" icon-"] {
+        .transition;
+        font-size: 16px;
+        color: @nav-icon-color;
+        margin-right: 10px;
+      }
+      .icon-keyboard-arrow-right, .icon-keyboard-arrow-down{
+        color: @nav-arrow-color;
+        float: right;
+        margin-right: 0;
+      }
+      &:hover, &:hover [class^="icon-"], [class*=" icon-"] {
+        color: @nav-hover-color;
+      }
+      &:hover .icon-keyboard-arrow-right, &:hover .icon-keyboard-arrow-down{
+        color: @nav-arrow-color;
+      }
+     &.app-page-active{
+       border: @nav-active-border;
+       border-radius: 5px;
+       color: @nav-active-color;
+       [class^="icon-"], [class*=" icon-"] {
+         color: @nav-active-color;
+       }
+       .icon-keyboard-arrow-right, .icon-keyboard-arrow-down{
+         color: @nav-arrow-color;
+       }
+     }
+    }
+    ul{
+      list-style: none;
+     // display: none;
+      padding: 10px 0 0 30px;
+      color: @nav-color;
+      li.app-second-page-active{
+        color: @nav-active-color-2;
+      }
+    }
+  }
+}
+
+.app-body-container{
+  padding: 78px 0 0 259px;
+  height: 100%;
+  @media (max-width: @screen-xs-max){
+    padding: 65px 0 0 259px;
+  }
+  .app-body{
+    min-height: 100%;
+    background-color: @body-background-color;
+    padding: 10px 20px 60px;
+    border-left: 1px solid @grey2;
+    .app-page-title{
+      border-bottom: 1px solid @grey2;
+      margin-bottom: 10px;
+      h1{
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+#app-footer{
+  background-color: @footer-background-color;
+  color: @footer-color;
+  padding: 10px 30px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  .app-footer-text{
+    font-size: 11px
+  }
+}
+
+

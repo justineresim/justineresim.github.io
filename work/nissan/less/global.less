@@ -1,0 +1,780 @@
+//
+// Global.less  -- Nissan Infinifi Pricing Global Styles
+// --------------------------------------------------
+
+/*=============================================================================================*\
+  WARNING!
+  This CSS file is a LESS generated file. Do not under any circumstance hand edit this file, any updates
+  has to follow the process in place.
+\*=============================================================================================*/
+
+// ----- General Styles
+
+body {
+  font-family: "InfinitiMetaPro-Normal", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  font-size: 12px;
+  line-height: 1.5;
+  line-height: 16px;
+  color: @accent-dark-grey;
+}
+
+strong {
+  font-family: "InfinitiMetaPro-Bold", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+em {
+  font-family: "InfinitiMetaPro-NormalItalic", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+em strong, strong em {
+  font-family: "InfinitiMetaPro-BoldItalic", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+//helper classes
+
+.app-action-icons{             //when you want to use action icons
+  [class^="icon-"], [class*=" icon-"] {
+    font-size: 16px;
+    color: @accent-light-grey;
+    cursor: pointer;
+    .transition;
+    &:hover{
+      color:@accent-dark-grey;
+    }
+  }
+  .icon-delete:hover{
+    color: @accent-red;
+  }
+  &.app-icons-left{
+    [class^="icon-"], [class*=" icon-"] {
+      margin-right: 10px;
+    }
+  }
+  &.app-icons-right{
+    [class^="icon-"], [class*=" icon-"] {
+      margin-left: 10px;
+    }
+  }
+}
+
+:focus {
+  outline: none !important;
+}
+
+//headings
+
+h1, h2, h3, h4{
+  color: @accent-dark-grey;
+  font-family: "InfinitiMetaPro-Bold"
+}
+
+h1{
+  font-size: 18px;
+}
+
+h2{
+  font-size: 16px;
+}
+
+h3{
+  font-size: 14px;
+}
+
+h4{
+  font-size: 12px;
+}
+
+//links
+
+a{
+  color: @primary-purple;
+  text-decoration: none;
+  cursor: pointer;
+  .transition;
+}
+
+a:hover,
+a:focus {
+  color: @primary-purple;
+  text-decoration: underline;
+  .transition;
+}
+
+a:focus {
+  outline: none;
+}
+
+
+// -------- Buttons
+
+button{
+  .transition;
+  &:active{
+    border:none;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+
+//primary button
+
+button.app-button-primary{
+  background-color: @primary-purple;
+  line-height: 38px;
+  padding: 0 11px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: @primary-white;
+  text-align: center;
+  border: 1px solid @primary-purple;
+  &:hover{
+    background-color: @dark-grey;
+    border: 1px solid @dark-grey;
+  }
+  &:active, &.app-button-active{
+    background-color: @light-purple;
+    border: 1px solid @light-purple;
+  }
+}
+
+//secondary button
+
+button.app-button-secondary{
+  background-color: @primary-white;
+  line-height: 38px;
+  padding: 0 11px;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+  border: 1px solid @accent-dark-grey;
+  color: @accent-dark-grey;
+  &:hover{
+    background-color: @accent-dark-grey;
+    color: @primary-white;
+    &.app-button-disabled, &.app-button-disabled:hover{
+      background-color: @light-grey;
+      color: @grey;
+    }
+  }
+  &:active, &.app-button-active{
+    background-color: @light-purple;
+    color: @primary-white;
+    &.app-button-disabled{
+      background-color: @light-grey;
+      color: @primary-white;
+    }
+  }
+}
+
+//disabled button
+
+button.app-button-disabled{
+  background-color: @light-grey;
+  color: @grey;
+  line-height: 38px;
+  padding: 0 11px;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+  border: none;
+  cursor: not-allowed;
+  border: 1px solid @light-grey;
+}
+
+//small buttons - class may be added/removed to all buttons
+
+button.app-button-small{
+  padding: 0 8px;
+  font-size: 10px;
+  line-height: 24px;
+  &.app-icon-only-button{
+    span[class^="icon-"], button[class*=" icon-"] {
+      top: 4px;
+    }
+  }
+}
+
+//buttons with icons
+
+button.app-icon-only-button{
+  text-transform: none;
+  span[class^="icon-"], button[class*=" icon-"] {
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+  }
+}
+
+button.app-icon-button{
+  text-transform: none;
+  span[class^="icon-"], button[class*=" icon-"] {
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+  }
+  .app-icon-button-text{
+    margin-left: 5px;
+  }
+  &.app-icon-right{
+    .app-icon-button-text{
+      margin-left: 0;
+      margin-right: 5px;
+    }
+  }
+  &.app-button-small{
+    span[class^="icon-"], button[class*=" icon-"] {
+      top: 4px;
+    }
+  }
+}
+
+//toggle button
+
+.app-buttons-toggle{
+  width: 100%;
+  button{
+    float: left;
+    width: 50%;
+  }
+  button.app-button-selected{
+    color: @primary-white;
+    background-color: @primary-purple;
+  }
+}
+
+//------------Messages--------------
+
+.app-message{
+  min-height: 34px;
+  font-size: 16px;
+  width: 60%;
+  margin: 0 20%;
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  padding: 10px;
+  display: none;
+  .icon-warning2, .icon-checkmark{
+    position: absolute;
+  }
+  .icon-delete{
+    color: #333;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  .app-message-text{
+    padding: 0 25px;
+  }
+  &.app-message-information{
+    border: @message-information-border;
+    background-color: @message-information-background-color;
+    color: @message-information-color;
+  }
+  &.app-message-confirmation{
+    border: @message-confirmation-border;
+    background-color: @message-confirmation-background-color;
+    color: @message-confirmation-color;
+  }
+  &.app-message-warning{
+    border: @message-warning-border;
+    background-color: @message-warning-background-color;
+    color: @message-warning-color;
+  }
+  &.app-message-alert{
+    border: @message-alert-border;
+    background-color: @message-alert-background-color;
+    color: @message-alert-color;
+  }
+}
+
+
+// modal windows - Modal Dialogs created off of Bootstrap Modals. See http://getbootstrap.com/javascript/#modals for more information.
+
+.modal-dialog{
+  .modal-content{
+    padding: 10px;
+    border-radius: 0;
+    border: 1px solid @grey2;
+    .modal-header{
+      padding: 10px 0 20px;
+      border-bottom: 1px solid @grey2;
+      h2{
+        margin: 0;
+      }
+    }
+    .icon-delete{
+      font-size: 16px;
+    }
+    .modal-body {
+      padding: 10px 0;
+      .close{          // if you do not need a header and want to put the close button in the modal body
+        margin-top: -10px;
+      }
+    }
+    .modal-footer{
+      padding: 10px 0 0 0;
+      border-top: 1px solid @grey2;
+    }
+  }
+  &.app-modal-warning{
+    @media (min-width: @screen-sm){
+      width: 400px;
+    }
+    .icon-warning{
+      font-size: 32px;
+      color: @accent-orange;
+      float: left;
+      margin: 0 20px 5px 20px;
+    }
+  }
+  &.app-modal-loading{
+    @media (min-width: @screen-sm){
+      width: 180px;
+    }
+    text-align: center;
+    img{
+      padding-bottom: 20px;
+    }
+    p{
+      margin: 0;
+    }
+  }
+}
+
+//Tooltips - build off off Bootstraps tooltips. See http://getbootstrap.com/javascript/#tooltips for more informtion
+
+.tooltip{
+  .tooltip-inner{
+    padding: 5px 10px;
+    background-color: rgba(85, 92, 101, 0.8);
+  }
+  &.top .tooltip-arrow {
+    border-top-color: rgba(85, 92, 101, 0.8);
+  }
+  &.bottom .tooltip-arrow {
+    border-bottom-color: rgba(85, 92, 101, 0.8);
+  }
+  &.left .tooltip-arrow {
+    border-left-color: rgba(85, 92, 101, 0.8);
+  }
+  &.right .tooltip-arrow {
+    border-right-color: rgba(85, 92, 101, 0.8);
+  }
+}
+
+//---Containers
+
+//primary container
+
+.app-primary-container{
+  border: 1px solid @lightest-grey;
+  background-color: @primary-white;
+  margin-bottom: 10px;
+  .app-container-header{
+    border-bottom: 1px solid @lightest-grey;
+    padding: 10px;
+    p{
+      font-family: "InfinitiMetaPro-Bold";
+      margin: 10px 0 0 0;
+    }
+  }
+  .app-container-body{
+    padding: 20px 10px;
+  }
+}
+
+//Expandable Container - *Note: Expandable Containers are built off of Bootstraps Accordion. See http://getbootstrap.com/javascript/#collapse-example-accordion for more information.
+
+.app-container-expandable.panel-group{
+   .panel{
+    border-radius: 0;
+     box-shadow: none;
+    .panel-heading{
+      padding: 10px;
+      border-color: @lightest-grey;
+      background-color: @primary-white;
+      .app-expandable-heading{
+        cursor: pointer;
+        margin: 0;
+        font-family: "InfinitiMetaPro-Bold";
+        [class^="icon-"], [class*=" icon-"] {
+          font-size: 16px;
+          color: @grey;
+          .transition;
+        }
+      }
+    }
+  }
+}
+
+//Tabs
+
+.app-tabs{
+  .nav-tabs {
+    border-bottom: 1px solid @lightest-grey;
+    position: relative;
+    > li > a{
+      border-radius: 0;
+      color: #999;
+      background-color: @body-background-color;
+      border: 1px solid @lightest-grey;
+      font-family: "InfinitiMetaPro-Bold";
+      padding: 6px 15px;
+      &.app-tab-disabled{
+        color: @grey2;
+        cursor: not-allowed;
+        &:hover, &a:focus{
+          background-color: @body-background-color;
+          color: @grey2;
+        }
+      }
+      &:hover{
+        color: @primary-purple;
+      }
+    }
+    > li.active > a{
+      background-color: @primary-white;
+      border: 1px solid @lightest-grey;
+      border-bottom-color: transparent;
+    }
+    > li.app-tab-buttons{
+      left: 4px;
+    }
+  }
+  .nav > li > a:hover, .nav > li > a:focus {
+    background-color: @primary-white;
+  }
+  .tab-pane{
+    padding: 10px;
+    border-right: 1px solid @lightest-grey;
+    border-left: 1px solid @lightest-grey;
+    border-bottom: 1px solid @lightest-grey;
+    background-color: @primary-white;
+    .app-tab-heading{
+      border-bottom: 1px solid @grey2;
+    }
+    .app-tab-body{
+      padding: 10px 0 0 0;
+    }
+  }
+}
+
+//Tables- *Note: Tables are built off of Bootstraps Tables. See http://getbootstrap.com/css/#tables for more information.
+
+.app-table{
+  background-color: @primary-white;
+  .icon-reorder{
+    color: @primary-grey;
+    font-size: 16px;
+    margin-right: 10px;
+    &:hover{
+      color: @accent-dark-grey;
+    }
+  }
+  th{
+    font-size: 12px;
+    font-family: "InfinitiMetaPro-Bold";
+    padding: 10px;
+    background-color: @app-table-th-bg-color;
+    background: -webkit-linear-gradient(@app-table-th-bg-color, @app-table-th-bg-color2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(@app-table-th-bg-color, @app-table-th-bg-color2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(@app-table-th-bg-color, @app-table-th-bg-color2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(@app-table-th-bg-color, @app-table-th-bg-color2); /* Standard syntax */
+  }
+  td.app-table-read-only{
+    background-color: @app-table-td-read-only-bg-color;
+  }
+  &.table > tfoot > tr > td.app-table-pagination{
+    vertical-align: middle;
+    line-height: 26px;
+  }
+  &.table > thead > tr > th, &.table > tbody > tr > th, &.table > tfoot > tr > th {
+    padding: 10px;
+  }
+  &.table > thead > tr > th, &.table > tbody > tr > th, &.table > tfoot > tr > th, &.table > thead > tr > td, &.table > tbody > tr > td, &.table > tfoot > tr > td {
+    border-top: @app-table-border;
+  }
+  &.table-bordered > thead > tr > th, &.table-bordered > tbody > tr > th, &.table-bordered > thead > tr > td, &.table-bordered > tbody > tr > td{
+    border: @app-table-border;
+  }
+  &.table-bordered > tfoot > tr > th, &.table-bordered > tfoot > tr > td {
+    border: none;
+  }
+  &.table > thead > tr > th{
+    border-bottom: @app-table-border;
+  }
+  &.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: @app-table-tr-odd-bg-color;
+  }
+  &.table-hover > tbody > tr:hover {
+    background-color: @app-table-hover-bg-color;
+  }
+  td.app-table-status{
+    [class^="icon-"], [class*=" icon-"] {
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    &.app-table-status-queue{
+      color: @app-table-queue-color;
+    }
+    &.app-table-status-processing{
+      color: @app-table-processing-color;
+    }
+    &.app-table-status-complete{
+      color: @app-table-complete-color;
+    }
+    &.app-table-status-failed{
+      .icon-warning{
+        color: @app-table-failed-icon-color;
+      }
+    }
+  }
+  td.app-table-empty{
+    border:none !important;
+  }
+  tfoot{
+    background-color: @app-table-footer-bg-color;
+  }
+}
+
+// pagintion controls
+
+.app-pagination-controls{
+  [class^="icon-"], [class*=" icon-"] {
+    font-size: 16px;
+    cursor: pointer;
+    top: 3px;
+    position: relative;
+    &.disabled{
+      cursor: not-allowed;
+      color: @grey;
+    }
+  }
+  .icon-controller-jump-to-start{
+    margin-right: 5px;
+  }
+  .icon-triangle-left{
+    margin: 0 7px 0 10px;
+  }
+  .icon-triangle-right{
+    margin: 0 10px 0 7px;
+  }
+  .icon-controller-next{
+    margin-left: 5px;
+  }
+  button{
+    margin: 0 3px;
+    min-width: 30px;
+  }
+}
+
+// Forms  -- Forms are built off of Bootstraps Forms. See http://getbootstrap.com/css/?#forms for more information.
+
+.app-form-heading{
+  margin: 0 0 15px 0;
+}
+
+.app-form-label{
+  font-weight: normal;
+  font-family: "InfinitiMetaPro-Bold";
+  margin-bottom: 5px;
+}
+
+.disabled input, .disabled select, .disabled label{
+  color: @grey;
+}
+
+.radio label, .checkbox label, .radio-inline, .checkbox-inline{
+  line-height: 20px;
+}
+
+.radio, .checkbox{
+   margin: 5px 0;
+}
+
+.app-form{
+  .form-group{
+    display: inline-block;
+    margin: 0 5px 0 0;
+    padding-bottom: 10px;
+    @media (max-width: @screen-xs-max){
+      display: block;
+    }
+    label{
+      font-weight: normal;
+      font-family: "InfinitiMetaPro-Bold";
+    }
+    .form-control{
+      border-radius: 0;
+      height: 26px;
+      padding: 3px 6px;
+      font-size: 13px;
+      display: inline-block;
+      &.app-form-input-error{
+        border-color: @accent-red;
+      }
+    }
+    select.form-control{
+      position: relative;
+      top: 1px;
+    }
+    button{
+      position: relative;
+      top: -1px;
+    }
+  }
+  &.form-inline .form-group, &.form-inline .form-group.app-form-error{
+    label{
+      margin-right: 5px;
+      display: inline-block;
+      @media (max-width: @screen-xs-max){
+        display: block;
+      }
+    }
+    button, select.form-control{
+      top: 0;
+    }
+  }
+  .app-form-error{
+    label{
+      display: block;
+    }
+    input, select{
+      display: inline;
+      width: auto;
+      @media (max-width: @screen-xs-max){
+        display: block;
+        width: 100%;
+      }
+    }
+    .icon-warning2{
+      color: @accent-red;
+      font-size: 16px;
+      margin: 0 5px;
+      top: 3px;
+      position: relative;
+      @media (max-width: @screen-xs-max){
+        display: none;
+      }
+    }
+  }
+}
+
+//grid form - for customizing form widths
+
+.app-grid-form{
+  .row{
+    margin-left: -5px;
+    margin-right: -5px;
+    [class^="col-"], [class*=" col-"]{
+      padding: 0 5px;
+      .form-group{
+        width: 100%;
+      }
+    }
+
+  }
+}
+
+//---Date Picker --- Datepicker built from UI Bootstrap. See http://angular-ui.github.io/bootstrap/#/datepicker for more information. (dependencies: AngularJS and Bootstrap CSS)
+//Custom templates built by Autodata - \global-css\js\ui-bootstrap-custom-tpls-0.12.1.js
+
+
+//date picker input/button
+.app-form .form-group{
+  .app-form-input-button{
+    position: relative;
+    input.form-control{
+      display: inline-block;
+      width: auto;
+      padding: 3px 40px 3px 6px;
+      @media (max-width: @screen-xs-max){
+        width: 100%;
+      }
+    }
+    button.app-button-attached.app-button-secondary{
+      position: absolute;
+      right: 0;
+      top: 0;
+      border: 1px solid #cccccc;
+      &:hover{
+        background-color: #E6E6E6;
+      }
+    }
+  }
+}
+
+//date picker input/button - inline
+.form-inline.app-form .form-group{
+  .app-form-input-button{
+    display: inline;
+    input.form-control{
+      vertical-align: middle;
+    }
+    button.app-button-attached.app-button-secondary{
+      top: -4px;
+    }
+  }
+}
+
+//date picker popup container
+.app-date-picker-popup{
+  padding: 2px;
+  margin: 0;
+  outline: none;
+}
+
+//date picker - inline
+.app-date-picker-inline{
+  display:inline-block;
+  border-radius: 4px;
+  border: 1px solid @lightest-grey;
+  background-color: @primary-white;
+  margin-bottom: 10px;
+}
+
+//date picker - general
+.app-date-picker{
+  li{
+    outline: none;
+    div{
+      outline: none;
+      padding: 2px;
+      table:focus{
+        outline: none;
+      }
+    }
+  }
+  th{
+    min-width: 36px;
+  }
+  .btn{
+    border: none;
+    outline: none;
+  }
+  .btn-info.active, .btn-info, .btn-info:hover, .btn-info:focus, .btn-info:active{
+    border: none;
+    outline: none;
+    color: @primary-white;
+    background-color: @primary-purple;
+  }
+}
+
+
+

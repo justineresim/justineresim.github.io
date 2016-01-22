@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Infinity Pricing Tool - Global Style Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Infinity Pricing Tool, Global Style Guide">
+    <meta name="author" content="Justine Lileikis, Autodata Solutions">
+
+    <!-- Global CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Test Sheet Specific CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-app="angularApp">
+
+    <div id="app-container">
+
+        <div class="app-header-container">
+            <div class="app-header-logo pull-left">
+                <img class="app-large-logo" src="images/img-hdr-Infiniti-logo.png"/>
+                <img class="app-small-logo" src="images/logo.png"/>
+            </div>
+            <div class="app-header">
+                <div class="app-heading">Infinity Pricing Tool</div>
+                <div class="app-username">Welcome John Smith<span class="icon-keyboard-arrow-down"></span></div>
+                <div class="app-user-menu">
+                    <a>Logout</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-navigation-container" ng-controller="NavigationController">
+            <div class="app-menu-heading">
+                <h3 ng-click="fullNavigation=!fullNavigation" class="text-uppercase"><span ng-class="{'icon-keyboard-arrow-left' : fullNavigation, 'icon-keyboard-arrow-right': !fullNavigation}"></span><span ng-show="fullNavigation" class="app-menu-heading-text">Menu</span></h3>
+            </div>
+            <ul id="app-navigation-list" ng-init="selected='Component Pricing'; selectedSecond=''">
+                <li ng-class="{'app-page-active':selected === 'Component Pricing'}" ng-click="selected='Component Pricing'; selectedSecond=''"><span class="icon-car"></span><span ng-show="fullNavigation" class="app-menu-item">Component Pricing</span><span ng-show="fullNavigation" class="icon-keyboard-arrow-right"></span></li>
+                <li ng-class="{'app-page-active':selected === 'Price Set'}" ng-click="selected='Price Set'; selectedSecond=''"><span class="icon-calculator"></span><span ng-show="fullNavigation" class="app-menu-item">Price Set</span><span ng-show="fullNavigation" class="icon-keyboard-arrow-right"></span></li>
+                <li ng-class="{'app-page-active':selected === 'Configuration'}" ng-click="selected='Configuration'; configurationList=!configurationList"><span class="icon-settings"></span><span ng-show="fullNavigation" class="app-menu-item">Configuration</span><span ng-show="fullNavigation" ng-class="{'icon-keyboard-arrow-down' : configurationList, 'icon-keyboard-arrow-right': !configurationList}"></span>
+                    <ul ng-show="configurationList && fullNavigation" class="app-navigation-second-list">
+                        <li ng-class="{'app-second-page-active':selectedSecond === 'Model Setup'}" ng-click="selectedSecond='Model Setup'; configurationList=false"><span class="app-menu-item-second">Model Setup</span></li>
+                        <li ng-class="{'app-second-page-active':selectedSecond === 'Exchange Rates'}" ng-click="selectedSecond='Exchange Rates'; configurationList=false"><span class="app-menu-item-second">Exchange Rates</span></li>
+                    </ul>
+                </li>
+                <li ng-class="{'app-page-active':selected === 'IP Sheets'}" ng-click="selected='IP Sheets'; IPSheetsList=!IPSheetsList"><span class="icon-file"></span><span ng-show="fullNavigation" class="app-menu-item">IP Sheets</span><span ng-show="fullNavigation" ng-class="{'icon-keyboard-arrow-down' : IPSheetsList, 'icon-keyboard-arrow-right': !IPSheetsList}"></span>
+                    <ul ng-show="IPSheetsList && fullNavigation" class="app-navigation-second-list">
+                        <li ng-class="{'app-second-page-active':selectedSecond === 'Generate IP Sheets'}" ng-click="selectedSecond='Generate IP Sheets'; IPSheetsList=false"><span class="app-menu-item-second">Generate IP Sheets</span></li>
+                        <li ng-class="{'app-second-page-active':selectedSecond === 'IP Sheet Templates'}" ng-click="selectedSecond='IP Sheet Templates'; IPSheetsList=false"><span class="app-menu-item-second">IP Sheet Templates</span></li>
+                    </ul>
+                </li>
+                <li ng-class="{'app-page-active':selected === 'Metrics'}" ng-click="selected='Metrics'; selectedSecond=''"><span class="icon-stats-dots"></span><span ng-show="fullNavigation" class="app-menu-item">Metrics</span><span ng-show="fullNavigation" class="icon-keyboard-arrow-right"></span></li>
+                <li ng-class="{'app-page-active':selected === 'Reporting'}" ng-click="selected='Reporting'; selectedSecond=''"><span class="icon-external-link"></span><span ng-show="fullNavigation" class="app-menu-item">Reporting</span><span ng-show="fullNavigation" class="icon-keyboard-arrow-right"></span></li>
+            </ul>
+        </div>
+
+        <div class="app-body-container">
+            <div class="app-body">
+                <div class="app-page-title">
+                    <h1>Page Title</h1>
+                </div>
+                <div class="app-body-inner">
+                    <h2>Global Style Guide</h2>
+                    <a href="index.html">Global Style Guide</a>
+                    <br>
+                    <h2>Main Page Layout</h2>
+                    <p>*Main Navigation: Add <strong>class="app-page-active"</strong> to active first level navigation item. Add <strong>class="app-second-page-active"</strong> to active second level navigation item.</p>
+
+<xmp ng-non-bindable><body ng-app="angularApp">
+
+    <div id="app-container">
+
+        <div class="app-header-container">
+            <div class="app-header-logo pull-left">
+                <img class="app-large-logo" src="images/img-hdr-Infiniti-logo.png"/>
+                <img class="app-small-logo" src="images/logo.png"/>
+            </div>
+            <div class="app-header">
+                <div class="app-heading">Infinity Pricing Tool</div>
+                <div class="app-username">Welcome John Smith<span class="icon-keyboard-arrow-down"></span></div>
+                <div class="app-user-menu">
+                    <a>Logout</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-navigation-container" ng-controller="NavigationController">
+            <div class="app-menu-heading">
+                <h3 ng-click="fullNavigation=!fullNavigation" class="text-uppercase"><span ng-class="{'icon-keyboard-arrow-left' : fullNavigation, 'icon-keyboard-arrow-right': !fullNavigation}"></span><span ng-show="fullNavigation" class="app-menu-heading-text">Menu</span></h3>
+            </div>
+            <ul id="app-navigation-list" ng-init="selected='Component Pricing'; selectedSecond=''">
+                <li ng-class="{'app-page-active':selected === 'Component Pricing'}" ng-click="selected='Component Pricing'; selectedSecond=''"><span class="icon-car"></span><span ng-show="fullNavigation" class="app-menu-item">Component Pricing</span><span ng-show="fullNavigation" class="icon-keyboard-arrow-right"></span></li>
+                <li ng-class="{'app-page-active':selected === 'Price Set'}" ng-click="selected='Price Set'; selectedSecond=''"><span class="icon-calculator"></span><span ng-show="fullNavigation" class="app-menu-item">Price Set</span><span ng-show="fullNavigation" class="icon-keyboard-arrow-right"></span></li>
+                <li ng-class="{'app-page-active':selected === 'Configuration'}" ng-click="selected='Configuration'; configurationList=!configurationList"><span class="icon-settings"></span><span ng-show="fullNavigation" class="app-menu-item">Configuration</span><span ng-show="fullNavigation" ng-class="{'icon-keyboard-arrow-down' : configurationList, 'icon-keyboard-arrow-right': !configurationList}"></span>
+                    <ul ng-show="configurationList && fullNavigation" class="app-navigation-second-list">
+                        <li ng-class="{'app-second-page-active':selectedSecond === 'Model Setup'}" ng-click="selectedSecond='Model Setup'; configurationList=false"><span class="app-menu-item-second">Model Setup</span></li>
+                        <li ng-class="{'app-second-page-active':selectedSecond === 'Exchange Rates'}" ng-click="selectedSecond='Exchange Rates'; configurationList=false"><span class="app-menu-item-second">Exchange Rates</span></li>
+                    </ul>
+                </li>
+                <li ng-class="{'app-page-active':selected === 'IP Sheets'}" ng-click="selected='IP Sheets'; IPSheetsList=!IPSheetsList"><span class="icon-file"></span><span ng-show="fullNavigation" class="app-menu-item">IP Sheets</span><span ng-show="fullNavigation" ng-class="{'icon-keyboard-arrow-down' : IPSheetsList, 'icon-keyboard-arrow-right': !IPSheetsList}"></span>
+                    <ul ng-show="IPSheetsList && fullNavigation" class="app-navigation-second-list">
+                        <li ng-class="{'app-second-page-active':selectedSecond === 'Generate IP Sheets'}" ng-click="selectedSecond='Generate IP Sheets'; IPSheetsList=false"><span class="app-menu-item-second">Generate IP Sheets</span></li>
+                        <li ng-class="{'app-second-page-active':selectedSecond === 'IP Sheet Templates'}" ng-click="selectedSecond='IP Sheet Templates'; IPSheetsList=false"><span class="app-menu-item-second">IP Sheet Templates</span></li>
+                    </ul>
+                </li>
+                <li ng-class="{'app-page-active':selected === 'Metrics'}" ng-click="selected='Metrics'; selectedSecond=''"><span class="icon-stats-dots"></span><span ng-show="fullNavigation" class="app-menu-item">Metrics</span><span ng-show="fullNavigation" class="icon-keyboard-arrow-right"></span></li>
+                <li ng-class="{'app-page-active':selected === 'Reporting'}" ng-click="selected='Reporting'; selectedSecond=''"><span class="icon-external-link"></span><span ng-show="fullNavigation" class="app-menu-item">Reporting</span><span ng-show="fullNavigation" class="icon-keyboard-arrow-right"></span></li>
+            </ul>
+        </div>
+
+        <div class="app-body-container">
+            <div class="app-body">
+                <div class="app-page-title">
+                    <h1>Page Title</h1>
+                </div>
+                <div class="app-body-inner">
+
+                    <!-- Page content goes here -->
+
+                </div>
+            </div>
+        </div>
+
+        <div id="app-footer">
+            <div class="app-footer-text">
+                @ 2015 Infinity
+            </div>
+        </div>
+
+    </div>
+</body></xmp>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="app-footer">
+           <div class="app-footer-text">
+               @ 2015 Infinity
+           </div>
+        </div>
+
+    </div>
+
+      <!-- jQuery -->
+    <script src="libraries/jquery/jquery-1.11.2.js"></script>
+
+    <!-- Bootstrap JS Files -->
+    <script src="libraries/bootstrap-3.3.4-dist/js/bootstrap.js"></script>
+
+    <!-- Angular JS File -->
+    <script src="libraries/angular/angular-1.2.16.js"></script>
+
+    <!-- UI Bootstrap - date picker - http://angular-ui.github.io/bootstrap/#/datepicker -  includes custom templates created by autodata -->
+    <script src="libraries/UI-Bootstrap/ui-bootstrap-0.12.1.js"></script>
+    <script src="libraries/UI-Bootstrap/templates.js"></script>
+
+    <!-- Angular JS files -->
+    <script src="js/angularApp.js"></script>
+    <script src="js/controllers/navigation.js"></script>
+
+    <!-- Main JS File -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
