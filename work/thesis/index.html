@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Wired Rooms</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+	
+<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+    
+<link href='http://fonts.googleapis.com/css?family=Asset|Quicksand:300|Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+<script src="js/TweenMax.min.js"></script>
+
+<link rel="stylesheet" href="css/1140b.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script>
+
+$(function(){
+    $("a.js_onPageLink").bind("click", function (event) {
+        event.preventDefault ? event.preventDefault() : event.returnValue = false;
+        var target = $(this).attr("href");
+        $("html, body").stop().animate({
+                scrollLeft: $(target).offset().left,
+                scrollTop: $(target).offset().top
+            }, 1200);
+    });
+});
+
+
+</script>
+
+
+</head>
+
+<body>
+
+
+<div id = "page1" class = "unhidden">
+	
+	<div id="container1">
+        <div id="block"></div>
+        	<div id="text">
+                <h1>LIVING ROOM DESIGN</h1>
+				<h7>at your fingertips </h7> 		
+			</div>
+		</div>
+    
+
+		<div id="container2">
+           <div id="text2" class="link2">
+                    <h3>
+                    <a href = "#" onClick="enter()">enter site.</a>
+                   
+                    </h3>
+           	</div>
+          			
+        <div id = "logo">
+         	<img src="images/logo.png" alt="logo">
+        </div>
+            	
+            
+    </div>
+            
+	<div id = "ipad">
+    
+    	<div id = "mymovie">
+
+			<iframe width="315" id="myvideo" height="260" src="http://www.youtube.com/embed/MYRgJ5VryHU" frameborder="0" allowfullscreen></iframe>
+
+		</div>
+        
+        <img src="images/ipad.png" alt="ipad">
+    </div>
+	<br>
+
+	<div id = "ipad2">
+    
+     	<div id = "mymovie2">
+    
+			<iframe width="460" id="myvideo2" height="355" src="http://www.youtube.com/embed/MYRgJ5VryHU" frameborder="0" allowfullscreen></iframe>
+
+		</div>
+
+ 		<div id = "mymovie3">
+    
+			<iframe width="220" id="myvideo3" height="170" src="http://www.youtube.com/embed/MYRgJ5VryHU" frameborder="0" allowfullscreen></iframe>
+
+			</div>
+     
+    	<img src="images/ipad2.png" alt="ipad2">
+    
+	</div>
+
+</div>
+
+<div id = "all" class = "hidden">
+    
+	<div class="container">
+         <div id = "header">
+              <div class="row">
+        
+                   	<div class="fourcol">
+            
+                       	<div id = "wired"> <img src="images/logo5.png" alt="logo"></div>
+            
+                    </div>
+        
+                    <div class="eightcol last">
+                    
+ 						<h8> 
+                        <ul>
+                        <li></li>
+                        <li class = "link1"> <a class="js_onPageLink" href = "#" onClick= "exit()" >HOME	</a> </li>
+                        <li class = "link2"><a class="js_onPageLink" href="#content">ABOUT</a> </li>
+                       <li class = "link3"> <a class="js_onPageLink" href = "#tech">TECH</a> </li>
+                       <li class = "link4"> <a class="js_onPageLink" href = "#developer">DEVELOPER</a></li>
+           
+                      </ul>
+                       </h8>
+            
+                    </div>
+           </div>
+      </div>
+	</div>
+    
+
+	<div class="container">
+        <div id = "content">
+            <div class="row">
+            
+                <div class="fivecol">
+                
+                    <div class = "title"><h4>about.</h4></div>
+                    
+                    
+                        <br><p>
+                        Wired Rooms is a must 
+                        have for anyone redecorating. Easy 
+                        to use, Wired Rooms makes it simple 
+                        to test out new decor combinations 
+                        and plan any beautiful space. <br><br>
+                        
+                        Available on any device, Wired 
+                        Rooms is a convenient tool that allows 
+                        you to create, preview, save, and 
+                        coordinate even “on-the-go”.<br><br><br>
+                        
+                        <b>BE INSPIRED</b><br>
+                        Browse through hundreds
+                        of living room items and 
+                        inspirational photos.
+                        <br><br>
+                        
+                        <b>DESIGN</b><br>
+                        
+                        Create an ideaboard
+                        for your next home
+                        decorating project. Add 
+                        items from the collection
+                        as well as images of your
+                        own.
+                        
+                        <br><br>
+                        
+                        <b>SHARE</b><br>
+                        
+                        Save your projects to your
+                        device, email to friends, post 
+                        to facebook and flicker.</p>
+					
+				</div>
+			
+            <div class="sevencol last">
+        		<div id = "ipad3">
+	    			<img src="images/ipad4.png" alt="ipad"> 
+        		</div>
+                
+            <div id = "circles">
+       
+       		<div id = "links"> 
+                       
+                       <a href = "#" onClick="imageChange('ipad4'); return false" id = "firstimage">  <img src="images/link2.png" onmouseover="this.src='images/link2.png'"  onmouseout="this.src='images/link2.png'" alt="link"> </a>
+                      <a href = "#" onClick="imageChange('ipad3'); return false">   <img src="images/link.png" onmouseover="this.src='images/link2.png'"  onmouseout="this.src='images/link.png'" alt="link"></a>
+                       <a href = "#" onClick="imageChange('ipad5'); return false">   <img src="images/link.png" onmouseover="this.src='images/link2.png'"  onmouseout="this.src='images/link.png'" alt="link" ></a>
+              </div>
+              </div>
+            </div>
+        </div>
+	</div>
+    </div>
+   
+
+    <div id = "tech">
+        <div class="container">
+        
+            <div class="row">
+                <div class="twelvecol last">
+                    <div class = "title"><h5>tech.</h5></div>
+            
+<p>
+                <b>HTML5: </b> Main coding used to layout the site.<br><br>
+                <b>CSS3: </b> Wired Rooms artistic design is created with CSS3.<br><br>
+                <b>JavaScript: </b> User interactivity is created with JavaScript. The main functionality of the site is contained to one page, producing a very easy, efficient tool for users.  <br><br>
+                <b>PHP: </b> The site contains a database for which PHP is used to access. The database contains a library of items for users to search/browse and also allows users the ability to save their projects. 
+                </p>
+
+                </div>
+            </div>
+      </div>
+        
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="threecol" id = "HTML">
+                <h6> HTML5 </h6>
+            </div>
+            <div class="threecol" id = "CSS">
+                <h6> CSS3 </h6>
+            </div>
+            <div class="threecol" id = "JS">
+                <h6> JAVASCRIPT </h6>
+            </div>
+            <div class="threecol last" id = "PHP">
+                <h6> PHP </h6>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+    <div id = "developer">
+        <div class="container">
+            <div class="row">
+                <div class="fourcol">
+                    <div id = "dev"><div class = "title"><h2>developer.</h2></div></div>
+                </div>
+                <div class="eightcol last">
+                	<div id = "info" class = "link4">
+                    <p>Justine Lileikis, designer and developer of Wired Rooms, has always been interested in visual communication. She has a degree from The University of Western Ontario, Honors Specialization in Visual Arts.  After completing her degree she decided to widen her skill set by entering Fanshawe's Interactive Media Design Specialist Program. Coming from Western as a Visual Art Student with no coding background the leap to Interactive Media was a challenge, but one she took on with enthusiasm and determination. <br><br>
+Justine’s unique background gives her an edge over the competition by creating interactive media projects that are both visually appealing and can function with the user experience in mind. <br> <br>
+Check out her website at <a href = "http://www.justinelileikis.com"><b>www.justinelileikis.com</b></a>
+ </p>
+</div>
+
+           	  </div>
+       	  </div>
+   	  </div>
+</div>
+	
+    
+
+    <div class="container">
+        <div id = "footer">
+        
+            <div class="row">
+        
+                <div class="twelvecol last">
+            
+                    <img src="images/logo2.png" alt="logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="container">
+        <div id = "bottom">
+        
+            <div class="row">
+        
+                <div class="twelvecol last">
+					<h8>
+  					<ul>
+                   <li class = "link1"> <a class="js_onPageLink" href = "#" onClick="exit()" >HOME</a> </li>
+                   <li class = "link2"><a class="js_onPageLink" href="#content">ABOUT</a> </li>
+                   <li class = "link3"> <a class="js_onPageLink" href = "#tech">TECH</a> </li>
+                   <li class = "link4"> <a class="js_onPageLink" href = "#developer">DEVELOPER</a></li>
+                    </ul>
+                    </h8>
+                    
+                   
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    <div id = "up"><a href = "#all" class ="js_onPageLink"> <img src="images/up.png" alt="up"></a></div>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portage | for Basecamp</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+<link rel="shortcut icon" href="images/favicon.ico">
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700 |Josefin+Slab:100,300,400,600,700' rel='stylesheet' type='text/css'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portage is an iPhone app that allows Basecamp users to manage their To-Do Lists on their iPhones with ease">
+<meta name="keywords" content="basecamp, app, Portage, Inner Geek Media">
+<meta name="author" content="Interns at Inner Geek Media">
+      
+<script type="text/javascript" src="js/script.js"></script>
+
+
+<script>
+var number = 0;
+document.onkeydown = function(evt) {
+
+    evt = evt || window.event;
+    switch (evt.keyCode) {
+		
+        case 39:
+			
+			if (number == 5){
+			number = 0;
+			}
+			
+			if (number == 4){
+            move5();
+			}
+			
+			if (number == 3){
+            move4();
+			}
+			
+			if (number == 2){
+            move3();
+			}
+			
+			if (number == 1){
+            move2();
+			}
+			
+			if (number == 0){
+            move1();
+			}
+			
+          break;
+        case 37:
+		
+			if (number == 5){
+			number = 0;
+			}
+		
+			if (number == 1){
+            move5();
+			}
+		
+			if (number == 2){
+            move1();
+			}
+		
+			if (number == 3){
+            move2();
+			}
+			
+			if (number == 4){
+            move3();
+			}
+			
+            if (number == 0){
+            move4();
+			}
+            break;
+    }
+};
+
+</script>
+
+</head>
+
+<body>
+
+<header> 
+	<div id= "logo"><img src="images/portageForBasecamp.png" alt="Portage Logo"></div> 
+     <div id= "downloadNow"><a href = "#;"> <img src="images/appstore.png" alt="download now"></a></div> 
+     <div id="fb-like"> <img src="images/facebookLike.jpg" alt="facebook like"></div>
+   
+   
+</header>
+
+<div id = "firstContainer">
+
+<div id= "buttons">
+    
+    <div id= "back">
+    	<a href= "#;" onClick="move4()"><img src="images/iconback.png" alt="back"  id= "iconBack"></a>
+    </div>
+    
+    <div id= "next">
+    	<a href = "#;" onClick="move1()"><img src="images/iconnext.png" alt="next"  id= "iconNext"></a>
+    </div>
+
+</div>
+
+<div id= "changingText"> <h2>Easy Access</h2> <p> Sign into your Basecamp account through Portage and manage all functions of your to-do lists right from your iPhone.</p> </div>
+
+<div id= "downloadNow2"><a href = "#"> <img src="images/download.png" alt="download now"></a></div> 
+
+<div id= "iPhoneImage"><img src="images/screen1.png" alt="iPhone"></div>
+
+
+<div id= "rotatingImagesContainer">
+    <div id= "rotatingImages">
+    
+        <div id= "image1"><img src="images/screen3.png" alt="iPhone" id= "imageOne"></div>
+        <div id= "image2"><img src="images/screen2.png" alt="iPhone"  id= "imageTwo"></div>
+        <div id= "image3"><img src="images/screen1.png" alt="iPhone"  id= "imageThree"></div>
+        <div id= "image4"><img src="images/screen5.png" alt="iPhone"  id= "imageFour"></div>
+        <div id= "image5"><img src="images/screen4.png" alt="iPhone"  id= "imageFive"></div>
+    
+    </div>
+</div>
+
+</div>
+
+<div id= "secondContainer">
+
+	<p>A whole new way to manage your Basecamp To-Do Lists right from your iPhone. </p>
+
+</div>
+
+<div id= "thirdContainer">
+
+	<div id= "featureContainer">
+
+         <div class= "features" id= "feature1">
+            <a href = "#;"><img src="images/editGreen.png" alt="icon"><h1>Edit</h1></a>
+            
+        </div>
+        
+        <div class= "features" id= "feature2">
+            <a href= "#;" onClick= "showText('2')"><img src="images/search.png" alt="icon"><h1>Search</h1></a>
+            
+        </div>
+        
+        <div class= "features" id= "feature3">
+            <a href = "#;" onClick = "showText('3')"><img src="images/email.png" alt="icon"><h1>Email</h1></a>
+           
+        </div>
+        
+        <div class= "features" id= "feature4">
+            <a href= "#;" onClick= "showText('4')"><img src="images/setting.png" alt="icon"><h1>Settings</h1></a>
+           
+        </div>  
+        
+        <div class= "features" id= "feature5">
+            <a href ="#;" onClick= "showText('5')"><img src="images/checkmark.png" alt="icon"><h1>To-Dos</h1></a>
+           
+        </div>  
+    
+    </div>
+    
+    <div id= "featuresText">
+    	
+        <p><b>Editing projects, lists and to-dos is quick and easy using Portage.</b> You are able to change titles, due dates and who the task is assigned to.</p>
+    </div>
+
+
+</div>
+
+<div id= "fourthContainer">
+
+    <div id= "logo2"><img src="images/logo3.png" alt="Portage Logo"></div> 
+    <div id= "downloadNow3"><a href = "#"> <img src="images/appstore.png" alt="download now"></a></div> 
+
+</div>
+
+<footer> 
+
+	<p> Developed by the Intern Team at <a href = "http://www.innergeekmedia.com"><b>Inner Geek Media</b></a> </p>  
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Autodata Solutions, London, Ontario, Vehicles, Websites ">
+    <meta name="author" content="Justine Lileikis">
+
+    <title>Autodata Solutions Company</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/sticky-footer.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    
+ <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+    
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+  <div id="wrap">
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src = "images/logo-white.png" alt = "Autodata Logo" /></a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#home" data-toggle = "tab">Home</a></li>
+                <li><a href="#about" data-toggle ="tab">About</a></li>  
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions & Services<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#marketing" data-toggle ="tab">Marketing</a></li>
+                    <li><a href="#sales" data-toggle ="tab">Sales</a></li>
+                    <li class = "disabled"><a href="#tech" data-toggle ="tab">Technology</a></li>
+                    <li class = "disabled"><a href="#fleet" data-toggle ="tab">Fleet and Other Products</a></li>
+                    <li class = "disabled"><a href="#professional" data-toggle ="tab">Professional Services</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">News<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#media" data-toggle ="tab">Media Releases</a></li>
+                    <li class = "disabled"><a href="#blogs" data-toggle ="tab">Blogs</a></li>
+                  </ul>
+                </li>
+                <li><a href="#contact" data-toggle ="tab" onclick = "initialize()">Contact</a></li>
+              </ul>
+            </div>
+                <ul id = "socialIcons">
+                    <li><a href = "#"><img id = "twitterImage" alt="Connect on Twitter" src="images/tweet.png" /></a></li>
+                    <li><a href = "#"><img id = "facebookImage" alt="Connect on Facebook" src="images/facebook.png" /></a></li>
+                    <li><a href = "#"><img id = "linkedIn" alt="Connect on LinkedIn" src="images/ico_linkedIn.png" /></a></li>
+                </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <div class="tab-content">
+        <div class="tab-pane active" id="home">
+         <!-- Carousel
+            ================================================== -->
+            <div id="myCarousel" class="carousel slide">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="images/01.jpg" alt="First slide">
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <h1>Automotive Insight. Strategic Solutions. </h1>
+                      <p>From consulting, technology services and business process outsource we are dedicated to providing solutions that increase the effectiveness of the automotive sales chain and help put vehicles in consumer's driveways.</p>
+                      <p><a class="btn btn-large btn-primary" href="#" data-toggle ="tab">Learn more</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="images/02.jpg" alt="Second slide">
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <h1>Marketing and Sales Solutions</h1>
+                      <p>We leverage our deep automotive expertise and innovative solutions to help clients effectively market and sell vehicles in today's fast-changing digital world.</p>
+                      <p><a class="btn btn-large btn-primary" href="#" data-toggle ="tab">Contact us now</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="images/03.jpg"  alt="Third slide">
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <h1>Driving success for leading manufacturers</h1>
+                      <p>Our presence in the industry is unparalleled. A wide breadth of companies rely on Autodata for their automotive needs. </p>
+                       <p><a class="btn btn-large btn-primary" href="#" data-toggle ="tab">Learn more</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div><!-- /.carousel -->
+            
+            <!-- Marketing messaging and featurettes
+            ================================================== -->
+            <!-- Wrap the rest of the page in another container to center all the content. -->
+
+            <div class="container threeBlocks">
+
+              <!-- Three columns of text below the carousel -->
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class = "imageContainer"><img src="images/marketing.jpg" height = "140" alt="autodata marketing image"></div>
+                  <h2> <span class="text-muted">Automotive Marketing</span></h2>
+                  <p>Influencing consumer purchase decisions online as well as increasing customer satisfaction and brand loyalty involve improving the entire online shopping experience.</p>
+                  <p><a class="btn btn-default" href="#" data-toggle ="tab">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                  <div class = "imageContainer"><img src="images/sales.jpg" height = "140" alt="autodata sales image"></div>
+                  <h2> <span class="text-muted">Automotive Sales</span></h2>
+                  <p>Manufacturers engage Autodata Solutions to provide retail applications, training and dashboards to improve their retail network performance.</p>
+                   <p><a class="btn btn-default" href="#" data-toggle ="tab">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                  <div class = "imageContainer"><img src="images/tech.jpg" height = "140" alt="autodata technology image"></div>
+                  <h2> <span class="text-muted">Technology Solutions</span></h2>
+                  <p>We support manufacturer's in-house IT services to deliver sales and marketing solutions by providing the platforms, engines and services to fully support their creative and interactive marketing strategies.</p>
+                  <p><a class="btn btn-default" href="#" data-toggle ="tab">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+              </div><!-- /.row -->
+            </div>
+        </div> <!-- /END OF HOME -->
+
+        <div class="tab-pane" id="about">
+            <div class = "container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2>Why Autodata</h2>
+                        <p>Autodata Solutions, Inc., a subsidiary of Internet Brands, Inc., is a consulting, technology services and business process outsource company dedicated to the automotive industry. Founded in 1990, it is our mission to provide solutions that increase the effectiveness of the automotive sales chain and help put vehicles in consumer's driveways. Clients benefit from the expertise we have gained from our singular focus on the automotive sector as well as 23 years of successful client engagements.<br /><br />
+                            Our technology solutions range from enabling dealer-to-OEM vehicle ordering to consumer-focused interactive marketing initiative such as brand web sites, dealer web sites, dealership sales tools and mobile solutions. Over the last two decades we have enabled most of the automotive companies in North America including Chrysler, Ford, GM, Nissan, Toyota, Mazda, Honda, Hyundai, Kia, Volvo, and Jaguar.</br><br />
+                           Through our 50% interest in Chrome Data Solutions, Autodata also provides automotive content, competitive research, vehicle configuration data & tools and other related services. Chrome Data content enabled solutions include vehicle configuration and ordering, vehicle comparison, vehicle description, VIN decoding, incentives programs, full-motion video and images, vehicle reviews and vehicle accessories. Chrome Data is the premier content enabler of the North American auto industry:<br /></p>
+                             <ul class="list-group" id = "aboutList">
+                                 <li class="list-group-item">The largest fleet companies in North America use our content<span class="badge">Over 90%</span></li>
+                                 <li class="list-group-item">Dealerships count on us to help them sell new and used vehicles<span class="badge">17,000+</span></li>
+                                 <li class="list-group-item">Websites are powered by our data and solutions<span class="badge">6, 000+</span></li>
+                                 <li class="list-group-item">Financial institutions use our solutions to drive vehicle loans<span class="badge">1,000+</span></li>
+                            </ul>
+                            <p>Including its Chrome Data subsidiary, Autodata Solutions has approximately 400 people serving all sectors of the US and Canadian automotive industry.
+                            </p>
+                         </div>
+                    <div class="col-lg-4">
+                        <div class = "imageContainer" id = "aboutImage"><img src="images/HR_LetsWorkTogether.jpg" alt="autodata technology image"></div>
+                    </div>
+                    <div class="col-lg-4">
+                       <div class="panel panel-default">
+                            <div class="panel-heading">Got a Question? We're here to help.</div>
+                            <div class="panel-body">
+                                <p>Contact the Autodata Sales Team today to get more information or to get started with our services</p>
+                                <p><b>Call (800) 263-2384</b></p>
+                                <p><a class="btn btn-default" href="#" data-toggle ="tab">Get in Touch!&raquo;</a></p></div>
+                        </div>
+                    </div>                 
+                </div>
+           
+            </div> </div><!-- /END OF ABOUT -->
+            
+            <div class="tab-pane" id="contact">
+                <div class = "container">
+                    <h2>Office Locations</h2>
+                    <div id="map_canvas"></div>
+
+                    <div class="row" id = "contactInfoRow">
+                        <div class="col-lg-4">
+                            <h3>Corporate Headquarters</h3>
+                            <p>345 Saskatoon Street <br />
+                             London, Ontario, Canada N5W 4R4<br /><br />
+                            <b>Toll Free:</b> 1-800-263-2384<br />
+                            <b>Phone:</b> (519) 451-2323<br />
+                            <b>Fax: </b>(519) 451-6615 <br />
+                             </p>
+                         </div>
+                            <div class="col-lg-4">
+                            <h3>Canadian Regional Office</h3>
+                            <p>2885 Lauzon Parkway, Unit 104 <br />
+                             Windsor, Ontario, Canada N8T 3J9<br /><br />
+                            <b>Other Canadian Regional Offices:</b><br />
+                            Toronto, Ontario<br />
+                            Montreal, Quebec <br />
+                             </p>
+                         </div>
+                            <div class="col-lg-4">
+                            <h3>U.S. Regional Office</h3>
+                            <p>3290 W. Big Beaver Road, Suite #117<br />
+                             Troy, Michigan 48084 <br /><br />
+                            <b>Other U.S. Regional Offices:</b><br />
+                            Los Angeles, California<br />
+                             </p>
+                         </div>
+                     </div>
+                   
+                     <div class = "row">
+                      <div class="col-lg-12">
+                       <div class="panel panel-default">
+                            <div class="panel-heading">Got a Question? We're here to help.</div>
+                            <div class="panel-body">
+                                 <div id = "contactImage"><img src="images/HR_LetsWorkTogether.jpg" alt="autodata technology image"></div>
+                                 <p>Contact the Autodata Sales Team today to get more information or to get started with our services</p>
+                                 <p><b>Call (800) 263-2384</b></p>
+                           </div>
+                        </div>
+                    </div> 
+                    </div>
+                       <div class="row">
+                        <div class="col-lg-12">
+                            <h2>Contact Us</h2>
+                            <form class="form-horizontal" role="form">
+                                  <div class="form-group">
+                                    <label for="name" class="col-lg-2 control-label">Name:</label>
+                                    <div class="col-lg-10">
+                                      <input type="email" class="form-control" id="name" placeholder="Name">
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="email" class="col-lg-2 control-label">Email:</label>
+                                    <div class="col-lg-10">
+                                      <input type="password" class="form-control" id="email" placeholder="Email">
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="message" class="col-lg-2 control-label">Message:</label>
+                                    <div class="col-lg-10">
+                                      <textarea class="form-control" id="message" placeholder="Send us a message" rows="5"></textarea>
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <div class="col-lg-offset-2 col-lg-10">
+                                      <button type="submit" class="btn btn-default">Submit</button>
+                                    </div>
+                                  </div>
+                                </form>
+                            
+                        
+                        </div>
+                     </div>
+                 </div>
+            </div>
+            
+             
+            <div class="tab-pane" id="marketing">
+                <div class = "container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h1>Marketing</h1>
+                            <h3>CONNECTING MANUFACTURERS TO CONSUMERS</h3>
+                            <p>Influencing consumer purchase decisions online involves improving the entire online shopping experience from vehicle research, configuration, accessories, comparisons, finance, payment and incentive options - all elements that can influence and compel consumers to purchase a vehicle and increase customer satisfaction and brand loyalty.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class ="imageContainer"><img src="images/marketing.jpg" alt="autodata technology image"></div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="mark col-lg-4">
+                            <p class = "marketingHeading"> <span class="glyphicon glyphicon-list-alt"></span>Content Asset Management</p>
+                            <p>Whatever your need - Digital Asset Management (DAM), Media Asset Management (MAM), Content Management Systems (CMS) or data warehousing - Autodata's efficient, scalable solutions let you create, manage and publish your digital content.</p>
+                        </div>
+                         <div class="mark col-lg-4">
+                            <p class = "marketingHeading"> <span class="glyphicon glyphicon-thumbs-up"></span>Lead Management</p>
+                            <p>Our Enterprise Lead Management solution helps automotive manufacturers improve the end-to-end lead management process and close the gap between marketing and sales across all channels.</p>
+                            </div>
+                         <div class="mark col-lg-4">
+                            <p class = "marketingHeading"> <span class="glyphicon glyphicon-edit"></span>Market Planning</p>
+                            <p>Our tools, content and services help you quickly understand the complex and rapidly changing automotive landscape - so you can competitively package and price your offerings.</p>
+                            </div>
+                    </div> 
+                    <div class="row">
+                         <div class="mark col-lg-4">
+                            <p class = "marketingHeading"> <span class="glyphicon glyphicon-leaf"></span>Incentive Management</p>
+                            <p>We help manufacturers analyze competitor incentives, quickly publish their own incentives to Web sites, support dealers with timely and accurate incentives data and improve incentives authoring, management and publication.</p>
+                            </div>
+                         <div class="mark col-lg-4">
+                            <p class = "marketingHeading"> <span class="glyphicon glyphicon-qrcode"></span>Digital Marketing Services</p>
+                            <p>Whatever your need - Digital Asset Management (DAM), Media Asset Management (MAM), Content Management Systems (CMS) or data warehousing - Autodata's efficient, scalable solutions let you create, manage and publish your digital content.</p>
+                        </div>
+                         <div class="mark col-lg-4">
+                            <p class = "marketingHeading"> <span class="glyphicon glyphicon-shopping-cart"></span>Interactive Shopping Tools</p>
+                            <p>Autodata's online shopping tools can tame your complex data to produce clear product solutions for your customers.</p>
+                             </div>
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="tab-pane" id="sales">
+                <div class = "container">
+                      <div class="row">
+                         <div class="col-lg-12">
+                            <h1>Automotive Sales</h1>
+                         </div>
+                      </div> 
+                      <div class="row">
+                         <div class="col-lg-8">
+                            <div id = "salesPanels" class="panel panel-default">
+                                <div id = "panel1" class="panel-heading">Fleet Group Automation</div>
+                                <div id = "body1" class="panel-body"><p>Configure, price, and present your fleet offerings to corporate fleet buyers, all from your laptop, all fully automated. Build on-the-fly comparably-equipped comparisons to demonstrate your unique advantages.</p></div>
+                                <div id = "panel2" class="panel-heading">Retail Sales and Walk the Lot Applications</div>
+                                <div id = "body2" class="panel-body"><p>We provide point of sales solutions that help dealers dynamically and visually present vehicles, options, accessories and services to customers while on the showroom floor or on the lot. Our applications also assist dealers with locating vehicles, reviewing current incentives and estimating payments.</p></div>
+                                <div id = "panel3" class="panel-heading">Pre-Owned Sales</div>
+                                <div id = "body3" class="panel-body"><p>From inventory management solutions to training and consulting Autodata's pre owned and CPO solutions will help dealers build their pre-owned and CPO brands and maximize profits.</p></div>
+                                <div id = "panel4" class="panel-heading">Retail Network Performance</div>
+                                <div id = "body4" class="panel-body"><p>We give manufacturers unparallelled insight into the performance of their retail network through data aggregation, analysis, and publishing of retailer scorecards. Our unique combination of sound performance management principles, coaching strategies and best-of-breed technology leads the industry.</p></div>
+                                <div id = "panel5" class="panel-heading">Retail and Field Training</div>
+                                <div id = "body5" class="panel-body"><p>Our comprehensive portfolio of training and education services - including curriculum development, instructor-led sessions and web-based training - helps automotive professionals acquire, maintain and optimize their skills.</p></div>
+                                <div id = "panel6" class="panel-heading">Customer Portfolio Management Retention</div>
+                                <div id = "body6" class="panel-body"><p>Our Portfolio manager suit of solutions allows dealers to mine their customers to see who is coming off lease, who is in equity within their current finance contract and source vehicles for acquisition to support their pre-owned and CPO businesses.</p></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Connecting Manufacturers to Dealers</div>
+                                <div class="panel-body">
+                                     <div class = "imageContainer"><img src="images/sales.jpg" alt="autodata sales image"></div>
+                                     <p>Manufacturers engage Autodata Solutions to provide retail applications, training and dashboards to improve their retail network performance.</p>
+                                </div>
+                            </div>    
+                        </div>
+                   
+                      <div class="col-lg-4">
+                       <div class="panel panel-default">
+                            <div class="panel-heading">Got a Question? We're here to help.</div>
+                            <div class="panel-body">
+                                 <p>Contact the Autodata Sales Team today to get more information or to get started with our services</p>
+                                 <p><b>Call (800) 263-2384</b></p>
+                                 <p><a class="btn btn-default" href="#" data-toggle ="tab">Get in Touch!&raquo;</a></p>
+                           </div>
+                        </div>
+                    </div> 
+                   </div>
+                
+                </div>
+            </div>
+            
+            <div class="tab-pane" id="media">
+                <div class = "container">
+                    <div class = "row">
+                      <div class="col-lg-3">
+                       <div class="panel panel-default">
+                            <div id = "mediaHeading" class="panel-heading"><h4>Media Releases</h4></div>
+                            <ul id = "mediaList" class="list-group">
+                              <li id = "article001" class="list-group-item">DealerTrack and Internet Brands Form Joint Venture</li>
+                              <li id = "article002" class="list-group-item">Autodata Solutions and DriveItNow Give Consumers More Detailed Payment Options Using OEM Incentives and Rebates</li>
+                              <li id = "article003" class="list-group-item">Productive Access, Inc. Selects Autodata Solutions to Augment its mTAB Survey Database</li>
+                              <li id = "article004" class="list-group-item">Autodata Solutions Selects Gumiyo to Deliver Mobile Automotive Solutions</li>
+                              <li id = "article005" class = "list-group-item">Oasis Auto Complete Systems Selects Autodata Solutions to Power Their Enhanced Advantage DMS</li>
+                              <li id = "mediaAll" class="list-group-item"><b>View all</b></li>
+                            </ul>
+                         </div>
+                    </div> 
+                    
+                      <div class="col-lg-9" id="mediaContent">
+            
+                    </div>
+                    
+                    <div id = "mediaArticles" class="col-lg-9">
+                    
+                        <h3>DealerTrack and Internet Brands Form Joint Venture</h3>
+                        <h4>December 20, 2011 | Lake Success, N.Y and Detroit, MI</h4>
+                        <p>DealerTrack and Internet Brands Form Joint Venture to Provide Industry Leading Data Solutions to the Automotive Market Lake Success, N.Y., and Detroit, December 20, 2011 - DealerTrack (Nasdaq: TRAK) and Internet Brands today announced that the data solutions businesses of Chrome Systems, Inc., a DealerTrack company, and Autodata Solutions Inc., a division of Internet Brands, </p>
+                        <p><a id = "button_001" class="btn btn-large btn-primary">Read more</a></p>
+                        
+                        <hr>
+                        
+                        <h3>Autodata Solutions and DriveItNow Give Consumers More Detailed Payment Options Using OEM Incentives and Rebates</h3>
+                        <h4>August 23, 2011 | Detroit, Michigan </h4>
+                        <p>DriveItNow pre-qualifies consumers based on their actual credit, OEM incentives and dealer financing guidelines to provide the clearest picture yet of their car-buying power. Professional services and technology firm Autodata Solutions, Inc., today announced a referral agreement with DriveItNow to help turn web visitors into buyers with a pre-qualified payment marketing conversion tool. DriveItNow is </p>
+                        <p><a id = "button_002" class="btn btn-large btn-primary" data-toggle ="tab">Read more</a></p>
+                        
+                        <hr>
+                        
+                        <h3>Productive Access, Inc. Selects Autodata Solutions to Augment its mTAB Survey Database</h3>
+                        <h4>June 6, 2011 | Yorba Linda, CA </h4>
+                        <p>Productive Access, Inc. (PAI), the leading provider of survey analysis services to the automotive industry, today announced the general availability of the mTAB Value-Add Service. PAI's mTAB is the leading survey analysis software application in several industry verticals including the automotive industry, where thousands of automotive industry planners and analysts benefit from mTAB each and </p>
+                        <p><a id = "button_003" class="btn btn-large btn-primary" data-toggle ="tab">Read more</a></p>
+                        
+                        <hr>
+                        
+                        <h3>Autodata Solutions Selects Gumiyo to Deliver Mobile Automotive Solutions</h3>
+                        <h4>January 26, 2011 | Detroit, Michigan </h4>
+                        <p>Professional services and technology firm, Autodata Solutions, today announced it has selected Gumiyo, a leading mobile application company, to support the delivery of mobile sales and marketing applications to the automotive industry. Gumiyo's flexible mobile platform will enable Autodata Solutions to extend its comprehensive interactive shopping tools, including vehicle configuration, comparisons, and inventory search solutions, </p>
+                        <p><a id = "button_004" class="btn btn-large btn-primary" data-toggle ="tab">Read more</a></p>
+                        
+                        <hr>
+                        
+                        <h3>Oasis Auto Complete Systems Selects Autodata Solutions to Power Their Enhanced Advantage DMS</h3>
+                        <h4>February 5, 2010 | London, Ontario </h4>
+                        <p>Autodata Solutions Company, a leading provider of automotive content and technology solutions, is pleased to announce that Oasis Auto Complete Systems Limited, providers of full-featured DMS software to dealerships, will power their Advantage Showroom application with Autodata Solutions' comprehensive vehicle data, images and tools. Autodata Solutions will provide Oasis Auto Complete Systems' Advantage Showroom with </p>
+                        <p><a id = "button_005" class="btn btn-large btn-primary" data-toggle ="tab">Read more</a></p>
+                        
+                        <hr>
+                        
+                    </div>
+                  </div>
+                </div>
+     </div>
+       <!-- /END THE TAB CONTENT -->
+
+    </div><!-- /.container -->
+</div><!-- /WRAP -->
+      <!-- FOOTER -->
+      <div id="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+         <p>&copy; 2013 Autodata Solutions Company &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+     <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.js"></script>
+    <script src="js/main.js"></script> 
+   
+  </body>
+</html>
