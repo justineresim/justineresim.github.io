@@ -1,0 +1,97 @@
+/* ==========================================================================
+   Global Style Guide Page --- This file is just for this testing/style guide site - NOT part pf global CSS - may be removed for live
+   ========================================================================== */
+
+body.testing{
+	padding-bottom: 60px;
+	header{
+		padding: 20px 0;
+	}
+	.g-container{
+		position: relative;
+	    padding-right: 15px;
+	    padding-left: 15px;
+	    margin-right: auto;
+	    margin-left: auto;
+		@media (min-width: 1000px){
+		    width: 950px;
+		}
+		@media (min-width: 1200px){
+		    width: 1100px;
+		}
+		.testing-body-container{
+			margin-left: 200px;
+		}
+		.testing-sidebar{
+			position: fixed;
+			width: 170px;
+		    margin-top: -10px;
+			ul.testing-menu{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				text-align: right;
+				li{
+					margin: 5px 0;
+					a{
+						padding: 5px 10px 5px 0;
+						display: block;
+						border-right: 5px solid rgba(0,0,0,0);
+						&.active{
+							border-right: 5px solid $primary-1;
+						    color: $grey-1;
+						}
+					}
+				}
+			}
+		}
+		@media (max-width: $max-break-tablet) {
+			.testing-body-container{
+				margin-left: 0;
+			}
+			.testing-sidebar{
+				display: none;
+			}
+		}
+	}
+	pre{
+	    margin: 20px 0 40px;
+		font-size: 14px;
+		line-height: 1.4;
+		display: block;
+		font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+		width: 100%;
+		height: 100%;
+		xmp{
+			margin: 0;
+			padding: 15px;
+			color: $grey-1;
+			background-color: $tertiary-bg-color;
+			border: 1px solid $border-color;
+			border-radius: $border-radius;
+		    white-space: pre;
+    		overflow-x: scroll;
+    		width: 100%;
+			height: 100%;
+		}
+	}
+	.testing-arrow-up{
+		position: fixed;
+		bottom: 15px;
+		right: 15px;
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		background-color: rgba(0,0,0,.1);
+		z-index: 2000;
+	}
+	.testing-unit{
+		background-color: $grey-2;
+		height: 50px;
+	}
+	.testing-bg{
+		height: 50px;
+		border: 1px solid $border-color;
+	}
+}

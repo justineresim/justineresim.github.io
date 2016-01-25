@@ -1,0 +1,34 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+//Helpers
+@import "helpers/_fonts";
+@import "helpers/_variables";
+@import "helpers/_helpers";
+@import "helpers/_mixins";
+
+//Base
+@import "base/_general";
+
+//Components
+@import "components/_assets";
+@import "components/_buttons";
+@import "components/_forms";
+@import "components/_header";
+@import "components/_mobile-menu";
+@import "components/_sidebar";
+@import "components/_tables";
+@import "components/_type";
+
+//Layout
+@import "layout/_grid";
+@import "layout/_layout";
+
+//Pages
+@import "pages/_global"; // Global style guide - remove this page for live
+
+
+
+

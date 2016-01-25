@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face {
+    font-family: 'Noto-Serif-Italic';
+    src: url('NotoSerif-Italic-webfont.eot');
+    src: url('../fonts/NotoSerif-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/NotoSerif-Italic-webfont.woff') format('woff'), url('../fonts/NotoSerif-Italic-webfont.ttf') format('truetype'), url('../fonts/NotoSerif-Italic-webfont.svg#noto_serifitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Eau-SansLight';
+    src: url('../fonts/EauDouce-SansLight.eot?#iefix') format('embedded-opentype'), url('../fonts/EauDouce-SansLight.otf') format('opentype'), url('../fonts/EauDouce-SansLight.woff') format('woff'), url('../fonts/EauDouce-SansLight.ttf') format('truetype'), url('../fonts/EauDouce-SansLight.svg#EauDouce-SansLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Eau-SansBook';
+    src: url('../fonts/Eau-SansBook.eot?#iefix') format('embedded-opentype'), url('../fonts/Eau-SansBook.woff') format('woff'), url('../fonts/Eau-SansBook.ttf') format('truetype'), url('../fonts/Eau-SansBook.svg#Eau-SansBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Eau-SansBold';
+    src: url('../fonts/Eau-SansBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Eau-SansBold.otf') format('opentype'), url('../fonts/Eau-SansBold.woff') format('woff'), url('../fonts/Eau-SansBold.ttf') format('truetype'), url('../fonts/Eau-SansBold.svg#Eau-SansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

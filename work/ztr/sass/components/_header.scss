@@ -1,0 +1,231 @@
+/* ==========================================================================
+   Global Header
+   ========================================================================== */
+
+header.g-header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: $primary-2;
+	width: 100%;
+	@extend .g-clearfix;
+	a.g-logo{
+		float: left;
+		border:0px;
+    	outline:0px;
+		img{
+			height: 75px;
+			padding: 22px 15px 22px 20px;
+			display: block;
+			border:0px;
+    		outline:0px;
+			@media (max-width: $max-break-tablet) {
+			    height: 60px;
+			    padding: 18px;
+			}
+		}
+	}
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		li{
+    		float: left;
+			a{
+				display: block;
+				span[class*="g-icon"]{
+					font-size: 18px;
+				}
+			}
+		}
+
+		//Main navigation menu
+		&.g-main-nav{
+			text-align: center;
+			float: left;
+			@media (max-width: $max-break-tablet) {
+				display: none;
+			}
+			li{
+				display: block;
+				a{
+					padding: 40px 15px 16px 15px;
+					color: #fff;
+					text-transform: uppercase;
+					position: relative;
+					font-family: $eau-bold;
+					@extend .transition;
+					height: 75px;
+					span{
+						@extend .transition;
+						position: absolute;
+						color: #fff;
+						opacity: .7;
+						top: 15px; 
+						left: 50%;
+					    width: 40px;
+					    margin-left: -20px;
+					}
+					&:hover{
+						background-color: darken($primary-2, 5%);
+						span{
+							opacity: 1;
+						}
+					}
+					&:active, &.g-active, &:focus{
+						background-color: darken($primary-2, 10%);
+						span{
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+
+		//Secondary menu - top right
+		&.g-side-nav{
+			float: right;
+			position: relative;
+			li{
+				a{
+					padding: 0 10px;
+					display: block;
+					position: relative;
+					span{
+						@extend .transition;
+						color: #fff;
+						line-height: 75px;
+						opacity: .7;
+						@media (max-width: $max-break-tablet) {
+							line-height: 60px;
+							opacity: 1;
+						}
+					}
+					&.g-profile-menu-togle{
+						padding: 3px 10px;
+						img{
+						    margin-top: 15px;
+						    height: 34px;
+						    width: 34px;
+						    @extend .transition;
+						    border-radius: $border-radius;
+						    &:hover{
+							    box-shadow: 1px 1px 6px rgba(0, 0, 0, .4);
+					    	}
+						}
+					}
+					&:hover{
+						span{
+							opacity: 1;
+						}
+					}
+					&:active, &.g-active, &:focus{
+						opacity: 1;
+					}
+					&.g-new{
+						&:after{
+							content: '';
+						    height: 7px;
+						    width: 7px;
+						    border-radius: 50%;
+						    position: absolute;
+						    right: 10px;
+						    top: 28px;
+							background-color: $error-color;
+							@media (max-width: $max-break-tablet) {
+								top: 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//Dropdown user menu
+ul.g-profile-menu{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	background-color: $tertiary-bg-color;
+	box-shadow: $box-shadow2;
+	right: 10px;
+	top: 75px;
+	width: 150px;
+	display: none;
+	z-index: 4000;
+	li{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		
+		a{
+			padding: 10px 15px;
+			display: block;
+			@extend .transition;
+			font-family: $eau-bold;
+			font-size: 16px;
+			line-height: 1.4em;
+			border-bottom: 1px solid rgba(0,0,0,.1);
+			&:hover{
+				background-color: $primary-1;
+				border-bottom: 1px solid $primary-1;
+				color: #fff;
+			}
+		}
+	}
+	&:before, &:after{
+		bottom: 100%;
+	    right: 10px;
+	    border: solid transparent;
+	    content: " ";
+	    height: 0;
+	    width: 0;
+	    position: absolute;
+	    pointer-events: none;
+	}
+	&:before{
+		border-color: rgba(221, 221, 221, 0);
+		border-bottom-color: $tertiary-bg-color;
+		border-width: 11px;
+		margin-left: -11px;
+	}
+	&:after{
+		border-color: rgba(221, 221, 221, 0);
+	    border-bottom-color: $tertiary-bg-color;
+	    border-width: 10px;
+	    margin-left: -10px;
+	}
+}
+
+//Left hand side panel
+.g-side-panel{
+	background-color: $primary-2;
+	img{
+		width: 34px;
+		margin: 8px;
+		position: absolute;
+	    bottom: 0px;
+	}
+	a{
+		display: block;
+		width: 34px;
+		margin: 8px;
+		position: absolute;
+	    bottom: 45px;
+	    text-align: center;
+	    span{
+	    	color: #fff;
+	    	opacity: .8;
+    	    font-size: 18px;
+    	    @extend .transition;
+	    }
+	    &:hover{
+	    	span{
+	    		opacity: 1;
+	    	}
+	    }
+	}
+}

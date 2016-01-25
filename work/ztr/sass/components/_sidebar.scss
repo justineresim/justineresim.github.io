@@ -1,0 +1,85 @@
+/* ==========================================================================
+   Sidebar/sub menu
+   ========================================================================== */
+
+.g-sidebar-toggle{
+	position: fixed;
+	top: 90px;
+	left: 505px;
+    z-index: 1000;
+    @media (max-width: $max-break-tablet) {
+		display: none !important;
+    }
+}
+
+.g-sidebar{
+	background-color: $secondary-bg-color;
+	.g-menu{
+		list-style-type: none;
+		margin: 0;
+		padding: 10px 15px 0;
+		background-color: #fff;
+		li{
+			width: 33%;
+		    float: left;
+		    text-align: center;
+		    border-bottom: 5px solid #fff;
+			a{
+				display: table-cell;
+				vertical-align: middle;
+    			width: 33%;
+				height: 60px;
+				padding: 0 10px 0;
+			    font-family: $eau-light;
+			    color: $grey-1;
+			    font-size: 18px;
+			    @include transition();
+			}
+		    &:hover{
+				border-bottom: 5px solid $primary-1;
+			}
+			&.g-active{
+				border-bottom: 5px solid $primary-1;
+				a{
+					font-family: $eau-bold;
+				}
+			}
+		}
+	}
+	.g-filter-section{
+		padding: 10px 15px;
+		border-top: 1px solid $grey-4;
+		background-color: #fff;
+		.g-filter-heading{
+			text-transform: uppercase;
+			padding: 5px 0;
+			display: block;
+			span[class*="icon-"]{ 
+				font-size: 8px;
+			}
+		}
+		&.g-search{
+		    padding-top: 18px;
+		}
+		.g-checkbox{
+			[class^="icon-"]:before, [class*="icon-"]:before{
+				margin-left: 0;
+				margin-right: 5px;
+			}
+		}
+		&.g-filter-results{
+			padding: 15px 15px 10px;
+			@media (max-width: $max-break-tablet) {
+				padding: 15px 15px 0;
+			}
+		}
+	}
+	.g-sidebar-footer{
+		padding: 10px 15px;
+		background-color: #fff;
+	    box-shadow: 0 -1px 1px $grey-4;
+		.g-checkbox{
+		    margin-top: 5px;
+		}
+	}
+}

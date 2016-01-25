@@ -1,0 +1,206 @@
+/* ==========================================================================
+   Helper Classes
+   ========================================================================== */
+
+//----Type
+
+
+//fonts
+.g-font-light{
+	font-family: $eau-light;
+}
+
+.g-font-bold{
+	font-family: $eau-bold;
+}
+
+.g-font-italic{
+	font-family: $noto-italic;
+}
+
+.g-font-normal{
+	font-family: $eau-book;
+}
+
+.g-text-uppercase{
+	text-transform: uppercase;
+}
+
+
+//font colours
+.g-text-color-primary{
+	color: $text-color;
+}
+
+.g-text-color-light{
+	color: $text-color-light;
+}
+
+.g-text-color-lighter{
+	color: $text-color-lighter;
+}
+
+.g-text-color-white{
+	color: #fff;
+}
+
+
+//transitions
+.transition {
+	-webkit-transition: $transition1-default;
+	-moz-transition: $transition1-default;
+	-o-transition: $transition1-default;
+	transition: $transition1-default;
+}
+
+.transition2 {
+	-webkit-transition: $transition2-default;
+	-moz-transition: $transition2-default;
+	-o-transition: $transition2-default;
+	transition: $transition2-default;
+}
+
+.transition3 {
+	-webkit-transition: $transition3-default;
+	-moz-transition: $transition3-default;
+	-o-transition: $transition3-default;
+	transition: $transition3-default;
+}
+
+.box-shadow{
+	-webkit-box-shadow: 1px 1px 2px #666;
+	box-shadow: 1px 1px 2px #666;
+}
+
+.border-radius{
+	border-radius: $border-radius;
+}
+
+.background-gradient{
+	background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.9), transparent, transparent);
+	background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.9), transparent, transparent);
+	background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.9), transparent, transparent);
+	background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.9), transparent, transparent);
+	background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.9), transparent, transparent);
+}
+
+.background-gradient2{
+	background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.7), transparent);
+	background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.7), transparent);
+	background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.7), transparent);
+	background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), transparent);
+	background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.7), transparent);
+}
+
+
+//background-colors
+
+.g-bg-color-primary{
+	background-color: $primary-bg-color;
+}
+
+.g-bg-color-secondary{
+	background-color: $secondary-bg-color;
+}
+
+.g-bg-color-tertiary{
+	background-color: $tertiary-bg-color;
+}
+
+
+//icon-colors
+
+.g-color-alert{
+	color: $color-alert;
+}
+
+.g-color-overdue{
+	color: $color-overdue;
+}
+
+.g-color-warning{
+	color: $color-warning;
+}
+
+.g-color-normal{
+	color: $color-normal;
+}
+
+.g-color-fav{
+	color: $color-fav;
+}
+
+.g-color-icon-default{
+	color: $grey-5;
+}
+
+.g-color-grey{
+	color: $grey-3;
+}
+
+
+
+//helper classes
+
+.g-pull-right{
+	float: right;
+}
+
+.g-pull-left{
+	float: left;
+}
+
+.g-text-right{
+	text-align: right;
+}
+
+.g-text-left{
+	text-align: left;
+}
+
+.g-text-center{
+	text-align: center;
+}
+
+.g-clearfix{
+	&:before, &:after{
+	content: " ";
+	display: table;
+	}
+	&:after{
+		clear:both;
+	}
+}
+
+.g-image-responsive{
+	max-width: 100%;
+}
+
+//responsive helper classes
+
+.g-hidden{
+	display: none;
+}
+
+.g-xs-hidden{
+	@media (max-width: $max-break-mobile) {
+		display: none;
+	}
+}
+
+.g-sm-hidden{
+	@media (min-width: $min-break-mobile) and (max-width: $max-break-tablet) {
+		display: none;
+	}
+}
+
+.g-lg-hidden{
+	@media (min-width: $min-break-tablet) {
+		display: none;
+	}
+}
+
+
+
+
+

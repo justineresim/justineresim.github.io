@@ -1,0 +1,131 @@
+/* ==========================================================================
+   Assets (Equipment - Asset Results List)
+   ========================================================================== */
+
+.g-filter-results{
+	background-color: $secondary-bg-color !important;
+	@media (min-width: $min-break-tablet) {
+		.g-result:first-child{
+			border-top-right-radius: $border-radius;
+			border-top-left-radius: $border-radius;
+		}
+		.g-result:last-child{
+			border-bottom-right-radius: $border-radius;
+			border-bottom-left-radius: $border-radius;
+		}
+	}
+	.g-result.g-active + .g-result{
+		border-top: 1px solid $grey-2;
+	}
+	p.g-assets{
+	    margin-top: 8px;
+	    margin-bottom: 22px;
+	}
+    &.g-map-view{
+    	.g-results-map-view{
+    		display: block;
+    	}
+    	.g-result{
+    		display: none;
+    		&.g-active{
+    			display: block;
+    			border: 1px solid #fff;
+    		}
+    	}
+    }
+}
+
+.g-results-container{
+	@media (max-width: $max-break-tablet) {
+		margin-left: -15px;
+		margin-right: -15px;
+    }
+}
+
+.g-results-map-view{
+	display: none;
+	height: 500px;
+	margin-left: -15px;
+	margin-right: -15px;
+	@media (max-width: $max-break-mobile) {
+		height: 300px;
+	}
+}
+
+.g-filters{
+	.g-btn-secondary{
+		margin: 4px 0;
+	}
+	.g-pull-right{
+		margin-top: 10px;
+	    margin-left: 5px;
+        height: 27px;
+        .icon-save{
+        	font-size: .8em;
+			position: relative;
+			top: -0.15em;
+        }
+	}    
+}
+
+.g-result{
+	padding: 10px;
+	background-color: #fff;
+	position: relative;
+	border: 1px solid $grey-4;
+	margin-top: -1px;
+	@include transition();
+	cursor: pointer;
+	.g-result-img{
+		border-radius: $border-radius;
+		border: 1px solid $grey-4;
+		width: 40px;
+		height: 40px;
+		overflow: hidden;
+		position: absolute;
+		img{
+			position: relative;
+			width: 40px;
+			height: auto;
+			opacity: .6;
+			-webkit-backface-visibility: hidden;
+			@include transition(opacity 0.1s ease-in);
+		}
+	}
+	.g-result-text{
+		margin-left: 50px;
+		margin-right: 50px;
+		.g-result-number{
+			font-family: $eau-bold;
+			font-size: 18px;
+		}
+		.g-result-details{
+			font-family: $noto-italic;
+			color: $grey-2;
+			font-size: 16px;
+		}
+	}
+	.g-result-icons{
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+	&.g-active{
+		border: 1px solid $grey-2;
+		.g-result-img{
+			img{
+				opacity: 1;
+			}
+		}
+	}
+	&:hover{
+		background-color: $tertiary-bg-color;
+		&:hover{
+			.g-result-img{
+				img{
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

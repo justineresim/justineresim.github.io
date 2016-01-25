@@ -1,0 +1,96 @@
+/* ==========================================================================
+   General page layout for site
+   ========================================================================== */
+
+html, body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body.g-fixed{
+    overflow: hidden;
+}
+
+header.g-header{
+	height: 75px;
+	z-index: 2000;
+     @media (max-width: $max-break-tablet) {
+        height: 60px;
+    }
+}
+
+.g-search-container{
+    margin-bottom: 55px;
+    border-bottom: 1px solid $border-color;
+}
+
+.g-sidebar{
+	overflow: scroll;
+    height: 100%;
+    margin: 0;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 440px;
+    border-top-left-radius: $border-radius;
+    @media (max-width: $max-break-tablet) {
+        width: 100%;
+        left: 0;
+        padding: 0 0 60px 0;
+        border-radius: 0;
+    }
+    .g-sidebar-footer{
+        position: fixed;
+        bottom: 0;
+        width: 440px;
+        @media (max-width: $max-break-tablet) {
+            width: 100%;
+        }
+    }
+}
+
+.g-side-panel{
+    position: fixed;
+    width: 50px;
+    height: 100%;
+    z-index: 1500;
+    @media (max-width: $max-break-tablet) {
+        display: none;
+    }
+}
+
+.g-page-content-container.g-fixed{
+    margin-top: 75px;
+    margin-left: 50px;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 3000;
+    overflow: hidden;
+    box-shadow: -2px -2px 3px rgba(0,0,0,.2);
+    background-color: $primary-2;
+    padding-bottom: 75px;
+    .g-page-content-container-inner{
+        height: 100%;
+        border-top-left-radius: $border-radius;
+        position: relative;
+        overflow: hidden;
+    }
+    .g-page-content{
+	    height: 100%;
+        margin-left: 440px;
+    }
+    @media (max-width: $max-break-tablet) {
+        margin: 0;
+        top: 60px;
+        padding-bottom: 0;
+        .g-page-content{
+            display: none;
+        }
+        .g-page-content-container-inner{
+            border-radius: 0;
+        }
+    }
+}
