@@ -3,7 +3,7 @@
 		<h1>Work.</h1>
 		<p>I have worked with some amazing clients and have helped create some pretty awesome products. Check out some of my work below.</p>
 	</div>
-
+<!-- 
 	<div class="g-pagination">
 	    <a onclick="" class="g-prev g-disabled"><</a>
 	    <a class="g-nums g-active">1</a>
@@ -12,63 +12,44 @@
 	    <a class="g-nums">4</a>
 	    <a class="g-nums">5</a>
 	    <a class="g-next">></a>
-	</div>
-
-<!-- 	<div class="g-container-lg g-filters">
-		<h2>Filter work by type:</h2>
-        <form>
-        	<div class="line">
-                <div class="g-form-group g-checkbox unit size1of6">
-                    <input type="checkbox" id="checkbox1">
-                    <label for="checkbox1"><span>Design</span></label>
-                    </div>
-                <div class="g-form-group g-checkbox unit size1of6">
-                    <input type="checkbox" id="checkbox2">
-                    <label for="checkbox2"><span>Developer</span></label>
-                    </div>
-                <div class="g-form-group g-checkbox unit size1of6">
-                    <input type="checkbox" id="checkbox3">
-                    <label for="checkbox3"><span>And another!</span></label>
-                    </div>
-                <div class="g-form-group g-checkbox unit size1of6">
-                    <input type="checkbox" id="checkbox4">
-                    <label for="checkbox4"><span>Option 1</span></label>
-                    </div>
-                <div class="g-form-group g-checkbox unit size1of6">
-                    <input type="checkbox" id="checkbox5">
-                    <label for="checkbox5"><span>Another option</span></label>
-                    </div>
-                <div class="g-form-group g-checkbox unit size1of6">
-                    <input type="checkbox" id="checkbox6">
-                    <label for="checkbox6"><span>And another!</span></label>
-				</div>
-			</div>
-		</form>
 	</div> -->
 
 	<div class="g-container g-results">
+
+	    <div class="g-featured-container g-container g-hp-section">
+			<div class="line margin-bottom">
+
+				<div ng-repeat="i in work" class="g-featured size1of3 unit">
+					<a class="fancy-box-trigger g-img" ng-click="fancyBox(i.count)" id="fancy-box-{{i.count}}" style="background-image:url({{i.image}}); background-size: 90% auto; background-repeat: no-repeat; background-position: center center;">
+					</a>
+					<div class="g-text">
+						<h3>{{i.title}}</h3>
+					</div>
+					<div>
+						<a ng-repeat="image in i.images" class="fancybox fancy-box-{{image.count}}" rel="gallery{{image.count}}" href="{{image.src}}" title="{{image.desc}}"></a>
+					</div>
+				</div>
+
+
+			</div>
 	
-		<div class="g-panel  g-work-0">
-			<a class="g-img" onclick="openFancyBox('.fancy-box-0');" style="background-image:url(img/work/fhm5.png); background-size: 100% auto; background-repeat: no-repeat; background-position: center center;">
+		<div class="g-panel" ng-repeat="i in work">
+			<a class="fancy-box-trigger g-img" ng-click="fancyBox(i.count)" id="fancy-box-{{i.count}}" style="background-image:url({{i.image}}); background-size: 100% auto; background-repeat: no-repeat; background-position: center center;">
 				
 			</a>
 			<div class="g-text">
-				<h2>Fitness Health Match</h2>
-				<p>FHMatch is a social networking platform that connects people with a broad range of local fitness, health, and wellness professionals.</p><p>The team at ResIM, including myself, created this custom web application from the ground up.</p>
-				<a class="g-btn g-btn-tertiary" onclick="openFancyBox('.fancy-box-0');">See More</a>
-								<a target="_blank" href="http://www.fhmatch.com/" class="g-btn g-btn-quaternary">Visit Site<span class="ti-arrow-top-right g-icon-right"></span></a>
-							</div>
+				<h2>{{i.title}}</h2>
+				<div ng-bind-html="i.text"></div>
+				<a class="g-btn g-btn-tertiary"  ng-click="fancyBox(i.count)">See More</a>
+				<a target="_blank" href="{{i.url}}" class="g-btn g-btn-quaternary">Visit Site<span class="ti-arrow-top-right g-icon-right"></span></a>
+			</div>
 			<div>
-								<a class="fancybox fancy-box-0" rel="gallery0" href="img/work/fhm1.png" title="Fitness Health Match Homepage"></a>
-								<a class="fancybox fancy-box-0" rel="gallery0" href="img/work/fhm2.png" title="Create an account screen."></a>
-								<a class="fancybox fancy-box-0" rel="gallery0" href="img/work/fhm3.png" title="Browse fitness and health related articles."></a>
-								<a class="fancybox fancy-box-0" rel="gallery0" href="img/work/fhm4.png" title="Easily find health and fitness professional in your area."></a>
-								<a class="fancybox fancy-box-0" rel="gallery0" href="img/work/fhm5.png" title="Connect with professional to book appointments."></a>
-							</div>
+				<a class="fancybox fancy-box-0" rel="gallery0" href="img/work/fhm1.png" title="Fitness Health Match Homepage"></a>
+			</div>
 		</div>
 
 	
-		<div class="g-panel  g-work-1">
+		<!-- <div class="g-panel  g-work-1">
 			<a class="g-img" onclick="openFancyBox('.fancy-box-1');" style="background-image:url(img/work/redeemer1.png); background-size: 100% auto; background-repeat: no-repeat; background-position: center center;">
 				
 			</a>
@@ -353,33 +334,7 @@
 								<a class="fancybox fancy-box-13" rel="gallery13" href="img/work/a3.png" title="Inner contnt page"></a>
 							</div>
 		</div>
-
+ -->
 	
 	</div>
 
-	<div class="g-pagination">
-		<a href="<br />
-<b>Notice</b>:  Undefined variable: _PHP_SELF in <b>/Users/Justine/Desktop/prototypes/new/work.php</b> on line <b>252</b><br />
-?page=1" class="g-prev "><<</a>
-        <a href="<br />
-<b>Notice</b>:  Undefined variable: _PHP_SELF in <b>/Users/Justine/Desktop/prototypes/new/work.php</b> on line <b>253</b><br />
-?page=0" class="g-prev "><</a>
-        <a href="<br />
-<b>Notice</b>:  Undefined variable: _PHP_SELF in <b>/Users/Justine/Desktop/prototypes/new/work.php</b> on line <b>254</b><br />
-?page=1" class="g-nums ">1</a>
-        <a href="<br />
-<b>Notice</b>:  Undefined variable: _PHP_SELF in <b>/Users/Justine/Desktop/prototypes/new/work.php</b> on line <b>255</b><br />
-?page=2" class="g-nums ">2</a>
-        <a href="<br />
-<b>Notice</b>:  Undefined variable: _PHP_SELF in <b>/Users/Justine/Desktop/prototypes/new/work.php</b> on line <b>256</b><br />
-?page=3" class="g-nums ">3</a>
-        <a href="<br />
-<b>Notice</b>:  Undefined variable: _PHP_SELF in <b>/Users/Justine/Desktop/prototypes/new/work.php</b> on line <b>257</b><br />
-?page=4" class="g-nums ">4</a>
-        <a href="<br />
-<b>Notice</b>:  Undefined variable: _PHP_SELF in <b>/Users/Justine/Desktop/prototypes/new/work.php</b> on line <b>258</b><br />
-?page=1" class="g-next ">></a>
-        <a href="<br />
-<b>Notice</b>:  Undefined variable: _PHP_SELF in <b>/Users/Justine/Desktop/prototypes/new/work.php</b> on line <b>259</b><br />
-?page=4" class="g-next ">>></a>
-    </div>

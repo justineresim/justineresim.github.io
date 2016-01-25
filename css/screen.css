@@ -2513,20 +2513,16 @@ hr.g-secondary {
 p {
   margin: 0 0 .8em;
 }
-/* line 99, ../sass/base/_general.scss */
-p + p {
-  margin: 0 0 1.4em;
-}
 
-/* line 106, ../sass/base/_general.scss */
+/* line 103, ../sass/base/_general.scss */
 ul, ol {
   margin: 0 0 1.4em 0;
 }
-/* line 108, ../sass/base/_general.scss */
+/* line 105, ../sass/base/_general.scss */
 ul li, ol li {
   margin-bottom: 0.7em;
 }
-/* line 111, ../sass/base/_general.scss */
+/* line 108, ../sass/base/_general.scss */
 ul ul, ul ol, ol ul, ol ol {
   margin: 0.7em 0 0 0;
 }
@@ -3458,7 +3454,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 45, ../sass/layout/_grid.scss */
-*[class^="size"] {
+*[class*="size"] {
   width: 100%;
 }
 

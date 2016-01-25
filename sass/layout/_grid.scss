@@ -42,7 +42,7 @@
 
 // ----- DEFAULTS ----- //
 
-*[class^="size"] {
+*[class*="size"] {
     width: 100%;
 }
 
