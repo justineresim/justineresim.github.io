@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Homepage
+   ========================================================================== */
+
+body.g-homepage{
+	.g-content-container{
+		margin-top: -263px;
+		margin-bottom: 3.2em;
+		.g-panel-body{
+			height: 330px;
+			overflow-y: auto;
+			overflow-x: hidden;
+		}
+	}
+	@media (max-width: $max-break-tablet){
+		.g-content-container{
+			margin: 1.5em 0;
+			.g-panel-body{
+				height: auto;
+			}
+		}
+	}
+}

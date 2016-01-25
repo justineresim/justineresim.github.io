@@ -1,0 +1,12 @@
+/* ==========================================================================
+   Tooltips - build of off jQuery UI - https://jqueryui.com/tooltip/
+   ========================================================================== */
+
+.ui-tooltip.ui-widget-content{
+	border-radius: $border-radius;
+	padding: 7px 12px;
+	.ui-tooltip-content{
+		color: $grey-1;
+		font-size: 13px;
+	}
+}

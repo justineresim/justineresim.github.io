@@ -1,0 +1,154 @@
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer.g-footer{
+	color: rgba(255,255,255,.7);
+	font-size: 12px;
+	position: relative;
+	background: $primary-blue;
+	@media (min-width: $min-break-tablet){
+		background: linear-gradient(90deg, $primary-blue 66.6666%, $primary-blue-dark 33.3333%);
+		.g-container{
+			background: linear-gradient(90deg, transparent 66.6666%, $primary-blue-dark 33.3333%);
+		}
+	}
+	a{
+		color: #fff;
+	}
+	.g-flag{
+		margin-left: 5px;
+		@media (min-width: $max-break-tablet) and (max-width: $max-break-desktop){
+		    width: 16px;
+		}
+	}
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		li{
+			margin: 0;
+		}
+	}
+	.g-footer-top{
+		height: 60px;
+		position: relative;
+		&:after{
+			content:""; 
+			background: rgba(255,255,255,.1); 
+			position: absolute; 
+			bottom: 0; 
+			left: 0; 
+			height: 1px; 
+			width: 66%;
+		}
+		@media (max-width: $max-break-tablet){
+			display: none;
+		}
+	}
+	.g-footer-bottom{
+	    height: 120px;
+	    @media (max-width: $max-break-tablet){
+			display: none;
+		}
+	}
+	.g-footer-content{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		@media (max-width: $max-break-tablet){
+			position: relative;
+		}
+	}
+	ul.g-footer-nav{
+		padding: 20px 0;
+	    height: 60px;
+		li{
+			display: inline-block;
+			text-align: center;
+		    line-height: 1em;
+		    padding: 0 20px;
+		    border-right: 1px solid #fff;
+			text-align: left;
+			a{
+				text-transform: uppercase;
+			}
+			&:first-child{
+				padding-left: 0;
+			}
+			&:last-child{
+				padding-right: 0;
+				border-right: none;
+			}
+		}
+		@media (min-width: $max-break-tablet) and (max-width: $max-break-desktop){
+			li{
+			    padding: 0 10px;
+		        font-size: 11px;
+			}
+		}
+		@media (max-width: $max-break-tablet){
+			height: auto;
+			border-bottom: 1px solid $primary-blue-dark;
+			padding-bottom: 0;
+			li, li:first-child, li:last-child{
+				padding: 0 20px 20px 0;
+				border-right: none;
+			}
+		}
+	}
+	.g-footer-nav-secondary{
+		height: 120px;
+		padding: 20px 0 10px;
+		@media (max-width: $max-break-tablet){
+			height: auto;
+		}
+		@media (min-width: $max-break-tablet) and (max-width: $max-break-desktop){
+	        font-size: 11px;
+		}
+	}
+	.g-social-links{
+		.fa{
+			color: $primary-yellow;
+			margin-right: 8px;
+			width: 1em;
+			text-align: center;
+		}
+	}
+	.g-external-links{
+		background-color: $primary-blue-dark;
+		height: 180px;
+		padding-top: 30px;
+		@media (max-width: $max-break-tablet){
+			height: auto;
+			padding: 15px;
+		}
+		a{
+			@extend .g-external-link;
+			text-transform: uppercase;
+			&:after{
+				color: $primary-yellow;
+			}
+		}
+		li{
+			margin-bottom: 10px;
+			margin-left: 50px;
+			@media (max-width: $max-break-tablet){
+				margin-right: 10px;
+				display: inline-block;
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+//page overlay for when nav or modals are open
+.g-page-overlay{
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.6);
+}

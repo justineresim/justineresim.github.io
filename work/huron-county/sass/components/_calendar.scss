@@ -1,0 +1,101 @@
+/* ==========================================================================
+   Calendar - built off of jQuery UI date picker - https://jqueryui.com/datepicker/
+   ========================================================================== */
+
+
+.ui-datepicker {
+	box-shadow: $box-shadow;
+	th{
+		text-transform: uppercase;
+    	font-weight: normal;
+	    font-size: 11px;
+	}
+	.ui-icon {
+	    width: 20px;
+	    height: 20px;
+        background-size: 90%;
+	}
+}
+
+.ui-datepicker .ui-datepicker-title {
+    font-size: 1em;
+}
+
+.ui-widget-content{
+	border: none;
+}
+
+.ui-datepicker td span, .ui-datepicker td a{
+	text-align: center;
+    border-radius: 50%;
+    line-height: 1.6em;
+    width: 2.2em;
+    margin: 0px auto;
+    @media (min-width: $min-break-tablet) and (max-width: $max-break-desktop){
+        line-height: 1.2em;
+        width: 1.8em;
+    }
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+    float: none;
+    background: #D7E4EF;
+    opacity: 1;
+    padding: 5px 15px;
+    width: 100%;
+    margin: 8px 0;
+    @extend .transition;
+    &.ui-state-hover{
+		background: #b3cbe0;
+    }
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight, .ui-widget-content .ui-state-hover.ui-state-highlight{
+	background: lighten(#E26E06, 30%);
+    color: #fff;
+    border: 1px solid lighten(#E26E06, 30%);
+}
+
+.ui-widget-content .ui-state-hover.ui-datepicker-current{
+	background: none;
+	color: #013E6E;
+	border-color: #fff;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, .ui-widget-content .ui-state-active.ui-state-hover{
+    background: #E26E06;
+    color: #fff;
+    border: 1px solid #E26E06;
+}
+
+.ui-widget-header .ui-state-hover, .ui-widget-header .ui-state-focus {
+    border: none;
+    background: #fff;
+    font-weight: normal;
+    color: #fff;
+}
+
+.ui-widget-header .ui-icon {
+    background-image: url(/img/arrow-right.png);
+    background-position: inherit;
+    opacity: .8;
+    @extend .transition;
+    &.ui-icon-circle-triangle-w{
+    	background-image: url(/img/arrow-left.png);
+    }
+    &:hover{
+    	opacity: 1;
+    }
+}
+
+.ui-datepicker .ui-datepicker-next-hover {
+    right: 2px;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover {
+    left: 2px;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover {
+    top: 2px;
+}

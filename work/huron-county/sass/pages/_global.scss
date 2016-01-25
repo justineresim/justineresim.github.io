@@ -1,0 +1,116 @@
+/* ==========================================================================
+   Global Style Guide Page --- This file is just for this testing/style guide site - NOT part pf global CSS - may be removed for live
+   ========================================================================== */
+
+body.testing{
+	padding: 0 0 80px 0;
+	background: #fff;
+	header{
+		overflow: hidden;
+		background-color: $primary-blue;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		z-index: 2000;
+		img{
+			width: 80px;
+			padding: 15px 0;
+		}
+	}
+	h1.testing-page-heading{
+		margin-top: 90px;
+		font-size: 30px; 
+		text-transform: uppercase;
+		text-align: center;
+	}
+	.g-container{
+		position: relative;
+	    padding-right: 15px;
+	    padding-left: 15px;
+	    margin-right: auto;
+	    margin-left: auto;
+		@media (min-width: 1000px){
+		    width: 950px;
+		}
+		@media (min-width: 1200px){
+		    width: 1100px;
+		}
+		.testing-body-container{ 
+			margin-left: 220px;
+		}
+		.testing-sidebar{
+			position: fixed;
+			width: 170px;
+		    margin-top: 40px;
+			ul.testing-menu{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				text-align: right;
+				li{
+					margin: 15px 0;
+					a{
+						font-family: $primary-font;
+						&:hover{
+							text-decoration: none;
+						    color: $link-hover-color;
+						}
+						&.active {
+							border-bottom: 3px solid $primary-orange;
+							text-decoration: none;
+						    color: $link-hover-color;
+						}
+					}
+				}
+			}
+		}
+		@media (max-width: $max-break-tablet) {
+			.testing-body-container{
+				margin-left: 0;
+			}
+			.testing-sidebar{
+				display: none;
+			}
+		}
+	}
+	pre{
+	    margin: 20px 0 40px;
+		font-size: 14px;
+		line-height: 1.5em;
+		display: block;
+		font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+		width: 100%;
+		height: 100%;
+		xmp{
+			margin: 0;
+			padding: 15px;
+			color: $grey-1;
+			background-color: $grey-5;
+			border: 1px solid $border-color;
+			border-radius: $border-radius;
+		    white-space: pre;
+    		overflow-x: scroll;
+    		width: 100%;
+			height: 100%;
+		}
+	}
+	.testing-arrow-up{
+		position: fixed;
+		bottom: 15px;
+		right: 15px;
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		background-color: rgba(0,0,0,.1);
+		z-index: 2000;
+	}
+	.testing-unit{
+		background-color: $grey-3;
+		height: 50px;
+	}
+	.testing-bg{
+		height: 50px;
+		border: 1px solid $border-color;
+	}
+}

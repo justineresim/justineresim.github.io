@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Search Results
+   ========================================================================== */
+
+.g-sr-filters{
+	margin-bottom: 40px;
+	> span{
+		text-transform: uppercase;
+		font-size: 1.3em;
+		line-height: 1.8em;
+		margin-right: 6px;
+		height: 40px;
+    	display: inline-block;
+	}
+	a{
+		margin: 3px;
+	}
+}
+
+.g-sr-heading{
+	color: $secondary-blue;
+	@extend .g-font-secondary;
+	margin-bottom: 2em;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+.g-sr-container{
+	.g-sr{
+		border-bottom: 1px solid $border-color;
+		margin-bottom: 2em;
+		padding-bottom: 1.5em;
+		position: relative;
+	    word-wrap: break-word;
+		&:last-child{
+			border-bottom: none;
+			margin-bottom: 2.8em;
+		}
+		.g-sr-link{
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			&:hover{
+				+ .g-sr-title{
+					text-decoration: underline;
+					color: $primary-blue;
+				}
+			}
+		}
+		.g-sr-title{
+			color: $grey-1;
+			@extend .g-font-secondary-bold;
+			margin-bottom: .5em;
+			font-size: 1.4em;
+			line-height: 1.5em;
+		}
+		p{
+		    margin: 0 0 0.7em 0;
+		}
+	}
+}

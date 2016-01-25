@@ -1,0 +1,233 @@
+/* ==========================================================================
+   General Styling
+   ========================================================================== */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+// Body reset
+
+html {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  font-family: $primary-font;
+  color: $text-color;
+  -webkit-font-smoothing: antialiased;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  padding:0;
+  margin:0;
+  strong, b{
+    font-weight: 600;
+  }
+  i, em{
+    font-style: italic;
+  }
+  @media (max-width: $max-break-tablet){
+    font-size: 90%;
+  }
+  @media (max-width: $max-break-mobile){
+    font-size: 85%;
+  }
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+// Links
+
+a, .g-icon-link {
+  color: $link-color;
+  cursor: pointer;
+  @extend .transition;
+  text-decoration: none;
+  font-weight: 600;
+  &:hover, &:focus, &:active {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+  &.g-icon{
+    color: $link-color-icon;
+    &:hover, &:focus, &:active {
+      color: $link-hover-color-icon;
+      text-decoration: none;
+    }
+  }
+  &.g-disabled{
+    opacity: .5;
+    pointer-events: none;
+  }
+}
+
+a.g-secondary {
+  color: $link-color-secondary;
+  cursor: pointer;
+  @extend .transition;
+  &:hover, &:focus, &:active {
+    color: $link-hover-color-secondary;
+  }
+}
+
+a.g-tertiary {
+  color: $link-color-tertiary;
+  cursor: pointer;
+  @extend .transition;
+  &:hover, &:focus, &:active {
+    color: $link-hover-color-tertiary;
+  }
+}
+
+a.g-external-link {
+  position: relative;
+  display: inline;
+  margin-right: 2em;
+  &:after{
+    @extend .transition;
+    margin-left: 6px;
+    bottom: 0;
+    position: absolute;
+    content: "\f08e";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+  }
+  &:hover, &:focus, &:active {
+    text-decoration: underline;
+    &:after{
+      font-size: 1.2em;
+    }
+  }
+}
+
+a.g-cta {
+  position: relative;
+  text-transform: uppercase;
+  border: 1px solid $primary-yellow;
+  background: #fff;
+  color: $grey-2;
+  font-size: 11.5px;
+  padding: .2em .7em .1em;
+  border-radius: 2px;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: .5em;
+  @extend .transition;
+  &:hover, &:focus, &:active {
+    text-decoration: none;
+    border: 1px solid $primary-blue;
+    color: $primary-blue;
+  }
+}
+
+a.g-cta-2 {
+  position: relative;
+  color: #fff;
+  padding: 0 0 8px;
+  text-decoration: none;
+  @extend .transition;
+  &:after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: $primary-yellow;
+    @extend .transition;
+  }
+  &:hover, &:focus, &:active {
+    text-decoration: none;
+    &:after{
+      width: 100%;
+    }
+  }
+}
+
+//lists
+
+ul, ol{
+  margin: 0 0 1.4em 0;
+  li{
+    margin-bottom: 0.7em;
+  }
+  ul, ol{
+    margin: 0.7em 0 0 0;
+  }
+}
+
+//body content lists
+
+.g-body-content{
+  ul {
+    list-style: none;
+    padding-left: 2em;
+    li { 
+      padding-left: .8em;
+      &:before {
+        content: "•";
+        color: #427593;
+        margin-left: -1em;
+        font-size: 1.3em;
+        position: absolute;
+      }
+    }
+  }
+}
+
+// Misc
+
+hr{
+  border: none;
+  border-top: 1px solid $border-color;
+  margin: 0 0 1.5em 0;
+}
+
+p{
+  margin: 0 0 1.4em 0;
+}
+
+p.g-smaller{
+  margin: 0 0 0.7em 0;
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+
+p.g-smallest{
+  margin: 0 0 0.6em 0;
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+.g-smaller{
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+
+.g-smallest{
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+
+

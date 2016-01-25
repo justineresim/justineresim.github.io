@@ -1,0 +1,194 @@
+/* ==========================================================================
+   General page layout for site
+   ========================================================================== */
+
+//main body content container
+.g-container{
+	position: relative;
+    padding-right: $gutter;
+    padding-left: $gutter;
+    margin-right: auto;
+    margin-left: auto;
+	@media (min-width: 1000px){
+	    width: 980px;
+	}
+	@media (min-width: 1200px){
+	    width: 1150px;
+	}
+}
+
+//main styling
+body{
+	background: $quaternary-bg-color;
+	&.g-overlay{
+		overflow: hidden;
+	}
+	//new page
+	&.g-news{
+		@media (max-width: $max-break-tablet){
+			.g-inner-content-container .g-sidebar.g-sidebar2{
+				border-top: none;
+				margin-top: 0;
+				padding-top: 0;
+			}
+		}
+	}	
+}
+
+//home page
+html, body.g-homepage{
+	height: 100%;
+	@media (min-width: $min-break-tablet){
+		.g-hp-body{ // so that the footer is always at the bottom of the screen even if your screen size is taller then the homepage content. 
+			min-height: 100%;
+			margin-bottom: -180px; //footer height
+			padding-bottom: 180px;
+			padding-top: 117px; //header height
+			margin-top: -117px;
+		}
+	}
+}
+
+//inner page layout
+.g-inner-banner{
+	height: 150px;
+	position: relative;
+	background: url(../img/banner.png) center center;
+	background-size: cover;
+	position: relative;
+	> .g-container{
+		height: 150px;
+	}
+	.g-banner-overlay{
+    	position: absolute;
+		top:0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		@extend .background-gradient2;
+    }
+}
+
+.g-inner-content-container{
+	@media (min-width: $min-break-tablet){
+		background: linear-gradient(90deg, #fff 50%, transparent 50%);
+	}
+	> .g-container{
+		position: relative;
+		background: #fff;
+		@media (min-width: $min-break-tablet){
+			background: linear-gradient(90deg, #fff 66.6666%, transparent 33.3333%);
+		}
+	}
+	.g-sidebar{
+		float: left;
+		width: 33.333%;
+	    margin-top: -63px;
+    	margin-bottom: 4em;
+    	padding-left: 40px;
+    	&.g-sidebar2{
+    		margin-top: 40px;
+    	}
+    	.g-panel, #datepicker, .g-search-container input{
+			margin-bottom: 2.1em;
+    	}
+    	.ui-datepicker-inline{
+    		width: 100%;
+		    padding: 10px 15px 15px;
+		    @media (min-width: $min-break-tablet) and (max-width: $max-break-desktop){
+		        padding: 5px;
+		    }
+    	}
+    	@media (max-width: $max-break-tablet){
+			width: 100%;
+			float: none;
+			padding-left: 0;
+			margin-top: 0;
+			padding-top: 40px;
+			border-top: 1px solid $border-color;
+			.g-panel.g-nav-panel{
+				display: none;
+			}
+    	}
+	}
+	.g-body-content{
+		float: left;
+		width: 66.666%;
+	    height: 100%;
+	    background-color: #fff;
+        padding: 0 3.3em 4.5em 0;
+        @media (max-width: $max-break-tablet){
+			width: 100%;
+			float: none;
+			padding-right: 0;
+			padding-bottom: 30px;
+    	}
+	}
+}
+
+
+//inner pages - news, events, search results - mobile side bar
+
+//searchbar
+@media (max-width: $max-break-tablet){ 
+	.g-sidebar .g-search-container{
+		display: none;
+	}
+}
+
+.g-search-container.g-mobile-searchbar{
+	display: none;
+	@media (max-width: $max-break-tablet){ 
+    	display: block;
+    }
+}
+
+//mobile btns to tigger modals - filters and calendar
+.g-mobile-btns{
+	display: none;
+	float: right;
+    margin-top: -60px;
+    a{
+    	margin-left: 5px;
+    }
+    @media (max-width: $max-break-tablet){ 
+    	display: block;
+    }
+}
+
+//done button on filters for mobile
+.g-panel.g-filters{
+	.g-btn.g-block{
+		margin-top: 20px;
+		display: none;
+	}
+}
+
+//filter and calendar modals for mobile
+@media (max-width: $max-break-tablet){ 
+	.g-panel.g-filters, .g-sidebar .g-sidebar-datepicker{
+		display: none;
+		position: fixed;
+		top: 0;
+		margin: 120px auto 100px;
+		left: 20px;
+		right: 20px;
+		z-index: 30000;
+		max-height: 80%;
+		overflow-y: auto;
+		max-width: 440px;
+		.g-btn.g-block{
+			display: block;
+		}
+	}
+	.g-sidebar .g-sidebar-datepicker{
+		box-shadow: $panel-shadow;
+	}
+}
+
+@media (max-width: $max-break-mobile){ 
+	.g-panel.g-filters, .g-sidebar .g-sidebar-datepicker{
+		margin-top: 30px;
+	}
+}
+

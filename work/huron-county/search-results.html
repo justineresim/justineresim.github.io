@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<!-- Document Head -->
+	<head>
+		<meta charset="utf-8">
+		<title>Huron County - Prototype</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<meta name="description" content="Huron County Redesign Prototype">
+		<meta name="author" content="Resolution Interactive Media">
+		
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="img/favicon/manifest.json">
+		<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#00477f">
+		<link rel="shortcut icon" href="img/favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+		<meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- Typekit Fonts -->
+		<script src="https://use.typekit.net/dvz7pyx.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+		<!-- jQuery UI - for tooltips and calendar -->
+		<link href="js/vendor/jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet" media="all">
+
+		<!-- Slick slider - for homepage banner -->
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
+
+		<!-- Global CSS -->
+		<link href="css/screen.css" rel="stylesheet" media="all">
+
+		<!-- Icon Font -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+		<!--[if IE]>
+		<link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<![endif]-->
+
+	</head>
+
+	<body>
+		<header class="g-header">
+			<div class="g-header-top">
+				<div class="g-container g-clearfix">
+					<a class="g-logo g-logo-lg" href=""><img src="./img/logo.png"></a>
+					<a class="g-logo g-logo-sm" href=""><img src="./img/logo-sm.png"></a>
+					<div class="g-secondary-nav g-clearfix">
+						<a>Services A-Z</a>
+						<div class="g-search-container">
+							<form action='/search-results.html'>
+						        <label for="siteSearch">Search site:</label>
+						        <input type="type" class="g-form-control" id="siteSearch" placeholder="Search site" type="submit">
+							</form>
+						</div>
+					</div>
+					<div class="g-mobile-nav-icons">
+						<a class="fa fa-search mobile-search-trigger"></a>
+						<a class="fa fa-bars mobile-nav-trigger"></a>
+					</div>
+				</div>
+			</div>
+			<div class="g-header-bottom">
+				<div class="g-container g-clearfix">
+					<ul class="g-main-nav">
+						<li>
+							<a>Explore Huron</a>
+							<ul class="g-mega-menu">
+								<li class="g-right"><a class="g-external-link">Tourism</a><span class="fa fa-chevron-down"></span></li>
+								<li><a>About Huron County</a><span class="fa fa-chevron-down"></span></li>
+								<li class="g-right"><a class="g-external-link">Economic Development</a><span class="fa fa-chevron-down"></span></li>
+								<li><a>Communities</a><span class="fa fa-chevron-down"></span></li>
+								<li class="g-right"><a class="g-external-link">Community Events Calendar</a><span class="fa fa-chevron-down"></span></li>
+								<li><a>Museum & Gaol</a><span class="fa fa-chevron-down"></span></li>
+								<li><a href="news.html">News</a><span class="fa fa-chevron-down"></span></li>
+								<li><a href="events.html">Events</a><span class="fa fa-chevron-down"></span></li>
+								<li><a>Job Postings</a><span class="fa fa-chevron-down"></span></li>
+							</ul>
+						</li>
+						<li>
+							<a>County Services</a>
+							<ul class="g-mega-menu">
+								<li class="g-right"><a class="g-external-link">Health Unit</a><span class="fa fa-chevron-down"></span></li>
+								<li><a>Highways</a><span class="fa fa-chevron-down"></span></li>
+								<li class="g-right"><a class="g-external-link">Economic Development</a><span class="fa fa-chevron-down"></span></li>
+								<li><a>Planning & Development</a><span class="fa fa-chevron-down"></span></li>
+								<li><a>Library</a><span class="fa fa-chevron-down"></span></li>
+								<li>
+									<a href="childrens-services.html">Children's Services</a><span class="fa fa-chevron-down"></span>
+									<ul class="g-mega-menu-child">
+				                		<li><a>Child Care Overview</a></li>
+				                		<li><a>Licensed Child Care Operators</a></li>
+				                		<li><a>Registration</a></li>
+				                		<li><a>Child Care Subsidy</a></li>
+				                		<li><a>Ontario Works</a></li>
+				                		<li><a href="growing-together.html">Growing Together</a></li>
+				                		<li><a>Early Years Program</a></li>
+				                		<li><a>Becoming a Provider</a></li>
+				                		<li><a>Child Care Wage Enhancement</a></li>
+				                		<li><a>FAQ's</a></li>
+			                		</ul>
+								</li>
+								<li><a>Homes for the Aged</a><span class="fa fa-chevron-up"></span></li>
+								<li><a>Ontario Works</a><span class="fa fa-chevron-up"></span></li>
+								<li><a>Ambulance (EMS)</a><span class="fa fa-chevron-up"></span></li>
+								<li><a>Emergency Management</a><span class="fa fa-chevron-up"></span></li>
+							</ul>
+						</li>
+						<li>
+							<a>Online Resources</a>
+							<ul class="g-mega-menu">
+								<li class="g-right"><a class="g-external-link">Library Catalogue</a><span class="fa fa-chevron-down"></span></li>
+								<li><a>Online Maps</a><span class="fa fa-chevron-down"></span></li>
+								<li class="g-right"><a class="g-external-link">Business Directory</a><span class="fa fa-chevron-down"></span></li>
+								<li><a>Pay Provincial Offences</a><span class="fa fa-chevron-down"></span></li>
+								<li><a>Application Forms</a><span class="fa fa-chevron-down"></span></li>
+								<li><a>Program Registration</a><span class="fa fa-chevron-down"></span></li>
+							</ul>
+						</li>
+						<li>
+							<a>Your Government</a>
+							<ul class="g-mega-menu g-mega-menu-last">
+								<li><a>Administration</a><span class="fa fa-chevron-down"></span></li>
+								<li><a>Municipalities</a><span class="fa fa-chevron-down"></span></li>
+								<li><a>Bylaws</a><span class="fa fa-chevron-down"></span></li>
+								<li><a>Council</a><span class="fa fa-chevron-down"></span></li>
+								<li><a>Committees</a><span class="fa fa-chevron-down"></span></li>
+								<li><a>Minutes & Agendas</a><span class="fa fa-chevron-down"></span></li>
+								<li><a>Reports</a><span class="fa fa-chevron-down"></span></li>
+								<li><a>RFPs/Tenders</a><span class="fa fa-chevron-down"></span></li>
+							</ul>
+						</li>
+						<li class="g-external-nav-link">
+							<a>Visit<span class="icon-right fa fa-external-link"></span></a>
+						</li>
+						<li class="g-external-nav-link">
+							<a>Invest<span class="icon-right fa fa-external-link"></span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+
+		<div class="g-inner-banner">
+			<div class="g-banner-overlay"></div>
+			<div class="g-container">
+				<div class="g-breadcrumbs">
+					<a href="/">Home</a>
+					<a>Explore Huron</a>
+					<a class="g-active">Events</a>
+				</div>
+			</div>
+		</div>
+		<div class="g-inner-content-container">
+			<div class="g-container g-clearfix">
+
+				<div class="g-body-content g-clearfix">
+					<h1>Search Results</h1>
+					<div class="g-mobile-btns">
+						<a id="modalOpenBtn" class="g-btn g-btn-icon"><span class="fa fa-cogs"></span></a>
+					</div>
+					<div class="g-search-container g-mobile-searchbar">
+						<form>
+				        	<label for="mobileEventSearch">Search site:</label>
+				        	<input type="type" class="g-form-control" id="mobileEventSearch" placeholder="Search site" value="tourism">
+						</form>
+						<br>
+						<br>
+					</div>
+					<h2>45 results found for "tourism"</h2>
+					<div class="g-sr-filters">
+						<span>In:</span>
+						<a class="g-btn-quaternary g-sm">Huron County<span class="fa fa-times icon-right"></span></a>
+						<a class="g-btn-quaternary g-sm">Ontario's West Coast<span class="fa fa-times icon-right"></span></a>
+					</div>
+					<div class="g-panel g-lg-panel g-panel-sr">
+						<div class="line">
+						    <div class="size1of3 sm-size1of3 unit g-xs-hidden">
+						        <img src="./img/ontarios-west-coast.png" class="g-img-responsive">
+						    </div>
+						    <div class="size2of3 sm-size2of3 unit">
+						        <div class="g-panel-heading">
+									Are you looking for THINGS TO DO in Huron County?
+								</div>
+								<p>For more information on exploring Ontario's West Coast lists attractions, events, accommodations and other tourist-related resources, visit:</p>
+								<p><a>www.ontarioswestcoast.ca</a></p>
+						    </div>
+						</div>
+					</div>
+
+					<div class="g-sr-heading">Showing 8 of 45 results</div>
+
+					<div class="g-sr-container">
+						<div class="g-sr">
+							<a class="g-sr-link"></a>
+							<div class="g-sr-title">Economic Development - Tourism</div>
+							<p>Tourism is a major source of Economic Development within Huron County, a region known as Ontario's West Coast. ... Tourism. Huron County ...</p>
+							<p class="g-smaller">www.huroncounty.ca/econdev/tourism.php</p>
+						</div>
+						<div class="g-sr">
+							<a class="g-sr-link"></a>
+							<div class="g-sr-title">Huron Tourism Association 2009 Tourism Event & Brochure Swap ...<span class="icon-right fa fa-cloud-download"></span></div>
+							<p>Our mandate is to develop and target cost-effective and result-oriented…</p>
+							<p class="g-smaller">www.huroncounty.ca/plandev/downloads/HTABrochureSwap-2009.pdf</p>
+						</div>
+						<div class="g-sr">
+							<a class="g-sr-link"></a>
+							<div class="g-sr-title">Best Host West Coast Returns</div>
+							<p>Tourism businesses in Huron County are gearing up for another busy summer tourism season along Ontario’s West ...</p>
+							<p class="g-smaller">www.huroncounty.ca/plandev/downloads/HTABrochureSwap-2009.pdf</p>
+						</div>
+						<div class="g-sr">
+							<a class="g-sr-link"></a>
+							<div class="g-sr-title">Blyth Information Centre at Blyth Festival <span class="icon-right fa fa-external-link"></span></div>
+							<p class="g-smaller">http://www.ontarioswestcoast.ca/beta/owc_directory/details.php?hta_Serial_f=BUS000007599#top</p>
+						</div>
+						<div class="g-sr">
+							<a class="g-sr-link"></a>
+							<div class="g-sr-title">Economic Development - Tourism</div>
+							<p>Tourism is a major source of Economic Development within Huron County, a region known as Ontario's West Coast. ... Tourism. Huron County ... </p>
+							<p class="g-smaller">www.huroncounty.ca/econdev/tourism.php</p>
+						</div>
+						<div class="g-sr">
+							<a class="g-sr-link"></a>
+							<div class="g-sr-title">Huron Tourism Association 2009 Tourism Event & Brochure Swap ...<span class="icon-right fa fa-cloud-download"></span></div>
+							<p>Our mandate is to develop and target cost-effective and result-oriented…</p>
+							<p class="g-smaller">www.huroncounty.ca/plandev/downloads/HTABrochureSwap-2009.pdf</p>
+						</div>
+						<div class="g-sr">
+							<a class="g-sr-link"></a>
+							<div class="g-sr-title">Best Host West Coast Returns</div>
+							<p>Tourism businesses in Huron County are gearing up for another busy summer tourism season along Ontario’s West ...</p>
+							<p class="g-smaller">www.huroncounty.ca/plandev/downloads/HTABrochureSwap-2009.pdf</p>
+						</div>
+						<div class="g-sr">
+							<a class="g-sr-link"></a>
+							<div class="g-sr-title">Blyth Information Centre at Blyth Festival <span class="icon-right fa fa-external-link"></span></div>
+							<p class="g-smaller">http://www.ontarioswestcoast.ca/beta/owc_directory/details.php?hta_Serial_f=BUS000007599#top</p>
+						</div>
+					</div>
+
+					<div class="g-pagination">
+					    <a class="g-prev g-disabled"><span class="fa fa-angle-left"></span></a>
+					    <a class="g-nums g-active">1</a>
+					    <a class="g-nums">2</a>
+					    <a class="g-nums">3</a>
+					    <a class="g-nums">4</a>
+					    <a class="g-nums">5</a>
+					    <a class="g-next"><span class="fa fa-angle-right"></span></a>
+					</div>
+				</div>
+
+				<div class="g-sidebar g-sidebar2">
+					<div class="g-search-container">
+						<form>
+				        	<label for="innerSiteSearch">Search site:</label>
+				        	<input type="type" class="g-form-control" id="innerSiteSearch" placeholder="Search site" value="tourism">
+						</form>
+					</div>
+		            <div class="g-panel g-filters">
+		                <div class="g-panel-header">
+		                    <div class="g-panel-heading">
+		                        Refine Search
+		                    </div>
+		                </div>
+		                <div class="g-panel-body">
+							<form>
+								<div class="g-form-group g-checkbox">
+							        <div class="g-checkbox-heading">Search Sites:</div>
+							        <input type="checkbox" id="checkbox1" checked>
+							        <label for="checkbox1"><span>Huron County</span></label>
+							        <input type="checkbox" id="checkbox2" checked>
+							        <label for="checkbox2"><span>Ontario's West Coast</span></label>
+							        <input type="checkbox" id="checkbox3">
+							        <label for="checkbox3"><span>Invest in Huron</span></label>
+							        <input type="checkbox" id="checkbox4">
+							        <label for="checkbox4"><span>Creative Huron</span></label>
+							        <input type="checkbox" id="checkbox5">
+							        <label for="checkbox5"><span>Make Huron Home</span></label>
+							    </div>
+							    <div class="g-form-group g-checkbox">
+							        <div class="g-checkbox-heading">Content Type:</div>
+							    	<input type="checkbox" id="checkbox6">
+							        <label for="checkbox6"><span>Pages</span></label>
+							        <input type="checkbox" id="checkbox7">
+							        <label for="checkbox7"><span>News</span></label>
+							        <input type="checkbox" id="checkbox8">
+							        <label for="checkbox8"><span>Events</span></label>
+							        <input type="checkbox" id="checkbox9">
+							        <label for="checkbox9"><span>Documents</span></label>
+							        <input type="checkbox" id="checkbox10">
+							        <label for="checkbox10"><span>Forms</span></label>
+							        <input type="checkbox" id="checkbox11">
+							        <label for="checkbox11"><span>Contacts</span></label>
+							        <input type="checkbox" id="checkbox12">
+							        <label for="checkbox12"><span>Minutes</span></label>
+							    </div>
+							</form>
+							<hr>
+							<a class="g-smallest g-text-uppercase"><span class="fa fa-times-circle icon-left"></span>Clear Filters</a>
+							<a id="modalCloseBtn" class="g-btn g-block">Done</a>
+		                </div>
+		            </div>
+		            <div class="g-panel">
+		                <div class="g-panel-header">
+		                    <div class="g-panel-heading">
+		                        Can't Find What You Need?
+		                    </div>
+		                </div>
+		                <div class="g-panel-body">
+							<div class="g-panel-section">
+								<p>Get in touch and we will help you find what you were looking for.</p>
+								<p>E-mail: <a>contact@huroncounty.ca</a></p>
+								<p>Phone: 519.524.8394<br>
+								Toll Free: 1.888.524.8394<br>
+								Fax: 519.524.2044</p>
+							</div>
+		                </div>
+		            </div>
+				</div>
+
+			</div>
+		</div>
+
+		<footer class="g-footer">
+			<div class="g-footer-top">
+
+			</div>
+			<div class="g-footer-bottom">
+
+			</div>
+			<div class="g-footer-content">
+				<div class="g-container">
+					<div class="line">
+						<div class="size2of3 unit">
+							<div class="line">
+							    <div class="size1of1 unit">
+									<ul class="g-footer-nav">
+										<li><a>About Huron</a></li>
+										<li><a>Contacts</a></li>
+										<li><a>Services A-Z</a></li>
+										<li><a>Site map</a></li>
+										<li><a>Copyright & Disclaimer</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="line">
+							    <div class="size1of1 unit">
+									<div class="line margin-bottom g-footer-nav-secondary">
+									    <div class="size1of3 sm-size1of3 unit">
+									        <span>1 Courthouse Square<br>Goderich, Ontario N7A 1M2 <img class="g-flag" src="./img/flag.png"><br>Email: <a>contact@huroncounty.ca</a></span>
+									    </div>
+									    <div class="size1of3 sm-size1of3 unit">
+									        <span>Phone: 519.524.8394<br>Toll Free: 1.888.524.8394<br>Fax: 519.524.2044</span>
+									    </div>
+									    <div class="size1of3 sm-size1of3 unit">
+									        <span class="g-social-links">
+									        	<a><span class="fa fa-facebook"></span>Ontario's West Coast</a><br>
+									        	<a><span class="fa fa-twitter"></span>Ontario's West Coast</a><br>
+									        	<a><span class="fa fa-youtube-play"></span>Huron County TV</a>
+									    	</span>
+									    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					    <div class="size1of3 unit g-external-links">
+							<ul>
+								<li><a>Ontario's West Coast</a></li>
+								<li><a>Invest in Huron</a></li>
+								<li><a>Creative Huron</a></li>
+								<li><a>Make Huron Home</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="g-page-overlay">
+
+		</div>
+		
+		<!-- jQuery Includes -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+		<!-- Slick Slider - for homepage banner -->
+		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+
+		<!-- jQuery UI - for tooltips and calendar -->
+		<script src="js/vendor/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+
+		<!-- Prototype spectifc js -->
+		<script src="js/scripts.js"></script>
+
+	</body>
+
+</html>

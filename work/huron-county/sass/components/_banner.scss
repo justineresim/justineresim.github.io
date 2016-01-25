@@ -1,0 +1,207 @@
+/* ==========================================================================
+   Homepage banner
+   ========================================================================== */
+
+@keyframes bannerIndicator {
+    from {background-color: $primary-yellow;}
+    to {background-color:none;}
+}
+
+.g-hp-banner-container{
+    width: 100%;
+    height: 850px;
+    position: relative;
+    @media (max-width: $max-break-tablet){
+    	height: 550px;
+    }
+    @media (min-width: $max-break-tablet) and (max-height:850px){ 
+		height: 800px;
+    }
+    .slider{
+    	height: 850px;
+	    width: 100%;
+	    background-color: $quaternary-bg-color;
+	    margin: 0;
+	    @media (min-width: $max-break-tablet) and (max-height: 850px){ 
+			height: 800px;
+	    }
+	    @media (max-width: $max-break-tablet){
+	    	height: 550px;
+	    	padding-bottom: 260px;
+	    	background-color: #000;
+	    }
+	    @media (max-width: $max-break-mobile){
+	    	padding-bottom: 300px;
+	    }
+	    .g-hp-banner{
+	    	background-image: url(../img/banner4.jpg);
+		    background-position: center left;
+		    background-size: cover;
+		    height: 850px;
+		    width: 100%;
+		    position: relative;
+		    @media (min-width: $max-break-tablet) and (max-height: 850px){ 
+				height: 800px;
+		    }
+		    @media (max-width: $max-break-tablet){
+		    	height: 315px;
+		    }
+		    @media (max-width: $max-break-mobile){
+		    	height: 280px;
+		    }
+	    }
+	    .g-hp-banner2{
+	     	background-image: url(../img/goderichharbour.jpg);
+	    }
+	    .g-hp-banner3{
+	     	background-image: url(../img/banner2.jpg);
+	    }
+	    .slick-dots {
+			bottom: 300px;
+			text-align:center;
+			position: relative;
+		    margin: 0;
+    		padding: 0;
+    		@media (max-width: $max-break-tablet){
+				bottom: 30px;
+				text-align: left;
+				margin-left: 25px;
+    		}
+    		@media (max-width: $max-break-mobile){
+				margin-left: 10px;
+    		}
+			li {
+				text-indent:-99999px;
+				width:13px;
+				height:13px;
+				background: none;
+				border: 2px solid rgba(255,255,255,.6);
+				display:inline-block;
+				margin: 0 5px;
+				border-radius: 50%;
+				cursor: pointer;
+				position: relative;
+				@extend .transition;
+				button {
+					width:10px; 
+					height:10px;
+					text-indent:-99999px;
+				}
+				&.slick-active {
+					background-color: none;
+					animation-name: bannerIndicator;
+	 				animation-duration: 13s;
+	 				border: 2px solid #fff;
+				}
+				&:hover {
+					background:#fff;
+				}
+			}
+		}
+    }
+    .g-banner-overlay{
+    	position: absolute;
+		top:0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		@extend .background-gradient-banner;
+		@media (max-width: $max-break-tablet){
+			background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.7), transparent, transparent);
+			background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.7), transparent, transparent);
+			background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.7), transparent, transparent);
+			background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), transparent, transparent);
+			background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.7), transparent, transparent);
+		}
+    }
+	.g-links{
+		padding: 60px;
+		position: absolute;
+		@extend  .background-gradient-links;
+		top:0;
+		bottom: 0;
+		left: 0;
+		.g-heading{
+			color: #fff;
+			@extend .g-font-secondary;
+			font-size: 1.1em;
+			line-height: 1.5em;
+		}
+		ul{
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+		}
+		li {
+			margin: 20px 0;
+			a{
+				font-weight: normal;
+				font-size: .9em;
+				line-height: 1.5em;
+				display: -moz-box;
+			}
+		}	
+		@media (min-width: $max-break-tablet) and (max-height: 850px){ 
+			padding: 50px;
+	    }
+		@media (max-width: $max-break-tablet){
+			width: 100%;
+			padding: 10px 30px 30px;
+			bottom: 0;
+			top: auto;
+			height: auto;
+			background-color: #000;
+			.g-heading{
+				margin-bottom: 10px;
+			}
+			li{
+				margin: 10px 0;
+				padding-right: 5px;
+				float: left; 
+				width: 33%;
+				a{
+					font-size: .85em;
+				}
+			}
+		}
+		@media (max-width: $max-break-mobile){
+			padding: 10px 15px 30px;
+			li{
+				width: 50%;
+			}
+		}
+	}
+	.g-banner-label{
+		position: absolute;
+		right: 50px;
+		bottom: 300px;
+		color: #fff;
+		text-shadow: 1px 1px 3px rgba(0,0,0,.8);
+		text-align: right;
+		.g-location{
+			font-size: 2.1em;
+			line-height: 1.5em;
+		}
+		.g-subtitle{
+			font-size: 1.3em;
+			line-height: 1.2em;
+			@extend .g-font-secondary;
+			span{
+				color: $primary-yellow;
+				margin-right: 10px;
+			}
+		}
+		@media (max-width: $max-break-tablet){
+			right: 20px;
+			bottom: 15px;
+			.g-location{
+				font-size: 1.45em;
+				line-height: 1.5em;
+			}
+			.g-subtitle{
+				font-size: 1.2em;
+				line-height: 1.2em;
+			}
+		}
+	}
+}

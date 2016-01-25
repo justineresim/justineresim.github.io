@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<!-- Global style guide - remove this page for live -->
+
+<html>
+<!-- Document Head -->
+<head>
+    <meta charset="utf-8">
+    <title>Huron County - Prototype</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="Huron County Redesign Prototype">
+    <meta name="author" content="Resolution Interactive Media">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#00477f">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Typekit Fonts -->
+    <script src="https://use.typekit.net/dvz7pyx.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- jQuery UI - for tooltips and calendar -->
+    <link href="js/vendor/jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet" media="all">
+
+    <!-- Slick slider - for homepage banner -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
+
+    <!-- Global CSS -->
+    <link href="css/screen.css" rel="stylesheet" media="all">
+
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!--[if IE]>
+    <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+</head>
+
+<body class="testing">
+    <a class="testing-arrow-up testing-scroll-up"><span class="fa fa-chevron-up"></span></a>
+    <header>
+        <div class="g-container">
+            <a href="/"><img src="./img/logo-sm.png"></a>
+        </div>
+    </header>
+    <div class="g-container">
+        <div class="testing-sidebar">
+            <div class="testing-sidebar-inner">
+                <ul class="testing-menu">
+                    <li><a class="test-scroll active" scroll="#headings">Headings</a></li>
+                    <li><a class="test-scroll" scroll="#type">Type</a></li>
+                    <li><a class="test-scroll" scroll="#tables">Tables</a></li>
+                    <li><a class="test-scroll" scroll="#lists">Lists</a></li>
+                    <li><a class="test-scroll" scroll="#icons">Icons</a></li>
+                    <li><a class="test-scroll" scroll="#links">Links</a></li>
+                    <li><a class="test-scroll" scroll="#buttons">Buttons</a></li>
+                    <li><a class="test-scroll" scroll="#bg-colours">Background Colours</a></li>
+                    <li><a class="test-scroll" scroll="#panels">Panels</a></li>
+                    <li><a class="test-scroll" scroll="#forms">Forms</a></li>
+                    <li><a class="test-scroll" scroll="#tooltips">Tooltips</a></li>
+                    <li><a class="test-scroll" scroll="#calendar">Calendar</a></li>
+                    <li><a class="test-scroll" scroll="#pagination">Pagination</a></li>
+                    <li><a class="test-scroll" scroll="#grid">Grid System</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="testing-body-container">
+            <h1 class="testing-page-heading">Global Style Guide</h1>
+            <h2 id="headings">Headings</h2>
+            <hr>  
+            <h1>h1 Heading</h1>
+            <h2>h2 Heading</h2>
+            <h3>h3 Heading</h3>
+            <h4>h4 Heading</h4>
+            <h5>h5 Heading</h5>
+            <h6>h6 Heading</h6>
+            <br>
+            <h2 id="type">Type</h2>
+            <hr> 
+            <p>Normal Body Font</p>
+            <p><b>Bold Body Font</b></p>
+            <p><em>Italic Body Font</em></p>
+            <p class="g-font-secondary">Secondary Font</p>
+            <p class="g-font-secondary-bold">Secondary Font Bold</p>
+            <p class="g-text-color-dark">Darker Text Color</p>
+            <p class="g-text-color-secondary">Secondary Text Color</p>
+            <p class="g-text-color-tertiary">Tertiary Text Color</p>
+            <p class="g-text-uppercase">Uppercase Text</p>
+            <div style="padding: 10px 20px; width: 100%; background-color: #5B6267;">
+                <p class="g-text-color-white">White Text Color</p>
+            </div>
+            
+<pre><xmp><p>Normal Body Font</p>
+<p><b>Bold Body Font</b></p>
+<p><em>Italic Body Font</em></p>
+<p class="g-font-secondary">Secondary Font</p>
+<p class="g-font-secondary-bold">Secondary Font Bold</p>
+<p class="g-text-color-dark">Darker Text Color</p>
+<p class="g-text-color-secondary">Secondary Text Color</p>
+<p class="g-text-color-tertiary">Tertiary Text Color</p>
+<p class="g-text-uppercase">Uppercase Text</p>
+<div style="padding: 10px 20px; width: 100%; background-color: #5B6267;">
+    <p class="g-text-color-white">White Text Color</p>
+</div></xmp></pre>
+
+            <h2 id="tables">Tables</h2>
+            <hr>
+
+            <table class="g-table g-table-bordered g-table-hover">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mark</td>
+                        <td>James</td>
+                        <td>@markjames</td>
+                    </tr>
+                    <tr>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@jacobt</td>
+                    </tr>
+                    <tr>
+                        <td>Larry</td>
+                        <td>Smith</td>
+                        <td>@larryontwitter</td>
+                    </tr>
+                </tbody>
+            </table>
+
+<pre><xmp><table class="g-table g-table-bordered g-table-hover">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mark</td>
+            <td>James</td>
+            <td>@markjames</td>
+        </tr>
+        <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@jacobt</td>
+        </tr>
+        <tr>
+            <td>Larry</td>
+            <td>Smith</td>
+            <td>@larryontwitter</td>
+        </tr>
+    </tbody>
+</table></xmp></pre>
+
+            <h2 id="lists">Lists</h2>
+            <hr>
+
+            <ul>
+                <li>Huron County</li>
+                <li>Ontario’s West Coast</li>
+                <li>Invest in Huron</li>
+                <li>Creative Huron
+                    <ul>
+                        <li>Nested Item</li>
+                        <li>Nested Item 2</li>
+                    </ul>
+                </li>
+                <li>Make Huron Home</li>
+            </ul>
+
+            <ol>
+                <li>Coffee</li>
+                <li>Milk
+                    <ol>
+                        <li>Skim Milk</li>
+                        <li>Almond Milk</li>
+                    </ol>
+                </li>
+                <li>Tea</li>
+            </ol>
+
+<pre><xmp><ul>
+    <li>Huron County</li>
+    <li>Ontario’s West Coast</li>
+    <li>Invest in Huron</li>
+    <li>Creative Huron
+        <ul>
+            <li>Nested Item</li>
+            <li>Nested Item 2</li>
+        </ul>
+    </li>
+    <li>Make Huron Home</li>
+</ul>
+
+<ol>
+    <li>Coffee</li>
+    <li>Milk
+        <ol>
+            <li>Skim Milk</li>
+            <li>Almond Milk</li>
+        </ol>
+    </li>
+    <li>Tea</li>
+</ol></xmp></pre>
+
+            <h2 id="icons">Icons</h2>
+            <hr>
+            <h3>Font Awesome</h3>
+            <p>See <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">http://fortawesome.github.io/Font-Awesome/</a></p>
+            <br>
+
+            <h2 id="links">Links</h2>
+            <hr>
+
+            <a>Standard link</a><br>
+            <a class="g-disabled">Disabled link</a>
+            <br><br>
+            <a class="g-secondary">Secondary link</a><br>
+            <a class="g-secondary g-disabled">Disabled link</a>
+            <br><br>
+            <a class="g-icon fa fa-cloud-download"></a><br>
+            <a class="g-icon fa fa-cloud-download g-disabled"></a>
+            <br><br>
+            <a>Standard link with icon right<span class="fa fa-calendar icon-right"></span></a><br>
+            <a><span class="fa fa-share-alt icon-left"></span>Standard link with icon left</a>
+            <br><br>
+            <a class="g-external-link">External Link</a>
+            <br><br>
+            <a class="g-cta">Call to action</a>
+            <br><br>
+
+            <div style="padding: 20px; width: 100%; background-color: #5B6267;">
+                <a class="g-cta-2">Popular Link</a><br><br>
+                <a class="g-tertiary">Tertiary link</a><br>
+                <a class="g-tertiary g-disabled">Disabled link</a>
+            </div>
+
+<pre><xmp><a>Standard link</a><br>
+<a class="g-disabled">Disabled link</a>
+<br><br>
+<a class="g-secondary">Secondary link</a><br>
+<a class="g-secondary g-disabled">Disabled link</a>
+<br><br>
+<a class="g-icon fa fa-cloud-download"></a><br>
+<a class="g-icon fa fa-cloud-download g-disabled"></a>
+<br><br>
+<a>Standard link with icon right<span class="fa fa-calendar icon-right"></span></a><br>
+<a><span class="fa fa-share-alt icon-left"></span>Standard link with icon left</a>
+<br><br>
+<a class="g-external-link">External Link</a>
+<br><br>
+<a class="g-cta">Call to action</a>
+<br><br>
+
+<div style="padding: 20px; width: 100%; background-color: #5B6267;">
+    <a class="g-cta-2">Popular Link</a><br><br>
+    <a class="g-tertiary">Tertiary link</a><br>
+    <a class="g-tertiary g-disabled">Disabled link</a>
+</div></xmp></pre>
+
+            <h2 id="buttons">Buttons</h2>
+            <hr>
+
+            <a class="g-btn">Primary Button</a>
+            <a class="g-btn g-active">Active State</a>
+            <a class="g-btn g-disabled">Disabled</a>
+            <br><br>
+            <a class="g-btn-secondary">Secondary Button</a>
+            <a class="g-active g-btn-secondary">Active State</a>
+            <a class="g-btn-secondary g-disabled">Disabled</a>
+            <br><br>
+            <a class="g-btn-tertiary">Tertiary Button</a>
+            <a class="g-active g-btn-tertiary">Active State</a>
+            <a class="g-btn-tertiary g-disabled">Disabled</a>
+            <br><br>
+            <a class="g-btn-quaternary">Quaternary Button</a>
+            <a class="g-active g-btn-quaternary">Active State</a>
+            <a class="g-btn-quaternary g-disabled">Disabled</a>
+            <br><br>
+            <a class="g-btn-quinary">Quinary Button</a>
+            <a class="g-active g-btn-quinary">Active State</a>
+            <a class="g-btn-quinary g-disabled">Disabled</a>
+
+<pre><xmp><a class="g-btn">Primary Button</a>
+<a class="g-btn g-active">Active State</a>
+<a class="g-btn g-disabled">Disabled</a>
+<br><br>
+<a class="g-btn-secondary">Secondary Button</a>
+<a class="g-active g-btn-secondary">Active State</a>
+<a class="g-btn-secondary g-disabled">Disabled</a>
+<br><br>
+<a class="g-btn-tertiary">Tertiary Button</a>
+<a class="g-active g-btn-tertiary">Active State</a>
+<a class="g-btn-tertiary g-disabled">Disabled</a>
+<br><br>
+<a class="g-btn-quaternary">Quaternary Button</a>
+<a class="g-active g-btn-quaternary">Active State</a>
+<a class="g-btn-quaternary g-disabled">Disabled</a>
+<br><br>
+<a class="g-btn-quinary">Quinary Button</a>
+<a class="g-active g-btn-quinary">Active State</a>
+<a class="g-btn-quinary g-disabled">Disabled</a></xmp></pre>
+
+            <a class="g-btn g-block">Primary Block Button</a>
+            <br><br>
+            <a class="g-btn g-lg">Large Button</a>
+            <a class="g-btn g-sm">Small Button</a>
+            <br><br>
+
+<pre><xmp><a class="g-btn g-block">Primary Block Button</a>
+<a class="g-btn g-lg">Large Button</a>
+<a class="g-btn g-sm">Small Button</a></xmp></pre>
+
+            <a class="g-btn-quaternary g-sm">Button with icon<span class="fa fa-times icon-right"></span></a>
+            <a class="g-btn-quaternary g-sm"><span class="fa fa-chevron-left icon-left"></span>Button with icon left</a>
+
+<pre><xmp><a class="g-btn-quaternary g-sm">Button with icon<span class="fa fa-times icon-right"></span></a>
+<a class="g-btn-quaternary g-sm"><span class="fa fa-chevron-left icon-left"></span>Button with icon left</a>
+</xmp></pre>
+
+            <a class="g-btn g-btn-icon"><span class="fa fa-times"></span></a>
+            <a class="g-btn-tertiary g-btn-icon"><span class="fa fa-times"></span></a>
+
+<pre><xmp><a class="g-btn g-btn-icon"><span class="fa fa-times"></span></a>
+<a class="g-btn-tertiary g-btn-icon"><span class="fa fa-times"></span></a></xmp></pre>
+
+            <h3>Button Groups</h3>
+
+            <div class="g-btn-group">
+                <a class="g-btn">Option 1</a>
+                <a class="g-btn">Option 2</a>
+                <a class="g-btn">Option 3</a>
+            </div>
+
+<pre><xmp><div class="g-btn-group">
+    <a class="g-btn">Option 1</a>
+    <a class="g-btn">Option 2</a>
+    <a class="g-btn">Option 3</a>
+</div></xmp></pre>
+
+            <h3>Button Toggle</h3>
+
+            <div class="g-btn-toggle">
+                <a class="g-btn g-active">Toggle On</a>
+                <a class="g-btn">Toggle Off</a>
+            </div>
+
+<pre><xmp><div class="g-btn-toggle">
+    <a class="g-btn g-active">Toggle On</a>
+    <a class="g-btn">Toggle Off</a>
+</div></xmp></pre>
+
+            <div class="g-btn-toggle">
+                <a class="g-btn-tertiary g-btn-icon g-active"><span class="fa fa-map-marker"></span></a>
+                <a class="g-btn-tertiary g-btn-icon"><span class="fa fa-th-list"></span></a>
+            </div>
+
+<pre><xmp><div class="g-btn-toggle">
+    <a class="g-btn-tertiary g-btn-icon g-active"><span class="fa fa-map-marker"></span></a>
+    <a class="g-btn-tertiary g-btn-icon"><span class="fa fa-th-list"></span></a>
+</div></xmp></pre>
+
+            <h2 id="bg-colours">Background Colours</h2>
+            <hr>  
+
+            <div class="line margin-bottom">
+                <div class="unit size1of4">
+                    <div class="testing-bg g-bg-color-primary"></div>
+                </div>
+                <div class="unit size1of4">
+                    <div class="testing-bg g-bg-color-secondary"></div>
+                </div>
+                <div class="unit size1of4">
+                    <div class="testing-bg g-bg-color-tertiary"></div>
+                </div>
+                <div class="unit size1of4">
+                    <div class="testing-bg g-bg-color-quaternary"></div>
+                </div>
+            </div>
+
+<pre><xmp><div class="line margin-bottom">
+    <div class="unit size1of4">
+        <div class="testing-bg g-bg-color-primary"></div>
+    </div>
+    <div class="unit size1of4">
+        <div class="testing-bg g-bg-color-secondary"></div>
+    </div>
+    <div class="unit size1of4">
+        <div class="testing-bg g-bg-color-tertiary"></div>
+    </div>
+    <div class="unit size1of4">
+        <div class="testing-bg g-bg-color-quaternary"></div>
+    </div>
+</div></xmp></pre>
+
+            <h2 id="panels">Panels</h2>
+            <hr>
+            <div class="g-panel">
+                <div class="g-panel-header">
+                    <div class="g-panel-heading">
+                        Panel Heading
+                    </div>
+                </div>
+                <div class="g-panel-body">
+                    <p>Nullam dapibus rhoncus leo, eget finibus ex ultrices quis. Nullam nec maximus dui. Curabitur nunc massa, malesuada vitae consectetur vel, varius quis lorem. Curabitur tristique finibus felis a hendrerit. Duis nec interdum mauris. Sed pulvinar purus ante, eget sodales leo pellentesque quis.</p>
+                    <hr>
+                    <p>Nullam nec maximus dui. Curabitur nunc massa, malesuada vitae consectetur vel, varius quis lorem. Curabitur tristique finibus felis a hendrerit. Duis nec interdum mauris.</p>
+                </div>
+                <div class="g-panel-footer-btn g-btn-group">
+                    <a class="g-btn">Footer Button</a>
+                    <a class="g-btn-secondary">Footer Button</a>
+                </div>
+            </div>
+            
+<pre><xmp><div class="g-panel">
+    <div class="g-panel-header">
+        <div class="g-panel-heading">
+            Panel Heading
+        </div>
+    </div>
+    <div class="g-panel-body">
+        <p>Nullam dapibus rhoncus leo, eget finibus ex ultrices quis. Nullam nec maximus dui. Curabitur nunc massa, malesuada vitae consectetur vel, varius quis lorem. Curabitur tristique finibus felis a hendrerit. Duis nec interdum mauris. Sed pulvinar purus ante, eget sodales leo pellentesque quis.</p>
+        <hr>
+        <p>Nullam nec maximus dui. Curabitur nunc massa, malesuada vitae consectetur vel, varius quis lorem. Curabitur tristique finibus felis a hendrerit. Duis nec interdum mauris.</p>
+    </div>
+    <div class="g-panel-footer-btn g-btn-group">
+        <a class="g-btn">Footer Button</a>
+        <a class="g-btn-secondary">Footer Button</a>
+    </div>
+</div></xmp></pre>
+
+            <h2 id="forms">Forms</h2>
+            <hr>
+
+            <form>
+                <div class="g-form-group g-error-state">
+                    <label for="exampleInput1">First Name:</label>
+                    <input type="fname" class="g-form-control" id="exampleInput1" placeholder="First Name">
+                    <p>Please fill out the required field</p>
+                </div>
+                <div class="g-form-group">
+                    <label for="exampleInput1">Last Name:</label>
+                    <input type="lname" class="g-form-control" id="exampleInput2" placeholder="Last Name" disabled="">
+                </div>
+                <div class="g-form-group">
+                    <label for="exampleQuestion">How can we help you?</label>
+                    <textarea rows="3" class="g-form-control" id="exampleQuestion" placeholder="Question"></textarea>
+                </div>
+                <div class="g-form-group g-checkbox">
+                    <div class="g-checkbox-heading">Select all that apply:</div>
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1"><span>Check me out</span></label>
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2"><span>Check me out</span></label>
+                    <input type="checkbox" id="checkbox3" disabled>
+                    <label for="checkbox3" class="g-disabled"><span>Check me out</span></label>
+                </div>
+                <div class="g-radio-container g-form-group">
+                    <div class="g-radio-heading">Please select one:</div>
+                    <div>
+                        <input id="radio-1" class="g-radio" name="g-radio-group" type="radio" checked>
+                        <label for="radio-1" class="g-radio-label">First Choice</label>
+                    </div>
+                    <div>
+                        <input id="radio-2" class="g-radio"name="g-radio-group" type="radio">
+                        <label for="radio-2" class="g-radio-label">Second Choice</label>
+                    </div>
+                    <div>
+                        <input id="radio-3" class="g-radio" name="g-radio-group" type="radio" disabled>
+                        <label for="radio-3" class="g-radio-label g-disabled">Third Choice</label>
+                    </div>
+                </div>
+                <div class="g-form-group">
+                    <label>Select one:</label>
+                    <select class="g-form-control">
+                        <option>Select an option</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+                <div class="g-form-group">
+                    <label>Select another:</label>
+                    <select class="g-form-control" disabled>
+                        <option>Select an option</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+                <div class="g-form-group">
+                    <div class="g-input-btn">
+                        <label>Enter your email</label>
+                        <input type="text" class="g-form-control" id="exampleEmail" placeholder="Email Address">
+                        <a class="g-btn">Submit</a>
+                    </div>
+                </div>
+            </form>
+
+<pre><xmp><form>
+    <div class="g-form-group g-error-state">
+        <label for="exampleInput1">First Name:</label>
+        <input type="fname" class="g-form-control" id="exampleInput1" placeholder="First Name">
+        <p>Please fill out the required field</p>
+    </div>
+    <div class="g-form-group">
+        <label for="exampleInput1">Last Name:</label>
+        <input type="lname" class="g-form-control" id="exampleInput2" placeholder="Last Name" disabled="">
+    </div>
+    <div class="g-form-group">
+        <label for="exampleQuestion">How can we help you?</label>
+        <textarea rows="3" class="g-form-control" id="exampleQuestion" placeholder="Question"></textarea>
+    </div>
+    <div class="g-form-group g-checkbox">
+        <div class="g-checkbox-heading">Select all that apply:</div>
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1"><span>Check me out</span></label>
+        <input type="checkbox" id="checkbox2">
+        <label for="checkbox2"><span>Check me out</span></label>
+        <input type="checkbox" id="checkbox3" disabled>
+        <label for="checkbox3" class="g-disabled"><span>Check me out</span></label>
+    </div>
+    <div class="g-radio-container g-form-group">
+        <div class="g-radio-heading">Please select one:</div>
+        <div>
+            <input id="radio-1" class="g-radio" name="g-radio-group" type="radio" checked>
+            <label for="radio-1" class="g-radio-label">First Choice</label>
+        </div>
+        <div>
+            <input id="radio-2" class="g-radio"name="g-radio-group" type="radio">
+            <label for="radio-2" class="g-radio-label">Second Choice</label>
+        </div>
+        <div>
+            <input id="radio-3" class="g-radio" name="g-radio-group" type="radio" disabled>
+            <label for="radio-3" class="g-radio-label g-disabled">Third Choice</label>
+        </div>
+    </div>
+    <div class="g-form-group">
+        <label>Select one:</label>
+        <select class="g-form-control">
+            <option>Select an option</option>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+    </div>
+    <div class="g-form-group">
+        <label>Select another:</label>
+        <select class="g-form-control" disabled>
+            <option>Select an option</option>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+    </div>
+    <div class="g-form-group">
+        <div class="g-input-btn">
+            <label>Enter your email</label>
+            <input type="text" class="g-form-control" id="exampleEmail" placeholder="Email Address">
+            <a class="g-btn">Submit</a>
+        </div>
+    </div>
+</form></xmp></pre>
+
+            <h3>Forms using grids</h2>
+
+            <form>
+                <div class="g-hidden-labels">
+                    <div class="line">
+                        <div class="g-form-group unit size1of2">
+                            <label for="exampleInput1">First Name:</label>
+                            <input type="fname" class="g-form-control" id="exampleInput1" placeholder="First Name">
+                        </div>
+                        <div class="g-form-group unit size1of2">
+                            <label for="exampleInput1">Last Name:</label>
+                            <input type="lname" class="g-form-control" id="exampleInput2" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="g-form-group unit size1of3">
+                            <label>Select one:</label>
+                            <select class="g-form-control">
+                                <option>Select an option</option>
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </div>
+                        <div class="g-form-group unit size1of3">
+                            <label>Select one:</label>
+                            <select class="g-form-control">
+                                <option>Select another option</option>
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </div>
+                        <div class="g-form-group unit size1of3">
+                            <label>Select one:</label>
+                            <select class="g-form-control">
+                                <option>Select another option</option>
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="g-form-group unit size1of2">
+                            <div class="g-input-btn">
+                                <label for="exampleQuestion">What's your email address?</label>
+                                <input type="text" class="g-form-control" id="exampleEmail" placeholder="Email Address">
+                                <a class="g-btn">Submit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+<pre><xmp><form>
+    <div class="g-hidden-labels">
+        <div class="line">
+            <div class="g-form-group unit size1of2">
+                <label for="exampleInput1">First Name:</label>
+                <input type="fname" class="g-form-control" id="exampleInput1" placeholder="First Name">
+            </div>
+            <div class="g-form-group unit size1of2">
+                <label for="exampleInput1">Last Name:</label>
+                <input type="lname" class="g-form-control" id="exampleInput2" placeholder="Last Name">
+            </div>
+        </div>
+        <div class="line">
+            <div class="g-form-group unit size1of3">
+                <label>Select one:</label>
+                <select class="g-form-control">
+                    <option>Select an option</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+            <div class="g-form-group unit size1of3">
+                <label>Select one:</label>
+                <select class="g-form-control">
+                    <option>Select another option</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+            <div class="g-form-group unit size1of3">
+                <label>Select one:</label>
+                <select class="g-form-control">
+                    <option>Select another option</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+        </div>
+        <div class="line">
+            <div class="g-form-group unit size1of2">
+                <div class="g-input-btn">
+                    <label for="exampleQuestion">What's your email address?</label>
+                    <input type="text" class="g-form-control" id="exampleEmail" placeholder="Email Address">
+                    <a class="g-btn">Submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form></xmp></pre>
+
+            <h3>Inline Forms</h2>
+
+            <form>
+                <div class="g-inline-form">
+                    <div class="line">
+                        <div class="unit size1of1">
+                            <div class="g-form-group">
+                                <label for="exampleInput1">First Name:</label>
+                                <input type="fname" class="g-form-control" id="exampleInput1" placeholder="First Name">
+                            </div>
+                            <div class="g-form-group">
+                                <label for="exampleInput1">Last Name:</label>
+                                <input type="lname" class="g-form-control" id="exampleInput2" placeholder="Last Name">
+                            </div>
+                            <div class="g-form-group">
+                                <label>Select one:</label>
+                                <select class="g-form-control">
+                                    <option>Select an option</option>
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="unit size1of1">
+                            <div class="g-form-group g-checkbox">
+                                <div class="g-checkbox-heading">Select all that apply:</div>
+                                <input type="checkbox" id="checkbox4">
+                                <label for="checkbox4"><span>Option 1</span></label>
+                                <input type="checkbox" id="checkbox5">
+                                <label for="checkbox5"><span>Another option</span></label>
+                                <input type="checkbox" id="checkbox6">
+                                <label for="checkbox6"><span>And another!</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="unit size1of1">
+                            <div class="g-radio-container g-form-group">
+                                <div class="g-radio-heading">Please select one:</div>
+                                <input id="radio-4" class="g-radio" name="g-radio-group" type="radio" checked>
+                                <label for="radio-4" class="g-radio-label">First Choice</label>
+                                <input id="radio-5" class="g-radio"name="g-radio-group" type="radio">
+                                <label for="radio-5" class="g-radio-label">Second Choice</label>
+                                <input id="radio-6" class="g-radio" name="g-radio-group" type="radio">
+                                <label for="radio-6" class="g-radio-label">Third Choice</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+<pre><xmp><form>
+    <div class="g-inline-form">
+        <div class="line">
+            <div class="unit size1of1">
+                <div class="g-form-group">
+                    <label for="exampleInput1">First Name:</label>
+                    <input type="fname" class="g-form-control" id="exampleInput1" placeholder="First Name">
+                </div>
+                <div class="g-form-group">
+                    <label for="exampleInput1">Last Name:</label>
+                    <input type="lname" class="g-form-control" id="exampleInput2" placeholder="Last Name">
+                </div>
+                <div class="g-form-group">
+                    <label>Select one:</label>
+                    <select class="g-form-control">
+                        <option>Select an option</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="line">
+            <div class="unit size1of1">
+                <div class="g-form-group g-checkbox">
+                    <div class="g-checkbox-heading">Select all that apply:</div>
+                    <input type="checkbox" id="checkbox4">
+                    <label for="checkbox4"><span>Option 1</span></label>
+                    <input type="checkbox" id="checkbox5">
+                    <label for="checkbox5"><span>Another option</span></label>
+                    <input type="checkbox" id="checkbox6">
+                    <label for="checkbox6"><span>And another!</span></label>
+                </div>
+            </div>
+        </div>
+        <div class="line">
+            <div class="unit size1of1">
+                <div class="g-radio-container g-form-group">
+                    <div class="g-radio-heading">Please select one:</div>
+                    <input id="radio-4" class="g-radio" name="g-radio-group" type="radio" checked>
+                    <label for="radio-4" class="g-radio-label">First Choice</label>
+                    <input id="radio-5" class="g-radio"name="g-radio-group" type="radio">
+                    <label for="radio-5" class="g-radio-label">Second Choice</label>
+                    <input id="radio-6" class="g-radio" name="g-radio-group" type="radio">
+                    <label for="radio-6" class="g-radio-label">Third Choice</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</form></xmp></pre>
+
+            <h3>Horizontal Forms</h2>
+
+            <form>
+                <div class="g-form-horizontal">
+                    <div class="g-form-group line">
+                        <div class="unit size1of5">
+                            <label for="exampleInput1">First Name:</label>
+                        </div>
+                        <div class="unit size4of5">
+                            <input type="fname" class="g-form-control" id="exampleInput1" placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="g-form-group line">
+                        <div class="unit size1of5">
+                            <label for="exampleInput2">Last Name:</label>
+                        </div>
+                        <div class="unit size4of5">
+                            <input type="fname" class="g-form-control" id="exampleInput2" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="g-form-group line">
+                        <div class="unit size1of5">
+                            <label>Select one:</label>
+                        </div>
+                        <div class="unit size4of5">
+                            <select class="g-form-control">
+                                <option>Select an option</option>
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="g-form-group line">
+                        <div class="unit size1of5">
+                            <div class="g-checkbox-heading">Select all that apply:</div>
+                        </div>
+                        <div class="unit size4of5">
+                            <div class="g-checkbox">  
+                                <input type="checkbox" id="checkbox7" checked>
+                                <label for="checkbox7"><span>Option 1</span></label>
+                                <input type="checkbox" id="checkbox8">
+                                <label for="checkbox8"><span>Another option</span></label>
+                                <input type="checkbox" id="checkbox9">
+                                <label for="checkbox9"><span>And another!</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="g-form-group line">
+                        <div class="unit size1of5">
+                            <div class="g-radio-heading">Please select one:</div>
+                        </div>
+                        <div class="unit size4of5">
+                            <div class="g-radio-container">
+                                <input id="radio-7" class="g-radio" name="g-radio-group" type="radio" checked>
+                                <label for="radio-7" class="g-radio-label">First Choice</label>
+                                <input id="radio-8" class="g-radio"name="g-radio-group" type="radio">
+                                <label for="radio-8" class="g-radio-label">Second Choice</label>
+                                <input id="radio-9" class="g-radio" name="g-radio-group" type="radio">
+                                <label for="radio-9" class="g-radio-label">Third Choice</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="g-form-group line">
+                        <div class="unit size1of5">
+                            <div class="g-radio-heading">Inline example:</div>
+                        </div>
+                        <div class="unit size4of5 g-inline-form">
+                            <div class="g-radio-container">
+                                <input id="radio-10" class="g-radio" name="g-radio-group2" type="radio" checked>
+                                <label for="radio-10" class="g-radio-label">First Choice</label>
+                                <input id="radio-11" class="g-radio"name="g-radio-group2" type="radio">
+                                <label for="radio-11" class="g-radio-label">Second Choice</label>
+                                <input id="radio-12" class="g-radio" name="g-radio-group2" type="radio">
+                                <label for="radio-12" class="g-radio-label">Third Choice</label>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="g-form-group line">
+                        <div class="unit size1of5">
+                        </div>
+                        <div class="unit size4of5">
+                            <a class="g-btn">Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+<pre><xmp><form>
+    <div class="g-form-horizontal">
+        <div class="g-form-group line">
+            <div class="unit size1of5">
+                <label for="exampleInput1">First Name:</label>
+            </div>
+            <div class="unit size4of5">
+                <input type="fname" class="g-form-control" id="exampleInput1" placeholder="First Name">
+            </div>
+        </div>
+        <div class="g-form-group line">
+            <div class="unit size1of5">
+                <label for="exampleInput2">Last Name:</label>
+            </div>
+            <div class="unit size4of5">
+                <input type="fname" class="g-form-control" id="exampleInput2" placeholder="Last Name">
+            </div>
+        </div>
+        <div class="g-form-group line">
+            <div class="unit size1of5">
+                <label>Select one:</label>
+            </div>
+            <div class="unit size4of5">
+                <select class="g-form-control">
+                    <option>Select an option</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+        </div>
+        <div class="g-form-group line">
+            <div class="unit size1of5">
+                <div class="g-checkbox-heading">Select all that apply:</div>
+            </div>
+            <div class="unit size4of5">
+                <div class="g-checkbox">  
+                    <input type="checkbox" id="checkbox7" checked>
+                    <label for="checkbox7"><span>Option 1</span></label>
+                    <input type="checkbox" id="checkbox8">
+                    <label for="checkbox8"><span>Another option</span></label>
+                    <input type="checkbox" id="checkbox9">
+                    <label for="checkbox9"><span>And another!</span></label>
+                </div>
+            </div>
+        </div>
+        <div class="g-form-group line">
+            <div class="unit size1of5">
+                <div class="g-radio-heading">Please select one:</div>
+            </div>
+            <div class="unit size4of5">
+                <div class="g-radio-container">
+                    <input id="radio-7" class="g-radio" name="g-radio-group" type="radio" checked>
+                    <label for="radio-7" class="g-radio-label">First Choice</label>
+                    <input id="radio-8" class="g-radio"name="g-radio-group" type="radio">
+                    <label for="radio-8" class="g-radio-label">Second Choice</label>
+                    <input id="radio-9" class="g-radio" name="g-radio-group" type="radio">
+                    <label for="radio-9" class="g-radio-label">Third Choice</label>
+                </div>
+            </div>
+        </div>
+        <div class="g-form-group line">
+            <div class="unit size1of5">
+                <div class="g-radio-heading">Inline example:</div>
+            </div>
+            <div class="unit size4of5 g-inline-form">
+                <div class="g-radio-container">
+                    <input id="radio-10" class="g-radio" name="g-radio-group2" type="radio" checked>
+                    <label for="radio-10" class="g-radio-label">First Choice</label>
+                    <input id="radio-11" class="g-radio"name="g-radio-group2" type="radio">
+                    <label for="radio-11" class="g-radio-label">Second Choice</label>
+                    <input id="radio-12" class="g-radio" name="g-radio-group2" type="radio">
+                    <label for="radio-12" class="g-radio-label">Third Choice</label>
+                </div>
+            </div>
+        </div>
+         <div class="g-form-group line">
+            <div class="unit size1of5">
+            </div>
+            <div class="unit size4of5">
+                <a class="g-btn">Submit</a>
+            </div>
+        </div>
+    </div>
+</form></xmp></pre>
+
+            <h2 id="tooltips">Tooltips</h2>
+            <hr>  
+            <p>Built from jQuery UI Tooltip.<br>See <a href="http://api.jqueryui.com/tooltip/" target="_blank">http://api.jqueryui.com/tooltip/</a> for documentation.</p>
+
+
+            <a title="Add to your calendar" class="fa fa-calendar icon-left"></a>
+            <a title="Share this event" class="fa fa-share-alt icon-right"></a>
+
+<pre><xmp><a title="Add to your calendar" class="fa fa-calendar icon-left"></a>
+<a title="Share this event" class="fa fa-share-alt icon-right"></a></xmp></pre>
+
+            <h2 id="calendar">Calendar</h2>
+            <hr>  
+            <p>Built off of jQuery UI Date Picker.<br>See <a href="https://jqueryui.com/datepicker/" target="_blank">https://jqueryui.com/datepicker/</a> and <a href="http://api.jqueryui.com/datepicker/" target="_blank">http://api.jqueryui.com/datepicker/</a> for documentation.</p> 
+            <br>
+            <div id="datepickerTest"></div>
+            <br>
+            
+            <p><b>Selected Date: </b><span id="selectedDateTest"></span></p>
+            <br>
+
+            <h2 id="pagination">Pagination</h2>
+            <hr>  
+
+            <div class="g-pagination">
+                <a class="g-prev g-disabled"><span class="fa fa-angle-left"></span></a>
+                <a class="g-nums g-active">1</a>
+                <a class="g-nums">2</a>
+                <a class="g-nums">3</a>
+                <a class="g-nums">4</a>
+                <a class="g-nums">5</a>
+                <a class="g-next"><span class="fa fa-angle-right"></span></a>
+            </div>
+
+<pre><xmp><div class="g-pagination">
+    <a class="g-prev g-disabled"><span class="fa fa-angle-left"></span></a>
+    <a class="g-nums g-active">1</a>
+    <a class="g-nums">2</a>
+    <a class="g-nums">3</a>
+    <a class="g-nums">4</a>
+    <a class="g-nums">5</a>
+    <a class="g-next"><span class="fa fa-angle-right"></span></a>
+</div></xmp></pre>
+
+            <h2 id="grid">Grid System</h2>
+            <hr>  
+
+            <div class="line margin-bottom">
+                <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+                    <div class="testing-unit"></div>
+                </div>
+                <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+                    <div class="testing-unit"></div>
+                </div>
+                <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+                    <div class="testing-unit"></div>
+                </div>
+                <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+                    <div class="testing-unit"></div>
+                </div>
+                <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+                    <div class="testing-unit"></div>
+                </div>
+                <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+                    <div class="testing-unit"></div>
+                </div>
+            </div>
+
+            <div class="line margin-bottom">
+                <div class="size1of5 unit">
+                    <div class="testing-unit"></div>
+                </div>
+                <div class="size1of5 unit">
+                    <div class="testing-unit"></div>
+                </div>
+                <div class="size1of5 unit">
+                    <div class="testing-unit"></div>
+                </div>
+                <div class="size1of5 unit">
+                    <div class="testing-unit"></div>
+                </div>
+                <div class="size1of5 unit">
+                    <div class="line">
+                        <div class="size1of2 sm-size1of2 unit">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="size1of2 sm-size1of2 unit">
+                            <div class="testing-unit"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line margin-bottom">
+                <div class="size1of4 xs-size1of2 unit">
+                    <div class="testing-unit"></div>
+                </div>
+                <div class="size1of4 xs-size1of2 unit">
+                    <div class="testing-unit"></div>
+                </div>
+                <div class="size1of4 xs-size1of2 unit">
+                    <div class="line">
+                        <div class="size1of2 sm-size1of2 unit">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="size1of2 sm-size1of2 unit">
+                            <div class="line">
+                                <div class="size1of2 unit">
+                                    <div class="line">
+                                        <div class="size1of2 sm-size1of2 xs-size1of2 unit">
+                                            <div class="testing-unit"></div>
+                                        </div>
+                                        <div class="size1of2 sm-size1of2 xs-size1of2 unit">
+                                            <div class="testing-unit"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="size1of2 unit">
+                                    <div class="testing-unit"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="size1of4 xs-size1of2 unit">
+                    <div class="testing-unit"></div>
+                </div>
+            </div>
+            <br>
+
+<pre><xmp><div class="line margin-bottom">
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+</div>
+
+<div class="line margin-bottom">
+    <div class="size1of5 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of5 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of5 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of5 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of5 unit">
+        <div class="line">
+            <div class="size1of2 sm-size1of2 unit">
+                <div class="testing-unit"></div>
+            </div>
+            <div class="size1of2 sm-size1of2 unit">
+                <div class="testing-unit"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="line margin-bottom">
+    <div class="size1of4 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of4 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of4 xs-size1of2 unit">
+        <div class="line">
+            <div class="size1of2 sm-size1of2 unit">
+                <div class="testing-unit"></div>
+            </div>
+            <div class="size1of2 sm-size1of2 unit">
+                <div class="line">
+                    <div class="size1of2 unit">
+                        <div class="line">
+                            <div class="size1of2 sm-size1of2 xs-size1of2 unit">
+                                <div class="testing-unit"></div>
+                            </div>
+                            <div class="size1of2 sm-size1of2 xs-size1of2 unit">
+                                <div class="testing-unit"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="size1of2 unit">
+                        <div class="testing-unit"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="size1of4 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+</div></xmp></pre>
+
+
+        </div>
+    </div>
+</div>
+
+        
+<!-- jQuery Includes -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<!-- Slick Slider - for homepage banner -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+
+<!-- jQuery UI - for tooltips and calendar -->
+<script src="js/vendor/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+
+<!-- Prototype spectifc js -->
+<script src="js/scripts.js"></script>
+
+<!-- Global style guide example page specific scripts - not for live site -->
+<script src="js/guide.js"></script>
+
+</body>
+
+
+</html>

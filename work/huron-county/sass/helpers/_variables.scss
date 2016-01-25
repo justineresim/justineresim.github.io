@@ -1,0 +1,223 @@
+/* ==========================================================================
+   Global Variables
+   ========================================================================== */
+
+/* ======================= Colours ======================== */
+
+//----- Colours ----- 
+$primary-blue: #00477F; 
+$primary-blue-dark: #013E6E;
+$primary-blue-light: #D7E4EF;
+$secondary-blue: #427593;
+
+$primary-yellow: #DEB305; 
+
+$primary-orange: #E26E06;
+
+$grey-1: #3D4347;
+$grey-2: #5B6267;
+$grey-3: #E2E2E2;
+$grey-4: #EFEFEF;
+$grey-5: #F7F7F7;
+
+$border-color: $grey-3;
+
+$primary-bg-color: #fff;
+$secondary-bg-color: $primary-blue;
+$tertiary-bg-color: $primary-blue-dark;
+$quaternary-bg-color: #F1F5FA;
+$bg-img: url(/img/bg3-pattern.png);
+
+$hr-color: $grey-3;
+
+$error-color: #cd0a0a;
+
+/* ======================= Responsive ======================== */
+
+//Repsonsive breakpoints
+$min-break-desktop: 1201px;
+$max-break-desktop: 1200px;
+
+$min-break-tablet: 861px;
+$max-break-tablet: 860px;
+$min-break-mobile: 481px;
+$max-break-mobile: 480px;
+
+//Grid system variables
+$gutter: 10px;
+
+
+/* ======================= Misc ======================== */
+
+//Default box shadaw
+$box-shadow: 0px 0px 6px rgba(0,0,0,.2);
+
+//Darker/bigger box shadaw
+$box-shadow2: 0px 0px 8px rgba(0,0,0,.3);
+
+//Darker/bigger box shadaw
+$box-shadow3: 0px 0px 8px rgba(0,0,0,.4);
+
+//Drop down box shadow
+$box-shadow4: 0px 2px 5px rgba(0, 0, 0, 0.2);
+
+//Default border radius
+$border-radius: 4px;
+
+//Panels
+$panel-shadow: $box-shadow;
+$panel-padding: 1.35em 1.5em;
+$panel-padding-sm: 1em;
+$panel-padding-lg: 2em;
+
+$panel-padding-mobile: 1em 1.2em;
+$panel-padding-sm-mobile: 0.9em;
+$panel-padding-lg-mobile: 1.5em;
+
+
+/* ======================= Links/Type ======================== */
+
+//Links
+$link-color: $primary-blue;
+$link-hover-color: darken($primary-blue, 10%);
+
+$link-color-secondary: $primary-orange;
+$link-hover-color-secondary: darken($primary-orange, 10%);
+
+$link-color-tertiary: #fff;
+$link-hover-color-tertiary: #fff;
+
+$link-color-icon: lighten($primary-yellow, 10%);
+$link-hover-color-icon: $primary-yellow;
+
+//Type
+$primary-font: 'usual', sans-serif;
+$secondary-font: 'clavo', sans-serif;
+
+$text-color: $grey-2;
+$text-color-secondary: $primary-blue;
+$text-color-tertiary: $secondary-blue;
+$text-color-dark: $grey-1;
+
+$heading-color: $grey-1;
+
+$base-font-size: 15px;
+$base-line-height: 1.5em;
+
+/* ======================= Buttons ======================== */
+
+$btn-font: $primary-font;
+$btn-font-size: 13px;
+$btn-line-height: 13px;
+$btn-padding: 11px 18px 10px;
+$btn-icon-padding: 7px 10px;
+$btn-text-align: center;
+$btn-border-radius: $border-radius;
+$btn-height: 36px;
+
+//Small button
+$btn-sm-padding: 6px 10px 3px 10px;
+$btn-sm-icon-padding: 7.5px 6px;
+$btn-sm-font-size: 11.5px;
+$btn-sm-line-height: 11.5px;
+
+//Large button
+$btn-lg-padding: 15px 22px 16px;
+$btn-lg-icon-padding: 9px 15px;
+$btn-lg-font-size: 13px;
+$btn-lg-line-height: 13px;
+
+//Primary button
+$btn-primary-bg: $primary-blue;
+$btn-primary-border: $primary-blue;
+$btn-primary-color: #fff;
+
+$btn-primary-hover-bg: darken($primary-blue, 5%);
+$btn-primary-hover-border: darken($primary-blue, 5%);
+$btn-primary-hover-color: #fff;
+
+$btn-primary-active-bg: darken($primary-blue, 8%);
+$btn-primary-active-border: darken($primary-blue, 8%);
+$btn-primary-active-color: #fff;
+
+//Secondary button
+$btn-secondary-bg: $secondary-blue;
+$btn-secondary-border: $secondary-blue;
+$btn-secondary-color: #fff;
+
+$btn-secondary-hover-bg: darken($secondary-blue, 6%);
+$btn-secondary-hover-border: darken($secondary-blue, 6%);
+$btn-secondary-hover-color: #fff;
+
+$btn-secondary-active-bg: darken($secondary-blue, 10%);
+$btn-secondary-active-border: darken($secondary-blue, 10%);
+$btn-secondary-hover-color: #fff;
+
+//Tertiary button
+$btn-tertiary-bg: $primary-orange;
+$btn-tertiary-border: $primary-orange;
+$btn-tertiary-color: #fff;
+
+$btn-tertiary-hover-bg: darken($primary-orange, 5%);
+$btn-tertiary-hover-border: darken($primary-orange, 5%);
+$btn-tertiary-hover-color: #fff;
+
+$btn-tertiary-active-bg: darken($primary-orange, 8%);
+$btn-tertiary-active-border: darken($primary-orange, 8%);
+$btn-tertiary-active-color: #fff;
+
+//Quaternary button
+$btn-quaternary-bg: $grey-2;
+$btn-quaternary-border: $grey-2;
+$btn-quaternary-color: #fff;
+
+$btn-quaternary-hover-bg: darken($grey-2, 5%);
+$btn-quaternary-hover-border: darken($grey-2, 5%);
+$btn-quaternary-hover-color: #fff;
+
+$btn-quaternary-active-bg: darken($grey-2, 8%);
+$btn-quaternary-active-border: darken($grey-2, 8%);
+$btn-quaternary-active-color: #fff;
+
+
+//Quinary button
+$btn-quinary-bg: $primary-blue-light;
+$btn-quinary-border: $primary-blue-light;
+$btn-quinary-color: $primary-blue-dark;
+
+$btn-quinary-hover-bg: darken($primary-blue-light, 5%);
+$btn-quinary-hover-border: darken($primary-blue-light, 5%);
+$btn-quinary-hover-color: $primary-blue-dark;
+
+$btn-quinary-active-bg: #fff;
+$btn-quinary-active-border: $text-color-dark;
+$btn-quinary-active-color: $text-color-dark;
+
+
+/* ======================= Forms ======================== */
+
+$input-border-color: $primary-blue;
+$input-active-border-color: $primary-blue-dark;
+$input-border-radius: $border-radius;
+$input-box-shadow: none;
+$select-box-shadow: none;
+$input-color: $grey-1;
+$input-placeholder-color: $grey-2;
+
+
+/* ======================= Tables ======================== */
+
+$table-padding: 10px 15px 8px;
+$table-hover-bg-color: $grey-5;
+$table-border-color: $grey-3;
+
+
+/* ======================= Defaults ======================== */
+
+//Default box-sizing
+$box-sizing: border-box;
+
+//Default transitions
+$transition1-default: all 0.1s ease-in;
+$transition2-default: all 0.3s ease-in;
+$transition3-default: all 0.7s ease-in;

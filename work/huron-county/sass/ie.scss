@@ -1,0 +1,23 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+
+ //Form inputs - select styling
+select.g-form-control {
+	padding-right: 10px;
+    background: #ffffff;
+    border:0px;
+    outline:0px;
+}
+
+.g-checkbox input[type=checkbox] + label:before {
+    top: 4px;
+}
+
+//Testing/style guide page
+body.testing pre xmp{
+	display: none;
+}
+

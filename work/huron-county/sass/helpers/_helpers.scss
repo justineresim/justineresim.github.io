@@ -1,0 +1,232 @@
+/* ==========================================================================
+   Helper Classes
+   ========================================================================== */
+
+//----Type
+
+//fonts
+.g-font-bold{
+	font-family: $primary-font;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.g-font-secondary{
+	font-family: $secondary-font;
+	font-style: italic;
+	font-weight: 400;
+} 
+
+.g-font-secondary-normal{
+	font-family: $secondary-font;
+	font-style: normal;
+	font-weight: 400;
+} 
+
+.g-font-secondary-bold{
+	font-family: $secondary-font;
+	font-style: italic;
+	font-weight: 500;
+} 
+
+.g-text-uppercase{
+	text-transform: uppercase;
+}
+
+//font colours
+.g-text-color-primary{
+	color: $text-color;
+}
+
+.g-text-color-secondary{
+	color: $text-color-secondary;
+}
+
+.g-text-color-tertiary{
+	color: $text-color-tertiary;
+}
+
+.g-text-color-dark{
+	color: $text-color-dark;
+}
+
+.g-text-color-white{
+	color: #fff;
+}
+
+.g-body-subtitle{
+	font-size: 1.3em;
+	line-height: 1.5em;
+	color: $secondary-blue;
+	@extend .g-font-secondary-normal;
+	margin: -0.4em 0 1em;
+}
+
+
+//Inline icons
+
+.fa.icon-left{
+	margin-right: .5em;
+}
+
+.fa.icon-right{
+	margin-left: .5em;
+}
+
+
+//transitions
+.transition {
+	-webkit-transition: $transition1-default;
+	-moz-transition: $transition1-default;
+	-o-transition: $transition1-default;
+	transition: $transition1-default;
+}
+
+.transition2 {
+	-webkit-transition: $transition2-default;
+	-moz-transition: $transition2-default;
+	-o-transition: $transition2-default;
+	transition: $transition2-default;
+}
+
+.transition3 {
+	-webkit-transition: $transition3-default;
+	-moz-transition: $transition3-default;
+	-o-transition: $transition3-default;
+	transition: $transition3-default;
+}
+
+.box-shadow{
+	box-shadow: $box-shadow;
+}
+
+.box-shadow2{
+	box-shadow: $box-shadow2;
+}
+
+.box-shadow3{
+	box-shadow: $box-shadow3;
+}
+
+.border-radius{
+	border-radius: $border-radius;
+}
+
+.background-gradient{
+	background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.9), transparent, transparent);
+	background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.9), transparent, transparent);
+	background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.9), transparent, transparent);
+	background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.9), transparent, transparent);
+	background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.9), transparent, transparent);
+}
+
+.background-gradient2{
+	background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.7), transparent);
+	background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.7), transparent);
+	background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.7), transparent);
+	background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), transparent);
+	background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.background-gradient-banner{
+	background-image: linear-gradient(bottom, $quaternary-bg-color, rgba(0, 0, 0, 0.6), transparent, transparent);
+	background-image: -o-linear-gradient(bottom, $quaternary-bg-color, rgba(0, 0, 0, 0.6), transparent, transparent);
+	background-image: -moz-linear-gradient(bottom, $quaternary-bg-color, rgba(0, 0, 0, 0.6), transparent, transparent);
+	background-image: -webkit-linear-gradient(bottom, $quaternary-bg-color, rgba(0, 0, 0, 0.6), transparent, transparent);
+	background-image: -ms-linear-gradient(bottom, $quaternary-bg-color, rgba(0, 0, 0, 0.6), transparent, transparent);
+}
+
+.background-gradient-links{
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), transparent, transparent);
+	background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), transparent, transparent);
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), transparent, transparent);
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), transparent, transparent);
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), transparent, transparent);
+}
+
+//background-colors
+
+.g-bg-color-primary{
+	background-color: $primary-bg-color;
+}
+
+.g-bg-color-secondary{
+	background-color: $secondary-bg-color;
+}
+
+.g-bg-color-tertiary{
+	background-color: $tertiary-bg-color;
+}
+
+.g-bg-color-quaternary{
+	background-color: $quaternary-bg-color;
+}
+
+.g-bg-img{
+	background: $bg-img;
+}
+
+//helper classes
+
+.g-pull-right{
+	float: right;
+}
+
+.g-pull-left{
+	float: left;
+}
+
+.g-text-right{
+	text-align: right;
+}
+
+.g-text-left{
+	text-align: left;
+}
+
+.g-text-center{
+	text-align: center;
+}
+
+.g-clearfix{
+	&:before, &:after{
+	content: " ";
+	display: table;
+	}
+	&:after{
+		clear:both;
+	}
+}
+
+.g-img-responsive{
+	max-width: 100%;
+}
+
+//responsive helper classes
+
+.g-hidden{
+	display: none;
+}
+
+.g-xs-hidden{
+	@media (max-width: $max-break-mobile) {
+		display: none;
+	}
+}
+
+.g-sm-hidden{
+	@media (min-width: $min-break-mobile) and (max-width: $max-break-tablet) {
+		display: none;
+	}
+}
+
+.g-lg-hidden{
+	@media (min-width: $min-break-tablet) {
+		display: none;
+	}
+}
+
+
+
+
+

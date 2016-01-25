@@ -1,0 +1,328 @@
+/* ==========================================================================
+   Panels
+   ========================================================================== */
+
+.g-panel{
+	border-radius: $border-radius;
+	background-color: #fff;
+	box-shadow: $panel-shadow;
+	overflow: hidden;
+	p{
+		margin: 0 0 0.7em 0;
+		font-size: 0.95em;
+		line-height: 1.5em;
+		a{
+			@extend .g-secondary;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.g-heading{
+		@extend .g-font-secondary;
+		color: $secondary-blue;
+	    font-size: 1.06em;
+		line-height: 1.5em;
+		margin-bottom: 5px;
+		display: block;
+		.g-icon{
+		    float: right;
+			font-size: 20px;
+			color: $link-color-icon;
+		}
+		&:hover{
+			.g-icon{
+    			color: $link-hover-color-icon;
+			}
+		}
+	}
+	.g-desc{
+		font-size: 1.1em;
+		line-height: 1.5em;
+		color: $grey-1;
+		@extend .g-font-secondary-bold;
+		a{
+			color: $grey-1;
+			@extend .g-font-secondary-bold;
+		}
+	}
+	.g-panel-header{
+		padding: $panel-padding;
+		border-bottom: 1px solid $primary-yellow;
+		overflow: hidden;
+		@media (max-width: $max-break-mobile){
+			padding: $panel-padding-mobile;
+		}
+		.g-panel-heading{
+			margin: 0;
+			text-transform: uppercase;
+			color: $text-color-dark;
+			float: left;
+			a.g-active{
+				pointer-events: none;
+				color: $grey-1;
+			}
+			a.g-back{
+				padding-left: 25px;
+				position: relative;
+				.icon-left{
+					position: absolute;
+					left: 0;
+					top: 1px;
+					@extend .transition;
+				}
+				&:hover{
+					text-decoration: none;
+					.icon-left{
+						left: -5px;
+					}
+				}
+			}
+		}
+		.g-link{
+			float: right;
+			text-transform: uppercase;
+			font-size: 13px;
+			a{
+				font-weight: normal;
+			}
+		}
+	}
+	.g-panel-body{
+		padding: $panel-padding;
+		@media (max-width: $max-break-mobile){
+			padding: $panel-padding-mobile;
+		}
+		.g-long-desc{
+			font-size: 0.95em;
+			line-height: 1.5em;
+			a{
+				@extend .g-secondary;
+			}
+		}
+		.g-panel-section{
+			padding-bottom: 20px;
+			&:last-child{
+				padding-bottom: 10px;
+			}
+		}
+		.g-panel-section + .g-panel-section{
+			border-top: 1px solid $border-color;
+			padding-top: 20px;
+		}
+	}
+	.g-panel-footer{
+		padding: $panel-padding;
+		@media (max-width: $max-break-mobile){
+			padding: $panel-padding-mobile;
+		}
+	}
+	.g-panel-footer-btn{
+		&.g-btn-group{
+			display: block;
+			a[class*="g-btn"], button[class*="g-btn"]{
+				border-top-right-radius: 0 !important;
+				border-top-left-radius: 0 !important;
+				width: 100%;
+				padding-right: 0;
+				padding-left: 0;
+			}
+			a[class*="g-btn"]:nth-last-child(n+2):nth-last-child(-n+2):first-child, a[class*="g-btn"]:nth-last-child(n+2):nth-last-child(-n+2):first-child ~ a[class*="g-btn"]  { 
+				width: 49.75%;
+			}
+			a[class*="g-btn"]:nth-last-child(n+2):nth-last-child(-n+2):first-child{
+				margin-right: 0.25%;
+			}
+			a[class*="g-btn"]:nth-last-child(n+2):nth-last-child(-n+2):first-child ~ a[class*="g-btn"]{
+				margin-left: 0.25%;
+				float: right;
+			}
+			@media (min-width: $min-break-tablet) and (max-width: $max-break-desktop){
+				a[class*="g-btn"], button[class*="g-btn"]{
+					border-bottom-right-radius: $border-radius !important;
+					border-bottom-left-radius: $border-radius !important;
+					width: 100%;
+					float: none;
+				}
+				a[class*="g-btn"]:nth-last-child(n+2):nth-last-child(-n+2):first-child, a[class*="g-btn"]:nth-last-child(n+2):nth-last-child(-n+2):first-child ~ a[class*="g-btn"]  { 
+					width: 100%;
+					margin-right: 0;
+					margin-left: 0;
+				}
+				a[class*="g-btn"]:nth-last-child(n+2):nth-last-child(-n+2):first-child{
+					border-bottom-right-radius: 0 !important;
+					border-bottom-left-radius: 0 !important;
+				}
+			} 
+		}
+	}
+	&.g-lg-panel{ //for body content call outs
+		padding: $panel-padding-lg;
+		box-shadow: $box-shadow2;
+		margin: 2.5em 0 3em;
+		position: relative;
+		@media (max-width: $max-break-mobile){
+			padding: $panel-padding-lg-mobile;
+		}
+		.line a{
+			@extend .g-secondary;
+		}
+		.g-panel-heading{
+			color: $secondary-blue;
+			font-size: 1.3em;
+			line-height: 1.5em;
+		    margin-bottom: 0.6em;
+		    @extend .g-font-bold;
+		}
+		&.g-event-panel{
+			.g-cta-container{
+				margin-bottom: .3em;
+			    padding-right: 80px;
+			    @media (max-width: $max-break-mobile){
+		    		padding-right: 0;
+			    }
+			}
+			.g-icons{
+				position: absolute;
+				top: 30px;
+				right: 30px;
+				a{
+					margin-left: 20px;
+				}
+			}
+			.g-head{
+				@extend .g-font-bold;
+				font-size: 1.2em;
+				line-height: 1.5em;
+				color: $grey-1;
+				&:after{
+					content: none;
+				}
+			}
+			@media (max-width: $max-break-mobile){
+				.g-icons{
+					position: relative;
+					top: auto;
+					right: auto;
+					margin-bottom: 15px;
+					a{
+						margin-left: 20px;
+						&:first-child{
+							margin-left: 0;
+						}
+					}
+				}
+			}
+		}
+		&.g-panel-sr{
+			padding: 1.6em;
+			@media (max-width: $max-break-mobile){
+				padding: 1.2em;
+			}
+		}
+	}
+	&.g-sm-panel{ //for resources
+		padding: $panel-padding-sm;
+		border-top: 4px solid $primary-yellow;
+		position: relative;
+		@extend .transition;
+		@media (max-width: $max-break-mobile){
+			padding: $panel-padding-sm-mobile;
+		}
+		> a{
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+		.g-icon{
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			@extend .transition;
+		}
+		&.g-hover{
+			border-top: 4px solid $primary-blue;
+			box-shadow: $box-shadow3;
+			-ms-transform: scale(1.03, 1.03); 
+		    -webkit-transform: scale(1.03, 1.03); 
+		    transform: scale(1.03, 1.03); 
+			.g-icon{
+				color: $link-hover-color-icon;
+			}
+		}
+	}
+}
+
+ul.g-side-nav{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	li{
+		margin: 0;
+		padding: 0;
+		&.g-section{
+			border-top: 1px solid $border-color;
+			a, span{
+				margin-top: 20px;
+			}
+		}
+		a, span{
+			display: block;
+			margin: 20px 0;
+			position: relative;
+		}
+		span{
+			@extend .g-font-secondary;
+			font-size: 1.1em;
+			line-height: 1.5em;
+		}
+		a{
+			padding-right: 20px;
+			font-size: 0.95em;
+			line-height: 1.5em;
+			&:after{
+			    content: "\f178";
+			    right: 3px;
+				top: 3px;
+				position: absolute;
+				font: normal normal normal 14px/1 FontAwesome;
+				font-size: inherit;
+				text-rendering: auto;
+				color: $primary-yellow;
+				@extend .transition;
+			}
+			&:hover{
+				text-decoration: none;
+				&:after{
+					right: -3px;
+				}
+			}
+		}
+		&:before{
+			content: none;
+		}
+		&:first-child{
+			a, span{
+				padding-top: 0px;
+				margin-top: 0;
+			}
+		}
+		&:last-child{
+			a, span{
+				padding-bottom: 0px;
+				margin-bottom: 0;
+			}
+		}
+		&.g-active{
+			a{
+				pointer-events: none;
+				color: $grey-1;
+				&:after{
+				    content: none;
+				}
+			}
+		}
+	}
+}

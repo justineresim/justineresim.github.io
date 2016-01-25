@@ -1,0 +1,201 @@
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+a[class*="g-btn"], button[class*="g-btn"], input[class*="g-btn"]{
+	display: inline-block;
+	padding: $btn-padding;
+	margin-bottom: 0;
+	font-size: $btn-font-size;
+	font-family: $btn-font;
+	line-height: $btn-line-height;
+	text-align: $btn-text-align;
+	font-weight: 600;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: $btn-primary-bg;
+	border: 1px solid $btn-primary-border;
+	border-radius: $btn-border-radius;
+	text-transform: uppercase;
+	color: $btn-primary-color;
+	text-decoration: none;
+	outline: none;
+	@extend .transition;
+	height: $btn-height;
+	&.g-block{
+		width: 100%;
+	}
+	&.g-btn-icon{
+		padding: $btn-icon-padding;
+		font-size: 17px;
+		span.fa{
+			margin-left: 0;
+		    width: 1em;
+		}
+	}
+	&.g-sm{
+		padding: $btn-sm-padding;
+		font-size: $btn-sm-font-size;
+		line-height: $btn-sm-line-height;
+		height: 26px;
+		&.g-btn-icon{
+			padding: $btn-sm-icon-padding;
+		}
+	}
+	&.g-lg{
+		padding: $btn-lg-padding;
+		font-size: $btn-lg-font-size;
+		line-height: $btn-lg-line-height;
+		height: 44px;
+		&.g-btn-icon{
+			padding: $btn-lg-icon-padding;
+		}
+	}
+	&:hover, &:focus {
+		text-decoration: none;
+		background-color: $btn-primary-hover-bg;
+		border: 1px solid $btn-primary-hover-border;
+		color: $btn-primary-hover-color;
+		outline: 0;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+	&:active, &.g-active {
+		text-decoration: none;
+		background-color: $btn-primary-active-bg;
+		border: 1px solid $btn-primary-active-border;
+		color: $btn-primary-active-color;
+	}
+	&.g-btn-secondary{
+		background-color: $btn-secondary-bg;
+		border: 1px solid $btn-secondary-border;
+		color: $btn-secondary-color;
+		&:hover, &:focus {
+			background-color: $btn-secondary-hover-bg;
+			border: 1px solid $btn-secondary-hover-border;
+			color: $btn-secondary-hover-color;
+		}
+		&:active, &.g-active {
+			background-color: $btn-secondary-active-bg;
+			border: 1px solid $btn-secondary-active-border;
+			color: $btn-secondary-hover-color;
+		}
+	}
+	&.g-btn-tertiary{
+		background-color: $btn-tertiary-bg;
+		border: 1px solid $btn-tertiary-border;
+		color: $btn-tertiary-color;
+		&:hover, &:focus {
+			background-color: $btn-tertiary-hover-bg;
+			border: 1px solid $btn-tertiary-hover-border;
+			color: $btn-tertiary-hover-color;
+		}
+		&:active, &.g-active {
+			background-color: $btn-tertiary-active-bg;
+			border: 1px solid $btn-tertiary-active-border;
+			color: $btn-tertiary-active-color;
+		}
+	}
+	&.g-btn-quaternary{
+		background-color: $btn-quaternary-bg;
+		border: 1px solid $btn-quaternary-border;
+		color: $btn-quaternary-color;
+		&:hover, &:focus {
+			background-color: $btn-quaternary-hover-bg;
+			border: 1px solid $btn-quaternary-hover-border;
+			color: $btn-quaternary-hover-color;
+		}
+		&:active, &.g-active {
+			background-color: $btn-quaternary-active-bg;
+			border: 1px solid $btn-quaternary-active-border;
+			color: $btn-quaternary-active-color;
+		}
+	}
+	&.g-btn-quinary{
+		background-color: $btn-quinary-bg;
+		border: 1px solid $btn-quinary-border;
+		color: $btn-quinary-color;
+		&:hover, &:focus {
+			background-color: $btn-quinary-hover-bg;
+			border: 1px solid $btn-quinary-hover-border;
+			color: $btn-quinary-hover-color;
+		}
+		&:active, &.g-active {
+			background-color: $btn-quinary-active-bg;
+			border: 1px solid $btn-quinary-active-border;
+			color: $btn-quinary-active-color;
+		}
+	}
+	&.g-disabled{
+		opacity: .45;
+		pointer-events: none;
+	}
+}
+
+.g-btn-group{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	a[class*="g-btn"], button[class*="g-btn"]{
+		border-radius: 0;
+		float: left;
+	}
+	a[class*="g-btn"]:not(:last-child), button[class*="g-btn"]:not(:last-child){
+		border-right: 1px solid rgba(0,0,0,.15);
+	}
+	a[class*="g-btn"]:first-child, button[class*="g-btn"]:first-child{
+		border-radius: $btn-border-radius 0 0 $btn-border-radius;
+		margin-left: 0;
+	}
+	a[class*="g-btn"]:last-child, button[class*="g-btn"]:last-child{
+		border-radius: 0 $btn-border-radius $btn-border-radius 0;
+	}
+}
+
+.g-btn-toggle{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	a[class*="g-btn"], button[class*="g-btn"]{
+		border-radius: 0;
+		float: left;
+	}
+	a[class*="g-btn"]:first-child, button[class*="g-btn"]:first-child{
+		border-radius: $btn-border-radius 0 0 $btn-border-radius;
+		margin-left: 0;
+	}
+	a[class*="g-btn"]:last-child, button[class*="g-btn"]:last-child{
+		border-radius: 0 $btn-border-radius $btn-border-radius 0;
+		margin-left: -1px;
+	}
+}
+
+
+//input with button
+.g-input-btn{
+	position: relative;
+	.g-form-control{
+		padding-right: 100px;
+	}
+	a[class*="g-btn"], button[class*="g-btn"]{
+		position: absolute;
+		right:0;
+		bottom: 0;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+}
+
+
+
+
+
+
+

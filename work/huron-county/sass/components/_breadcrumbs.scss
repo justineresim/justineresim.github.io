@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Breadcrumbs
+   ========================================================================== */
+
+.g-breadcrumbs{
+	position: absolute;
+	bottom: 20px;
+	left: $gutter;
+	padding-right: 15px;
+	a{
+		color: #fff;
+		@extend .g-font-secondary;
+		opacity: .8;
+		margin: 0 15px;
+		position: relative;
+		&.g-active{
+			opacity: 1;
+			pointer-events: none;
+		}
+		&:after{
+		    content: '';
+		    width: 5px;
+		    height: 5px;
+		    background-color: #fff;
+		    position: absolute;
+		    border-radius: 5px;
+		    top: 6px;
+		    right: -20px;
+		    opacity: .8;
+		}
+		&:first-child{
+			margin-left: 0;
+		}
+		&:last-child{
+			margin-right: 0;
+			&:after{
+				content: none;
+			}
+		}
+	}
+}

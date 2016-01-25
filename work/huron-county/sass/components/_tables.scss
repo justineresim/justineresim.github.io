@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+table.g-table{
+    table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing:2px 0;
+	thead, tbody, tfoot, tr, th, td{
+	    margin: 0;
+	    padding: 0;
+	    border: none;
+	    border-color: inherit;
+	    vertical-align: top;
+	    text-align: left;
+	}
+	tbody{
+		font-weight: normal;
+	    font-weight: inherit;
+	}
+	th, td{
+	    padding: $table-padding;
+	}
+	&.g-table-bordered{
+		tbody tr {
+			border-top: 1px solid $table-border-color;
+		}
+	}
+	&.g-table-hover{
+		>tbody>tr:hover {
+			@extend .transition;
+		    background-color: $table-hover-bg-color;
+		}
+	}
+}

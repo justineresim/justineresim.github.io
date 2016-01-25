@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Type
+   ========================================================================== */
+
+//Headings 
+
+h1{
+	font-size: 2.4em;
+	color: $primary-blue;
+}
+
+h2{
+	font-size: 2em;
+	color: $heading-color;
+}
+
+h3{
+	font-size: 1.8em;
+	color: $heading-color;
+}
+
+h4{
+	font-size: 1.6em;
+	color: $heading-color;
+}
+
+h5{
+	font-size: 1.4em;
+	color: $heading-color;
+}
+
+h6{
+	font-size: 1.2em;
+	color: $heading-color;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: $primary-font;
+	font-weight: normal;
+	line-height: 1.3em;
+	margin: 1em 0 0.6em;
+	+ h1, + h2, + h3, + h4, + h5, + h6{
+		margin: 0 0 0.6em;
+	}
+	&.g-text-color-secondary{
+		color: $text-color-secondary;
+	}
+	&.g-text-color-tertiary{
+		color: $text-color-tertiary;
+	}
+}
+
