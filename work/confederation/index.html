@@ -1,10 +1,158 @@
 <!DOCTYPE html>
 <html>
 <!-- Document Head -->
-<?php include 'views/partials/head.php';?>
+<head>
+	<meta charset="utf-8">
+	<title>Confederation College - Prototype</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Confederation College">
+	<meta name="author" content="Resolution Interactive Media">
+	
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Roboto:500,400italic,700italic,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
+	
+	<!-- Global CSS -->
+	<link href="css/screen.css" rel="stylesheet">
+</head>
 
 <body class="r-homepage">
-<?php include 'views/partials/header.php';?>
+	<div class="r-header">
+	    <div class="r-top-header r-sm-hidden r-xs-hidden">
+	        <div class="r-container r-clearfix">
+	            <ul class="r-pull-left">
+	                <li class="r-header-dropdown">
+	                    <a class="r-header-dropdown-toggle">Campuses  <span class="fa fa-caret-down"></span></a>   
+	                    <ul class="r-header-dropdown-menu">
+	                        <li><a>Thunder Bay</a></li>
+	                        <li><a>Dryden</a></li>
+	                        <li><a>Fort Frances</a></li>
+	                        <li><a>Geraldton</a></li>
+	                        <li><a>Kenora</a></li>
+	                        <li><a>Marathon</a></li>
+	                        <li><a>Red Lake</a></li>
+	                        <li><a>Sioux Lookout</a></li>
+	                        <li><a>Wawa</a></li>
+	                        <li><a>Your House!</a></li>
+	                    </ul>   
+	                </li>
+	                <li><a>My Campus Portal</a></li>
+	            </ul>
+	            <ul class="r-pull-right">
+	                <li><a>About Confederation</a></li>
+	                <li class="r-header-dropdown">
+	                    <a class="r-header-dropdown-toggle">Information For <span class="fa fa-caret-down"></span></a>
+	                    <ul class="r-header-dropdown-menu">
+	                        <li><a>Current Students</a></li>
+	                        <li><a>Faculty</a></li>
+	                    </ul>
+	                </li>
+	            </ul>
+	        </div> 
+	    </div>
+	    <div class="r-primary-header r-sm-hidden r-xs-hidden">
+	        <div class="r-primary-header-top">
+	            <div class="r-container r-clearfix">
+	                <div class="r-pull-left">
+	                    <a href="/"><img src="img/logo.png"></a>
+	                </div>
+	                <div class="r-pull-right">
+	                    <a class="r-btn r-btn-lg r-btn-tertiary">Visit</a>
+	                    <a class="r-btn r-btn-lg r-btn-tertiary">Give</a>
+	                    <a class="r-btn r-btn-lg r-btn-secondary">Apply</a>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="r-primary-header-bottom">
+	            <div class="r-container r-clearfix">
+	                <div class="r-pull-left">
+	                    <ul>
+	                        <li><a>Programs and Courses</a></li>
+	                        <li><a>Admissions</a></li>
+	                        <li><a>Student Life</a></li>
+	                        <li><a>International Students</a></li>
+	                        <li><a>Aboriginal Students</a></li></ul>
+	                    </ul>
+	                </div>
+	                <div class="r-pull-right">
+	                    <a id="search"><span class="fa fa-search"></span></a>
+	                    <div class="r-search-input">
+	                        <input type="text" class="r-form-control r-sm" id="exampleSearch" placeholder="Search">
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+
+	    <!-- mobile header -->
+	    <div class="r-mobile-header r-lg-hidden">
+	        <div class="r-top-header">
+	            <div class="r-container r-clearfix">
+	                <ul class="r-pull-left">
+	                    <li id="searchMobile"><a><span class="fa fa-search"></span></a><input type="text" class="r-form-control r-sm" id="exampleSearch2" placeholder="Search"></li>
+	                    <li><a>Visit</a></li>
+	                    <li><a>Give</a></li>
+	                    <li><a>Apply</a></li>
+	                </ul>
+	            </div>
+	        </div>
+	        <div class="r-primary-header">
+	            <div class="r-container r-clearfix">
+	                <div class="r-pull-left">
+	                    <a href="/"><img src="img/logo.png"></a>
+	                </div>
+	                <div class="r-pull-right">
+	                    <a href="javascript: volid(0);" class="mobileMenuToggle"><span class="fa fa-bars"></span></a>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="r-mobile-menu">
+	            <ul>
+	                <li><a>Programs and Courses</a></li>
+	                <li><a>Admissions</a></li>
+	                <li><a>Student Life</a></li>
+	                <li><a>International Students</a></li>
+	                <li><a>Aboriginal Students</a></li></ul>
+	            </ul>
+	            <ul>
+	                <li><a class="mobileToggle" href="javascript: void(0);">Campuses <span class="fa fa-caret-down"></span></a>
+	                    <ul class="r-second-level">
+	                        <li><a>Main Campus</a></li>
+	                        <li><a>Another Campus</a></li>
+	                    </ul>   
+	                </li>
+	                <li><a>My Campus Portal</a></li>
+	                <li><a>About Confederation</a></li>
+	                <li><a class="mobileToggle" href="javascript: void(0);" >Information For <span class="fa fa-caret-down"></span></a>
+	                    <ul class="r-second-level">
+	                        <li><a>Current Students</a></li>
+	                        <li><a>Faculty</a></li>
+	                    </ul>
+	                </li>
+	            </ul>
+
+	        </div>
+	    </div>
+	</div>
 
 	<div class="r-banner-container">
 	    <div class="r-container r-clearfix">
@@ -60,7 +208,7 @@
 						    <div class="size1of3 sm-size1of3 r-xs-hidden unit">
 						    	<div class="r-img-container">
 						    		<a href="http://www.confederationc.on.ca/orientation/">
-						    			<div class="r-img" style="background-image:url(http://www.collegeparents.org/sites/default/files/summer_orientation.jpg)"></div>
+						    			<div class="r-img" style="background-image:url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVMnr0wtUcdCXDs2rPeNXkPsVyamxyAhceauo24vYx9CZw_Phm)"></div>
 						    		</a>
 						    	</div>
 						    </div>
@@ -226,9 +374,58 @@
 	</div>
 
 
-	<?php include 'views/partials/footer.php'; ?>
+	<div class="r-bottom-footer">
+	    <div class="r-container">
+	        <div class="line">
+	            <div class="size4of5 unit r-main-links">
+	                <div class="line">
+	                    <div class="size1of8 unit r-sm-hidden r-xs-hidden">
+	                        <a href="/"><img src="img/logo-sm.png"></a>
+	                    </div>
+	                    <div class="size7of8 unit">
+	                        <ul class="r-footer-links">
+	                            <li><a>Programs & Courses</a></li>
+	                            <li><a>Admissions</a></li>
+	                            <li><a>Student Life</a></li>
+	                            <li><a>Careers</a></li>
+	                            <li><a>Purchacing</a></li>
+	                            <li><a>Terms of Use</a></li>
+	                            <li><a>Accessibility</a></li>
+	                            <li><a>Site Map</a></li>
+	                            <li><a>Privacy Policy</a></li>
+	                        </ul>
+	                        <ul class="r-footer-links r-footer-links-2">
+	                            <li><a>Contact Us</a></li>
+	                            <li><a>Report a Problem</a></li>
+	                            <li><a class="r-lg-hidden scrollTop">Back to top <i class="fa fa-long-arrow-up"></i></a></li>
+	                        </ul>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="size1of5 sm-size1of2 unit r-contact-info">
+	                <p class="r-font-size-smallest">1450 Nakina Drive, P.O. Box 398,<br>Thunder Bay, Ontario, Canada<br>P7C 4W1 <a>Maps</a><br>Telephone: (807) 475-6110<img class="r-canada-icon" alf="Canadian Flag" src="img/canada_icon.png"</p>
+	                <div class="r-social-icons r-clearfix">
+	                    <div class="r-dropdown r-dropdown-top">        
+	                        <a class="r-dropdown-toggle"><span class="fa fa-facebook"></span><span class="fa fa-caret-up"></span></a>
+	                        <ul class="r-dropdown-menu r-social-footer-dropdown-menu">
+	                            <li><a>Confederation College</a></li>
+	                            <li><a>Confederation College International</a></li>
+	                        </ul>
+	                    </div>
+	                    <div><a><span class="fa fa-twitter"></span><span class="fa fa-caret-up"></span></a></div>
+	                    <div><a><span class="fa fa-instagram"></span></a></div>
+	                    <div><a><span class="fa fa-linkedin-square"></span></a></div>
+	                    <div><a><span class="fa fa-youtube-play"></span></a></div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="r-overlay"> </div>
 
-	<?php include 'views/partials/scripts.php'; ?>
+	<!-- jQuery Includes -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
 </body>
 
 </html>
