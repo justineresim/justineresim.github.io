@@ -24,6 +24,9 @@
 					</a>
 					<div class="g-text">
 						<h3>{{i.title}}</h3>
+						<a class="g-btn g-btn-tertiary"  ng-click="fancyBox(i.count)">See More</a>
+						<a ng-if='i.url !== undefined' target="_blank" href="{{i.url}}" class="g-btn g-btn-quaternary">Visit Site<span class="ti-arrow-top-right g-icon-right"></span></a>
+						<a ng-if='i.prototype !== undefined' target="_blank" href="work/{{i.prototype}}/index.html" class="g-btn g-btn-quaternary">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>
 					</div>
 					<div>
 						<a ng-repeat="image in i.images" class="fancybox fancy-box-{{image.count}}" rel="gallery{{image.count}}" href="{{image.src}}" title="{{image.desc}}"></a>
@@ -41,7 +44,8 @@
 				<h2>{{i.title}}</h2>
 				<div ng-bind-html="i.text"></div>
 				<a class="g-btn g-btn-tertiary"  ng-click="fancyBox(i.count)">See More</a>
-				<a target="_blank" href="{{i.url}}" class="g-btn g-btn-quaternary">Visit Site<span class="ti-arrow-top-right g-icon-right"></span></a>
+				<a ng-if='i.url !== undefined' target="_blank" href="{{i.url}}" class="g-btn g-btn-quaternary">Visit Site<span class="ti-arrow-top-right g-icon-right"></span></a>
+				<a ng-if='i.prototype !== undefined' target="_blank" href="work/{{i.prototype}}/index.html" class="g-btn g-btn-quaternary">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>
 			</div>
 			<div>
 				<a class="fancybox fancy-box-0" rel="gallery0" href="img/work/fhm1.png" title="Fitness Health Match Homepage"></a>
