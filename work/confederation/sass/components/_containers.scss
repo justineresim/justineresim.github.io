@@ -1,0 +1,137 @@
+/* ==========================================================================
+   Containers
+   ========================================================================== */
+
+
+//used for related programs
+a.r-image-content-container{
+	display: block;
+	border: 1px solid $border-color;
+	width: 100%;
+	margin-bottom: 20px;
+	text-decoration: none !important;
+	@extend .r-text-color-primary;
+	.r-img-container{
+		height: 220px;
+		overflow: hidden;
+		img{
+			@extend .transition2;
+			min-width: 100%;
+			display: block;
+		}
+		@media (max-width: $max-break-desktop) {
+			height: 160px;
+			img{
+				width: 100%;
+			}
+		}
+		@media (max-width: $max-break-tablet) {
+			height: auto;
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.r-content-container{
+		height: 120px;
+		padding: 20px;
+		background-color: #fff;
+		p.r-title{
+			@extend .r-font-size-smaller;
+			margin-bottom: 5px;
+		}
+		h4{
+			@extend .r-text-color-dark;
+			@extend .transition;
+			margin: 0;
+		}
+		@media (max-width: $max-break-desktop) {
+			height: 160px;
+		}
+		@media (max-width: $max-break-tablet) {
+			height: auto;
+			padding: 15px;
+		}
+	}
+	&:hover{
+		h4{
+			color: $primary-blue;
+		}
+		img{
+			opacity: .7;
+		}
+	}
+}
+
+
+.r-image-grid.line{
+	.r-img-container{
+		display: block;
+		position: relative;
+		height: 160px;
+		overflow: hidden;
+		margin-bottom: 20px;
+		img{
+			height: 100%;
+			display: block;
+			@extend .transition2;
+			&:hover{
+				opacity: .7;
+				transform: scale(1.02);
+			}
+		}
+		&.r-img-lg{
+			@media (min-width: $min-break-tablet) {
+				height: 340px;
+			}
+			@media (max-width: $max-break-tablet) {
+				height: 280px;
+				img{
+					min-width: 100%;
+					min-height: 100%;
+					height: auto;
+				}
+			}
+			@media (max-width: $max-break-mobile) {
+				height: auto;
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+	.sm-size1of3{
+		.r-img-container{
+			@media (max-width: $max-break-tablet) {
+				height: 120px;
+				img{
+					height: auto;
+					min-width: 100%;
+					min-height: 100%;
+				}
+			}
+		}
+	}
+	.sm-size1of2{
+		.r-img-container{
+			@media (max-width: $max-break-tablet) {
+				height: 160px;
+				img{
+					height: auto;
+					min-width: 100%;
+					min-height: 100%;
+				}
+			}
+		}
+	}
+	.sm-size1of2 .r-img-container, .sm-size1of3 .r-img-container, .r-img-container{
+		@media (max-width: $max-break-mobile) {
+			height: 100px;
+		}
+	}
+	@media (max-width: $max-break-tablet) {
+		.r-img-container{
+			margin-bottom: 10px;
+		}
+	}
+}

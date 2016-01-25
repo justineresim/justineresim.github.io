@@ -1,0 +1,152 @@
+// Label
+label {
+    font-size: 16px;
+    font-weight: 600;
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: $text-color;
+}
+
+
+// Text Input
+input[type=text],
+input[type=password],
+input[type=email],
+select,
+textarea {
+    font-family: inherit;
+    font-size: 16px;
+
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 15px;
+
+    color: $text-color-dark;
+    border-style: none;
+    border: 1px solid $border-gray;
+    background: #fff;
+
+    @include border-radius(3px);
+    @include transition-property(all);
+    @include transition-duration(.1s);
+    @include transition-timing-function(ease-in);
+    &:focus {
+        border-color: darken($border-gray, 15%);
+        outline: none;;
+    }
+}
+select {
+    color: #999;
+    background: url(../img/select.png) no-repeat center right #fff;
+
+            appearance: none;
+       -moz-appearance: none;
+    -webkit-appearance: none;
+    option {
+        color: $text-color-dark;
+    }
+    option:first-child {
+        color: #999;
+    }
+}
+textarea {
+    font-family: inherit;
+
+    height: 120px;
+
+    resize: none;
+}
+
+label + input[type=text],
+label + select,
+label + textarea {
+    margin-bottom: 1rem;
+}
+
+label.important {
+    padding: 15px;
+    margin-bottom:10px;
+
+    border: 1px solid $border-gray;
+    border-radius: $base-border-radius;
+
+    @include base-transition();
+    span {
+        font-weight: 500;
+        line-height: 1.3;
+
+        position: relative;
+        top: -1.25px;
+
+        @include base-transition();
+    }
+    &:hover {
+        cursor: pointer;
+
+        color: $text-color-dark;
+        border-color: darken($border-gray, 15%);
+    }
+}
+
+input[type=checkbox] {
+    position: relative;
+    top: 3.5px;
+
+    width: 12px;
+    height: 12px;
+
+    border: 1px solid $border-gray;
+    border-radius: $base-border-radius;
+    background: #fff;
+
+    @include base-transition();
+    @include appearance(none);
+}
+input[type=checkbox]:checked {
+    position: relative;
+
+    border-color: $primary !important;
+    background: $primary;
+    &:after {
+        font-family: 'Ionicons';
+        font-size: .4rem;
+
+        position: absolute;
+        left: 1.5px;
+
+        content: '\f122';
+
+        color: #fff;
+    }
+}
+input:checked + span {
+    color: $text-color-dark;
+}
+
+
+
+// Form Grid
+
+.formGrid {
+    margin-right: -5px;
+    margin-left: -5px;
+    .unit {
+        padding: 0 5px;
+    }
+    &.horLabel {
+        label {
+            padding: 17px 0;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    label {
+        margin-bottom: 0;
+        padding: 17px 0;
+    }
+}

@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Breadcrumbs
+   ========================================================================== */ 
+
+ul.r-breadcrumbs{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	li{
+		display: inline-block;
+		font-family: $heading-font;
+		@extend .r-font-size-small;
+		a{
+			@extend .r-link-color-secondary;
+			text-decoration: none;
+			font-weight: normal;
+			.fa{
+				margin: 0 5px;
+			}
+		}
+	}	
+}

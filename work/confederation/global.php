@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<!-- Document Head -->
+<?php include 'views/partials/head.php'; ?>
+
+<body class="testing">
+    <a class="testing-arrow-up testing-scroll-up"><span class="fa fa-chevron-up"></span></a>
+    <header>
+        <div class="r-container r-clearfix">
+            <div class="pull-left"><a class="testing-scroll-up"><img src="img/logo-sm.png"></a></div>
+            <h1 class="pull-left">Confederation College - Global Style Guide</h1>
+            <div class="pull-right">
+                <ul class="testing-nav-links"> 
+                    <li><a class="r-link-secondary r-font-size-smaller" href="/" target="_blank">Home Page</a></li>
+                    <li><a class="r-link-secondary r-font-size-smaller" href="/programs.php" target="_blank">Program Page</a></li>
+                </ul>
+                <div class="r-dropdown r-dropdown-right">
+                    <button class="r-btn r-btn-tertiary r-dropdown-toggle">Menu <span class="fa fa-caret-down"></span></button>
+                    <ul class="r-dropdown-menu">
+                        <li><a class="test-scroll" scroll="#headings">Headings</a></li>
+                        <li><a class="test-scroll" scroll="#text">Body Text</a></li>
+                        <li><a class="test-scroll" scroll="#links">Links</a></li>
+                        <li><a class="test-scroll" scroll="#buttons">Buttons</a></li>
+                        <li><a class="test-scroll" scroll="#forms">Forms</a></li>
+                        <li><a class="test-scroll" scroll="#dropdowns">Dropdowns</a></li>
+                        <li><a class="test-scroll" scroll="#grid">Grid System</a></li>
+                        <li><a href="/" target="_blank">Home Page</a></li>
+                        <li><a href="/programs.php" target="_blank">Program Page</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="r-container">
+        <h2 id="headings" class="r-text-uppercase">Headings</h2>
+        <hr>
+        <h1>h1 Heading</h1>
+        <h2>h2 Heading</h2>
+        <h3>h3 Heading</h3>
+        <h4>h4 Heading</h4>
+        <h5>h5 Heading</h5>
+        <h6>h6 Heading</h6>
+
+        <br>
+        <h2 id="text" class="r-text-uppercase">Body Text</h2>
+        <hr>    
+        <p>Regular body font</p>
+        <p class="r-text-color-dark">Dark text color</p>
+        <p class="r-text-color-light">Light text color</p>
+        <p><strong>Bolder body font</strong></p>
+        <p><em>Italic body font</em></p>
+        <p class="r-font-size-small">Small body font</p>
+        <p class="r-font-size-smaller">Smaller body font</p>
+        <p class="r-font-size-smallest">Smallest body font</p>
+        <p class="r-font-size-large">Large body font</p>
+        <p class="r-font-size-larger">Larger body font</p>
+        <p class="r-font-size-largest">Largest body font</p>
+        
+<pre><xmp><p>Regular body font</p>
+<p class="r-text-color-dark">Dark text color</p>
+<p class="r-text-color-light">Light text color</p>
+<p><strong>Bolder body font</strong></p>
+<p><em>Italic body font</em></p>
+<p class="r-font-size-small">Smaller body font</p>
+<p class="r-font-size-smaller">Smaller body font</p>
+<p class="r-font-size-smallest">Smallest body font</p>
+<p class="r-font-size-large">Large body font</p>
+<p class="r-font-size-larger">Large body font</p>
+<p class="r-font-size-largest">Large body font</p></xmp></pre>
+
+        <br>
+        <h2 id="links" class="r-text-uppercase">Links</h2>
+        <hr>
+        <h3><a>Standard Heading Link</a></h3>
+        <a>Standard link</a><br>
+        <a class="r-link-secondary">Secondary link</a><br>
+        <a class="r-font-size-smaller">Smaller link</a><br>
+        <a class="r-font-size-smaller r-text-uppercase">Smaller uppercase link</a><br>
+        <a class="r-font-size-smaller r-text-uppercase r-link-secondary">Link with arrow <span class="fa fa-long-arrow-right"></span></a><br><br>
+        <div style="background-color: #5d5d5d; padding: 10px 15px; width: 100%;">
+            <a class="r-link-color-secondary">Secondary Link Color</a>
+        </div>
+
+        <br>
+        <br>
+
+<pre><xmp><h3><a>Standard Heading Link</a></h3>
+<a>Standard link</a><br>
+<a class="r-link-secondary">Secondary link</a><br>
+<a class="r-font-size-smaller">Smaller link</a><br>
+<a class="r-font-size-smaller r-text-uppercase">Smaller uppercase link</a><br>
+<a class="r-font-size-smaller r-text-uppercase r-link-secondary">Link with arrow <span class="fa fa-long-arrow-right"></span></a><br><br>
+<div style="background-color: grey; padding: 20px; width: 100%;">
+    <a class="r-link-color-secondary">Secondary Link Color</a>
+</div></xmp></pre>
+
+        <br>
+        <h2 id="buttons" class="r-text-uppercase">Buttons</h2>
+        <hr>
+
+        <a class="r-btn">Primary Button</a>
+        <a class="r-btn r-active">Active State</a>
+        <a class="r-btn r-btn-disabled">Disabled</a>
+        <br><br>
+        <a class="r-btn r-btn-block">Primary Block Button</a>
+        <br><br>
+        <a class="r-btn r-btn-lg">Large Button</a>
+        <a class="r-btn r-btn-sm">Small Button</a>
+        <br><br>
+        <a class="r-btn r-btn-secondary">Secondary Button</a>
+        <a class="r-btn r-active r-btn-secondary">Active State</a>
+        <a class="r-btn r-btn-secondary r-btn-disabled">Disabled</a>
+        <br><br>
+        <a class="r-btn r-btn-tertiary">Tertiary Button</a>
+        <a class="r-btn r-active r-btn-tertiary">Active State</a>
+        <a class="r-btn r-btn-tertiary r-btn-disabled">Disabled</a>
+        <br><br>
+        <a class="r-btn r-btn-quaternary">Quaternary Button</a>
+        <a class="r-btn r-active r-btn-quaternary">Active State</a>
+        <a class="r-btn r-btn-quaternary r-btn-disabled">Disabled</a>
+        <br><br>
+
+
+
+<pre><xmp><a class="r-btn">Primary Button</a>
+<a class="r-btn r-active">Active State</a>
+<a class="r-btn r-btn-disabled">Disabled</a>
+<br><br>
+<a class="r-btn r-btn-block">Primary Block Button</a>
+<br><br>
+<a class="r-btn r-btn-lg">Large Button</a>
+<a class="r-btn r-btn-sm">Small Button</a>
+<br><br>
+<a class="r-btn r-btn-secondary">Secondary Button</a>
+<a class="r-btn r-active r-btn-secondary">Active State</a>
+<a class="r-btn r-btn-secondary r-btn-disabled">Disabled</a>
+<br><br>
+<a class="r-btn r-btn-tertiary">Tertiary Button</a>
+<a class="r-btn r-active r-btn-tertiary">Active State</a>
+<a class="r-btn r-btn-tertiary r-btn-disabled">Disabled</a>
+<br><br>
+<a class="r-btn r-btn-quaternary">Quaternary Button</a>
+<a class="r-btn r-active r-btn-quaternary">Active State</a>
+<a class="r-btn r-btn-quaternary r-btn-disabled">Disabled</a>
+<br><br></xmp></pre>
+
+
+        <br>
+        <h3 class="r-text-uppercase">Button Groups</h3>
+
+        <h4 class="r-text-uppercase">Standard Button Group</h4>
+
+        <div class="r-btn-group">
+            <a class="r-btn">Option 1</a>
+            <a class="r-btn">Option 2</a>
+            <a class="r-btn">Option 3</a>
+        </div>
+
+        <br><br>
+
+<pre><xmp><div class="r-btn-group">
+    <a class="r-btn">Option 1</a>
+    <a class="r-btn">Option 2</a>
+    <a class="r-btn">Option 3</a>
+</div></xmp></pre>
+
+        <br>
+
+        <h4 class="r-text-uppercase">Social Media Button Group</h4>
+
+        <div class="r-btn-group">
+            <a class="r-btn r-btn-sm"><span class="fa fa-facebook r-font-size-smaller"></span> <span class="fa fa-caret-down"></span></a>
+            <a class="r-btn r-btn-sm"><span class="fa fa-twitter r-font-size-smaller"></span> <span class="fa fa-caret-down"></span></a>
+            <a class="r-btn r-btn-sm"><span class="fa fa-instagram r-font-size-smaller"></span></a>
+            <a class="r-btn r-btn-sm"><span class="fa fa-linkedin-square r-font-size-smaller"></span></a>
+            <a class="r-btn r-btn-sm"><span class="fa fa-youtube-play r-font-size-smaller"></span></a>
+        </div>
+
+        <br><br>
+
+<pre><xmp><div class="r-btn-group">
+    <a class="r-btn r-btn-sm"><span class="fa fa-facebook r-font-size-smaller"></span> <span class="fa fa-caret-down"></span></a>
+    <a class="r-btn r-btn-sm"><span class="fa fa-twitter r-font-size-smaller"></span> <span class="fa fa-caret-down"></span></a>
+    <a class="r-btn r-btn-sm"><span class="fa fa-instagram r-font-size-smaller"></span></a>
+    <a class="r-btn r-btn-sm"><span class="fa fa-linkedin-square r-font-size-smaller"></span></a>
+    <a class="r-btn r-btn-sm"><span class="fa fa-youtube-play r-font-size-smaller"></span></a>
+</div></xmp></pre>
+
+        <br>
+        <h2 id="forms" class="r-text-uppercase">Forms</h2>
+        <hr>
+
+        <form>
+            <div class="r-form-group r-error-state">
+                <input type="email" class="r-form-control" id="exampleInputEmail1" placeholder="Email">
+                <p>Please fill out the required feilds</p>
+            </div>
+            <div class="r-form-group">
+                <input type="password" class="r-form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="r-form-group">
+                <textarea rows="2" class="r-form-control" id="exampleQuestion" placeholder="Question">
+                </textarea>
+            </div>
+            <div class="r-form-group r-checkbox">
+                <input type="checkbox" id="checkbox1"><label for="checkbox1"><span>Check me out</span></label>
+            </div>
+            <button type="submit" class="r-btn r-btn-submit r-btn-block">Submit</button>
+        </form>
+
+        <br>
+<pre><xmp><form>
+    <div class="r-form-group r-error-state">
+        <input type="email" class="r-form-control" id="exampleInputEmail1" placeholder="Email">
+        <p>Please fill out the required feilds</p>
+    </div>
+    <div class="r-form-group">
+        <input type="password" class="r-form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="r-form-group r-checkbox">
+        <input type="checkbox" id="checkbox1"><label for="checkbox1"><span>Check me out</span></label>
+    </div>
+    <button type="submit" class="r-btn r-btn-submit r-btn-block">Submit</button>
+</form></xmp></pre>
+        <br>
+
+        <h4 class="r-text-uppercase">Smaller Form</h4>
+
+        <form>
+            <div class="r-form-group r-sm">
+                <label for="exampleInputEmail2">Email address</label>
+                <input type="email" class="r-form-control r-sm" id="exampleInputEmail2" placeholder="Email">
+            </div>
+            <div class="r-form-group r-sm">
+                <label for="exampleInputPassword2">Password</label>
+                <input type="password" class="r-form-control r-sm" id="exampleInputPassword2" placeholder="Password">
+            </div>
+            <div class="r-form-group r-checkbox r-sm">
+                <input type="checkbox" id="checkbox3"><label for="checkbox3"><span>Check me out</span></label>
+            </div>
+            <button type="submit" class="r-btn r-btn-submit r-btn-block r-btn-sm">Submit</button>
+            <p class="r-confirmation"><span class="fa fa-check"></span> Your message was successfully sent</p>
+        </form>
+
+        <br>
+
+<pre><xmp><form>
+    <div class="r-form-group r-sm">
+        <label for="exampleInputEmail2">Email address</label>
+        <input type="email" class="r-form-control r-sm" id="exampleInputEmail2" placeholder="Email">
+    </div>
+    <div class="r-form-group r-sm">
+        <label for="exampleInputPassword2">Password</label>
+        <input type="password" class="r-form-control r-sm" id="exampleInputPassword2" placeholder="Password">
+    </div>
+    <div class="r-form-group r-checkbox r-sm">
+        <input type="checkbox" id="checkbox3"><label for="checkbox3"><span>Check me out</span></label>
+    </div>
+    <button type="submit" class="r-btn r-btn-submit r-btn-block r-btn-sm">Submit</button>
+    <p class="r-confirmation"><span class="fa fa-check"></span> Your message was successfully sent</p>
+</form></xmp></pre>
+
+
+        <br>
+        <h2 id="dropdowns" class="r-text-uppercase">Dropdowns</h2>
+        <hr>   
+        
+        <div class="r-dropdown">        
+            <a class="r-btn r-btn-sm r-dropdown-toggle">Dropdown<span class="fa fa-caret-down"></span></a>
+            <ul class="r-dropdown-menu">
+                <li><a>Confederation College</a></li>
+                <li><a>Confederation College International</a></li>
+            </ul>
+        </div>
+        
+        <br>
+        <br>
+
+<pre><xmp><div class="r-dropdown">        
+    <a class="r-btn r-btn-sm r-dropdown-toggle">Dropdown<span class="fa fa-caret-down"></span></a>
+    <ul class="r-dropdown-menu">
+        <li><a>Confederation College</a></li>
+        <li><a>Confederation College International</a></li>
+    </ul>
+</div></xmp></pre>
+        <br>
+
+        <h4 class="r-text-uppercase">Dropdowns - Right</h4>
+        <div class="r-dropdown r-dropdown-right">        
+            <a class="r-btn r-btn-sm r-dropdown-toggle">Dropdown<span class="fa fa-caret-down"></span></a>
+            <ul class="r-dropdown-menu">
+                <li><a>Confederation College</a></li>
+                <li><a>Confederation College International</a></li>
+            </ul>
+        </div>
+
+        <br>
+        <br>
+
+<pre><xmp><div class="r-dropdown r-dropdown-top">        
+    <a class="r-btn r-btn-sm r-dropdown-toggle">Dropdown<span class="fa fa-caret-down"></span></a>
+    <ul class="r-dropdown-menu">
+        <li><a>Confederation College</a></li>
+        <li><a>Confederation College International</a></li>
+    </ul>
+</div></xmp></pre>
+
+        <h4 class="r-text-uppercase">Dropdowns - Top</h4>
+        <div class="r-dropdown r-dropdown-top">        
+            <a class="r-btn r-btn-sm r-dropdown-toggle">Dropdown<span class="fa fa-caret-down"></span></a>
+            <ul class="r-dropdown-menu">
+                <li><a>Confederation College</a></li>
+                <li><a>Confederation College International</a></li>
+            </ul>
+        </div>
+
+        <br>
+        <br>
+
+<pre><xmp><div class="r-dropdown r-dropdown-top">        
+    <a class="r-btn r-btn-sm r-dropdown-toggle">Dropdown<span class="fa fa-caret-down"></span></a>
+    <ul class="r-dropdown-menu">
+        <li><a>Confederation College</a></li>
+        <li><a>Confederation College International</a></li>
+    </ul>
+</div></xmp></pre>
+
+        <h4 class="r-text-uppercase">Dropdowns - Top Right</h4>
+        <div class="r-dropdown r-dropdown-top r-dropdown-right">        
+            <a class="r-btn r-btn-sm r-dropdown-toggle">Dropdown<span class="fa fa-caret-down"></span></a>
+            <ul class="r-dropdown-menu">
+                <li><a>Confederation College</a></li>
+                <li><a>Confederation College International</a></li>
+            </ul>
+        </div>
+
+        <br>
+        <br>
+
+<pre><xmp><div class="r-dropdown r-dropdown-top r-dropdown-right">        
+    <a class="r-btn r-btn-sm r-dropdown-toggle">Dropdown<span class="fa fa-caret-down"></span></a>
+    <ul class="r-dropdown-menu">
+        <li><a>Confederation College</a></li>
+        <li><a>Confederation College International</a></li>
+    </ul>
+</div></xmp></pre>
+
+        <br>
+        <h2 id="grid" class="r-text-uppercase">Grid System</h2>
+        <hr>  
+
+        <div class="line margin-bottom">
+            <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+                <div class="testing-unit"></div>
+            </div>
+            <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+                <div class="testing-unit"></div>
+            </div>
+            <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+                <div class="testing-unit"></div>
+            </div>
+            <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+                <div class="testing-unit"></div>
+            </div>
+            <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+                <div class="testing-unit"></div>
+            </div>
+            <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+                <div class="testing-unit"></div>
+            </div>
+        </div>
+
+        <div class="line margin-bottom">
+            <div class="size1of5 unit">
+                <div class="testing-unit"></div>
+            </div>
+            <div class="size1of5 unit">
+                <div class="testing-unit"></div>
+            </div>
+            <div class="size1of5 unit">
+                <div class="testing-unit"></div>
+            </div>
+            <div class="size1of5 unit">
+                <div class="testing-unit"></div>
+            </div>
+            <div class="size1of5 unit">
+                <div class="line">
+                    <div class="size1of2 sm-size1of2 unit">
+                        <div class="testing-unit"></div>
+                    </div>
+                    <div class="size1of2 sm-size1of2 unit">
+                        <div class="testing-unit"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="line margin-bottom">
+            <div class="size1of4 xs-size1of2 unit">
+                <div class="testing-unit"></div>
+            </div>
+            <div class="size1of4 xs-size1of2 unit">
+                <div class="testing-unit"></div>
+            </div>
+            <div class="size1of4 xs-size1of2 unit">
+                <div class="line">
+                    <div class="size1of2 sm-size1of2 unit">
+                        <div class="testing-unit"></div>
+                    </div>
+                    <div class="size1of2 sm-size1of2 unit">
+                        <div class="line">
+                            <div class="size1of2 unit">
+                                <div class="line">
+                                    <div class="size1of2 sm-size1of2 xs-size1of2 unit">
+                                        <div class="testing-unit"></div>
+                                    </div>
+                                    <div class="size1of2 sm-size1of2 xs-size1of2 unit">
+                                        <div class="testing-unit"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="size1of2 unit">
+                                <div class="testing-unit"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="size1of4 xs-size1of2 unit">
+                <div class="testing-unit"></div>
+            </div>
+        </div>
+        <br>
+
+<pre><xmp><div class="line margin-bottom">
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+</div>
+
+<div class="line margin-bottom">
+    <div class="size1of5 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of5 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of5 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of5 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of5 unit">
+        <div class="line">
+            <div class="size1of2 sm-size1of2 unit">
+                <div class="testing-unit"></div>
+            </div>
+            <div class="size1of2 sm-size1of2 unit">
+                <div class="testing-unit"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="line margin-bottom">
+    <div class="size1of4 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of4 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of4 xs-size1of2 unit">
+        <div class="line">
+            <div class="size1of2 sm-size1of2 unit">
+                <div class="testing-unit"></div>
+            </div>
+            <div class="size1of2 sm-size1of2 unit">
+                <div class="line">
+                    <div class="size1of2 unit">
+                        <div class="line">
+                            <div class="size1of2 sm-size1of2 xs-size1of2 unit">
+                                <div class="testing-unit"></div>
+                            </div>
+                            <div class="size1of2 sm-size1of2 xs-size1of2 unit">
+                                <div class="testing-unit"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="size1of2 unit">
+                        <div class="testing-unit"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="size1of4 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+</div></xmp></pre>
+
+    <br>
+    <h3 class="r-text-uppercase">Smaller Gutter</h3>
+
+    <div class="line line-sm margin-bottom">
+        <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+            <div class="testing-unit"></div>
+        </div>
+        <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+            <div class="testing-unit"></div>
+        </div>
+        <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+            <div class="testing-unit"></div>
+        </div>
+        <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+            <div class="testing-unit"></div>
+        </div>
+        <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+            <div class="testing-unit"></div>
+        </div>
+        <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+            <div class="testing-unit"></div>
+        </div>
+    </div>
+    <br>
+
+<pre><xmp><div class="line line-sm margin-bottom">
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+</div></xmp></pre>
+
+    <br>
+    <h4 class="r-text-uppercase">Tablet</h4>
+
+    <div class="line line-sm-tablet margin-bottom">
+        <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+            <div class="testing-unit"></div>
+        </div>
+        <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+            <div class="testing-unit"></div>
+        </div>
+        <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+            <div class="testing-unit"></div>
+        </div>
+        <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+            <div class="testing-unit"></div>
+        </div>
+        <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+            <div class="testing-unit"></div>
+        </div>
+        <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+            <div class="testing-unit"></div>
+        </div>
+    </div>
+    <br>
+
+<pre><xmp><div class="line line-sm-tablet margin-bottom">
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+</div></xmp></pre>
+
+    <br>
+    <h4 class="r-text-uppercase">Mobile</h4>
+
+    <div class="line line-sm-mobile margin-bottom">
+        <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+            <div class="testing-unit"></div>
+        </div>
+        <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+            <div class="testing-unit"></div>
+        </div>
+        <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+            <div class="testing-unit"></div>
+        </div>
+        <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+            <div class="testing-unit"></div>
+        </div>
+        <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+            <div class="testing-unit"></div>
+        </div>
+        <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+            <div class="testing-unit"></div>
+        </div>
+    </div>
+    <br>
+
+<pre><xmp><div class="line line-sm-mobile margin-bottom">
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="size1of6 sm-size1of3 xs-size1of2 unit">
+        <div class="testing-unit"></div>
+    </div>
+</div></xmp></pre>
+
+
+    </div>
+
+</div>
+
+
+<?php include 'views/partials/scripts.php'; ?>
+</body>
+
+
+</html>

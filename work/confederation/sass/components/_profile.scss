@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Profiles
+   ========================================================================== */
+
+//profile on sidebar
+.r-profile{
+	@extend .r-font-size-small;
+	padding-top: 30px;
+	.r-img-container{
+		width: 90px;
+		height: 90px;
+		overflow: hidden;
+		border-radius: 50%;
+		float: right;
+		img{
+			width: 90px;
+		}
+	}
+	h5{
+		margin-bottom: 0px;
+	}
+	p.r-subtitle{
+		margin-bottom: 10px;
+	}
+	p.r-text{
+		margin-top: 0;
+		@extend .r-font-size-smaller;
+		@extend .r-text-color-dark;
+	}
+}
+
+//profile used on home page
+.r-profile-lg{
+	padding: 30px;
+	.r-img-container{
+		border-radius: 50%;
+		margin-top: 20px;
+		width: 135px;
+		height: 135px;
+		overflow: hidden;
+		img{
+			margin-top: -10px;
+		}
+	}
+	h2{
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	h4{
+		@extend .r-text-color-dark;
+	}
+	p.r-subtitle{
+		margin: 0;
+		@extend .r-text-color-light;
+		@extend .r-font-size-small;
+	}
+	.r-btn{
+		margin-top: 20px;
+	}
+	@media (max-width: $max-break-tablet) {
+		text-align: center;
+		.r-img-container{
+			margin: 0px auto;
+		}
+
+	}
+}

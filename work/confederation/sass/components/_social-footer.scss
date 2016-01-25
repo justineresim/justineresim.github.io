@@ -1,0 +1,194 @@
+/* ==========================================================================
+   Social Footer
+   ========================================================================== */
+
+.r-social-footer{
+	background-image: url('../img/footer-bg.png');
+	background-size: cover;
+	background-position: center center;
+	padding-top: 50px;
+	height: 460px;
+	margin-bottom: 100px;
+	> .r-container > .line:first-child{
+		h2{
+			color: #fff;
+			font-size: 30px;
+			margin-top: 5px;
+			margin-bottom: 30px;
+		}
+		.r-cta{
+			margin-right: 30px;
+			@extend .r-link-color-secondary;
+		}
+		@media (max-width: $max-break-tablet) {
+			.r-cta{
+				display: block;
+				margin: 0 0 10px 0;
+			}
+		}
+		@media (max-width: $max-break-mobile) {
+			.unit{
+				text-align: center !important;
+				.r-cta{
+					display: block;
+					margin: 0 0 20px 0;
+				}
+			}
+		}
+	}
+	> .r-container > .line + .line{
+		padding-top: 10px;
+		.r-social-container{	
+			> .line {
+				background-color: #fff;
+				border: 1px solid $border-color;
+				margin-left: 0;
+				@extend .border-radius;
+				border-bottom-right-radius: 0;
+				border-bottom-left-radius: 0;
+				> .unit{
+					padding: 20px;
+					position: relative;
+					border-right: 1px solid $border-color;
+					min-height: 200px;
+					a{
+						text-decoration: none;
+					}
+					p.r-date{
+						color: $grey-3;
+						@extend .r-font-size-small;
+						margin-top: 0;
+						margin-bottom: 0;
+					}
+					a.r-leadin{
+						font-family: $heading-font;
+						font-weight: bold;
+						color: $grey-1;
+						margin-top: 5px;
+					    display: block;
+						@extend .transition;
+						&:hover{
+							color: $primary-blue;
+						}
+					}
+					.r-social-icon{
+						float: right;
+						color: $grey-3;
+						text-transform: uppercase;
+						&:hover{
+							color: $grey-2;
+						}
+						.r-text{
+							@extend .r-font-size-smallest;
+							top: -3px;
+							position: relative;
+						}
+					}
+					+ .unit{
+						border-right: none;
+					}
+					@media (max-width: $max-break-mobile) {
+						min-height: 0;
+						border-right: none;
+						border-top: 1px solid $border-color;
+						&.r-first-unit{
+							border-top: none;
+						}
+					}
+					@media (min-width: $min-break-mobile) and (max-width: $max-break-tablet) {
+						min-height: 250px;
+					}
+				}
+				@media (max-width: $max-break-tablet) {
+					margin-right: 0;
+				}
+				@media (max-width: $max-break-mobile) {
+					border: none;
+				}
+			}
+			> .line + .line{
+				border-top: none;
+				@extend .border-radius;
+				border-top-right-radius: 0;
+				border-top-left-radius: 0;
+			}
+		}
+		.r-images-container{
+			.unit{
+				height: 201px;
+				background-color: #000;
+				padding:0;
+				border-top-left-radius: $border-radius;
+				overflow: hidden;
+				background-position: center center;
+  				background-size: cover;
+				a{
+					@extend .transition2;
+					height: 100%;
+					width: 100%;
+					display: block;
+					.fa{
+						@extend .transition;
+						@extend .r-link-color-secondary;
+						margin: 20px;
+						float: right;
+					}
+					&:hover{
+						background-color: rgba(0,0,0,.4);
+						.fa{
+							color: #fff;
+						}
+					}
+				}
+				+ .unit{
+					border-radius: 0;
+					border-top-right-radius: $border-radius;
+					+ .unit{
+						border-radius: 0;
+						border-bottom-left-radius: $border-radius;
+						+ .unit{
+							border-radius: 0;
+							border-bottom-right-radius: $border-radius;
+						}
+					}
+				}
+			}
+			@media (max-width: $max-break-tablet) {
+				margin-top: 20px;
+				.unit{
+					padding: 0;
+					overflow: hidden;
+					padding-bottom: 25%;
+					position: relative;
+					height: auto;
+					a{
+						display: block;
+						position: absolute;
+					}
+				}
+			}
+			@media (max-width: $max-break-mobile) {
+				.unit{
+					padding-bottom: 50%;
+				}
+
+			}
+			@media (min-width: $min-break-mobile) and (max-width: $max-break-tablet) {
+				.unit{
+					border-bottom-left-radius: $border-radius !important;
+					+ .unit, + .unit + .unit{
+						border-radius: 0;
+					}
+					+ .unit + .unit + .unit{
+						border-top-right-radius: $border-radius !important;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: $max-break-tablet) {
+		height: auto;
+  		padding-bottom: 40px;
+  		margin-bottom: 0px;
+	}
+}

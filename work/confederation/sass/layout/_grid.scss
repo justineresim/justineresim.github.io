@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Responsive Grid System
+   ========================================================================== */
+
+//updates to fabrics grid
+.line{
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.unit{
+	padding: 0 10px;
+}
+
+//with margin bottom to whatever is first the unit (except for if it's another line)
+.line.margin-bottom .unit {
+	> div:not(.line) {
+		margin-bottom: 20px;
+	}
+}
+
+
+//smaller gutter
+.line.line-sm{
+	margin-left: -5px;
+	margin-right: -5px;
+	.line{
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	.unit{
+		padding: 0 5px;
+	}
+	&.margin-bottom .unit {
+		> div:not(.line) {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+//smaller gutter for < tablet
+@media (max-width: $max-break-tablet) {
+	.line.line-sm-tablet{
+		margin-left: -5px;
+		margin-right: -5px;
+		.line{
+			margin-left: -5px;
+			margin-right: -5px;
+		}
+		.unit{
+			padding: 0 5px;
+		}
+		&.margin-bottom .unit {
+			> div:not(.line) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+//smaller gutter mobile only
+@media (max-width: $max-break-mobile) {
+	.line.line-sm-mobile{
+		margin-left: -5px;
+		margin-right: -5px;
+		.line{
+			margin-left: -5px;
+			margin-right: -5px;
+		}
+		.unit{
+			padding: 0 5px;
+		}
+		&.margin-bottom .unit {
+			> div:not(.line) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+

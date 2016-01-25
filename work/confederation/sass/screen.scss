@@ -1,0 +1,50 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+
+//Vendors
+//Fabric Boilerplate (http://www.maximsiebert.com/lab/fabric/docs)
+@import "vendors/fabric/_fabric";
+
+//Font Awesome
+@import "vendors/font-awesome-4.3.0/scss/font-awesome";
+
+//Helpers
+@import "helpers/_variables";
+@import "helpers/_mixins";
+
+//Base
+@import "base/_general";
+
+//Components
+@import "components/_ads";
+@import "components/_banner";
+@import "components/_breadcrumbs";
+@import "components/_buttons";
+@import "components/_containers";
+@import "components/_dropdowns";
+@import "components/_footer";
+@import "components/_forms";
+@import "components/_header";
+@import "components/_lists";
+@import "components/_profile";
+@import "components/_sidebar";
+@import "components/_social-footer";
+@import "components/_testimonials";
+@import "components/_type";
+
+//Layout
+@import "layout/_grid";
+@import "layout/_layout";
+
+//Pages
+@import "pages/_testing";
+@import "pages/program-details";
+@import "pages/_homepage";
+
+
+
+

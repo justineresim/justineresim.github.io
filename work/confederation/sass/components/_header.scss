@@ -1,0 +1,244 @@
+/* ==========================================================================
+   Global Header
+   ========================================================================== */
+
+.r-header{
+	.r-top-header{
+		background-color: $primary-red;
+		height: 40px;
+		border: none;
+		.r-container > ul{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			> li{
+				float: left;
+				.fa-caret-down{
+					margin-left: 5px;
+				}
+				> a, > .r-header-dropdown > a {
+					color: #fff;
+					text-transform: uppercase;
+					text-decoration: none;
+					font-size: 13px;
+					line-height: 40px;
+					display: inline-block;
+					padding: 0 20px;
+					&:hover, &:active, &:focus, &.r-active{
+						background-color: $primary-dark-red;
+					}
+				}
+			}
+		}
+		//header dropdowns
+		.r-header-dropdown{
+			position: relative;
+			.r-header-dropdown-menu{
+				display: none;
+				position: absolute;
+				left: 0;
+				top: 100%;
+				padding: 0;
+				list-style-type: none;
+				background-color: $primary-dark-red;
+				text-align: left;
+				min-width: 200px;
+				z-index: 2000;
+				li a{
+					padding-left: 15px;
+					color: #fff;
+					text-transform: uppercase;
+					text-decoration: none;
+					font-size: 13px;
+					line-height: 35px;
+					display: block;
+					background-color: $primary-dark-red;
+					&:hover{
+						background-color: $primary-red;
+					}
+				}	
+			}
+		}
+	}
+	.r-primary-header{
+		background-color: $primary-bg-color;
+		.r-primary-header-top{
+			border-bottom: 1px solid $border-color;
+			.r-container{
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
+		}
+		.r-primary-header-bottom{
+			border-bottom: 1px solid $border-color;
+			height: 50px;
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				> li{
+					display: inline-block;
+					margin-right: 20px;
+					a{
+						display: block;
+						line-height: 50px;
+						color: $grey-1;
+						text-decoration: none;
+						@extend .r-font-size-small;
+						&:hover{
+							color: $primary-red;
+						}
+					}
+					&:last-child{
+						margin-right: 0;
+					}
+					@media (max-width: $max-break-desktop) {
+						margin-right: 10px;
+						a{
+							font-size: 15px;
+						}
+					}
+				}
+			}
+			.r-pull-right{
+				border-right: 1px solid $border-color;
+				border-left: 1px solid $border-color;
+				a{
+					display: inline-block;
+					line-height: 50px;
+					color: $grey-1;
+					padding: 0 20px;
+					&:hover{
+						color: $primary-blue;
+						background-color: $tertiary-bg-color;
+					}
+				}
+				.r-search-input{
+					display: none;
+					width: 0;
+					input#exampleSearch{
+						border: none;
+						margin: 0 5px;
+						padding: 0;
+						width: 0;
+						display: none;
+						width: 140px;
+						&:focus{
+							outline: 0;
+							-webkit-box-shadow: none;
+							box-shadow: none;
+						}
+						::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
+						    color: #b4b4b4;
+						}
+					}
+					&.r-active{
+						display: inline-block;
+					}
+				}
+
+			}
+		}
+	}
+}
+
+.r-mobile-header{
+	li#searchMobile{
+		max-width: 100%;
+		> a{
+			float: left;
+		}
+	    input.r-form-control{
+			border: none;
+			display: none;
+			background-color: $primary-dark-red;
+			height: 40px;
+			padding: 0 10px;
+			color: #fff;
+			float: left;
+			&:focus{
+				outline: 0;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+			}
+			::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
+			    color: #b4b4b4;
+			}
+			&.r-input-active{
+				display: inline-block;
+			}
+		}
+	}
+
+	.r-primary-header{
+		.r-container{
+			padding-top: 20px;
+			padding-bottom: 20px;
+			img{
+				height: 40px;
+			}
+			.fa{
+				font-size: 24px;
+				line-height: 40px;
+				color: $grey-1;
+			}
+		}
+	}
+}
+
+//mobile menu
+
+.r-mobile-menu{
+	position: absolute;
+	height: 100%;
+	overflow-y: scroll;
+	background-color: #fff;
+	top: 0;
+	right: -251px;
+	z-index: 2000;
+	border-left: 1px solid $border-color;
+	display: none;
+	&.r-open{
+		display: block;
+	}
+	ul{
+		list-style-type: none;
+		li{
+			border-bottom: 1px solid $border-color;
+			a{
+				display: inline-block;
+				position: relative;
+				font-size: 16px;
+				width: 250px;
+				display: block;
+				text-decoration: none;
+				line-height: 60px;
+				padding: 0 20px;
+				color: $grey-2;
+				background-color: $secondary-bg-color;
+				&:hover, &:active, &:focus, &.r-active{
+					color: $primary-red;
+				}
+				.fa{
+					position: absolute;
+					right: 20px;
+					top: 0;
+					line-height: 60px;
+					color: $grey-2;
+		        }
+			}		
+		}
+		.r-second-level{
+			display: none;
+			li{
+				border-bottom: none;
+				a{
+					background-color: #fff;
+				}
+			}
+		}
+	}
+}
+
+
+

@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Program Details Specific Styles
+   ========================================================================== */
+
+
+body.r-inner-page{
+	.r-banner-container{
+		background-position: center center; 
+		@media (max-width: $max-break-mobile) {
+			height: 300px; 
+				> .r-container{
+				height: 300px;
+			}
+		}
+	}
+}
+
+

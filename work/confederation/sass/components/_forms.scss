@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Global Forms
+   ========================================================================== */
+
+form{
+	@extend .r-font-size-smaller;
+	margin-bottom: 20px;
+	.r-error-state{
+		input{
+			border: 1px solid $error-color;
+			&:focus{
+				border: 1px solid $error-color;
+			}
+		}
+		p{
+			color: $error-color;
+			margin-top: 5px;
+			font-weight: bold;
+		}
+	}
+	p.r-confirmation{
+		margin-top: 5px;
+		font-weight: bold;
+	}
+	.r-form-group{
+		margin-bottom: 15px;
+		&.r-sm{
+			margin-bottom: 10px;
+		}
+	}
+	.r-form-control{
+		display: block;
+		width: 100%;	
+		padding: 4px 12px;
+		font-size: 18px;
+		line-height: 1.42857143;
+		border: 1px solid $border-color;
+		@extend .border-radius;
+		color: $grey-2;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		@extend .transition;
+		&:focus{
+			border-color: #b4b4b4;
+			outline: 0;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+		::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
+		    color: #b4b4b4;
+		}
+		&.r-sm{
+			@extend .r-font-size-smaller;
+			input {
+				height: 30px;
+			}
+		}
+	}
+	label{
+		display: inline-block;
+		max-width: 100%;
+		margin-bottom: 5px;
+		font-weight: bold;
+	}
+}
+
+
+
+//checkboxes
+
+.r-checkbox{
+	color: $grey-3;
+	input[type=checkbox] {
+		display:none;
+		+ label{
+			position: relative;
+			line-height: 17px;
+			&:before{
+				content: ' ';
+				font: normal normal normal 14px/1 FontAwesome;
+				text-rendering: auto;
+				border: 1px solid $border-color;
+				height: 15px;
+				width: 15px;
+				display:inline-block;
+				padding: 0 0 0 0px;
+				top: 0;
+				position: absolute;
+			}
+			span{
+			    margin-left: 25px;
+			    vertical-align: top;
+			}
+		}
+	}
+
+	input[type=checkbox]:checked + label:before{
+		content: "\f00c";
+		color: $primary-red;
+		border: 1px solid $border-color;
+		height: 15px;
+		width: 15px;
+		display:inline-block;
+		padding: 0 0 0 0px;
+		top: 0;
+		position: absolute;
+	}	
+}
+
+

@@ -1,0 +1,159 @@
+/* ==========================================================================
+   Homepage Specific Styles
+   ========================================================================== */
+
+body.r-homepage{
+	.r-banner-container{
+		background: url(/img/banner1.png) no-repeat; 
+		background-size: cover; 
+		background-position: left center; 
+	}
+	.r-homepage-body-content{
+		padding:0;
+		p{
+			margin-bottom: 5px;
+		}
+		.r-background-container{
+			position: absolute;
+			background-image: url("../img/thunder-bay.png");
+			background-position: right center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 380px;
+			width: 50%;
+			right: 0;
+		}
+		.r-background-gradient{
+			@extend .background-gradient;
+			position: absolute;
+			height: 380px;
+			width: 50%;
+			right: 0;
+		}
+		.r-home-first-row{
+			background-color: $secondary-bg-color;
+			height: 380px;
+			.r-home-first-col{
+				padding: 40px 40px 40px 15px;
+				> .line{
+					height: 119.5px;
+					> .unit{
+						height: 100%;
+					}
+					@media (max-width: $max-break-mobile) {
+						height: auto;
+					}
+				}
+				.r-img-container{
+					@extend .border-radius;
+					overflow: hidden;
+					height: 100%;
+					width: 100%;
+					a {
+						display: block;
+						width: 100%;
+						height: 100%;
+						.r-img{
+							background-size: cover;
+						    background-position: center center;
+							height: 100%;
+							width: 100%;
+						}
+					}
+					&:hover{
+						opacity: .8;
+						@extend .transition2;	
+					}
+				}
+				h4{
+					margin-top: 0;
+				}
+				hr{
+					margin: 30px 0;
+				}
+				@media (max-width: $max-break-tablet) {
+					padding: 40px;
+				}
+			}
+			.r-home-second-col{
+				position: relative;
+				.r-text-container{
+					position: relative;
+					height: 380px;
+					width: 100%;
+					.r-text{
+						position: absolute;
+						bottom: 40px;
+						padding-left: 20px;
+						padding-right: 15px;
+						h2, p{
+							color: #fff;
+						}
+					}
+					@media (max-width: $max-break-tablet) {
+						height: auto;
+					}
+				}
+				@media (max-width: $max-break-tablet) {
+					padding:0;
+					.r-text-container{
+						height: auto;
+						background-image: url("../img/thunder-bay.png");
+						background-size: cover;
+						background-position: center center;
+						.r-text{
+							position: relative;
+							padding: 50px 40px;
+							bottom: 0;
+							background-color: rgba(0,0,0,.6);
+							h2{
+								margin-top:0;
+							}
+						}
+					}	
+				}
+			}
+			@media (max-width: $max-break-tablet) {
+				height: auto;
+			}
+		}
+		.r-home-second-row{
+			height: 380px;
+			background: linear-gradient(90deg, #fff 50%, $secondary-bg-color 50%);
+			.r-home-first-col.r-profile-lg{
+				padding: 40px 40px 40px 15px;
+				@media (max-width: $max-break-tablet) {
+					background-color: #fff;
+					padding: 40px;
+				}
+			}
+			.r-home-second-col.r-news{
+				padding: 40px 15px 40px 40px;
+				h3{
+					margin-top:0;
+				}
+				p.r-date{
+					@extend .r-text-color-light;
+					@extend .r-font-size-smaller;
+					margin-bottom:5px;
+					+ p{
+						margin-top:0;
+						font-family: $heading-font;
+						font-weight: bold;
+					}
+				}
+				@media (max-width: $max-break-tablet) {
+					background-color: $secondary-bg-color;
+					padding: 40px;
+				}
+			}
+			@media (max-width: $max-break-tablet) {
+				height: auto;
+				background: none;
+			}
+		}
+	}
+	.r-bottom-footer{
+		border-top:0;
+	}
+}

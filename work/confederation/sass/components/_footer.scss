@@ -1,0 +1,90 @@
+/* ==========================================================================
+   Global Footer
+   ========================================================================== */
+
+//footer
+.r-bottom-footer{
+	padding: 30px 0 20px;
+	border-top: 1px solid $border-color;
+	ul.r-footer-links{
+		padding: 0;
+		margin: 0 0 10px 0;
+		list-style-type: none;
+		li{
+			display: inline-block;
+			width: 24%;
+			@extend .r-font-size-small;
+			margin-bottom: 10px;
+			a{
+				text-decoration: none;
+				color: $grey-1;
+				&:hover{
+					color: $primary-red;
+					text-decoration: none;
+				}
+			}
+		}
+		&.r-footer-links-2{
+			li a{
+				color: $primary-red;
+				&:hover{
+					color: $primary-dark-blue;
+				}
+			}
+		}
+	}
+	.r-canada-icon{
+		margin-left: 5px;
+	    position: relative;
+    	top: 2px;
+	}
+
+	.r-social-icons{
+		> div {
+			display: block;
+			float: left;
+			width: 20%;
+			> a{
+				color: $grey-3;
+				span.fa.fa-caret-up{
+					padding-left: 2px;
+					@extend .r-font-size-smallest;
+				}
+				&:hover{
+					color: $grey-2;
+				}
+			}
+		}
+		.r-social-footer-dropdown-menu{
+			width: 190px;
+		    margin-left: -20px;
+		    @media (max-width: $max-break-tablet) {	
+	    		margin-left: 0;
+	    	}
+		}
+	}
+	@media (min-width: $min-break-tablet) {	
+		.unit.r-contact-info{
+			padding-left: 0;
+		}
+		.unit.r-main-links{
+			padding-right: 0;
+		}
+	}
+	@media (max-width: $max-break-tablet) {	
+		ul.r-footer-links{
+			li{
+				width: 32%;
+				font-size: 14px;
+			}
+		}
+	}
+	@media (max-width: $max-break-mobile) {	
+		ul.r-footer-links{
+			li{
+				width: 49%;
+				font-size: 14px;
+			}
+		}
+	}
+}

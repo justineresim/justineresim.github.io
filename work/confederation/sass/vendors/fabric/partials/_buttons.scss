@@ -1,0 +1,152 @@
+// ----- BUTTONS ----- //
+
+a.callout-link {
+    font-size: .65em !important;
+
+    display: inline-block !important;
+
+    margin-bottom: 0 !important;
+
+    text-transform: uppercase;
+
+    color: $primary !important;
+    &:hover {
+        text-decoration: none;
+
+        color: $dark-primary !important;
+    }
+}
+.button-wrap {
+    margin-top: 5px;
+    a {
+        margin-right: 5px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+.button {
+    font-size: .6em;
+    font-weight: 700;
+    line-height: 48px;
+
+    position: relative;
+
+    display: inline-block;
+
+    height: 46px;
+    padding: 0 25px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fff;
+    border-style: none;
+    border-radius: $base-border-radius;
+    background: $text-color-dark;
+
+    @include transition-property(all);
+    @include transition-duration(.1s);
+    @include transition-timing-function(ease-in);
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+
+        color: #fff;
+        background: lighten($text-color-dark, 5%);
+    }
+    &.pr {
+        color: #fff;
+        background: $primary;
+        &:hover {
+            color: #fff;
+            background: $dark-primary;
+        }
+    }
+    &.hol {
+        top: 1px;
+
+        color: $primary;
+        background: $bg-gray;
+        &:hover {
+            background: darken($bg-gray, 5%);
+        }
+    }
+    &:focus,
+    &:active {
+        outline: 0;
+    }
+    &.tag {
+        font-size: .6rem;
+        line-height: 31px;
+
+        top: -3px;
+        color:#fff;
+        height: 30px;
+        margin-bottom: 4px;
+        padding: 0 10px;
+
+        text-transform: capitalize;
+        i {
+            margin-left: 10px;
+
+            color: #fff;
+            color: rgba(#fff, .7);
+            &:hover {
+                cursor: pointer;
+
+                color: #fff;
+            }
+        }
+        &:hover {
+            cursor: auto;
+            color:#fff;
+        }
+    }
+    &.wide {
+        display:block;
+        width:100%;
+    }
+}
+input[type=submit].button {
+    top: 1px;
+    &.hol {
+        top: 2px;
+    }
+}
+// ----- BUTTON GROUP ----- //
+
+.buttonGroup {
+    &:after {
+        @include clearfix();
+    }
+    .button {
+        float: left;
+
+        margin-right: 1px;
+
+        color: #fff;
+        background: #c5c5c5;
+
+        @include border-radius(0);
+        &:first-child {
+            @include border-radius(3px 0 0 3px);
+        }
+        &:last-child {
+            margin-right: 0;
+
+            border-right: 0;
+
+            @include border-radius(0 3px 3px 0);
+        }
+        &.active {
+            color: darken(#c5c5c5, 10%);
+            border: 1px solid darken(#c5c5c5, 10%);
+            background: transparent;
+        }
+        &:hover {
+            color: #fff;
+            background: darken(#c5c5c5, 10%);
+        }
+    }
+}
