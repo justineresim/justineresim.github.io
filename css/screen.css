@@ -2511,7 +2511,7 @@ hr.g-secondary {
 
 /* line 97, ../sass/base/_general.scss */
 p {
-  margin: 0 0 .8em;
+  margin: 0 0 .4em;
 }
 
 /* line 103, ../sass/base/_general.scss */
@@ -3397,7 +3397,7 @@ h6 {
 /* line 48, ../sass/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2em;
-  margin: 1em 0 0.5em;
+  margin: 1em 0 0.4em;
 }
 
 /* ==========================================================================

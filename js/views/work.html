@@ -3,20 +3,10 @@
 		<h1>Work.</h1>
 		<p>I have worked with some amazing clients and have helped create some pretty awesome products. Check out some of my work below.</p>
 	</div>
-<!-- 
-	<div class="g-pagination">
-	    <a onclick="" class="g-prev g-disabled"><</a>
-	    <a class="g-nums g-active">1</a>
-	    <a class="g-nums">2</a>
-	    <a class="g-nums">3</a>
-	    <a class="g-nums">4</a>
-	    <a class="g-nums">5</a>
-	    <a class="g-next">></a>
-	</div> -->
 
 	<div class="g-container g-results">
 
-	    <div class="g-featured-container g-container g-hp-section">
+	    <div class="g-featured-container g-container">
 			<div class="line margin-bottom">
 
 				<div ng-repeat="i in work" class="g-featured size1of3 unit">
@@ -24,9 +14,9 @@
 					</a>
 					<div class="g-text">
 						<h3>{{i.title}}</h3>
-						<a class="g-btn g-btn-tertiary"  ng-click="fancyBox(i.count)">See More</a>
+					<!-- 	<a class="g-btn g-btn-tertiary"  ng-click="fancyBox(i.count)">See More</a>
 						<a ng-if='i.url !== undefined' target="_blank" href="{{i.url}}" class="g-btn g-btn-quaternary">Visit Site<span class="ti-arrow-top-right g-icon-right"></span></a>
-						<a ng-if='i.prototype !== undefined' target="_blank" href="work/{{i.prototype}}/index.html" class="g-btn g-btn-quaternary">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>
+						<a ng-if='i.prototype !== undefined' target="_blank" href="work/{{i.prototype}}/index.html" class="g-btn g-btn-quaternary">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a> -->
 					</div>
 					<div>
 						<a ng-repeat="image in i.images" class="fancybox fancy-box-{{image.count}}" rel="gallery{{image.count}}" href="{{image.src}}" title="{{image.desc}}"></a>
@@ -36,7 +26,7 @@
 
 			</div>
 	
-		<div class="g-panel" ng-repeat="i in work">
+<!-- 		<div class="g-panel" ng-repeat="i in work">
 			<a class="fancy-box-trigger g-img" ng-click="fancyBox(i.count)" id="fancy-box-{{i.count}}" style="background-image:url({{i.image}}); background-size: 100% auto; background-repeat: no-repeat; background-position: center center;">
 				
 			</a>
@@ -51,7 +41,7 @@
 				<a class="fancybox fancy-box-0" rel="gallery0" href="img/work/fhm1.png" title="Fitness Health Match Homepage"></a>
 			</div>
 		</div>
-
+ -->
 	
 		<!-- <div class="g-panel  g-work-1">
 			<a class="g-img" onclick="openFancyBox('.fancy-box-1');" style="background-image:url(img/work/redeemer1.png); background-size: 100% auto; background-repeat: no-repeat; background-position: center center;">

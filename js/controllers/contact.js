@@ -1,8 +1,63 @@
 myApp.controller('ContactCtrl', function ($scope, $rootScope) {
 
-	$scope.contactForm=true;
-
 	$rootScope.bodyClass = 'contact';
+
+	$scope.contactForm=true;
+	$scope.quoteForm=false;
+
+	$scope.messageSending=false;
+	$scope.messageSent=false;
+	$scope.messageError=false;
+
+	$scope.qform;
+    
+    $scope.sendQuoteEmail = function() {
+		if($scope.qform.fname && $scope.qform.lname && $scope.qform.email && $scope.qform.message && $scope.qform.projectType && $scope.qform.budget){
+			$scope.sendingEmail();
+			emailjs.send("gmail","requestAQuote",{fname: $scope.qform.fname, lname: $scope.qform.lname, email: $scope.qform.email, message: $scope.qform.message, projectType: $scope.qform.projectType, budget: $scope.qform.budget})
+			.then(function(response) {
+			console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+			$scope.emailSent();
+			}, function(err) {
+				console.log("FAILED. error=", err);
+				$scope.emailError();
+			});
+		}else{
+			alert('error!');
+		}
+    }
+
+    $scope.sendEmail = function() {
+        $scope.sendingEmail();
+        emailjs.send("gmail","generalContactForm",{fname: $scope.form.fname, lname: $scope.form.lname, email: $scope.form.email, message: $scope.form.message})
+        .then(function(response) {
+           console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+           $scope.emailSent();
+        }, function(err) {
+           console.log("FAILED. error=", err);
+           $scope.emailError();
+        });
+    }
+
+    $scope.sendingEmail = function() {
+    	$scope.messageSending=true;
+    	$scope.contactForm=false;
+		$scope.quoteForm=false;
+    }
+
+    $scope.emailSent = function() {
+    	alert('sent!');
+    	$scope.messageSent=true;
+    	$scope.messageSending=false;
+    	$scope.contactForm=false;
+		$scope.quoteForm=false;
+    }
+
+    $scope.emailError = function() {
+    	$scope.messageSending=false;
+    	$scope.messageSent=false;
+    	$scope.messageError=true;
+    }
 
     $scope.initializeMap = function () {
         var styleArray =[
@@ -90,7 +145,6 @@ myApp.controller('ContactCtrl', function ($scope, $rootScope) {
 	    var map = new google.maps.Map(document.getElementById('map'), {
 	        center: {lat: 42.9710790, lng: -81.2539920},
 	        scrollwheel: false,
-	        // Apply the map style array to the map.
 	        styles: styleArray,
 	        zoom: 12
 	    });

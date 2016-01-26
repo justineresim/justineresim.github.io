@@ -1,92 +1,103 @@
 
-
-    <div class="g-container">
-        <h1>Contact Me</h1>
-        <h2>I would love to work with you!</h2>
-        <p>Send me a message letting me know what you are looking to create and I will get back you shortly.</p>
-    </div>
-
     <div class="g-container-sm">
+        <h1>Contact.</h1>
+        <p>Fill out the form below to get in touch with me and I will get back to you shortly. Or you can email me directly at <a href="mailto:justine@res.im">justine@res.im</a>.</p>
+        <p class="g-font-size-small"><em>*All form fields are required</em></p>
+        <br>
         <div class="g-btn-toggle">
-            <a ng-click="contactForm=true" class="g-btn g-btn-secondary g-active">General Inquiry</a>
-            <a ng-click="contactForm=false" class="g-btn g-btn-secondary">Request a Quote</a>
+            <a ng-click="contactForm=true; quoteForm=false" ng-class="{'g-active':contactForm === true}" class="g-btn g-btn-secondary g-active">General Inquiry</a>
+            <a ng-click="contactForm=false; quoteForm=true" ng-class="{'g-active':contactForm === false}" class="g-btn g-btn-secondary">Request a Quote</a>
         </div>
         <br>
         <br>
+        <div ng-show="messageSending">
+            <p>Your message is being sent...</p>
+        </div>
+        <div ng-show="messageSent">
+            <p>Sent!</p>
+        </div>
+        <div ng-show="messageError">
+            <p>Error!</p>
+        </div>
+        <a ng-click="emailSent();">sent</a>
         <div ng-show="contactForm">
-            <form class="g-contact-form">
+            <form id="g-contact-form">
                 <div class="line">
                     <div class="g-form-group unit size1of2">
                         <label for="fName">First Name</label>
-                        <input type="text" class="g-form-control" id="fName" placeholder="First Name">
+                        <input ng-model="form.fname" type="text" class="g-form-control" id="fName" placeholder="First Name" required>
                     </div>
                     <div class="g-form-group unit size1of2">
                         <label for="lName">Last Name</label>
-                        <input type="text" class="g-form-control" id="lName" placeholder="Last Name">
+                        <input ng-model="form.lname" type="text" class="g-form-control" id="lName" placeholder="Last Name" required>
                     </div>
                 </div>
                 <div class="g-form-group">
                     <label for="email">Email</label>
-                    <input type="text" class="g-form-control" id="email" placeholder="Email Address">
+                    <input ng-model="form.email" type="text" class="g-form-control" id="email" placeholder="Email Address" type="email" required>
                 </div>
                 <div class="g-form-group">
                     <label for="textBox">How can I help you?</label>
-                    <textarea rows="3" class="g-form-control" id="textBox" placeholder="How can I help you?"></textarea>
+                    <textarea ng-model="form.message" rows="3" class="g-form-control" id="textBox" placeholder="How can I help you?" required></textarea> 
                 </div>
                 <div class="g-form-group">
-                    <button type="submit" class="g-btn">Submit</button>
+                    <button ng-click="sendEmail()" name="submit" type="submit" class="g-btn" id="contact-submit">Submit</button>
                 </div>
             </form>
         </div>
-        <div ng-hide="contactForm">
-            <form class="g-quote-form">
+        <div ng-show="quoteForm">
+            <form id="g-quote-form">
                 <div class="line">
                     <div class="g-form-group unit size1of2">
                         <label for="fName2">First Name</label>
-                        <input type="text" class="g-form-control" id="fName2" placeholder="First Name">
+                        <input ng-model="qform.fname" type="text" class="g-form-control" id="fName2" placeholder="First Name" required>
                     </div>
                     <div class="g-form-group unit size1of2">
                         <label for="lName2">Last Name</label>
-                        <input type="text" class="g-form-control" id="lName2" placeholder="Last Name">
+                        <input ng-model="qform.lname" type="text" class="g-form-control" id="lName2" placeholder="Last Name" required>
                     </div>
                 </div>
                 <div class="g-form-group">
                     <label for="email2">Email</label>
-                    <input type="text" class="g-form-control" id="email2" placeholder="Email Address">
+                    <input type="text" ng-model="qform.email" class="g-form-control" id="email2" placeholder="Email Address" type="email" required>
                 </div>
                 <div class="line">
                     <div class="g-form-group unit size1of2">
                         <label for="projectType">Project Type</label>
-                        <select id="projectType" class="g-form-control">
+                        <select ng-model="qform.projectType" id="projectType" class="g-form-control" required>
                             <option>Select an option</option>
-                            <option value="volvo">Mobile Application</option>
-                            <option value="saab">Website</option>
-                            <option value="mercedes">E commerce Website</option>
-                            <option value="audi">Custom Web Application</option>
-                            <option value="audi">Other</option>
+                            <option>Mobile Application</option>
+                            <option>Website</option>
+                            <option>E commerce Website</option>
+                            <option>Custom Web Application</option>
+                            <option>Other</option>
                         </select>
                     </div>
                     <div class="g-form-group unit size1of2">
                         <label for="budget">Budget:</label>
-                        <select id="budget" class="g-form-control">
+                        <select ng-model="qform.budget" id="budget" class="g-form-control" required>
                             <option>Select an option</option>
-                            <option value="volvo">$500 - $1,000</option>
-                            <option value="saab">$1000 - $5,000</option>
-                            <option value="mercedes">$5000 - $10,000</option>
-                            <option value="audi">$10,000 - $30,000</option>
-                            <option value="audi">$30,000 + </option>
+                            <option>$500 - $1,000</option>
+                            <option>$1000 - $5,000</option>
+                            <option>$5000 - $10,000</option>
+                            <option>$10,000 - $30,000</option>
+                            <option>$30,000 + </option>
                         </select>
                     </div>
                 </div>
                 <div class="g-form-group">
                     <label for="textBox2">Tell me about your project</label>
-                    <textarea rows="3" class="g-form-control" id="textBox2" placeholder="Tell me about your project"></textarea>
+                    <textarea ng-model="qform.message" rows="3" class="g-form-control" id="textBox2" placeholder="Tell me about your project" required></textarea>
                 </div>
                 <div class="g-form-group">
-                    <button type="submit" class="g-btn">Submit</button>
+                    <button ng-click="sendQuoteEmail()" name="submit" type="submit" class="g-btn" id="contact-submit-quote">Submit</button>
                 </div>
             </form>
+
         </div>
+        <br>
+        <br>
+        <br>
 
     </div>
 

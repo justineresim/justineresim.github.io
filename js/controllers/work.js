@@ -11,7 +11,7 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
             count: 10,
             images: [
              	{
-                    desc: 'Homepage',
+                    desc: 'Homepage<br><br><a target="_blank" href="work/nissan/layout.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ni1.png',
                     count: 10
                 },
@@ -298,27 +298,27 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
                  {
                     desc: 'Case Study - highlighting specific projects created by Verto360.',
                     src: 'img/work/verto2.png',
-                    count: 1
+                    count: 3
                 },
                  {
                     desc: 'Case Studies - landing page..',
                     src: 'img/work/verto3.png',
-                    count: 1
+                    count: 3
                 },
                  {
                     desc: 'Homepage - mobile view.',
                     src: 'img/work/verto4.png',
-                    count: 1
+                    count: 3
                 },
                 {
                     desc: 'Contact page - mobile view.',
                     src: 'img/work/verto5.png',
-                    count: 1
+                    count: 3
                 },
                  {
                     desc: 'About page - mobile view.',
                     src: 'img/work/verto6.png',
-                    count: 1
+                    count: 3
                 }
             ]
         },
