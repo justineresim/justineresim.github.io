@@ -2501,7 +2501,7 @@ a.g-external-link:hover span.ti-arrow-top-right {
 /* line 88, ../sass/base/_general.scss */
 hr {
   border: none;
-  border-top: 1px solid #ABA9A6;
+  border-top: 1px solid #eaeaea;
   margin: 0.7em 0 1.5em;
 }
 /* line 92, ../sass/base/_general.scss */
@@ -2768,6 +2768,12 @@ ul ul, ul ol, ol ul, ol ol {
 }
 
 /* line 22, ../sass/components/_fancy-box.scss */
+#fancybox-loading div {
+  width: 150px;
+  height: 150px;
+}
+
+/* line 27, ../sass/components/_fancy-box.scss */
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
   width: 36px;
   background: none;
@@ -2775,16 +2781,16 @@ ul ul, ul ol, ol ul, ol ol {
   font-size: 20px;
 }
 
-/* line 29, ../sass/components/_fancy-box.scss */
+/* line 34, ../sass/components/_fancy-box.scss */
 .fancybox-close, .fancybox-prev, .fancybox-next {
   opacity: .6;
 }
-/* line 31, ../sass/components/_fancy-box.scss */
+/* line 36, ../sass/components/_fancy-box.scss */
 .fancybox-close:hover, .fancybox-prev:hover, .fancybox-next:hover {
   opacity: 1;
 }
 
-/* line 36, ../sass/components/_fancy-box.scss */
+/* line 41, ../sass/components/_fancy-box.scss */
 a.fancybox-close {
   color: #231f20;
   text-decoration: none;
@@ -2804,12 +2810,12 @@ a.fancybox-close {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
-/* line 54, ../sass/components/_fancy-box.scss */
+/* line 59, ../sass/components/_fancy-box.scss */
 a.fancybox-close:before {
   content: "\e646";
 }
 
-/* line 59, ../sass/components/_fancy-box.scss */
+/* line 64, ../sass/components/_fancy-box.scss */
 .fancybox-nav {
   position: absolute;
   left: 0;
@@ -2829,7 +2835,7 @@ a.fancybox-close:before {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
-/* line 77, ../sass/components/_fancy-box.scss */
+/* line 82, ../sass/components/_fancy-box.scss */
 .fancybox-nav:before {
   content: "\e64a";
   height: 100%;
@@ -2837,13 +2843,13 @@ a.fancybox-close:before {
   position: absolute;
 }
 
-/* line 85, ../sass/components/_fancy-box.scss */
+/* line 90, ../sass/components/_fancy-box.scss */
 .fancybox-nav.fancybox-next {
   right: 17px;
   left: auto;
   text-align: right;
 }
-/* line 89, ../sass/components/_fancy-box.scss */
+/* line 94, ../sass/components/_fancy-box.scss */
 .fancybox-nav.fancybox-next:before {
   content: "\e649";
 }
@@ -3000,7 +3006,7 @@ form .g-form-horizontal .g-checkbox label, form .g-form-horizontal .g-radio labe
   height: 35px;
   font-size: 18px;
   line-height: 25.2px;
-  border: 1px solid #ABA9A6;
+  border: 1px solid #eaeaea;
   border-radius: 0px;
   color: #4E4E4C;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -3009,7 +3015,7 @@ form .g-form-horizontal .g-checkbox label, form .g-form-horizontal .g-radio labe
 }
 /* line 103, ../sass/components/_forms.scss */
 .g-form-control:focus {
-  border-color: #797672;
+  border-color: #ABA9A6;
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -3062,7 +3068,7 @@ select.g-form-control {
   font-size: 20px;
   text-rendering: auto;
   background-color: #fff;
-  border: 1px solid #ABA9A6;
+  border: 1px solid #eaeaea;
   border-radius: 0px;
   height: 20px;
   width: 20px;
@@ -3121,7 +3127,7 @@ select.g-form-control {
 .g-radio-container .g-radio + .g-radio-label:before {
   content: '';
   background: #fff;
-  border: 1px solid #ABA9A6;
+  border: 1px solid #eaeaea;
   display: inline-block;
   vertical-align: middle;
   width: 20px;
@@ -3341,7 +3347,7 @@ table.g-table.g-table-striped > tbody > tr:nth-of-type(odd) {
 }
 /* line 37, ../sass/components/_tables.scss */
 table.g-table.g-table-bordered td, table.g-table.g-table-bordered td {
-  border-top: 1px solid #ABA9A6;
+  border-top: 1px solid #eaeaea;
 }
 /* line 42, ../sass/components/_tables.scss */
 table.g-table.g-table-hover > tbody > tr:hover {
@@ -4810,7 +4816,7 @@ body.styles pre xmp {
   padding: 15px;
   color: #231f20;
   background-color: #FFF;
-  border: 1px solid #ABA9A6;
+  border: 1px solid #eaeaea;
   border-radius: 0px;
   white-space: pre;
   overflow-x: auto;
@@ -4837,7 +4843,7 @@ body.styles .testing-unit {
 /* line 99, ../sass/pages/_global.scss */
 body.styles .testing-bg {
   height: 50px;
-  border: 1px solid #ABA9A6;
+  border: 1px solid #eaeaea;
 }
 /* line 103, ../sass/pages/_global.scss */
 body.styles .testing-dark-bg {

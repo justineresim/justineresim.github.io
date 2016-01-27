@@ -19,6 +19,11 @@
   line-height: $base-line-height;
 }
 
+#fancybox-loading div {
+  width: 150px;
+  height: 150px;
+}
+
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span{
     width: 36px;
     background: none;
