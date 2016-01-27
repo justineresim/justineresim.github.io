@@ -128,7 +128,7 @@
 	span.g-icon-right, span.g-icon-left{
 		font-size: .8em;
 	}
-	&.g-disabled{
+	&.g-disabled, &:disabled{
 		opacity: .45;
 		pointer-events: none;
 	}

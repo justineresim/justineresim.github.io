@@ -18,7 +18,7 @@ form{
 		}
 	}
 	.g-form-group{
-		margin-bottom: $gutter*2;
+		margin-bottom: $gutter*1.5;
 		&.g-sm{
 			margin-bottom: $smaller-gutter*2;
 		}
@@ -126,7 +126,7 @@ select.g-form-control {
     -ms-appearance: none;
     -o-appearance: none;
     appearance: none;
-    background: url(http://localhost:8888/new/img/dropdown-arrows.png) no-repeat right #ffffff;
+    background: url(../img/dropdown-arrows.png) no-repeat right #ffffff;
     cursor: pointer;
 }
 

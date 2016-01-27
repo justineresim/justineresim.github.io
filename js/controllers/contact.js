@@ -12,31 +12,32 @@ myApp.controller('ContactCtrl', function ($scope, $rootScope) {
 	$scope.qform;
     
     $scope.sendQuoteEmail = function() {
-		if($scope.qform.fname && $scope.qform.lname && $scope.qform.email && $scope.qform.message && $scope.qform.projectType && $scope.qform.budget){
-			$scope.sendingEmail();
-			emailjs.send("gmail","requestAQuote",{fname: $scope.qform.fname, lname: $scope.qform.lname, email: $scope.qform.email, message: $scope.qform.message, projectType: $scope.qform.projectType, budget: $scope.qform.budget})
-			.then(function(response) {
+		$scope.sendingEmail();
+		emailjs.send("gmail","requestAQuote",{fname: $scope.qform.fname, lname: $scope.qform.lname, email: $scope.qform.email, message: $scope.qform.message, projectType: $scope.qform.projectType, budget: $scope.qform.budget})
+		.then(function(response) {
 			console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
 			$scope.emailSent();
-			}, function(err) {
-				console.log("FAILED. error=", err);
-				$scope.emailError();
-			});
-		}else{
-			alert('error!');
-		}
-    }
+		}, function(err) {
+			console.log("FAILED. error=", err);
+			$scope.emailError();
+		});
+	}
 
     $scope.sendEmail = function() {
-        $scope.sendingEmail();
-        emailjs.send("gmail","generalContactForm",{fname: $scope.form.fname, lname: $scope.form.lname, email: $scope.form.email, message: $scope.form.message})
-        .then(function(response) {
-           console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-           $scope.emailSent();
-        }, function(err) {
-           console.log("FAILED. error=", err);
-           $scope.emailError();
-        });
+		$scope.sendingEmail();
+		emailjs.send("gmail","generalContactForm",{fname: $scope.form.fname, lname: $scope.form.lname, email: $scope.form.email, message: $scope.form.message})
+		.then(function(response) {
+			console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+			$scope.$apply(function() {
+			 	$scope.emailSent();
+			})
+		}, function(err) {
+			console.log("FAILED. error=", err);
+			$scope.$apply(function() {
+			 	$scope.emailError();
+			})
+		});
+  
     }
 
     $scope.sendingEmail = function() {
@@ -46,7 +47,6 @@ myApp.controller('ContactCtrl', function ($scope, $rootScope) {
     }
 
     $scope.emailSent = function() {
-    	alert('sent!');
     	$scope.messageSent=true;
     	$scope.messageSending=false;
     	$scope.contactForm=false;

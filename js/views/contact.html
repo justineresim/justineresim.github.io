@@ -14,14 +14,13 @@
             <p>Your message is being sent...</p>
         </div>
         <div ng-show="messageSent">
-            <p>Sent!</p>
+            <p>Thank you for your message! I will get back to you shortly.</p>
         </div>
         <div ng-show="messageError">
-            <p>Error!</p>
+            <p>Something went wrong. Please <a href="#contact">try again</a> or email me directly at <a href="mailto:justine@res.im">justine@res.im</a>.</p>
         </div>
-        <a ng-click="emailSent();">sent</a>
         <div ng-show="contactForm">
-            <form id="g-contact-form">
+            <form id="g-contact-form" name="myContactForm">
                 <div class="line">
                     <div class="g-form-group unit size1of2">
                         <label for="fName">First Name</label>
@@ -41,12 +40,12 @@
                     <textarea ng-model="form.message" rows="3" class="g-form-control" id="textBox" placeholder="How can I help you?" required></textarea> 
                 </div>
                 <div class="g-form-group">
-                    <button ng-click="sendEmail()" name="submit" type="submit" class="g-btn" id="contact-submit">Submit</button>
+                    <button ng-disabled="myContactForm.$invalid" ng-click="sendEmail();" name="submit" type="submit" class="g-btn" id="contact-submit">Submit</button>
                 </div>
             </form>
         </div>
         <div ng-show="quoteForm">
-            <form id="g-quote-form">
+            <form id="g-quote-form" name="myQuoteForm">
                 <div class="line">
                     <div class="g-form-group unit size1of2">
                         <label for="fName2">First Name</label>
@@ -65,7 +64,7 @@
                     <div class="g-form-group unit size1of2">
                         <label for="projectType">Project Type</label>
                         <select ng-model="qform.projectType" id="projectType" class="g-form-control" required>
-                            <option>Select an option</option>
+                            <option value="">Select an option</option>
                             <option>Mobile Application</option>
                             <option>Website</option>
                             <option>E commerce Website</option>
@@ -76,7 +75,7 @@
                     <div class="g-form-group unit size1of2">
                         <label for="budget">Budget:</label>
                         <select ng-model="qform.budget" id="budget" class="g-form-control" required>
-                            <option>Select an option</option>
+                            <option value="">Select an option</option>
                             <option>$500 - $1,000</option>
                             <option>$1000 - $5,000</option>
                             <option>$5000 - $10,000</option>
@@ -90,7 +89,7 @@
                     <textarea ng-model="qform.message" rows="3" class="g-form-control" id="textBox2" placeholder="Tell me about your project" required></textarea>
                 </div>
                 <div class="g-form-group">
-                    <button ng-click="sendQuoteEmail()" name="submit" type="submit" class="g-btn" id="contact-submit-quote">Submit</button>
+                    <button ng-disabled="myQuoteForm.$invalid" ng-click="sendQuoteEmail()" name="submit" type="submit" class="g-btn" id="contact-submit-quote">Submit</button>
                 </div>
             </form>
 

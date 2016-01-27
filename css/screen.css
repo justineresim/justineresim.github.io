@@ -2678,7 +2678,7 @@ ul ul, ul ol, ol ul, ol ol {
   font-size: .8em;
 }
 /* line 131, ../sass/components/_buttons.scss */
-.g-btn.g-disabled, button.g-btn.g-disabled {
+.g-btn.g-disabled, .g-btn:disabled, button.g-btn.g-disabled, button.g-btn:disabled {
   opacity: .45;
   pointer-events: none;
 }
@@ -2918,7 +2918,7 @@ form .g-error-state p {
 }
 /* line 20, ../sass/components/_forms.scss */
 form .g-form-group {
-  margin-bottom: 30px;
+  margin-bottom: 22.5px;
 }
 /* line 22, ../sass/components/_forms.scss */
 form .g-form-group.g-sm {
@@ -3036,7 +3036,7 @@ select.g-form-control {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  background: url(http://localhost:8888/new/img/dropdown-arrows.png) no-repeat right #ffffff;
+  background: url(../img/dropdown-arrows.png) no-repeat right #ffffff;
   cursor: pointer;
 }
 
@@ -4680,7 +4680,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 /* line 5, ../sass/pages/_contact.scss */
 #map {
-  height: 400px;
+  height: 350px;
   width: 100%;
 }
 
