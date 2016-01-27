@@ -31,7 +31,7 @@
 	    width: 750px;
 	}
 	@media (min-width: 1000px){
-	    width: 950px;
+	    width: 970px;
 	}
 	@media (min-width: 1200px){
 	    width: 1150px;
@@ -54,6 +54,14 @@
 	@media (min-width: 1200px){
 	    width: 800px;
 	}
+}
+
+.g-section-container{
+    margin-bottom: 2.5em;
+}
+
+.g-section-container-last{
+    margin-bottom: 4.5em;
 }
 
 
@@ -109,13 +117,13 @@
 
 
 /* home -------------------------- */
-.page.home.ng-enter         { animation:fadeIn 0.5s ease-in; }
+.page.home.ng-enter         { animation:fadeIn 0.3s ease-in; }
 //.page.home.ng-leave         { animation:fadeOut 0.5s ease-in; }
 
 /* about ------------------------ */
-.page.contact.ng-enter        { animation:fadeIn 0.5s ease-in; }
+.page.contact.ng-enter        { animation:fadeIn 0.3s ease-in; }
 // .page.contact.ng-leave        { animation:fadeOut 0.5s both ease-in; }
 
 /* contact ---------------------- */
 //.page.work.ng-leave      { animation:fadeOut 0.5s both ease-in; }
-.page.work.ng-enter      { animation:fadeIn 0.5s ease-in; }
+.page.work.ng-enter      { animation:fadeIn 0.3s ease-in; }

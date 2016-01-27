@@ -1,23 +1,28 @@
 
-    <div class="g-container-sm">
+    <div class="g-container-sm contact-body g-section-container-last">
         <h1>Contact.</h1>
-        <p>Fill out the form below to get in touch with me and I will get back to you shortly. Or you can email me directly at <a href="mailto:justine@res.im">justine@res.im</a>.</p>
-        <p class="g-font-size-small"><em>*All form fields are required</em></p>
-        <br>
-        <div class="g-btn-toggle">
-            <a ng-click="contactForm=true; quoteForm=false" ng-class="{'g-active':contactForm === true}" class="g-btn g-btn-secondary g-active">General Inquiry</a>
-            <a ng-click="contactForm=false; quoteForm=true" ng-class="{'g-active':contactForm === false}" class="g-btn g-btn-secondary">Request a Quote</a>
+        <div ng-hide="messageSending || messageSent || messageError">
+            <p>Fill out the form below to get in touch with me and I will get back to you shortly. Or you can email me directly at <a href="mailto:justine@res.im">justine@res.im</a>.</p>
+            <p class="g-font-size-small"><em>*All form fields are required</em></p>
+            <br>
+            <div class="g-btn-toggle">
+                <a ng-click="contactForm=true; quoteForm=false" ng-class="{'g-active':contactForm === true}" class="g-btn g-btn-secondary g-active">General Inquiry</a>
+                <a ng-click="contactForm=false; quoteForm=true" ng-class="{'g-active':contactForm === false}" class="g-btn g-btn-secondary">Request a Quote</a>
+            </div>
         </div>
         <br>
         <br>
-        <div ng-show="messageSending">
-            <p>Your message is being sent...</p>
+        <div class="sending-msg" ng-show="messageSending">
+            <img src="https://www.investfeed.com/media/scripts/stx/loading.gif">
+            <h2>Your message is being sent...</h2>
         </div>
-        <div ng-show="messageSent">
-            <p>Thank you for your message! I will get back to you shortly.</p>
+        <div class="sent-msg" ng-show="messageSent">
+            <h2>Thank you for your message!</h2>
+            <h3>I will get back to you shortly.</h3>
         </div>
-        <div ng-show="messageError">
-            <p>Something went wrong. Please <a href="#contact">try again</a> or email me directly at <a href="mailto:justine@res.im">justine@res.im</a>.</p>
+        <div class="error-msg" ng-show="messageError">
+            <h2>Something went wrong.</h2>
+            <h3>Please <a ng-click="reloadForm();">try again</a> or email me directly at <a href="mailto:justine@res.im">justine@res.im</a>.</h3>
         </div>
         <div ng-show="contactForm">
             <form id="g-contact-form" name="myContactForm">

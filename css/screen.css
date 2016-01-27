@@ -2436,7 +2436,7 @@ html {
 body {
   font-family: "source-sans-pro", sans-serif;
   color: #4E4E4C;
-  background-color: #f9f9f9;
+  background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 18px;
@@ -3162,7 +3162,7 @@ header ul li {
 }
 /* line 16, ../sass/components/_header.scss */
 header ul li a {
-  font-family: "adelle", serif;
+  font-family: "source-sans-pro", sans-serif;
   display: inline-block;
   text-align: center;
   width: 100%;
@@ -3266,32 +3266,38 @@ header ul li a {
   }
 }
 
-/* line 43, ../sass/components/_panels.scss */
-.g-results {
-  margin-bottom: 4em;
-}
-/* line 45, ../sass/components/_panels.scss */
-.g-results .g-panel:last-child {
-  margin-bottom: 2em;
-}
-
-/* line 51, ../sass/components/_panels.scss */
+/* line 44, ../sass/components/_panels.scss */
 .g-featured {
   text-align: center;
+  margin: 0 0 .5em;
+  border: 1px solid #fff;
 }
-/* line 53, ../sass/components/_panels.scss */
+/* line 48, ../sass/components/_panels.scss */
 .g-featured h3 {
   margin-top: 0;
 }
-/* line 56, ../sass/components/_panels.scss */
+/* line 51, ../sass/components/_panels.scss */
 .g-featured a.g-img {
   width: 100%;
   height: 200px;
   position: relative;
   display: block;
 }
-/* line 61, ../sass/components/_panels.scss */
+/* line 56, ../sass/components/_panels.scss */
 .g-featured a.g-img:hover {
+  opacity: .7;
+}
+/* line 60, ../sass/components/_panels.scss */
+.g-featured:hover {
+  border: 1px solid #ccc;
+  background-color: #EFEFEF;
+}
+/* line 63, ../sass/components/_panels.scss */
+.g-featured:hover h3 {
+  text-decoration: underline;
+}
+/* line 66, ../sass/components/_panels.scss */
+.g-featured:hover a.g-img {
   opacity: .7;
 }
 
@@ -3347,54 +3353,55 @@ table.g-table.g-table-hover > tbody > tr:hover {
    ========================================================================== */
 /* line 7, ../sass/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "adelle", serif;
+  font-family: "source-sans-pro", sans-serif;
   color: #231f20;
   font-weight: 300;
 }
 /* line 11, ../sass/components/_type.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #461c35;
-  text-decoration: none;
+  text-decoration: underline;
 }
 /* line 15, ../sass/components/_type.scss */
 h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus, h6 a:hover, h6 a:focus {
-  text-decoration: none;
+  text-decoration: underline;
   color: #220e1a;
 }
 
 /* line 22, ../sass/components/_type.scss */
 h1 {
   font-size: 2.3em;
+  font-weight: 400;
 }
 
-/* line 26, ../sass/components/_type.scss */
+/* line 27, ../sass/components/_type.scss */
 h2 {
   font-size: 1.7em;
 }
 
-/* line 30, ../sass/components/_type.scss */
+/* line 31, ../sass/components/_type.scss */
 h3 {
   font-size: 1.4em;
   color: #4E4E4C;
 }
 
-/* line 35, ../sass/components/_type.scss */
+/* line 36, ../sass/components/_type.scss */
 h4 {
   font-size: 1.1em;
   color: #4E4E4C;
 }
 
-/* line 40, ../sass/components/_type.scss */
+/* line 41, ../sass/components/_type.scss */
 h5 {
   font-size: 1em;
 }
 
-/* line 44, ../sass/components/_type.scss */
+/* line 45, ../sass/components/_type.scss */
 h6 {
   font-size: .9em;
 }
 
-/* line 48, ../sass/components/_type.scss */
+/* line 49, ../sass/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2em;
   margin: 1em 0 0.4em;
@@ -4543,7 +4550,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1000px) {
   /* line 24, ../sass/layout/_layout.scss */
   .g-container-lg {
-    width: 950px;
+    width: 970px;
   }
 }
 @media (min-width: 1200px) {
@@ -4578,6 +4585,16 @@ h1, h2, h3, h4, h5, h6 {
   .g-container-sm {
     width: 800px;
   }
+}
+
+/* line 59, ../sass/layout/_layout.scss */
+.g-section-container {
+  margin-bottom: 2.5em;
+}
+
+/* line 63, ../sass/layout/_layout.scss */
+.g-section-container-last {
+  margin-bottom: 4.5em;
 }
 
 /* Page Transition Animations
@@ -4658,21 +4675,21 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 /* home -------------------------- */
-/* line 112, ../sass/layout/_layout.scss */
+/* line 120, ../sass/layout/_layout.scss */
 .page.home.ng-enter {
-  animation: fadeIn 0.5s ease-in;
+  animation: fadeIn 0.3s ease-in;
 }
 
 /* about ------------------------ */
-/* line 116, ../sass/layout/_layout.scss */
+/* line 124, ../sass/layout/_layout.scss */
 .page.contact.ng-enter {
-  animation: fadeIn 0.5s ease-in;
+  animation: fadeIn 0.3s ease-in;
 }
 
 /* contact ---------------------- */
-/* line 121, ../sass/layout/_layout.scss */
+/* line 129, ../sass/layout/_layout.scss */
 .page.work.ng-enter {
-  animation: fadeIn 0.5s ease-in;
+  animation: fadeIn 0.3s ease-in;
 }
 
 /* ==========================================================================
@@ -4682,6 +4699,21 @@ h1, h2, h3, h4, h5, h6 {
 #map {
   height: 350px;
   width: 100%;
+}
+
+/* line 11, ../sass/pages/_contact.scss */
+body.contact .contact-body {
+  min-height: 600px;
+}
+
+/* line 16, ../sass/pages/_contact.scss */
+.sending-msg {
+  text-align: center;
+  width: 100%;
+}
+/* line 19, ../sass/pages/_contact.scss */
+.sending-msg p {
+  margin-top: 20px;
 }
 
 /* ==========================================================================
@@ -4815,7 +4847,7 @@ body.styles .testing-dark-bg {
 /* ==========================================================================
    Homepage Specific Styles
    ========================================================================== */
-/* line 8, ../sass/pages/_homepage.scss */
+/* line 6, ../sass/pages/_homepage.scss */
 body.home .f-container-container {
   width: 100%;
   height: 100%;
@@ -4826,30 +4858,30 @@ body.home .f-container-container {
   bottom: 0;
   z-index: 100;
 }
-/* line 18, ../sass/pages/_homepage.scss */
+/* line 16, ../sass/pages/_homepage.scss */
 body.home .f-container {
   height: 100%;
   padding-bottom: 0;
 }
-/* line 22, ../sass/pages/_homepage.scss */
+/* line 20, ../sass/pages/_homepage.scss */
 body.home header {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
 }
-/* line 28, ../sass/pages/_homepage.scss */
+/* line 26, ../sass/pages/_homepage.scss */
 body.home .page.home {
   width: 100%;
   height: 100%;
 }
 
-/* line 35, ../sass/pages/_homepage.scss */
+/* line 33, ../sass/pages/_homepage.scss */
 .g-hp-section, .g-homepage .line.no-gutter {
   margin-bottom: 5em;
 }
 
-/* line 39, ../sass/pages/_homepage.scss */
+/* line 37, ../sass/pages/_homepage.scss */
 .g-company {
   height: 150px;
   width: 100%;
@@ -4859,47 +4891,47 @@ body.home .page.home {
   background-repeat: no-repeat;
 }
 
-/* line 48, ../sass/pages/_homepage.scss */
+/* line 46, ../sass/pages/_homepage.scss */
 .g-ads {
   text-align: center;
   margin: 1em 0 0 0;
 }
-/* line 51, ../sass/pages/_homepage.scss */
+/* line 49, ../sass/pages/_homepage.scss */
 .g-ads span {
   font-size: 100px;
   display: block;
 }
 
-/* line 60, ../sass/pages/_homepage.scss */
+/* line 58, ../sass/pages/_homepage.scss */
 .g-hp-contact {
   padding: 2em 0;
 }
 
 /* entire container, keeps perspective */
-/* line 65, ../sass/pages/_homepage.scss */
+/* line 63, ../sass/pages/_homepage.scss */
 .flip-container {
   perspective: 1000;
 }
 
 /* flip the pane when hovered */
-/* line 70, ../sass/pages/_homepage.scss */
+/* line 68, ../sass/pages/_homepage.scss */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
   transform: rotateY(180deg);
 }
 
-/* line 74, ../sass/pages/_homepage.scss */
+/* line 72, ../sass/pages/_homepage.scss */
 .flip-container, .flipper {
   height: 150px;
 }
 
-/* line 78, ../sass/pages/_homepage.scss */
+/* line 76, ../sass/pages/_homepage.scss */
 .front {
   width: 100%;
   height: 150px;
 }
 
 /* flip speed goes here */
-/* line 84, ../sass/pages/_homepage.scss */
+/* line 82, ../sass/pages/_homepage.scss */
 .flipper {
   transition: 1s;
   transform-style: preserve-3d;
@@ -4907,7 +4939,7 @@ body.home .page.home {
 }
 
 /* hide back of pane during swap */
-/* line 92, ../sass/pages/_homepage.scss */
+/* line 90, ../sass/pages/_homepage.scss */
 .front {
   backface-visibility: hidden;
   position: absolute;
@@ -4916,7 +4948,7 @@ body.home .page.home {
 }
 
 /* front pane, placed above back */
-/* line 101, ../sass/pages/_homepage.scss */
+/* line 99, ../sass/pages/_homepage.scss */
 .front {
   z-index: 2;
   /* for firefox 31 */
@@ -4924,7 +4956,7 @@ body.home .page.home {
 }
 
 /* back, initially hidden pane */
-/* line 108, ../sass/pages/_homepage.scss */
+/* line 106, ../sass/pages/_homepage.scss */
 .front + .front {
   transform: rotateY(180deg);
   background-color: #fff;

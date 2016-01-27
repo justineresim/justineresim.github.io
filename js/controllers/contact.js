@@ -10,6 +10,14 @@ myApp.controller('ContactCtrl', function ($scope, $rootScope) {
 	$scope.messageError=false;
 
 	$scope.qform;
+
+	$scope.reloadForm = function() {
+	    $scope.contactForm=true;
+		$scope.quoteForm=false;
+		$scope.messageSending=false;
+		$scope.messageSent=false;
+		$scope.messageError=false;
+	};
     
     $scope.sendQuoteEmail = function() {
 		$scope.sendingEmail();
@@ -57,6 +65,8 @@ myApp.controller('ContactCtrl', function ($scope, $rootScope) {
     	$scope.messageSending=false;
     	$scope.messageSent=false;
     	$scope.messageError=true;
+    	$scope.contactForm=false;
+		$scope.quoteForm=false;
     }
 
     $scope.initializeMap = function () {
@@ -145,11 +155,13 @@ myApp.controller('ContactCtrl', function ($scope, $rootScope) {
 	    var map = new google.maps.Map(document.getElementById('map'), {
 	        center: {lat: 42.9710790, lng: -81.2539920},
 	        scrollwheel: false,
+	        draggable: false,
 	        styles: styleArray,
 	        zoom: 12
 	    });
 
 	    var iconBase = 'img/pin.png';
+
 	    var marker = new google.maps.Marker({
 	        position: {lat: 42.9710790, lng: -81.2539920},
 	        map: map,

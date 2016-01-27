@@ -40,16 +40,11 @@
 	}
 }
 
-.g-results{
-	margin-bottom: 4em;
-	.g-panel:last-child{
-		margin-bottom: 2em;
-	}
-}
-
-//homepage featured work
+//work page samaples
 .g-featured{
 	text-align: center;
+	margin: 0 0 .5em;
+	border: 1px solid #fff;
 	h3{
 		margin-top: 0;
 	}
@@ -62,4 +57,15 @@
 	    	opacity: .7;
 	    }
 	}
+	&:hover{
+		border: 1px solid #ccc;
+		background-color: #EFEFEF;
+		h3{
+			text-decoration: underline;
+		}
+		a.g-img{
+	    	opacity: .7;
+		}
+	}
+	
 }

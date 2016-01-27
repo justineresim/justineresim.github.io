@@ -6,3 +6,17 @@
 	height: 350px;
 	width: 100%;
 }
+
+body.contact{
+	.contact-body{
+		min-height: 600px;
+	}
+}
+
+.sending-msg{
+	text-align: center;
+	width: 100%;
+	p{
+		margin-top: 20px;
+	}
+}

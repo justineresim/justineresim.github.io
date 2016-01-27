@@ -1,16 +1,15 @@
 
-	<div class="g-container">
+	<div class="g-container-sm g-section-container">
 		<h1>Work.</h1>
 		<p>I have worked with some amazing clients and have helped create some pretty awesome products. Check out some of my work below.</p>
 	</div>
 
-	<div class="g-container g-results">
+	<div class="g-container g-section-container-last">
 
-	    <div class="g-featured-container g-container">
 			<div class="line margin-bottom">
 
 				<div ng-repeat="i in work" class="g-featured size1of3 unit">
-					<a class="fancy-box-trigger g-img" ng-click="fancyBox(i.count)" id="fancy-box-{{i.count}}" style="background-image:url({{i.image}}); background-size: 90% auto; background-repeat: no-repeat; background-position: center center;">
+					<a class="fancy-box-trigger g-img" ng-click="fancyBox(i.count)" id="fancy-box-{{i.count}}" style="background-image:url({{i.image}}); background-size: 80% auto; background-repeat: no-repeat; background-position: center center;">
 					</a>
 					<div class="g-text">
 						<h3>{{i.title}}</h3>
