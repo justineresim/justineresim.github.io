@@ -1,114 +1,83 @@
 
-<!-- 	<div class="g-banner g-container-sm g-hp-section">
-		<h1>Hello, and welcome!</h1>
-		<h2>My name is Justine Lileikis. I create websites, mobile apps and custom web applications.</h2>
-	</div> -->
 <div class="f-container-container">
 	<div class="f-container h-12">
+	   <div class="t-4 l-3 w-6 h-4">
+	        <div class="f-unit testing-unit-f">
+	        	<div class="inner">
+	        		<div class="centered">
+        				<h1>Hello, and welcome!</h1>
+        				<h2>I am Justine. I build websites, mobile apps and custom web applications.</h2>
+        			</div>
+        		</div>
+	        </div>                
+	    </div>
 	    <div class="t-0 l-3 w-3 h-4">
-	        <div class="f-unit testing-unit-f" style="background-image: url(http://smashinghub.com/wp-content/uploads/2010/07/nature-photography-16.jpg);"></div>
-	    </div>
-	    <div class="t-0 l-0 w-3 h-8">
-	        <div class="f-unit testing-unit-f" style="background-image: url(http://smashinghub.com/wp-content/uploads/2010/07/nature-photography-16.jpg);"></div>                
-	    </div>
-	    <div class="t-8 l-0 w-6 h-4">
-	        <div class="f-unit testing-unit-f" style="background-image: url(http://smashinghub.com/wp-content/uploads/2010/07/nature-photography-16.jpg);"></div>                
-	    </div>
-	    <div class="t-4 l-3 w-6 h-4">
-	        <div class="f-unit testing-unit-f" style="background-image: url(http://smashinghub.com/wp-content/uploads/2010/07/nature-photography-16.jpg);"></div>                
+	       <div class="f-unit testing-unit-f" style="background: rgba(108, 4, 66, 0.1);">
+				<div class="inner">
+					<div class="centered">
+						<span class="ti-mobile"></span>
+						<div class="g-hidden">
+							<h3>Mobile</h3>
+		            		<h4>Responisve websites and custom native apps.</h4>
+	            		</div>
+					</div>		
+				</div>
+	       </div>
 	    </div>
 	    <div class="t-0 l-6 w-6 h-4">
-	        <div class="f-unit testing-unit-f" style="background-image: url(http://smashinghub.com/wp-content/uploads/2010/07/nature-photography-16.jpg);"></div>                
+	        <div class="f-unit testing-unit-f" style="background: rgba(108, 4, 66, 0.2);">
+				<div class="inner">
+					<div class="centered">
+						<span class="ti-desktop"></span>
+						<div class="g-hidden">
+							<h3>Websites</h3>
+		            		<h4>From simple small business Wordpress sites to large custom designed e-commerce online businesses.</h4>
+	            		</div>
+            		</div>
+				</div>
+	        </div>                
+	    </div>
+	    <div class="t-8 l-6 w-3 h-4" ng-click="alertit('asd');">
+	        <div class="f-unit testing-unit-f" style="background: rgba(108, 4, 66, 0.9);">
+		        <div class="inner">
+		        	<div class="centered">
+						<span class="ti-tablet"></span>
+						<div class="g-hidden">
+							<h3>Custom Apps</h3>
+		            		<h4>Professional custom designed and built web applications tailored to suit your clients specific needs.</h4>
+	            		</div>
+					</div>
+				</div>               
+			</div>
+	    </div>
+	    <div class="t-0 l-0 w-3 h-8">
+	        <div class="f-unit testing-unit-f" style="background: rgba(108, 4, 66, 0.3);">
+				<div class="inner">
+					<div class="centered">
+        				<h3>Work</h3>
+        			</div>
+        		</div>
+	        </div>                
 	    </div>
 	    <div class="t-4 l-9 w-3 h-8">
-	        <div class="f-unit testing-unit-f" style="background-image: url(http://smashinghub.com/wp-content/uploads/2010/07/nature-photography-16.jpg);"></div>                
+	        <div class="f-unit testing-unit-f" style="background: rgba(108, 4, 66, 0.5);">     
+	        	<div class="inner">
+	        		<div class="centered">
+        				<h3>Contact</h3>
+        			</div>
+        		</div>      	   
 	        </div>
-	    <div class="t-8 l-6 w-3 h-4">
-	        <div class="f-unit testing-unit-f" style="background-image: url(http://smashinghub.com/wp-content/uploads/2010/07/nature-photography-16.jpg);"></div>                
-	    </div>
+        </div>
+        <div class="t-8 l-0 w-6 h-4">
+	        <div class="f-unit testing-unit-f" style="background: rgba(108, 4, 66, 0.8);">
+	        	<div ng-repeat="item in companies" class="flip-container">
+	                <div class="flipper">
+	                    <div ng-repeat="i in item" class="g-company front" style="background-image: url(img/{{i}}); background-size: 60% auto; background-repeat: no-repeat; background-position: center center;">
+
+	                    </div>
+	                </div>
+	            </div>
+	        </div>                
+	    </div>  
 	</div>
 </div>
-
-
-	<!-- <div class="g-container-lg g-hp-section">
-		<div class="line margin-bottom">
-	        <div class="size1of3 sm-size1of3 xs-size1of1 unit">
-	            <div class="g-ads">
-            		<span class="ti-desktop"></span>
-            		<h3>Web</h3>
-            		<p>From simple small business Wordpress sites to large custom designed e-commerce online businesses.</p>
-	            </div>
-	        </div>
-	        <div class="size1of3 sm-size1of3 xs-size1of1 unit">
-	            <div class="g-ads">
-            		<span class="ti-mobile"></span>
-            		<h3>Mobile</h3>
-            		<p>Website mobile versions and IOS and/or android apps.</p>
-	            </div>
-	        </div>
-	        <div class="size1of3 sm-size1of3 xs-size1of1 unit">
-	            <div class="g-ads">
-            		<span class="ti-tablet"></span>
-            		<h3>Custom Apps</h3>
-            		<p>Professional custom designed and built from scratch web applications tailored to suit your clients specific needs.</p>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-	<div class="g-container">
-		<div class="line margin-bottom">
-			<div class="size1of1 unit">
-				<h2>Companies I've worked with</h2>
-			</div>
-		</div>	
-	</div>
-
-	<div class="line no-gutter">
-		
-		<div>
-
-			<div ng-repeat="item in companies" class="size1of7 sm-size1of7 xs-size1of2 unit flip-container">
-                <div class="flipper">
-                    <div ng-repeat="i in item" class="g-company front" style="background-image: url(img/{{i}});">
-
-                    </div>
-                </div>
-            </div>
-
-		</div>
-		
-    </div>
-
-	
-
-    <div class="g-featured-container g-container g-hp-section">
-		<div class="line margin-bottom">
-			<div class="size1of1 unit">
-				<h2>Projects I've worked on</h2>
-			</div>
-
-			<div ng-repeat="i in featured" class="g-featured size1of3 unit">
-				<a class="fancy-box-trigger g-img" ng-click="fancyBox(i.count)" id="fancy-box-{{i.count}}" style="background-image:url({{i.image}}); background-size: 90% auto; background-repeat: no-repeat; background-position: center center;">
-				</a>
-				<div class="g-text">
-					<h3>{{i.title}}</h3>
-				</div>
-				<div>
-					<a ng-repeat="image in i.images" class="fancybox fancy-box-{{image.count}}" rel="gallery{{image.count}}" href="{{image.src}}" title="{{image.desc}}"></a>
-				</div>
-			</div>
-
-
-		</div>
-
-	    <div class="line margin-bottom">
-	    	<div class="size1of1 unit g-text-center">
-				<br>
-	            <a href="/work.php" class="g-btn g-btn-primary">See more of my work</a>
-	            <a href="/contact.php" class="g-btn g-btn-secondary">Contact me</a>
-	            <br>
-	        </div>
-	    </div>
-	</div>
-
- -->

@@ -11,32 +11,32 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
             count: 10,
             images: [
              	{
-                    desc: 'Homepage<br><br><a target="_blank" href="work/nissan/layout.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/nissan/layout.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ni1.png',
                     count: 10
                 },
                 {
-                    desc: 'Homepage, mobile view.',
+                    desc: '<a target="_blank" href="work/nissan/layout.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ni2.png',
                     count: 10
                 },
                 {
-                    desc: 'Nissan Infiniti Pricing Tool - inner page, Metrics.',
+                    desc: '<a target="_blank" href="work/nissan/metrics.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ni3.png',
                     count: 10
                 },
                 {
-                    desc: 'Global style guide - datepicker.',
+                    desc: '<a target="_blank" href="work/nissan/global.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ni4.png',
                     count: 10
                 },
                 {
-                    desc: 'Global style guide - tables.',
+                    desc: '<a target="_blank" href="work/nissan/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ni5.png',
                     count: 10
                 },
                 {
-                    desc: 'Global style guide - buttons.',
+                    desc: '<a target="_blank" href="work/nissan/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ni6.png',
                     count: 10
                 }
@@ -51,42 +51,42 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
             count: 9,
             images: [
              	{
-                    desc: 'Homepage - Assets.',
+                    desc: '<a target="_blank" href="work/ztr/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ztr1.png',
                     count: 9
                 },
                 {
-                    desc: 'Advanced search - use filters to narrow down your search.',
+                    desc: '<a target="_blank" href="work/ztr/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ztr2.png',
                     count: 9
                 },
                 {
-                    desc: 'Assets - mobile list view.',
+                    desc: '<a target="_blank" href="work/ztr/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ztr3.png',
                     count: 9
                 },
                 {
-                    desc: 'Assets - mobile map view.',
+                    desc: '<a target="_blank" href="work/ztr/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ztr4.png',
                     count: 9
                 },
                 {
-                    desc: 'Advanced search - mobile view.',
+                    desc: '<a target="_blank" href="work/ztr/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ztr5.png',
                     count: 9
                 },
                 {
-                    desc: 'Global Style Guide.',
+                    desc: '<a target="_blank" href="work/ztr/global.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ztr6.png',
                     count: 9
                 },
                 {
-                    desc: 'Global Style Guide - buttons..',
+                    desc: '<a target="_blank" href="work/ztr/global.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ztr7.png',
                     count: 9
                 },
                 {
-                    desc: 'Global Style Guide - forms.',
+                    desc: '<a target="_blank" href="work/ztr/global.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ztr8.png',
                     count: 9
                 }
@@ -100,42 +100,42 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
             count: 8,
             images: [
              	{
-                    desc: 'Homepage',
+                    desc: '<a target="_blank" href="work/huron-county/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/hc3.png',
                     count: 8
                 },
                 {
-                    desc: 'Inner page example',
+                    desc: '<a target="_blank" href="work/huron-county/growing-together.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/hc4.png',
                     count: 8
                 },
                 {
-                    desc: 'Secondary inner page example',
+                    desc: '<a target="_blank" href="work/huron-county/childrens-services.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/hc5.png',
                     count: 8
                 },
                 {
-                    desc: 'Events',
+                    desc: '<a target="_blank" href="work/huron-county/events.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/hc6.png',
                     count: 8
                 },
                 {
-                    desc: 'Huron country, Homepage in Mobile View.',
+                    desc: '<a target="_blank" href="work/huron-county/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/hc1.png',
                     count: 8
                 },
                 {
-                    desc: 'Event listings, mobile view.',
+                    desc: '<a target="_blank" href="work/huron-county/events.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/hc2.png',
                     count: 8
                 },
                 {
-                    desc: 'Global style guide for developers - buttons.',
+                    desc: '<a target="_blank" href="work/huron-county/global.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/hc7.png',
                     count: 8
                 },
             	 {
-                    desc: 'Global style guide for developers - canendars and pagination.',
+                    desc: '<a target="_blank" href="work/huron-county/global.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/hc8.png',
                     count: 8
                 },
@@ -150,27 +150,27 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
             count: 7,
             images: [
              	{
-                    desc: 'Homepage',
+                    desc: '<a target="_blank" href="work/confederation/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/confed1.png',
                     count: 7
                 },
                 {
-                    desc: 'Program Page',
+                    desc: '<a target="_blank" href="work/confederation/programs.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/confed2.png',
                     count: 7
                 },
 				{
-                    desc: 'Homepage Mobile View',
+                    desc: '<a target="_blank" href="work/confederation/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/confed3.png',
                     count: 7
                 },
 				{
-                    desc: 'Program Page Mobile View',
+                    desc: '<a target="_blank" href="work/confederation/programs.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/confed4.png',
                     count: 7
                 },
 				{
-                    desc: 'Global Style Guide - information for developers.',
+                    desc: '<a target="_blank" href="work/confederation/global.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/confed5.png',
                     count: 7
                 }
@@ -291,32 +291,32 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
             count: 3,
             images: [
                 {
-                    desc: 'Verto360 Homepage',
+                    desc: '<a target="_blank" href="http://verto360.com/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/verto1.png',
                     count: 3
                 },
                  {
-                    desc: 'Case Study - highlighting specific projects created by Verto360.',
+                    desc: '<a target="_blank" href="http://verto360.com/case-study/south-london-community-centre/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/verto2.png',
                     count: 3
                 },
                  {
-                    desc: 'Case Studies - landing page..',
+                    desc: '<a target="_blank" href="http://verto360.com/case-study/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/verto3.png',
                     count: 3
                 },
                  {
-                    desc: 'Homepage - mobile view.',
+                    desc: '<a target="_blank" href="http://verto360.com">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/verto4.png',
                     count: 3
                 },
                 {
-                    desc: 'Contact page - mobile view.',
+                    desc: '<a target="_blank" href="http://verto360.com/contact/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/verto5.png',
                     count: 3
                 },
                  {
-                    desc: 'About page - mobile view.',
+                    desc: '<a target="_blank" href="http://verto360.com/about-verto360/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/verto6.png',
                     count: 3
                 }
@@ -330,27 +330,27 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
             count: 1,
             images: [
                 {
-                    desc: 'Fitness Health Match Homepage',
+                    desc: 'Fitness Health Match Homepage<br><a target="_blank" href="http://www.fhmatch.com/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/fhm1.png',
                     count: 1
                 },
                  {
-                    desc: 'Create an account screen.',
+                    desc: '<a target="_blank" href="http://www.fhmatch.com/register">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/fhm2.png',
                     count: 1
                 },
                  {
-                    desc: 'Browse fitness and health related articles.',
+                    desc: 'Browse fitness and health related articles.<br><a target="_blank" href="http://www.fhmatch.com/articles">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/fhm3.png',
                     count: 1
                 },
                  {
-                    desc: 'Easily find health and fitness professional in your area.',
+                    desc: 'Easily find health and fitness professional in your area.<br><a target="_blank" href="http://www.fhmatch.com/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/fhm4.png',
                     count: 1
                 },
                  {
-                    desc: 'Connect with professional to book appointments.',
+                    desc: 'Connect with professional to book appointments.<br><a target="_blank" href="http://www.fhmatch.com/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/fhm5.png',
                     count: 1
                 }
@@ -364,32 +364,32 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
             count: 2,
             images: [
                 {
-                    desc: 'Redeemer University Homepage',
+                    desc: 'Redeemer University Homepage<br><a target="_blank" href="https://www.redeemer.ca/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/redeemer1.png',
                     count: 2
                 },
                  {
-                    desc: 'Stories - view and filter testimonials about the College by Students, Alumni and Faculty.',
+                    desc: '<a target="_blank" href="https://www.redeemer.ca/stories/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/redeemer2.png',
                     count: 2
                 },
                  {
-                    desc: 'Art - Program Page. Learn about programs that the College offers.',
+                    desc: '<a target="_blank" href="https://www.redeemer.ca/programs/art/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/redeemer3.png',
                     count: 2
                 },
                  {
-                    desc: 'Admission Counsellors - find your admissions counsellor to help with whatever you need.',
+                    desc: '<a target="_blank" href="https://www.redeemer.ca/admissionscounsellor/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/redeemer4.png',
                     count: 2
                 },
                  {
-                    desc: 'Campus Tour - Interactive map of different locations around the campus.',
+                    desc: 'Campus Tour - Interactive map of different locations around the campus.<br><a target="_blank" href="https://www.redeemer.ca/contact/map-and-directions/campus-tour/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/redeemer5.png',
                     count: 2
                 },
                 {
-                    desc: 'Redeemer Today - Easily find current events and news happening around the campus.',
+                    desc: 'Redeemer Today - Easily find current events and news happening around the campus.<br><a target="_blank" href="https://www.redeemer.ca/redeemer-today/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/redeemer6.png',
                     count: 2
                 }
@@ -561,12 +561,12 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
             count: 12,
             images: [
              	{
-                    desc: 'Wired Rooms Promotional Website',
+                    desc: 'Wired Rooms Promotional Website<br><a target="_blank" href="work/thesis/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/promo1.png',
                     count: 12
                 },
                 {
-                    desc: 'Intro screen with video for Wired Rooms Promotional Website',
+                    desc: 'Intro screen with video for Wired Rooms Promotional Website<br><a target="_blank" href="work/thesis/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/promo2.png',
                     count: 12
                 }

@@ -157,16 +157,16 @@ myApp.controller('ContactCtrl', function ($scope, $rootScope) {
 	        scrollwheel: false,
 	        draggable: false,
 	        styles: styleArray,
-	        zoom: 12
+	        zoom: 13
 	    });
 
 	    var iconBase = 'img/pin.png';
 
-	    var marker = new google.maps.Marker({
-	        position: {lat: 42.9710790, lng: -81.2539920},
-	        map: map,
-	        icon: iconBase
-	    });
+	    // var marker = new google.maps.Marker({
+	    //     position: {lat: 42.9710790, lng: -81.2539920},
+	    //     map: map,
+	    //     icon: iconBase
+	    // });
 
     };
 })

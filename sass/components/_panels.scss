@@ -40,11 +40,12 @@
 	}
 }
 
-//work page samaples
+//work page samples
 .g-featured{
 	text-align: center;
-	margin: 0 0 .5em;
-	border: 1px solid #fff;
+	margin: 1em 0 .5em 0;
+	background-color: #fff;
+	@extend .transition;
 	h3{
 		margin-top: 0;
 	}
@@ -53,18 +54,11 @@
 		height: 200px;
 	    position: relative;
 	    display: block;
-	    &:hover{
-	    	opacity: .7;
-	    }
 	}
 	&:hover{
-		border: 1px solid #ccc;
-		background-color: #EFEFEF;
+		background-color: $primary-1;
 		h3{
-			text-decoration: underline;
-		}
-		a.g-img{
-	    	opacity: .7;
+			color: #fff;
 		}
 	}
 	

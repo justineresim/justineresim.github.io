@@ -7,21 +7,25 @@ myApp.controller('HomeCtrl', function ($scope, $rootScope) {
         openFancyBox(className);
     }
 
+    $scope.alertit= function(par) {
+        alert(par);
+    }
+
     $scope.companies = [
-        ["chrysler-white.png", "chrysler.png"],
-        ["asc-white.png", "asc.png"],
-        ["dodge-white.png", "dodge.png"],
+        ["chrysler-white.png", "chrysler-black.png"],
+        ["asc-white.png", "asc-black.png"],
+        ["dodge-white.png", "dodge-black.png"],
         ["res-white.png", "res.png"],
-        ["chrome-data-white.png", "chrome-data.png"],
+        ["chrome-data-white.png", "chrome-data-black.png"],
         ["infiniti-white.png", "infiniti.png"],
         ["ram-white.png", "ram.png"],
         ["fiat-white.png", "fiat.png"],
-        ["cc-white.png", "cc.png"],
+        ["cc-white.png", "cc-black.png"],
         ["jeep-white.png", "jeep.png"],
-        ["verto-white.png", "verto.png"],
-        ["gm-white.png", "gm.png"],
-        ["fhmatch-white.png", "fhmatch.png"],
-        ["inner-geek-white.png", "inner-geek.png"],
+        ["verto-white.png", "verto-black.png"],
+        ["gm-white.png", "gm-black.png"],
+        ["fhmatch-white.png", "fhmatch-black.png"],
+        ["inner-geek-white.png", "inner-geek-black.png"],
     ];
 
     $scope.featured = [
