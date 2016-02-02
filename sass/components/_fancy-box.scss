@@ -19,16 +19,23 @@
   line-height: $base-line-height;
 }
 
-#fancybox-loading div {
-  width: 150px;
-  height: 150px;
-}
-
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span{
     width: 36px;
     background: none;
     height: 36px;
     font-size: 20px;
+}
+
+#fancybox-loading{
+  margin-top: -100px;
+  margin-left: -75px;
+  width: 150px;
+  height: 150px;
+}
+
+#fancybox-loading div {
+  width: 150px;
+  height: 150px;
 }
 
 .fancybox-close, .fancybox-prev, .fancybox-next{

@@ -2,18 +2,34 @@
    Homepage Specific Styles
    ========================================================================== */
 
-#map{
-	height: 100%;
-	width: 100%;
-    z-index: -2;
-    position: absolute !important;
-    top: 70px;
-    opacity: .15;
-}
+// #map{
+// 	height: 100%;
+// 	width: 100%;
+//     z-index: -2;
+//     position: absolute !important;
+//     top: 70px;
+//     opacity: .15;
+// }
 
 body.contact{
+	position: relative;
 	.contact-body{
 		min-height: 600px;
+	}
+	&:after{
+		background: url(/img/map.png);
+		background-size: cover;
+		background-position: center center;
+		content: ' ';
+	    display: block;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    bottom: 0;
+	    width: 100%;
+	    height: 100%;
+	    z-index: -2;
+	    opacity: 0.2;
 	}
 }
 

@@ -2768,12 +2768,6 @@ ul ul, ul ol, ol ul, ol ol {
 }
 
 /* line 22, ../sass/components/_fancy-box.scss */
-#fancybox-loading div {
-  width: 150px;
-  height: 150px;
-}
-
-/* line 27, ../sass/components/_fancy-box.scss */
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
   width: 36px;
   background: none;
@@ -2781,16 +2775,30 @@ ul ul, ul ol, ol ul, ol ol {
   font-size: 20px;
 }
 
-/* line 34, ../sass/components/_fancy-box.scss */
+/* line 29, ../sass/components/_fancy-box.scss */
+#fancybox-loading {
+  margin-top: -100px;
+  margin-left: -75px;
+  width: 150px;
+  height: 150px;
+}
+
+/* line 36, ../sass/components/_fancy-box.scss */
+#fancybox-loading div {
+  width: 150px;
+  height: 150px;
+}
+
+/* line 41, ../sass/components/_fancy-box.scss */
 .fancybox-close, .fancybox-prev, .fancybox-next {
   opacity: .6;
 }
-/* line 36, ../sass/components/_fancy-box.scss */
+/* line 43, ../sass/components/_fancy-box.scss */
 .fancybox-close:hover, .fancybox-prev:hover, .fancybox-next:hover {
   opacity: 1;
 }
 
-/* line 41, ../sass/components/_fancy-box.scss */
+/* line 48, ../sass/components/_fancy-box.scss */
 a.fancybox-close {
   color: #231f20;
   text-decoration: none;
@@ -2810,12 +2818,12 @@ a.fancybox-close {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
-/* line 59, ../sass/components/_fancy-box.scss */
+/* line 66, ../sass/components/_fancy-box.scss */
 a.fancybox-close:before {
   content: "\e646";
 }
 
-/* line 64, ../sass/components/_fancy-box.scss */
+/* line 71, ../sass/components/_fancy-box.scss */
 .fancybox-nav {
   position: absolute;
   left: 0;
@@ -2835,7 +2843,7 @@ a.fancybox-close:before {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
-/* line 82, ../sass/components/_fancy-box.scss */
+/* line 89, ../sass/components/_fancy-box.scss */
 .fancybox-nav:before {
   content: "\e64a";
   height: 100%;
@@ -2843,13 +2851,13 @@ a.fancybox-close:before {
   position: absolute;
 }
 
-/* line 90, ../sass/components/_fancy-box.scss */
+/* line 97, ../sass/components/_fancy-box.scss */
 .fancybox-nav.fancybox-next {
   right: 17px;
   left: auto;
   text-align: right;
 }
-/* line 94, ../sass/components/_fancy-box.scss */
+/* line 101, ../sass/components/_fancy-box.scss */
 .fancybox-nav.fancybox-next:before {
   content: "\e649";
 }
@@ -3152,21 +3160,22 @@ select.g-form-control {
 /* line 5, ../sass/components/_header.scss */
 header {
   padding: 0;
+  background-color: #fff;
 }
-/* line 7, ../sass/components/_header.scss */
+/* line 8, ../sass/components/_header.scss */
 header ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   width: 100%;
 }
-/* line 12, ../sass/components/_header.scss */
+/* line 13, ../sass/components/_header.scss */
 header ul li {
   padding: 0;
   margin: 0;
   float: left;
 }
-/* line 16, ../sass/components/_header.scss */
+/* line 17, ../sass/components/_header.scss */
 header ul li a {
   font-family: "source-sans-pro", sans-serif;
   display: inline-block;
@@ -3178,12 +3187,12 @@ header ul li a {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 28, ../sass/components/_header.scss */
+/* line 29, ../sass/components/_header.scss */
 header ul li.logo a {
   padding: 20px;
   line-height: 0;
 }
-/* line 31, ../sass/components/_header.scss */
+/* line 32, ../sass/components/_header.scss */
 header ul li.logo a img {
   height: 30px;
 }
@@ -4712,27 +4721,37 @@ h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
 /* ==========================================================================
    Homepage Specific Styles
    ========================================================================== */
-/* line 5, ../sass/pages/_contact.scss */
-#map {
-  height: 100%;
-  width: 100%;
-  z-index: -2;
-  position: absolute !important;
-  top: 70px;
-  opacity: .15;
+/* line 14, ../sass/pages/_contact.scss */
+body.contact {
+  position: relative;
 }
-
-/* line 15, ../sass/pages/_contact.scss */
+/* line 16, ../sass/pages/_contact.scss */
 body.contact .contact-body {
   min-height: 600px;
 }
+/* line 19, ../sass/pages/_contact.scss */
+body.contact:after {
+  background: url(/img/map.png);
+  background-size: cover;
+  background-position: center center;
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.2;
+}
 
-/* line 20, ../sass/pages/_contact.scss */
+/* line 36, ../sass/pages/_contact.scss */
 .sending-msg {
   text-align: center;
   width: 100%;
 }
-/* line 23, ../sass/pages/_contact.scss */
+/* line 39, ../sass/pages/_contact.scss */
 .sending-msg p {
   margin-top: 20px;
 }
@@ -4945,19 +4964,38 @@ body.home .page.home {
 /* line 74, ../sass/pages/_homepage.scss */
 .flip-container {
   perspective: 1000;
-  width: 14.2857%;
+  width: 14.2757%;
   height: 50%;
   float: left;
+  border: 3px solid #fff;
+  border-top: none;
+}
+/* line 81, ../sass/pages/_homepage.scss */
+.flip-container:nth-child(7), .flip-container:nth-child(14) {
+  border-right: none;
+}
+/* line 84, ../sass/pages/_homepage.scss */
+.flip-container:nth-child(8), .flip-container:nth-child(9), .flip-container:nth-child(10), .flip-container:nth-child(11), .flip-container:nth-child(12), .flip-container:nth-child(13), .flip-container:nth-child(14) {
+  border-bottom: none;
+  border-top: 3px solid #fff;
+}
+/* line 89, ../sass/pages/_homepage.scss */
+.flip-container:nth-child(odd) .front {
+  transform: rotateY(180deg);
+}
+/* line 92, ../sass/pages/_homepage.scss */
+.flip-container:nth-child(odd) .front + .front {
+  transform: rotateY(0deg);
 }
 
 /* flip the pane when hovered */
-/* line 82, ../sass/pages/_homepage.scss */
+/* line 101, ../sass/pages/_homepage.scss */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
   transform: rotateY(180deg);
 }
 
 /* flip speed goes here */
-/* line 87, ../sass/pages/_homepage.scss */
+/* line 106, ../sass/pages/_homepage.scss */
 .flipper {
   transition: 1s;
   transform-style: preserve-3d;
@@ -4967,7 +5005,7 @@ body.home .page.home {
 }
 
 /* hide back of pane during swap */
-/* line 96, ../sass/pages/_homepage.scss */
+/* line 115, ../sass/pages/_homepage.scss */
 .front {
   width: 100%;
   height: 100%;
@@ -4978,10 +5016,12 @@ body.home .page.home {
   z-index: 2;
   /* for firefox 31 */
   transform: rotateY(0deg);
+  background-color: #6C0442;
 }
 
 /* back, initially hidden pane */
-/* line 109, ../sass/pages/_homepage.scss */
+/* line 129, ../sass/pages/_homepage.scss */
 .front + .front {
   transform: rotateY(180deg);
+  background-color: #fff;
 }

@@ -73,9 +73,28 @@ body.home{
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000;
-	width: 14.2857%;
+	width: 14.2757%;
 	height: 50%;
 	float: left;
+	border: 3px solid #fff;
+	border-top: none;
+	&:nth-child(7), &:nth-child(14){
+		border-right: none;
+	}
+	&:nth-child(8), &:nth-child(9), &:nth-child(10), &:nth-child(11), &:nth-child(12), &:nth-child(13), &:nth-child(14){
+		border-bottom: none;
+		border-top: 3px solid #fff;
+	}
+	&:nth-child(odd){
+		.front{
+			transform: rotateY(180deg);
+		}
+		.front + .front {
+			transform: rotateY(0deg);
+		}
+
+	}
+
 }
 
 /* flip the pane when hovered */
@@ -103,10 +122,12 @@ body.home{
 	z-index: 2;
 	/* for firefox 31 */
 	transform: rotateY(0deg);
+	background-color: $primary-1;
 }
 
 /* back, initially hidden pane */
 .front + .front {
 	transform: rotateY(180deg);
+	background-color: #fff;
 }
 
