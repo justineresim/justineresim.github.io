@@ -13,8 +13,8 @@
 
 body.contact{
 	position: relative;
-	.contact-body{
-		min-height: 600px;
+	form{
+		min-height: 500px;
 	}
 	&:after{
 		background: url(/img/map.png);

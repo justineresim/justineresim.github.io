@@ -4726,8 +4726,8 @@ body.contact {
   position: relative;
 }
 /* line 16, ../sass/pages/_contact.scss */
-body.contact .contact-body {
-  min-height: 600px;
+body.contact form {
+  min-height: 500px;
 }
 /* line 19, ../sass/pages/_contact.scss */
 body.contact:after {
