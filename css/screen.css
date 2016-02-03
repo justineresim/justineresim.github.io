@@ -4957,7 +4957,7 @@ body.home .page.home {
 }
 /* line 65, ../sass/pages/_homepage.scss */
 .inner:hover .g-hidden {
-  display: inline-block;
+  display: block;
 }
 
 /* entire container, keeps perspective */
