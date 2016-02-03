@@ -2,6 +2,110 @@
    Homepage Specific Styles
    ========================================================================== */
 
+$accent1: rgb(186, 186, 189);
+$accent2: #D5DFC3;
+$accent3: #AAC8CC;
+
+@-webkit-keyframes color_change {
+	0% { background: $accent1 }
+	33% { background: $accent2 }
+	66% { background: $accent3 }
+	100% { background: $accent1 }
+}
+@-moz-keyframes color_change {
+	0% { background: $accent1 }
+	33% { background: $accent2 }
+	66% { background: $accent3 }
+	100% { background: $accent1 }
+}
+@-ms-keyframes color_change {
+	0% { background: $accent1 }
+	33% { background: $accent2 }
+	66% { background: $accent3 }
+	100% { background: $accent1 }
+}
+@-o-keyframes color_change {
+	0% { background: $accent1 }
+	33% { background: $accent2 }
+	66% { background: $accent3 }
+	100% { background: $accent1 }
+}
+@keyframes color_change {
+	0% { background: $accent1 }
+	33% { background: $accent2 }
+	66% { background: $accent3 }
+	100% { background: $accent1 }
+}
+
+
+@-webkit-keyframes color_change2 {
+	0% { background: $accent2 }
+	33% { background: $accent3 }
+	66% { background: $accent1 }
+	100% { background: $accent2 }
+}
+@-moz-keyframes color_change2 {
+	0% { background: $accent2 }
+	33% { background: $accent3 }
+	66% { background: $accent1 }
+	100% { background: $accent2 }
+}
+@-ms-keyframes color_change2 {
+	0% { background: $accent2 }
+	33% { background: $accent3 }
+	66% { background: $accent1 }
+	100% { background: $accent2 }
+}
+@-o-keyframes color_change2 {
+	0% { background: $accent2 }
+	33% { background: $accent3 }
+	66% { background: $accent1 }
+	100% { background: $accent2 }
+}
+@keyframes color_change2 {
+	0% { background: $accent2 }
+	33% { background: $accent3 }
+	66% { background: $accent1 }
+	100% { background: $accent2 }
+}
+
+
+
+@-webkit-keyframes color_change3 {
+	0% { background: $accent3 }
+	33% { background: $accent1 }
+	66% { background: $accent2 }
+	100% { background: $accent3 }
+}
+@-moz-keyframes color_change3 {
+	0% { background: $accent3 }
+	33% { background: $accent1 }
+	66% { background: $accent2 }
+	100% { background: $accent3 }
+}
+@-ms-keyframes color_change3 {
+	0% { background: $accent3 }
+	33% { background: $accent1 }
+	66% { background: $accent2 }
+	100% { background: $accent3 }
+}
+@-o-keyframes color_change3 {
+	0% { background: $accent3 }
+	33% { background: $accent1 }
+	66% { background: $accent2 }
+	100% { background: $accent3 }
+}
+@keyframes color_change3 {
+	0% { background: $accent3 }
+	33% { background: $accent1 }
+	66% { background: $accent2 }
+	100% { background: $accent3 }
+}
+
+
+
+
+
 body.home{
 	.f-container-container{
 		width: 100%;
@@ -9,13 +113,43 @@ body.home{
 	    position: fixed;
 	    margin-top: -70px;
 	    padding-top: 70px;
-	    padding-bottom: 201px;
+	    padding-bottom: 172px;
 	    bottom: 0;
 		z-index: 100;
 	}
 	.f-container{
 	    height: 100%;
     	padding-bottom: 0;
+    	.f-unit{
+    		background: url(/img/bg7.jpg);
+		    background-size: cover;
+		    background-position: center center;
+    		&.f-unit1{
+    			background: #fff;
+    			pointer-events: none;
+    		}
+    		&.f-unit2{
+    			-webkit-animation: color_change 20s infinite alternate;
+				-moz-animation: color_change 20s infinite alternate;
+				-ms-animation: color_change 20s infinite alternate;
+				-o-animation: color_change 20s infinite alternate;
+				animation: color_change 20s infinite alternate;
+    		}
+    		&.f-unit3{
+    			-webkit-animation: color_change2 20s infinite alternate;
+				-moz-animation: color_change2 20s infinite alternate;
+				-ms-animation: color_change2 20s infinite alternate;
+				-o-animation: color_change2 20s infinite alternate;
+				animation: color_change2 20s infinite alternate;
+    		}
+    		&.f-unit4{
+    			-webkit-animation: color_change3 20s infinite alternate;
+				-moz-animation: color_change3 20s infinite alternate;
+				-ms-animation: color_change3 20s infinite alternate;
+				-o-animation: color_change3 20s infinite alternate;
+				animation: color_change3 20s infinite alternate;
+    		}
+    	}
 	}
 	header{
 		position: fixed;
@@ -50,8 +184,11 @@ body.home{
 	    h1, h2, h3{
 	    	margin: 0;
 	    }
-	    h3, h4{
+	    h2, h3, h4{
 	    	color: #fff;
+	    }
+	    h1 + h2 {
+			color: #3E3B42;
 	    }
 		*[class*="ti-"] {
 			font-size: 30px;
@@ -73,27 +210,27 @@ body.home{
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000;
-	width: 14.2757%;
+	width: 14.2857142857%;
 	height: 50%;
 	float: left;
-	border: 3px solid #fff;
-	border-top: none;
-	&:nth-child(7), &:nth-child(14){
-		border-right: none;
-	}
-	&:nth-child(8), &:nth-child(9), &:nth-child(10), &:nth-child(11), &:nth-child(12), &:nth-child(13), &:nth-child(14){
-		border-bottom: none;
-		border-top: 3px solid #fff;
-	}
-	&:nth-child(odd){
-		.front{
-			transform: rotateY(180deg);
-		}
-		.front + .front {
-			transform: rotateY(0deg);
-		}
+	// border: 3px solid #fff;
+	// border-top: none;
+	// &:nth-child(7), &:nth-child(14){
+	// 	border-right: none;
+	// }
+	// &:nth-child(8), &:nth-child(9), &:nth-child(10), &:nth-child(11), &:nth-child(12), &:nth-child(13), &:nth-child(14){
+	// 	border-bottom: none;
+	// 	border-top: 3px solid #fff;
+	// }
+	// &:nth-child(odd){
+	// 	.front{
+	// 		transform: rotateY(180deg);
+	// 	}
+	// 	.front + .front {
+	// 		transform: rotateY(0deg);
+	// 	}
 
-	}
+	// }
 
 }
 
@@ -122,7 +259,7 @@ body.home{
 	z-index: 2;
 	/* for firefox 31 */
 	transform: rotateY(0deg);
-	background-color: $primary-1;
+	background-color: transparent;
 }
 
 /* back, initially hidden pane */

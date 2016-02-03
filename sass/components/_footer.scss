@@ -8,14 +8,15 @@ footer{
 	width: 100%;
 	z-index: 1000;
 	text-align: center;
-	padding: 2.5em 0;
-	background-color: $primary-1;
+	padding: 2em 0;
+	background-color: #3E3B42;
 	a{
 		color: #fff;
 	}
 	ul{
 		list-style-type: none;
 		padding: 0;
+		margin: 0 0 .8em 0;
 		li{
 			margin: 0;
 			padding: 0;
