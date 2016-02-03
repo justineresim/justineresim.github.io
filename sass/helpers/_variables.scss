@@ -4,22 +4,15 @@
 
 /* ======================= Colours ======================== */
 
-
-$primary-1: #BF9456;
-$primary-2: #DAC27C;
-$primary-4: #8e793e;
-$primary-3: #ad974f;
-
-$primary-1: #343434;
-$primary-2: #4E4E4C;
-$primary-3: #797672;
-$primary-4: #ABA9A6;
-
+$primary-1: rgb(186, 186, 189);
+$primary-2: #D5DFC3;
+$primary-3: #AAC8CC;
+$primary-4: #495F6D;
 
 $grey-1: #231f20;
-$grey-2: #4E4E4C;
-$grey-3: #797672;
-$grey-4: #ABA9A6;
+$grey-2: #3E3B42;
+$grey-3: #6A686E;
+$grey-4: #ABA8B0;
 
 $primary-bg-color: #FFF;
 $secondary-bg-color: #f9f9f9;
@@ -46,8 +39,8 @@ $border-radius: 0px;
 /* ======================= Links/Type ======================== */
 
 //Links
-$link-color: $primary-1;
-$link-hover-color: darken($primary-1, 15%);
+$link-color: $primary-4;
+$link-hover-color: darken($primary-4, 15%);
 
 //Secondary link color
 $link-color-secondary: #fff;
@@ -56,8 +49,8 @@ $link-hover-color-secondary: darken(#fff, 5%);
 //Type
 $heading-font: 'source-sans-pro', sans-serif; 
 $heading-font-weight: 300;
-$heading-color: $grey-1;
-$heading-color-secondary: $grey-2;
+$heading-color: $grey-2;
+$heading-color-secondary: $grey-3;
 
 $body-font: 'source-sans-pro', sans-serif; 
 $body-font-weight: 400;
@@ -67,8 +60,8 @@ $text-color: $grey-2;
 $text-color-light: $grey-3;
 $text-color-dark: $grey-1;
 
-$heading-link-color: darken($primary-1, 15%);
-$heading-hover-color: darken($primary-1, 25%);
+$heading-link-color: $primary-4;
+$heading-hover-color: darken($primary-4, 15%);
 
 $base-font-size: 18px;
 $base-line-height: 1.4em;
@@ -97,35 +90,35 @@ $btn-lg-font-size: 16px;
 $btn-lg-line-height: 16px;
 
 //Primary button
-$btn-primary-bg: $primary-1;
-$btn-primary-border: $primary-1;
-$btn-primary-color: #fff;
+$btn-primary-bg: lighten($primary-4, 60%);
+$btn-primary-border: $primary-4;
+$btn-primary-color: $primary-4;
 
-$btn-primary-hover-bg: darken($primary-1, 5%);
-$btn-primary-hover-border: darken($primary-1, 5%);
-$btn-primary-hover-color: #fff;
+$btn-primary-hover-bg: lighten($primary-4, 55%);
+$btn-primary-hover-border: $primary-4;
+$btn-primary-hover-color: $primary-4;
 
-$btn-primary-active-bg: darken($primary-1, 10%);
-$btn-primary-active-border: darken($primary-1, 10%);
-$btn-primary-hover-color: #fff;
+$btn-primary-active-bg: $primary-4;
+$btn-primary-active-border: $primary-4;
+$btn-primary-active-color: #fff;
 
 //Secondary button
-$btn-secondary-bg: darken($primary-1, 15%);
-$btn-secondary-border: darken($primary-1, 15%);
-$btn-secondary-color: #fff;
+$btn-secondary-bg: lighten($primary-3, 20%);
+$btn-secondary-border: $primary-3;
+$btn-secondary-color: $primary-4;
 
-$btn-secondary-hover-bg: darken($primary-1, 20%);
-$btn-secondary-hover-border: darken($primary-1, 20%);
-$btn-secondary-hover-color: #fff;
+$btn-secondary-hover-bg: lighten($primary-3, 10%);
+$btn-secondary-hover-border: $primary-3;
+$btn-secondary-hover-color: $primary-4;
 
-$btn-secondary-active-bg: darken($primary-1, 25%);
-$btn-secondary-active-border: darken($primary-1, 25%);
-$btn-secondary-hover-color: #fff;
+$btn-secondary-active-bg: $primary-3;
+$btn-secondary-active-border: $primary-3;
+$btn-secondary-active-color: #fff;
 
 //Tertiary button
 $btn-tertiary-bg: #fff;
 $btn-tertiary-border: $primary-1;
-$btn-tertiary-color: $primary-1;
+$btn-tertiary-color: $primary-4;
 
 $btn-tertiary-hover-bg: $primary-1;
 $btn-tertiary-hover-border: $primary-1;

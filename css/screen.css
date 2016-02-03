@@ -2151,12 +2151,12 @@
 
 /* line 41, ../sass/helpers/_helpers.scss */
 .g-text-color-primary {
-  color: #4E4E4C;
+  color: #3E3B42;
 }
 
 /* line 45, ../sass/helpers/_helpers.scss */
 .g-text-color-light {
-  color: #797672;
+  color: #6A686E;
 }
 
 /* line 49, ../sass/helpers/_helpers.scss */
@@ -2198,7 +2198,7 @@ a.g-link-color-secondary:hover, a.g-link-color-secondary:focus, a.g-link-color-s
 }
 
 /* line 85, ../sass/helpers/_helpers.scss */
-.transition, a, a.g-external-link:hover span.ti-arrow-top-right, .g-btn, button.g-btn, .g-form-control, .g-pagination a, .g-featured, table.g-table.g-table-hover > tbody > tr:hover, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, body.styles .g-container .testing-sidebar ul.testing-menu li a, .inner .centered *[class*="ti-"] {
+.transition, a, a.g-external-link:hover span.ti-arrow-top-right, .g-btn, button.g-btn, .g-form-control, .g-pagination a, table.g-table.g-table-hover > tbody > tr:hover, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, body.styles .g-container .testing-sidebar ul.testing-menu li a, .inner .centered *[class*="ti-"], .g-featured {
   -webkit-transition: all 0.1s ease-in;
   -moz-transition: all 0.1s ease-in;
   -o-transition: all 0.1s ease-in;
@@ -2272,22 +2272,22 @@ a.g-link-color-secondary:hover, a.g-link-color-secondary:focus, a.g-link-color-s
 
 /* line 151, ../sass/helpers/_helpers.scss */
 .g-bg-color-color-primary-1 {
-  background-color: #343434;
+  background-color: #bababd;
 }
 
 /* line 155, ../sass/helpers/_helpers.scss */
 .g-bg-color-color-primary-2 {
-  background-color: #4E4E4C;
+  background-color: #D5DFC3;
 }
 
 /* line 159, ../sass/helpers/_helpers.scss */
 .g-bg-color-color-primary-3 {
-  background-color: #797672;
+  background-color: #AAC8CC;
 }
 
 /* line 163, ../sass/helpers/_helpers.scss */
 .g-bg-color-color-primary-4 {
-  background-color: #ABA9A6;
+  background-color: #495F6D;
 }
 
 /* line 167, ../sass/helpers/_helpers.scss */
@@ -2297,17 +2297,17 @@ a.g-link-color-secondary:hover, a.g-link-color-secondary:focus, a.g-link-color-s
 
 /* line 171, ../sass/helpers/_helpers.scss */
 .g-bg-color-color-grey-2 {
-  background-color: #4E4E4C;
+  background-color: #3E3B42;
 }
 
 /* line 175, ../sass/helpers/_helpers.scss */
 .g-bg-color-color-grey-3 {
-  background-color: #797672;
+  background-color: #6A686E;
 }
 
 /* line 179, ../sass/helpers/_helpers.scss */
 .g-bg-color-color-grey-4 {
-  background-color: #ABA9A6;
+  background-color: #ABA8B0;
 }
 
 /* line 187, ../sass/helpers/_helpers.scss */
@@ -2435,7 +2435,7 @@ html {
 /* line 25, ../sass/base/_general.scss */
 body {
   font-family: "source-sans-pro", sans-serif;
-  color: #4E4E4C;
+  color: #3E3B42;
   background-color: #f9f9f9;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2472,13 +2472,13 @@ textarea {
 
 /* line 60, ../sass/base/_general.scss */
 a {
-  color: #343434;
+  color: #495F6D;
   text-decoration: none;
   cursor: pointer;
 }
 /* line 65, ../sass/base/_general.scss */
 a:hover, a:focus, a:active {
-  color: #0e0e0e;
+  color: #2a373f;
   text-decoration: none;
 }
 /* line 69, ../sass/base/_general.scss */
@@ -2547,11 +2547,11 @@ ul ul, ul ol, ol ul, ol ol {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #343434;
-  border: 1px solid #343434;
+  background-color: #f2f4f6;
+  border: 1px solid #495F6D;
   border-radius: 0px;
   font-family: "source-sans-pro", sans-serif;
-  color: #fff;
+  color: #495F6D;
   text-decoration: none;
   outline: none;
   height: 35px;
@@ -2577,9 +2577,9 @@ ul ul, ul ol, ol ul, ol ol {
 /* line 45, ../sass/components/_buttons.scss */
 .g-btn:hover, .g-btn:focus, button.g-btn:hover, button.g-btn:focus {
   text-decoration: none;
-  background-color: #272727;
-  border: 1px solid #272727;
-  color: #fff;
+  background-color: #e3e8ec;
+  border: 1px solid #495F6D;
+  color: #495F6D;
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -2587,44 +2587,44 @@ ul ul, ul ol, ol ul, ol ol {
 /* line 54, ../sass/components/_buttons.scss */
 .g-btn:active, .g-btn.g-active, button.g-btn:active, button.g-btn.g-active {
   text-decoration: none;
-  background-color: #1b1b1b;
-  border: 1px solid #1b1b1b;
+  background-color: #495F6D;
+  border: 1px solid #495F6D;
   color: #fff;
 }
 /* line 60, ../sass/components/_buttons.scss */
 .g-btn.g-btn-secondary, button.g-btn.g-btn-secondary {
-  background-color: #0e0e0e;
-  border: 1px solid #0e0e0e;
-  color: #fff;
+  background-color: #eaf1f2;
+  border: 1px solid #AAC8CC;
+  color: #495F6D;
 }
 /* line 64, ../sass/components/_buttons.scss */
 .g-btn.g-btn-secondary:hover, .g-btn.g-btn-secondary:focus, button.g-btn.g-btn-secondary:hover, button.g-btn.g-btn-secondary:focus {
-  background-color: #010101;
-  border: 1px solid #010101;
-  color: #fff;
+  background-color: #cadddf;
+  border: 1px solid #AAC8CC;
+  color: #495F6D;
 }
 /* line 69, ../sass/components/_buttons.scss */
 .g-btn.g-btn-secondary:active, .g-btn.g-btn-secondary.g-active, button.g-btn.g-btn-secondary:active, button.g-btn.g-btn-secondary.g-active {
-  background-color: black;
-  border: 1px solid black;
-  color: #fff;
+  background-color: #AAC8CC;
+  border: 1px solid #AAC8CC;
+  color: #495F6D;
 }
 /* line 75, ../sass/components/_buttons.scss */
 .g-btn.g-btn-tertiary, button.g-btn.g-btn-tertiary {
   background-color: #fff;
-  border: 1px solid #343434;
-  color: #343434;
+  border: 1px solid #bababd;
+  color: #495F6D;
 }
 /* line 79, ../sass/components/_buttons.scss */
 .g-btn.g-btn-tertiary:hover, .g-btn.g-btn-tertiary:focus, button.g-btn.g-btn-tertiary:hover, button.g-btn.g-btn-tertiary:focus {
-  background-color: #343434;
-  border: 1px solid #343434;
+  background-color: #bababd;
+  border: 1px solid #bababd;
   color: #fff;
 }
 /* line 84, ../sass/components/_buttons.scss */
 .g-btn.g-btn-tertiary:active, .g-btn.g-btn-tertiary.g-active, button.g-btn.g-btn-tertiary:active, button.g-btn.g-btn-tertiary.g-active {
-  background-color: #1b1b1b;
-  border: 1px solid #1b1b1b;
+  background-color: #a0a0a4;
+  border: 1px solid #a0a0a4;
   color: #fff;
 }
 /* line 90, ../sass/components/_buttons.scss */
@@ -2635,14 +2635,14 @@ ul ul, ul ol, ol ul, ol ol {
 }
 /* line 94, ../sass/components/_buttons.scss */
 .g-btn.g-btn-quaternary:hover, .g-btn.g-btn-quaternary:focus, button.g-btn.g-btn-quaternary:hover, button.g-btn.g-btn-quaternary:focus {
-  background-color: #4E4E4C;
-  border: 1px solid #4E4E4C;
+  background-color: #3E3B42;
+  border: 1px solid #3E3B42;
   color: #fff;
 }
 /* line 99, ../sass/components/_buttons.scss */
 .g-btn.g-btn-quaternary:active, .g-btn.g-btn-quaternary.g-active, button.g-btn.g-btn-quaternary:active, button.g-btn.g-btn-quaternary.g-active {
-  background-color: #272726;
-  border: 1px solid #272726;
+  background-color: #18171a;
+  border: 1px solid #18171a;
   color: #fff;
 }
 /* line 105, ../sass/components/_buttons.scss */
@@ -3017,21 +3017,21 @@ form .g-form-horizontal .g-checkbox label, form .g-form-horizontal .g-radio labe
   line-height: 25.2px;
   border: 1px solid #eaeaea;
   border-radius: 0px;
-  color: #4E4E4C;
+  color: #3E3B42;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   font-weight: 400;
 }
 /* line 103, ../sass/components/_forms.scss */
 .g-form-control:focus {
-  border-color: #ABA9A6;
+  border-color: #ABA8B0;
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 /* line 109, ../sass/components/_forms.scss */
 .g-form-control ::-webkit-input-placeholder, .g-form-control :-moz-placeholder, .g-form-control ::-moz-placeholder, .g-form-control :-ms-input-placeholder {
-  color: #ABA9A6;
+  color: #ABA8B0;
 }
 
 /* line 114, ../sass/components/_forms.scss */
@@ -3057,7 +3057,7 @@ select.g-form-control {
 
 /* line 137, ../sass/components/_forms.scss */
 .g-checkbox {
-  color: #4E4E4C;
+  color: #3E3B42;
 }
 /* line 139, ../sass/components/_forms.scss */
 .g-checkbox input[type=checkbox] {
@@ -3096,8 +3096,8 @@ select.g-form-control {
 .g-checkbox input[type=checkbox]:checked + label:before {
   content: "\2713";
   color: #fff;
-  background-color: #343434;
-  border: 1px solid #343434;
+  background-color: #bababd;
+  border: 1px solid #bababd;
   height: 20px;
   width: 20px;
   font-size: 25px;
@@ -3111,7 +3111,7 @@ select.g-form-control {
 /* line 185, ../sass/components/_forms.scss */
 .g-radio-heading, .g-checkbox-heading {
   margin-bottom: 5px;
-  color: #4E4E4C;
+  color: #3E3B42;
   font-weight: 400;
 }
 
@@ -3129,7 +3129,7 @@ select.g-form-control {
 /* line 203, ../sass/components/_forms.scss */
 .g-radio-container .g-radio-label {
   position: relative;
-  color: #4E4E4C;
+  color: #3E3B42;
   line-height: 25px;
 }
 /* line 208, ../sass/components/_forms.scss */
@@ -3151,7 +3151,7 @@ select.g-form-control {
 }
 /* line 223, ../sass/components/_forms.scss */
 .g-radio-container .g-radio:checked + .g-radio-label:before {
-  background: #343434;
+  background: #bababd;
   box-shadow: inset 0px 0px 0px 3px #fff;
 }
 
@@ -3214,8 +3214,8 @@ header ul li.logo a img {
   height: 2.4em;
   margin: 0 0.2em;
   border-radius: 50%;
-  background-color: #343434;
-  border: 1px solid #343434;
+  background-color: #bababd;
+  border: 1px solid #bababd;
   color: #fff;
   text-align: center;
   line-height: 2.2em;
@@ -3224,14 +3224,14 @@ header ul li.logo a img {
 /* line 22, ../sass/components/_pagination.scss */
 .g-pagination a.g-active {
   background-color: #fff;
-  color: #343434;
-  border: 1px solid #343434;
+  color: #bababd;
+  border: 1px solid #bababd;
   pointer-events: none;
 }
 /* line 28, ../sass/components/_pagination.scss */
 .g-pagination a:hover {
-  background-color: #1b1b1b;
-  border: 1px solid #1b1b1b;
+  background-color: #a0a0a4;
+  border: 1px solid #a0a0a4;
   text-decoration: none;
 }
 /* line 33, ../sass/components/_pagination.scss */
@@ -3292,31 +3292,6 @@ header ul li.logo a img {
   }
 }
 
-/* line 44, ../sass/components/_panels.scss */
-.g-featured {
-  text-align: center;
-  margin: 1em 0 .5em 0;
-}
-/* line 48, ../sass/components/_panels.scss */
-.g-featured h3 {
-  margin-top: 0;
-}
-/* line 51, ../sass/components/_panels.scss */
-.g-featured a.g-img {
-  width: 100%;
-  height: 200px;
-  position: relative;
-  display: block;
-}
-/* line 57, ../sass/components/_panels.scss */
-.g-featured:hover {
-  background-color: #343434;
-}
-/* line 59, ../sass/components/_panels.scss */
-.g-featured:hover h3 {
-  color: #fff;
-}
-
 /* ==========================================================================
    Tables
    ========================================================================== */
@@ -3345,7 +3320,7 @@ table.g-table thead, table.g-table tbody, table.g-table tfoot, table.g-table tr,
 table.g-table tbody {
   font-weight: normal;
   font-weight: inherit;
-  color: #4E4E4C;
+  color: #3E3B42;
 }
 /* line 29, ../sass/components/_tables.scss */
 table.g-table.g-table-striped thead, table.g-table.g-table-striped tbody, table.g-table.g-table-striped tfoot, table.g-table.g-table-striped tr, table.g-table.g-table-striped th, table.g-table.g-table-striped td {
@@ -3361,7 +3336,7 @@ table.g-table.g-table-bordered td, table.g-table.g-table-bordered td {
 }
 /* line 42, ../sass/components/_tables.scss */
 table.g-table.g-table-hover > tbody > tr:hover {
-  background-color: #9a9a9a;
+  background-color: white;
 }
 
 /* ==========================================================================
@@ -3370,18 +3345,18 @@ table.g-table.g-table-hover > tbody > tr:hover {
 /* line 7, ../sass/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "source-sans-pro", sans-serif;
-  color: #231f20;
+  color: #3E3B42;
   font-weight: 300;
 }
 /* line 11, ../sass/components/_type.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  color: #0e0e0e;
+  color: #495F6D;
   text-decoration: underline;
 }
 /* line 15, ../sass/components/_type.scss */
 h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus, h6 a:hover, h6 a:focus {
   text-decoration: underline;
-  color: black;
+  color: #2a373f;
 }
 
 /* line 22, ../sass/components/_type.scss */
@@ -3398,13 +3373,13 @@ h2 {
 /* line 31, ../sass/components/_type.scss */
 h3 {
   font-size: 1.4em;
-  color: #4E4E4C;
+  color: #6A686E;
 }
 
 /* line 36, ../sass/components/_type.scss */
 h4 {
   font-size: 1.1em;
-  color: #4E4E4C;
+  color: #6A686E;
 }
 
 /* line 41, ../sass/components/_type.scss */
@@ -4734,7 +4709,7 @@ body.contact form {
 }
 /* line 19, ../sass/pages/_contact.scss */
 body.contact:after {
-  background: url(/img/map.png);
+  background: url(/img/map2.png);
   background-size: cover;
   background-position: center center;
   content: ' ';
@@ -4746,7 +4721,7 @@ body.contact:after {
   width: 100%;
   height: 100%;
   z-index: -2;
-  opacity: 0.2;
+  opacity: 0.6;
 }
 
 /* line 36, ../sass/pages/_contact.scss */
@@ -4766,10 +4741,10 @@ body.contact:after {
 @-webkit-keyframes example {
   from {
     background-color: transparent;
-    color: #343434;
+    color: #495F6D;
   }
   to {
-    background-color: #343434;
+    background-color: #bababd;
     color: #fff;
   }
 }
@@ -4777,10 +4752,10 @@ body.contact:after {
 @keyframes example {
   from {
     background-color: transparent;
-    color: #343434;
+    color: #495F6D;
   }
   to {
-    background-color: #343434;
+    background-color: #bababd;
     color: #fff;
   }
 }
@@ -4818,7 +4793,7 @@ body.styles .g-container .testing-sidebar ul.testing-menu li a {
 }
 /* line 40, ../sass/pages/_global.scss */
 body.styles .g-container .testing-sidebar ul.testing-menu li a.active {
-  background-color: #343434;
+  background-color: #bababd;
   color: #fff;
   -webkit-animation-name: example;
   /* Chrome, Safari, Opera */
@@ -5257,4 +5232,58 @@ body.home .page.home {
 .front + .front {
   transform: rotateY(180deg);
   background-color: #fff;
+  opacity: .9;
+}
+
+/* ==========================================================================
+   Work page Specific Styles
+   ========================================================================== */
+/* line 5, ../sass/pages/_work.scss */
+body.work {
+  position: relative;
+}
+/* line 7, ../sass/pages/_work.scss */
+body.work:after {
+  background: url(/img/bg8.jpg);
+  background-size: cover;
+  background-position: center center;
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.6;
+}
+
+/* line 25, ../sass/pages/_work.scss */
+.g-featured {
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 1.5em;
+}
+/* line 30, ../sass/pages/_work.scss */
+.g-featured h3 {
+  margin-top: 0;
+  color: transparent;
+}
+/* line 34, ../sass/pages/_work.scss */
+.g-featured a.g-img {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  display: block;
+}
+/* line 40, ../sass/pages/_work.scss */
+.g-featured:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 3px 3px 10px rgba(60, 60, 60, 0.25);
+  -webkit-box-shadow: 3px 3px 10px rgba(60, 60, 60, 0.25);
+}
+/* line 44, ../sass/pages/_work.scss */
+.g-featured:hover h3 {
+  color: #6A686E;
 }
