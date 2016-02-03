@@ -39,26 +39,3 @@
 	    }
 	}
 }
-
-//work page samples
-.g-featured{
-	text-align: center;
-	margin: 1em 0 .5em 0;
-	@extend .transition;
-	h3{
-		margin-top: 0;
-	}
-	a.g-img{
-		width: 100%;
-		height: 200px;
-	    position: relative;
-	    display: block;
-	}
-	&:hover{
-		background-color: $primary-1;
-		h3{
-			color: #fff;
-		}
-	}
-	
-}

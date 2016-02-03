@@ -24,6 +24,9 @@ header{
 				font-size: 15px;
 				text-transform: uppercase;
 				text-decoration: none;
+				&.g-active{
+					text-decoration: underline;
+				}
 			}
 			&.logo{
 				a{
