@@ -13,6 +13,12 @@
 
 body.contact{
 	position: relative;
+	h1{
+		display: none;
+	}
+	h2{
+		margin-top: 2.5em;
+	}
 	form{
 		min-height: 500px;
 	}

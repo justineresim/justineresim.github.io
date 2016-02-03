@@ -4,6 +4,9 @@
 
 body.work{
 	position: relative;
+	h1{
+		display: none;
+	}
 	&:after{
 		background: url(/img/bg8.jpg);
 		background-size: cover;

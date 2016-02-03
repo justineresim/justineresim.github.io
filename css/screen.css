@@ -3188,12 +3188,16 @@ header ul li a {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 29, ../sass/components/_header.scss */
+/* line 27, ../sass/components/_header.scss */
+header ul li a.g-active {
+  text-decoration: underline;
+}
+/* line 32, ../sass/components/_header.scss */
 header ul li.logo a {
   padding: 20px;
   line-height: 0;
 }
-/* line 32, ../sass/components/_header.scss */
+/* line 35, ../sass/components/_header.scss */
 header ul li.logo a img {
   height: 30px;
 }
@@ -4704,10 +4708,18 @@ body.contact {
   position: relative;
 }
 /* line 16, ../sass/pages/_contact.scss */
+body.contact h1 {
+  display: none;
+}
+/* line 19, ../sass/pages/_contact.scss */
+body.contact h2 {
+  margin-top: 2.5em;
+}
+/* line 22, ../sass/pages/_contact.scss */
 body.contact form {
   min-height: 500px;
 }
-/* line 19, ../sass/pages/_contact.scss */
+/* line 25, ../sass/pages/_contact.scss */
 body.contact:after {
   background: url(/img/map2.png);
   background-size: cover;
@@ -4724,12 +4736,12 @@ body.contact:after {
   opacity: 0.6;
 }
 
-/* line 36, ../sass/pages/_contact.scss */
+/* line 42, ../sass/pages/_contact.scss */
 .sending-msg {
   text-align: center;
   width: 100%;
 }
-/* line 39, ../sass/pages/_contact.scss */
+/* line 45, ../sass/pages/_contact.scss */
 .sending-msg p {
   margin-top: 20px;
 }
@@ -5243,6 +5255,10 @@ body.work {
   position: relative;
 }
 /* line 7, ../sass/pages/_work.scss */
+body.work h1 {
+  display: none;
+}
+/* line 10, ../sass/pages/_work.scss */
 body.work:after {
   background: url(/img/bg8.jpg);
   background-size: cover;
@@ -5259,31 +5275,31 @@ body.work:after {
   opacity: 0.6;
 }
 
-/* line 25, ../sass/pages/_work.scss */
+/* line 28, ../sass/pages/_work.scss */
 .g-featured {
   text-align: center;
   padding-top: 2em;
   padding-bottom: 1.5em;
 }
-/* line 30, ../sass/pages/_work.scss */
+/* line 33, ../sass/pages/_work.scss */
 .g-featured h3 {
   margin-top: 0;
   color: transparent;
 }
-/* line 34, ../sass/pages/_work.scss */
+/* line 37, ../sass/pages/_work.scss */
 .g-featured a.g-img {
   width: 100%;
   height: 200px;
   position: relative;
   display: block;
 }
-/* line 40, ../sass/pages/_work.scss */
+/* line 43, ../sass/pages/_work.scss */
 .g-featured:hover {
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 3px 3px 10px rgba(60, 60, 60, 0.25);
   -webkit-box-shadow: 3px 3px 10px rgba(60, 60, 60, 0.25);
 }
-/* line 44, ../sass/pages/_work.scss */
+/* line 47, ../sass/pages/_work.scss */
 .g-featured:hover h3 {
   color: #6A686E;
 }
