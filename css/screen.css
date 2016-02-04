@@ -5146,7 +5146,7 @@
 
 /* line 61, ../sass/helpers/_helpers.scss */
 .g-font-bold {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 /* line 68, ../sass/helpers/_helpers.scss */
@@ -5404,7 +5404,7 @@ body {
 }
 /* line 37, ../sass/base/_general.scss */
 body b, body strong {
-  font-weight: 400;
+  font-weight: 600;
 }
 @media (max-width: 480px) {
   /* line 25, ../sass/base/_general.scss */
@@ -5892,7 +5892,7 @@ form label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
-  font-weight: 400;
+  font-weight: 600;
 }
 /* line 33, ../sass/components/_forms.scss */
 form .g-hidden-labels label {
@@ -6018,8 +6018,9 @@ select.g-form-control {
   cursor: pointer;
   display: block;
   margin: 0 0 5px;
+  font-weight: 400;
 }
-/* line 147, ../sass/components/_forms.scss */
+/* line 148, ../sass/components/_forms.scss */
 .g-checkbox input[type=checkbox] + label:before {
   content: ' ';
   font-size: 20px;
@@ -6035,12 +6036,12 @@ select.g-form-control {
   position: absolute;
   cursor: pointer;
 }
-/* line 162, ../sass/components/_forms.scss */
+/* line 163, ../sass/components/_forms.scss */
 .g-checkbox input[type=checkbox] + label span {
   cursor: pointer;
   margin-left: 30px;
 }
-/* line 169, ../sass/components/_forms.scss */
+/* line 170, ../sass/components/_forms.scss */
 .g-checkbox input[type=checkbox]:checked + label:before {
   content: "\2713";
   color: #fff;
@@ -6056,31 +6057,32 @@ select.g-form-control {
   position: absolute;
 }
 
-/* line 185, ../sass/components/_forms.scss */
+/* line 186, ../sass/components/_forms.scss */
 .g-radio-heading, .g-checkbox-heading {
   margin-bottom: 5px;
   color: #3E3B42;
-  font-weight: 400;
+  font-weight: 600;
 }
 
-/* line 194, ../sass/components/_forms.scss */
+/* line 195, ../sass/components/_forms.scss */
 .g-radio-container .g-radio {
   opacity: 0;
   position: absolute;
 }
-/* line 198, ../sass/components/_forms.scss */
+/* line 199, ../sass/components/_forms.scss */
 .g-radio-container .g-radio, .g-radio-container .g-radio-label {
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
 }
-/* line 203, ../sass/components/_forms.scss */
+/* line 204, ../sass/components/_forms.scss */
 .g-radio-container .g-radio-label {
   position: relative;
   color: #3E3B42;
   line-height: 25px;
+  font-weight: 400;
 }
-/* line 208, ../sass/components/_forms.scss */
+/* line 210, ../sass/components/_forms.scss */
 .g-radio-container .g-radio + .g-radio-label:before {
   content: '';
   background: #fff;
@@ -6093,11 +6095,11 @@ select.g-form-control {
   margin-right: 10px;
   text-align: center;
 }
-/* line 220, ../sass/components/_forms.scss */
+/* line 222, ../sass/components/_forms.scss */
 .g-radio-container .g-radio + .g-radio-label:before {
   border-radius: 50%;
 }
-/* line 223, ../sass/components/_forms.scss */
+/* line 225, ../sass/components/_forms.scss */
 .g-radio-container .g-radio:checked + .g-radio-label:before {
   background: #bababd;
   box-shadow: inset 0px 0px 0px 3px #fff;
@@ -6281,7 +6283,7 @@ table thead, table tbody, table tfoot, table tr, table th, table td {
 }
 /* line 23, ../sass/components/_tables.scss */
 table th {
-  color: #231f20;
+  font-weight: 600;
 }
 /* line 26, ../sass/components/_tables.scss */
 table tbody {
@@ -7606,7 +7608,7 @@ body.contact form {
 }
 /* line 16, ../sass/pages/_contact.scss */
 body.contact:after {
-  background: url(/img/map2.png);
+  background: url(/img/map.jpg);
   background-size: cover;
   background-position: center center;
   content: ' ';
@@ -7618,7 +7620,7 @@ body.contact:after {
   width: 100%;
   height: 100%;
   z-index: -2;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 /* line 33, ../sass/pages/_contact.scss */
