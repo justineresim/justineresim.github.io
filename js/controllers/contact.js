@@ -152,15 +152,15 @@ myApp.controller('ContactCtrl', function ($scope, $rootScope) {
 	    ]
 
 	    // Create a map object and specify the DOM element for display.
-	    var map = new google.maps.Map(document.getElementById('map'), {
-	        center: {lat: 42.9710790, lng: -81.2539920},
-	        scrollwheel: false,
-	        draggable: false,
-	        styles: styleArray,
-	        zoom: 13
-	    });
+	    // var map = new google.maps.Map(document.getElementById('map'), {
+	    //     center: {lat: 42.9710790, lng: -81.2539920},
+	    //     scrollwheel: false,
+	    //     draggable: false,
+	    //     styles: styleArray,
+	    //     zoom: 13
+	    // });
 
-	    var iconBase = 'img/pin.png';
+	    // var iconBase = 'img/pin.png';
 
 	    // var marker = new google.maps.Marker({
 	    //     position: {lat: 42.9710790, lng: -81.2539920},

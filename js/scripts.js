@@ -44,7 +44,6 @@ $(document).ready(function(){
     $('.fancy-box-trigger').click(function(){
         var id =  event.target.id;
         var tag = '.fancy-box-'+id;
-        
     })
 
 });
