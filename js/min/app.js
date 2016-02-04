@@ -3,6 +3,14 @@
 
 var myApp = angular.module('angularApp', ['ngRoute', 'ngAnimate', 'ngSanitize']);
 
+$http.get(url,[params])
+.success(function(data, status, headers, config){
+    // bind your data to scope
+})
+.error(function(data, status, headers, config) {
+    $location.url('/');
+});
+
 
 // configure our routes
 myApp.config(["$routeProvider", function($routeProvider) {
@@ -30,7 +38,9 @@ myApp.config(["$routeProvider", function($routeProvider) {
         .when('/styles', {
             templateUrl : 'js/views/styles.html',
             controller  : 'StylesCtrl'
-        });
+        })
+
+        .otherwise({ redirectTo: '/' });
 
 }]);
 
