@@ -68,23 +68,3 @@ function btnStates(){
 function openFancyBox(className){
     $(className).eq(0).trigger('click'); 
 }
-
-function toGoPage(){
-    var active = $('.g-nums.g-active').text();
-    var set1 = $('.g-work-0, .g-work-1, .g-work-2, .g-work-3, .g-work-4');
-    var set2 = $('.g-work-5, .g-work-6, .g-work-7, .g-work-8, .g-work-9');
-    var set3 = $('.g-work-10, .g-work-11, .g-work-12, .g-work-13, .g-work-14');
-
-    if(active==2){
-       set1.slideUp(); 
-    }
-    if(active==3){
-       set2.slideUp(); 
-    }
-    if(active==4){
-       set3.slideUp(); 
-    }
-    
-}
-
-
