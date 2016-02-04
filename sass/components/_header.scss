@@ -24,9 +24,6 @@ header{
 				font-size: 15px;
 				text-transform: uppercase;
 				text-decoration: none;
-				&.g-active{
-					text-decoration: underline;
-				}
 			}
 			&.logo{
 				a{
@@ -38,5 +35,23 @@ header{
 				}
 			}
 		}
+	}
+}
+
+body.home{
+	header li a.home{
+		text-decoration: underline;
+	}
+}
+
+body.work{
+	header li a.work{
+		text-decoration: underline;
+	}
+}
+
+body.contact{
+	header li a.contact{
+		text-decoration: underline;
 	}
 }

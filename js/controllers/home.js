@@ -7,10 +7,6 @@ myApp.controller('HomeCtrl', function ($scope, $rootScope) {
         openFancyBox(className);
     }
 
-    $scope.alertit= function(par) {
-        alert(par);
-    }
-
     $scope.companies = [
         ["chrysler-white.png", "chrysler-black.png"],
         ["asc-white.png", "asc-black.png"],
