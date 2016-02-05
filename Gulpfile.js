@@ -3,6 +3,9 @@ var concat = require('gulp-concat');
 var notify = require('gulp-notify');
 var minify = require('gulp-minify');
 var ngAnnotate = require('gulp-ng-annotate');
+var sass = require('gulp-ruby-sass');
+var rename = require('gulp-rename');
+var cssnano = require('gulp-cssnano');
 
 // Scripts
 gulp.task('scripts', function() {
@@ -14,9 +17,21 @@ gulp.task('scripts', function() {
     .pipe(notify({ message: 'Scripts task complete' }));
 });
 
-gulp.task('watch', function() {
-    gulp.watch('js/*.js', 'js/controllers/*.js', ['scripts']);
+// Styles
+gulp.task('styles', function() {
+  return sass('sass/screen.scss', { style: 'expanded' })
+    .pipe(gulp.dest('css'))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(cssnano())
+    .pipe(gulp.dest('css'))
+    .pipe(notify({ message: 'Styles task complete' }));
 });
 
-gulp.task('default', ['scripts', 'watch']);
+
+gulp.task('watch', function() {
+    gulp.watch('js/*.js', 'js/controllers/*.js', ['scripts']);
+    gulp.watch('/sass/**/*.scss', ['styles']);
+});
+
+gulp.task('default', ['scripts', 'styles', 'watch']);
 
