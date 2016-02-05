@@ -3,15 +3,6 @@
 
 var myApp = angular.module('angularApp', ['ngRoute', 'ngAnimate', 'ngSanitize']);
 
-$http.get(url,[params])
-.success(function(data, status, headers, config){
-    // bind your data to scope
-})
-.error(function(data, status, headers, config) {
-    $location.url('/');
-});
-
-
 // configure our routes
 myApp.config(["$routeProvider", function($routeProvider) {
     $routeProvider
