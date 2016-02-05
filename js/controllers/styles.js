@@ -16,4 +16,4 @@ myApp.controller('StylesCtrl', function ($scope, $rootScope, $window) {
 		})
 	});
 
-})
+});

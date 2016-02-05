@@ -2,7 +2,7 @@
    Tables
    ========================================================================== */
 
-table.g-table{
+table{
     table-layout: fixed;
 	width: 100%;
     border-spacing: 0;
@@ -20,12 +20,14 @@ table.g-table{
 	    -webkit-border-horizontal-spacing: 0;
 	    -webkit-border-vertical-spacing: 0;
 	}
+	th{
+    	font-weight: $body-font-weight-bold;
+    }
 	tbody{
 		font-weight: normal;
 	    font-weight: inherit;
-	    color: $grey-2;
 	}
-	&.g-table-striped{
+	&.g-table{
 		thead, tbody, tfoot, tr, th, td{
 		    padding: $table-padding;
 		}

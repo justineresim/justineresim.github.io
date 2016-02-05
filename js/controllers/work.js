@@ -2,6 +2,11 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
 
 	$rootScope.bodyClass = 'work';
 
+    $scope.fancyBox = function(par) {
+        var className = '.fancy-box-'+par;
+        openFancyBox(className);
+    }
+
 	$scope.work = [
 		{
 			title: 'Nissan Infiniti Pricing Tool',

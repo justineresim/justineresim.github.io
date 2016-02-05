@@ -33,14 +33,12 @@ body {
   font-weight: $body-font-weight;
   padding:0;
   margin:0;
+  overflow-x: hidden;
   b, strong{
     font-weight: $body-font-weight-bold;
   }
   @media (max-width: $max-break-mobile) {
      font-size: 90%; 
-  }
-  &.home{
-    height: 100%;
   }
 }
 
