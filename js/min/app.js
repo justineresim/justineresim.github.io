@@ -856,6 +856,7 @@ $(document).ready(function(){
             this.title = '<p class="g-font-size-smaller">' + (this.index + 1) + '/' + this.group.length + '</p>' + (this.title ? this.title : '');
         }
     });
+    
 
      //pagination
     $('.g-pagination a.g-nums').click(function(){

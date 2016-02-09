@@ -29,7 +29,7 @@ form{
 		margin-bottom: 5px;
 		font-weight: $body-font-weight-bold;
 	}
-	.g-hidden-labels{
+	.g-hidden-labels, &.g-hidden-labels{
 		label{
 			display: none;
 		}

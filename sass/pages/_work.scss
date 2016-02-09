@@ -4,24 +4,30 @@
 
 body.work{
 	position: relative;
+	// background: #f9f9f9;
+	-webkit-animation: color_change3 50s infinite alternate;
+	-moz-animation: color_change3 50s infinite alternate;
+	-ms-animation: color_change3 50s infinite alternate;
+	-o-animation: color_change3 50s infinite alternate;
+	animation: color_change3 50s infinite alternate;
 	h1{
 		display: none;
 	}
-	&:after{
-		background: url(/img/bg8.jpg);
-		background-size: cover;
-		background-position: center center;
-		content: ' ';
-	    display: block;
-	    position: absolute;
-	    left: 0;
-	    top: 0;
-	    bottom: 0;
-	    width: 100%;
-	    height: 100%;
-	    z-index: -2;
-	    opacity: 0.6;
-	}
+	// &:after{
+	// 	background: url(/img/bg9.jpg);
+	// 	background-size: cover;
+	// 	background-position: center center;
+	// 	content: ' ';
+	//     display: block;
+	//     position: absolute;
+	//     left: 0;
+	//     top: 0;
+	//     bottom: 0;
+	//     width: 100%;
+	//     height: 100%;
+	//     z-index: -2;
+	//     opacity: 0.3;
+	// }
 }
 
 //work page samples
@@ -39,11 +45,15 @@ body.work{
 		height: 200px;
 	    position: relative;
 	    display: block;
+	    @extend .transition;
 	}
 	&:hover{
-		background-color: rgba(255,255,255,.2);
+		background-color: rgba(255, 255, 255, 0.3);
 	    box-shadow: 3px 3px 10px rgba(60, 60, 60, 0.25);
 	    -webkit-box-shadow: 3px 3px 10px rgba(60, 60, 60, 0.25);
+	    a.g-img{
+	    	background-size: 90% auto !important;
+	    }
 		h3{
 			color: $grey-3;
 		}

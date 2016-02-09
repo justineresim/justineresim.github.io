@@ -27,10 +27,9 @@ gulp.task('styles', function() {
     .pipe(notify({ message: 'Styles task complete' }));
 });
 
-
 gulp.task('watch', function() {
-    gulp.watch('js/*.js', 'js/controllers/*.js', ['scripts']);
-    gulp.watch('/sass/**/*.scss', ['styles']);
+    gulp.watch('js/*.js, js/controllers/*.js', ['scripts'])
+    gulp.watch('sass/**/*.scss', ['styles']);
 });
 
 gulp.task('default', ['scripts', 'styles', 'watch']);

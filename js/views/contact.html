@@ -7,26 +7,28 @@
             <p><em>*All form fields are required</em></p>
             <br>
             <div class="g-btn-toggle">
-                <a ng-click="contactForm=true; quoteForm=false" ng-class="{'g-active':contactForm === true}" class="g-btn g-active">General Inquiry</a>
-                <a ng-click="contactForm=false; quoteForm=true" ng-class="{'g-active':contactForm === false}" class="g-btn">Request a Quote</a>
+                <a ng-click="contactForm=true; quoteForm=false" ng-class="{'g-active':contactForm === true}" class="g-btn g-btn-tertiary g-active">General Inquiry</a>
+                <a ng-click="contactForm=false; quoteForm=true" ng-class="{'g-active':contactForm === false}" class="g-btn g-btn-tertiary">Request a Quote</a>
             </div>
         </div>
         <br>
         <br>
-        <div class="sending-msg" ng-show="messageSending">
-            <img alt="loading" src="img/loading.gif">
-            <h2>Your message is being sent...</h2>
-        </div>
-        <div class="sent-msg" ng-show="messageSent">
-            <h2>Thank you for your message!</h2>
-            <h3>I will get back to you shortly.</h3>
-        </div>
-        <div class="error-msg" ng-show="messageError">
-            <h2>Something went wrong.</h2>
-            <h3>Please <a ng-click="reloadForm();">try again</a> or email me directly at <a href="mailto:justine@res.im">justine@res.im</a>.</h3>
+        <div class="msgs">
+            <div class="sending-msg" ng-show="messageSending">
+                <img alt="loading" src="img/loading.gif">
+                <h2>Your message is being sent...</h2>
+            </div>
+            <div class="sent-msg" ng-show="messageSent">
+                <h2>Thank you for your message!</h2>
+                <h3>I will get back to you shortly.</h3>
+            </div>
+            <div class="error-msg" ng-show="messageError">
+                <h2>Something went wrong.</h2>
+                <h3>Please <a ng-click="reloadForm();">try again</a> or email me directly at <a href="mailto:justine@res.im">justine@res.im</a>.</h3>
+            </div>
         </div>
         <div ng-show="contactForm">
-            <form id="g-contact-form" name="myContactForm">
+            <form id="g-contact-form" class="g-hidden-labels" name="myContactForm">
                 <div class="line">
                     <div class="g-form-group unit size1of2 sm-size1of2">
                         <label for="fName">First Name</label>
@@ -51,7 +53,7 @@
             </form>
         </div>
         <div ng-show="quoteForm">
-            <form id="g-quote-form" name="myQuoteForm">
+            <form id="g-quote-form" class="g-hidden-labels" name="myQuoteForm">
                 <div class="line">
                     <div class="g-form-group unit size1of2 sm-size1of2">
                         <label for="fName2">First Name</label>
