@@ -688,7 +688,6 @@ myApp.controller('ContactCtrl', ["$scope", "$rootScope", function ($scope, $root
 			 	$scope.emailError();
 			})
 		});
-  
     }
 
     $scope.sendingEmail = function() {

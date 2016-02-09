@@ -45,7 +45,6 @@ myApp.controller('ContactCtrl', function ($scope, $rootScope) {
 			 	$scope.emailError();
 			})
 		});
-  
     }
 
     $scope.sendingEmail = function() {

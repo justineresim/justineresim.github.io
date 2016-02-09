@@ -64,6 +64,19 @@
     margin-bottom: 4.5em;
 }
 
+.loading-section{
+	min-height: 1000px;
+	img{
+		display: block;
+		margin: 250px auto;
+		width: 60px;
+		height: auto;
+		@media (max-width: 600px){
+			margin: 120px auto;
+		}
+	}
+}
+
 /* home -------------------------- */
 .page.home.ng-enter         { animation:fadeIn 0.3s ease-in; }
 //.page.home.ng-leave         { animation:fadeOut 0.5s ease-in; }

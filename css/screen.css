@@ -6659,6 +6659,21 @@ h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
   margin-bottom: 4.5em;
 }
 
+.loading-section {
+  min-height: 1000px;
+}
+.loading-section img {
+  display: block;
+  margin: 250px auto;
+  width: 60px;
+  height: auto;
+}
+@media (max-width: 600px) {
+  .loading-section img {
+    margin: 120px auto;
+  }
+}
+
 /* home -------------------------- */
 .page.home.ng-enter {
   animation: fadeIn 0.3s ease-in;

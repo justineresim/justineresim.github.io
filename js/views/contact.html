@@ -14,7 +14,7 @@
         <br>
         <br>
         <div class="sending-msg" ng-show="messageSending">
-            <img src="https://www.investfeed.com/media/scripts/stx/loading.gif">
+            <img alt="loading" src="img/loading.gif">
             <h2>Your message is being sent...</h2>
         </div>
         <div class="sent-msg" ng-show="messageSent">
@@ -28,11 +28,11 @@
         <div ng-show="contactForm">
             <form id="g-contact-form" name="myContactForm">
                 <div class="line">
-                    <div class="g-form-group unit size1of2">
+                    <div class="g-form-group unit size1of2 sm-size1of2">
                         <label for="fName">First Name</label>
                         <input ng-model="form.fname" type="text" class="g-form-control" id="fName" placeholder="First Name" required>
                     </div>
-                    <div class="g-form-group unit size1of2">
+                    <div class="g-form-group unit size1of2 sm-size1of2">
                         <label for="lName">Last Name</label>
                         <input ng-model="form.lname" type="text" class="g-form-control" id="lName" placeholder="Last Name" required>
                     </div>
@@ -53,11 +53,11 @@
         <div ng-show="quoteForm">
             <form id="g-quote-form" name="myQuoteForm">
                 <div class="line">
-                    <div class="g-form-group unit size1of2">
+                    <div class="g-form-group unit size1of2 sm-size1of2">
                         <label for="fName2">First Name</label>
                         <input ng-model="qform.fname" type="text" class="g-form-control" id="fName2" placeholder="First Name" required>
                     </div>
-                    <div class="g-form-group unit size1of2">
+                    <div class="g-form-group unit size1of2 sm-size1of2">
                         <label for="lName2">Last Name</label>
                         <input ng-model="qform.lname" type="text" class="g-form-control" id="lName2" placeholder="Last Name" required>
                     </div>
@@ -67,7 +67,7 @@
                     <input type="text" ng-model="qform.email" class="g-form-control" id="email2" placeholder="Email Address" type="email" required>
                 </div>
                 <div class="line">
-                    <div class="g-form-group unit size1of2">
+                    <div class="g-form-group unit size1of2 sm-size1of2">
                         <label for="projectType">Project Type</label>
                         <select ng-model="qform.projectType" id="projectType" class="g-form-control" required>
                             <option value="">Select an option</option>
@@ -78,7 +78,7 @@
                             <option>Other</option>
                         </select>
                     </div>
-                    <div class="g-form-group unit size1of2">
+                    <div class="g-form-group unit size1of2 sm-size1of2">
                         <label for="budget">Budget:</label>
                         <select ng-model="qform.budget" id="budget" class="g-form-control" required>
                             <option value="">Select an option</option>
