@@ -7092,7 +7092,6 @@ body.home .f-container .f-unit {
 }
 body.home .f-container .f-unit.f-unit1 {
   background: #fff;
-  pointer-events: none;
 }
 body.home .f-container .f-unit.f-unit2 {
   -webkit-animation: color_change 20s infinite alternate;
