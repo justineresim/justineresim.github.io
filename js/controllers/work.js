@@ -8,90 +8,83 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
     }
 
 	$scope.work = [
-		{
-			title: 'Nissan Infiniti Pricing Tool',
-            text: '<p>Prototype and global style guide.</p><p>I built this prototype and style guide for Autodata Solutions as a starting point for the web application.</p>',
-            image: 'img/work/ni1.png',
-            prototype: 'nissan',
-            count: 10,
-            images: [
-             	{
-                    desc: '<a target="_blank" href="work/nissan/layout.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
-                    src: 'img/work/ni1.png',
-                    count: 10
-                },
-                {
-                    desc: '<a target="_blank" href="work/nissan/layout.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
-                    src: 'img/work/ni2.png',
-                    count: 10
-                },
-                {
-                    desc: '<a target="_blank" href="work/nissan/metrics.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
-                    src: 'img/work/ni3.png',
-                    count: 10
-                },
-                {
-                    desc: '<a target="_blank" href="work/nissan/global.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
-                    src: 'img/work/ni4.png',
-                    count: 10
-                },
-                {
-                    desc: '<a target="_blank" href="work/nissan/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
-                    src: 'img/work/ni5.png',
-                    count: 10
-                },
-                {
-                    desc: '<a target="_blank" href="work/nissan/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
-                    src: 'img/work/ni6.png',
-                    count: 10
-                }
-
-            ]
+        {
+            title: 'Res.im',
+            text: 'We use UX research, usability testing, and web and application design to help clients discover and capitalize on new ideas.',
+            image: 'img/work/resim.png',
+            role: 'Development',
+            url: 'https://res.im'
+        },
+        {
+            title: 'VIQUA',
+            text: 'VIQUA is the world’s largest supplier of residential and light commercial UV water disinfection systems, providing safe water without the use of chemicals.',
+            image: 'img/work/viqua.png',
+            case: 'https://res.im/work/viqua/',
+            role: 'Development',
+            url: 'https://viqua.com/'
+        },
+        {
+            title: 'Durham College',
+            text: 'Durham College is a post-secondary institution east of Toronto, with 30,000 students and campuses in Oshawa and Whitby, Ontario, and a learning site in Pickering.',
+            image: 'img/work/durham.png',
+            case: 'https://res.im/work/durham-college/',
+            role: 'Front-end development',
+            url: 'https://durhamcollege.ca/',
+            externalPrototype: 'http://review.durham.git.resolutionim.com/styleguide',
+        },
+        {
+            title: 'SAIT',
+            text: 'SAIT is Alberta’s third-largest post-secondary institution, educating approximately 50,000 students per year globally with an emphasis on applied education and research.',
+            image: 'img/work/sait.png',
+            prototype: 'sait/youth/style-guide',
+            case: 'https://res.im/work/sait/',
+            role: 'Front-end development'
         },
 		{
-			title: 'ZTR',
-            text: '<p>ZTR Prototype.</p><p>I built this prototype for ResIM created for a redesign proposal of their web application.</p>',
+			title: 'ZTR Control Systems',
+            text: 'ZTR improves product design, warranty, legal, part sales, and dealer loyalty through telematics and data-driven decision making.',
             image: 'img/work/ztr1.png',
             prototype: 'ztr',
+            role: 'Front-end development',
             count: 9,
             images: [
              	{
-                    desc: '<a target="_blank" href="work/ztr/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/ztr/index.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ztr1.png',
                     count: 9
                 },
                 {
-                    desc: '<a target="_blank" href="work/ztr/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/ztr/index.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ztr2.png',
                     count: 9
                 },
                 {
-                    desc: '<a target="_blank" href="work/ztr/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/ztr/index.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ztr3.png',
                     count: 9
                 },
                 {
-                    desc: '<a target="_blank" href="work/ztr/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/ztr/index.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ztr4.png',
                     count: 9
                 },
                 {
-                    desc: '<a target="_blank" href="work/ztr/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/ztr/index.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ztr5.png',
                     count: 9
                 },
                 {
-                    desc: '<a target="_blank" href="work/ztr/global.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/ztr/global.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ztr6.png',
                     count: 9
                 },
                 {
-                    desc: '<a target="_blank" href="work/ztr/global.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/ztr/global.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ztr7.png',
                     count: 9
                 },
                 {
-                    desc: '<a target="_blank" href="work/ztr/global.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/ztr/global.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/ztr8.png',
                     count: 9
                 }
@@ -99,48 +92,49 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
         },
 		{
 			title: 'Huron County',
-            text: '<p>Huron County Prototype.</p><p>I built this prototype for ResIM created for a redesign proposal.</p>',
+            text: 'Huron County is located along the shores of Lake Huron. This vibrant community is the most agriculturally productive county in Ontario.',
             image: 'img/work/hc3.png',
             prototype: 'huron-county',
             count: 8,
+            role: 'Front-end development',
             images: [
              	{
-                    desc: '<a target="_blank" href="work/huron-county/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/huron-county/index.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/hc3.png',
                     count: 8
                 },
                 {
-                    desc: '<a target="_blank" href="work/huron-county/growing-together.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/huron-county/growing-together.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/hc4.png',
                     count: 8
                 },
                 {
-                    desc: '<a target="_blank" href="work/huron-county/childrens-services.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/huron-county/childrens-services.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/hc5.png',
                     count: 8
                 },
                 {
-                    desc: '<a target="_blank" href="work/huron-county/events.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/huron-county/events.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/hc6.png',
                     count: 8
                 },
                 {
-                    desc: '<a target="_blank" href="work/huron-county/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/huron-county/index.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/hc1.png',
                     count: 8
                 },
                 {
-                    desc: '<a target="_blank" href="work/huron-county/events.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/huron-county/events.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/hc2.png',
                     count: 8
                 },
                 {
-                    desc: '<a target="_blank" href="work/huron-county/global.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/huron-county/global.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/hc7.png',
                     count: 8
                 },
             	 {
-                    desc: '<a target="_blank" href="work/huron-county/global.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/huron-county/global.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/hc8.png',
                     count: 8
                 },
@@ -149,33 +143,35 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
         },
 		{
 			title: 'Confederation College',
-            text: '<p>Confederation College Prototype created as a starting point for the new site.</p><p>I built this prototype for ResIM as a starting point for the new website.</p>',
+            text: 'Located in Northern Ontario, Confederation College offers practical, hands-on programs and courses across 9 campuses to over 7600 full and part-time students each year.',
             image: 'img/work/confed1.png',
             prototype: 'confederation',
+            url: 'http://www.confederationcollege.ca/',
+            role: 'Front-end development',
             count: 7,
             images: [
              	{
-                    desc: '<a target="_blank" href="work/confederation/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/confederation/index.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/confed1.png',
                     count: 7
                 },
                 {
-                    desc: '<a target="_blank" href="work/confederation/programs.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/confederation/programs.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/confed2.png',
                     count: 7
                 },
 				{
-                    desc: '<a target="_blank" href="work/confederation/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/confederation/index.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/confed3.png',
                     count: 7
                 },
 				{
-                    desc: '<a target="_blank" href="work/confederation/programs.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/confederation/programs.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/confed4.png',
                     count: 7
                 },
 				{
-                    desc: '<a target="_blank" href="work/confederation/global.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="work/confederation/global.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/confed5.png',
                     count: 7
                 }
@@ -183,8 +179,10 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
         },
 		{
 			title: 'Golf Canada',
-            text: '<p>Canadian Golf Course History responsive website featuring an interactive map displaying Canadian golf courses throughout history.</p><p>This custom site was built by the team at ResIM, including myself.</p>',
+            text: 'Canadian Golf Course History responsive website featuring an interactive map displaying Canadian golf courses throughout history.',
             image: 'img/work/gc1.png',
+            case: 'https://res.im/work/golf-canada/',
+            role: 'Development',
             count: 6,
             images: [
              	{
@@ -197,6 +195,7 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
                     src: 'img/work/gc2.png',
                     count: 6
                 },
+                
                 {
                     desc: 'Check out golf courses across Canada at different points in time.',
                     src: 'img/work/gc3.png',
@@ -224,104 +223,41 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
                 }
             ]
         },
-	   {
-            title: 'Help Me',
-            text: '<p>Chrysler\'s Help Me web application.</p><p>I built this custom web application as Lead UI Developer for Autodata Solutions.</p>',
-            image: 'img/work/hm1.png',
-            count: 5,
-            images: [
-                {
-                    desc: 'Help Me',
-                    src: 'img/work/hm1.png',
-                    count: 5
-                },
-                   {
-                    desc: 'Help Me',
-                    src: 'img/work/hm2.png',
-                    count: 5
-                },
-                  {
-                    desc: 'Help Me',
-                    src: 'img/work/hm3.png',
-                    count: 5
-                },
-                  {
-                    desc: 'Help Me',
-                    src: 'img/work/hm4.png',
-                    count: 5
-                },
-                  {
-                    desc: 'Help Me',
-                    src: 'img/work/hm5.png',
-                    count: 5
-                },
-                  {
-                    desc: 'Help Me',
-                    src: 'img/work/hm6.png',
-                    count: 5
-                },
-                  {
-                    desc: 'Help Me',
-                    src: 'img/work/hm7.png',
-                    count: 5
-                },
-                  {
-                    desc: 'Help Me',
-                    src: 'img/work/hm8.png',
-                    count: 5
-                },
-                  {
-                    desc: 'Help Me',
-                    src: 'img/work/hm9.png',
-                    count: 5
-                },
-                  {
-                    desc: 'Help Me',
-                    src: 'img/work/hm10.png',
-                    count: 5
-                },
-                  {
-                    desc: 'Help Me',
-                    src: 'img/work/hm11.png',
-                    count: 5
-                },
-
-            ]
-        },
-	   {
+	    {
             title: 'Verto360',
-            text: '<p>Verto360 is a company from London Ontario that designs, manages, builds and furnishes commercial building interiors.</p><p>The team at ResIM, including myself, created this redesign of their website using Wordpress.<p>',
+            text: 'Verto360 is a company from London Ontario that designs, manages, builds and furnishes commercial building interiors.',
             image: 'img/work/verto1.png',
             url: 'http://verto360.com/',
+            role: 'Development',
             count: 3,
             images: [
                 {
-                    desc: '<a target="_blank" href="http://verto360.com/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="http://verto360.com/">Visit website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/verto1.png',
                     count: 3
                 },
                  {
-                    desc: '<a target="_blank" href="http://verto360.com/case-study/south-london-community-centre/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="http://verto360.com/case-study/south-london-community-centre/">Visit website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/verto2.png',
                     count: 3
                 },
                  {
-                    desc: '<a target="_blank" href="http://verto360.com/case-study/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="http://verto360.com/case-study/">Visit website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/verto3.png',
                     count: 3
                 },
                  {
-                    desc: '<a target="_blank" href="http://verto360.com">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="http://verto360.com">Visit website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/verto4.png',
                     count: 3
                 },
                 {
-                    desc: '<a target="_blank" href="http://verto360.com/contact/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="http://verto360.com/contact/">Visit website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/verto5.png',
                     count: 3
                 },
                  {
-                    desc: '<a target="_blank" href="http://verto360.com/about-verto360/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="http://verto360.com/about-verto360/">Visit website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/verto6.png',
                     count: 3
                 }
@@ -329,33 +265,34 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
         },
         {
             title: 'Fitness Health Match',
-            text: '<p>FHMatch is a social networking platform that connects people with a broad range of local fitness, health, and wellness professionals.<p>',
+            text: 'FHMatch is a social networking platform that connects people with a broad range of local fitness, health, and wellness professionals.',
             image: 'img/work/fhm5.png',
             url: 'http://www.fhmatch.com/',
+            role: 'Front-end development',
             count: 1,
             images: [
                 {
-                    desc: 'Fitness Health Match Homepage<br><a target="_blank" href="http://www.fhmatch.com/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="http://www.fhmatch.com/">Visit website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/fhm1.png',
                     count: 1
                 },
                  {
-                    desc: '<a target="_blank" href="http://www.fhmatch.com/register">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="http://www.fhmatch.com/register">Visit website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/fhm2.png',
                     count: 1
                 },
                  {
-                    desc: 'Browse fitness and health related articles.<br><a target="_blank" href="http://www.fhmatch.com/articles">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: 'Browse fitness and health related articles.<br><a target="_blank" href="http://www.fhmatch.com/articles">Visit website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/fhm3.png',
                     count: 1
                 },
                  {
-                    desc: 'Easily find health and fitness professional in your area.<br><a target="_blank" href="http://www.fhmatch.com/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: 'Easily find health and fitness professional in your area.<br><a target="_blank" href="http://www.fhmatch.com/">Visit website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/fhm4.png',
                     count: 1
                 },
                  {
-                    desc: 'Connect with professional to book appointments.<br><a target="_blank" href="http://www.fhmatch.com/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: 'Connect with professional to book appointments.<br><a target="_blank" href="http://www.fhmatch.com/">Visit website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/fhm5.png',
                     count: 1
                 }
@@ -363,48 +300,92 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
         },
        {
             title: 'Redeemer University',
-            text: '<p>Redeemer University College is an undergraduate university known for providing a high-quality liberal arts and sciences university education.</p>',
+            text: 'Redeemer University College is an undergraduate university known for providing a high-quality liberal arts and sciences university education.',
             image: 'img/work/redeemer1.png',
             url: 'https://www.redeemer.ca/',
+            case: 'https://res.im/work/redeemer-university-college/',
+            role: 'Development',
             count: 2,
             images: [
                 {
-                    desc: 'Redeemer University Homepage<br><a target="_blank" href="https://www.redeemer.ca/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: 'Redeemer University Homepage<br><a target="_blank" href="https://www.redeemer.ca/">Visit website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/redeemer1.png',
                     count: 2
                 },
                  {
-                    desc: '<a target="_blank" href="https://www.redeemer.ca/stories/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="https://www.redeemer.ca/stories/">Visit website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/redeemer2.png',
                     count: 2
                 },
                  {
-                    desc: '<a target="_blank" href="https://www.redeemer.ca/programs/art/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="https://www.redeemer.ca/programs/art/">Visit website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/redeemer3.png',
                     count: 2
                 },
                  {
-                    desc: '<a target="_blank" href="https://www.redeemer.ca/admissionscounsellor/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: '<a target="_blank" href="https://www.redeemer.ca/admissionscounsellor/">Visit website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/redeemer4.png',
                     count: 2
                 },
                  {
-                    desc: 'Campus Tour - Interactive map of different locations around the campus.<br><a target="_blank" href="https://www.redeemer.ca/contact/map-and-directions/campus-tour/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: 'Campus Tour - Interactive map of different locations around the campus.<br><a target="_blank" href="https://www.redeemer.ca/contact/map-and-directions/campus-tour/">Visit website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/redeemer5.png',
                     count: 2
                 },
                 {
-                    desc: 'Redeemer Today - Easily find current events and news happening around the campus.<br><a target="_blank" href="https://www.redeemer.ca/redeemer-today/">View Website<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    desc: 'Redeemer Today - Easily find current events and news happening around the campus.<br><a target="_blank" href="https://www.redeemer.ca/redeemer-today/">Visit website<span class="ti-arrow-top-right g-icon-right"></span></a>',
                     src: 'img/work/redeemer6.png',
                     count: 2
                 }
             ]
         },
         {
+            title: 'Nissan Infiniti',
+            text: 'This prototype and style guide was created for Autodata Solutions as a starting point for the Nissan Infiniti Pricing Tool web application.',
+            image: 'img/work/ni1.png',
+            prototype: 'nissan',
+            count: 10,
+            role: 'Front-end development',
+            images: [
+                {
+                    desc: '<a target="_blank" href="work/nissan/layout.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    src: 'img/work/ni1.png',
+                    count: 10
+                },
+                {
+                    desc: '<a target="_blank" href="work/nissan/layout.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    src: 'img/work/ni2.png',
+                    count: 10
+                },
+                {
+                    desc: '<a target="_blank" href="work/nissan/metrics.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    src: 'img/work/ni3.png',
+                    count: 10
+                },
+                {
+                    desc: '<a target="_blank" href="work/nissan/global.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    src: 'img/work/ni4.png',
+                    count: 10
+                },
+                {
+                    desc: '<a target="_blank" href="work/nissan/index.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    src: 'img/work/ni5.png',
+                    count: 10
+                },
+                {
+                    desc: '<a target="_blank" href="work/nissan/index.html">View prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
+                    src: 'img/work/ni6.png',
+                    count: 10
+                }
+
+            ]
+        },
+        {
             title: 'Build & Price',
-            text: '<p>Chrysler\'s Build & Price web application.</p>',
+            text: 'Use Chrysler\'s Build and Price tool to customize your new vehicle exactly how you want it. Choose the color, trim, options and more and easily calculate the costs.',
             image: 'img/work/bp1.png',
             url: 'http://www.chrysler.com/hostc/bmo/CUC201501/models.do?',
+            role: 'Front-end development',
             count: 4,
             images: [
                 {
@@ -501,79 +482,6 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
                     desc: 'Chrysler trim selector page.',
                     src: 'img/work/bp10.png',
                     count: 4
-                }
-            ]
-        },
-        		{
-			title: 'Wired Rooms',
-            text: '<p>An interior decorating Web Application.</p><p>I built and designed this web application, built for iPads, as my thesis project while attending Fanshawe college.</p>',
-            image: 'img/work/wr2.png',
-            count: 11,
-            images: [
-             	{
-                    desc: 'Homepage - help section.',
-                    src: 'img/work/wr1.png',
-                    count: 11
-                },
-                {
-                    desc: 'Library of inspirational images.',
-                    src: 'img/work/wr2.png',
-                    count: 11
-                },
-                {
-                    desc: 'Browse furniture to add to your project.',
-                    src: 'img/work/wr3.png',
-                    count: 11
-                },
-                {
-                    desc: 'Browse pantone colours to add to your project.',
-                    src: 'img/work/wr4.png',
-                    count: 11
-                },
-                {
-                    desc: 'Browse flooring to add to your project.',
-                    src: 'img/work/wr5.png',
-                    count: 11
-                },
-                 {
-                    desc: 'View of your current project.',
-                    src: 'img/work/wr6.png',
-                    count: 11
-                },
-                {
-                    desc: 'View of the items you have added to your favorites.',
-                    src: 'img/work/wr7.png',
-                    count: 11
-                },
-                {
-                    desc: 'Learn more about the products and where you can purchase them.',
-                    src: 'img/work/wr8.png',
-                    count: 11
-                },
-                {
-                    desc: 'Create a virtual room using your items.',
-                    src: 'img/work/wr9.png',
-                    count: 11
-                }
-
-            ]
-        },
-        {
-			title: 'Wired Rooms Promotional Website',
-            text: '<p>I designed and built this promotional website for my thesis while attending Fanshawe College.</p>',
-            image: 'img/work/promo1.png',
-            prototype: 'thesis',
-            count: 12,
-            images: [
-             	{
-                    desc: 'Wired Rooms Promotional Website<br><a target="_blank" href="work/thesis/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
-                    src: 'img/work/promo1.png',
-                    count: 12
-                },
-                {
-                    desc: 'Intro screen with video for Wired Rooms Promotional Website<br><a target="_blank" href="work/thesis/index.html">View Prototype<span class="ti-arrow-top-right g-icon-right"></span></a>',
-                    src: 'img/work/promo2.png',
-                    count: 12
                 }
             ]
         }

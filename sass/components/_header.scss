@@ -25,6 +25,11 @@ header{
 				font-size: 15px;
 				text-transform: uppercase;
 				text-decoration: none;
+				margin-right: 20px;
+				font-weight: 900;
+				&:hover{
+					color: $primary-3;
+				}
 			}
 			&.logo{
 				a{
@@ -41,18 +46,12 @@ header{
 
 body.home{
 	header li a.home{
-		text-decoration: underline;
+		border-bottom: 4px solid $grey-2;
 	}
 }
 
 body.work{
 	header li a.work{
-		text-decoration: underline;
-	}
-}
-
-body.contact{
-	header li a.contact{
-		text-decoration: underline;
+		border-bottom: 4px solid $grey-2;
 	}
 }

@@ -11,39 +11,38 @@
 	<meta name="author" content="Justine Lileikis">
 	<meta name="keywords" content="website, London, Ontario, mobile, apps, web developer, web design">
 
-	<meta property="og:title" content="Justine Lileikis - Web Developer"/>
+	<meta property="og:title" content="Justine Lileikis - Software developer"/>
 	<meta property="og:url" content="http://justineresim.github.io"/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:site_name" content="Justine Lileikis"/>
-	<meta property="og:description" content="I am Justine. I build websites, mobile apps and custom web applications."/>
-	<meta property="og:image" content="http://justineresim.github.io/img/logo4.png"/>
+	<meta property="og:description" content="Builder of websites and custom web applications."/>
+	<meta property="og:image" content="http://justineresim.github.io/img/profile-cropper.jpg"/>
 
-	<!-- Favicon -->
-	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-	<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="img/favicons/favicon-194x194.png" sizes="194x194">
-	<link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png" sizes="96x96">
-	<link rel="icon" type="image/png" href="img/favicons/android-chrome-192x192.png" sizes="192x192">
-	<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
 	<link rel="manifest" href="img/favicons/manifest.json">
-	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href="img/favicons/favicon.ico">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
-	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- Adobe Typekit fonts -->
 	<script src="https://use.typekit.net/hed4ino.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 	<!-- Global CSS -->
 	<link href="css/screen.min.css" rel="stylesheet">
@@ -66,25 +65,13 @@
 </head>
 
 <body ng-app="angularApp" class="{{bodyClass}}">
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-74648672-1', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
 
 	<div ng-controller="HomeCtrl">
 		<header>
 			<nav class="g-container-lg g-clearfix">
 				<ul>
-					<li class="logo"><a href="#/"><img src="img/logo4.png"></a></li>
-					<li><a class="home" href="#/">Justine Lileikis</a></li>
+					<li><a class="home" href="#/">Home</a></li>
 					<li><a class="work" href="#work">Work</a></li>
-					<li><a class="contact" href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -98,31 +85,8 @@
 
 	</div>
 
-		
-	<footer class="g-clear">
-		<div class="g-container-sm">
-			<ul>
-				<li><a href="https://ca.linkedin.com/in/justinelileikis" target="_blank"><span class="ti-linkedin"></span></a></li>
-				<li><a href="https://www.instagram.com/justinelileikis/" target="_blank"><span class="ti-instagram"></span></a></li>
-				<li><a href="https://www.facebook.com/justine.lileikis" target="_blank"><span class="ti-facebook"></span></a></li>
-			</ul>
-			<div class="g-footer-links">
-				<a href="mailto:justine@res.im"><span class="g-icon-left ti-email"></span>justine@justinelileikis.com</a>
-				<a href="#contact">Contact Me</a>
-			</div>
-		</div>
-	</footer>
-
 	<!-- Main js file -->
 	<script src="js/min/app-min.js"></script>
-
-	<!-- Contact form js -->
-	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-	<script type="text/javascript">
-	   (function(){
-	      emailjs.init("user_lg646AE2KYAdH0gqP2k1g");
-	   })();
-	</script>
 
 </body>
 

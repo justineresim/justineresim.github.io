@@ -1,15 +1,26 @@
+<section class="g-container-lg g-section-container">
+	<h1>Work</h1>
+</section>
 
-	<div class="g-container-sm g-section-container">
-		<h1>Work.</h1>
-	</div>
-
-	<div class="g-container-lg g-section-container-last">
-		<div class="line margin-bottom">
-			<div ng-repeat="i in work" class="g-featured size1of3 unit animated zoomIn">
-				<a class="fancy-box-trigger g-img" ng-click="fancyBox(i.count)" id="fancy-box-{{i.count}}" style="background-image:url({{i.image}}); background-size: 80% auto; background-repeat: no-repeat; background-position: center center;">
-				</a>
+<section class="g-container-sm g-section-container-last">
+	<div class="margin-bottom">
+		<div ng-repeat="i in work" class="g-featured row margin-bottom">
+			<div class="col-2of5 sm-1of3">
+				<img class="fancy-box-trigger g-img animated zoomIn" ng-click="fancyBox(i.count)" id="fancy-box-{{i.count}}" src="{{i.image}}">
+			</div>
+			<div class="col-3of5 sm-2of3">
 				<div class="g-text">
-					<h3>{{i.title}}</h3>
+					<h2>{{i.title}}</h2>
+					<p class="desc">{{i.text}}</p>
+					<p>
+						<a class="cta" href="work/{{i.prototype}}" target="_blank" ng-show="i.prototype">View prototype<i class="fas fa-arrow-right"></i></a>
+
+						<a class="cta" href="{{i.prototype}}" target="_blank" ng-show="i.externalPrototype">View prototype<i class="fas fa-arrow-right"></i></a>
+
+						<a class="cta" ng-show="i.case" href="{{i.case}}" target="_blank">Case study on Res.im<i class="fas fa-arrow-right"></i></a>
+						<a class="cta" href="work/{{i.url}}" target="_blank" ng-show="i.url">Visit website<i class="fas fa-arrow-right"></i></a>
+						<a ng-show="i.count" class="cta fancy-box-trigger" ng-click="fancyBox(i.count)">Image gallery<i class="fas fa-arrow-right"></i></a>
+					</p>
 				</div>
 				<div>
 					<a ng-repeat="image in i.images" class="fancybox fancy-box-{{image.count}}" rel="gallery{{image.count}}" href="{{image.src}}" title="{{image.desc}}"></a>
@@ -17,4 +28,17 @@
 			</div>
 		</div>
 	</div>
+</section>
+
+<footer class="g-clear">
+	<div class="g-container-sm">
+		<div class="g-footer-links">
+			<ul>
+				<li><a href="https://ca.linkedin.com/in/justinelileikis" target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a></li>
+				<li><a href="https://res.im/about/justine-lileikis/" target="_blank"><i class="fas fa-user"></i>Profile on Res.im</a></li>
+				<li><a href="mailto:justinelileikis@gmail.com"><i class="fas fa-envelope"></i>Email</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
 

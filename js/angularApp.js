@@ -19,12 +19,6 @@ myApp.config(function($routeProvider) {
             controller  : 'WorkCtrl'
         })
 
-        // route for the contact page
-        .when('/contact', {
-            templateUrl : 'js/views/contact.html',
-            controller  : 'ContactCtrl'
-        })
-
         // route for the gloabl styles page
         .when('/styles', {
             templateUrl : 'js/views/styles.html',
@@ -32,7 +26,6 @@ myApp.config(function($routeProvider) {
         })
 
         .otherwise({ redirectTo: '/' });
-
 });
 
 

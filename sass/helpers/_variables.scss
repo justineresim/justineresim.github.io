@@ -4,8 +4,8 @@
 
 /* ======================= Colours ======================== */
 
-$primary-1: #BBADBC;
-$primary-2: #D5DFC3;
+$primary-1: #ad3496;
+$primary-2: #1c4469;
 $primary-3: #AAC8CC;
 $primary-4: #495F6D;
 
@@ -23,9 +23,7 @@ $border-color: $quaternary-bg-color;
 $border-color-2: $quaternary-bg-color;
 
 $error-color: #B11414;
-
 $body-bg-color: #fff;
-
 
 /* ====================== Misc ======================== */
 
@@ -45,15 +43,16 @@ $link-hover-color: darken($primary-4, 15%);
 $link-color-secondary: #fff;
 $link-hover-color-secondary: darken(#fff, 5%);
 
+
 //Type
 $heading-font: 'source-sans-pro', sans-serif; 
-$heading-font-weight: 300;
+$heading-font-weight: 600;
 $heading-color: $grey-2;
 $heading-color-secondary: $grey-3;
 
 $body-font: 'source-sans-pro', sans-serif; 
-$body-font-weight: 400;
-$body-font-weight-bold: 600;
+$body-font-weight: 500;
+$body-font-weight-bold: 900;
 
 $text-color: $grey-2;
 $text-color-light: $grey-3;
@@ -198,7 +197,8 @@ $max-break-mobile: 480px;
 
 //Grid system variables
 $gutter: 15px;
-$smaller-gutter: 10px;
+$sm-gutter: 10px;
+$lg-gutter: 10px;
 
 
 

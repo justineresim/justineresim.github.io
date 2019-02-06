@@ -3,37 +3,45 @@
    ========================================================================== */
 
 footer{
-	bottom: -100%;
 	position: relative;
 	width: 100%;
 	z-index: 1000;
 	text-align: center;
 	padding: 2em 0;
-	background-color: #3E3B42;
-	a{
-		color: #fff;
-	}
+	background-color: $primary-3;
 	ul{
 		list-style-type: none;
 		padding: 0;
-		margin: 0 0 .8em 0;
+		margin: 0 0 0 0;
 		li{
 			margin: 0;
 			padding: 0;
 			display: inline-block;
 			a{
 				text-decoration: none;
-				color: #fff;
-				font-size: 1.5em;
+				color: $primary-2;
 				padding: .5em;
+				i{
+					display: inline-block;
+					background-color: #fff;
+					color: $primary-1;
+					border-radius: 50%;
+					width: 30px;
+					height: 30px;
+					text-align: center;
+					line-height: 29px !important;
+					margin-right: 8px;
+					font-size: 14px;
+					@extend .transition;
+				}
+				&:hover, &:focus{
+					color: $primary-1;
+					i{
+						color: #fff;
+						background-color: $primary-1;
+					}
+				}
 			}
-		}
-	}
-	.g-footer-links{
-		a{
-			display: block;
-			font-size: .75em;
-			margin-top: .3em;
 		}
 	}
 }
