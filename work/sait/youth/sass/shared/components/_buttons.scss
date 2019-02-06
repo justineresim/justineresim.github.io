@@ -1,0 +1,214 @@
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+*[class*="g-btn"]{
+	position: relative;
+	display: inline-block;
+	padding: $btn-padding;
+	margin-bottom: 0;
+	font-size: $btn-font-size;
+	line-height: $btn-line-height;
+	height: $btn-height;
+	text-align: $btn-text-align;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	user-select: none;
+	background-color: $btn-bg;
+	border-radius: $btn-border-radius;
+	font-family: $btn-font-family;
+	color: $btn-color;
+	border: $btn-border;
+	text-decoration: none;
+	outline: none;
+	text-transform: $btn-text-transform;
+	font-weight: $btn-font-weight;
+	box-shadow: $btn-box-shadow;
+	@extend .g-transition;
+	&.g-btn-block{
+		width: 100%;
+	}
+	&.g-btn-square{
+		width: $btn-height;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	&.g-btn-sm{
+		padding: $btn-sm-padding;
+		font-size: $btn-sm-font-size;
+		line-height: $btn-sm-line-height;
+		height: $btn-sm-height;
+		text-transform: $btn-sm-text-transform;
+		border-radius: $btn-sm-border-radius;
+		font-weight: $btn-sm-font-weight;
+		&.g-btn-square{
+			width: $btn-sm-height;
+		}
+	}
+	&.g-btn-lg{
+		padding: $btn-lg-padding;
+		font-size: $btn-lg-font-size;
+		line-height: $btn-lg-line-height;
+		height: $btn-lg-height;
+		border-radius: $btn-lg-border-radius;
+		&.g-btn-square{
+			width: $btn-lg-height;
+		}
+	}
+	&:hover, &:focus {
+		text-decoration: none;
+		box-shadow: $btn-hover-box-shadow;
+		color: $btn-hover-color;
+		background-color: $btn-hover-bg;
+		border: $btn-hover-border;
+		outline: 0;
+	}
+	&:active, &.g-active {
+		text-decoration: none;
+		background: $btn-active-bg;
+		color: $btn-active-color;
+		border: $btn-active-border;
+		box-shadow: $btn-active-box-shadow;
+	}
+	&.g-btn-2{
+		background: $btn-2-bg;
+		border: $btn-2-border;
+		color: $btn-2-color;
+		border-radius: $btn-2-border-radius;
+		box-shadow: $btn-2-box-shadow;
+		&:hover, &:focus {
+			background: $btn-2-hover-bg;
+			border: $btn-2-hover-border;
+			color: $btn-2-hover-color;
+			box-shadow: $btn-2-hover-box-shadow;
+		}
+		&:active, &.g-active {
+			background: $btn-2-active-bg;
+			border: $btn-2-active-border;
+			color: $btn-2-active-color;
+			box-shadow: $btn-2-active-box-shadow;
+		}
+	}
+	&.g-btn-3{
+		background: $btn-3-bg;
+		border: $btn-3-border;
+		color: $btn-3-color;
+		border-radius: $btn-3-border-radius;
+		box-shadow: $btn-3-active-box-shadow;
+		&:hover, &:focus {
+			background: $btn-3-hover-bg;
+			border: $btn-3-hover-border;
+			color: $btn-3-hover-color;
+			box-shadow: $btn-3-hover-box-shadow;
+		}
+		&:active, &.g-active {
+			background: $btn-3-active-bg;
+			border: $btn-3-active-border;
+			color: $btn-3-active-color;
+			box-shadow: $btn-3-active-box-shadow;
+		}
+	}
+	&.g-btn-4{
+		background: $btn-4-bg;
+		border: none;
+		color: $btn-4-color;
+		box-shadow: $btn-4-box-shadow;
+		border-radius: $btn-4-border-radius;
+		&:hover, &:focus {
+			background: $btn-4-hover-bg;
+			border: none;
+			color: $btn-4-hover-color;
+			box-shadow: $btn-4-hover-box-shadow;
+		}
+		&:active, &.g-active {
+			background: $btn-4-active-bg;
+			border: none;
+			color: $btn-4-active-color;
+			box-shadow: $btn-4-active-box-shadow;
+		}
+	}
+	&.g-btn-5{
+		background: $btn-5-bg;
+		border: $btn-5-border;
+		color: $btn-5-color;
+		border-radius: $btn-5-border-radius;
+		box-shadow: $btn-5-box-shadow;
+		&:hover, &:focus {
+			background: $btn-5-hover-bg;
+			border: $btn-5-hover-border;
+			color: $btn-5-hover-color;
+			box-shadow: $btn-5-hover-box-shadow;
+		}
+		&:active, &.g-active {
+			background: $btn-5-active-bg;
+			border: $btn-5-active-border;
+			color: $btn-5-active-color;
+			box-shadow: $btn-5-active-box-shadow;
+		}
+	}
+	&.g-btn-6{
+		background: $btn-6-bg;
+		border: $btn-6-border;
+		color: $btn-6-color;
+		border-radius: $btn-6-border-radius;
+		box-shadow: $btn-6-box-shadow;
+		&:hover, &:focus {
+			background: $btn-6-hover-bg;
+			border: $btn-6-hover-border;
+			color: $btn-6-hover-color;
+			box-shadow: $btn-6-hover-box-shadow;
+		}
+		&:active, &.g-active {
+			background: $btn-6-active-bg;
+			border: $btn-6-active-border;
+			color: $btn-6-active-color;
+			box-shadow: $btn-6-active-box-shadow;
+		}
+	}
+	&.g-btn-7{
+		background: $btn-7-bg;
+		border: $btn-7-border;
+		color: $btn-7-color;
+		border-radius: $btn-7-border-radius;
+		box-shadow: $btn-7-box-shadow;
+		&:hover, &:focus {
+			background: $btn-7-hover-bg;
+			border: $btn-7-hover-border;
+			color: $btn-7-hover-color;
+			box-shadow: $btn-7-hover-box-shadow;
+		}
+		&:active, &.g-active {
+			background: $btn-7-active-bg;
+			border: $btn-7-active-border;
+			color: $btn-7-active-color;
+			box-shadow: $btn-7-active-box-shadow;
+		}
+	}
+	&.g-btn-8{
+		background: $btn-8-bg;
+		border: $btn-8-border;
+		color: $btn-8-color;
+		border-radius: $btn-8-border-radius;
+		box-shadow: $btn-8-box-shadow;
+		&:hover, &:focus {
+			background: $btn-8-hover-bg;
+			border: $btn-8-hover-border;
+			color: $btn-8-hover-color;
+			box-shadow: $btn-8-hover-box-shadow;
+		}
+		&:active, &.g-active {
+			background: $btn-8-active-bg;
+			border: $btn-8-active-border;
+			color: $btn-8-active-color;
+			box-shadow: $btn-8-active-box-shadow;
+		}
+	}
+	&.g-disabled{
+		opacity: .45;
+		pointer-events: none;
+	}
+}
+

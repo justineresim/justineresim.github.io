@@ -1,0 +1,16 @@
+*.log
+*.scssc
+*.css.map
+.htaccess
+sitemap.xml
+sitemap.xml.gz
+/readme.html
+/license.txt
+
+ # OS generated files #
+######################
+.DS_Store
+.DS_Store?
+
+node_modules
+.sass-cashe

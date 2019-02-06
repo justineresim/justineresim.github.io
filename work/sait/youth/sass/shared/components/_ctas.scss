@@ -1,0 +1,107 @@
+/* ==========================================================================
+   CTAs
+   ========================================================================== */
+
+.g-cta{
+	padding: 10px 15px;
+	display: block;
+	margin-bottom: .8em;
+	border: $card-border;
+	background-color: $card-bg-color;
+	border-radius: $card-border-radius;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	background-color: #fff;
+	position: relative;
+	span.g-text{
+		width: 100%;
+		padding-right: 50px;
+		color: $grey-2;
+		display: block;
+		.g-small{
+			color: $grey-4;
+			@extend .g-font-small;
+			font-weight: 300;
+			display: block;
+			margin-top: 5px;
+		}
+	}
+	.g-subhead{
+		display: block;
+		margin-bottom: 5px;
+	}
+	span.g-icon{
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		margin-top: -10px;
+		line-height: 20px;
+		@extend .g-transition;
+	}
+	&.g-w-icons{
+		padding: 0px 15px;
+	}
+	&.g-secondary{
+		border: 1px solid $brand-2;
+		.g-text{
+			color: $brand-2;
+		}
+		&:hover, &.g-active, &:focus{
+			color: darken($brand-2, 10%);
+			.g-text{
+				color: darken($brand-2, 10%);
+			}
+		}
+	}
+	&.g-tertiary{
+		@extend .g-box-shadow3;
+		border-color: #fff;
+	}
+	&.g-quaternary{
+		background-color: $brand-2;
+		border: 1px solid $brand-2;
+		color: #fff;
+		.g-text{
+			color: #fff;
+		}
+		&:hover, &.g-active, &:focus{
+			background-color: darken($brand-2, 5%);
+		}
+	}
+	&.g-5{
+		border: 1px solid $brand-4;
+	}
+	&.g-icon-cta{
+		.g-icon-right{
+			@extend .g-transition;
+			color: $brand-4;
+			bottom: 0;
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    border-left: 1px solid $brand-4;
+		    line-height: 42px;
+		    width: 42px;
+		    text-align: center;
+		    font-size: 20px;
+		}
+		.g-text{
+			margin-right: 42px;
+		}
+		&:hover, &.g-active, &:focus{
+			.g-icon-right{
+				color: #fff;
+				background-color: $brand-4;
+			}
+		}
+	}
+}
+
+a.g-cta:hover, a.g-cta:active, a.g-cta:focus{
+	@extend .g-box-shadow3;
+	span.g-icon{
+		right: 15px;
+	}
+}

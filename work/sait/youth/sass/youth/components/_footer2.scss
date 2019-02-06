@@ -1,0 +1,8 @@
+/* ==========================================================================
+   Global Footer
+   ========================================================================== */
+
+//footer addition - so that when we have a fixed sidebar it doesn't go over the footer on scroll
+footer.g-footer{
+	position: relative;
+}

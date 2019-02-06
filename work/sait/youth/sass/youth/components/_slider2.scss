@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Slick Slider custom styling
+    https://github.com/kenwheeler/slick
+	http://kenwheeler.github.io/slick/
+
+	Dependencies:
+	//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js
+	//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css
+	//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css
+
+   ========================================================================== */
+
+
+//large image slider edits!
+.g-image-slider-lg{
+	.slick-slide{
+		padding: 0;
+	    transform: scale(.96);
+	    @media (max-width: $max-break-desktop){
+			margin: 0 10px;
+		}
+	}
+	@media (min-width: 800px) {
+		button[class*='slick-']{
+			right: 160px;
+			&.slick-prev {
+				left: 160px;
+			}
+		}
+	}
+	
+}
+
+
+

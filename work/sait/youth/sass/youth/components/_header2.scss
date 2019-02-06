@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Global Header
+   ========================================================================== */
+
+//styling edits
+header.g-header{
+	.g-secondary-menu{
+		a.g-link-5{
+			color: $link-color-5;
+			&:hover{
+				color: $link-color-hover-5;
+			}
+		}
+	}
+}
+
+
+@media (max-width: $max-break-mobile-nav){
+	.g-headers-container {
+	    margin-top: 0;
+	    height: 51px;
+	}
+}
+
+body{
+	.g-main{
+		//so we never see under the footer even when pages don't have much content
+		@media (min-height: 600px){
+			min-height: 540px;
+		}
+		@media (min-height: 700px){
+			min-height: 640px;
+		}
+		@media (min-height: 800px){
+			min-height: 740px;
+		}
+		@media (min-height: 900px){
+			min-height: 840px;
+		}
+		@media (min-height: 1000px){
+			min-height: 940px;
+		}
+		@media (min-height: 1100px){
+			min-height: 1040px;
+		}
+	
+	}
+}

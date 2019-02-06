@@ -1,0 +1,114 @@
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+table.g-table{
+	width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+	thead, tbody, tfoot, tr, th, td{
+	    margin: 0;
+	    padding: 0;
+	    border: none;
+	    border-collapse: inherit;
+	    border-spacing: 0;
+	    border-color: inherit;
+	    vertical-align: top;
+	    -webkit-border-horizontal-spacing: 0;
+	    -webkit-border-vertical-spacing: 0;
+	}
+	thead{
+		border-bottom: 1px solid $table-border-color;
+		text-align: left;
+	}
+	tbody{
+		font-weight: normal;
+	    font-weight: inherit;
+	}
+	&.g-table-striped{
+		thead, tbody, tfoot, tr, th, td{
+		    padding: $table-padding;
+		}
+	}
+	&.g-table-striped>tbody>tr:nth-of-type(odd) {
+	    background-color: $table-striped-bg-color;
+	}
+	&.g-table-bordered{
+		td, td {
+		    border-top: 1px solid $table-border-color;
+		}
+	}
+	&.g-table-component{
+		margin: 0;
+		border: 1px solid $border-color;
+	}
+	&.g-table-hover{
+		>tbody>tr:hover {
+			@extend .g-transition;
+		    background-color: $table-hover-bg-color;
+		}
+	}
+	//stacked table on < tablet
+	&.g-tablet-stacked{
+		@media (max-width: $max-break-tablet) {
+			thead{
+				tr{
+					display: none;
+				}
+			}
+			td{
+				display: block;
+				width: 100%;
+				padding: 0px;
+			}
+			tr{
+				padding: 15px;
+				display: block;
+			}
+			tr td:not(:first-child){
+				display: none;
+			    padding-left: 40px;
+			}
+			tr td:first-child{
+				margin-bottom: 5px;
+				position: relative;
+				padding-left: 40px;
+			}
+		}
+		.g-open-link{
+			font-size: 20px;
+			padding: 0 10px 10px 10px;
+			position: absolute;
+			left: -5px;
+			@media (min-width: $min-break-tablet) {
+				display: none;
+			}
+		}
+	}
+	&.g-stack{
+		@media (max-width: $max-break-tablet) {
+			thead{
+				tr{
+					display: none;
+				}
+			}
+			td{
+				display: block;
+				width: 100%;
+				padding: 5px;
+			}
+			tr{
+				padding: 15px 10px;
+				display: block;
+			}
+		}
+	}
+	@media (min-width: 940px){
+		&.g-table-striped.g-table-lg{
+			thead, tbody, tfoot, tr, th, td{
+		        padding: 15px 13px;
+			}
+		}	
+	}
+}
+

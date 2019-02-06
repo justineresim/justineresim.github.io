@@ -1,0 +1,133 @@
+/* ==========================================================================
+   General Styling
+   ========================================================================== */
+html{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    transition: right linear 300ms;
+    right: 0;
+    position: relative;
+    font-family: $body-font;
+    color: $text-color;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%; 
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    //tooltipster bug fix
+    overflow-x: visible !important;
+    &.g-fixed-header {
+        padding: 103px 0 0 0;
+    }
+    b,
+    strong {
+        font-weight: $body-font-weight-bold;
+    }
+    @media (max-width: $max-break-tablet) {
+        font-size: 95%;
+    }
+    @media (max-width: $max-break-mobile) {
+        font-size: 88%;
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid $border-color;
+    margin: 1em 0;
+    &.g-secondary{
+        border-top: 1px solid $brand-4;
+    }
+}
+
+p {
+    margin: .4em 0 .8em 0;
+    line-height: $p-line-height;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+table {
+    margin: .4em 0 .8em 0;
+}
+
+
+// Links
+a {
+    color: $link-color;
+    text-decoration: none;
+    cursor: pointer;
+    @extend .g-transition;
+    font-weight: $body-font-weight-bold;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $link-color-hover;
+        outline: none;
+    }
+    &.g-disabled {
+        opacity: .4;
+        pointer-events: none;
+    }
+}
+
+.g-heading-w-link{
+    h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5{
+        display: inline-block;
+    }
+    @media (max-width: $max-break-desktop) {
+        h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5{
+            display: block;
+            margin-bottom: 5px;
+        }
+        .g-vertical-line{
+            display: none;
+        }
+        a{
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+    }
+}
+
+.g-vertical-line{
+    background-color: $grey-2;
+    width: 1px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 15px;
+}
+

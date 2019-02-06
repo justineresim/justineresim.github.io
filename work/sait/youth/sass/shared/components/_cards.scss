@@ -1,0 +1,209 @@
+/* ==========================================================================
+   Cards
+   ========================================================================== */
+
+.g-card{
+	border: $card-border;
+	background-color: $card-bg-color;
+	border-radius: $card-border-radius;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	background-color: #fff;
+	position: relative;
+	&.g-card-shadow{
+		box-shadow: $card-box-shadow;
+		border: none;
+	}
+	&.g-card-secondary{
+		background-color: $bg-color-2;
+	}
+	&.g-profile{
+		overflow: visible;
+		margin-top: 25px;
+		.g-profile-img{
+			position: relative;
+			max-width: 150px;
+			+ *{
+				margin-top: 0;
+			}
+			&.g-pull-right{
+				margin: -50px 0 15px 20px;
+			}
+			&.g-pull-left{
+				margin: -50px 20px 15px 0;
+			}
+		}
+		@media (max-width: $max-break-mobile) {
+			margin-top: 0;
+			.g-card-content{
+				padding: 15px;
+			}
+			.g-profile-img{
+				max-width: 100px;
+				&.g-pull-right{
+					margin: 0 0 5px 10px;
+				}
+				&.g-pull-left{
+					margin: 0 10px 5px 0;
+				}
+			}
+		}
+	}
+	&.g-related{
+		min-height: 130px;
+		.g-card-image{
+			background-size: cover;
+			background-position: center center;
+			width: 100px;
+			height: 130px;
+			position: absolute;
+		}
+		.g-card-content{
+			padding: 15px 15px 15px 115px;
+			.h4{
+				margin-bottom: 0;
+			}
+		}
+		&.g-sm{
+			height: 100px;
+			min-height: 100px;
+			.g-card-image{
+				height: 100px;
+				width: 100px;
+			}
+			.g-card-content{
+			    height: 100px;
+			    display: table;
+			    width: 100%;
+			    table-layout: fixed;
+			    padding: 0px 10px 5px 115px;
+				.g-card-content-inner{
+					display: table-cell;
+	    			vertical-align: middle;
+	    			width: 100%;
+	    			margin: 0px auto;
+	    			> div{
+	    				margin-bottom: 0;
+	    			}
+	    			.h4{
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		&.g-lg{
+			min-height: 240px;
+			.g-card-image{
+				height: 240px;
+				width: 170px;
+			}
+			.g-card-content{
+				padding: 20px 20px 20px 190px;
+			}
+			@media (max-width: $max-break-mobile) {
+				min-height: 0;
+				.g-card-image{
+					display: none;
+				}
+				.g-card-content{
+					padding: 20px;
+				}
+			}
+		}
+	}
+	&.g-related-2{
+		height: 275px;
+		.g-hidden-link{
+			color: $brand-2;
+			opacity: 0;
+			height: 5px;
+			margin-top: 3px;
+		}
+		&.g-w-hidden-link{
+			&:hover{
+				.g-hidden-link{
+					opacity: 1;
+				}
+				.g-card-image{
+					height: 175px;
+				}
+			}
+		}
+		.g-card-image{
+			background-size: cover;
+			background-position: center center;
+			width: 100%;
+			height: 195px;
+			transition: height 100ms linear;
+		}
+		.g-card-content{
+			padding: 0px 10px;
+		    height: 80px;
+		    display: table;
+		    width: 100%;
+		    table-layout: fixed;
+		    .g-card-content-inner{
+		    	display: table-cell;
+    			text-align: center;
+    			vertical-align: middle;
+    			width: 100%;
+    			margin: 0px auto;
+    			> div{
+    				margin-bottom: 0;
+    			}
+    			.h4{
+					margin-bottom: 0;
+				}
+		    }
+		}
+	}
+	&.g-card-info{
+	    word-wrap: break-word;
+		.g-heading{
+			@extend .g-font-larger;
+			color: $grey-2;
+			font-weight: 600;
+		}
+		.g-card-img-header{
+			display: block;
+			background-size: cover;
+			background-position: center center;
+			height: 150px;
+		}
+		.g-card-content, .g-card-content-sm{
+			min-height: 210px;
+			@media (min-width: 1100px) and (max-width: 1200px) {
+				min-height: 235px;
+			}
+			@media (max-width: $max-break-mobile) {
+				min-height: 0;
+			}
+			&.g-card-content-full{
+				min-height: 360px;
+				@media (min-width: 1100px) and (max-width: 1200px) {
+					min-height: 385px;
+				}
+				@media (max-width: $max-break-mobile) {
+					min-height: 0;
+				}
+			}
+		}
+	}
+	table{
+		margin: 0;
+	}
+}
+
+a.g-related:hover, a.g-related-2:hover{
+	@extend .g-box-shadow2;
+}
+
+.g-card-content{
+	padding: $card-padding;
+}
+
+.g-card-content-sm{
+	padding: $card-padding-sm;
+}

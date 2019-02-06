@@ -1,0 +1,32 @@
+/* ==========================================================================
+   CEC Homepage
+   ========================================================================== */
+
+
+// 'Explore Industries & Careers' Section 
+
+#careerSection{
+	height: 100%;
+	position: relative;
+	transition: height 700ms linear;
+	@media (max-width: $max-break-desktop) {
+		min-height: 900px;
+	}
+}
+
+#careerCategoryCards .g-card{
+    animation-duration: 700ms;
+    @include mui-animation(slide(in, up, 20px), fade);
+    display: none;
+    &.g-active{
+        display: block;
+    }
+}
+
+#careerCategoryHeading{
+	@media (max-width: $max-break-desktop) {
+		margin-top: 0 !important;
+	}
+}
+
+

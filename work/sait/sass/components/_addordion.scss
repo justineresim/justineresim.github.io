@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Accordion
+   ========================================================================== */
+
+.g-accord{
+	border-top: 1px solid $border-color;
+	border-bottom: 1px solid $border-color;
+	margin-bottom: 1.2em;
+	.g-accord-header{
+		position: relative;
+		display: block;
+		background-color: $bg-color-2;
+		@extend .g-font-large;
+		font-weight: 600;
+		padding: $table-padding;
+		color: $grey-2;
+		span.g-label{
+			display: block;
+			width: 100%;
+			padding-right: 50px;
+		}
+		span.g-icon{
+			position: absolute;
+		    right: 13px;
+		    top: 50%;
+		    margin-top: -14px;
+		}
+		&:hover{
+			color: $brand-2;
+			span.ion-plus-round{
+				@include mui-animation(spin(in, 0.5turn));
+				animation-duration: 1000ms;
+			}
+		}
+	}
+	.g-accord-body{
+		display: none;
+		border-top: 1px solid $grey-2;
+		table{
+			margin: 0;
+		}
+		&.g-open{
+			display: block;
+		}
+	}
+	.g-accord-body-content{
+		padding: $table-padding;
+	}
+}

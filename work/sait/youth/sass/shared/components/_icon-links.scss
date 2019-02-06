@@ -1,0 +1,40 @@
+/* ==========================================================================
+   Social Links
+   ========================================================================== */
+
+.g-icon-links{
+    a{
+        padding: 4px;
+        font-size: 25px;
+        color: $icon-link-color;
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover{
+            color: $icon-link-hover-color;
+        }
+    }
+    span, a{
+        display: inline-block;
+        line-height: 36px;
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+}
+
+.g-icon-links.g-secondary{
+    a{
+        color: #fff;
+        background-color: $brand-2;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        line-height: 29px;
+        text-align: center;
+        font-size: 22px;
+        &:hover, &:focus{
+            background-color: $brand-4;
+        }
+    }
+}
+

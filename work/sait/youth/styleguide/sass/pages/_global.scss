@@ -1,0 +1,113 @@
+/* ==========================================================================
+   Global Style Guide Page --- This file is just for this testing/style guide site - NOT part pf global CSS
+   ========================================================================== */
+
+body.testing{
+	font-size: 16.7px;
+	section > .h2, section > h2 {
+	    font-size: 47px;
+	}
+	section > .h3, section > h3 {
+	    font-size: 33px;
+	}
+	section > .h4, section > h4 {
+	    font-size: 20px;
+	}
+	.testing-bg{
+		height: 50px;
+		border: 1px solid $border-color;
+	}
+	.testing-unit{
+		background-color: $grey-2;
+		height: 50px;
+	}
+	.testing-header{
+		background-color: $brand-2;
+		top: 0;
+		width: 100%;
+		z-index: 10;
+		.logo-sm{
+			float: left;
+			a{
+				display: block;
+			}
+			img{
+				padding: 10px 8px 6px;
+				width: auto;
+				height: 45px;
+			}
+		}
+		h1{
+			float: right;
+		    color: #fff;
+		    font-size: 1.6em;
+		    line-height: 1.2em;
+		    margin: 10px 0;
+		}
+	}
+
+	.g-don-t, .g-do{
+		height: 30px;
+		width: 30px;
+		display: inline-block;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 30px;
+		color: #fff;
+		margin-right: 15px;
+	}
+
+	.g-do{
+		background-color: #40a33c;
+	}
+
+	.g-don-t{
+		background-color: #a6192e;
+	}
+	
+	.g-body-content{
+		section{
+			display: none;
+			> h2:first-child{
+				margin-top: 0;
+			}
+			&.g-active{
+				display: block;
+			}
+		}
+	}
+
+	ul.g-basic{
+		ul{
+			display: none;
+		}
+		a.g-active + ul{
+			display: block;
+		}
+	}
+	code{
+    	font-family: Consolas,Liberation Mono,Courier,monospace;
+    	color: #201F1F;
+		background-color: #f7f7f8;
+		border: 1px solid #d9dadc;
+	    padding: .125rem .3125rem .0625rem;
+    	font-weight: 400;
+	}
+	pre{
+		padding: 12px;
+		margin: 1.5em 0 5.5em;
+		font-size: 14px;
+		line-height: 1.5;
+	    white-space: pre;
+    	overflow-x: auto;
+		color: #201F1F;
+		background-color: #f7f7f8;
+		// border: 1px solid #d9dadc;
+		border-radius: 0;
+		display: block;
+		font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+		xmp{
+			margin: 0;
+		}
+	}
+}

@@ -1,0 +1,36 @@
+/* ==========================================================================
+   General Styling
+   ========================================================================== */
+
+ul.g-inline{
+    @media (min-width: $min-break-mobile) {
+        li{
+            display: inline-block;
+            margin-right: 30px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.g-img-link{
+    &:hover, &:focus{
+        opacity: .6;
+    }
+}
+
+hr.g-tertiary{
+    border: none;
+    border-top: 2px solid $grey-5;
+    margin: 0 0 1.3em;
+}
+
+.g-social-icons.g-secondary{
+    a{
+        color: $bg-color-4;
+        &:hover, &:focus{
+            color: $brand-1;
+        }
+    }
+}

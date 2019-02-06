@@ -1,0 +1,90 @@
+/* ==========================================================================
+   Type
+   ========================================================================== */
+
+body {
+    b,
+    strong {
+        font-weight: $body-font-weight-bold;
+    }
+    @media (max-width: $max-break-tablet) {
+        font-size: 97%;
+    }
+    @media (max-width: $max-break-mobile) {
+        font-size: 92%;
+    }
+}
+
+//---------------------- Headings -------------------------
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+	font-family: $heading-font;
+	color: $heading-color;
+	font-weight: bold;
+	a{
+		@extend .g-transition;
+		color: $heading-link-color;
+		text-decoration: none;
+		&:hover, &:focus {
+			text-decoration: none;
+			color: $heading-hover-color;
+		}
+	}
+}
+
+h1, .h1{
+	font-size: 43px;
+	line-height: 1.2em;
+	margin: 1em 0 0.5em;
+	@media (max-width: $max-break-mobile) {
+		font-size: 36px;
+		line-height: 1.2em;
+	}
+}
+
+h2, .h2{
+	font-size: 35px;
+	font-weight: 600;
+	@media (max-width: $max-break-mobile) {
+		font-size: 26px;
+	}
+}
+
+h3, .h3{
+	font-size: 28px;
+    font-weight: normal;
+    @media (max-width: $max-break-mobile) {
+		font-size: 24px;
+	}
+}
+ 
+h4, .h4{
+	font-size: 21px;
+    font-weight: 600;
+}
+
+h5, .h5{
+	font-size: 18px;
+    font-weight: normal;
+}
+
+h6, .h6{
+	font-size: 15px;
+    font-weight: 600;
+}
+
+h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6{
+	line-height: $heading-line-height;
+	margin: 1em 0 .45em;
+}
+
+h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6, .h1 + .h2, .h2 + .h3, .h3 + .h4, .h4 + .h5, .h5 + .h6,
+div > h2:first-child, div > h3:first-child, div > h4:first-child, div > h5:first-child, div > h6:first-child, div > p:first-child, div > .h1:first-child, div > .h2:first-child, div > .h3:first-child, div > .h4:first-child, div > .h5:first-child, div > .h6:first-child
+{
+	margin-top: 0;
+}
+
+.g-subhead + h1, .g-subhead + h2, .g-subhead + h3, .g-subhead + h4, .g-subhead + h5, .g-subhead + h6, .g-subhead + .h1, .g-subhead + .h2, .g-subhead + .h3, .g-subhead + .h4, .g-subhead + .h5, .g-subhead + .h6{
+	margin-top: 0;
+}
+

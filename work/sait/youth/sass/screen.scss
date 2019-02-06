@@ -1,0 +1,69 @@
+/* Import styles
+ */
+
+//Motion UI - for animations 
+@import 'shared/motion-ui/motion-ui';
+
+//start by importing variables!
+@import "youth/helpers/_variables";
+
+//------- Shared/global styling (stying that could be reused on other sites)
+
+//Helpers
+@import "shared/helpers/_helpers";
+@import "shared/helpers/_helpers2";
+@import "shared/helpers/_mixins";
+
+//Components
+@import "shared/components/_addordion";
+@import "shared/components/_breadcrumb";
+@import "shared/components/_buttons";
+@import "shared/components/_cards";
+@import "shared/components/_cards2";
+@import "shared/components/_ctas";
+@import "shared/components/_forms";
+@import "shared/components/_image-gallery";
+@import "shared/components/_lists";
+@import "shared/components/_modal";
+@import "shared/components/_pagination";
+@import "shared/components/_icon-links";
+@import "shared/components/_stat";
+@import "shared/components/_swipebox";
+@import "shared/components/_tables";
+@import "shared/components/_tables2";
+@import "shared/components/_tooltip";
+
+//Layout
+@import "shared/layout/_grid";
+
+
+//------- Youth Engagement Specific styling
+
+//Base
+@import "youth/base/_general";
+
+//Components
+@import "youth/components/_banner";
+@import "youth/components/_banner2";
+@import "youth/components/_footer";
+@import "youth/components/_footer2";
+@import "youth/components/_header";
+@import "youth/components/_header2";
+@import "youth/components/_lists";
+@import "youth/components/_sidebar";
+@import "youth/components/_sidebar2";
+@import "youth/components/_slider";
+@import "youth/components/_slider2";
+@import "youth/components/_type";
+
+//Layout 
+@import "youth/layout/_layout";
+@import "youth/layout/_layout2";
+
+//Pages
+@import "youth/pages/_cec-home";
+@import "youth/pages/_camps-home";
+
+
+
+

@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Sidebar - side nav
+   ========================================================================== */
+
+.g-sidenav{
+	background-color: $bg-color-2;
+    margin-bottom: 1.5em;
+	.g-heading{
+		@extend .g-font-large;
+		display: block;
+		border-bottom: 1px solid $border-color;
+		margin: 0 !important;
+		color: $grey-2;
+		a, div{
+			padding: 18px 15px;
+		}
+	}
+	a{
+		display: block;
+		color: $grey-2;
+		&.g-active{
+			color: $brand-2;
+			position: relative;
+			&:after {
+				content: '';
+				height: 70%;
+				width: 3px;
+				position: absolute;
+				left: 0;
+				top: 15%;
+				background-color: $brand-2;
+			}
+		}
+		&:hover:not(.g-active), &:focus:not(.g-active){
+			color: $brand-2;
+		}
+	}
+	ul.g-basic{
+		padding: 15px 0;
+		a{
+			padding: 0 15px;
+		}
+		ul{
+			padding: 10px 0 5px 10px;
+			@extend .g-font-small;
+			li a{
+			    font-weight: normal;
+			    &.g-active{
+					&:after {
+						content: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.g-sidebar{
+	.g-sidebar-section{
+		margin-bottom: 3em;
+	}
+}

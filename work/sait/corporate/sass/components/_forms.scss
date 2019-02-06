@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+
+//----- re-adding icons to inputs
+select.g-form-control.g-icon-arrow {
+    background-image: url(../../img/icon-arrow.png),url(../../img/dropdown-arrows.png);
+}
+
+.g-form-control.g-icon-search, .g-form-control.g-search-input {
+    background-image: url(../../img/icon-search.png);
+    background-repeat: no-repeat;
+}
+
+select.g-form-control {
+    background: url(../../img/dropdown-arrows.png) no-repeat 100% #fff;
+}
+
+.g-form-control{
+	&.g-rounded{
+		border-radius: 50px;
+	}
+	&.g-lg{
+		padding: 8px 18px;
+		height: 40px;
+	}
+	&.g-lg-width{
+		min-width: 220px;
+	}
+}
+
+textarea.g-form-control{
+	height: auto;
+}
+
+.g-action-input-container{
+	padding-right: 35px;
+	position: relative;
+	.g-action-icon{
+		position: absolute;
+		font-size: 20px;
+		right: 5px;
+		top: 0;
+		line-height: 35px;
+		color: $grey-5;
+		&:hover, &:focus{
+			color: $grey-3;
+		}
+	}
+}

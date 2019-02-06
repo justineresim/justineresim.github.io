@@ -1,0 +1,252 @@
+/* ==========================================================================
+   Global Header
+   ========================================================================== */
+
+
+//---------- Corporate Header
+
+//show smaller logo on desktop scroll
+body.isDesktop.fixed-header{
+	header.g-header.g-header-corporate{
+		.corporate-logo-sm{
+		    display: block;
+		}
+	}
+}
+
+//open mobile main menu
+body.g-mobile-nav-open{
+	.g-header-corporate-mobile{
+		right: 0;
+		z-index: 100;
+	}
+	header.g-header.g-header-corporate{
+		left: -400px;
+		@media (max-width: $max-break-mobile) {
+			left: -250px;
+		}
+	}
+	.g-corporate-overlay{
+		display: block
+	}
+}
+
+.g-corporate-overlay{
+    -webkit-overflow-scrolling: auto;
+	height: 100%;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    z-index: 20;
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    transition: right 300ms linear;
+    display: none;
+    z-index: 1;
+}
+
+
+header.g-header.g-header-corporate{
+	background: $bg-color-4;
+	border-top: 4px solid $brand-1;
+	height: auto;
+	transition: left 300ms linear;
+
+	//tweak existing header
+	>.g-container{
+		&.g-container-top{
+			.secondary-menu a {
+		        padding: 10px 15px 10px;
+			}
+			.secondary-menu li.search a {
+	            padding: 3px 10px;
+	            width: 36px;
+	            height: 36px;
+	            text-align: center;
+	            margin-top: 4px;
+	            &:hover, &:focus{
+	            	background-color: rgb(50, 55, 64);
+	            }
+			}
+			>.row {
+			    height: 45px;
+			}
+			@media (max-width: $max-break-mobile-nav) {
+				display: none;
+			}
+		}
+		&.g-container-bottom{
+			>.row {
+			    height: 57px;
+			    @media (max-width: $max-break-mobile-nav) {
+			    	height: 51px;
+			    }
+			}
+			.corporate-logo-sm{
+			    display: none;
+			    img{
+					position: absolute;
+				    height: 27px;
+				    top: 12px;
+				}
+				@media (max-width: $max-break-mobile-nav) {
+					display: block;
+				}
+			}
+		}
+	}
+
+	.g-mobile-menu{
+		display: none;
+	}
+	
+	//add new styles specific for corporate
+	.corporate-main-menu{
+		float: right;
+		.mobileNavToggle{
+			display: none;
+		}
+		> li{
+			display: block;
+			float: left;
+			position: relative;
+			text-align: center;
+			border-left: 1px solid rgba(255,255,255,.05);
+			&:last-child{
+				border-right: 1px solid rgba(255,255,255,.05);
+			}
+			> a{
+				padding: 10px 25px;
+				color: #fff;
+				display: block;
+				position: relative;
+				font-size: 17px;
+				line-height: 18px;
+				background-color: $bg-color-4;
+				&:visited{
+					color: #fff;
+				}
+				&:hover{
+					background-color: darken($bg-color-4, 10%);
+				}
+				span{
+					display: block;
+					color: $grey-4;
+					font-size: 13px;
+					font-style: italic;
+				}
+			}
+		}
+		@media (max-width: $max-break-mobile-nav) {
+			display: none;
+		}
+	}
+	.g-header-divide{
+		width: 100%;
+		height: 1px;
+		border-top: 1px solid rgba(255,255,255,.05);
+	}
+}
+
+
+//mobile styling
+@media (max-width: $max-break-mobile-nav) {
+	.headers-container-corporate{
+		margin-top: 51px;
+		.search-section{
+			position: fixed;
+			width: 100%;
+			z-index: 2000;
+		}
+		header.g-header.g-header-corporate{
+			border-top: none;
+			top: 0;
+			left: 0;
+		    width: 100%;
+		    position: fixed;
+		    z-index: 1000;
+		    height: 51px;
+			.g-mobile-menu{
+				display: block;
+				text-align: right;
+				a{
+					color: #fff;
+				    font-size: 25px;
+				    line-height: 25px;
+	    			padding: 12px 5px;
+	    			display: inline-block;
+	    			&.search{
+	    				position: relative;
+					    background: rgba(0,0,0,.3);
+					    border-radius: 50%;
+					    padding: 0;
+					    font-size: 20px;
+					    height: 40px;
+					    line-height: 40px;
+					    width: 40px;
+					    text-align: center;
+					    margin-left: 8px;
+				        top: -2px;
+	    			}
+				}
+			}
+		}
+		
+	}
+}
+
+
+//sidebar mobile menu
+.g-header-corporate-mobile{
+	transition: right .3s linear;
+    position: fixed;
+    right: -400px;
+    width: 400px;
+    top: 0;
+    bottom: 0;
+    overflow: scroll;
+    background-color: $bg-color-4;
+    @media (max-width: $max-break-mobile) {
+		right: -250px;
+		width: 250px;
+	}
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		background-color: $grey-2;
+		li{
+			margin: 0;
+			padding: 0;
+			a{
+			    display: block;
+			    position: relative;
+			    font-size: 16px;
+			    line-height: 24px;
+		        padding: 13px 20px;
+		        border-bottom: 1px solid rgba(255,255,255,.05);
+		        color: #fff;
+			}
+		}
+		ul{
+			padding: 8px 0;
+			background-color: $grey-5;
+			display: none;
+			li{
+				a{
+					color: $bg-color-4;
+					font-size: 14px;
+				    line-height: 22px;
+			        padding: 5px 20px;
+			        border-bottom: none;
+				}
+			}
+		}
+		&.secondary-menu{
+			background-color: $bg-color-4;
+		}
+	}
+}

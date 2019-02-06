@@ -1,0 +1,126 @@
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+   
+ul.g-basic{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    li, ul{
+        list-style-type: none;
+    }
+}
+
+ul.g-split-list{
+    @media (min-width: $min-break-mobile) {
+        padding-left: 2.2em;
+        ul{
+            padding-left: 2.2em;  
+        }
+        >li{
+            width: 50%;
+            float: left;
+            &:nth-child(odd){
+                padding-right: 3em;
+            }
+        }
+        &:after{
+            @include clearfix();
+        }
+    }
+}
+
+ul.g-inline{
+    @media (min-width: $min-break-mobile) {
+        li{
+            display: inline-block;
+            margin-right: 30px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+ul.g-secondary{
+    list-style-type: none;
+    li{
+        position: relative;
+    }
+    li::before {
+        content: " ";
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: 1px solid $secondary-list-bullet-color;
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: -15px;
+    }
+    &.g-font-large{
+        li::before {
+            height: 8px;
+            width: 8px;
+            background-color: #fff;
+            border: 2px solid $secondary-list-bullet-color;
+            top: 6px;
+            left: -22px;
+        }
+    }
+}
+
+ul.g-tabbed-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li{
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: 100%;
+        border: 1px solid $border-color;
+        border-bottom: none;
+        position: relative;
+        .g-icon{
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            margin-top: -10px;
+            line-height: 20px;
+            color: $grey-2;
+            opacity: 0;
+            transition: opacity 100ms linear;
+        }
+        a{
+            background-color: #fff;
+            color: $grey-2;
+            padding: 10px 15px 10px 15px;
+            display: block;
+            width: 100%;
+            font-weight: normal;
+            position: relative;
+            min-height: 40px;
+            &:hover, &:focus{
+                background-color: $bg-color-2;
+                .g-icon{
+                    opacity: 1;
+                }
+            }
+            &.g-active{
+                background-color: $brand-4;
+                font-weight: 600;
+                transform: scale(1.03);
+                z-index: 10;
+                box-shadow: 1px 1px 3px rgba(0,0,0,.3);
+                .g-icon{
+                    opacity: 1;
+                }
+            }
+        }
+        &:last-child{
+            border-bottom: 1px solid $border-color;
+        }
+    }
+}

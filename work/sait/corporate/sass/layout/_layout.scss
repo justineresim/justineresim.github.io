@@ -1,0 +1,77 @@
+/* ==========================================================================
+   General page layout for site
+   ========================================================================== */
+
+
+//new section for corporate engagement banner
+@keyframes wave {
+    0% {right: -25%;}
+    50% {right: 0;}
+    100% {right: -25%;}
+}
+
+@keyframes waveLeft {
+    0% {left: -25%;}
+    50% {left: 0;}
+    100% {left: -25%;}
+}
+
+
+.g-section.g-section-dark{
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+	padding-bottom: 100px;
+	margin-bottom: 2rem;
+	overflow: hidden;
+	width: 100%;
+	@media (min-width: $min-break-mobile) {
+		padding-bottom: 130px;
+	}
+    > .g-container{
+    	position: relative;
+    }
+	.g-gradient{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		right: 0;
+		content: '';
+		background-image: url('../../img/gradient-overlay.png');
+		background-size: cover;
+		&.g-hub{
+			background-image: url('../../img/hub-overlay.png');
+		}
+	}
+	.g-wave{
+		animation-name: wave;
+		animation-iteration-count:infinite;
+		animation-duration: 70s;
+		animation-timing-function: linear;
+		position: absolute;
+		width: 150%;
+		height: 100%;
+		bottom: 0;
+		right: 0;
+		background-image: url('../../img/wave1.png');
+		background-size: 100%;
+    	background-repeat: no-repeat;
+    	background-position: bottom;
+    	@media (max-width: $max-break-tablet) {
+			background-size: 200%;
+    	}
+    	@media (max-width: $max-break-mobile) {
+			background-size: 250%;
+    	}
+		&.g-2{
+			animation-name: waveLeft;
+			animation-duration: 60s;
+			background-image: url('../../img/wave2.png');
+		}
+		&.g-3{
+			animation-duration: 50s;
+			background-image: url('../../img/wave3.png');
+		}
+	}
+}

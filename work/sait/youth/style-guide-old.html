@@ -1,0 +1,2881 @@
+<!DOCTYPE html>
+<html>
+<!-- Document Head -->
+<head>
+    <meta charset="utf-8">
+    <title>SAIT Young Originals - Prototype and Style Guide</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="SAIT - Prototype and Style Guide">
+    <meta name="author" content="Justine Lileikis, Res.im">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/theme/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/theme/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/theme/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/theme/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/theme/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/theme/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/theme/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/theme/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/theme/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="img/theme/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/theme/favicon/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="img/theme/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="img/theme/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="img/theme/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="img/theme/favicon/manifest.json">
+    <link rel="mask-icon" href="img/theme/favicon/safari-pinned-tab.svg" color="#da291c">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="img/theme/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="img/theme/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+
+    <!-- Icon Font -->
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,700' rel='stylesheet' type='text/css'>
+
+    <!-- Tooltipster -->
+    <link rel="stylesheet" type="text/css" href="css/vendor/tooltipster.min.css" />
+
+    <!-- Remodal - modal windows -->
+    <link rel="stylesheet" href="css/vendor/remodal.min.css">
+    <link rel="stylesheet" href="css/vendor/remodal-default-theme.min.css">
+
+    <!--  Global CSS & Youth CSS & Style Guide CSS -->
+    <link href="styleguide/dest/screen.min.css" rel="stylesheet">
+
+</head>
+
+<body class="testing">
+    <div class="testing-header">
+        <div class="g-container g-clearfix">
+            <div class="logo-sm">
+                <a href="style-guide.html"><img src="img/theme/logo-sm.png" alt="logo"></a>
+            </div>
+            <h1>SAIT Young Originals Style Guide</h1>
+        </div>
+    </div>
+    <div class="g-main">
+        <div class="g-container g-sidebar-template">
+
+            <div class="g-body-content">     
+
+                <div class="g-clearfix">
+                    <div class="g-pull-right">
+                        <a class="g-disabled previousItem"><span class="ion-ios-arrow-back g-icon-left"></span>Previous</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a class="nextItem">Next<span class="ion-ios-arrow-forward g-icon-right"></span></a>
+                    </div>
+                </div> 
+               
+                <section class="g-active">
+
+                    <h2>SAIT Young Originals Style Guide</h2>
+
+                    <h3>How to use this style guide</h3>
+                    
+                    <h4>UI Components</h4>
+                    <p>This section contains all custom UI components for the site. Each component is styled in it's own file of the same name and can be found under <b>youth/sass/shared/components</b> (ie youth/sass/shared/components/_accordion.scss). These components can be easily removed, edited or pulled to another site if needed.
+                    </p>
+
+                    <h4>General Styling</h4>
+                    <p>This section contains general site styling classes and helper classes.</p>
+
+                    <h4>Developer Notes</h4>
+                    <p>All custom style classes (with the exception of the grid system) have the prefix <b>g-</b> to prevent external resources from effecting them.</p> 
+                    <p>The <b>youth</b> folder contains all code required. This site was build completely separate from the other SAIT sites to ease developer integration.</p>
+                    <p>Styling inside <b>youth/sass/shared</b> contains all styling that could be reused by another site. You can change the look by changing the sass variables (currently set inside <b>youth/sass/youth/helpers/_variables.scss</b>).</p>
+                    <p>Styling inside <b>youth/sass/youth</b> contains styles that are specific to SAIT Young Originals and should probably not be reused.</p> 
+                    <p>Refer to <b>README</b> for more developer information.</p>
+
+                </section>
+
+                <section id="accordion">
+
+                    <h2>Accordions</h2>
+                    <div class="g-accord">
+                        <a class="g-accord-header">
+                            <span class="g-label">Frequently called numbers</span>
+                            <span class="g-icon ion-plus-round"></span>
+                        </a>
+                        <div class="g-accord-body">
+                            <div class="g-accord-body-content">
+                                <table class="g-table g-table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td>Justine Lileikis</td>
+                                            <td>justine@res.im</td>
+                                            <td>344-433-4747</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brian Frank</td>
+                                            <td>brian@res.im</td>
+                                            <td>544-435-2343</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Chantel Wong</td>
+                                            <td>chantel@res.im</td>
+                                            <td>363-232-2323</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="g-accord">
+    <a class="g-accord-header">
+        <span class="g-label">Frequently called numbers</span>
+        <span class="g-icon ion-plus-round"></span>
+    </a>
+    <div class="g-accord-body">
+        <div class="g-accord-body-content">
+            <table class="g-table g-table-striped">
+                <tbody>
+                    <tr>
+                        <td>Justine Lileikis</td>
+                        <td>justine@res.im</td>
+                        <td>344-433-4747</td>
+                    </tr>
+                    <tr>
+                        <td>Brian Frank</td>
+                        <td>brian@res.im</td>
+                        <td>544-435-2343</td>
+                    </tr>
+                    <tr>
+                        <td>Chantel Wong</td>
+                        <td>chantel@res.im</td>
+                        <td>363-232-2323</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div></xmp></pre>
+
+                </section>
+
+                <section id="breadcrumbs">
+
+                    <h2>Breadcrumbs</h2>
+
+                    <div class="g-breadcrumb">
+                        <a>Home</a>
+                        <span class="ion-ios-arrow-forward"></span>
+                        <a>Programs & Courses</a>
+                        <span class="ion-ios-arrow-forward"></span>
+                        <span>Business</span>
+                    </div>
+
+<pre><xmp><div class="g-breadcrumb">
+    <a>Home</a>
+    <span class="ion-ios-arrow-forward"></span>
+    <a>Programs & Courses</a>
+    <span class="ion-ios-arrow-forward"></span>
+    <span>Business</span>
+</div></xmp></pre>
+
+                    <div class="g-bg-4" style="padding: 10px;">
+                        <div class="g-breadcrumb g-secondary">
+                            <a>Home</a>
+                            <span class="ion-record"></span>
+                            <a>Construction</a>
+                            <span class="ion-record"></span>
+                            <span>Build, Repair, Operate</span>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="g-breadcrumb g-secondary">
+    <a>Home</a>
+    <span class="ion-record"></span>
+    <a>Construction</a>
+    <span class="ion-record"></span>
+    <span>Build, Repair, Operate</span>
+</div></xmp></pre>
+                        
+                </section>
+
+                <section id="buttons">
+
+                    <h2>Buttons</h2>
+
+                    <a class="g-btn">Primary Button</a>
+                    <a class="g-btn g-active">Active State</a>
+                    <a class="g-btn g-disabled">Disabled</a>
+                    <br><br>
+                    <a class="g-btn g-btn-block">Primary Block Button</a>
+                    <br><br>
+                    <a class="g-btn g-btn-lg">Large Button</a>
+                    <a class="g-btn g-btn-sm">Small Button</a>
+                    <br><br>
+                    <a class="g-btn"><span class="ion-edit g-icon-left"></span>Button with icon</a>
+                    <br><br>
+                    <a class="g-btn g-btn-lg g-btn-square"><span class="ion-star"></span></a>
+                    <a class="g-btn g-btn-square"><span class="ion-star"></span></a>
+                    <a class="g-btn g-btn-sm g-btn-square"><span class="ion-star"></span></a>
+
+<pre><xmp><a class="g-btn">Primary Button</a>
+<a class="g-btn g-active">Active State</a>
+<a class="g-btn g-disabled">Disabled</a>
+<br><br>
+<a class="g-btn g-btn-block">Primary Block Button</a>
+<br><br>
+<a class="g-btn g-btn-lg">Large Button</a>
+<a class="g-btn g-btn-sm">Small Button</a>
+<br><br>
+<a class="g-btn"><span class="ion-edit g-icon-left"></span>Button with icon</a></xmp></pre>
+
+                    <a class="g-btn-2">Button 2</a>
+                    <a class="g-btn-2 g-active">Active State</a>
+                    <a class="g-btn-2 g-disabled">Disabled</a>
+                    <br><br>
+                    <a class="g-btn-3">Button 3</a>
+                    <a class="g-btn-3 g-active">Active State</a>
+                    <a class="g-btn-3 g-disabled">Disabled</a>
+                    <br><br>
+                    <a class="g-btn-4">Button 4</a>
+                    <a class="g-btn-4 g-active">Active State</a>
+                    <a class="g-btn-4 g-disabled">Disabled</a>
+                    <br><br>
+                    <a class="g-btn-6">Button 6</a>
+                    <a class="g-btn-6 g-active">Active State</a>
+                    <a class="g-btn-6 g-disabled">Disabled</a>
+                    <br><br>
+                    <a class="g-btn-7">Button 7</a>
+                    <a class="g-btn-7 g-active">Active State</a>
+                    <a class="g-btn-7 g-disabled">Disabled</a>
+                    <br><br>
+                    <a class="g-btn-8">Button 8</a>
+                    <a class="g-btn-8 g-active">Active State</a>
+                    <a class="g-btn-8 g-disabled">Disabled</a>
+
+<pre><xmp><a class="g-btn-2">Button 2</a>
+<a class="g-btn-2 g-active">Active State</a>
+<a class="g-btn-2 g-disabled">Disabled</a>
+<br><br>
+<a class="g-btn-3">Button 3</a>
+<a class="g-btn-3 g-active">Active State</a>
+<a class="g-btn-3 g-disabled">Disabled</a>
+<br><br>
+<a class="g-btn-6">Button 6</a>
+<a class="g-btn-6 g-active">Active State</a>
+<a class="g-btn-6 g-disabled">Disabled</a>
+<br><br>
+<a class="g-btn-7">Button 7</a>
+<a class="g-btn-7 g-active">Active State</a>
+<a class="g-btn-7 g-disabled">Disabled</a>
+<br><br>
+<a class="g-btn-8">Button 8</a>
+<a class="g-btn-8 g-active">Active State</a>
+<a class="g-btn-8 g-disabled">Disabled</a></xmp></pre>
+
+                    <div class="g-bg-4" style="padding: 15px 20px; width: 100%;">
+                        <a class="g-btn-4">Button 4</a>
+                        <a class="g-btn-4 g-active">Active State</a>
+                        <a class="g-btn-4 g-disabled">Disabled</a>
+                        <br><br>
+                        <a class="g-btn-5">Button 5</a>
+                        <a class="g-btn-5 g-active">Active State</a>
+                        <a class="g-btn-5 g-disabled">Disabled</a>
+                        <br><br>
+                        <a class="g-btn-8">Button 8</a>
+                        <a class="g-btn-8 g-active">Active State</a>
+                        <a class="g-btn-8 g-disabled">Disabled</a>
+                    </div>
+
+<pre><xmp><a class="g-btn-4">Button 4</a>
+<a class="g-btn-4 g-active">Active State</a>
+<a class="g-btn-4 g-disabled">Disabled</a>
+<br><br>
+<a class="g-btn-5">Button 5</a>
+<a class="g-btn-5 g-active">Active State</a>
+<a class="g-btn-5 g-disabled">Disabled</a>
+<br><br>
+<a class="g-btn-8">Button 8</a>
+<a class="g-btn-8 g-active">Active State</a>
+<a class="g-btn-8 g-disabled">Disabled</a></xmp></pre>
+
+                </section>
+
+                <section id="cards">
+
+                    <h2>Cards</h2>
+
+                    <p>Some cards are a set height for consistency, so their copy content will need to have character limits.</p>
+                    <br>
+
+                    <div class="row margin-bottom">
+                        <div class="col-1of2 sm-1of2">
+                            <div class="g-card g-card-info">
+                                <a class="g-card-img-header" style="background-image: url(img/sample/09.jpg);"></a>
+                                <div class="g-card-content-sm">
+                                   <div class="g-font-large"><a>Fee Tables</a></div>
+                                   <p class="g-font-small">Suspendisse et mattis turpis. Integer a mollis metus. Morbi maximus aliquet nisl, in commodo felis efficitur id.</p>
+                                </div>
+                             </div>
+                        </div>
+                        <div class="col-1of2 sm-1of2">
+                            <div class="g-card g-card-info">
+                                <div class="g-card-content-sm g-card-content-full">
+                                   <div class="h4">Useful Links</div>
+                                   <ul class="g-basic">
+                                      <li><a>Federal Government Registered Plans (RESPs, LLPs)<span class="ion-ios-arrow-forward g-icon-right"></span></a></li>
+                                      <li><a>Funding for Apprentices<span class="ion-ios-arrow-forward g-icon-right"></span></a></li>
+                                      <li><a>Canadian Forces Subsidized Education Plan<span class="ion-ios-arrow-forward g-icon-right"></span></a></li>
+                                   </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="row margin-bottom">
+    <div class="col-1of2 sm-1of2">
+        <div class="g-card g-card-info">
+            <a class="g-card-img-header" style="background-image: url(img/sample/09.jpg);"></a>
+            <div class="g-card-content-sm">
+               <div class="g-font-large"><a>Fee Tables</a></div>
+               <p class="g-font-small">Suspendisse et mattis turpis. Integer a mollis metus. Morbi maximus aliquet nisl, in commodo felis efficitur id.</p>
+            </div>
+         </div>
+    </div>
+    <div class="col-1of2 sm-1of2">
+        <div class="g-card g-card-info">
+            <div class="g-card-content-sm g-card-content-full">
+               <div class="h4">Useful Links</div>
+               <ul class="g-basic">
+                  <li><a>Federal Government Registered Plans (RESPs, LLPs)<span class="ion-ios-arrow-forward g-icon-right"></span></a></li>
+                  <li><a>Funding for Apprentices<span class="ion-ios-arrow-forward g-icon-right"></span></a></li>
+                  <li><a>Canadian Forces Subsidized Education Plan<span class="ion-ios-arrow-forward g-icon-right"></span></a></li>
+               </ul>
+            </div>
+        </div>
+    </div>
+</div></xmp></pre>
+                
+                </section>
+
+                <section id="infocards">
+
+                    <h2>Important Info Cards</h2>
+
+                    <div class="g-card g-card-shadow g-card-content">
+                       <h3 class="g-secondary">Free Information Session:</h3>
+                       <p><b>When:</b> Thursday, March 30 2016 at 5pm<br>
+                          <b>Where:</b> Orpheus Theatre, Campus Centre, <a>SAIT Main Campus</a>
+                       </p>
+                       <p>RSVP by calling 403.284.8818 or email <a>aogp.info@sait.ca</a></p>
+                       <p><a>Upcoming Information Sessions<span class="ion-ios-arrow-forward g-icon-right"></span></a></p>
+                    </div>
+
+<pre><xmp><div class="g-card g-card-shadow g-card-content">
+   <h3 class="g-secondary">Free Information Session:</h3>
+   <p><b>When:</b> Thursday, March 30 2016 at 5pm<br>
+      <b>Where:</b> Orpheus Theatre, Campus Centre, <a>SAIT Main Campus</a>
+   </p>
+   <p>RSVP by calling 403.284.8818 or email <a>aogp.info@sait.ca</a></p>
+   <p><a>Upcoming Information Sessions<span class="ion-ios-arrow-forward g-icon-right"></span></a></p>
+</div></xmp></pre>
+
+                    <div class="g-card g-card-secondary g-card-content">
+                        <div class="vertical-align gutter">
+                            <div class="middle g-xs-hidden">
+                                <img width="300" src="img/sample/profile-1.png" class="g-round box-shadow2">
+                            </div>
+                            <div class="middle">
+                               <h3 class="g-secondary">Take the Virtual Tour</h3>
+                               <p class="g-font-large">Come explore the buildings and campus of SAIT. Take a virtual tour too of Calgary, and the Rocky Mountains. Excitement is waiting for you.</p>
+                               <p><a>SAIT Virtual Tour<span class="ion-forward g-icon-right"></span></a></p>
+                            </div>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="g-card g-card-secondary g-card-content">
+    <div class="vertical-align gutter">
+        <div class="middle g-xs-hidden">
+            <img width="300" src="img/sample/profile-1.png" class="g-round box-shadow2">
+        </div>
+        <div class="middle">
+           <h3 class="g-secondary">Take the Virtual Tour</h3>
+           <p class="g-font-large">Come explore the buildings and campus of SAIT. Take a virtual tour too of Calgary, and the Rocky Mountains. Excitement is waiting for you.</p>
+           <p><a>SAIT Virtual Tour<span class="ion-forward g-icon-right"></span></a></p>
+        </div>
+    </div>
+</div></xmp></pre>
+                
+                </section>
+
+                <section id="relatedcards">
+
+                    <h2>Related Info Cards</h2>
+                    
+                    <div class="row margin-bottom">
+                        <div class="col-1of2 sm-1of2">
+                            <a class="g-card g-related">
+                                <div class="g-card-image" style="background-image: url(img/sample/10.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-font-large g-color-secondary"><b>Architectural Technologist</b></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="row margin-bottom">
+    <div class="col-1of2 sm-1of2">
+        <a class="g-card g-related">
+            <div class="g-card-image" style="background-image: url(img/sample/10.jpg);">
+            </div>
+            <div class="g-card-content">
+                <div class="g-font-large g-color-secondary"><b>Architectural Technologist</b></div>
+            </div>
+        </a>
+    </div>
+</div></xmp></pre>
+                
+                    <div class="row margin-bottom">
+                        <div class="col-2of5 sm-1of2">
+                            <a class="g-card g-related g-sm">
+                                <div class="g-card-image" style="background-image: url(img/sample/18.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Construction Project Manager</b></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="row margin-bottom">
+    <div class="col-2of5 sm-1of2">
+        <a class="g-card g-related g-sm">
+            <div class="g-card-image" style="background-image: url(img/sample/18.jpg);">
+            </div>
+            <div class="g-card-content">
+                <div class="g-card-content-inner">
+                    <div class="g-font-large g-color-secondary"><b>Construction Project Manager</b></div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div></xmp></pre>
+
+                    <div class="row margin-bottom">
+                        <div class="col-1of1">
+                            <div class="g-card g-related g-lg">
+                                <div class="g-card-image" style="background-image: url(img/sample/01.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <span class="h4">Contact Alumni & Development</span>
+                                    <p>
+                                        Room MA113, <a>Heritage Hall </a><br>
+                                        Tel: 403.284.7010 <br>
+                                        Toll Free: 1.888.284.8399 <br>
+                                        <a>alumni@sait.ca</a>
+                                    </p>
+                                    <div class="g-icon-links g-secondary">
+                                        <a class="ion-social-facebook"></a>
+                                        <a class="ion-social-twitter"></a>
+                                        <a class="ion-social-instagram-outline"></a>
+                                        <a class="ion-social-youtube"></a>
+                                        <a class="ion-social-linkedin"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="row margin-bottom">
+    <div class="col-1of1">
+        <div class="g-card g-related g-lg">
+            <div class="g-card-image" style="background-image: url(img/sample/01.jpg);">
+            </div>
+            <div class="g-card-content">
+                <span class="h4">Contact Alumni & Development</span>
+                <p>
+                    Room MA113, <a>Heritage Hall </a><br>
+                    Tel: 403.284.7010 <br>
+                    Toll Free: 1.888.284.8399 <br>
+                    <a>alumni@sait.ca</a>
+                </p>
+                <div class="g-icon-links g-secondary">
+                    <a class="ion-social-facebook"></a>
+                    <a class="ion-social-twitter"></a>
+                    <a class="ion-social-instagram-outline"></a>
+                    <a class="ion-social-youtube"></a>
+                    <a class="ion-social-linkedin"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></xmp></pre>
+
+                    <div class="row margin-bottom">
+                        <div class="col-1of3 sm-1of2">
+                            <a class="g-card g-related-2">
+                                <div class="g-card-image" style="background-image: url(img/sample/18.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Architectural Technologist</b></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-1of3 sm-1of2">
+                            <a class="g-card g-related-2 g-w-hidden-link">
+                                <div class="g-card-image" style="background-image: url(img/sample/10.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Bricklayer</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-1of3 sm-1of2">
+                            <a class="g-card g-related-2 g-w-hidden-link">
+                                <div class="g-card-image" style="background-image: url(img/sample/16.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Construction Project Manager</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="row margin-bottom">
+    <div class="col-1of3 sm-1of2">
+        <a class="g-card g-related-2">
+            <div class="g-card-image" style="background-image: url(img/sample/18.jpg);">
+            </div>
+            <div class="g-card-content">
+                <div class="g-card-content-inner">
+                    <div class="g-font-large g-color-secondary"><b>Architectural Technologist</b></div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-1of3 sm-1of2">
+        <a class="g-card g-related-2 g-w-hidden-link">
+            <div class="g-card-image" style="background-image: url(img/sample/10.jpg);">
+            </div>
+            <div class="g-card-content">
+                <div class="g-card-content-inner">
+                    <div class="g-font-large g-color-secondary"><b>Bricklayer</b></div>
+                    <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-1of3 sm-1of2">
+        <a class="g-card g-related-2 g-w-hidden-link">
+            <div class="g-card-image" style="background-image: url(img/sample/16.jpg);">
+            </div>
+            <div class="g-card-content">
+                <div class="g-card-content-inner">
+                    <div class="g-font-large g-color-secondary"><b>Construction Project Manager</b></div>
+                    <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div></xmp></pre>
+
+                </section>
+
+                <section id="smallercards">
+
+                    <h2>Smaller Card</h2>
+
+                    <div class="g-card">
+                        <div class="g-card-content-sm">
+                            <h4>heading</h4>
+                            <p>Suspendisse et mattis turpis. Integer a mollis metus. Morbi maximus aliquet nisl, in commodo felis efficitur id. Suspendisse et mattis turpis. Integer a mollis metus. Morbi maximus aliquet nisl, in commodo felis efficitur id.</p>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="g-card">
+    <div class="g-card-content-sm">
+        <h4>heading</h4>
+        <p>Suspendisse et mattis turpis. Integer a mollis metus. Morbi maximus aliquet nisl, in commodo felis efficitur id.</p>
+    </div>
+</div></xmp></pre>
+
+                </section>
+
+                <section id="profilecards">
+
+                    <h2>Profile Card</h2>
+
+                    <div class="row">
+                        <div class="col-3of4">
+                            <div class="g-card g-profile">
+                                <div class="g-card-content g-clearfix">
+                                    <img class="g-profile-img g-pull-left" src="img/sample/p-03.jpg">
+                                    <span class="h4">Peter Smith</span><br>
+                                    <em>Plumber Apprentice</em><br>
+                                    <em class="g-font-smaller">(2016)</em>
+                                    <p>Suspendisse et mattis turpis. Integer a mollis metus. Morbi maximus aliquet nisl, in commodo felis efficitur id. Suspendisse et mattis turpis. Integer a mollis metus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="g-card g-profile">
+    <div class="g-card-content g-clearfix">
+        <img class="g-profile-img g-pull-left" src="img/sample/p-03.jpg">
+        <span class="h4">Peter Smith</span><br>
+        <em>Plumber Apprentice</em><br>
+        <em class="g-font-smaller">(2016)</em>
+        <p>Suspendisse et mattis turpis. Integer a mollis metus. Morbi maximus aliquet nisl, in commodo felis efficitur id. Suspendisse et mattis turpis. Integer a mollis metus.</p>
+    </div>
+</div></xmp></pre>
+
+                </section>
+
+                <section id="ctas">
+                        
+                    <h2>CTAs</h2>
+
+                    <a class="g-cta">
+                        <span class="g-text">
+                            Suspendisse et mattis turpis. Integer a mollis metus. Morbi maximus aliquet nisl, in commodo felis efficitur id.<br>
+                            <span class="g-small">Secondary Info</span>
+                        </span>
+                        <span class="g-icon ion-ios-arrow-forward"></span>
+                    </a>
+
+<pre><xmp><a class="g-cta">
+    <span class="g-text">
+        Suspendisse et mattis turpis. Integer a mollis metus. Morbi maximus aliquet nisl, in commodo felis efficitur id.<br>
+        <span class="g-small">Secondary Info</span>
+    </span>
+    <span class="g-icon ion-ios-arrow-forward"></span>
+</a></xmp></pre>
+
+                    <a class="g-cta g-secondary">
+                        <span class="g-subhead g-font-smaller">
+                            We are here to help
+                        </span>
+                        <span class="g-text">
+                            Contact Us
+                        </span>
+                        <span class="g-icon ion-ios-arrow-forward"></span>
+                    </a>
+
+<pre><xmp><a class="g-cta g-secondary">
+    <span class="g-subhead g-font-smaller">
+        We are here to help
+    </span>
+    <span class="g-text">
+        Contact Us
+    </span>
+    <span class="g-icon ion-ios-arrow-forward"></span>
+</a></xmp></pre>
+
+                    <a class="g-cta g-tertiary">
+                        <span class="g-text">
+                            <span class="g-icon-left ion-android-download g-color-brand-2"></span>Career Details
+                        </span>
+                        <span class="g-icon ion-ios-arrow-forward"></span>
+                    </a>
+
+<pre><xmp><a class="g-cta g-tertiary">
+    <span class="g-text">
+        <span class="g-icon-left ion-android-download g-color-brand-2"></span>Career Details
+    </span>
+    <span class="g-icon ion-ios-arrow-forward"></span>
+</a></xmp></pre>
+
+                    <a class="g-cta g-quaternary">
+                        <span class="g-subhead g-font-smaller">
+                            Teachers & Group Leaders
+                        </span>
+                        <span class="g-text">
+                            Apply Now
+                        </span>
+                        <span class="g-icon ion-ios-arrow-forward"></span>
+                    </a>
+
+<pre><xmp><a class="g-cta g-quaternary">
+    <span class="g-subhead g-font-smaller">
+        Teachers & Group Leaders
+    </span>
+    <span class="g-text">
+        Apply Now
+    </span>
+    <span class="g-icon ion-ios-arrow-forward"></span>
+</a></xmp></pre>
+
+                    <a class="g-cta g-5 g-icon-cta">
+                        <span class="g-icon-right">
+                            <span class="ion-star"></span>
+                        </span>
+                        <span class="g-text">
+                            Mark as Favourite
+                        </span>
+                    </a>
+
+                    <a class="g-cta g-5 g-icon-cta g-active">
+                        <span class="g-icon-right">
+                            <span class="ion-star"></span>
+                        </span>
+                        <span class="g-text">
+                            Marked as Favourite
+                        </span>
+                    </a>
+
+<pre><xmp><a class="g-cta g-5 g-icon-cta">
+    <span class="g-icon-right">
+        <span class="ion-star"></span>
+    </span>
+    <span class="g-text">
+        Mark as Favourite
+    </span>
+</a>
+
+<a class="g-cta g-5 g-icon-cta g-active">
+    <span class="g-icon-right">
+        <span class="ion-star"></span>
+    </span>
+    <span class="g-text">
+        Marked as Favourite
+    </span>
+</a></xmp></pre>
+
+                    <div class="g-cta g-w-icons">
+                        <div class="g-icon-links">
+                           <span class="g-text-uppercase"><b>Connect with Us:</b></span>
+                           <a class="ion-social-facebook"></a>
+                           <a class="ion-social-twitter"></a>
+                        </div>
+                     </div>
+
+<pre><xmp><div class="g-cta g-w-icons">
+    <div class="g-icon-links">
+       <span class="g-text-uppercase"><b>Connect with Us:</b></span>
+       <a class="ion-social-facebook"></a>
+       <a class="ion-social-twitter"></a>
+    </div>
+ </div></xmp></pre>
+
+                </section>
+
+                <section id="forms">
+
+                    <h2>Forms</h2>
+
+                    <form class="g-form">
+                        <div class="g-form-group g-error-state">
+                            <label for="exampleInput1">First Name:</label>
+                            <input type="text" class="g-form-control" id="exampleInput1" placeholder="First Name">
+                            <p>Please fill out the required field</p>
+                        </div>
+                        <div class="g-form-group">
+                            <label for="exampleInput1">Last Name:</label>
+                            <input type="text" class="g-form-control" id="exampleInput2" placeholder="Last Name">
+                        </div>
+                        <div class="g-form-group">
+                            <label for="exampleQuestion">How can we help you?</label>
+                            <textarea rows="3" class="g-form-control" id="exampleQuestion" placeholder="Question"></textarea>
+                        </div>
+                        <div class="g-form-group g-checkbox">
+                            <div class="g-checkbox-heading">Select all that apply:</div>
+                            <input type="checkbox" id="checkbox1">
+                            <label for="checkbox1"><span>Check me out</span></label>
+                            <input type="checkbox" id="checkbox2">
+                            <label for="checkbox2"><span>Check me out</span></label>
+                            <input type="checkbox" id="checkbox3">
+                            <label for="checkbox3"><span>Check me out</span></label>
+                        </div>
+                        <div class="g-radio-container g-form-group">
+                            <div class="g-radio-heading">Please select one:</div>
+                            <div>
+                                <input id="radio-1" class="g-radio" name="g-radio-group" type="radio" checked>
+                                <label for="radio-1" class="g-radio-label">First Choice</label>
+                            </div>
+                            <div>
+                                <input id="radio-2" class="g-radio"name="g-radio-group" type="radio">
+                                <label for="radio-2" class="g-radio-label">Second Choice</label>
+                            </div>
+                            <div>
+                                <input id="radio-3" class="g-radio" name="g-radio-group" type="radio">
+                                <label for="radio-3" class="g-radio-label">Third Choice</label>
+                            </div>
+                        </div>
+                        <div class="g-form-group">
+                            <label>Select one:</label>
+                            <select class="g-form-control">
+                                <option>Select an option</option>
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </div>
+                        <div class="g-form-group">
+                            <div class="g-input-btn">
+                                <label>Enter your email</label>
+                                <input type="text" class="g-form-control" id="exampleEmail" placeholder="Email Address">
+                                <a class="g-btn">Submit</a>
+                            </div>
+                        </div>
+                    </form>
+
+<pre><xmp><form class="g-form">
+    <div class="g-form-group g-error-state">
+        <label for="exampleInput1">First Name:</label>
+        <input type="text" class="g-form-control" id="exampleInput1" placeholder="First Name">
+        <p>Please fill out the required field</p>
+    </div>
+    <div class="g-form-group">
+        <label for="exampleInput1">Last Name:</label>
+        <input type="text" class="g-form-control" id="exampleInput2" placeholder="Last Name">
+    </div>
+    <div class="g-form-group">
+        <label for="exampleQuestion">How can we help you?</label>
+        <textarea rows="3" class="g-form-control" id="exampleQuestion" placeholder="Question"></textarea>
+    </div>
+    <div class="g-form-group g-checkbox">
+        <div class="g-checkbox-heading">Select all that apply:</div>
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1"><span>Check me out</span></label>
+        <input type="checkbox" id="checkbox2">
+        <label for="checkbox2"><span>Check me out</span></label>
+        <input type="checkbox" id="checkbox3">
+        <label for="checkbox3"><span>Check me out</span></label>
+    </div>
+    <div class="g-radio-container g-form-group">
+        <div class="g-radio-heading">Please select one:</div>
+        <div>
+            <input id="radio-1" class="g-radio" name="g-radio-group" type="radio" checked>
+            <label for="radio-1" class="g-radio-label">First Choice</label>
+        </div>
+        <div>
+            <input id="radio-2" class="g-radio"name="g-radio-group" type="radio">
+            <label for="radio-2" class="g-radio-label">Second Choice</label>
+        </div>
+        <div>
+            <input id="radio-3" class="g-radio" name="g-radio-group" type="radio">
+            <label for="radio-3" class="g-radio-label">Third Choice</label>
+        </div>
+    </div>
+    <div class="g-form-group">
+        <label>Select one:</label>
+        <select class="g-form-control">
+            <option>Select an option</option>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+    </div>
+    <div class="g-form-group">
+        <div class="g-input-btn">
+            <label>Enter your email</label>
+            <input type="text" class="g-form-control" id="exampleEmail" placeholder="Email Address">
+            <a class="g-btn">Submit</a>
+        </div>
+    </div>
+</form></xmp></pre>
+
+                </section>
+
+                <section id="gridforms">
+
+                    <h2>Forms using Grids</h2>
+
+                    <form class="g-form">
+                        <div class="g-hidden-labels">
+                            <div class="row">
+                                <div class="g-form-group col-1of2">
+                                    <label for="exampleInput1">First Name:</label>
+                                    <input type="text" class="g-form-control" id="exampleInput1" placeholder="First Name">
+                                </div>
+                                <div class="g-form-group col-1of2">
+                                    <label for="exampleInput1">Last Name:</label>
+                                    <input type="text" class="g-form-control" id="exampleInput2" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="g-form-group col-1of3">
+                                    <label>Select one:</label>
+                                    <select class="g-form-control">
+                                        <option>Select an option</option>
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="mercedes">Mercedes</option>
+                                        <option value="audi">Audi</option>
+                                    </select>
+                                </div>
+                                <div class="g-form-group col-1of3">
+                                    <label>Select one:</label>
+                                    <select class="g-form-control">
+                                        <option>Select another option</option>
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="mercedes">Mercedes</option>
+                                        <option value="audi">Audi</option>
+                                    </select>
+                                </div>
+                                <div class="g-form-group col-1of3">
+                                    <label>Select one:</label>
+                                    <select class="g-form-control">
+                                        <option>Select another option</option>
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="mercedes">Mercedes</option>
+                                        <option value="audi">Audi</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="g-form-group col-1of2">
+                                    <div class="g-input-btn">
+                                        <label for="exampleQuestion">What's your email address?</label>
+                                        <input type="text" class="g-form-control" id="exampleEmail" placeholder="Email Address">
+                                        <a class="g-btn">Submit</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+<pre><xmp><form class="g-form">
+    <div class="g-hidden-labels">
+        <div class="row">
+            <div class="g-form-group col-1of2">
+                <label for="exampleInput1">First Name:</label>
+                <input type="text" class="g-form-control" id="exampleInput1" placeholder="First Name">
+            </div>
+            <div class="g-form-group col-1of2">
+                <label for="exampleInput1">Last Name:</label>
+                <input type="text" class="g-form-control" id="exampleInput2" placeholder="Last Name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="g-form-group col-1of3">
+                <label>Select one:</label>
+                <select class="g-form-control">
+                    <option>Select an option</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+            <div class="g-form-group col-1of3">
+                <label>Select one:</label>
+                <select class="g-form-control">
+                    <option>Select another option</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+            <div class="g-form-group col-1of3">
+                <label>Select one:</label>
+                <select class="g-form-control">
+                    <option>Select another option</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="g-form-group col-1of2">
+                <div class="g-input-btn">
+                    <label for="exampleQuestion">What's your email address?</label>
+                    <input type="text" class="g-form-control" id="exampleEmail" placeholder="Email Address">
+                    <a class="g-btn">Submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form></xmp></pre>
+
+                </section>
+
+                <section id="inlineforms">
+
+                    <h2>Inline Forms</h2>
+
+                    <form class="g-form">
+                        <div class="g-inline-form">
+                            <div class="g-form-group">
+                                <label for="exampleInput1">First Name:</label>
+                                <input type="text" class="g-form-control" id="exampleInput1" placeholder="First Name">
+                            </div>
+                            <div class="g-form-group">
+                                <label for="exampleInput1">Last Name:</label>
+                                <input type="text" class="g-form-control" id="exampleInput2" placeholder="Last Name">
+                            </div>
+                            <div class="g-form-group">
+                                <label>Select one:</label>
+                                <select class="g-form-control">
+                                    <option>Select an option</option>
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="g-form-group">
+                                <div class="g-input-btn">
+                                    <label for="exampleQuestion">What's your email address?</label>
+                                    <input type="text" class="g-form-control" id="exampleEmail" placeholder="Email Address">
+                                    <a class="g-btn">Submit</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1of1">
+                                    <div class="g-form-group g-checkbox">
+                                        <div class="g-checkbox-heading">Select all that apply:</div>
+                                        <input type="checkbox" id="checkbox4">
+                                        <label for="checkbox4"><span>Option 1</span></label>
+                                        <input type="checkbox" id="checkbox5">
+                                        <label for="checkbox5"><span>Another option</span></label>
+                                        <input type="checkbox" id="checkbox6">
+                                        <label for="checkbox6"><span>And another!</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1of1">
+                                    <div class="g-radio-container g-form-group">
+                                        <div class="g-radio-heading">Please select one:</div>
+                                        <input id="radio-4" class="g-radio" name="g-radio-group" type="radio" checked>
+                                        <label for="radio-4" class="g-radio-label">First Choice</label>
+                                        <input id="radio-5" class="g-radio"name="g-radio-group" type="radio">
+                                        <label for="radio-5" class="g-radio-label">Second Choice</label>
+                                        <input id="radio-6" class="g-radio" name="g-radio-group" type="radio">
+                                        <label for="radio-6" class="g-radio-label">Third Choice</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+<pre><xmp><form class="g-form">
+    <div class="g-inline-form">
+        <div class="g-form-group">
+            <label for="exampleInput1">First Name:</label>
+            <input type="text" class="g-form-control" id="exampleInput1" placeholder="First Name">
+        </div>
+        <div class="g-form-group">
+            <label for="exampleInput1">Last Name:</label>
+            <input type="text" class="g-form-control" id="exampleInput2" placeholder="Last Name">
+        </div>
+        <div class="g-form-group">
+            <label>Select one:</label>
+            <select class="g-form-control">
+                <option>Select an option</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+        <div class="g-form-group">
+            <div class="g-input-btn">
+                <label for="exampleQuestion">What's your email address?</label>
+                <input type="text" class="g-form-control" id="exampleEmail" placeholder="Email Address">
+                <a class="g-btn">Submit</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1of1">
+                <div class="g-form-group g-checkbox">
+                    <div class="g-checkbox-heading">Select all that apply:</div>
+                    <input type="checkbox" id="checkbox4">
+                    <label for="checkbox4"><span>Option 1</span></label>
+                    <input type="checkbox" id="checkbox5">
+                    <label for="checkbox5"><span>Another option</span></label>
+                    <input type="checkbox" id="checkbox6">
+                    <label for="checkbox6"><span>And another!</span></label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1of1">
+                <div class="g-radio-container g-form-group">
+                    <div class="g-radio-heading">Please select one:</div>
+                    <input id="radio-4" class="g-radio" name="g-radio-group" type="radio" checked>
+                    <label for="radio-4" class="g-radio-label">First Choice</label>
+                    <input id="radio-5" class="g-radio"name="g-radio-group" type="radio">
+                    <label for="radio-5" class="g-radio-label">Second Choice</label>
+                    <input id="radio-6" class="g-radio" name="g-radio-group" type="radio">
+                    <label for="radio-6" class="g-radio-label">Third Choice</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</form></xmp></pre>
+
+                </section>
+
+                <section id="horizontalforms">
+
+                    <h2>Horizontal Forms</h2>
+
+                    <form class="g-form">
+                        <div class="g-form-horizontal">
+                            <div class="g-form-group row">
+                                <label class="col-1of5" for="exampleInput1">First Name:</label>
+                                <div class="col-4of5">
+                                    <input type="text" class="g-form-control" id="exampleInput1" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="g-form-group row">
+                                <div class="col-1of5">
+                                    <label for="exampleInput2">Last Name:</label>
+                                </div>
+                                <div class="col-4of5">
+                                    <input type="text" class="g-form-control" id="exampleInput2" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="g-form-group row">
+                                <div class="col-1of5">
+                                    <label>Select one:</label>
+                                </div>
+                                <div class="col-4of5">
+                                    <select class="g-form-control">
+                                        <option>Select an option</option>
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="mercedes">Mercedes</option>
+                                        <option value="audi">Audi</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="g-form-group row">
+                                <div class="col-1of5">
+                                    <div class="g-checkbox-heading">Select all that apply:</div>
+                                </div>
+                                <div class="col-4of5">
+                                    <div class="g-checkbox">  
+                                        <input type="checkbox" id="checkbox7">
+                                        <label for="checkbox7"><span>Option 1</span></label>
+                                        <input type="checkbox" id="checkbox8">
+                                        <label for="checkbox8"><span>Another option</span></label>
+                                        <input type="checkbox" id="checkbox9">
+                                        <label for="checkbox9"><span>And another!</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="g-form-group row">
+                                <div class="col-1of5">
+                                    <div class="g-radio-heading">Please select one:</div>
+                                </div>
+                                <div class="col-4of5">
+                                    <div class="g-radio-container">
+                                        <input id="radio-7" class="g-radio" name="g-radio-group" type="radio" checked>
+                                        <label for="radio-7" class="g-radio-label">First Choice</label>
+                                        <input id="radio-8" class="g-radio"name="g-radio-group" type="radio">
+                                        <label for="radio-8" class="g-radio-label">Second Choice</label>
+                                        <input id="radio-9" class="g-radio" name="g-radio-group" type="radio">
+                                        <label for="radio-9" class="g-radio-label">Third Choice</label>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="g-form-group row">
+                                <div class="col-1of5">
+                                    <div class="g-radio-heading">Inline example:</div>
+                                </div>
+                                <div class="col-4of5 g-inline-form">
+                                    <div class="g-radio-container">
+                                        <input id="radio-10" class="g-radio" name="g-radio-group" type="radio" checked>
+                                        <label for="radio-10" class="g-radio-label">First Choice</label>
+                                        <input id="radio-11" class="g-radio"name="g-radio-group" type="radio">
+                                        <label for="radio-11" class="g-radio-label">Second Choice</label>
+                                        <input id="radio-12" class="g-radio" name="g-radio-group" type="radio">
+                                        <label for="radio-12" class="g-radio-label">Third Choice</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+<pre><xmp><form class="g-form">
+    <div class="g-form-horizontal">
+        <div class="g-form-group row">
+            <label class="col-1of5" for="exampleInput1">First Name:</label>
+            <div class="col-4of5">
+                <input type="text" class="g-form-control" id="exampleInput1" placeholder="First Name">
+            </div>
+        </div>
+        <div class="g-form-group row">
+            <div class="col-1of5">
+                <label for="exampleInput2">Last Name:</label>
+            </div>
+            <div class="col-4of5">
+                <input type="text" class="g-form-control" id="exampleInput2" placeholder="Last Name">
+            </div>
+        </div>
+        <div class="g-form-group row">
+            <div class="col-1of5">
+                <label>Select one:</label>
+            </div>
+            <div class="col-4of5">
+                <select class="g-form-control">
+                    <option>Select an option</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+        </div>
+        <div class="g-form-group row">
+            <div class="col-1of5">
+                <div class="g-checkbox-heading">Select all that apply:</div>
+            </div>
+            <div class="col-4of5">
+                <div class="g-checkbox">  
+                    <input type="checkbox" id="checkbox7">
+                    <label for="checkbox7"><span>Option 1</span></label>
+                    <input type="checkbox" id="checkbox8">
+                    <label for="checkbox8"><span>Another option</span></label>
+                    <input type="checkbox" id="checkbox9">
+                    <label for="checkbox9"><span>And another!</span></label>
+                </div>
+            </div>
+        </div>
+        <div class="g-form-group row">
+            <div class="col-1of5">
+                <div class="g-radio-heading">Please select one:</div>
+            </div>
+            <div class="col-4of5">
+                <div class="g-radio-container">
+                    <input id="radio-7" class="g-radio" name="g-radio-group" type="radio" checked>
+                    <label for="radio-7" class="g-radio-label">First Choice</label>
+                    <input id="radio-8" class="g-radio"name="g-radio-group" type="radio">
+                    <label for="radio-8" class="g-radio-label">Second Choice</label>
+                    <input id="radio-9" class="g-radio" name="g-radio-group" type="radio">
+                    <label for="radio-9" class="g-radio-label">Third Choice</label>
+                </div>
+            </div>
+        </div>
+         <div class="g-form-group row">
+            <div class="col-1of5">
+                <div class="g-radio-heading">Inline example:</div>
+            </div>
+            <div class="col-4of5 g-inline-form">
+                <div class="g-radio-container">
+                    <input id="radio-10" class="g-radio" name="g-radio-group" type="radio" checked>
+                    <label for="radio-10" class="g-radio-label">First Choice</label>
+                    <input id="radio-11" class="g-radio"name="g-radio-group" type="radio">
+                    <label for="radio-11" class="g-radio-label">Second Choice</label>
+                    <input id="radio-12" class="g-radio" name="g-radio-group" type="radio">
+                    <label for="radio-12" class="g-radio-label">Third Choice</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</form></xmp></pre>
+
+                </section>
+
+                <section id="iconlinks">
+
+                    <h2>Icon Links</h2>
+
+                    <div class="g-icon-links">
+                        <span class="g-text-uppercase"><b>Share:</b></span>
+                        <a class="ion-social-facebook"></a>
+                        <a class="ion-social-twitter"></a>
+                        <a class="ion-social-instagram-outline"></a>
+                        <a class="ion-social-youtube"></a>
+                        <a class="ion-social-linkedin"></a>
+                        <a class="ion-email"></a>
+                    </div>
+
+<pre><xmp><div class="g-icon-links">
+    <span class="g-text-uppercase"><b>Share:</b></span>
+    <a class="ion-social-facebook"></a>
+    <a class="ion-social-twitter"></a>
+    <a class="ion-social-instagram-outline"></a>
+    <a class="ion-social-youtube"></a>
+    <a class="ion-social-linkedin"></a>
+    <a class="ion-email"></a>
+</div></xmp></pre>
+
+                    <div class="g-icon-links g-secondary">
+                        <span class="g-text-uppercase"><b>Share:</b></span>
+                        <a class="ion-social-facebook"></a>
+                        <a class="ion-social-twitter"></a>
+                        <a class="ion-social-instagram-outline"></a>
+                        <a class="ion-social-youtube"></a>
+                        <a class="ion-social-linkedin"></a>
+                        <a class="ion-email"></a>
+                    </div>
+
+<pre><xmp><div class="g-icon-links g-secondary">
+    <span class="g-text-uppercase"><b>Share:</b></span>
+    <a class="ion-social-facebook"></a>
+    <a class="ion-social-twitter"></a>
+    <a class="ion-social-instagram-outline"></a>
+    <a class="ion-social-youtube"></a>
+    <a class="ion-social-linkedin"></a>
+    <a class="ion-email"></a>
+</div></xmp></pre>
+
+                </section>
+
+                <section id="imagegallery">
+
+                    <h2>Lightbox Image Gallery - Swipebox</h2>
+                    <p><a href="http://brutaldesign.github.io/swipebox" target="_blank">http://brutaldesign.github.io/swipebox</a></p>
+                    <p>Note: this component uses youth/sass/shared/components/_image-gallery.scss for the image gallery and youth/sass/shared/components/_swipebox.scss for the modal/swipebox.</p>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-1of2 sm-1of2 xs-1of1">
+                            <a href="img/sample/04.jpg" class="g-image-gallery swipebox" rel="gallery-1" title="Test My Caption" style="background-image: url(img/sample/04.jpg);"></a>
+                        </div>
+                        <div class="col-1of2 sm-1of2 g-xs-hidden">
+                            <a href="img/sample/07.jpg" class="g-image-gallery swipebox" rel="gallery-1" title="This is a Caption" style="background-image: url(img/sample/07.jpg);"></a>
+                        </div>
+                        <a href="img/sample/4.jpg" class="swipebox g-hidden" rel="gallery-1" title="Test My Caption"></a>
+                        <a href="img/sample/7.jpg" class="swipebox g-hidden" rel="gallery-1" title="This is a Caption"></a>
+                    </div>
+
+<pre><xmp><div class="row">
+    <div class="col-1of2 sm-1of2 xs-1of1">
+        <a href="img/sample/04.jpg" class="g-image-gallery swipebox" rel="gallery-1" title="Test My Caption" style="background-image: url(img/sample/04.jpg);"></a>
+    </div>
+    <div class="col-1of2 sm-1of2 g-xs-hidden">
+        <a href="img/sample/07.jpg" class="g-image-gallery swipebox" rel="gallery-1" title="This is a Caption" style="background-image: url(img/sample/07.jpg);"></a>
+    </div>
+    <a href="img/sample/4.jpg" class="swipebox g-hidden" rel="gallery-1" title="Test My Caption"></a>
+    <a href="img/sample/7.jpg" class="swipebox g-hidden" rel="gallery-1" title="This is a Caption"></a>
+</div></xmp></pre>
+
+                    <div class="row">
+                        <div class="col-1of3 sm-1of3 xs-1of1">
+                            <a href="img/sample/01.jpg" class="g-image-gallery sm swipebox" rel="gallery-1" title="Test My Caption" style="background-image: url(img/sample/01.jpg);"></a>
+                        </div>
+                        <div class="col-1of3 sm-1of3 g-xs-hidden">
+                            <a href="img/sample/05.jpg" class="g-image-gallery sm swipebox" rel="gallery-1" title="This is a Caption" style="background-image: url(img/sample/02.jpg);"></a>
+                        </div>
+                        <div class="col-1of3 sm-1of3 g-xs-hidden">
+                            <a href="img/sample/02.jpg" class="g-image-gallery sm swipebox" rel="gallery-1" title="Another caption" style="background-image: url(img/sample/03.jpg);"></a>
+                        </div>
+                        <a href="img/sample/01.jpg" class="swipebox g-hidden" rel="gallery-1" title="Test My Caption"></a>
+                        <a href="img/sample/02.jpg" class="swipebox g-hidden" rel="gallery-1" title="This is a Caption"></a>
+                        <a href="img/sample/03.jpg" class="swipebox g-hidden" rel="gallery-1" title="Another caption"></a>
+                    </div>
+
+<pre><xmp><div class="row">
+    <div class="col-1of3 sm-1of3 xs-1of1">
+        <a href="img/sample/01.jpg" class="g-image-gallery sm swipebox" rel="gallery-1" title="Test My Caption" style="background-image: url(img/sample/01.jpg);"></a>
+    </div>
+    <div class="col-1of3 sm-1of3 g-xs-hidden">
+        <a href="img/sample/05.jpg" class="g-image-gallery sm swipebox" rel="gallery-1" title="This is a Caption" style="background-image: url(img/sample/02.jpg);"></a>
+    </div>
+    <div class="col-1of3 sm-1of3 g-xs-hidden">
+        <a href="img/sample/02.jpg" class="g-image-gallery sm swipebox" rel="gallery-1" title="Another caption" style="background-image: url(img/sample/03.jpg);"></a>
+    </div>
+    <a href="img/sample/01.jpg" class="swipebox g-hidden" rel="gallery-1" title="Test My Caption"></a>
+    <a href="img/sample/02.jpg" class="swipebox g-hidden" rel="gallery-1" title="This is a Caption"></a>
+    <a href="img/sample/03.jpg" class="swipebox g-hidden" rel="gallery-1" title="Another caption"></a>
+</div></xmp></pre>
+
+                </section>
+
+                <section id="lists">
+
+                    <h2 id="lists">Lists</h2>
+
+                    <ul>
+                        <li>This is a normal list.</li>
+                        <li>Mauris luctus nulla ut tristique varius.</li>
+                        <li>In at sem nec lectus accumsan dictum ut et enim.</li>
+                        <li>Vivamus euismod lorem vitae ipsum interdum convallis.
+                            <ul>
+                                <li>Quisque sed quam nec lectus mollis vehicula non sed erat.</li>
+                                <li>Nulla ultrices enim ac lacinia varius.</li>
+                            </ul>
+                        </li>
+                        <li>Nulla lacinia augue ac neque sodales rhoncus.</li>
+                    </ul>
+
+<pre><xmp><ul>
+    <li>This is a normal list.</li>
+    <li>Mauris luctus nulla ut tristique varius.</li>
+    <li>In at sem nec lectus accumsan dictum ut et enim.</li>
+    <li>Vivamus euismod lorem vitae ipsum interdum convallis.
+        <ul>
+            <li>Quisque sed quam nec lectus mollis vehicula non sed erat.</li>
+            <li>Nulla ultrices enim ac lacinia varius.</li>
+        </ul>
+    </li>
+    <li>Nulla lacinia augue ac neque sodales rhoncus.</li>
+</ul></xmp></pre>
+                
+                </section>
+
+                <section id="orderedlists">
+
+                    <h2>Ordered Lists</h2>
+
+                    <ol>
+                        <li>This is a normal ordered list.</li>
+                        <li>Mauris luctus nulla ut tristique varius.</li>
+                        <li>In at sem nec lectus accumsan dictum ut et enim.</li>
+                        <li>Vivamus euismod lorem vitae ipsum interdum convallis.
+                            <ul>
+                                <li>Quisque sed quam nec lectus mollis vehicula non sed erat.</li>
+                                <li>Nulla ultrices enim ac lacinia varius.</li>
+                            </ul>
+                        </li>
+                        <li>Nulla lacinia augue ac neque sodales rhoncus.</li>
+                    </ol>
+
+<pre><xmp><ol>
+    <li>This is a normal ordered list.</li>
+    <li>Mauris luctus nulla ut tristique varius.</li>
+    <li>In at sem nec lectus accumsan dictum ut et enim.</li>
+    <li>Vivamus euismod lorem vitae ipsum interdum convallis.
+        <ul>
+            <li>Quisque sed quam nec lectus mollis vehicula non sed erat.</li>
+            <li>Nulla ultrices enim ac lacinia varius.</li>
+        </ul>
+    </li>
+    <li>Nulla lacinia augue ac neque sodales rhoncus.</li>
+</ol></xmp></pre>
+                
+                </section>
+
+                <section id="columnlists">
+
+                    <h2>Two Column Lists</h2>
+
+                    <ul class="g-split-list">
+                        <li>This list gets split in 2 columns.</li>
+                        <li>In tincidunt lacus in turpis cursus, non rhoncus turpis dignissim.</li>
+                        <li>Fusce dapibus eros non dapibus semper.</li>
+                        <li>Aliquam id ipsum porta, scelerisque ante et, imperdiet sapien.</li>
+                        <li>Nam commodo est id scelerisque blandit.</li>
+                    </ul>
+
+<pre><xmp><ul class="g-split-list">
+    <li>This list gets split in 2 columns.</li>
+    <li>In tincidunt lacus in turpis cursus, non rhoncus turpis dignissim.</li>
+    <li>Fusce dapibus eros non dapibus semper.</li>
+    <li>Aliquam id ipsum porta, scelerisque ante et, imperdiet sapien.</li>
+    <li>Nam commodo est id scelerisque blandit.</li>
+</ul></xmp></pre>
+                
+                </section>
+
+                <section id="basiclists">
+
+                    <h2>Basic Lists</h2>
+
+                    <ul class="g-basic">
+                        <li>Lists without bullets!.</li>
+                        <li>Mauris luctus nulla ut tristique varius.</li>
+                        <li>In at sem nec lectus accumsan dictum ut et enim.</li>
+                        <li>Vivamus euismod lorem vitae ipsum interdum convallis.
+                            <ul>
+                                <li>Quisque sed quam nec lectus mollis vehicula non sed erat.</li>
+                                <li>Nulla ultrices enim ac lacinia varius.</li>
+                            </ul>
+                        </li>
+                        <li>Nulla lacinia augue ac neque sodales rhoncus.</li>
+                    </ul>
+
+<pre><xmp><ul class="g-basic">
+    <li>Lists without bullets!.</li>
+    <li>Mauris luctus nulla ut tristique varius.</li>
+    <li>In at sem nec lectus accumsan dictum ut et enim.</li>
+    <li>Vivamus euismod lorem vitae ipsum interdum convallis.
+        <ul>
+            <li>Quisque sed quam nec lectus mollis vehicula non sed erat.</li>
+            <li>Nulla ultrices enim ac lacinia varius.</li>
+        </ul>
+    </li>
+    <li>Nulla lacinia augue ac neque sodales rhoncus.</li>
+</ul></xmp></pre>
+
+                </section>
+
+                <section id="secondarylists">
+
+                    <h2>Secondary List Styling</h2>
+
+                    <ul class="g-secondary">
+                        <li>This list has coloured bullets :)</li>
+                        <li>Fusce dapibus
+                            <ul class="g-secondary">
+                                <li>This list has coloured bullets :)</li>
+                                <li>Fusce dapibus</li>
+                                <li>Aliquam id ipsum porta</li>
+                                <li>Nam commodo</li>
+                            </ul>
+                        </li>
+                        <li>Aliquam id ipsum porta</li>
+                        <li>Nam commodo</li>
+                    </ul>
+
+<pre><xmp><ul class="g-secondary">
+    <li>This list has coloured bullets :)</li>
+    <li>Fusce dapibus
+        <ul class="g-secondary">
+            <li>This list has coloured bullets :)</li>
+            <li>Fusce dapibus</li>
+            <li>Aliquam id ipsum porta</li>
+            <li>Nam commodo</li>
+        </ul>
+    </li>
+    <li>Aliquam id ipsum porta</li>
+    <li>Nam commodo</li>
+</ul></xmp></pre>
+                    
+                    <ul class="g-secondary g-font-large">
+                        <li>Larger font and bullets here
+                            <ul class="g-secondary">
+                                <li>Fusce dapibus</li>
+                                <li>Aliquam id ipsum porta</li>
+                                <li>Nam commodo</li>
+                            </ul>
+                        </li>
+                        <li>Aliquam id ipsum porta</li>
+                        <li>Nam commodo</li>
+                    </ul>
+
+<pre><xmp><ul class="g-secondary g-font-large">
+    <li>Larger font and bullets here
+        <ul class="g-secondary">
+            <li>Fusce dapibus</li>
+            <li>Aliquam id ipsum porta</li>
+            <li>Nam commodo</li>
+        </ul>
+    </li>
+    <li>Aliquam id ipsum porta</li>
+    <li>Nam commodo</li>
+</ul></xmp></pre>
+
+                </section>
+
+                <section id="inlinelists">
+
+                    <h2>Inline Lists</h2>
+
+                    <ul class="g-inline g-basic">
+                        <li>This is inline</li>
+                        <li>Fusce dapibus</li>
+                        <li>Aliquam id ipsum porta</li>
+                        <li>Nam commodo</li>
+                    </ul>
+
+<pre><xmp><ul class="g-inline g-basic">
+    <li>This is inline</li>
+    <li>Fusce dapibus</li>
+    <li>Aliquam id ipsum porta</li>
+    <li>Nam commodo</li>
+</ul></xmp></pre>
+
+                </section>
+
+
+                <section id="modalwindow">
+
+                    <h2>Modal Window - Remodal</h2>
+                    <p><a href="http://vodkabears.github.io/remodal/" target="_blank">http://vodkabears.github.io/remodal/</a></p>
+                    <br><br>
+                    
+                    <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false">
+                      <button data-remodal-action="close" class="remodal-close"></button>
+                      <div class="g-text-center"><h2>Remodal</h2></div>
+                      <p>
+                        Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
+                      </p>
+                      <br>
+                      <div class="g-text-center">
+                          <button data-remodal-action="confirm" class="g-btn g-btn-lg">OK</button>
+                      </div>
+                    </div>
+
+                    <a data-remodal-target="modal" href="#" class="g-btn-6">Open Modal</a>
+
+<pre><xmp><div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <div class="g-text-center"><h2>Remodal</h2></div>
+  <p>
+    Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
+  </p>
+  <br>
+  <div class="g-text-center">
+      <button data-remodal-action="confirm" class="g-btn g-btn-lg">OK</button>
+  </div>
+</div>
+
+<a data-remodal-target="modal" class="g-btn-6">Open Modal</a></xmp></pre>
+
+                    <div class="remodal" data-remodal-id="modal2" data-remodal-options="hashTracking: false">
+                      <button data-remodal-action="close" class="remodal-close"></button>
+                      <img src="img/sample/banner-01.jpg">
+                    </div>
+
+                    <a data-remodal-target="modal2" class="g-btn-6">Open Modal with Image</a>
+
+<pre><xmp><div class="remodal" data-remodal-id="modal2" data-remodal-options="hashTracking: false">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <img src="img/sample/banner-01.jpg">
+</div>
+
+<a data-remodal-target="modal2" class="g-btn-6">Open Modal with Image</a></xmp></pre>
+
+                    <div id="videoRemodal" class="remodal g-lg" data-remodal-id="modal3" data-remodal-options="hashTracking: false">
+                        <button data-remodal-action="close" class="remodal-close"></button>
+                        <iframe id="saitVideo" width="854" height="480" src="https://www.youtube.com/embed/KpV9QBi5JaE?enablejsapi=1" frameborder="0" allowfullscreen allowscriptaccess="always"></iframe>
+                    </div>
+
+                    <a data-remodal-target="modal3" class="g-btn-6">Open Larger Modal with Video</a>
+
+<pre><xmp><div id="videoRemodal" class="remodal g-lg" data-remodal-id="modal3" data-remodal-options="hashTracking: false">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <iframe id="saitVideo" width="854" height="480" src="https://www.youtube.com/embed/KpV9QBi5JaE?enablejsapi=1" frameborder="0" allowfullscreen allowscriptaccess="always"></iframe>
+</div>
+
+<a data-remodal-target="modal3" class="g-btn-6">Open Larger Modal with Video</a></xmp></pre>
+
+                </section>
+                        
+                <section id="pagination">
+
+                    <h2>Pagination</h2> 
+
+                    <div class="g-pagination">
+                        <a class="g-prev g-disabled"><span class="ion-chevron-left"></span></a>
+                        <a class="g-nums">1</a>
+                        <a class="g-nums g-active">2</a>
+                        <a class="g-nums">3</a>
+                        <a class="g-nums">4</a>
+                        <a class="g-nums">5</a>
+                        <a class="g-next"><span class="ion-chevron-right"></span></a>
+                    </div>
+
+<pre><xmp><div class="g-pagination">
+    <a class="g-prev g-disabled"><span class="ion-chevron-left"></span></a>
+    <a class="g-nums g-active">1</a>
+    <a class="g-nums">2</a>
+    <a class="g-nums">3</a>
+    <a class="g-nums">4</a>
+    <a class="g-nums">5</a>
+    <a class="g-next"><span class="ion-chevron-right"></span></a>
+</div></xmp></pre>
+
+                </section>
+
+                <section id="stats">
+
+                    <h2>Information Stats</h2>
+
+                    <div class="g-section">
+                        <div class="row">
+                          <div class="col-1of2 g-stat">
+                             <div>3rd</div>
+                             <p>Largest post-secondary in Alberta</p>
+                          </div>
+                          <div class="col-1of2 g-stat">
+                             <div>220,000</div>
+                             <p><a>Alumni in 76 countries</a></p>
+                          </div>
+                       </div>
+                   </div>
+
+<pre><xmp><div class="g-section">
+    <div class="row">
+      <div class="col-1of2 g-stat">
+         <div>3rd</div>
+         <p>Largest post-secondary in Alberta</p>
+      </div>
+      <div class="col-1of2 g-stat">
+         <div>220,000</div>
+         <p><a>Alumni in 76 countries</a></p>
+      </div>
+   </div>
+</div></xmp></pre>
+                    
+                    <div class="g-section g-bg-5">
+                        <div class="row">
+                          <div class="col-1of2 g-stat g-secondary">
+                             <div>4 Million</div>
+                             <p>Amount awarded in scholarships & bursaries every year</p>
+                          </div>
+                          <div class="col-1of2 g-stat g-secondary">
+                             <div>220,000</div>
+                             <p><a>Alumni in 76 countries</a></p>
+                          </div>
+                       </div>
+                   </div>
+
+<pre><xmp><div class="g-section g-bg-5">
+    <div class="row">
+      <div class="col-1of2 g-stat g-secondary">
+         <div>4 Million</div>
+         <p>Amount awarded in scholarships & bursaries every year</p>
+      </div>
+      <div class="col-1of2 g-stat g-secondary">
+         <div>220,000</div>
+         <p><a>Alumni in 76 countries</a></p>
+      </div>
+   </div>
+</div></xmp></pre>
+
+    </section>
+
+                <section id="tables">
+
+                    <h2>Tables</h2>
+
+                    <table class="g-table">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Justine</td>
+                                <td>Lileikis</td>
+                                <td>@justineresim</td>
+                            </tr>
+                            <tr>
+                                <td>Diana</td>
+                                <td>Caballero</td>
+                                <td>@dianaca</td>
+                            </tr>
+                            <tr>
+                                <td>Brian</td>
+                                <td>Frank</td>
+                                <td>@brainfrank</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+<pre><xmp><table class="g-table">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Justine</td>
+            <td>Lileikis</td>
+            <td>@justineresim</td>
+        </tr>
+        <tr>
+            <td>Diana</td>
+            <td>Caballero</td>
+            <td>@dianaca</td>
+        </tr>
+        <tr>
+            <td>Brian</td>
+            <td>Frank</td>
+            <td>@brainfrank</td>
+        </tr>
+    </tbody>
+</table></xmp></pre>
+
+                    <table class="g-table g-table-striped g-table-component">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Justine</td>
+                                <td>Lileikis</td>
+                                <td>@justineresim</td>
+                            </tr>
+                            <tr>
+                                <td>Diana</td>
+                                <td>Caballero</td>
+                                <td>@dianaca</td>
+                            </tr>
+                            <tr>
+                                <td>Brian</td>
+                                <td>Frank</td>
+                                <td>@brainfrank</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+<pre><xmp><table class="g-table g-table-striped g-table-component">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Justine</td>
+            <td>Lileikis</td>
+            <td>@justineresim</td>
+        </tr>
+        <tr>
+            <td>Diana</td>
+            <td>Caballero</td>
+            <td>@dianaca</td>
+        </tr>
+        <tr>
+            <td>Brian</td>
+            <td>Frank</td>
+            <td>@brainfrank</td>
+        </tr>
+    </tbody>
+</table></xmp></pre>
+
+                </section>
+                
+                <section id="responsivetables">
+
+                    <h2>Responsive Tables</h2>
+
+                    <table class="g-table g-table-striped g-tablet-stacked">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="mobileToggleTrigger">
+                                <td><a class="g-open-link ion-plus-circled"></a>Justine</td>
+                                <td>Lileikis</td>
+                                <td>@justineresim</td>
+                            </tr>
+                            <tr class="mobileToggleTrigger">
+                                <td><a class="g-open-link ion-plus-circled"></a>Diana</td>
+                                <td>Caballero</td>
+                                <td>@dianaca</td>
+                            </tr>
+                            <tr class="mobileToggleTrigger">
+                                <td><a class="g-open-link ion-plus-circled"></a>Brian</td>
+                                <td>Frank</td>
+                                <td>@brainfrank</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+<pre><xmp><table class="g-table g-table-striped g-tablet-stacked">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="mobileToggleTrigger">
+            <td><a class="g-open-link ion-plus-circled"></a>Justine</td>
+            <td>Lileikis</td>
+            <td>@justineresim</td>
+        </tr>
+        <tr class="mobileToggleTrigger">
+            <td><a class="g-open-link ion-plus-circled"></a>Diana</td>
+            <td>Caballero</td>
+            <td>@dianaca</td>
+        </tr>
+        <tr class="mobileToggleTrigger">
+            <td><a class="g-open-link ion-plus-circled"></a>Brian</td>
+            <td>Frank</td>
+            <td>@brainfrank</td>
+        </tr>
+    </tbody>
+</table></xmp></pre>
+
+                </section>
+
+
+                <section id="tooltips">
+
+                    <h2>Tooltips - Tooltipster</h2>
+                    <p><a href="http://iamceege.github.io/tooltipster/" target="_blank">http://iamceege.github.io/tooltipster/</a></p>
+                    <br>
+
+                    <span class="tooltip tooltip-style" title="This is a tooltip!">Tooltip Example</span>
+                    
+    <pre><xmp><span class="tooltip tooltip-style" title="This is a tooltip!">Tooltip Example</span></xmp></pre>
+                
+                </section>
+
+                <section id="text">
+                    <h2>Text Styling</h2>
+                    
+                    <h1>h1 Heading Proin maximus sapien et imperdiet ultricies.</h1>
+                    <h2>h2 Heading Proin maximus sapien et imperdiet ultricies.</h2>
+                    <h3>h3 Heading Proin maximus sapien et imperdiet ultricies.</h3>
+                    <h4>h4 Heading Proin maximus sapien et imperdiet ultricies. Proin maximus sapien et imperdiet ultricies.</h4>
+                    <h5>h5 Heading Proin maximus sapien et imperdiet ultricies. Proin maximus sapien et imperdiet ultricies.</h5>
+                    <h6>h6 Heading Proin maximus sapien et imperdiet ultricies. Proin maximus sapien et imperdiet ultricies.</h6>
+                    
+                    <div class="h3">The classes '.h1', '.h2', '.h3','.h4', '.h5' and '.h6' can be used to emulate the heading styling.</div>
+
+                    <h2>h2 Heading</h2>
+                    <p><em>Proin maximus sapien et imperdiet ultricies.</em> Phasellus tempor urna sit amet erat congue laoreet. Praesent sodales tempus fermentum. Duis hendrerit leo eget ipsum imperdiet, vitae dapibus ante pharetra. Ut quis leo posuere, mollis ex quis, pulvinar neque.</p>       
+                    <p>Suspendisse et ante pretium, pulvinar massa non, <b>faucibus dui</b>. Nullam aliquam pulvinar lectus. <a>Proin tincidunt eros dolor</a>, at tempus ante commodo quis. Morbi et rhoncus odio. Duis sit amet tortor id metus tempor mollis in ut dui. In vel neque et odio porta pharetra at a lectus. Aenean porttitor tincidunt ipsum, et mollis massa gravida non. Morbi id nunc urna. Maecenas eleifend dui ac imperdiet tristique.</p>
+                    <h2>h2 Heading</h2>
+                    <h3>h3 Heading</h3>
+                    <p>Suspendisse et ante pretium, pulvinar massa non, <b>faucibus dui</b>. Nullam aliquam pulvinar lectus. <a>Proin tincidunt eros dolor</a>, at tempus ante commodo quis. Morbi et rhoncus odio. Duis sit amet tortor id metus tempor mollis in ut dui. In vel neque et odio porta pharetra at a lectus. Aenean porttitor tincidunt ipsum, et mollis massa gravida non. Morbi id nunc urna. Maecenas eleifend dui ac imperdiet tristique.</p>
+                    <hr>
+                    <p>Proin aliquam, ante eu faucibus suscipit, mauris nisl porttitor metus, eget feugiat ex elit ac dui. Phasellus vestibulum metus dolor, eget suscipit elit iaculis mattis. Ut imperdiet velit in neque ullamcorper sollicitudin. Pellentesque commodo nec velit tincidunt ultricies. Aliquam eleifend nisl mattis purus varius iaculis. Nunc pretium massa ipsum, ut lobortis neque pharetra imperdiet.</p>
+                    <h3>h3 Heading</h3>
+                    <h4>h4 Heading</h4>
+                    <p>Suspendisse et ante pretium, pulvinar massa non, <b>faucibus dui</b>. Nullam aliquam pulvinar lectus. <a>Proin tincidunt eros dolor</a>, at tempus ante commodo quis. Morbi et rhoncus odio. Duis sit amet tortor id metus tempor mollis in ut dui. In vel neque et odio porta pharetra at a lectus. Aenean porttitor tincidunt ipsum, et mollis massa gravida non. Morbi id nunc urna. Maecenas eleifend dui ac imperdiet tristique.</p>
+                    <p><em>Proin maximus sapien et imperdiet ultricies.</em> Phasellus tempor urna sit amet erat congue laoreet. Praesent sodales tempus fermentum. Duis hendrerit leo eget ipsum imperdiet, vitae dapibus ante pharetra. Ut quis leo posuere, mollis ex quis, pulvinar neque.</p>       
+
+                    <hr class="g-secondary"> 
+
+                    <p>Let's test <b>bold!</b> and maybe <em>italic too!</em></p>
+                    <p>Regular paragraph styling</p>
+                    <p class="g-color-dark">Dark text color</p>
+                    <p class="g-color-light">Light text color</p>
+                    <p class="g-color-secondary">Secondary text color</p>
+                    <p><strong>Bold body font</strong></p>
+                    <p><em>Italic body font</em></p>
+                    <p class="g-font-small">Small body font</p>
+                    <p class="g-font-smaller">Smaller body font</p>
+                    <p class="g-font-large">Large body font</p>
+                    <p class="g-font-larger">Larger body font</p>
+                    <p class="g-font-largest">Largest body font</p>
+                    <div class="g-subhead g-color-brand-4">Subheading Styling</div>
+
+<pre><xmp><p>Let's test <b>bold!</b> and maybe <em>italic too!</em></p>
+<p>Regular paragraph styling</p>
+<p class="g-color-dark">Dark text color</p>
+<p class="g-color-light">Light text color</p>
+<p class="g-color-secondary">Secondary text color</p>
+<p><strong>Bold body font</strong></p>
+<p><em>Italic body font</em></p>
+<p class="g-font-small">Small body font</p>
+<p class="g-font-smaller">Smaller body font</p>
+<p class="g-font-large">Large body font</p>
+<p class="g-font-larger">Larger body font</p>
+<p class="g-font-largest">Largest body font</p>
+<div class="g-subhead g-color-brand-4">Subheading Styling</div></xmp></pre>
+
+                </section>
+
+                <section id="links">
+                    <h2>Links</h2>
+
+                    <h3><a>Heading Link</a></h3>
+                    <a>Standard link</a>
+                    <br><br>
+                    <a><span class="ion-ios-arrow-back g-icon-left"></span>Link with icon left</a>
+                    <br><br>
+                    <a>Link with icon right<span class="ion-ios-arrow-forward g-icon-right"></span></a>
+                    <br><br>
+                    <a class="g-link-2">Secondary Link Style</a>
+                    <br><br>
+                    <div class="g-bg-grey-1" style="padding: 10px 15px; width: 100%;">
+                        <a class="g-link-3">Third Link Style for on darker backgrounds</a>
+                    </div>
+                    <br>
+                    <a class="g-link-4"><span class="ion-link g-icon-left"></span>Fourth Link style with icon</a>
+                    <br><br>
+                    <a class="g-link-5">Fifth Link style</a>
+
+<pre><xmp><h3><h3><a>Heading Link</a></h3>
+<a>Standard link</a>
+<br><br>
+<a><span class="ion-ios-arrow-back g-icon-left"></span>Link with icon left</a>
+<br><br>
+<a>Link with icon right<span class="ion-ios-arrow-forward g-icon-right"></span></a>
+<br><br>
+<a class="g-link-2">Secondary Link Style</a>
+<br><br>
+<div class="g-bg-grey-1" style="padding: 10px 15px; width: 100%;">
+    <a class="g-link-3">Third Link Style for on darker backgrounds</a>
+</div>
+<br>
+<a class="g-link-4"><span class="ion-link g-icon-left"></span>Fourth Link style with icon</a>
+<br><br>
+<a class="g-link-5">Fifth Link style</a></xmp></pre>
+
+                </section>
+
+                <section id="colours">
+
+                    <h2>Brand Colours</h2> 
+                    <br>
+
+                    <div class="row margin-bottom">
+                        <div class="col-1of5">
+                            <div class="testing-bg g-bg-brand-1"></div>
+                            <p class="g-text-center">#A6192E</p>
+                        </div>
+                        <div class="col-1of5">
+                            <div class="testing-bg g-bg-brand-2"></div>
+                            <p class="g-text-center">#6D2077</p>
+                        </div>
+                        <div class="col-1of5">
+                            <div class="testing-bg g-bg-brand-3"></div>
+                            <p class="g-text-center">#005EB8</p>
+                        </div>
+                        <div class="col-1of5">
+                            <div class="testing-bg g-bg-brand-4"></div>
+                            <p class="g-text-center">#00A3E0</p>
+                        </div>
+                        <div class="col-1of5">
+                            <div class="testing-bg g-bg-brand-5"></div>
+                            <p class="g-text-center">#DA291C</p>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="row margin-bottom">
+    <div class="col-1of5">
+        <div class="testing-bg g-bg-brand-1"></div>
+        <p class="g-text-center">#A6192E</p>
+    </div>
+    <div class="col-1of5">
+        <div class="testing-bg g-bg-brand-2"></div>
+        <p class="g-text-center">#6D2077</p>
+    </div>
+    <div class="col-1of5">
+        <div class="testing-bg g-bg-brand-3"></div>
+        <p class="g-text-center">#005EB8</p>
+    </div>
+    <div class="col-1of5">
+        <div class="testing-bg g-bg-brand-4"></div>
+        <p class="g-text-center">#00A3E0</p>
+    </div>
+    <div class="col-1of5">
+        <div class="testing-bg g-bg-brand-5"></div>
+        <p class="g-text-center">#DA291C</p>
+    </div>
+</div></xmp></pre>
+
+                </section>
+
+                <section id="bgcolours">
+
+                    <h2>Background Colours</h2>
+                    <br>
+
+                    <div class="row margin-bottom">
+                        <div class="col-1of6">
+                            <div class="testing-bg g-bg-1"></div>
+                            <p class="g-text-center">#FFFFFF</p>
+                        </div>
+                        <div class="col-1of6">
+                            <div class="testing-bg g-bg-2"></div>
+                            <p class="g-text-center">#F7F7F8</p>
+                        </div>
+                        <div class="col-1of6">
+                            <div class="testing-bg g-bg-3"></div>
+                            <p class="g-text-center">#F6F7F9</p>
+                        </div>
+                        <div class="col-1of6">
+                            <div class="testing-bg g-bg-4"></div>
+                            <p class="g-text-center">#1C232C</p>
+                        </div>
+                        <div class="col-1of6">
+                            <div class="testing-bg g-bg-5"></div>
+                            <p class="g-text-center">#00A3E0</p>
+                        </div>
+                        <div class="col-1of6">
+                            <div class="testing-bg g-bg-6"></div>
+                            <p class="g-text-center">Pattern</p>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="row margin-bottom">
+    <div class="col-1of6">
+        <div class="testing-bg g-bg-1"></div>
+        <p class="g-text-center">#FFFFFF</p>
+    </div>
+    <div class="col-1of6">
+        <div class="testing-bg g-bg-2"></div>
+        <p class="g-text-center">#F7F7F8</p>
+    </div>
+    <div class="col-1of6">
+        <div class="testing-bg g-bg-3"></div>
+        <p class="g-text-center">#F6F7F9</p>
+    </div>
+    <div class="col-1of6">
+        <div class="testing-bg g-bg-4"></div>
+        <p class="g-text-center">#1C232C</p>
+    </div>
+    <div class="col-1of6">
+        <div class="testing-bg g-bg-5"></div>
+        <p class="g-text-center">#00A3E0</p>
+    </div>
+    <div class="col-1of6">
+        <div class="testing-bg g-bg-6"></div>
+        <p class="g-text-center">Pattern</p>
+    </div>
+</div></xmp></pre>
+
+                </section>
+
+                <section id="neutrals">
+
+                    <h2>Neutrals</h2>
+                    <br>
+
+                    <div class="row margin-bottom">
+                        <div class="col-1of5">
+                            <div class="testing-bg g-bg-grey-1"></div>
+                            <p class="g-text-center">#201F1F</p>
+                        </div>
+                        <div class="col-1of5">
+                            <div class="testing-bg g-bg-grey-2"></div>
+                            <p class="g-text-center">#324053</p>
+                        </div>
+                        <div class="col-1of5">
+                            <div class="testing-bg g-bg-grey-3"></div>
+                            <p class="g-text-center">#565A61</p>
+                        </div>
+                         <div class="col-1of5">
+                            <div class="testing-bg g-bg-grey-4"></div>
+                            <p class="g-text-center">#767C86</p>
+                        </div> 
+                        <div class="col-1of5">
+                            <div class="testing-bg g-bg-grey-5"></div>
+                            <p class="g-text-center">#d9DADC</p>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="row margin-bottom">
+    <div class="col-1of5">
+        <div class="testing-bg g-bg-grey-1"></div>
+        <p class="g-text-center">#201F1F</p>
+    </div>
+    <div class="col-1of5">
+        <div class="testing-bg g-bg-grey-2"></div>
+        <p class="g-text-center">#324053</p>
+    </div>
+    <div class="col-1of5">
+        <div class="testing-bg g-bg-grey-3"></div>
+        <p class="g-text-center">#565A61</p>
+    </div>
+     <div class="col-1of5">
+        <div class="testing-bg g-bg-grey-4"></div>
+        <p class="g-text-center">#767C86</p>
+    </div> 
+    <div class="col-1of5">
+        <div class="testing-bg g-bg-grey-5"></div>
+        <p class="g-text-center">#D9DADC</p>
+    </div>
+</div></xmp></pre>
+
+                </section>
+
+                <section id="grid">
+
+                    <h2>Grid System</h2> 
+
+                    <p>The grid system is created by any combination of 1-8 columns (ie "col-1of6") wrapped in a "row" class to clear floats.</p>
+                    <p>To change the size of columns based on screen size you may define the columns for larger screens, smaller screens and for mobile by adding "lg-2of3", "sm-1of3", "xs-1of2" to columns respectively.</p>
+                    <p>To add margin bottom to columns you may add these classes to direct parent "rows": "margin-bottom" and "margin-bottom-sm"</p>
+                    <p>To change the width of the space between columns add "no-gutter", "sm-gutter", "lg-gutter", "sm-gutter-tablet", "sm-gutter-mobile" to parent "rows".</p>
+                    <p>You may also add "g-pull-right" to columns to float right instead of left.</p>
+                    <br><br>
+
+                    <div class="row margin-bottom">
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                    </div>
+
+                    <div class="row margin-bottom-sm">
+                        <div class="col-1of5">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of5">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of5">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of5">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of5">
+                            <div class="row margin-bottom-sm">
+                                <div class="col-1of2 sm-1of2">
+                                    <div class="testing-unit"></div>
+                                </div>
+                                <div class="col-1of2 sm-1of2">
+                                    <div class="testing-unit"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="row margin-bottom">
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+</div>
+
+<div class="row margin-bottom-sm">
+    <div class="col-1of5">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of5">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of5">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of5">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of5">
+        <div class="row margin-bottom-sm">
+            <div class="col-1of2 sm-1of2">
+                <div class="testing-unit"></div>
+            </div>
+            <div class="col-1of2 sm-1of2">
+                <div class="testing-unit"></div>
+            </div>
+        </div>
+    </div>
+</div></xmp></pre>
+
+                </section>
+
+                <section id="smgutter">
+
+                    <h2>Smaller Gutter</h2> 
+
+                    <p>A smaller gutter width for all screen sizes.</p>
+                    <br>
+
+                    <div class="row sm-gutter margin-bottom">
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="row sm-gutter margin-bottom">
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+</div></xmp></pre>
+                
+                </section>
+
+                <section id="smguttertablet">
+
+                    <h2>Smaller Gutter - Tablet</h2>
+
+                    <p>A smaller gutter width for screen sizes less than tablet.</p>
+                    <br>
+
+                    <div class="row sm-gutter-tablet margin-bottom">
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="row sm-gutter-tablet margin-bottom">
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+</div></xmp></pre>
+
+                </section>
+
+                <section id="smguttermobile">
+
+                    <h2>Smaller Gutter - Mobile</h2>
+
+                    <p>A smaller gutter width for mobile screen sizes.</p>
+                    <br>
+
+                    <div class="row sm-gutter-mobile margin-bottom">
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="row sm-gutter-mobile margin-bottom">
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+</div>
+</xmp></pre>    
+                
+                </section>
+
+                <section id="lggutter">
+
+                    <h2>Larger Gutter</h2>
+
+                    <p>A larger gutter width for large screens.</p>
+                    <br>
+
+                    <div class="row lg-gutter margin-bottom">
+                        <div class="col-1of4 sm-1of2 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of4 sm-1of2 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of4 sm-1of2 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of4 sm-1of2 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="row lg-gutter margin-bottom">
+    <div class="col-1of4 sm-1of2 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of4 sm-1of2 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of4 sm-1of2 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of4 sm-1of2 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+</div></xmp></pre>
+                
+                </section>
+
+                <section id="nogutter">
+
+                    <h2>No Gutter</h2>
+
+                    <p>A no gutter for all screen sizes.</p>
+                    <br>
+
+                    <div class="row no-gutter">
+                        <div class="col-1of4 sm-1of2 xs-1of2">
+                            <div style="background: url(img/sample/04.jpg) center center; background-size: cover; height: 200px; width: 100%; display: block;">
+                            </div>
+                        </div>
+                        <div class="col-1of4 sm-1of2 xs-1of2">
+                            <div style="background: url(img/sample/01.jpg) center center; background-size: cover; height: 200px; width: 100%; display: block;">
+                            </div>
+                        </div>
+                        <div class="col-1of4 sm-1of2 xs-1of2">
+                            <div style="background: url(img/sample/08.jpg) center center; background-size: cover; height: 200px; width: 100%; display: block;">
+                            </div>
+                        </div>
+                        <div class="col-1of4 sm-1of2 xs-1of2">
+                            <div style="background: url(img/sample/11.jpg) center center; background-size: cover; height: 200px; width: 100%; display: block;">
+                            </div>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="row no-gutter">
+    <div class="col-1of4 sm-1of2 xs-1of2">
+        <div style="background: url(img/sample/04.jpg) center center; background-size: cover; height: 200px; width: 100%; display: block;">
+        </div>
+    </div>
+    <div class="col-1of4 sm-1of2 xs-1of2">
+        <div style="background: url(img/sample/01.jpg) center center; background-size: cover; height: 200px; width: 100%; display: block;">
+        </div>
+    </div>
+    <div class="col-1of4 sm-1of2 xs-1of2">
+        <div style="background: url(img/sample/08.jpg) center center; background-size: cover; height: 200px; width: 100%; display: block;">
+        </div>
+    </div>
+    <div class="col-1of4 sm-1of2 xs-1of2">
+        <div style="background: url(img/sample/11.jpg) center center; background-size: cover; height: 200px; width: 100%; display: block;">
+        </div>
+    </div>
+</div></xmp></pre>    
+
+                </section>
+
+                <section id="helper">       
+
+                    <h2>Helper Classes</h2>
+                    <p>See youth/sass/shared/helpers/_helpers.scss for all helper classes.</p>
+
+                    <table class="g-table g-table-striped">
+                        <thead>
+                            <tr>
+                                <th>Class Name</th>
+                                <th>Usage</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>.g-text-uppercase</td>
+                                <td>Uppercase Text</td>
+                                <td><span class="g-text-uppercase">Uppercase Text</span></td>
+                            </tr>
+                            <tr>
+                                <td>.g-text-right</td>
+                                <td>Right aligned text</td>
+                                <td class="g-text-right">Right aligned text</td>
+                            </tr>
+                            <tr>
+                                <td>.g-text-left</td>
+                                <td>Left aligned text</td>
+                                <td class="g-text-left">Left aligned text</td>
+                            </tr>
+                            <tr>
+                                <td>.g-text-center</td>
+                                <td>Center aligned text</td>
+                                <td class="g-text-center">Center aligned text</td>
+                            </tr>
+                            <tr>
+                                <td>.g-text-underline</td>
+                                <td>Underlined text</td>
+                                <td class="g-text-underline">Underlined text</td>
+                            </tr>
+                            <tr>
+                                <td>.g-pull-right</td>
+                                <td>Float right</td>
+                                <td><span class="g-pull-right">Float right</span></td>
+                            </tr>
+                            <tr>
+                                <td>.g-pull-left</td>
+                                <td>Float left</td>
+                                <td><span class="g-pull-left">Float left</span></td>
+                            </tr>
+                            <tr>
+                                <td>.g-clearfix</td>
+                                <td>To clear floats surround floated elements in .g-clearfix</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>.g-margin-bottom, .g-margin-bottom-sm, .g-margin-bottom-lg</td>
+                                <td>To add margin bottom</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>.g-margin-top, .g-margin-top-sm, .g-margin-top-lg</td>
+                                <td>To add margin top</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>.g-round</td>
+                                <td>To add 50% border radius</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>.g-hidden</td>
+                                <td>Hides elements on all screens</td>
+                                <td><span class="g-hidden">Hidden element</span></td>
+                            </tr>
+                            <tr>
+                                <td>.g-xs-hidden</td>
+                                <td>Hides elements in mobile view</td>
+                                <td><span class="g-xs-hidden">Mobile hidden element</span></td>
+                            </tr>
+                            <tr>
+                                <td>.g-sm-hidden</td>
+                                <td>Hides elements in tablet view</td>
+                                <td><span class="g-sm-hidden">Tablet hidden element</span></td>
+                            </tr>
+                            <tr>
+                                <td>.g-lg-hidden</td>
+                                <td>Hides elements in desktop view</td>
+                                <td><span class="g-lg-hidden">Desktop hidden element</span></td>
+                            </tr>
+                            <tr>
+                                <td>.g-container</td>
+                                <td>To wrap page content. (max width of 1200px)</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>.g-container-lg</td>
+                                <td>To wrap page content - wider content. (max width of 1300px)</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>.g-container-sm</td>
+                                <td>To wrap page content - smaller content. (max width of 800px)</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>.g-container-xs</td>
+                                <td>To wrap page content - smallest content. (max width of 700px)</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>.g-section</td>
+                                <td>To wrap page content section, padding top and bottom.</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>.g-section.g-first</td>
+                                <td>To wrap page content section, padding bottom only for first section on a page.</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>.g-section.g-section-secondary</td>
+                                <td>To wrap page content section, padding top and bottom, secondary background colour and borders.</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>.g-main</td>
+                                <td>To wrap all page content.</td>
+                                <td></td>
+                            </tr> 
+                            <tr>
+                                <td>.g-icon-open.ion-record</td>
+                                <td>Green dot icon - for open programs.</td>
+                                <td><span class="ion-record g-icon-open"></span></td>
+                            </tr>
+                            <tr>
+                                <td>.g-icon-closed.ion-record</td>
+                                <td>Red dot icon - for closed programs.</td>
+                                <td><span class="ion-record g-icon-closed"></span></td>
+                            </tr>
+                            <tr>
+                                <td>.g-icon-waitlisted.ion-record</td>
+                                <td>Yellow dot icon - for waitlisted programs.</td>
+                                <td><span class="ion-record g-icon-waitlisted"></span></td>
+                            </tr>  
+                            <tr>
+                                <td>.g-icon-complete.ion-checkmark</td>
+                                <td>Green checkmark - for complete or included.</td>
+                                <td><span class="g-icon-complete ion-checkmark"></span></td>
+                            </tr>    
+                            <tr>
+                                <td>.g-secondary</td>
+                                <td>Secondary hr styling.</td>
+                                <td><hr class="g-secondary"></td>
+                            </tr>          
+                        </tbody>
+                    </table>
+                    <br><br><br>
+
+                </section>
+
+                <section id="resources">
+
+                    <h2>External Resources</h2>
+
+                    <h3>Icon Font - Ion Icons</h3>
+                    <p><a href="http://ionicons.com/" target="_blank">http://ionicons.com/</a></p>
+
+                    <h3>Animations - Motion UI</h3>
+                    <p><a href="http://zurb.com/playground/motion-ui" target="_blank">http://zurb.com/playground/motion-ui</a><br><a href="https://github.com/zurb/motion-ui/blob/master/docs/animations.md" target="_blank">https://github.com/zurb/motion-ui/blob/master/docs/animations.md</a></p>
+
+                    <h3>Sliders - Slick Slider</h3>
+                    <p><a href="https://github.com/kenwheeler/slick" target="_blank">https://github.com/kenwheeler/slick</a><br><a href="http://kenwheeler.github.io/slick/" target="_blank">http://kenwheeler.github.io/slick/</a></p>
+
+                    <br><br><br>
+
+                </section>
+
+                <div class="g-clearfix">
+                    <div class="g-pull-right">
+                        <a class="g-disabled previousItem"><span class="ion-ios-arrow-back g-icon-left"></span>Previous</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a class="nextItem">Next<span class="ion-ios-arrow-forward g-icon-right"></span></a>
+                    </div>
+                </div> 
+
+            </div>
+
+            <div class="g-sidebar">
+               <div class="g-sidebar-section">
+                  <div class="g-sidenav">
+                     <div class="g-heading">
+                        <div>UI Components</div>
+                     </div>
+                     <ul class="g-basic">
+                        <li>
+                            <a id="0" class="test-scroll first" scroll="#accordion">Accordions</a>
+                        </li>
+                        <li>
+                            <a id="1" class="test-scroll" scroll="#breadcrumbs">Breadcrumbs</a>
+                        </li>
+                        <li>
+                            <a id="2" class="test-scroll" scroll="#buttons">Buttons</a>
+                        </li>
+                        <li>
+                            <a id="3" class="test-scroll" scroll="#cards">Cards</a>
+                            <ul>
+                                <li><a id="4" class="test-scroll" scroll="#infocards">Important Info Cards</a></li>
+                                <li><a id="5" class="test-scroll" scroll="#relatedcards">Related Info Cards</a></li>
+                                <li><a id="6" class="test-scroll" scroll="#smallercards">Smaller Cards</a></li>
+                                <li><a id="7" class="test-scroll" scroll="#profilecards">Profile Cards</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a id="8" class="test-scroll" scroll="#ctas">CTAs</a>
+                        </li>
+                        <li>
+                            <a id="9" class="test-scroll" scroll="#forms">Forms</a>
+                            <ul>
+                               <li><a id="10" class="test-scroll" scroll="#gridforms">Forms using Grids</a></li>
+                               <li><a id="11" class="test-scroll" scroll="#inlineforms">Inline Forms</a></li>
+                               <li><a id="12" class="test-scroll" scroll="#horizontalforms">Horizontal Forms</a></li>
+                            </ul> 
+                        </li>
+                        <li>
+                            <a id="13" class="test-scroll" scroll="#iconlinks">Icon Links</a>
+                        </li>
+                        <li>
+                            <a id="14" class="test-scroll" scroll="#imagegallery">Image Gallery - Swipebox</a>
+                        </li>
+                        <li>
+                            <a id="15" class="test-scroll" scroll="#lists">Lists</a>
+                            <ul>
+                               <li><a id="16" class="test-scroll" scroll="#orderedlists">Ordered Lists</a></li>
+                               <li><a id="17" class="test-scroll" scroll="#columnlists">Two Column Lists</a></li>
+                               <li><a id="18" class="test-scroll" scroll="#basiclists">Basic Lists</a></li>
+                               <li><a id="19" class="test-scroll" scroll="#secondarylists">Secondary List Styling</a></li>
+                               <li><a id="20" class="test-scroll" scroll="#inlinelists">Inline Lists</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="21" class="test-scroll" scroll="#modalwindow">Modals</a></li>
+                        <li><a id="22" class="test-scroll" scroll="#pagination">Pagination</a></li>
+                        <li><a id="23" class="test-scroll" scroll="#stats">Stats</a></li>
+                        <li>
+                            <a id="24" class="test-scroll" scroll="#tables">Tables</a>
+                            <ul>
+                               <li><a id="25" class="test-scroll" scroll="#responsivetables">Responsive Tables</a></li>
+                            </ul> 
+                        </li>
+                        <li><a id="26" class="test-scroll" scroll="#tooltips">Tooltips</a></li>
+                     </ul>
+                  </div>
+                  <div class="g-sidenav">
+                    <div class="g-heading">
+                        <div>General Styling</div>
+                    </div>
+                    <ul class="g-basic">
+                        <li>
+                            <a id="27" class="test-scroll" scroll="#text">Text Styling</a>
+                        </li>
+                        <li>
+                            <a id="28" class="test-scroll" scroll="#links">Links</a>
+                        </li>
+                        <li>
+                            <a id="29" class="test-scroll" scroll="#colours">Brand Colours</a>
+                            <ul>
+                               <li><a id="30" class="test-scroll" scroll="#bgcolours">Background Colours</a></li>
+                               <li><a id="31" class="test-scroll" scroll="#neutrals">Neutrals</a></li>
+                            </ul> 
+                        </li>
+                        <li>
+                            <a id="32" class="test-scroll" scroll="#grid">Grid System</a>
+                            <ul>
+                                <li><a id="33"class="test-scroll" scroll="#smgutter">Smaller Gutter</a></li>
+                                <li><a id="34" class="test-scroll" scroll="#smguttermobile">Smaller Gutter - Mobile</a></li>
+                                <li><a id="35" class="test-scroll" scroll="#smguttertablet">Smaller Gutter - Tablet</a></li>
+                                <li><a id="36" class="test-scroll" scroll="#lggutter">Larger Gutter</a></li>
+                                <li><a id="37" class="test-scroll" scroll="#nogutter">No Gutter</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="38" class="test-scroll" scroll="#helper">Helper Classes</a></li>
+                        <li><a id="39" class="test-scroll last" scroll="#resources">External Resources</a></li>
+                        </ul>
+                </div>
+                <div class="g-sidenav">
+                    <div class="g-heading">
+                        <div>Phase One</div>
+                    </div>
+                    <ul class="g-basic">
+                        <li><a target="_blank" href="cec-home.html">CEC Homepage <span class="g-icon-right ion-link"></span></a></li>
+                        <li><a target="_blank" href="basic.html">CEC Basic Page <span class="g-icon-right ion-link"></span></a></li>
+                        <li><a target="_blank" href="school-group-programs.html">CEC Basic Page 2 <span class="g-icon-right ion-link"></span></a></li>
+                        <li><a target="_blank" href="plumber.html">CEC Program Details <span class="g-icon-right ion-link"></span></a></li>
+                    </ul>
+                    <div class="g-heading">
+                        <div>Phase Two</div>
+                    </div>
+                    <ul class="g-basic">
+                        <li><a target="_blank" href="sait-young-originals.html">Young Originals Homepage<span class="g-icon-right ion-link"></span></a></li>
+                        <li><a target="_blank" href="sait-summer-camps.html">Summer Camps Homepage<span class="g-icon-right ion-link"></span></a></li>
+                        <li><a target="_blank" href="xtreme-robots.html">Summer Camp Detail<span class="g-icon-right ion-link"></span></a></li>
+                        <li><a target="_blank" href="camp-favourites.html">Camp Favourites<span class="g-icon-right ion-link"></span></a></li>
+                    </ul>
+                </div>
+              </div>
+           </div>
+        </div>
+    </div>
+</div>
+
+    <!-- /////////////// Vendor JS files /////////////// -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- Slick Slider -->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+
+    <!-- Swipebox - for lightbox gallery -->
+    <script src="js/vendor/jquery.swipebox.js"></script>
+
+    <!-- Tooltipster - for tooltips -->
+    <script src="js/vendor/jquery.tooltipster.js"></script>
+
+    <!-- Remodal - for modals -->
+    <script src="js/vendor/remodal.js"></script>
+
+    <!-- /////////////// Custom JS files /////////////// -->
+
+    <!-- Main JS file -->
+    <script src="js/scripts.js"></script>
+
+    <!-- Additional JS from phase 2 of youth -->
+    <script src="js/camps-scripts.js"></script>
+
+     <!-- Style Guide JS -->
+    <script src="styleguide/js/scripts.js"></script>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Helper Classes
+   ========================================================================== */
+
+//addition of helper border classes
+.g-border{
+	border: 1px solid $border-color;
+}
+
+.g-border-top{
+	border-top: 1px solid $border-color;
+}
+
+.g-border-bottom{
+	border-bottom: 1px solid $border-color;
+}
+
+.g-border-right{
+	border-right: 1px solid $border-color;
+}
+
+.g-border-left{
+	border-left: 1px solid $border-color;
+}
+
+
+
+//addition of responsive margin classes
+
+@media (max-width: $max-break-mobile) {
+	.g-margin-top-mobile{
+		margin-top: 2.2em !important;
+	}
+	.g-margin-bottom-mobile{
+		margin-bottom: 2.2em !important;
+	}
+	.g-margin-top-sm-mobile{
+		margin-top: 1em !important;
+	}
+	.g-margin-bottom-sm-nav{
+		margin-bottom: 1em !important;
+	}
+}
+
+
+@media (max-width: $max-break-mobile-nav) {
+	.g-margin-top-mobile-nav{
+		margin-top: 2.2em !important;
+	}
+	.g-margin-bottom-mobile-nav{
+		margin-bottom: 2.2em !important;
+	}
+	.g-margin-top-sm-mobile-nav{
+		margin-top: 1em !important;
+	}
+	.g-margin-bottom-sm-nav-nav{
+		margin-bottom: 1em !important;
+	}
+}
+
+@media (max-width: $max-break-tablet) {
+	.g-margin-top-tablet{
+		margin-top: 2.2em !important;
+	}
+	.g-margin-bottom-tablet{
+		margin-bottom: 2.2em !important;
+	}
+	.g-margin-top-sm-tablet{
+		margin-top: 1em !important;
+	}
+	.g-margin-bottom-sm-tablet{
+		margin-bottom: 1em !important;
+	}
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+table.g-table{
+	&.g-align-middle{
+		td{
+			vertical-align: middle;
+		}
+	}
+	&.g-tablet-stacked.g-w-padding{
+		@media (max-width: $max-break-tablet) {
+			td{
+				padding: 5px 0;
+			}
+		}
+	}
+	// to align with the small card padding
+	@media (min-width: $min-break-tablet) {
+		&.g-tablet-stacked.g-table-padding-card-sm{
+			thead, tbody, tfoot, tr, th, td{
+			    padding: 10px $card-padding-sm;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,14 @@
+/* ==========================================================================
+   Breadcrumbs
+   ========================================================================== */
+
+.g-breadcrumb{
+	@extend .g-font-small;
+	a{
+		display: inline-block;
+	}
+	span.ion-ios-arrow-forward{
+		margin: 0 .5em;
+		color: $grey-4;
+	}	
+}

@@ -1,0 +1,242 @@
+/* ==========================================================================
+   Search page - google search results styling - from SAIT
+   ========================================================================== */
+
+.cse .gsc-tabHeader.gsc-tabhActive, .gsc-tabHeader{
+	color: #000 !important;
+	text-transform: none !important;
+}
+
+.gsc-tabhActive{
+	border: none !important;
+	border-bottom: 3px solid #cc0000 !important;
+}
+
+.gs-spacer{
+	width: 1em !important;
+}
+
+.gsc-control-cse {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+    font-size: 1.2em !important;
+    color: #000 !important;
+}
+
+.gsc-tabHeader {
+	font-family: 'Titillium Web', Arial,sans-serif !important;
+	background: #fff !important;
+	font-size: 1.2em !important;
+	margin-right: 1.2em !important;
+}
+
+.gsc-control-cse .gsc-table-result {
+	font-family: 'Titillium Web', Arial,sans-serif !important;
+}
+
+.gsc-result .gs-title {
+    height: 1.6em !important;
+    line-height: 1.8em !important;
+    overflow: hidden !important;
+    padding-bottom: .165em !important;
+}
+
+.cse .gs-snippet, .gs-snippet, .cse .gs-spelling-original, .gs-spelling-original {
+    font-size: 16px !important;
+    line-height: 24px !important;
+}
+
+.gs-webResult div.gs-visibleUrl, .gs-imageResult div.gs-visibleUrl {
+    color: #565a61 !important;
+    font-weight: bold !important;
+}
+
+.cse .gs-title{
+}
+
+.gs-per-result-labels{
+	position: relative !important;
+	bottom: 1em !important;
+}
+
+.gsc-control-cse .gs-spelling, .gsc-control-cse .gs-result .gs-title, .gsc-control-cse .gs-result .gs-title * {
+    font-size: 22px !important;
+}
+
+.gsc-completion-container {
+    font-family: "Titillium Web", Verdana, arial, sans-serif !important;
+    font-size: 14px;
+}
+
+.cse .gsc-tabsArea, .gsc-tabsArea {
+    border: 0  0 1px 0 solid !important;
+    border-color: #c0c0c0 !important;
+}
+
+.gs-visibleUrl{
+	padding-bottom: 1.1em !important;
+}
+
+.gs-webResult .gs-snippet, .gs-imageResult .gs-snippet, .gs-fileFormatType {
+    color: #565a61 !important;
+}
+
+.cse .gsc-tabHeader.gsc-tabhInactive, .gsc-tabHeader.gsc-tabhInactive {
+    border: none !important;
+    color: #999 !important;
+}
+
+.gs-webResult.gs-result a.gs-title:link, .gs-webResult.gs-result a.gs-title:link b, .gs-imageResult a.gs-title:link, .gs-imageResult a.gs-title:link b {
+    color: #005eb8 !important;		    
+}
+
+
+.gs-webResult.gs-result a.gs-title:visited, .gs-webResult.gs-result a.gs-title:visited b, .gs-imageResult a.gs-title:visited, .gs-imageResult a.gs-title:visited b {
+    color: #708190 !important;
+}
+
+
+/* Styling the pagination of results  */
+
+
+.cse .gsc-results .gsc-cursor-page.gsc-cursor-current-page, .gsc-results .gsc-cursor-page.gsc-cursor-current-page {
+    background-color: #461200;
+    color: #fff;
+    padding: 0 !important;
+    text-shadow: none !important;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+    background-color: #fff !important;
+    border: 1px solid #a6192e !important;
+    color: #a6192e !important;
+    pointer-events: none !important;
+}
+.gsc-cursor-page {
+    background-color: #a6192e !important;
+    border: 1px solid #a6192e !important;
+    border-radius: 50% !important;
+    color: #fff !important;
+    display: inline-block !important;
+    height: 2em !important;
+    line-height: 2em !important;
+    margin: 0 0.2em !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    width: 2em !important;
+}
+
+.gsc-results .gsc-cursor-box {
+    margin-top: 2em !important;
+}
+
+/* Styling search box */
+
+.cse input.gsc-input, input.gsc-input {
+		font-family: inherit;
+    border: 1px solid #d9dadc !important;
+    border-radius: 16px !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset !important;
+    color: #565a61 !important;
+    height: 35px !important;
+	padding: 5px 15px !important;
+	width: 96% !important;
+	font-size: 1.65em !important;
+}
+
+
+.cse input.gsc-input:focus, input.gsc-input:focus {
+    border: 1px solid #565a61 !important;
+}
+
+/* Button */
+
+.cse input.gsc-search-button, input.gsc-search-button {
+    -moz-user-select: none !important;
+    background-color: #da291c !important;
+    background-position: 50% center !important;
+    background-size: 200% auto !important;
+    border: 1px solid #da291c !important;
+    border-radius: 60px !important;
+    color: #fff !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    font-family: Titillium Web,sans-serif !important;
+    font-size: 1em !important;
+    font-weight: 700 !important;
+    height: 45px !important;
+    line-height: 43px !important;
+    margin-bottom: 0 !important;
+    outline: medium none !important;
+    padding: 0 27px !important;
+    position: relative !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    vertical-align: middle !important;
+    white-space: nowrap !important;
+}
+
+
+/* Completion container */
+
+
+.gsc-completion-container {
+    font-family: "Titillium Web",Verdana,arial,sans-serif !important;
+    font-size: 17px !important;
+    line-height: 23px !important;
+    font-weight: normal !important;
+}
+
+.gssb_a, .gssb_a td {
+    line-height: 30px !important;
+    white-space: nowrap;
+}
+
+
+/* Promotion */
+
+.gsc-webResult.gsc-result.gsc-promotion {
+    background-color: #f7f7f8 !important;
+	background: url('http://review.sait.git.resolutionim.com/img/waves.png') no-repeat top !important;
+	background-size: cover !important;
+    /* border: 1px solid #d9dadc !important; 
+       Let's go for something bolder */
+    border: 1px solid #cc0000 !important;
+}
+
+.gsc-promotion-text-cell .gs-visibleUrl, .gs-promotion .gs-visibleUrl{
+	color: #cc0000 !important;
+}
+
+.gs-promotion a.gs-title:link, .gs-promotion a.gs-title:link *, .gs-promotion .gs-snippet a:link {
+    color: #6D2077 !important;
+}
+
+
+.gs-promotion-text-cell{
+	padding: 5px 10px 5px 10px !important;
+}
+
+
+/* Promotion Completion Container */
+
+.gssb_l {
+		background-color: #565a61 !important;
+	height: 1px;
+}
+
+.gsc-completion-promotion-table{
+	font-size: 1.1em !important;
+}
+
+.gsc-completion-title {
+	   color: #cc0000 !important;
+}
+
+
+/* TEMP */
+
+ul#letterList li, img#pictureheader{
+	display: none !important;
+}

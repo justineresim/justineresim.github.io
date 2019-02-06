@@ -1,0 +1,203 @@
+/* ==========================================================================
+   Slick Slider custom styling
+    https://github.com/kenwheeler/slick
+	http://kenwheeler.github.io/slick/
+
+	Dependencies:
+	//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js
+	//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css
+	//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css
+
+   ========================================================================== */
+
+.slick-slider{
+	margin: 20px 0 50px;
+    .slick-slide{
+		&:focus {
+			outline: none;
+		}
+    }
+    button[class*='slick-']{
+	    width: auto;
+    	padding: 0;
+    	cursor: pointer;
+    	position: absolute;
+    	text-align: center;
+    	width: 60px;
+		height: 60px;
+		bottom: -90px;
+		top: auto;
+		right: 20px;
+		z-index: 100;
+    	&:after {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+			content:"\f3d3";
+			font-family: "Ionicons";
+			font-size: 25px;
+			margin: 0;
+    		display: inline-block;
+			width: 60px;
+			height: 60px;
+			line-height: 60px;
+			color: #fff;
+    		background-color: $grey-2;
+    		transition: 200ms all linear;
+		}
+		&.slick-prev {
+			right: 89px;
+			left: auto;
+			&:after {
+				content:"\f3d2";
+			}
+		}
+		&:hover{
+			&:after {
+				background-color: $brand-4;
+			}
+		}
+		@media (max-width: $max-break-desktop) {
+			right: 10px;
+			&.slick-prev {
+				right: 79px;
+			}
+		}
+		@media (max-width: 800px) {
+		    right: 50%;
+    		margin-right: -65px;
+			&.slick-prev {
+				right: 50%;
+    			margin-right: 5px;
+			}
+		}
+    	&:focus {
+			outline:none;
+		}
+		&.slick-disabled{
+			opacity: .3;
+			cursor: default;
+		}
+    }
+    @media (max-width: $max-break-desktop) {
+    	margin: 20px 0 100px;
+		.slick-dots{
+			bottom: -102px;
+		}
+	}
+}
+
+.slick-dots li {
+	margin: 0;
+	button:before {
+    	font-size: 10px;
+    }
+    &.slick-active button:before {
+	    color: $brand-2;
+	}
+}
+
+.g-profile-slider{
+	.slick-slide{
+		margin: 20px 20px;
+		@media (max-width: $max-break-desktop) {
+			margin: 10px 10px;
+		}
+	}
+}
+
+.g-image-slider, .g-image-slider-lg{
+    margin: 20px 0 40px;
+	button[class*='slick-']{
+		top: 50%;
+		margin-top: -30px;
+		right: 0;
+		bottom: auto;
+		margin-right: 0;
+		margin-left: 0;
+		&.slick-prev {
+			left: 0;
+			right: auto;
+			margin-right: 0;
+			margin-left: 0;
+		}
+    	&:after {
+    		background-color: $brand-4;
+    	}
+    	&:hover{
+			&:after {
+				background-color: darken($brand-4, 10%);
+			}
+		}
+		@media (max-width: 800px) {
+			bottom: -100px;
+		}
+    }
+    .slick-dots{
+	    bottom: -40px;
+    }
+    .slick-slide{
+    	padding: 0 30px;
+    }
+    .g-caption{
+    	padding-top: 10px;
+    	margin: 0px auto;
+    	max-width: 500px;
+    	text-align: center;
+    }
+    img{
+    	margin: 0px auto;
+    }
+}
+
+.g-image-slider-lg{
+	.slick-slide{
+		transform: scale(.9);
+		transition: transform 800ms linear;
+		.g-img-container{
+			background-color: $grey-2;
+			transition: background-color 800ms linear;
+		}
+		.g-caption{
+			opacity: 0;
+			transition: opacity 800ms linear;
+		}
+		@media (max-width: $max-break-desktop) {
+			margin: 10px 10px;
+		}
+		img{
+			transition: opacity 800ms linear;
+			opacity: .1;
+		}
+	}
+	.slick-slide.slick-active{
+		transform: scale(1);
+		.g-caption{
+			opacity: 1;
+		}
+	    img{
+	    	opacity: 1;
+	    }
+	}
+	@media (min-width: 800px) {
+		button[class*='slick-']{
+			right: 250px;
+			&.slick-prev {
+				left: 250px;
+			}
+		}
+	}
+}
+
+
+//loading styles - prevents flicker on load
+.slick-slider, .g-image-slider, .g-image-slider-lg, .g-profile-slider{
+    opacity: 0 !important;
+}
+
+.slick-slider.slick-initialized {
+    opacity: 1 !important;
+}
+
+
+

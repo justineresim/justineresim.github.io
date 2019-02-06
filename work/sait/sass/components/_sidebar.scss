@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Sidebar - side nav
+   ========================================================================== */
+
+.g-sidenav{
+	.g-heading{
+		@extend .g-font-large;
+		display: block;
+		border-bottom: 1px solid $border-color;
+		margin-bottom: 1em;
+		padding-bottom: .8em;
+		margin-top: 0;
+	}
+	ul.g-basic{
+		li{
+			a{
+				display: block;
+				margin-right: 4px;
+				&.g-active{
+					color: $brand-1;
+					padding-left: 12px;
+					position: relative;
+					&:after {
+						content: '';
+						height: 60%;
+						width: 4px;
+						position: absolute;
+						left: 0;
+						top: 22%;
+						background-color: $brand-1;
+					}
+				}
+				&:hover:not(.g-active){
+					margin-left: 4px;
+					margin-right: 0px;
+				}
+			}
+		}
+		ul{
+			padding-left: 14px;
+			list-style-type: none;
+			@extend .g-font-small;
+			li a{
+			    font-weight: normal;
+			    &.g-active{
+					color: $brand-1;
+					padding-left: 0;
+					position: relative;
+					&:after {
+						content: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.g-sidebar{
+	> * {
+		margin-bottom: 3em;
+		> .g-h4 + hr{
+			margin: 0 0 1.3em;
+		}
+	}
+}

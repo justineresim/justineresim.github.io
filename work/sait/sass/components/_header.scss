@@ -1,0 +1,353 @@
+/* ==========================================================================
+   Global Header
+   ========================================================================== */
+
+   
+.headers-container{
+	top: 0;
+	width: 100%;
+}
+
+
+header.g-header{
+	background: $brand-5;
+	@extend .box-shadow;
+	position: relative;
+	margin-top: 0;
+	transition: margin-top 100ms linear;
+	height: 102px;
+	z-index: 1000;
+	> .g-container{
+		position: relative;
+		> .row{
+			height: 51px;
+		}
+	}
+	.logo{
+		background: #fff;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1005;
+		transition: top 300ms linear;
+		img{
+			padding: 8px 16px 10px;
+			width: auto;
+			height: 110px;
+		}
+		@media (max-width: $max-break-mobile-nav) {
+			display: none;
+		}
+	}
+	.logo-sm{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		a{
+			display: block;
+		}
+		img{
+			padding: 10px 8px;
+			width: auto;
+			height: 42px;
+		}
+	}
+	.navToggle{
+		display: none;
+	}
+	ul, li{
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	ul{
+		li{
+			display: inline-block;
+		}
+	}
+
+	@media (max-width: $max-break-mobile-nav) {
+		.navToggle{
+			display: block;
+			text-align: right;
+			a{
+				color: #fff;
+			    font-size: 25px;
+    			padding: 12px 5px;
+    			display: inline-block;
+			}
+		}
+		.secondary-menu-row{
+			background-color: $grey-1;
+		}
+	}
+
+	.mega-menu{
+		padding: 1.5em 0;
+		position: fixed;
+		background: #fff;
+		width: 100%;
+		left: 0;
+		top: 103px;
+		z-index: 0;
+	    box-shadow: 0px 2px 5px rgba(167, 167, 167, 0.4);
+	    text-align: left;
+	    display: none;
+	    > .g-container{
+			padding: 0;
+	    }
+	    div[class*="col-"]:not(.g-empty){
+	    	border-right: 1px solid $border-color2;
+	    	padding: 0 2em;
+	    	min-height: 200px;
+	    	&:last-child{
+	    		border-right: none;
+	    	}
+	    }
+	    @media (max-width: $max-break-mobile-nav) {
+	    	position: relative;
+	    	box-shadow: none;
+    	    top: 0 !important;
+    	    padding: 15px 20px 0;
+	    	div[class*="col-"]:not(.g-empty){
+	    		min-height: 0;
+	    		border-right: 0;
+    		    padding: 0 1em 2em;
+    		    width: 100%;
+	    	}
+		}
+	    li{
+	    	display: block;
+	    	margin-bottom: 6px;
+	    	position: relative;
+	    }
+	    p{
+			@extend .g-font-small;
+		}
+	    .title{
+	    	@extend .g-font-small;
+	    	color:  $brand-1;
+	    	margin-bottom: 10px;
+	    	text-transform: uppercase;
+	    }
+	    .g-primary-list{
+			li{
+		    	margin-bottom: 10px;
+		    }
+	    }
+	    .g-secondary-list{
+	    	@extend .g-font-small;
+			a:not(.all-link){
+				color:  $grey-1;
+				display: block;
+				&:hover, &:visited, &:hover{
+					text-decoration: underline;
+				}
+			}
+			a.all-link{
+				margin-top: 10px;
+				display: inline-block;
+			}
+	    }
+	}
+	
+	.secondary-menu{
+		text-align: right;
+		@extend .g-font-small;
+		a{
+			padding: 16px 15px 15px;
+			color: #fff;
+			display: block;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		.ion-eye:before {
+    		font-size: 1.2em;
+    	}
+		.search{
+			@extend .g-font-larger;
+		    line-height: 1.5em;
+			a{
+				background: rgba(0,0,0,.3);
+				border-radius: 50%;
+				padding: 3px 10px;
+				&:hover{
+					background-color: rgba(0,0,0,.6);
+					color: #fff;
+				}
+			}
+		}
+		@media (max-width: $max-break-mobile-nav) {
+			li:first-child{
+				display: none;
+			}
+		}
+	}
+
+	.main-menu{
+		float: right;
+		.mobileNavToggle{
+			display: none;
+		}
+		> li{
+			display: block;
+			float: left;
+			padding: 13px 20px;
+			position: relative;
+			> a{
+				color: #fff;
+				display: block;
+				position: relative;
+				font-size: 16px;
+				line-height: 24px;
+				&:visited{
+					color: #fff;
+				}
+			}
+			&.g-active{
+				background-color: $brand-1;
+				&:after{
+				    top: 50px;
+					left: 50%;
+					border: solid transparent;
+					content: " ";
+					height: 0;
+					width: 0;
+					position: absolute;
+					pointer-events: none;
+					border-top-color: $brand-1;
+					border-width: 8px;
+					margin-left: -8px;
+					@media (max-width: $max-break-mobile-nav) {
+						display: none;
+					}
+					>a{
+						color: #fff;
+					}
+				}
+				> a + span + .mega-menu{
+					display: block !important;
+					@media (max-width: $max-break-mobile-nav) {
+						display: none;
+					}
+				}
+			}
+		}
+		@media (max-width: $max-break-mobile-nav) {
+			.mobileNavToggle{
+				display: block;
+				position: absolute;
+				right: 0;
+				width: 50px;
+				top: 0;
+				text-align: center;
+				line-height: 50px;
+				background: darken($brand-5, 15%);
+				border-left: 1px solid #fff;
+				color: #fff;
+			}
+			transition: right linear 300ms;
+			position: fixed;
+			right: -400px;
+			width: 400px;
+			top: 0;
+			bottom: 0;
+			background: #fff;
+			>li{
+    			width: 100%;
+    			padding: 0;
+    			background-color: $brand-5;
+				margin-bottom: 1px;
+    			> a{
+    				padding: 13px 20px;
+    			}
+    		}
+		}
+		@media (max-width: $max-break-mobile) {
+			right: -250px;
+			width: 250px;
+		}
+	}
+}
+
+//open mobile main menu
+body.g-mobile-nav-open{
+	overflow: hidden !important;
+    height: 100%;
+    right: 400px;
+    @media (max-width: $max-break-mobile) {
+		right: 250px;
+	}
+    header.g-header{
+	    z-index: auto;
+    	.main-menu{
+			right: 0;
+			z-index: 2000;
+			height: 100%;
+			overflow: auto;
+			-webkit-overflow-scrolling: touch;
+    	}
+    }
+    .g-tabs-container.g-fixed .g-tabs{
+    	z-index: 0 !important;
+    }
+    .g-overlay{
+    	display: block;
+    }
+}
+
+//fixed header on scoll
+body.fixed-header{
+	header.g-header{
+		top: -51px;
+		width: 100%;
+		position: fixed;
+		z-index: 1000;
+		.mega-menu{
+			top: 50px;
+		}
+		.logo{
+			top: -100px;
+			@extend .box-shadow;
+		}
+	}
+}
+
+.search-section, .recently-viewed{
+	display: none;
+	background-color: $grey-2;
+	padding: 1em 0 1.5em;
+	position: relative;
+	p{
+		margin-top: 0;
+		color: #fff;
+		font-weight: 600;
+	}
+	*[class*="g-btn"]{
+		margin: 0 5px 10px 0;
+		&.g-pull-right{
+			margin-right: 45px;
+		}
+	}
+	.g-group{
+		margin: 0 5px 10px 0;
+		*[class*="g-btn"]{
+			margin: 0;
+		}
+	}
+	.g-container{
+		position: relative;
+		.close-btn{
+			position: absolute;
+			top: 0;
+			right: 1em;
+			color: rgba(255,255,255,.7);
+			font-size: 19px;
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+}
+

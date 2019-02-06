@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+   <!-- Document Head -->
+   <head>
+     <script type="text/javascript" src="views/partials/head.js"> </script>
+   </head>
+   <body class="showPrograms">
+      <script type="text/javascript" src="views/partials/header.js"> </script>
+      <div class="g-main">
+         <div class="g-container">
+            <div class="g-breadcrumb">
+               <a href="/work/sait">Home</a>
+               <span class="ion-ios-arrow-forward"></span>
+               <a href="programs">Programs & Courses</a>
+               <span class="ion-ios-arrow-forward"></span>
+               <span>Continuing Education</span>
+            </div>
+         </div>
+         <div class="g-section g-first g-container">
+            <h1>Continuing Education</h1>
+            <div class="row lg-gutter margin-bottom">
+               <div class="col-1of2">
+                  <p class="g-font-larger">Our programs and courses can provide you with the skills sought by employers and even help you prepare for industry certification in your field. We offer flexible evening, weekend and distance/online learning options taught by industry-experienced instructors.</p>
+                  <ul class="g-basic">
+                     <li><a>Resources for Continuing Education Students<span class="ion-ios-arrow-forward g-icon-right"></span></a></li>
+                     <li><a>Distance/Online Learning<span class="ion-ios-arrow-forward g-icon-right"></span></a></li>
+                     <li><a>How to Apply<span class="ion-ios-arrow-forward g-icon-right"></span></a></li>
+                     <li><a>How to Apply Interactive Tool<span class="ion-ios-arrow-forward g-icon-right"></span></a></li>
+                  </ul>
+                  <p><a><span class="g-icon-left ion-android-download"></span>Download Continuing Education Guide PDF</a></p>
+                  <div class="g-h4-lg">How Courses are Offered</div>
+                  <ul>
+                     <li><a>Classroom</a></li>
+                     <li><a>Online</a></li>
+                     <li><a>Correspondance</a></li>
+                  </ul>
+               </div>
+               <div class="col-1of2 sm-1of3 g-text-center g-xs-hidden g-sm-hidden">
+                  <img src="img/featured-01.jpg">
+               </div>
+            </div>
+            <div class="row margin-bottom">
+               <div class="col-1of3 sm-1of2">
+                  <div class="g-card g-card-shadow g-card-content">
+                     <h3 class="g-secondary">Contact Information</h3>
+                     <span class="g-h4">Continuing Education</span>
+                     <p>403.284.7248<br>
+                        1.877.284.7248 
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="g-section g-section-secondary g-waves">
+            <div class="g-container-xs">
+               <div class="row lg-gutter margin-bottom g-text-center">
+                  <div class="col-1of1">
+                     <h2>Important Announcements</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="g-container">
+               <div class="row lg-gutter margin-bottom g-text-center">
+                  <div class="col-1of3">
+                     <img class="g-thumbnail-img" src="img/announcement-2.jpg">
+                     <p>SAIT's app is available for Apple iOS, Android and Kindle operating systems.</p>
+                     <p><a>Get the SAIT App<span class="ion-ios-arrow-forward g-icon-right"></span></a></p>
+                  </div>
+                  <div class="col-1of3">
+                     <img class="g-thumbnail-img" src="img/announcement-3.jpg">
+                     <p>Learn about your alcohol use and how it compares to other Canadian post-secondary students.</p>
+                     <p><a>Check Your Drinking (Tool)<span class="ion-ios-arrow-forward g-icon-right"></span></a></p>
+                  </div>
+                  <div class="col-1of3">
+                     <img class="g-thumbnail-img" src="img/announcement-1.jpg">
+                     <p>New Starbucks coffee shop in campus.</p>
+                     <p><a>Get a Free Coffee<span class="ion-ios-arrow-forward g-icon-right"></span></a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="g-section">
+            <div class="g-container">
+               <h2>Continuing Education Programs & Courses</h2>
+            </div>
+            <div class="g-search-bar">
+               <div class="g-container">
+                  <form>
+                     <div class="row g-hidden-labels">
+                        <div class="g-form-group col-1of2 sm-1of2">
+                           <label for="search">First Name:</label>
+                           <input type="text" class="g-form-control g-icon-search" name="search" placeholder="Search by keyword">
+                        </div>
+                        <div class="g-form-group col-1of2 sm-1of2">
+                           <label>Area of interest:</label>
+                           <select class="g-form-control g-pull-right">
+                              <option>Area of interest (All)</option>
+                              <option value="0">Business, Accounting and Management</option>
+                              <option value="1">Construction and Trades</option>
+                              <option value="2">Culinary, Hospitality and Travel</option>
+                              <option value="3">Energy, Oil & Gas</option>
+                              <option value="4">Engineering Technologies</option>
+                              <option value="5">English Language</option>
+                              <option value="6">Health & Medical</option>
+                              <option value="7">Information Technology</option>
+                              <option value="8">Manufacturing</option>
+                              <option value="9">Media & Communications</option>
+                              <option class="coursesOnly" value="11">Recreation</option>
+                              <option value="10">Transportation</option>
+                           </select>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="g-container">
+               <form>
+                  <div class="g-basic-tabs">
+                     <div class="g-basic-tabs-inner">
+                        <a onClick="showPrograms()" class="g-active" id="programsTab">Programs (70)</a>
+                        <a onClick="showCourses()" id="coursesTab">Courses (80)</a>
+                     </div>
+                  </div>
+                  <div class="row sm-gutter g-hidden-labels g-font-small g-margin-bottom">
+                     <div class="g-form-group col-1of5 lg-1of4 sm-1of2">
+                        <label>Offered:</label>
+                        <select class="g-form-control g-icon-arrow">
+                            <option>Offered (All)</option>
+                            <option value="1">Classroom</option>
+                            <option value="2">Online</option>
+                            <option value="3">Blended</option>
+                        </select>
+                     </div>
+                     <div class="g-form-group col-1of5 lg-1of4 sm-1of2 programsOnly">
+                        <label>Credential:</label>
+                        <select class="g-form-control g-icon-credential">
+                            <option>Credential (All)</option>
+                            <option value="1">Certificate</option>
+                            <option value="2">Diploma</option>
+                            <option value="3">Apprenticeship</option>
+                            <option value="41">Applied Degree</option>
+                            <option value="4">Degree</option>
+                            <option value="5">Baccalaureate Degree</option>
+                            <option value="6">Certificate of Achievement</option>
+                        </select>
+                     </div>
+                     <div class="g-form-group col-1of5 lg-1of4 sm-1of2">
+                        <label>Term:</label>
+                        <select class="g-form-control g-icon-calendar">
+                            <option value="1">Fall 2016</option>
+                            <option value="2">Winter 2017</option>
+                            <option value="3">Spring 2017</option>
+                        </select>
+                     </div>
+                  </div>
+               </form>
+               <p class="g-font-small">Last updated as of July 12, 2016</p>
+               <table class="g-table g-table-striped g-tablet-stacked program-table programsOnly">
+                  <thead>
+                     <tr>
+                        <th>Name</th>
+                        <th>Offered</th>
+                        <th>Credential</th>
+                        <th><span class="tooltip-style tooltip" title="Status as of June 30th">Status</span></th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Accounting</a></td>
+                        <td>Classroom or Online</td>
+                        <td>Certificate of Achievement</td>
+                        <td><span class="ion-record g-icon-left g-icon-open"></span><span class="tooltip-style tooltip-open">Open</span></td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Administrative Information Management</a></td>
+                        <td>Classroom or Online</td>
+                        <td>Diploma</td>
+                        <td><span class="ion-record g-icon-left g-icon-open"></span><span class="tooltip-style tooltip-open">Open</span></td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a href="/applied-business-administration">Bachelor of Applied Business Administration</a></td>
+                        <td>Classroom or Online</td>
+                        <td>Baccalaureate Degree</td>
+                        <td><span class="ion-record g-icon-left g-icon-open"></span><span class="tooltip-style tooltip-open">Open</span></td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Bachelor of Business Administration</a></td>
+                        <td>Classroom</td>
+                        <td>Baccalaureate Degree</td>
+                        <td><span class="ion-record g-icon-left g-icon-open"></span><span class="tooltip-style tooltip-open">Open</span></td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Business Administration</a></td>
+                        <td>Classroom or Online</td>
+                        <td>Diploma</td>
+                        <td><span class="ion-record g-icon-left g-icon-waitlisted"></span><span class="tooltip-style tooltip-waitlisted">Waitlisted</span></td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Community Economic Development</a></td>
+                        <td>Online</td>
+                        <td>Certificate</td>
+                        <td><span class="ion-record g-icon-left g-icon-open"></span><span class="tooltip-style tooltip-open">Open</span></td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Financial Services</a></td>
+                        <td>Classroom or Online</td>
+                        <td>Certificate of Achievement</td>
+                        <td><span class="ion-record g-icon-left g-icon-waitlisted"></span><span class="tooltip-style tooltip-waitlisted">Waitlisted</span></td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>General Business Administration</a></td>
+                        <td>Online</td>
+                        <td>Certificate of Achievement</td>
+                        <td><span class="ion-record g-icon-left g-icon-open"></span><span class="tooltip-style tooltip-open">Open</span></td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Grocery Retail Management</a></td>
+                        <td>Online</td>
+                        <td>Certificate of Achievement</td>
+                        <td><span class="ion-record g-icon-left g-icon-closed"></span><span class="tooltip-style tooltip-closed">Closed</span></td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Legal Administrative Assistant</a></td>
+                        <td>Online</td>
+                        <td>Certificate of Achievement</td>
+                        <td><span class="ion-record g-icon-left g-icon-open"></span><span class="tooltip-style tooltip-open">Open</span></td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Legal Assistant</a></td>
+                        <td>Classroom</td>
+                        <td>Diploma</td>
+                        <td><span class="ion-record g-icon-left g-icon-open"></span><span class="tooltip-style tooltip-open">Open</span></td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Management</a></td>
+                        <td>Online</td>
+                        <td>Certificate of Achievement</td>
+                        <td><span class="ion-record g-icon-left g-icon-open"></span><span class="tooltip-style tooltip-open">Open</span></td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Marketing</a></td>
+                        <td>Online</td>
+                        <td>Certificate of Achievement</td>
+                        <td><span class="ion-record g-icon-left g-icon-open"></span><span class="tooltip-style tooltip-open">Open</span></td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Office Professional</a></td>
+                        <td>Online</td>
+                        <td>Certificate</td>
+                        <td><span class="ion-record g-icon-left g-icon-open"></span><span class="tooltip-style tooltip-open">Open</span></td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Professional Accounting Program</a></td>
+                        <td>Classroom or Online</td>
+                        <td>Certificate</td>
+                        <td><span class="ion-record g-icon-left g-icon-waitlisted"></span><span class="tooltip-style tooltip-waitlisted">Waitlisted</span></td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Supply Management Training Diploma</a></td>
+                        <td>Classroom</td>
+                        <td>Diploma</td>
+                        <td><span class="ion-record g-icon-left g-icon-open"></span><span class="tooltip-style tooltip-open">Open</span></td>
+                     </tr>
+                  </tbody>
+               </table>
+               <table class="g-table g-table-striped g-tablet-stacked courses-table coursesOnly">
+                  <thead>
+                     <tr>
+                        <th>Name</th>
+                        <th>Course Code</th>
+                        <th>Offered</th>
+                        <th>Term</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Business Computers</a></td>
+                        <td>BCMP 255</td>
+                        <td>Classroom or Online</td>
+                        <td>Fall 2016, Winter 2017</td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Business Law</a></td>
+                        <td>BLAW 300</td>
+                        <td>Online</td>
+                        <td>Fall 2016</td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Business Mathematics</a></td>
+                        <td>BMAP 230</td>
+                        <td>Classroom or Online</td>
+                        <td>Fall 2016, Spring 2017</td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Communication and Presentation Skills</a></td>
+                        <td>COMN 220</td>
+                        <td>Classroom or Online</td>
+                        <td>Fall 2016, Winter 2017</td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Introductory Financial Accounting I</a></td>
+                        <td>ACCT 215</td>
+                        <td>Classroom</td>
+                        <td>Fall 2016, Winter 2017</td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Introductory Financial Accounting II</a></td>
+                        <td>ACCT 255</td>
+                        <td>Classroom</td>
+                        <td>Fall 2016, Winter 2017</td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Macroeconomics</a></td>
+                        <td>ECON 305</td>
+                        <td>Classroom</td>
+                        <td>Fall 2016, Winter 2017, Spring 2017</td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Marketing Essentials</a></td>
+                        <td>MKTG 355</td>
+                        <td>Classroom</td>
+                        <td>Winter 2017</td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Operations Management</a></td>
+                        <td>MKTG 395</td>
+                        <td>Classroom</td>
+                        <td>Fall 2016</td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Organizational Behaviour</a></td>
+                        <td>MNGT 265</td>
+                        <td>Classroom</td>
+                        <td>Fall 2016</td>
+                     </tr>
+                     <tr>
+                        <td><a class="g-open-link ion-plus-circled"></a><a>Personal and Corporate Taxation</a></td>
+                        <td>ACCT 411</td>
+                        <td>Classroom</td>
+                        <td>Fall 2016, Spring 2016</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <div class="row no-gutter">
+            <div class="col-1of5 sm-1of3 xs-1of3">
+               <div class="g-image-gallery" style="background-image: url(img/01.jpg);">
+               </div>
+            </div>
+            <div class="col-1of5 sm-1of3 xs-1of3">
+               <div class="g-image-gallery" style="background-image: url(img/05.jpg);">
+               </div>
+            </div>
+            <div class="col-1of5 sm-1of3 xs-1of3">
+               <div class="g-image-gallery" style="background-image: url(img/02.jpg);">
+               </div>
+            </div>
+            <div class="col-1of5 g-sm-hidden g-xs-hidden">
+               <div class="g-image-gallery" style="background-image: url(img/07.jpg);">
+               </div>
+            </div>
+            <div class="col-1of5 g-sm-hidden g-xs-hidden">
+               <div class="g-image-gallery" style="background-image: url(img/19.jpg);">
+               </div>
+            </div>
+         </div>
+      </div>
+      <script type="text/javascript" src="views/partials/footer.js"> </script>
+      <script type="text/javascript" src="views/partials/scripts.js"> </script>
+   </body>
+</html>

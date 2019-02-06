@@ -1,0 +1,22 @@
+
+/* ==========================================================================
+   Global Footer
+   ========================================================================== */
+
+
+//---- Corporate Footer
+
+.g-footer-corporate{
+	border-bottom: 4px solid $brand-1;
+	.corporate-logo-container{
+		img{
+			max-width: 102px;
+			height: auto;
+		}
+	}
+	.corporate-links{
+		a{
+			margin-bottom: 5px;
+		}
+	}
+}

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+   <!-- Document Head -->
+   <head>
+      <script type="text/javascript" src="views/partials/head.js"> </script>
+   </head>
+   <body>
+      <script type="text/javascript" src="views/partials/header.js"> </script>
+      <div class="g-banner">
+         <div class="g-container">
+            <div class="g-banner-img" style="background-image: url(img/sample/h-01.jpg)"></div>
+            <div class="g-banner-gradient"></div>  
+            <div class="g-banner-copy g-lg-padding">
+               <div class="g-subhead g-color-brand-4 g-font-smaller">
+                   A place to experiment, learn & find your passion
+               </div>
+               <h1>Career Exploration Centre</h1>
+               <div class="g-blue-border-left">
+                 <p class="g-font-large">The Career Exploration Centre is a unique, experiential, learner-centred facility for youth in grades 9 and 10. This is the place for students to get hands-on experience and make well informed career decisions based on real-world applications.</p>
+               </div>
+               <div class="g-details">
+                  <div class="g-details-icon">
+                     <span class="ion-calendar"></span>
+                  </div>
+                  <div class="g-details-inner">
+                     <p><b class="g-font-large">Application Deadlines</b><br>
+                        For September 15 - October 5, 2018: <b>July 30</b><br>
+                        For October 8 - June 15, 2019: <b>September 14</b></p>
+                  </div>
+               </div>
+            </div>
+            <div class="g-banner-cta">
+              <a class="g-cta g-quaternary">
+                  <span class="g-subhead g-font-smaller">
+                      Teachers & Group Leaders
+                  </span>
+                  <span class="g-text g-font-large">
+                      Apply Now
+                  </span>
+                  <span class="g-icon ion-ios-arrow-forward"></span>
+              </a>
+            </div>
+         </div>
+      </div>
+      <div class="g-main">
+        <div class="g-section">
+            <div class="g-container">
+               <div class="row lg-gutter">
+                  <div class="col-1of1">
+                    <div class="g-subhead g-color-brand-4 g-font-smaller">It's an experience</div>
+                  </div>
+                  <div class="col-1of3">
+                    <h2>SAITCity Program</h2>
+                  </div>
+                  <div class="col-1of3">
+                    <p class="g-margin-top-xs">Students will have the opportunity to explore up to three hands-on simulated career tasks, chosen from the 30+ career options they reviewed in advance. They will engage in written self-reflection to identify and link interests to careers after each exploration experience.</p>
+                  </div>
+                  <div class="col-1of3">
+                    <p class="g-margin-top-xs">They will have a chance to personalize their career portfolios, ask questions, provide feedback, obtain information about careers and learn about next steps along their career exploration journey.</p>
+                    <a>Learn More About The Program<span class="ion-ios-arrow-forward g-icon-right"></span></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+         <div id="careerSection" class="g-section g-bg-6">
+            <div class="g-container">
+               <div class="g-subhead g-color-brand-4 g-font-smaller">There's something for everyone</div>
+               <div class="g-heading-w-link">
+                  <h2>Explore Industries & Careers</h2>
+                  <span class="g-vertical-line"></span>
+                  <a>Explore All<span class="ion-ios-arrow-forward g-icon-right"></span></a>
+               </div>
+               <div class="row lg-gutter margin-bottom g-margin-top-sm">
+                  <div class="col-2of7 lg-1of3 sm-2of3 g-lg-hidden g-md-hidden">
+                    <form class="g-form">
+                      <div class="g-form-group">
+                        <label for="careerCategorySelect">Select an Industry</label>
+                        <select id="careerCategorySelect" name="careerCategorySelect" class="g-form-control g-lg">
+                            <option value=".cat1">Featured Careers</option>
+                            <option value=".cat2">Business</option>
+                            <option value=".cat3">Construction</option>
+                            <option value=".cat4">Energy & Environment</option>
+                            <option value=".cat5">Health & Public Safety</option>
+                            <option value=".cat6">Hospitality & Tourism</option>
+                            <option value=".cat7">Information & Communications Technologies</option>
+                            <option value=".cat8">Manufacturing & Automation</option>
+                            <option value=".cat9">Transportation</option>
+                        </select>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-2of7 lg-1of3 g-sm-hidden g-xs-hidden">
+                    <ul id="careerCategoryList" class="g-tabbed-list">
+                      <li><a class="g-active" data-class=".cat1">Featured Careers<span class="g-icon ion-ios-arrow-forward"></span></a></li>
+                      <li><a data-class=".cat2">Business<span class="g-icon ion-ios-arrow-forward"></span></a></li>
+                      <li><a data-class=".cat3">Construction<span class="g-icon ion-ios-arrow-forward"></span></a></li>
+                      <li><a data-class=".cat4">Energy & Environment<span class="g-icon ion-ios-arrow-forward"></span></a></li>
+                      <li><a data-class=".cat5">Health & Public Safety<span class="g-icon ion-ios-arrow-forward"></span></a></li>
+                      <li><a data-class=".cat6">Hospitality & Tourism<span class="g-icon ion-ios-arrow-forward"></span></a></li>
+                      <li><a data-class=".cat7">Information & Communications Technologies<span class="g-icon ion-ios-arrow-forward"></span></a></li>
+                      <li><a data-class=".cat8">Manufacturing & Automation<span class="g-icon ion-ios-arrow-forward"></span></a></li>
+                      <li><a data-class=".cat9">Transportation<span class="g-icon ion-ios-arrow-forward"></span></a></li>
+                    </ul>  
+                  </div>
+                  <div class="col-5of7 lg-2of3">
+                    <h3 id="careerCategoryHeading" class="g-margin-bottom-sm g-margin-top-xs g-sm-hidden g-xs-hidden">Featured Careers</h3>
+                    <div id="careerCategoryCards" class="row margin-bottom-sm sm-gutter">
+                        <div class="col-1of4 lg-1of2 sm-1of2">
+                            <a class="g-card g-related-2 g-w-hidden-link cat1 g-active">
+                                <div class="g-card-image" style="background-image: url(img/sample/03.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Pharmacy Assistant</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat2">
+                                <div class="g-card-image" style="background-image: url(img/sample/19.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Accountant</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat3">
+                                <div class="g-card-image" style="background-image: url(img/sample/18.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Architectural Technologist</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat4">
+                                <div class="g-card-image" style="background-image: url(img/sample/09.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Environmental Technologist</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat5">
+                                <div class="g-card-image" style="background-image: url(img/sample/03.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Dental Assistant</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat6">
+                                <div class="g-card-image" style="background-image: url(img/sample/h-03.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Chef</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat7">
+                                <div class="g-card-image" style="background-image: url(img/sample/17.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Broadcast Journalist</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat8">
+                                <div class="g-card-image" style="background-image: url(img/sample/09.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Non-Destructive Tester</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat9">
+                                <div class="g-card-image" style="background-image: url(img/sample/07.png);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Aircraft Maintenance Technician</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-1of4 lg-1of2 sm-1of2">
+                            <a class="g-card g-related-2 g-w-hidden-link cat1 g-active">
+                                <div class="g-card-image" style="background-image: url(img/sample/h-04.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Restaurant Project Manager</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat2">
+                                <div class="g-card-image" style="background-image: url(img/sample/20.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Supply Chain Manager</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat3">
+                                <div class="g-card-image" style="background-image: url(img/sample/10.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Bricklayer</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat4">
+                                <div class="g-card-image" style="background-image: url(img/sample/13.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Electrical Engineering Technologist</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat5">
+                                <div class="g-card-image" style="background-image: url(img/sample/21.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Medical Radiologic Technologist</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat6">
+                                <div class="g-card-image" style="background-image: url(img/sample/h-05.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Pastry Chef</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat7">
+                                <div class="g-card-image" style="background-image: url(img/sample/06.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Computer Technician</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat8">
+                                <div class="g-card-image" style="background-image: url(img/sample/11.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Millwright</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat9">
+                                <div class="g-card-image" style="background-image: url(img/sample/03.png);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Aircraft Structures Technician</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-1of4 lg-1of2 sm-1of2">
+                            <a class="g-card g-related-2 g-w-hidden-link cat1 g-active">
+                                <div class="g-card-image" style="background-image: url(img/sample/05.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Broadcast Journalist</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat2">
+                                <div class="g-card-image" style="background-image: url(img/sample/23.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Marketing Manager</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat3">
+                                <div class="g-card-image" style="background-image: url(img/sample/07.png);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Construction project Manager</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat4">
+                                <div class="g-card-image" style="background-image: url(img/sample/14.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Petroleum Engineering Technologist</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat5">
+                                <div class="g-card-image" style="background-image: url(img/sample/03.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Pharmacy Assistant</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat6">
+                                <div class="g-card-image" style="background-image: url(img/sample/h-04.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Restaurant Project Manager</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat7">
+                                <div class="g-card-image" style="background-image: url(img/sample/22.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Graphic Designer</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat8">
+                                <div class="g-card-image" style="background-image: url(img/sample/07.png);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Mechanical Engineering Technologist</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat9">
+                                <div class="g-card-image" style="background-image: url(img/sample/12.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Automotive Service Technician</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                         <div class="col-1of4 lg-1of2 sm-1of2">
+                            <a class="g-card g-related-2 g-w-hidden-link cat1 g-active">
+                                <div class="g-card-image" style="background-image: url(img/sample/04.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Rehabilitation Therapy Assistant</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat2">
+                                <div class="g-card-image" style="background-image: url(img/sample/05.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Human Resources Manager</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="plumber.html" class="g-card g-related-2 g-w-hidden-link cat3">
+                                <div class="g-card-image" style="background-image: url(img/sample/13.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Plumber</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat4">
+                                <div class="g-card-image" style="background-image: url(img/sample/10.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Steam Plant Operator</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat5">
+                                <div class="g-card-image" style="background-image: url(img/sample/04.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Rehabilitation Therapy Assistant</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat6">
+                                <div class="g-card-image" style="background-image: url(img/sample/h-06.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Travel Professional</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat7">
+                                <div class="g-card-image" style="background-image: url(img/sample/01.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Software Developer</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="g-card g-related-2 g-w-hidden-link cat9">
+                                <div class="g-card-image" style="background-image: url(img/sample/14.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Heavy Equipment Technician</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-1of4 lg-1of2 sm-1of2">
+                          <a class="g-card g-related-2 g-w-hidden-link cat4">
+                                <div class="g-card-image" style="background-image: url(img/sample/11.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Electrician</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+         </div>
+         <div class="g-section">
+            <div class="g-container">
+               <div class="row margin-bottom lg-gutter">
+                  <div class="col-1of3">
+                    <h2>Resources</h2>
+                    <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim mollis pretium arcu magnis dis paturient. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p>
+                    <h3 class="h4">Teachers & Group Leaders</h3>
+                    <a class="g-cta g-tertiary">
+                        <span class="g-text">
+                            <span class="g-icon-left ion-android-download g-color-brand-2"></span>Trip Planning Checklist
+                        </span>
+                        <span class="g-icon ion-ios-arrow-forward"></span>
+                    </a>
+                    <a class="g-cta g-tertiary">
+                        <span class="g-text">
+                            <span class="g-icon-left ion-android-download g-color-brand-2"></span>Adult Volunteer Letter
+                        </span>
+                        <span class="g-icon ion-ios-arrow-forward"></span>
+                    </a>
+                    <h3 class="h4">Parents</h3>
+                    <a class="g-cta g-tertiary">
+                        <span class="g-text">
+                            <span class="g-icon-left ion-android-download g-color-brand-2"></span>Parental Letter & Permission Form
+                        </span>
+                        <span class="g-icon ion-ios-arrow-forward"></span>
+                    </a>
+                    <h3 class="h4">Students</h3>
+                    <a class="g-cta g-tertiary">
+                        <span class="g-text">
+                            <span class="g-icon-left ion-android-download g-color-brand-2"></span>Career Interests Worksheet
+                        </span>
+                        <span class="g-icon ion-ios-arrow-forward"></span>
+                    </a>
+                  </div>
+                  <div class="col-2of3">
+                    <div class="g-image-slider">
+                      <div>
+                        <div class="g-img-container">
+                          <img alt="" src="img/sample/h-08.jpg">
+                        </div>
+                        <p class="g-caption">CEC: Students will have the opportunity to explore up to three hands-on simulated career tasks. <a class="g-text-underline">Learn more</a></p>
+                      </div>
+                      <div>
+                        <div class="g-img-container">
+                          <img alt="" src="img/sample/h-09.jpg">
+                        </div>
+                        <p class="g-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                      <div>
+                        <div class="g-img-container">
+                          <img alt="" src="img/sample/h-01.jpg">
+                        </div>
+                        <p class="g-caption">Pellentesque quis urna at dui dictum euismod.</p>
+                      </div>
+                      <div>
+                        <div class="g-img-container">
+                          <img alt="" src="img/sample/h-10.jpg">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script type="text/javascript" src="views/partials/footer.js"> </script>
+      <script type="text/javascript" src="views/partials/scripts.js"> </script>
+   </body>
+</html>

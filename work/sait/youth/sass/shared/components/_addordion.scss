@@ -1,0 +1,50 @@
+/* ==========================================================================
+   Accordion
+   ========================================================================== */
+
+.g-accord{
+	border-top: 1px solid $accordian-border-color;
+	border-bottom: 1px solid $accordian-border-color;
+	margin-bottom: 1.2em;
+	.g-accord-header{
+		position: relative;
+		display: block;
+		background-color: $accordian-bg-color;
+		@extend .g-font-large;
+		font-weight: 600;
+		padding: $accordian-padding;
+		color: $accordian-header-color;
+		span.g-label{
+			display: block;
+			width: 100%;
+			padding-right: 50px;
+		}
+		span.g-icon{
+			position: absolute;
+		    right: 13px;
+		    top: 50%;
+		    margin-top: -10px;
+    		line-height: 20px;
+		}
+		&:hover{
+			color: $accordian-header-hover-color;
+			span.ion-plus-round{
+				@include mui-animation(spin(in, 0.5turn));
+				animation-duration: 1000ms;
+			}
+		}
+	}
+	.g-accord-body{
+		display: none;
+		border-top: 1px solid $accordian-border-color;
+		table{
+			margin: 0;
+		}
+		&.g-open{
+			display: block;
+		}
+	}
+	.g-accord-body-content{
+		padding: $accordian-padding;
+	}
+}

@@ -1,0 +1,359 @@
+/* ==========================================================================
+   Youth Global Variables
+   ========================================================================== */
+
+/* ======================= Colours ======================== */
+
+$brand-1: #A6192E;
+$brand-2: #6D2077;
+$brand-3: #005EB8;
+$brand-4: #00A3E0;
+$brand-5: #DA291C;
+
+$red: #DA291C;
+$green: #40A33C;
+$yellow: #FFB016;
+
+$accent-yellow: #E4D449;
+
+$grey-1: #201F1F;
+$grey-2: #0B2C58;
+$grey-3: #565A61;
+$grey-4: #767C86;
+$grey-5: #D9DADC;
+
+//font-colours
+$text-color: $grey-3;
+$text-light: $grey-4;
+$text-dark: $grey-1;
+$text-color-secondary: $grey-2;
+
+$heading-color: $grey-2;
+
+$error-color: $brand-1;
+
+$bg-color-1: #fff;
+$bg-color-2: #F7F7F8;
+$bg-color-3: #F6F7F9;
+$bg-color-4: #1C232C;
+$bg-color-5: $brand-4;
+
+$hr-color: $grey-5;
+$border-color: $grey-5;
+$border-color2: lighten($grey-5, 5%);
+
+
+/* ======================= Links/Type ======================== */
+
+//Links
+$link-color: $brand-2;
+$link-color-hover: darken($brand-2, 18%);
+
+//Secondary link color
+$link-color-2:  $brand-4;
+$link-color-hover-2: darken($brand-4, 18%);
+
+//Tertiary link color
+$link-color-3: #fff;
+$link-color-hover-3:  #fff;
+
+//4th link color
+$link-color-4: $grey-2;
+$link-color-hover-4: $brand-2;
+
+//5th link color
+$link-color-5: $accent-yellow;
+$link-color-hover-5: $accent-yellow;
+
+//Type
+$heading-font: 'Titillium Web', sans-serif;
+$body-font: 'Titillium Web', sans-serif;
+
+$heading-link-color: $brand-2;
+$heading-hover-color:  darken($brand-2, 5%);
+
+$base-font-size: 16px;
+$base-line-height: 1.3em;
+$p-line-height: 1.55em;
+$heading-line-height: 1.3em;
+
+$body-font-weight-bold: 600;
+$body-font-weight-extra-bold: 700;
+$body-font-weight-regular: 400;
+
+
+
+/* ======================= Misc ======================== */
+
+//Default box shadaw
+$box-shadow: 1px 1px 1px $grey-2;
+
+//Default border radius
+$border-radius: 0;
+
+//Default box-sizing
+$box-sizing: border-box;
+
+//Default transitions
+$transition1-default: all 0.1s ease-in;
+$transition2-default: all 0.3s ease-in;
+$transition3-default: all 0.7s ease-in;
+
+$secondary-list-bullet-color: $brand-4;
+
+
+/* ======================= Accordions ======================== */
+
+$accordian-border-color: $border-color;
+$accordian-bg-color: $bg-color-2;
+$accordian-padding: 9px 13px;
+$accordian-header-color: $grey-2;
+$accordian-header-hover-color: $brand-2;
+
+
+/* ======================= Buttons ======================== */
+
+$btn-font-size: 15px;
+$btn-height: 37px;
+$btn-line-height: 35px;
+$btn-padding: 0 22px;
+$btn-font-weight: $body-font-weight-extra-bold;
+$btn-text-align: center;
+$btn-border-radius: 0;
+$btn-font-family: $body-font;
+$btn-text-transform: uppercase;
+
+//Small button
+$btn-sm-height: 30px;
+$btn-sm-line-height: 28px;
+$btn-sm-padding: 0 14px;
+$btn-sm-font-size: 14px;
+$btn-sm-text-transform: none;
+$btn-sm-border-radius: $btn-border-radius;
+$btn-sm-font-weight: 600;
+
+//Large button
+$btn-lg-height: 45px;
+$btn-lg-line-height: 43px;
+$btn-lg-padding: 0 27px;
+$btn-lg-font-size: 16px;
+$btn-lg-border-radius: $btn-border-radius;
+
+//Primary button
+$btn-bg: $brand-2;
+$btn-border: none;
+$btn-color: #fff;
+$btn-box-shadow: none;
+
+$btn-hover-bg: darken($brand-2, 7%);
+$btn-hover-border: none;
+$btn-hover-color: #fff;
+$btn-hover-box-shadow: 1px 1px 7px rgba(0,0,0,.4);
+
+$btn-active-bg: $brand-5;
+$btn-active-border: none;
+$btn-active-color: #fff;
+$btn-active-box-shadow: $btn-hover-box-shadow;
+
+
+//Secondary button
+$btn-2-bg: #fff;
+$btn-2-border: 1px solid $brand-2;
+$btn-2-color: $brand-2;
+$btn-2-border-radius: $btn-border-radius;
+$btn-2-box-shadow: none;
+
+$btn-2-hover-bg: darken($brand-2, 3%);
+$btn-2-hover-border: 1px solid darken($brand-2, 3%);
+$btn-2-hover-color: #fff;
+$btn-2-hover-box-shadow: none;
+
+$btn-2-active-bg: $brand-5;
+$btn-2-active-border: 1px solid $brand-5;
+$btn-2-active-color: #fff;
+$btn-2-active-box-shadow: none;
+
+
+//Tertiary button
+$btn-3-bg: $grey-2;
+$btn-3-border: none;
+$btn-3-color: #fff;
+$btn-3-border-radius: $btn-border-radius;
+$btn-2-box-shadow: none;
+
+$btn-3-hover-bg: darken($grey-2, 8%);
+$btn-3-hover-border: none;
+$btn-3-hover-color: #fff;
+$btn-3-hover-box-shadow: none;
+
+$btn-3-active-bg: $brand-4;
+$btn-3-active-border: none;
+$btn-3-active-color: #fff;
+$btn-3-active-box-shadow: none;
+
+//Quaternary button
+$btn-4-bg: $grey-5;
+$btn-4-border: none;
+$btn-4-color: $grey-2;
+$btn-4-border-radius: $btn-border-radius;
+$btn-4-box-shadow: none;
+
+$btn-4-hover-bg: darken($grey-5, 10%);
+$btn-4-hover-border: none;
+$btn-4-hover-color: $grey-2;
+$btn-4-hover-box-shadow: none;
+
+$btn-4-active-bg: #fff;
+$btn-4-active-border: none;
+$btn-4-active-color: $grey-2;
+$btn-4-active-box-shadow: none;
+
+
+//5th button
+$btn-5-bg: transparent;
+$btn-5-border: 1px solid #fff;
+$btn-5-color:  #fff;
+$btn-5-border-radius: $btn-border-radius;
+$btn-5-box-shadow: none;
+
+$btn-5-hover-bg: rgba(255,255,255,.1);
+$btn-5-hover-border: 1px solid #fff;
+$btn-5-hover-color: #fff;
+$btn-5-hover-box-shadow: none;
+
+$btn-5-active-bg: #fff;
+$btn-5-active-border: 1px solid #fff;
+$btn-5-active-color: $grey-1;
+$btn-5-active-box-shadow: none;
+
+
+//6th button
+$btn-6-bg: #fff;
+$btn-6-border: 1px solid $grey-5;
+$btn-6-color:  $grey-4;
+$btn-6-border-radius: $btn-border-radius;
+$btn-6-box-shadow: none;
+
+$btn-6-hover-bg: rgba(0,0,0,.05);
+$btn-6-hover-border: 1px solid $grey-5;
+$btn-6-hover-color: $grey-3;
+$btn-6-hover-box-shadow: none;
+
+$btn-6-active-bg: $grey-5;
+$btn-6-active-border: 1px solid $grey-5;
+$btn-6-active-color: $grey-3;
+$btn-6-active-box-shadow: none;
+
+
+//7th button
+$btn-7-bg: #fff;
+$btn-7-border: 1px solid $brand-4;
+$btn-7-color:  $grey-2;
+$btn-7-border-radius: $btn-border-radius;
+$btn-7-box-shadow: none;
+
+$btn-7-hover-bg: rgba(0,0,0,.05);
+$btn-7-hover-border: 1px solid $grey-2;
+$btn-7-hover-color: $grey-2;
+$btn-7-hover-box-shadow: none;
+
+$btn-7-active-bg: $brand-4;
+$btn-7-active-border: 1px solid $brand-4;
+$btn-7-active-color: #fff;
+$btn-7-active-box-shadow: none;
+
+//8th button
+$btn-8-bg: $brand-4;
+$btn-8-border: 1px solid $brand-4;
+$btn-8-color: #fff;
+$btn-8-border-radius: $btn-border-radius;
+$btn-8-box-shadow: none;
+
+$btn-8-hover-bg: darken($brand-4, 5%);
+$btn-8-hover-border: 1px solid darken($brand-4, 5%);
+$btn-8-hover-color: #fff;
+$btn-8-hover-box-shadow: none;
+
+$btn-8-active-bg: darken($brand-4, 15%);
+$btn-8-active-border: 1px solid darken($brand-4, 15%);
+$btn-8-active-color: #fff;
+$btn-8-active-box-shadow: none;
+
+
+
+/* ======================= Cards ======================== */
+
+$card-bg-color: #fff;
+$card-bg-color2: $bg-color-2;
+$card-padding: 25px;
+$card-padding-sm: 16px;
+$card-border: 1px solid $border-color;
+$card-border-radius: $border-radius;
+$card-box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.35);
+
+
+/* ======================= Forms ======================== */
+
+$input-border-color: $border-color;
+$input-active-border-color: $grey-3;
+$input-border-radius: $border-radius;
+$input-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+$select-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+$input-color: $grey-3;
+$input-placeholder-color: $grey-4;
+$radio-active-color: $brand-2;
+$checkbox-active-color: $brand-2;
+$label-color: $grey-2;
+
+/* ======================= Icon Links ======================== */
+
+$icon-link-color: $brand-4;
+$icon-link-hover-color: $brand-2;
+
+
+/* ======================= Pagination ======================== */
+
+$pagination-text-align: left;
+$pagination-link-color: $brand-2;
+$pagination-link-color-hover: $brand-3;
+$pagination-link-color-active: $brand-4;
+
+
+/* ======================= Stats ======================== */
+
+$stat-color: $grey-3;
+$stat-p-color: $grey-3;
+$stat-2-color: #fff;
+$stat-2-p-color: $grey-2;
+
+
+/* ======================= Tables ======================== */
+
+$table-padding: 9px 13px;
+$table-border-color: $grey-3;
+$table-striped-bg-color: $bg-color-2;
+$table-hover-bg-color: rgba(42, 120, 195, 0.1);
+
+
+
+/* ======================= Responsive ======================== */
+
+//Repsonsive breakpoints
+$min-break-desktop: 1101px;
+$max-break-desktop: 1100px;
+
+$min-break-tablet: 941px;
+$max-break-tablet: 940px;
+
+//navigation break point
+$min-break-mobile-nav: 801px;
+$max-break-mobile-nav: 800px;
+
+$min-break-mobile: 521px;
+$max-break-mobile: 520px;
+
+
+//Grid system variables
+$gutter: 15px;
+$lg-gutter: 45px;
+$sm-gutter: 8px;

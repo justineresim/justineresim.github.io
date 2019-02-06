@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Document Head -->
+<head>
+    <meta charset="utf-8">
+    <title>SAIT Young Originals - Prototype and Style Guide</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SAIT - Prototype and Style Guide">
+    <meta name="author" content="Justine Lileikis, Res.im">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/theme/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/theme/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/theme/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/theme/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/theme/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/theme/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/theme/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/theme/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/theme/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="img/theme/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/theme/favicon/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="img/theme/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="img/theme/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="img/theme/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="img/theme/favicon/manifest.json">
+    <link rel="mask-icon" href="img/theme/favicon/safari-pinned-tab.svg" color="#da291c">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="img/theme/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="img/theme/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+
+    <!-- Icon Font -->
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,700' rel='stylesheet' type='text/css'>
+
+    <!-- Tooltipster -->
+    <link rel="stylesheet" type="text/css" href="css/vendor/tooltipster.min.css" />
+
+    <!-- Remodal - modal windows -->
+    <link rel="stylesheet" href="css/vendor/remodal.min.css">
+    <link rel="stylesheet" href="css/vendor/remodal-default-theme.min.css">
+
+    <!--  Global CSS & Youth CSS & Style Guide CSS -->
+    <link href="styleguide/dest/screen.min.css?v=2.0" rel="stylesheet">
+
+</head>
+
+<body class="testing">
+    <div class="testing-header">
+        <div class="g-container g-clearfix">
+            <div class="logo-sm">
+                <a href="style-guide.html"><img src="img/theme/logo-sm.png" alt="logo"></a>
+            </div>
+            <h1>SAIT Young Originals Style Guide</h1>
+        </div>
+    </div>
+    <div class="g-main">
+        <div class="g-container g-sidebar-template">
+
+            <div class="g-body-content">     
+
+                <section class="g-active">
+
+                    <h2>SAIT Young Originals Style Guide</h2>
+                    <h3>How to use this style guide</h3>
+
+                    <h4>Foundations</h4>
+                    <p>This section includes foundational UX concepts (value, usability, and accessibility) and UI foundations (typography, colour, and grid). This section should be read prior to using this guide and revisited periodically as a refresher.</p>
+
+                    <h4>UI Components</h4>
+                    <p>This section contains all custom UI components for the site along with specific UX and usability recommendations. Each component is styled in its own file of the same name and can be found under <code>youth/sass/shared/components</code>. These components can be easily removed, edited or pulled to another site if needed.</p>
+
+                    <h4>Resources</h4>
+                    <p>This section contains custom helper classes and external resource information.</p>
+
+                    <h4>Developer Notes</h4>
+                    <p>All custom style classes (with the exception of the grid system) have the prefix <code>g-</code> to prevent external resources from affecting them.
+
+                    <p>The youth folder contains all code required. This site built completely separate from the other SAIT sites to ease developer integration.</p>
+
+                    <p>Styling inside <code>youth/sass/shared</code> contains all styling that could be reused by another site. You can change the look by changing the sass variables (currently set inside <code>youth/sass/youth/helpers/_variables.scss</code>).</p>
+
+                    <p>Styling inside <code>youth/sass/youth</code> contains styles that are specific to SAIT Young Originals and should probably not be reused.</p>
+
+                    <p>Refer to <code>README</code> for more developer information.</p>
+
+                </section>
+
+                <section id="value">
+                    <h2>Value</h2>
+
+                    <p class="g-font-larger">Value addresses important questions like ‘Who uses this site?’ and ‘What are they using it for?’ Most organizations know the answers but fail to keep their sites focused, as features and content sprawl to satisfy various stakeholders.</p>
+
+                    <h3>Guiding value principles</h3>
+
+                    <h4>Address an identifiable user need from user’s perspective</h4>
+                    <p>If users are able to easily perform the tasks most important to them they’re likely to have a positive user experience. UX research performed as part of this project has pointed to the following as being important, primary tasks:</p>
+                    <p>[redacted for confidentiality]</p>
+
+                    <h4>Add value by addressing secondary needs relevant to key tasks</h4>
+                    <p>Value can be added through the surprise and delight that comes from allowing users to do things they didn’t expect. UX research has pointed to the following as value-add opportunities:</p>
+                    <p>[redacted for confidentiality]</p>
+
+                    <br><br>
+
+                </section>
+
+                <section id="usability">
+                    <h2>Usability</h2>
+
+                    <p class="g-font-larger">How usable an app or site is determines how effective it will be at performing the jobs for which it is hired. A site may have great content and the requisite features but if it’s unusable the value will not be realized. Usability is a conduit for value.</p>
+
+                    <h3>Guiding usability principles</h3>
+
+                    <h4>Focus user attention on completing key tasks</h4>
+                    <p>Everything else that gets added to the user experience detracts from the user’s ability to do what they really need to do. In PSE, those additional items often take the form of copy and links that promote the administration more than they serve user needs.</p>
+
+                    <h4>Use language familiar to entire target audience</h4>
+                    <p>PSE organizations are especially susceptible to a phenomenon known as Conway’s Law: “organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations.” In other words, as in the case with PSE institutions, websites are designed to imitate the institutional structure composed of a dozen or so schools or faculties (maybe more, maybe fewer). This should be avoided in favour of language that is familiar, describes tasks, and addresses motivation.</p>
+
+                    <h4>Don’t require users to guess or explicitly remember anything</h4>
+                    <p>Use design elements and practices like signifiers, accelerators, feedforward, and fall-backs.</p>
+
+                    <h4>Help users avoid and recover from mistakes</h4>
+                    <p>Either eliminate error-prone conditions or check for them and present users with a confirmation option before they commit to the action. Error messages should be expressed in plain language, precisely indicate the problem, and constructively suggest a solution.</p>
+
+                    <h4>Obvious always wins</h4>
+                    <p>It’s tempting to rely on icons without labels (or icons instead of labels) or to hide access to critical components of a site or application in a menu. This should be avoided because interface elements that are out of sight are also out of mind. When critical parts of an application are made more visible, usage of them can increase.</p>
+
+                    <br><br>
+
+                </section>
+
+                <section id="accessibility">
+
+                    <h2>Accessibility</h2>
+
+                    <p class="g-font-larger">Content and functionality should be available on users’ preferred platforms and devices while accommodating diversity by enabling all types of physical and language abilities.</p>
+
+                    <h3>Guiding accessibility principles</h3>
+
+                    <h4>Structure your document properly</h4>
+                    <p>Use the right HTML tags for the job when marking up navigation, lists, links, controls, and so on.</p>
+
+                    <h4>Label everything</h4>
+                    <p>If a control or form element has no text label, add one. You can use the visibility classes to hide labels visually while maintaining accessibility. Use the alt attribute on all images to describe what they are.</p>
+
+                    <h4>Don't rely on purely visual cues</h4>
+                    <p>The content of a page should make sense even if page is being read to the user, or if the user is colorblind and can't make use of color-based labeling.</p>
+
+                    <h4>Make everything usable on a keyboard and mouse</h4>
+                    <p>All components should work with keyboards, mice, and touch screens.</p>
+
+                    <h4>When possible, use <code>rem</code> and <code>em</code> units to size everything.</h4>
+                    <p>Not just font size, but also padding, margins, and any length value. This ensures that your design scales up and down uniformly if the user changes their browser's text size. It's common for vision-impaired users to resize their browser up to 200% zoom.</p>
+
+                    <br><br>
+
+                </section>
+
+                <section id="text">
+                    <h2>Typography</h2>
+                    
+                    <p class="g-font-larger">Text is the main way that users consume and visualize content on this and most SAIT web properties. Consistent typography ensures the UI is optimized to be highly legible, performs well, and is frictionless as users move around all SAIT web properties.</p>     
+
+                    <h3>Typeface</h3>
+
+                    <p>The SAIT wordmark includes proprietary detailing on the upward stroke on the letter “A” to project a future-forward attitude. It was created using the font Klavika.</p>
+
+                    <p>However, all other material uses <a href="https://fonts.google.com/specimen/Titillium+Web">Titillium</a>, a distinct font with a very broad family of weights and styles.</p>
+
+                    <h4>Usage</h4>
+                    <table class="g-table g-table-striped g-stack g-margin-top-sm">
+                        <thead>
+                            <tr>
+                                <th>Size</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h1 style="margin: 0;">h1</h1></td>
+                                <td>The <code>h1</code> heading describes a page’s main topic. It should be highly related to the content and unique across the website. A page or screen should only contain one <code>h1</code> heading.</td>
+                            </tr>
+                            <tr>
+                                <td><h2 style="margin: 0;">h2</h2></td>
+                                <td><code>h2</code> - <code>h6</code> headings are used to further structure the content. Using the <code>h2</code> heading is recommended, and using <code>h3</code> - <code>h6</code> headings are optional.</td>
+                            </tr>
+                            <tr>
+                                <td><h3 style="margin: 0;">h3</h3></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><h4 style="margin: 0;">h4</h4></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><h5 style="margin: 0;">h5</h5></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><h6 style="margin: 0;">h6</h6></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><p>Paragraph</p></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
+                    <h4>Formatting</h4>
+                    <table class="g-table g-table-striped g-stack g-margin-top-sm">
+                        <thead>
+                            <tr>
+                                <th>Format</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 180px;"><b>Bold</b></td>
+                                <td>Use sparingly to emphasize text.</td>
+                            </tr>
+                            <tr>
+                                <td><em>Italic</b></td>
+                                <td>Use sparingly to emphasize text, but avoid mixing with bold.</td>
+                            </tr>
+                            <tr>
+                                <td class="g-color-dark">Dark</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="g-color-secondary">Secondary</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="g-font-small">Small</td>
+                                <td>‘Small’ text is used primarily as help text under form fields and as secondary supporting text and should be used sparingly.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ol>
+                                        <li>Step one</li>
+                                        <li>Step two</li>
+                                        <li>Step three</li>
+                                    </ol>
+                                </td>
+                                <td>Sometimes referred to as a numbered list, this type of list is best used when the order of the items displayed is important. For example, the steps for applying to a program should use an ordered list because the sequence of the items matters.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>List item</li>
+                                        <li>Second list item</li>
+                                    </ul>
+                                </td>
+                                <td>Sometimes referred to as a bulleted list, this type of list is best used for displaying items that don’t have a required order. </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br><br>
+
+                </section>
+
+                <section id="colours">
+
+                    <h2>Colour</h2> 
+
+                    <h3>Primary colors</h3>
+                    <p>Red has been the defining colour for SAIT. As part of its heritage, blue also played a role. These heritage colours have been complemented with more energizing hues to reflect diversity, adaptability and innovation.</p>
+                    <br>
+                    <div class="row margin-bottom-sm">
+                        <div class="col-1of5">
+                            <div class="testing-bg g-bg-brand-1"></div>
+                            <p class="g-text-center">#A6192E</p>
+                        </div>
+                        <div class="col-1of5">
+                            <div class="testing-bg g-bg-brand-2"></div>
+                            <p class="g-text-center">#6D2077</p>
+                        </div>
+                        <div class="col-1of5">
+                            <div class="testing-bg g-bg-brand-3"></div>
+                            <p class="g-text-center">#005EB8</p>
+                        </div>
+                        <div class="col-1of5">
+                            <div class="testing-bg g-bg-brand-4"></div>
+                            <p class="g-text-center">#00A3E0</p>
+                        </div>
+                        <div class="col-1of5">
+                            <div class="testing-bg g-bg-brand-5"></div>
+                            <p class="g-text-center">#DA291C</p>
+                        </div>
+                    </div>
+
+                    <h3>Neutrals</h3>
+                    <p>Neutrals have varying degrees of saturation that allow for the appropriate level of warmth across the site. Neutrals are usually used for text and subtle backgrounds when we don't want to draw too much attention to a particular touchpoint or convey information such as "to do" or "disabled".</p>
+                    <br>
+                    <div class="row margin-bottom-sm">
+                        <div class="col-1of5">
+                            <div class="testing-bg g-bg-grey-1"></div>
+                            <p class="g-text-center">#201F1F</p>
+                        </div>
+                        <div class="col-1of5">
+                            <div class="testing-bg g-bg-grey-2"></div>
+                            <p class="g-text-center">#324053</p>
+                        </div>
+                        <div class="col-1of5">
+                            <div class="testing-bg g-bg-grey-3"></div>
+                            <p class="g-text-center">#565A61</p>
+                        </div>
+                         <div class="col-1of5">
+                            <div class="testing-bg g-bg-grey-4"></div>
+                            <p class="g-text-center">#767C86</p>
+                        </div> 
+                        <div class="col-1of5">
+                            <div class="testing-bg g-bg-grey-5"></div>
+                            <p class="g-text-center">#d9DADC</p>
+                        </div>
+                    </div>
+
+                    <h3>Background Colours</h3>
+                    <p>In addition to neutrals, background colours can be used behind copy and to separate content sections and divs.</p>
+                    <br>
+                    <div class="row margin-bottom-sm">
+                        <div class="col-1of6">
+                            <div class="testing-bg g-bg-1"></div>
+                            <p class="g-text-center">#FFFFFF</p>
+                        </div>
+                        <div class="col-1of6">
+                            <div class="testing-bg g-bg-2"></div>
+                            <p class="g-text-center">#F7F7F8</p>
+                        </div>
+                        <div class="col-1of6">
+                            <div class="testing-bg g-bg-3"></div>
+                            <p class="g-text-center">#F6F7F9</p>
+                        </div>
+                        <div class="col-1of6">
+                            <div class="testing-bg g-bg-4"></div>
+                            <p class="g-text-center">#1C232C</p>
+                        </div>
+                        <div class="col-1of6">
+                            <div class="testing-bg g-bg-5"></div>
+                            <p class="g-text-center">#00A3E0</p>
+                        </div>
+                        <div class="col-1of6">
+                            <div class="testing-bg g-bg-6"></div>
+                            <p class="g-text-center">Pattern</p>
+                        </div>
+                    </div>
+                    
+                    <br><br>
+
+                </section>
+
+                <section id="grid">
+
+                    <h2>Grid</h2> 
+
+                    <p class="g-font-larger">Consistent use of a grid system provides the foundation for harmoniously and consistently positioning elements on each screen. Designing to the grid helps create an experience that facilitates understanding and brings order to the page.</p>
+
+                    <h3>Examples</h3>
+
+                    <p>The grid system is created by any combination of 1-8 columns (ie <code>col-1of6</code>) wrapped in a <code>row</code> class to clear floats.</p>
+                    <p>To change the size of columns based on screen size you may define the columns for larger screens, smaller screens and for mobile by adding <code>lg-2of3</code>, <code>sm-1of3</code>, <code>xs-1of2</code> to columns respectively.</p>
+                    <p>To add margin bottom to columns you may add these classes to direct parent rows: <code>margin-bottom</code> and <code>margin-bottom-sm</code>.</p>
+                    <p>To change the width of the space between columns add <code>no-gutter</code>, <code>sm-gutter</code>, <code>lg-gutter</code>, <code>sm-gutter-tablet</code>, <code>sm-gutter-mobile</code> to parent <code>row</code>.</p>
+                    <p>You may also add <code>g-pull-right</code> to columns to float right instead of left.</p>
+                    <br><br>
+
+                    <div class="row margin-bottom">
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                    </div>
+
+                    <div class="row margin-bottom-sm">
+                        <div class="col-1of5">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of5">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of5">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of5">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of5">
+                            <div class="row margin-bottom-sm">
+                                <div class="col-1of2 sm-1of2">
+                                    <div class="testing-unit"></div>
+                                </div>
+                                <div class="col-1of2 sm-1of2">
+                                    <div class="testing-unit"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="row margin-bottom">
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+</div>
+
+<div class="row margin-bottom-sm">
+    <div class="col-1of5">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of5">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of5">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of5">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of5">
+        <div class="row margin-bottom-sm">
+            <div class="col-1of2 sm-1of2">
+                <div class="testing-unit"></div>
+            </div>
+            <div class="col-1of2 sm-1of2">
+                <div class="testing-unit"></div>
+            </div>
+        </div>
+    </div>
+</div></xmp></pre>
+
+                    <h4>Smaller gutter</h4> 
+
+                    <p>Add the class <code>sm-gutter</code> to <code>row</code> for smaller gutter widths.</p>
+                    <br>
+
+                    <div class="row sm-gutter margin-bottom">
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="row sm-gutter margin-bottom">
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+</div></xmp></pre>
+                
+                    <h4>Smaller gutter - tablet</h4>
+
+                    <p>Add the class <code>sm-gutter-tablet</code> to <code>row</code> for smaller gutter widths for smaller screens.</p>
+                    <br>
+
+                    <div class="row sm-gutter-tablet margin-bottom">
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="row sm-gutter-tablet margin-bottom">
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+</div></xmp></pre>
+
+                    <h4>Smaller gutter - mobile</h4>
+
+                    <p>Add the class <code>sm-gutter-mobile</code> to <code>row</code> for smaller gutter widths on mobile screens.</p>
+                    <br>
+
+                    <div class="row sm-gutter-mobile margin-bottom">
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of6 sm-1of3 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="row sm-gutter-mobile margin-bottom">
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of6 sm-1of3 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+</div>
+</xmp></pre>    
+
+                    <h4>Larger gutter</h4>
+
+                    <p>Add the class <code>lg-gutter</code> to <code>row</code> for larger gutter widths on larger screen.</p>
+                    <br>
+
+                    <div class="row lg-gutter margin-bottom">
+                        <div class="col-1of4 sm-1of2 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of4 sm-1of2 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of4 sm-1of2 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                        <div class="col-1of4 sm-1of2 xs-1of2">
+                            <div class="testing-unit"></div>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="row lg-gutter margin-bottom">
+    <div class="col-1of4 sm-1of2 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of4 sm-1of2 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of4 sm-1of2 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+    <div class="col-1of4 sm-1of2 xs-1of2">
+        <div class="testing-unit"></div>
+    </div>
+</div></xmp></pre>
+
+                    <h4>No Gutter</h4>
+
+                    <p>Add the class <code>no-gutter</code> to <code>row</code> for no gutters.</p>
+                    <br>
+
+                    <div class="row no-gutter">
+                        <div class="col-1of4 sm-1of2 xs-1of2">
+                            <div style="background: url(img/sample/04.jpg) center center; background-size: cover; height: 200px; width: 100%; display: block;">
+                            </div>
+                        </div>
+                        <div class="col-1of4 sm-1of2 xs-1of2">
+                            <div style="background: url(img/sample/01.jpg) center center; background-size: cover; height: 200px; width: 100%; display: block;">
+                            </div>
+                        </div>
+                        <div class="col-1of4 sm-1of2 xs-1of2">
+                            <div style="background: url(img/sample/08.jpg) center center; background-size: cover; height: 200px; width: 100%; display: block;">
+                            </div>
+                        </div>
+                        <div class="col-1of4 sm-1of2 xs-1of2">
+                            <div style="background: url(img/sample/11.jpg) center center; background-size: cover; height: 200px; width: 100%; display: block;">
+                            </div>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="row no-gutter">
+    <div class="col-1of4 sm-1of2 xs-1of2">
+        <div style="background: url(img/sample/04.jpg) center center; background-size: cover; height: 200px; width: 100%; display: block;">
+        </div>
+    </div>
+    <div class="col-1of4 sm-1of2 xs-1of2">
+        <div style="background: url(img/sample/01.jpg) center center; background-size: cover; height: 200px; width: 100%; display: block;">
+        </div>
+    </div>
+    <div class="col-1of4 sm-1of2 xs-1of2">
+        <div style="background: url(img/sample/08.jpg) center center; background-size: cover; height: 200px; width: 100%; display: block;">
+        </div>
+    </div>
+    <div class="col-1of4 sm-1of2 xs-1of2">
+        <div style="background: url(img/sample/11.jpg) center center; background-size: cover; height: 200px; width: 100%; display: block;">
+        </div>
+    </div>
+</div></xmp></pre>  
+                
+                </section>
+
+                <section id="accordion">
+
+                    <h2>Accordions</h2>
+
+                    <p class="g-font-larger">An accordion menu is a vertically stacked list of headers that can be clicked to hide or show the content within.</p>
+
+                    <h3>UX principles</h3>
+
+                    <p>Accordions are not a one-size-fits-all solution and should be used carefully. Scrolling is an acceptable behaviour when content is relevant and organized properly and it’s often better to show all page content at once.</p>
+                    <p>Consider using accordions on small screens where information is restricted, but otherwise, proceed with caution. Remember to choose accordion section labels that describe the content within and are aligned with user goals.</p>
+
+                    <br><br>
+                    <div class="g-accord">
+                        <a class="g-accord-header">
+                            <span class="g-label">Frequently called numbers</span>
+                            <span class="g-icon ion-plus-round"></span>
+                        </a>
+                        <div class="g-accord-body">
+                            <div class="g-accord-body-content">
+                                <table class="g-table g-table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td>Justine Lileikis</td>
+                                            <td>justine@res.im</td>
+                                            <td>344-433-4747</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brian Frank</td>
+                                            <td>brian@res.im</td>
+                                            <td>544-435-2343</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Chantel Wong</td>
+                                            <td>chantel@res.im</td>
+                                            <td>363-232-2323</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="g-accord">
+    <a class="g-accord-header">
+        <span class="g-label">Frequently called numbers</span>
+        <span class="g-icon ion-plus-round"></span>
+    </a>
+    <div class="g-accord-body">
+        <div class="g-accord-body-content">
+            <table class="g-table g-table-striped">
+                <tbody>
+                    <tr>
+                        <td>Justine Lileikis</td>
+                        <td>justine@res.im</td>
+                        <td>344-433-4747</td>
+                    </tr>
+                    <tr>
+                        <td>Brian Frank</td>
+                        <td>brian@res.im</td>
+                        <td>544-435-2343</td>
+                    </tr>
+                    <tr>
+                        <td>Chantel Wong</td>
+                        <td>chantel@res.im</td>
+                        <td>363-232-2323</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div></xmp></pre>                    
+
+                </section>
+
+                <section id="breadcrumbs">
+
+                    <h2>Breadcrumbs</h2>
+
+                    <p class="g-font-larger">A breadcrumb is a small text path, often located at the top of a page or screen. Most breadcrumbs show the user where they are and allow them to navigate back to previous steps.</p>
+
+                    <h3>UX principles</h3>
+
+                    <p>Breadcrumbs are useful and should be used on websites with many related categories and subcategories. Use breadcrumbs to show site hierarchy and not the user’s browsing history within the site or application.</p>
+
+                    <br>
+
+                    <div class="g-breadcrumb">
+                        <a>Home</a>
+                        <span class="ion-ios-arrow-forward"></span>
+                        <a>Programs & Courses</a>
+                        <span class="ion-ios-arrow-forward"></span>
+                        <span>Business</span>
+                    </div>
+
+<pre><xmp><div class="g-breadcrumb">
+    <a>Home</a>
+    <span class="ion-ios-arrow-forward"></span>
+    <a>Programs & Courses</a>
+    <span class="ion-ios-arrow-forward"></span>
+    <span>Business</span>
+</div></xmp></pre>
+                        
+                </section>
+
+                <section id="buttons">
+
+                    <h2>Buttons</h2>
+                    <p class="g-font-larger">Use buttons to trigger actions and links. Buttons should include text and can include an icon for support.</p>
+
+                    <h3>Writing labels</h3>
+                    <p>Ensure button labels are as short as possible while explaining what happens when the button is selected.</p>
+
+                    
+                    <div class="row sm-gutter margin-bottom">
+                        <div class="col-3of7">
+                            <h4>Do</h4>
+                            <span class="ion-checkmark g-do"></span><a class="g-btn-2">Download checklist</a>
+                            <br><br>
+                            <span class="ion-checkmark g-do"></span><a class="g-btn">Apply now</a>
+                        </div>
+                        <div class="col-4of7">
+                            <h4> Don't</h4>
+                            <span class="g-font-smaller ion-close g-don-t"></span><a class="g-btn-2">Download</a>
+                            <br><br>
+                            <span class="g-font-smaller ion-close g-don-t"></span><a class="g-btn">Submit</a>
+                        </div>
+                    </div>
+
+                    <h3>Button alignment</h3>
+                    <p>Buttons should be aligned depending on context:</p>
+                    <ul>
+                        <li>For single page forms and focused tasks, left-align buttons and sort by importance from left to right.</li>
+                        <li>When using buttons to help a user move through a series of stepped screens, right-align the primary button to visually support the intended direction.</li>
+                    </ul>
+
+                    <h3>Button types</h3>
+                    <table class="g-table g-stack g-table-striped">
+                        <thead>
+                            <tr>
+                                <th>Button</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><button class="g-btn">Primary button</button></td>
+                                <td>Use this button to highlight the most important call to action on a page. There should only be one primary button per screen.</td>
+                            </tr>
+                            <tr>
+                                <td><button class="g-btn-2">Secondary button</button></td>
+                                <td>Use this button in most cases where a button is required and especially where there are likely to be multiple buttons on a screen and/or when a primary button isn’t required.</td>
+                            </tr>
+                            <tr>
+                                <td><button class="g-btn g-disabled">Disabled</button></td>
+                                <td>Use when another action has to be performed before the button is usable. A common example is completing a required field in a form.</td>
+                            </tr>
+                            <tr>
+                                <td><a>Link</a></td>
+                                <td>Use links to lead to another screen or page.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <h3>Button styles</h3>
+
+                    <p>Any button type can be used with an icon to help draw focus or clarify intention.</p>
+
+                    <a class="g-btn-2"><span class="ion-edit g-icon-left"></span>Edit</a>
+                    <br><br>
+
+                    <p>Buttons can be expanded to full width to fill the parent container.</p>
+
+                    <a class="g-btn g-btn-block">Apply now</a>
+                    <br><br>
+
+                    <p>Button size can be adjusted up or down.</p>
+
+                    <a class="g-btn-2 g-btn-lg">Contact us</a>
+                    <a class="g-btn-2 g-btn-sm">Contact us</a>
+                    <br><br>
+
+<pre><xmp><a class="g-btn-2"><span class="ion-edit g-icon-left"></span>Edit</a>
+<a class="g-btn g-btn-block">Apply now</a>
+<a class="g-btn g-btn-lg">Contact us</a>
+<a class="g-btn g-btn-sm">Contact us</a></xmp></pre>
+
+                </section>
+
+                <section id="cards">
+
+                    <h2>Cards</h2>
+
+                    <p class="g-font-larger">Cards act as entry points to more detailed information and provide a preview of the detail a user will see when they select a card.</p>
+
+                    <h3>UX principles</h3>
+
+                    <p>Cards are an effective component when the following guidelines are considered:</p>
+
+                    <ul>
+                        <li>Present one idea per card. If there are multiple ideas, break them out into separate cards.</li>
+                        <li>Provide visual hierarchy to the content to increase the cards focus and legibility.</li>
+                    </ul>
+
+                    <h3>Examples</h3>
+                    <br>
+
+                    <div class="g-card g-card-shadow g-card-content">
+                       <h3 class="g-secondary">Free Information Session</h3>
+                       <p><b>When:</b> Thursday, March 30 2016 at 5pm<br>
+                          <b>Where:</b> Orpheus Theatre, Campus Centre, <a>SAIT Main Campus</a>
+                       </p>
+                       <p>RSVP by calling 403.284.8818 or email <a>aogp.info@sait.ca</a></p>
+                       <p><a>Upcoming Information Sessions<span class="ion-ios-arrow-forward g-icon-right"></span></a></p>
+                    </div>
+
+<pre><xmp><div class="g-card g-card-shadow g-card-content">
+   <h3 class="g-secondary">Free Information Session</h3>
+   <p><b>When:</b> Thursday, March 30 2016 at 5pm<br>
+      <b>Where:</b> Orpheus Theatre, Campus Centre, <a>SAIT Main Campus</a>
+   </p>
+   <p>RSVP by calling 403.284.8818 or email <a>aogp.info@sait.ca</a></p>
+   <p><a>Upcoming Information Sessions<span class="ion-ios-arrow-forward g-icon-right"></span></a></p>
+</div></xmp></pre>
+                    
+                    <div class="row">
+                        <div class="col-1of2 sm-1of2">
+                            <a class="g-card g-related">
+                                <div class="g-card-image" style="background-image: url(img/sample/10.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-font-large g-color-secondary"><b>Architectural Technologist</b></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+<pre><xmp><a class="g-card g-related">
+    <div class="g-card-image" style="background-image: url(img/sample/10.jpg);">
+    </div>
+    <div class="g-card-content">
+        <div class="g-font-large g-color-secondary"><b>Architectural Technologist</b></div>
+    </div>
+</a></xmp></pre>
+                
+                    <div class="row">
+                        <div class="col-2of5 sm-1of2">
+                            <a class="g-card g-related g-sm">
+                                <div class="g-card-image" style="background-image: url(img/sample/18.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Construction Project Manager</b></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+<pre><xmp><a class="g-card g-related g-sm">
+    <div class="g-card-image" style="background-image: url(img/sample/18.jpg);">
+    </div>
+    <div class="g-card-content">
+        <div class="g-card-content-inner">
+            <div class="g-font-large g-color-secondary"><b>Construction Project Manager</b></div>
+        </div>
+    </div>
+</a></xmp></pre>
+
+                    <div class="row margin-bottom-sm">
+                        <div class="col-1of3 sm-1of2">
+                            <a class="g-card g-related-2">
+                                <div class="g-card-image" style="background-image: url(img/sample/18.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Architectural Technologist</b></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-1of3 sm-1of2">
+                            <a class="g-card g-related-2 g-w-hidden-link">
+                                <div class="g-card-image" style="background-image: url(img/sample/10.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Bricklayer</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-1of3 sm-1of2">
+                            <a class="g-card g-related-2 g-w-hidden-link">
+                                <div class="g-card-image" style="background-image: url(img/sample/16.jpg);">
+                                </div>
+                                <div class="g-card-content">
+                                    <div class="g-card-content-inner">
+                                        <div class="g-font-large g-color-secondary"><b>Construction Project Manager</b></div>
+                                        <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+<pre><xmp><a class="g-card g-related-2 g-w-hidden-link">
+    <div class="g-card-image" style="background-image: url(img/sample/10.jpg);">
+    </div>
+    <div class="g-card-content">
+        <div class="g-card-content-inner">
+            <div class="g-font-large g-color-secondary"><b>Bricklayer</b></div>
+            <div class="g-hidden-link">Learn More<span class="ion-chevron-right g-icon-right"></span></div>
+        </div>
+    </div>
+</a></xmp></pre>
+
+                    <div class="row">
+                        <div class="col-3of4">
+                            <div class="g-card g-profile">
+                                <div class="g-card-content g-clearfix">
+                                    <img alt="Peter Smith profile" class="g-profile-img g-pull-left" src="img/sample/p-03.jpg">
+                                    <span class="h4">Peter Smith</span><br>
+                                    <em>Plumber Apprentice</em><br>
+                                    <em class="g-font-smaller">(2016)</em>
+                                    <p>Suspendisse et mattis turpis. Integer a mollis metus. Morbi maximus aliquet nisl, in commodo felis efficitur id. Suspendisse et mattis turpis. Integer a mollis metus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+<pre><xmp><div class="g-card g-profile">
+    <div class="g-card-content g-clearfix">
+        <img alt="Peter Smith profile" class="g-profile-img g-pull-left" src="img/sample/p-03.jpg">
+        <span class="h4">Peter Smith</span><br>
+        <em>Plumber Apprentice</em><br>
+        <em class="g-font-smaller">(2016)</em>
+        <p>Suspendisse et mattis turpis. Integer a mollis metus. Morbi maximus aliquet nisl, in commodo felis efficitur id. Suspendisse et mattis turpis. Integer a mollis metus.</p>
+    </div>
+</div></xmp></pre>
+
+                </section>
+
+                <section id="ctas">
+                        
+                    <h2>Calls to action</h2>
+
+                    <p class="g-font-larger">Calls-to-action (CTAs) are self-contained messages intended to encourage a user to take an action or to alert users that important information is available. CTAs often represent a conversion for a particular page or screen, for example, purchase, contact, subscribe etc.</p>
+
+                    <h3>UX principles</h3>
+
+                    <p>Calls-to-action are an important component of marketing websites and should adhere to the following guidelines:</p>
+
+                    <ul>
+                        <li>CTA microcopy should tell users what action they will take if they click the CTA. CTA microcopy should be short but consistent and as explanatory as is necessary given the context.</li>
+                        <li>Use icons where it makes sense to visually express objects, actions, and ideas and in cases where users might expect to find icons (social sharing, downloading content, flagging content as a favourite etc.)</li>
+                        <li>Bigger CTA buttons will stand out more, but don't go overboard. Large CTAs risk getting lost due to banner blindness. CTAs should be big enough to read and also to see and select on mobile.</li>
+                    </ul>
+
+                    <h3>Examples</h3>
+                    <br>
+                    <a class="g-cta">
+                        <span class="g-text">
+                            Explore School & Group Programs
+                        </span>
+                        <span class="g-icon ion-ios-arrow-forward"></span>
+                    </a>
+
+<pre><xmp><a class="g-cta">
+    <span class="g-text">
+        Explore School & Group Programs
+    </span>
+    <span class="g-icon ion-ios-arrow-forward"></span>
+</a></xmp></pre>
+
+                    <a class="g-cta g-secondary">
+                        <span class="g-subhead g-font-smaller">
+                            We are here to help
+                        </span>
+                        <span class="g-text">
+                            Contact Us
+                        </span>
+                        <span class="g-icon ion-ios-arrow-forward"></span>
+                    </a>
+
+<pre><xmp><a class="g-cta g-secondary">
+    <span class="g-subhead g-font-smaller">
+        We are here to help
+    </span>
+    <span class="g-text">
+        Contact Us
+    </span>
+    <span class="g-icon ion-ios-arrow-forward"></span>
+</a></xmp></pre>
+
+                    <a class="g-cta g-tertiary">
+                        <span class="g-text">
+                            <span class="g-icon-left ion-android-download g-color-brand-2"></span>Career Details
+                        </span>
+                        <span class="g-icon ion-ios-arrow-forward"></span>
+                    </a>
+
+<pre><xmp><a class="g-cta g-tertiary">
+    <span class="g-text">
+        <span class="g-icon-left ion-android-download g-color-brand-2"></span>Career Details
+    </span>
+    <span class="g-icon ion-ios-arrow-forward"></span>
+</a></xmp></pre>
+
+                    <a class="g-cta g-quaternary">
+                        <span class="g-subhead g-font-smaller">
+                            Teachers & Group Leaders
+                        </span>
+                        <span class="g-text">
+                            Apply Now
+                        </span>
+                        <span class="g-icon ion-ios-arrow-forward"></span>
+                    </a>
+
+<pre><xmp><a class="g-cta g-quaternary">
+    <span class="g-subhead g-font-smaller">
+        Teachers & Group Leaders
+    </span>
+    <span class="g-text">
+        Apply Now
+    </span>
+    <span class="g-icon ion-ios-arrow-forward"></span>
+</a></xmp></pre>
+
+                    <a class="g-cta g-5 g-icon-cta">
+                        <span class="g-icon-right">
+                            <span class="ion-star"></span>
+                        </span>
+                        <span class="g-text">
+                            Mark as Favourite
+                        </span>
+                    </a>
+
+                    <a class="g-cta g-5 g-icon-cta g-active">
+                        <span class="g-icon-right">
+                            <span class="ion-star"></span>
+                        </span>
+                        <span class="g-text">
+                            Marked as Favourite
+                        </span>
+                    </a>
+
+<pre><xmp><a class="g-cta g-5 g-icon-cta">
+    <span class="g-icon-right">
+        <span class="ion-star"></span>
+    </span>
+    <span class="g-text">
+        Mark as Favourite
+    </span>
+</a>
+
+<a class="g-cta g-5 g-icon-cta g-active">
+    <span class="g-icon-right">
+        <span class="ion-star"></span>
+    </span>
+    <span class="g-text">
+        Marked as Favourite
+    </span>
+</a></xmp></pre>
+
+                </section>
+
+                <section id="forms">
+
+                    <h2>Forms</h2>
+
+                    <p class="g-font-larger">Forms allow people to enter data for use by the website, or to configure options. They are used to collect information and guide people with minimal effort.</p>
+
+                    <h3>Text fields</h3>
+
+                    <p>Use text fields in forms to help users input, select, and search using text. Text fields are usually found within a form but can also be part of a modal, search, or card.</p>
+                    <p>Text fields should always include:</p>
+                    <ul>
+                        <li><b>Labels:</b> Used to indicate the type of information required and should always be above the field and aligned to the left.</li>
+                        <li><b>Placeholder copy:</b> Helps the user understand how they should use the field and sometimes functions as an example of the text expected.</li>
+                        <li><b>Helper copy:</b> Used where further clarification or rationale is required and should always be below the field and aligned to the left.</li>
+                    </ul>
+                    <br>
+                    <div class="row">
+                        <div class="col-1of2">
+                            <form class="g-form">
+                                <label for="firstName">First name</label>
+                                <input type="text" class="g-form-control" id="firstName" placeholder="Enter your first name">
+                            </form>
+                        </div>
+                    </div>
+
+<pre><xmp><form class="g-form">
+    <label for="firstName">First name</label>
+    <input type="text" class="g-form-control" id="firstName" placeholder="Enter your first name">
+</form></xmp></pre>
+
+                    <h3>Checkboxes</h3>
+
+                    <p>Use checkboxes to allow users to select a number of options. This includes no options, a single option, or multiple options.</p>
+                    <p>Checkboxes always require a button to apply the intent of the selected option(s).</p>
+
+                    <br>
+
+                    <form class="g-form">
+                        <div class="g-form-group g-checkbox">
+                            <div class="g-checkbox-heading">Select all that apply:</div>
+                            <input type="checkbox" id="checkbox1">
+                            <label for="checkbox1"><span>Option one</span></label>
+                            <input type="checkbox" id="checkbox2">
+                            <label for="checkbox2"><span>Option two</span></label>
+                            <input type="checkbox" id="checkbox3">
+                            <label for="checkbox3"><span>Option three</span></label>
+                        </div>
+                    </form>
+
+<pre><xmp><form class="g-form">
+    <div class="g-form-group g-checkbox">
+        <div class="g-checkbox-heading">Select all that apply:</div>
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1"><span>Option one</span></label>
+        <input type="checkbox" id="checkbox2">
+        <label for="checkbox2"><span>Option two</span></label>
+        <input type="checkbox" id="checkbox3">
+        <label for="checkbox3"><span>Option three</span></label>
+    </div>
+</form></xmp></pre>
+
+                    <h3>Radio groups</h3>
+                    <p>Use radio groups (or radio buttons) when the options are mutually exclusive and the user is required to select a single option from a short list.</p>
+                    <p>Radio buttons should:</p>
+                    <ul>
+                        <li>Always be stacked vertically.</li>
+                        <li>Be used for lists with between 2 and 5 options. Drop down menus should be used for longer lists.</li>
+                        <li>Have one option selected by default. All radio groups must have a selection made, therefore a default is mandatory.</li>
+                    </ul>
+
+                    <br>
+
+                    <form class="g-form">
+                        <div class="g-radio-container g-form-group">
+                            <div class="g-radio-heading">Please select one:</div>
+                            <div>
+                                <input id="radio-1" class="g-radio" name="g-radio-group" type="radio" checked>
+                                <label for="radio-1" class="g-radio-label">First choice</label>
+                            </div>
+                            <div>
+                                <input id="radio-2" class="g-radio"name="g-radio-group" type="radio">
+                                <label for="radio-2" class="g-radio-label">Second choice</label>
+                            </div>
+                            <div>
+                                <input id="radio-3" class="g-radio" name="g-radio-group" type="radio">
+                                <label for="radio-3" class="g-radio-label">Third choice</label>
+                            </div>
+                        </div>
+                    </form>
+
+<pre><xmp><form class="g-form">
+    <div class="g-radio-container g-form-group">
+        <div class="g-radio-heading">Please select one:</div>
+        <div>
+            <input id="radio-1" class="g-radio" name="g-radio-group" type="radio" checked>
+            <label for="radio-1" class="g-radio-label">First choice</label>
+        </div>
+        <div>
+            <input id="radio-2" class="g-radio"name="g-radio-group" type="radio">
+            <label for="radio-2" class="g-radio-label">Second choice</label>
+        </div>
+        <div>
+            <input id="radio-3" class="g-radio" name="g-radio-group" type="radio">
+            <label for="radio-3" class="g-radio-label">Third choice</label>
+        </div>
+    </div>
+</form></xmp></pre>
+
+                    <h3>Drop down menu</h3>
+
+                    <p>Use drop-down menus to let users select an action or options from a set of choices. Typically, drop-down menus are used when you have more than 5 options.</p>
+                    <p>Drop down menus should:</p>
+                    <ul>
+                        <li>Be limited to 15 items. Consider breaking large lists out into categories and using drop downs or other list formats.</li>
+                        <li>Be avoided when typing may be faster, such as selecting a country from a large list.</li>
+                        <li>Be avoided for data that is familiar to users, such as birthdays.</li>
+                        <li>Always have the menu label or description in view.</li>
+                        <li>Always support keyboard input.</li>
+                    </ul>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col-1of2">
+                            <form class="g-form">
+                                <label for="select">Select one</label>
+                                <select id="select" class="g-form-control">
+                                    <option>Select an option</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                    <option value="4">Option 4</option>
+                                    <option value="5">Option 5</option>
+                                    <option value="6">Option 6</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+
+<pre><xmp><form class="g-form">
+    <label for="select">Select one</label>
+    <select id="select" class="g-form-control">
+        <option>Select an option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+        <option value="5">Option 5</option>
+        <option value="6">Option 6</option>
+    </select>
+</form></xmp></pre>
+
+                    <h3>Communicating errors</h3>
+
+                    <p>Poorly communicated errors can be frustrating for users. Apply the following guidelines when handling errors:</p>
+                    <ul>
+                        <li>Write error messages in clear and simple language. User should be able to understand the problem while reading an error message.</li>
+                        <li>Include suggestions on how to resolve the error.</li>
+                        <li>Avoid technical jargon.</li>
+                        <li>Don’t use negative words and never blame the user.</li>
+                        <li>Use a general error message to communicate that something went wrong but also ensure specific messages are used inline and placed where the error took place.</li>
+                    </ul>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col-1of2">
+                            <form class="g-form">
+                                <div class="g-error-state">
+                                    <label for="exampleInput1">First name</label>
+                                    <input type="text" class="g-form-control" id="exampleInput1" placeholder="Enter your first name">
+                                    <p style="margin-bottom:0;">Please enter your first name</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+<pre><xmp><form class="g-form">
+    <div class="g-error-state">
+        <label for="exampleInput1">First name</label>
+        <input type="text" class="g-form-control" id="exampleInput1" placeholder="Enter your first name">
+        <p style="margin-bottom:0;">Please enter your first name</p>
+    </div>
+</form></xmp></pre>
+
+                </section>
+
+                <section id="modalwindow">
+
+                    <h2>Modals and lightboxes</h2>
+
+                    <p class="g-font-larger">A modal window is an element that sits on top of the main window of an app or website. It creates a mode that disables the main window but keeps it visible with the modal window as a child window in front of it. Users must interact with the modal window before they can return to the parent application.</p>
+
+                    <h3>UX principles</h3>
+
+                    <p>Modals and lightboxes should be used sparingly as they can hinder task completion when poorly implemented. Follow the guidelines below when using (or deciding when to use) a modal or lightbox:</p>
+
+                    <ul>
+                        <li>Provide a way for users to escape by giving them the ability to quickly and clearly close the modal. The modal should always include an ‘x’, ‘cancel’, or ‘close’ option.</li>
+                        <li>Give context to the user with the modal title.</li>
+                        <li>Content should fit the modal. Consider using a new page if the modal requires a scroll bar.</li>
+                        <li>Use a lightbox effect (darken the background) when the modal is opened. This draws attention to the modal and indicates that the user cannot interact with the parent page.</li>
+                        <li>Let a user’s action, such as clicking a button, trigger the modal. Uninvited modals may surprise the user and result in frustration or a quick dismissal.</li>
+                    </ul>
+
+                    <br><br>
+
+                    <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false">
+                      <button data-remodal-action="close" class="remodal-close"></button>
+                      <div class="g-text-center"><h2>Remodal</h2></div>
+                      <p>
+                        Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
+                      </p>
+                      <br>
+                      <div class="g-text-center">
+                          <button data-remodal-action="confirm" class="g-btn g-btn-lg">OK</button>
+                      </div>
+                    </div>
+
+                    <a data-remodal-target="modal" href="#" class="g-btn-2">Open Modal</a>
+
+<pre><xmp><div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <div class="g-text-center"><h2>Remodal</h2></div>
+  <p>
+    Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
+  </p>
+  <br>
+  <div class="g-text-center">
+      <button data-remodal-action="confirm" class="g-btn g-btn-lg">OK</button>
+  </div>
+</div>
+
+<a data-remodal-target="modal" class="g-btn-6">Open Modal</a></xmp></pre>
+
+                </section>
+
+                <section id="pagination">
+
+                    <h2>Pagination</h2> 
+                    <p class="g-font-larger">Pagination helps users move between a large number of items that are distributed across multiple screens in scenarios where there are too many results to show at once. Pagination is useful for table listings, search results, and directories.</p>
+                    
+                    <h3>UX principles</h3>
+                    <ul>
+                        <li>Ensure the clickable elements are large and easy for the user to select the correct option without error.</li>
+                        <li>Clearly indicate the page the user is on.</li>
+                        <li>Avoid confusing patterns that use double arrows and ‘first’ and ‘last’ options.</li>
+                        <li>Wherever possible, display the number of individual results available across all pages.</li>
+                        <li>Ensure single arrows for previous and next are accompanied by ‘previous’ and ‘next’ labels.</li>
+                    </ul>
+
+                    <br>
+                    <div class="g-pagination">
+                        <a class="g-prev g-disabled"><span class="ion-chevron-left"></span>&nbsp;&nbsp;Previous</a>
+                        <a class="g-nums">1</a>
+                        <a class="g-nums g-active">2</a>
+                        <a class="g-nums">3</a>
+                        <a class="g-nums">4</a>
+                        <a class="g-nums">5</a>
+                        <a class="g-next">Next&nbsp;&nbsp;<span class="ion-chevron-right"></span></a>
+                    </div>
+
+<pre><xmp><div class="g-pagination">
+    <a class="g-prev g-disabled"><span class="ion-chevron-left"></span>&nbsp;&nbsp;Previous</a>
+    <a class="g-nums">1</a>
+    <a class="g-nums g-active">2</a>
+    <a class="g-nums">3</a>
+    <a class="g-nums">4</a>
+    <a class="g-nums">5</a>
+    <a class="g-next">Next&nbsp;&nbsp;<span class="ion-chevron-right"></span></a>
+</div></xmp></pre>
+
+                </section>
+
+                <section id="tables">
+
+                    <h2>Tables</h2>
+
+                    <p class="g-font-larger">Use tables to logically organize content in a grid to make it easier to understand relationships between content and data types.</p>
+
+                    <h3>UX principles</h3>
+
+                    <ul>
+                        <li>Use clear column headings that accurately describe the column data.</li>
+                        <li>Alternating row shading helps users keep their place when scanning long horizontal datasets.</li>
+                        <li>Organize columns and rows based on the needs of your users. To help people read the table, order the columns by importance from left to right, with the key pieces of content opening the row.</li>
+                        <li>Content should be left aligned except when using a different alignment helps with comprehension. For example, numeric data is easier to read when right aligned. The alignment of column headers should match the content alignment.</li>
+                    </ul>
+
+                    <br>
+
+                    <table class="g-table g-table-striped g-tablet-stacked">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="mobileToggleTrigger">
+                                <td><a class="g-open-link ion-plus-circled"></a>Justine</td>
+                                <td>Lileikis</td>
+                                <td>@justineresim</td>
+                            </tr>
+                            <tr class="mobileToggleTrigger">
+                                <td><a class="g-open-link ion-plus-circled"></a>Diana</td>
+                                <td>Caballero</td>
+                                <td>@dianaca</td>
+                            </tr>
+                            <tr class="mobileToggleTrigger">
+                                <td><a class="g-open-link ion-plus-circled"></a>Brian</td>
+                                <td>Frank</td>
+                                <td>@brainfrank</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+<pre><xmp><table class="g-table g-table-striped g-tablet-stacked">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="mobileToggleTrigger">
+            <td><a class="g-open-link ion-plus-circled"></a>Justine</td>
+            <td>Lileikis</td>
+            <td>@justineresim</td>
+        </tr>
+        <tr class="mobileToggleTrigger">
+            <td><a class="g-open-link ion-plus-circled"></a>Diana</td>
+            <td>Caballero</td>
+            <td>@dianaca</td>
+        </tr>
+        <tr class="mobileToggleTrigger">
+            <td><a class="g-open-link ion-plus-circled"></a>Brian</td>
+            <td>Frank</td>
+            <td>@brainfrank</td>
+        </tr>
+    </tbody>
+</table></xmp></pre>
+
+                </section>
+
+
+                <section id="tooltips">
+
+                    <h2>Tooltips</h2>
+
+                    <p class="g-font-larger">Tooltips should be treated as annotations—they can help explain something, but they aren't the main attraction. As contextual and flexible annotations, tooltips can enhance UX in a wide range of use cases such as onboarding and contextual help.</p>
+
+                    <h3>UX principles</h3>
+
+                    <ul>
+                        <li>Tooltips are not ideal for mission-critical information or anything that a user needs to refer to frequently.</li>
+                        <li>Tooltips typically don’t belong on images, videos, forms, or other content that users have to interact with.</li>
+                        <li>The tooltip pattern used for this site is initiated and closed on hover. When not using hover actions, tooltips should contain clear options allowing the user to close and reactivate the tooltip.</li>
+                    </ul>
+
+                    <br><br>
+                    <span class="tooltip tooltip-style" title="This is a tooltip!">Hover here for a tooltip!</span>
+                    
+    <pre><xmp><span class="tooltip tooltip-style" title="This is a tooltip!">Hover here for a tooltip</span></xmp></pre>
+                
+                </section>
+
+
+                <section id="helper">       
+
+                    <h2>Helper Classes</h2>
+                    <p>See <code>youth/sass/shared/helpers/_helpers.scss</code> for all helper classes.</p>
+
+                    <table class="g-table g-table-striped">
+                        <thead>
+                            <tr>
+                                <th>Class Name</th>
+                                <th>Usage</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>.g-text-uppercase</td>
+                                <td>Uppercase Text</td>
+                                <td><span class="g-text-uppercase">Uppercase Text</span></td>
+                            </tr>
+                            <tr>
+                                <td>.g-text-right</td>
+                                <td>Right aligned text</td>
+                                <td class="g-text-right">Right aligned text</td>
+                            </tr>
+                            <tr>
+                                <td>.g-text-left</td>
+                                <td>Left aligned text</td>
+                                <td class="g-text-left">Left aligned text</td>
+                            </tr>
+                            <tr>
+                                <td>.g-text-center</td>
+                                <td>Center aligned text</td>
+                                <td class="g-text-center">Center aligned text</td>
+                            </tr>
+                            <tr>
+                                <td>.g-text-underline</td>
+                                <td>Underlined text</td>
+                                <td class="g-text-underline">Underlined text</td>
+                            </tr>
+                            <tr>
+                                <td>.g-pull-right</td>
+                                <td>Float right</td>
+                                <td><span class="g-pull-right">Float right</span></td>
+                            </tr>
+                            <tr>
+                                <td>.g-pull-left</td>
+                                <td>Float left</td>
+                                <td><span class="g-pull-left">Float left</span></td>
+                            </tr>
+                            <tr>
+                                <td>.g-clearfix</td>
+                                <td>To clear floats surround floated elements in .g-clearfix</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>.g-margin-bottom, .g-margin-bottom-sm, .g-margin-bottom-lg</td>
+                                <td>To add margin bottom</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>.g-margin-top, .g-margin-top-sm, .g-margin-top-lg</td>
+                                <td>To add margin top</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>.g-round</td>
+                                <td>To add 50% border radius</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>.g-hidden</td>
+                                <td>Hides elements on all screens</td>
+                                <td><span class="g-hidden">Hidden element</span></td>
+                            </tr>
+                            <tr>
+                                <td>.g-xs-hidden</td>
+                                <td>Hides elements in mobile view</td>
+                                <td><span class="g-xs-hidden">Mobile hidden element</span></td>
+                            </tr>
+                            <tr>
+                                <td>.g-sm-hidden</td>
+                                <td>Hides elements in tablet view</td>
+                                <td><span class="g-sm-hidden">Tablet hidden element</span></td>
+                            </tr>
+                            <tr>
+                                <td>.g-lg-hidden</td>
+                                <td>Hides elements in desktop view</td>
+                                <td><span class="g-lg-hidden">Desktop hidden element</span></td>
+                            </tr>
+                            <tr>
+                                <td>.g-icon-open.ion-record</td>
+                                <td>Green dot icon - for open programs.</td>
+                                <td><span class="ion-record g-icon-open"></span></td>
+                            </tr>
+                            <tr>
+                                <td>.g-icon-closed.ion-record</td>
+                                <td>Red dot icon - for closed programs.</td>
+                                <td><span class="ion-record g-icon-closed"></span></td>
+                            </tr>
+                            <tr>
+                                <td>.g-icon-waitlisted.ion-record</td>
+                                <td>Yellow dot icon - for waitlisted programs.</td>
+                                <td><span class="ion-record g-icon-waitlisted"></span></td>
+                            </tr>  
+                            <tr>
+                                <td>.g-icon-complete.ion-checkmark</td>
+                                <td>Green checkmark - for complete or included.</td>
+                                <td><span class="g-icon-complete ion-checkmark"></span></td>
+                            </tr>    
+                            <tr>
+                                <td>.g-secondary</td>
+                                <td>Secondary hr styling.</td>
+                                <td><hr class="g-secondary"></td>
+                            </tr>          
+                        </tbody>
+                    </table>
+                    <br><br><br>
+
+                </section>
+
+                <section id="resources">
+
+                    <h2>External Resources</h2>
+
+                    <h3>Icon font</h3>
+                    <p><a href="http://ionicons.com/">Ion Icons</a></p>
+
+                    <h3>Animations</h3>
+                    <p><a href="http://zurb.com/playground/motion-ui" target="_blank">Motion UI</a><br><a href="https://github.com/zurb/motion-ui/blob/master/docs/animations.md" target="_blank">Motion UI Documentation</a></p>
+
+                    <h3>Sliders</h3>
+                    <p><a href="https://github.com/kenwheeler/slick" target="_blank">Slick Slider</a>
+                    <br><a href="http://kenwheeler.github.io/slick/" target="_blank">Slick Slider Github</a></p>
+
+                    <h3>Modals</h3>
+                    <a href="http://vodkabears.github.io/remodal/" target="_blank">Remodal</a>
+
+                    <h3>Lightboxes</h3>
+                    <a href="http://brutaldesign.github.io/swipebox" target="_blank">Swipebox</a>
+
+                    <br><br><br>
+
+                </section>
+
+                <div class="g-clearfix">
+                    <div class="g-pull-left">
+                        <a style="display: inline-block; display: none; margin-left: 10px; margin-bottom: 15px;" class="previousItem"><span class="ion-ios-arrow-back g-icon-left"></span>Previous</a>
+                    </div>
+                    <div class="g-pull-right">
+                        <a class="nextItem">Value<span class="ion-ios-arrow-forward g-icon-right"></span></a>
+                    </div>
+                </div> 
+
+            </div>
+
+            <div class="g-sidebar">
+               <div class="g-sidebar-section">
+                    <div class="g-sidenav">
+                        <div class="g-heading">
+                            <div>Foundations</div>
+                        </div>
+                        <ul class="g-basic">
+                            <li><a id="0" class="first test-scroll" scroll="#value">Value</a></li>
+                            <li><a id="1" class="test-scroll" scroll="#usability">Usability</a></li>
+                            <li><a id="2" class="test-scroll" scroll="#accessibility">Accessibility</a></li>
+                            <li><a id="3" class="test-scroll" scroll="#text">Typography</a></li>
+                            <li><a id="4" class="test-scroll" scroll="#colours">Colour</a></li>
+                            <li><a id="5" class="test-scroll" scroll="#grid">Grid</a></li>
+                        </ul>
+                    </div>
+                    <div class="g-sidenav">
+                        <div class="g-heading">
+                            <div>UI Components</div>
+                        </div>
+                        <ul class="g-basic">
+                            <li><a id="6" class="test-scroll" scroll="#accordion">Accordions</a></li>
+                            <li><a id="7" class="test-scroll" scroll="#breadcrumbs">Breadcrumbs</a></li>
+                            <li><a id="8" class="test-scroll" scroll="#buttons">Buttons</a></li>
+                            <li><a id="9" class="test-scroll" scroll="#cards">Cards</a></li>
+                            <li><a id="10" class="test-scroll" scroll="#ctas">Calls to action</a></li>
+                            <li><a id="11" class="test-scroll" scroll="#forms">Forms</a></li>
+                            <li><a id="12" class="test-scroll" scroll="#modalwindow">Modals and lightboxes</a></li>
+                            <li><a id="13" class="test-scroll" scroll="#pagination">Pagination</a></li>
+                            <li><a id="14" class="test-scroll" scroll="#tables">Tables</a></li>
+                            <li><a id="15" class="test-scroll" scroll="#tooltips">Tooltips</a></li>
+                        </ul>
+                    </div>
+                    <div class="g-sidenav">
+                        <div class="g-heading">
+                            <div>Resources</div>
+                        </div>
+                        <ul class="g-basic">
+                            <li><a id="16" class="test-scroll" scroll="#helper">Helper classes</a></li>
+                            <li><a id="17" class="test-scroll last" scroll="#resources">External resources</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="g-sidenav">
+                    <div class="g-heading">
+                        <div>Prototype</div>
+                    </div>
+                    <ul class="g-basic">
+                        <li><a target="_blank" href="cec-home.html">CEC Homepage <span class="g-icon-right ion-link"></span></a></li>
+                        <li><a target="_blank" href="basic.html">CEC Basic Page <span class="g-icon-right ion-link"></span></a></li>
+                        <li><a target="_blank" href="school-group-programs.html">CEC Basic Page 2 <span class="g-icon-right ion-link"></span></a></li>
+                        <li><a target="_blank" href="plumber.html">CEC Program Details <span class="g-icon-right ion-link"></span></a></li>
+                        <li><a target="_blank" href="sait-young-originals.html">Young Originals Homepage<span class="g-icon-right ion-link"></span></a></li>
+                        <li><a target="_blank" href="sait-summer-camps.html">Summer Camps Homepage<span class="g-icon-right ion-link"></span></a></li>
+                        <li><a target="_blank" href="xtreme-robots.html">Summer Camp Detail<span class="g-icon-right ion-link"></span></a></li>
+                        <li><a target="_blank" href="camp-favourites.html">Camp Favourites<span class="g-icon-right ion-link"></span></a></li>
+                    </ul>
+                </div>
+              </div>
+           </div>
+        </div>
+    </div>
+</div>
+
+    <!-- /////////////// Vendor JS files /////////////// -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- Slick Slider -->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+
+    <!-- Swipebox - for lightbox gallery -->
+    <script src="js/vendor/jquery.swipebox.js"></script>
+
+    <!-- Tooltipster - for tooltips -->
+    <script src="js/vendor/jquery.tooltipster.js"></script>
+
+    <!-- Remodal - for modals -->
+    <script src="js/vendor/remodal.js"></script>
+
+    <!-- /////////////// Custom JS files /////////////// -->
+
+    <!-- Main JS file -->
+    <script src="js/scripts.js"></script>
+
+    <!-- Additional JS from phase 2 of youth -->
+    <script src="js/camps-scripts.js"></script>
+
+     <!-- Style Guide JS -->
+    <script src="styleguide/js/scripts.js?v=2.0"></script>
+
+
+</body>
+
+
+</html>

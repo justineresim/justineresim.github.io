@@ -1,0 +1,22 @@
+/* ==========================================================================
+   General page layout/layout helpers for site
+   ========================================================================== */
+
+//edits to preexisting styling
+.g-sidebar-template{
+	.g-sidebar{
+		float: left;
+
+		//new styling for fixed sidebar - for larger screens only
+		@media (min-width: 1200px) {
+		    width: 325px;
+			.g-sidebar-inner.is-fixed{
+				position: fixed;
+				top: 90px;
+				width: 325px;
+				z-index: 0;
+			}
+		}
+		
+	}
+}

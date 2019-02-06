@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript" src="views/partials/head.js"> </script>
+</head>
+<body>
+    <script type="text/javascript" src="views/partials/corporate-header.js"> </script>
+    <div class="g-main">
+        <div class="g-container">
+            <div class="g-breadcrumb">
+                <a href="/corporate/corporate-training">Corporate Training Home</a>
+                <span class="ion-ios-arrow-forward"></span>
+                <span>Contact</span>
+            </div>
+        </div>
+        <div class="g-container g-sidebar-template">
+            <div class="g-body-content">
+               <h1>Contact</h1>
+               <p class="g-font-larger g-color-secondary">This is an optional intro text sam familie or separat exist entie es un myth. Por scientie, musica, sport etc litot Europa usa li sam voca bular il lingues differ avenir avm sol fo.</p>
+               <p class="g-font-large">Please fill out the following form to request information about custom and team options. An associate will get in touch with you within one business day.</p>
+               <br>
+               <form>
+                    <div class="row">
+                        <div class="g-form-group col-1of2">
+                            <label for="exampleInput1">First name*</label>
+                            <input type="text" class="g-form-control" id="exampleInput1" placeholder="Enter first name">
+                        </div>
+                        <div class="g-form-group col-1of2">
+                            <label for="exampleInput2">Last name*</label>
+                            <input type="text" class="g-form-control" id="exampleInput2" placeholder="Enter last name">
+                        </div>
+                        <div class="g-form-group col-1of2">
+                            <label for="exampleInput3">Email address*</label>
+                            <input type="text" class="g-form-control" id="exampleInput3" placeholder="Enter email address">
+                        </div>
+                        <div class="g-form-group col-1of2">
+                            <label for="exampleInput4">Phone number*</label>
+                            <input type="text" class="g-form-control" id="exampleInput4" placeholder="Enter phone number">
+                        </div>
+                        <div class="g-form-group col-1of2">
+                            <label for="exampleInput5">Company*</label>
+                            <input type="text" class="g-form-control" id="exampleInput5" placeholder="Enter company">
+                        </div>
+                        <div class="col-1of2 g-form-group">
+                            <div class="g-radio-heading">When is the best time to call you?*</div>
+                            <div class="g-inline-form">
+                                <div class="g-radio-container">
+                                    <input id="radio-4" class="g-radio" name="g-radio-group" type="radio" checked>
+                                    <label for="radio-4" class="g-radio-label">8am-12pm</label>
+                                    <input id="radio-5" class="g-radio" name="g-radio-group" type="radio">
+                                    <label for="radio-5" class="g-radio-label">12pm-4:30pm</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coursesContainer">
+                            <div>
+                                <div class="g-form-group col-1of1">
+                                    <label>Course</label>
+                                    <div class="g-action-input-container">
+                                        <input value="BCMP 250" type="text" class="g-form-control g-action-input" placeholder="Enter course code">
+                                        <a class="removeCourse g-hidden ion-minus-circled g-action-icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g-form-group col-1of1">
+                            <div id="addCourse" class="g-text-right"><a class="g-font-small"><span class="ion-plus-round"></span> Add Course</a></div>
+                        </div>
+                        <div class="g-form-group col-1of1">
+                            <label for="exampleInput7">Additional Information</label>
+                            <textarea rows="7" class="g-form-control" id="exampleInput6" placeholder="Enter any other details regarding the type of training you are interested in"></textarea>
+                        </div>
+                        <div class="g-form-group col-1of1 g-margin-top-sm">
+                            <input type="submit" name="submit" value="Submit" class="g-btn g-btn-lg">
+                        </div>
+                    </div>
+                </form>
+           </div>
+           <div class="g-sidebar">
+                <div>
+                    <span class="g-h4">Jon Smith</span>
+                    <b>Director, Corporate Engagement</b>
+                    <p class="g-font-small">Monday - Friday, 9am - 4pm<br>
+                    Tel: 403.284.8765<br>
+                    Toll-Free: 1.877.123.1234<br>
+                    Email: <a>engagement@sait.ca</a></p>
+                </div>
+                <div>
+                    <span class="g-h4">Live Support</span>
+                    <p class="g-font-small">Chat with a support team member<br>
+                    Monday - Friday, 9am - 4pm</p>
+                    <a class="g-btn-2">Start Chat</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="views/partials/corporate-footer.js"> </script>
+    <script type="text/javascript" src="views/partials/corporate-scripts.js"> </script>
+    <script>
+        var numberOfCourses = 1;
+        var courseString = '<div><div class="g-form-group col-1of1"><label>Course</label><div class="g-action-input-container"><input type="text" class="g-form-control g-action-input" placeholder="Enter course code"><a class="removeCourse ion-minus-circled g-action-icon"></a></div></div></div>';
+
+        $('#addCourse').click(function(){
+            numberOfCourses ++;
+            $('.removeCourse').css({'display':'inline-block'});
+            $('.coursesContainer').append(courseString);
+            $('.coursesContainer > div:last-child .removeCourse').click(function(){
+                $(this).parent().parent().remove();
+                numberOfCourses --;
+                if(numberOfCourses === 1){
+                    $('.removeCourse').css({'display':'none'});
+                }
+            })
+        })
+
+        $('.removeCourse').click(function(){
+            $(this).parent().parent().remove();
+            numberOfCourses --;
+            if(numberOfCourses === 1){
+                $('.removeCourse').css({'display':'none'});
+            }
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+/* ==========================================================================
+   Image Gallery
+   ========================================================================== */
+
+.g-image-gallery{
+	background-position: center center; 
+	background-size: cover; 
+	height: 260px; 
+	width: 100%; 
+	display: block;
+	position: relative;
+	@media (max-width: $max-break-tablet) {
+		height: 190px;
+	}
+	@media (max-width: $max-break-mobile) {
+		height: 160px;
+	}
+	&.sm{
+		height: 180px; 
+		@media (max-width: $max-break-tablet) {
+			height: 140px;
+		}
+		@media (max-width: $max-break-mobile) {
+			height: 160px;
+		}
+		&:after{
+			line-height: 170px; 
+			@media (max-width: $max-break-tablet) {
+				line-height: 150px;
+			}
+		}
+	}
+	&:after{
+		background-color: rgba(0,0,0,0);
+		content: 'View Gallery';
+		@extend .g-transition;
+		color: rgba(0,0,0,0);
+		text-align: center;
+		line-height: 240px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		@media (max-width: $max-break-tablet) {
+			line-height: 150px;
+		}
+	}
+	&:hover{
+		&:after{
+			color: #fff;
+			background-color: rgba(0,0,0,.5);
+		}
+	}
+	@media (max-width: $max-break-mobile) {
+		&:after{
+			color: #fff;
+			background-color: rgba(0,0,0,.5);
+		}
+	}
+}
