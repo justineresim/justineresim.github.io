@@ -66,9 +66,9 @@ $base-line-height: 1.4em;
 
 /* ======================= Buttons ======================== */
 
-$btn-font-size: 16px;
-$btn-line-height: 16px;
-$btn-padding: 9px 20px;
+$btn-font-size: 18px;
+$btn-line-height: 18px;
+$btn-padding: 15px 30px;
 $btn-text-align: center;
 $btn-border-radius: $border-radius;
 $btn-font-family: $body-font;
@@ -88,13 +88,13 @@ $btn-lg-font-size: 16px;
 $btn-lg-line-height: 16px;
 
 //Primary button
-$btn-primary-bg: lighten($primary-4, 60%);
-$btn-primary-border: $primary-4;
-$btn-primary-color: $primary-4;
+$btn-primary-bg: $primary-1;
+$btn-primary-border: $primary-1;
+$btn-primary-color: #fff;
 
-$btn-primary-hover-bg: lighten($primary-4, 55%);
-$btn-primary-hover-border: $primary-4;
-$btn-primary-hover-color: $primary-4;
+$btn-primary-hover-bg: darken($primary-1, 5%);
+$btn-primary-hover-border: darken($primary-1, 5%);
+$btn-primary-hover-color: #fff;
 
 $btn-primary-active-bg: $primary-4;
 $btn-primary-active-border: $primary-4;

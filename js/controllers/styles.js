@@ -6,6 +6,7 @@ myApp.controller('StylesCtrl', function ($scope, $rootScope, $window) {
 		$scope.selected = 'header';
 	};
 
+
 	$scope.selected = 'header';
 
 	$scope.$watch("selected", function(newValue, oldValue) {

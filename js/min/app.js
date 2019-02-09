@@ -62,15 +62,6 @@ myApp.controller('WorkCtrl', ["$scope", "$rootScope", function ($scope, $rootSco
     }
 
 	$scope.work = [
-        
-        {
-            title: 'VIQUA',
-            text: 'VIQUA is the world’s largest supplier of residential and light commercial UV water disinfection systems, providing safe water without the use of chemicals.',
-            image: 'img/work/viqua/viqua.png',
-            case: 'https://res.im/work/viqua/',
-            role: 'Development',
-            url: 'https://viqua.com/'
-        },
         {
             title: 'SAIT',
             text: 'SAIT is Alberta’s third-largest post-secondary institution, educating approximately 50,000 students per year globally with an emphasis on applied education and research.',
@@ -81,7 +72,7 @@ myApp.controller('WorkCtrl', ["$scope", "$rootScope", function ($scope, $rootSco
         },
         {
             title: '3M Safety Admin Panel',
-            text: 'Product editing, and PDF catalogue generation.',
+            text: 'Find and edit product data, add products to your custom catelogues and create a professional PDF to share with clients.',
             image: 'img/work/admin/1.png',
             role: 'Development',
             count: 16,
@@ -269,7 +260,7 @@ myApp.controller('WorkCtrl', ["$scope", "$rootScope", function ($scope, $rootSco
             case: 'https://res.im/work/durham-college/',
             role: 'Front-end development',
             url: 'https://durhamcollege.ca/',
-            externalPrototype: 'http://review.durham.git.resolutionim.com/styleguide',
+            // externalPrototype: 'http://review.durham.git.resolutionim.com/styleguide',
             count: 11,
             images: [
                 {
@@ -309,6 +300,14 @@ myApp.controller('WorkCtrl', ["$scope", "$rootScope", function ($scope, $rootSco
                     count: 11
                 }
             ]
+        },
+        {
+            title: 'VIQUA',
+            text: 'VIQUA is the world’s largest supplier of residential and light commercial UV water disinfection systems, providing safe water without the use of chemicals.',
+            image: 'img/work/viqua/viqua.png',
+            case: 'https://res.im/work/viqua/',
+            role: 'Development',
+            url: 'https://viqua.com/'
         },
 		{
 			title: 'ZTR Control Systems',
@@ -360,57 +359,56 @@ myApp.controller('WorkCtrl', ["$scope", "$rootScope", function ($scope, $rootSco
                 }
             ]
         },
-		{
-			title: 'Huron County',
-            text: 'Huron County is located along the shores of Lake Huron. This vibrant community is the most agriculturally productive county in Ontario.',
-            image: 'img/work/hc/hc3.png',
-            prototype: 'huron-county',
-            count: 8,
-            role: 'Front-end development',
-            images: [
-             	{
-                    desc: '<a target="_blank" href="work/huron-county/index.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
-                    src: 'img/work/hc/hc3.png',
-                    count: 8
-                },
-                {
-                    desc: '<a target="_blank" href="work/huron-county/growing-together.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
-                    src: 'img/work/hc/hc4.png',
-                    count: 8
-                },
-                {
-                    desc: '<a target="_blank" href="work/huron-county/childrens-services.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
-                    src: 'img/work/hc/hc5.png',
-                    count: 8
-                },
-                {
-                    desc: '<a target="_blank" href="work/huron-county/events.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
-                    src: 'img/work/hc/hc6.png',
-                    count: 8
-                },
-                {
-                    desc: '<a target="_blank" href="work/huron-county/index.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
-                    src: 'img/work/hc/hc1.png',
-                    count: 8
-                },
-                {
-                    desc: '<a target="_blank" href="work/huron-county/events.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
-                    src: 'img/work/hc/hc2.png',
-                    count: 8
-                },
-                {
-                    desc: '<a target="_blank" href="work/huron-county/global.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
-                    src: 'img/work/hc/hc7.png',
-                    count: 8
-                },
-            	 {
-                    desc: '<a target="_blank" href="work/huron-county/global.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
-                    src: 'img/work/hc/hc8.png',
-                    count: 8
-                },
-
-            ]
-        },
+		// {
+		// 	title: 'Huron County',
+  //           text: 'Huron County is located along the shores of Lake Huron. This vibrant community is the most agriculturally productive county in Ontario.',
+  //           image: 'img/work/hc/hc3.png',
+  //           prototype: 'huron-county',
+  //           count: 8,
+  //           role: 'Front-end development',
+  //           images: [
+  //            	{
+  //                   desc: '<a target="_blank" href="work/huron-county/index.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
+  //                   src: 'img/work/hc/hc3.png',
+  //                   count: 8
+  //               },
+  //               {
+  //                   desc: '<a target="_blank" href="work/huron-county/growing-together.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
+  //                   src: 'img/work/hc/hc4.png',
+  //                   count: 8
+  //               },
+  //               {
+  //                   desc: '<a target="_blank" href="work/huron-county/childrens-services.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
+  //                   src: 'img/work/hc/hc5.png',
+  //                   count: 8
+  //               },
+  //               {
+  //                   desc: '<a target="_blank" href="work/huron-county/events.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
+  //                   src: 'img/work/hc/hc6.png',
+  //                   count: 8
+  //               },
+  //               {
+  //                   desc: '<a target="_blank" href="work/huron-county/index.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
+  //                   src: 'img/work/hc/hc1.png',
+  //                   count: 8
+  //               },
+  //               {
+  //                   desc: '<a target="_blank" href="work/huron-county/events.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
+  //                   src: 'img/work/hc/hc2.png',
+  //                   count: 8
+  //               },
+  //               {
+  //                   desc: '<a target="_blank" href="work/huron-county/global.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
+  //                   src: 'img/work/hc/hc7.png',
+  //                   count: 8
+  //               },
+  //           	 {
+  //                   desc: '<a target="_blank" href="work/huron-county/global.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
+  //                   src: 'img/work/hc/hc8.png',
+  //                   count: 8
+  //               },
+  //           ]
+  //       },
 		{
 			title: 'Confederation College',
             text: 'Located in Northern Ontario, Confederation College offers practical, hands-on programs and courses across 9 campuses to over 7600 full and part-time students each year.',
@@ -452,6 +450,7 @@ myApp.controller('WorkCtrl', ["$scope", "$rootScope", function ($scope, $rootSco
             text: 'Canadian Golf Course History responsive website featuring an interactive map displaying Canadian golf courses throughout history.',
             image: 'img/work/gc/gc1.png',
             case: 'https://res.im/work/gc/gc/golf-canada/',
+            url: 'https://ch.golfcanada.ca/',
             role: 'Development',
             count: 6,
             images: [
@@ -493,75 +492,75 @@ myApp.controller('WorkCtrl', ["$scope", "$rootScope", function ($scope, $rootSco
                 }
             ]
         },
-	    {
-            title: 'Verto360',
-            text: 'Verto360 is a company from London Ontario that designs, manages, builds and furnishes commercial building interiors.',
-            image: 'img/work/verto/verto1.png',
-            url: 'http://verto360.com/',
-            role: 'Development',
-            count: 3,
-            images: [
-                {
-                    src: 'img/work/verto/verto1.png',
-                    count: 3
-                },
-                {
-                    src: 'img/work/verto/verto2.png',
-                    count: 3
-                },
-                {
-                    src: 'img/work/verto/verto3.png',
-                    count: 3
-                },
-                {
-                    src: 'img/work/verto/verto4.png',
-                    count: 3
-                },
-                {
-                    src: 'img/work/verto/verto5.png',
-                    count: 3
-                },
-                {
-                    src: 'img/work/verto/verto6.png',
-                    count: 3
-                }
-            ]
-        },
-        {
-            title: 'Fitness Health Match',
-            text: 'FHMatch is a social networking platform that connects people with a broad range of local fitness, health, and wellness professionals.',
-            image: 'img/work/fhm/fhm5.png',
-            url: 'http://www.fhmatch.com/',
-            role: 'Front-end development',
-            count: 1,
-            images: [
-                {
-                    desc: '<a target="_blank" href="http://www.fhmatch.com/" class="cta">Visit website <i class="fas fa-arrow-right"></i></a>',
-                    src: 'img/work/fhm/fhm1.png',
-                    count: 1
-                },
-                 {
-                    desc: '<a target="_blank" href="http://www.fhmatch.com/register" class="cta">Visit website <i class="fas fa-arrow-right"></i></a>',
-                    src: 'img/work/fhm/fhm2.png',
-                    count: 1
-                },
-                 {
-                    desc: 'Browse fitness and health related articles.<br><a target="_blank" href="http://www.fhmatch.com/articles" class="cta">Visit website <i class="fas fa-arrow-right"></i></a>',
-                    src: 'img/work/fhm/fhm3.png',
-                    count: 1
-                },
-                 {
-                    desc: 'Easily find health and fitness professional in your area.<br><a target="_blank" href="http://www.fhmatch.com/" class="cta">Visit website <i class="fas fa-arrow-right"></i></a>',
-                    src: 'img/work/fhm/fhm4.png',
-                    count: 1
-                },
-                 {
-                    desc: 'Connect with professional to book appointments.<br><a target="_blank" href="http://www.fhmatch.com/" class="cta">Visit website <i class="fas fa-arrow-right"></i></a>',
-                    src: 'img/work/fhm/fhm5.png',
-                    count: 1
-                }
-            ]
-        },
+	    // {
+     //        title: 'Verto360',
+     //        text: 'Verto360 is a company from London Ontario that designs, manages, builds and furnishes commercial building interiors.',
+     //        image: 'img/work/verto/verto1.png',
+     //        url: 'http://verto360.com/',
+     //        role: 'Development',
+     //        count: 3,
+     //        images: [
+     //            {
+     //                src: 'img/work/verto/verto1.png',
+     //                count: 3
+     //            },
+     //            {
+     //                src: 'img/work/verto/verto2.png',
+     //                count: 3
+     //            },
+     //            {
+     //                src: 'img/work/verto/verto3.png',
+     //                count: 3
+     //            },
+     //            {
+     //                src: 'img/work/verto/verto4.png',
+     //                count: 3
+     //            },
+     //            {
+     //                src: 'img/work/verto/verto5.png',
+     //                count: 3
+     //            },
+     //            {
+     //                src: 'img/work/verto/verto6.png',
+     //                count: 3
+     //            }
+     //        ]
+     //    },
+        // {
+        //     title: 'Fitness Health Match',
+        //     text: 'FHMatch is a social networking platform that connects people with a broad range of local fitness, health, and wellness professionals.',
+        //     image: 'img/work/fhm/fhm5.png',
+        //     url: 'http://www.fhmatch.com/',
+        //     role: 'Front-end development',
+        //     count: 1,
+        //     images: [
+        //         {
+        //             desc: '<a target="_blank" href="http://www.fhmatch.com/" class="cta">Visit website <i class="fas fa-arrow-right"></i></a>',
+        //             src: 'img/work/fhm/fhm1.png',
+        //             count: 1
+        //         },
+        //          {
+        //             desc: '<a target="_blank" href="http://www.fhmatch.com/register" class="cta">Visit website <i class="fas fa-arrow-right"></i></a>',
+        //             src: 'img/work/fhm/fhm2.png',
+        //             count: 1
+        //         },
+        //          {
+        //             desc: 'Browse fitness and health related articles.<br><a target="_blank" href="http://www.fhmatch.com/articles" class="cta">Visit website <i class="fas fa-arrow-right"></i></a>',
+        //             src: 'img/work/fhm/fhm3.png',
+        //             count: 1
+        //         },
+        //          {
+        //             desc: 'Easily find health and fitness professional in your area.<br><a target="_blank" href="http://www.fhmatch.com/" class="cta">Visit website <i class="fas fa-arrow-right"></i></a>',
+        //             src: 'img/work/fhm/fhm4.png',
+        //             count: 1
+        //         },
+        //          {
+        //             desc: 'Connect with professional to book appointments.<br><a target="_blank" href="http://www.fhmatch.com/" class="cta">Visit website <i class="fas fa-arrow-right"></i></a>',
+        //             src: 'img/work/fhm/fhm5.png',
+        //             count: 1
+        //         }
+        //     ]
+        // },
        {
             title: 'Redeemer University College',
             text: 'Redeemer University College is an undergraduate university known for providing a high-quality liberal arts and sciences university education.',
@@ -647,8 +646,7 @@ myApp.controller('WorkCtrl', ["$scope", "$rootScope", function ($scope, $rootSco
         {
             title: 'Build & Price',
             text: 'Use Chrysler\'s Build and Price tool to customize your new vehicle exactly how you want it. Choose the color, trim, options and more and easily calculate the costs.',
-            image: 'img/work/bp/bp1.png',
-            url: 'http://www.chrysler.com/hostc/bmo/CUC201501/models.do?',
+            image: 'img/work/bp/bp6.png',
             role: 'Front-end development',
             count: 4,
             images: [
@@ -740,6 +738,7 @@ myApp.controller('StylesCtrl', ["$scope", "$rootScope", "$window", function ($sc
 	$scope.scrollToTop = function () {
 		$scope.selected = 'header';
 	};
+
 
 	$scope.selected = 'header';
 

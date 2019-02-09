@@ -26,7 +26,6 @@
 	text-decoration: none;
 	outline: none;
 	@extend .transition;
-	height: 35px;
 	&.g-btn-block{
 		width: 100%;
 	}
@@ -34,13 +33,10 @@
 		padding: $btn-sm-padding;
 		font-size: $btn-sm-font-size;
 		line-height: $btn-sm-line-height;
-		height: 30px;
 	}
 	&.g-btn-lg{
 		padding: $btn-lg-padding;
 		font-size: $btn-lg-font-size;
-		line-height: $btn-lg-line-height;
-		height: 50px;
 	}
 	&:hover, &:focus {
 		text-decoration: none;

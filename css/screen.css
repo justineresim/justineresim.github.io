@@ -4963,10 +4963,10 @@ img {
    ========================================================================== */
 .g-btn, button.g-btn {
   display: inline-block;
-  padding: 9px 20px;
+  padding: 15px 30px;
   margin-bottom: 0;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 18px;
+  line-height: 18px;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -4977,14 +4977,13 @@ img {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #f2f4f6;
-  border: 1px solid #495F6D;
+  background-color: #ad3496;
+  border: 1px solid #ad3496;
   border-radius: 0px;
   font-family: "source-sans-pro", sans-serif;
-  color: #495F6D;
+  color: #fff;
   text-decoration: none;
   outline: none;
-  height: 35px;
 }
 .g-btn.g-btn-block, button.g-btn.g-btn-block {
   width: 100%;
@@ -4993,19 +4992,16 @@ img {
   padding: 7px 15px;
   font-size: 14px;
   line-height: 14px;
-  height: 30px;
 }
 .g-btn.g-btn-lg, button.g-btn.g-btn-lg {
   padding: 16px 25px;
   font-size: 16px;
-  line-height: 16px;
-  height: 50px;
 }
 .g-btn:hover, .g-btn:focus, button.g-btn:hover, button.g-btn:focus {
   text-decoration: none;
-  background-color: #e3e8ec;
-  border: 1px solid #495F6D;
-  color: #495F6D;
+  background-color: #992e85;
+  border: 1px solid #992e85;
+  color: #fff;
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -5702,6 +5698,7 @@ h1 {
 
 h2 {
   font-size: 3em;
+  margin-top: 0 !important;
 }
 
 h3 {
@@ -6597,8 +6594,8 @@ h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
 }
 
 .g-section-container {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .g-section-container-first {
