@@ -36,9 +36,6 @@ body {
   b, strong{
     font-weight: $body-font-weight-bold;
   }
-  @media (max-width: $max-break-mobile) {
-     font-size: 90%; 
-  }
 }
 
 // Reset fonts for relevant elements

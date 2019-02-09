@@ -1,4 +1,4 @@
-<section class="g-container-lg g-section-container">
+<section class="g-container-lg g-section-container g-section-container-first">
 	<h1>Work</h1>
 </section>
 
@@ -14,11 +14,9 @@
 					<p class="desc">{{i.text}}</p>
 					<p>
 						<a class="cta" href="work/{{i.prototype}}" target="_blank" ng-show="i.prototype">View prototype<i class="fas fa-arrow-right"></i></a>
-
-						<a class="cta" href="{{i.prototype}}" target="_blank" ng-show="i.externalPrototype">View prototype<i class="fas fa-arrow-right"></i></a>
-
+						<a class="cta" href="{{i.externalPrototype}}" target="_blank" ng-show="i.externalPrototype">View prototype<i class="fas fa-arrow-right"></i></a>
 						<a class="cta" ng-show="i.case" href="{{i.case}}" target="_blank">Case study on Res.im<i class="fas fa-arrow-right"></i></a>
-						<a class="cta" href="work/{{i.url}}" target="_blank" ng-show="i.url">Visit website<i class="fas fa-arrow-right"></i></a>
+						<a class="cta" href="{{i.url}}" target="_blank" ng-show="i.url">Visit website<i class="fas fa-arrow-right"></i></a>
 						<a ng-show="i.count" class="cta fancy-box-trigger" ng-click="fancyBox(i.count)">Image gallery<i class="fas fa-arrow-right"></i></a>
 					</p>
 				</div>

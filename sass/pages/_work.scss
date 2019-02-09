@@ -2,31 +2,6 @@
    Work page Specific Styles
    ========================================================================== */
 
-body.work{
-	position: relative;
-	// background: #f9f9f9;
-	-webkit-animation: color_change3 50s infinite alternate;
-	-moz-animation: color_change3 50s infinite alternate;
-	-ms-animation: color_change3 50s infinite alternate;
-	-o-animation: color_change3 50s infinite alternate;
-	animation: color_change3 50s infinite alternate;
-	// &:after{
-	// 	background: url(/img/bg9.jpg);
-	// 	background-size: cover;
-	// 	background-position: center center;
-	// 	content: ' ';
-	//     display: block;
-	//     position: absolute;
-	//     left: 0;
-	//     top: 0;
-	//     bottom: 0;
-	//     width: 100%;
-	//     height: 100%;
-	//     z-index: -2;
-	//     opacity: 0.3;
-	// }
-}
-
 //work page samples
 .g-featured{
 	padding-bottom: 8em;
@@ -51,6 +26,10 @@ body.work{
 	    animation-fill-mode: none;
 	    &:hover{
 	    	transform: scale(1.4);
+	    }
+	    @media (max-width: $max-break-tablet) {
+	    	transform: scale(1);
+	    	margin-left: 0;
 	    }
 	}
 }
