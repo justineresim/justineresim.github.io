@@ -16,6 +16,10 @@
 		font-size: 35px;
 		line-height: 40px;
 	}
+	@media (max-width: $max-break-tablet) {
+		padding-bottom: 4em;
+		padding-top: 1rem;
+	}
 	.g-img{
 		width: 100%;
 	    position: relative;
@@ -30,6 +34,9 @@
 	    @media (max-width: $max-break-tablet) {
 	    	transform: scale(1);
 	    	margin-left: 0;
+	    	&:hover{
+	    		transform: scale(1);
+	    	}
 	    }
 	}
 }

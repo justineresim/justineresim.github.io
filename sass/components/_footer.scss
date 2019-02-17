@@ -6,9 +6,7 @@ footer{
 	position: relative;
 	width: 100%;
 	z-index: 1000;
-	text-align: center;
 	padding: 2em 0;
-	background-color: $primary-3;
 	ul{
 		list-style-type: none;
 		padding: 0;
@@ -17,21 +15,26 @@ footer{
 			margin: 0;
 			padding: 0;
 			display: inline-block;
+			@media (max-width: $max-break-mobile) {
+				display: block;
+				margin-bottom: 15px;
+			}
 			a{
 				text-decoration: none;
-				color: $primary-2;
+				color: $grey-1;
 				padding: .5em;
+				margin-right: 30px;
+				font-size: 14px;
+				font-weight: bold;
 				i{
 					display: inline-block;
-					background-color: #fff;
-					color: $primary-1;
-					border-radius: 50%;
+					background-color: $primary-3;
+					color: #fff;
 					width: 30px;
 					height: 30px;
 					text-align: center;
 					line-height: 29px !important;
 					margin-right: 8px;
-					font-size: 14px;
 					@extend .transition;
 				}
 				&:hover, &:focus{

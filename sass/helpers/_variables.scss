@@ -45,14 +45,15 @@ $link-hover-color-secondary: darken(#fff, 5%);
 
 
 //Type
-$heading-font: 'source-sans-pro', sans-serif; 
-$heading-font-weight: 600;
+$heading-font: 'Karla', sans-serif;
+$heading-font-weight: 700;
 $heading-color: $grey-1;
 $heading-color-secondary: $grey-3;
 
-$body-font: 'source-sans-pro', sans-serif; 
-$body-font-weight: 500;
-$body-font-weight-bold: 900;
+$body-font: 'Nunito Sans', sans-serif;
+$body-font-weight: 400;
+$body-font-weight-bold: 700;
+
 
 $text-color: $grey-2;
 $text-color-light: $grey-3;
@@ -61,7 +62,7 @@ $text-color-dark: $grey-1;
 $heading-link-color: $primary-4;
 $heading-hover-color: darken($primary-4, 15%);
 
-$base-font-size: 18px;
+$base-font-size: 17px;
 $base-line-height: 1.4em;
 
 /* ======================= Buttons ======================== */
@@ -72,10 +73,6 @@ $btn-padding: 15px 30px;
 $btn-text-align: center;
 $btn-border-radius: $border-radius;
 $btn-font-family: $body-font;
-
-//Icon buttons
-$btn-icon-padding: 8px 10px;
-$btn-icon-font-size: 17px;
 
 //Small button
 $btn-sm-padding: 7px 15px;
@@ -96,82 +93,28 @@ $btn-primary-hover-bg: darken($primary-1, 5%);
 $btn-primary-hover-border: darken($primary-1, 5%);
 $btn-primary-hover-color: #fff;
 
-$btn-primary-active-bg: $primary-4;
-$btn-primary-active-border: $primary-4;
+$btn-primary-active-bg: $primary-2;
+$btn-primary-active-border: $primary-2;
 $btn-primary-active-color: #fff;
 
 //Secondary button
-$btn-secondary-bg: lighten($primary-3, 20%);
-$btn-secondary-border: $primary-3;
-$btn-secondary-color: $primary-4;
+$btn-secondary-bg: $primary-2;
+$btn-secondary-border: $primary-2;
+$btn-secondary-color: #fff;
 
-$btn-secondary-hover-bg: lighten($primary-3, 10%);
-$btn-secondary-hover-border: $primary-3;
-$btn-secondary-hover-color: $primary-4;
+$btn-secondary-hover-bg: darken($primary-2, 10%);
+$btn-secondary-hover-border: darken($primary-2, 10%);
+$btn-secondary-hover-color: #fff;
 
-$btn-secondary-active-bg: $primary-3;
-$btn-secondary-active-border: $primary-3;
+$btn-secondary-active-bg: $primary-1;
+$btn-secondary-active-border: $primary-1;
 $btn-secondary-active-color: #fff;
 
-//Tertiary button
-$btn-tertiary-bg: #fff;
-$btn-tertiary-border: $primary-1;
-$btn-tertiary-color: $primary-4;
-
-$btn-tertiary-hover-bg: $primary-1;
-$btn-tertiary-hover-border: $primary-1;
-$btn-tertiary-hover-color: #fff;
-
-$btn-tertiary-active-bg: darken($primary-1, 10%);
-$btn-tertiary-active-border: darken($primary-1, 10%);
-$btn-tertiary-active-color: #fff;
-
-//Quaternary button
-$btn-quaternary-bg: #fff;
-$btn-quaternary-border: $grey-1;
-$btn-quaternary-color: $grey-1;
-
-$btn-quaternary-hover-bg: $grey-2;
-$btn-quaternary-hover-border: $grey-2;
-$btn-quaternary-hover-color: #fff;
-
-$btn-quaternary-active-bg: darken($grey-2, 15%);
-$btn-quaternary-active-border: darken($grey-2, 15%);
-$btn-quaternary-active-color: #fff;
 
 //Disabled button
 $btn-disabled-bg: $grey-4;
 $btn-disabled-border: $grey-4;
 $btn-disabled-color: #fff;
-
-
-/* ======================= Forms ======================== */
-
-$input-border-color: $border-color;
-$input-active-border-color: $grey-4;
-$input-border-radius: $border-radius;
-$input-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-$select-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
-$input-color: $grey-2;
-$input-placeholder-color: $grey-4;
-$radio-active-color: $primary-1;
-$checkbox-active-color: $primary-1;
-
-
-/* ======================= Tables ======================== */
-
-$table-padding: 5px 10px;
-$table-border-color: $border-color;
-$table-striped-bg-color: $tertiary-bg-color;
-$table-hover-bg-color: lighten($primary-1,40%);
-
-
-/* ======================= Panels ======================== */
-
-$panel-bg-color: #fff;
-$panel-padding: 40px;
-$panel-border-radius: $border-radius;
-$panel-border: 1px solid $border-color;
 
 
 /* ======================= Defaults ======================== */
@@ -192,11 +135,12 @@ $max-break-desktop: 1100px;
 
 $min-break-tablet: 921px;
 $max-break-tablet: 920px;
-$min-break-mobile: 481px;
-$max-break-mobile: 480px;
+
+$min-break-mobile: 521px;
+$max-break-mobile: 520px;
 
 //Grid system variables
-$gutter: 15px;
+$gutter: 20px;
 $sm-gutter: 10px;
 $lg-gutter: 10px;
 

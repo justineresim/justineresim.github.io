@@ -59,6 +59,10 @@
 .g-section-container{
     padding-top: 5rem;
     padding-bottom: 5rem;
+    @media (max-width: $max-break-mobile) {
+    	padding-top: 3rem;
+    	padding-bottom: 3rem;
+    }
 }
 
 .g-section-container-first{
@@ -68,6 +72,10 @@
 .g-section-container-last{
    	padding-top: 3rem;
     padding-bottom: 5rem;
+    @media (max-width: $max-break-mobile) {
+    	padding-top: 2rem;
+    	padding-bottom: 2rem;
+    }
 }
 
 .loading-section{
