@@ -5,8 +5,11 @@
 //work page samples
 .g-featured{
 	padding-bottom: 8em;
-	padding-top: 2rem;
+	padding-top: 1rem;
 	@extend .transition;
+	&:last-child{
+		padding-bottom: 3em;
+	}
 	p.desc{
 		margin: 10px 0 15px;
 	}
@@ -17,8 +20,11 @@
 		line-height: 40px;
 	}
 	@media (max-width: $max-break-tablet) {
-		padding-bottom: 4em;
-		padding-top: 1rem;
+		padding-bottom: 3em;
+		padding-top: 0rem;
+		&:last-child{
+			padding-bottom: 1em;
+		}
 	}
 	.g-img{
 		width: 100%;

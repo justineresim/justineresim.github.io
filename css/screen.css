@@ -5200,6 +5200,7 @@ header ul li {
   float: left;
 }
 header ul li a {
+  border-bottom: 4px solid transparent;
   font-family: "Karla", sans-serif;
   color: #231f20;
   display: inline-block;
@@ -5897,17 +5898,6 @@ h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
   padding-top: 0;
 }
 
-.g-section-container-last {
-  padding-top: 3rem;
-  padding-bottom: 5rem;
-}
-@media (max-width: 520px) {
-  .g-section-container-last {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-}
-
 .loading-section {
   min-height: 1000px;
 }
@@ -5924,20 +5914,6 @@ h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
 }
 
 /* home -------------------------- */
-.page.home.ng-enter {
-  animation: fadeIn 0.3s ease-in;
-}
-
-/* about ------------------------ */
-.page.contact.ng-enter {
-  animation: fadeIn 0.3s ease-in;
-}
-
-/* contact ---------------------- */
-.page.work.ng-enter {
-  animation: fadeIn 0.3s ease-in;
-}
-
 /* ==========================================================================
    Homepage Specific Styles
    ========================================================================== */
@@ -5971,7 +5947,10 @@ h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
    ========================================================================== */
 .g-featured {
   padding-bottom: 8em;
-  padding-top: 2rem;
+  padding-top: 1rem;
+}
+.g-featured:last-child {
+  padding-bottom: 3em;
 }
 .g-featured p.desc {
   margin: 10px 0 15px;
@@ -5984,8 +5963,11 @@ h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
 }
 @media (max-width: 920px) {
   .g-featured {
-    padding-bottom: 4em;
-    padding-top: 1rem;
+    padding-bottom: 3em;
+    padding-top: 0rem;
+  }
+  .g-featured:last-child {
+    padding-bottom: 1em;
   }
 }
 .g-featured .g-img {
