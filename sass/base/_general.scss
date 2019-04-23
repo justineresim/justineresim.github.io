@@ -81,21 +81,13 @@ a.g-external-link{
 
 a.cta{
   display: inline-block;
+  padding: 2px 5px;
   margin-right: 20px;
   margin-bottom: 4px;
-  text-transform: uppercase;
   font-size: 16px;
   font-family: $heading-font;
-  i{
-    margin-left: 5px;
-    @extend .transition;
-    color: $primary-1;
-  }
   &:hover{
-    margin-right: 15px;
-    i{
-      margin-left: 10px;
-    }
+    background-color: lighten($primary-1, 50%);
   }
 }
 

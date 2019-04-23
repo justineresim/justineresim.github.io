@@ -11,10 +11,73 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
         {
             title: 'SAIT',
             text: 'SAIT is Alberta’s third-largest post-secondary institution, educating approximately 50,000 students per year globally with an emphasis on applied education and research.',
-            image: 'img/work/sait/sait.png',
+            image: 'img/work/sait/1.png',
             prototype: 'sait/youth/style-guide',
             case: 'https://res.im/work/sait/',
-            role: 'Front-end development'
+            role: 'Front-end development',
+            count: 17,
+            images: [
+                {
+                    src: 'img/work/sait/1.png',
+                    count: 17
+                },
+                {
+                    src: 'img/work/sait/2.png',
+                    count: 17
+                },
+                {
+                    src: 'img/work/sait/3.png',
+                    count: 17
+                },
+                {
+                    src: 'img/work/sait/4.png',
+                    count: 17
+                },
+                {
+                    src: 'img/work/sait/5.png',
+                    count: 17
+                },
+                {
+                    src: 'img/work/sait/6.png',
+                    count: 17
+                },
+                {
+                    src: 'img/work/sait/7.png',
+                    count: 17
+                },
+                {
+                    src: 'img/work/sait/8.png',
+                    count: 17
+                },
+                {
+                    src: 'img/work/sait/9.png',
+                    count: 17
+                },
+                {
+                    src: 'img/work/sait/10.png',
+                    count: 17
+                },
+                {
+                    src: 'img/work/sait/11.png',
+                    count: 17
+                },
+                {
+                    src: 'img/work/sait/12.png',
+                    count: 17
+                },
+                {
+                    src: 'img/work/sait/13.png',
+                    count: 17
+                },
+                {
+                    src: 'img/work/sait/14.png',
+                    count: 17
+                },
+                {
+                    src: 'img/work/sait/15.png',
+                    count: 17
+                }
+            ]
         },
         {
             title: '3M Safety Admin Panel',
@@ -247,14 +310,14 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
                 }
             ]
         },
-        {
-            title: 'VIQUA',
-            text: 'VIQUA is the world’s largest supplier of residential and light commercial UV water disinfection systems, providing safe water without the use of chemicals.',
-            image: 'img/work/viqua/viqua.png',
-            case: 'https://res.im/work/viqua/',
-            role: 'Development',
-            url: 'https://viqua.com/'
-        },
+        // {
+        //     title: 'VIQUA',
+        //     text: 'VIQUA is the world’s largest supplier of residential and light commercial UV water disinfection systems, providing safe water without the use of chemicals.',
+        //     image: 'img/work/viqua/viqua.png',
+        //     case: 'https://res.im/work/viqua/',
+        //     role: 'Development',
+        //     url: 'https://viqua.com/'
+        // },
 		{
 			title: 'ZTR Control Systems',
             text: 'ZTR improves product design, warranty, legal, part sales, and dealer loyalty through telematics and data-driven decision making.',
@@ -264,42 +327,34 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
             count: 9,
             images: [
              	{
-                    desc: '<a target="_blank" href="work/ztr/ztr/index.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/ztr/ztr1.png',
                     count: 9
                 },
                 {
-                    desc: '<a target="_blank" href="work/ztr/ztr/index.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/ztr/ztr2.png',
                     count: 9
                 },
                 {
-                    desc: '<a target="_blank" href="work/ztr/ztr/index.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/ztr/ztr3.png',
                     count: 9
                 },
                 {
-                    desc: '<a target="_blank" href="work/ztr/ztr/index.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/ztr/ztr4.png',
                     count: 9
                 },
                 {
-                    desc: '<a target="_blank" href="work/ztr/ztr/index.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/ztr/ztr5.png',
                     count: 9
                 },
                 {
-                    desc: '<a target="_blank" href="work/ztr/ztr/global.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/ztr/ztr6.png',
                     count: 9
                 },
                 {
-                    desc: '<a target="_blank" href="work/ztr/ztr/global.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/ztr/ztr7.png',
                     count: 9
                 },
                 {
-                    desc: '<a target="_blank" href="work/ztr/ztr/global.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/ztr/ztr8.png',
                     count: 9
                 }
@@ -365,27 +420,22 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
             count: 7,
             images: [
              	{
-                    desc: '<a target="_blank" href="work/confed/confederation/index.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/confed/confed1.png',
                     count: 7
                 },
                 {
-                    desc: '<a target="_blank" href="work/confed/confederation/programs.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/confed/confed2.png',
                     count: 7
                 },
 				{
-                    desc: '<a target="_blank" href="work/confed/confederation/index.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/confed/confed3.png',
                     count: 7
                 },
 				{
-                    desc: '<a target="_blank" href="work/confed/confederation/programs.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/confed/confed4.png',
                     count: 7
                 },
 				{
-                    desc: '<a target="_blank" href="work/confed/confederation/global.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/confed/confed5.png',
                     count: 7
                 }
@@ -401,38 +451,31 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
             count: 6,
             images: [
              	{
-                    desc: 'Use the interactive map of Canada to see how golf courses have grown, moved or closed though time.',
                     src: 'img/work/gc/gc1.png',
                     count: 6
                 },
                 {
-                    desc: 'Learn about how to use the site through the onboarding process.',
                     src: 'img/work/gc/gc2.png',
                     count: 6
                 },
                 
                 {
-                    desc: 'Check out golf courses across Canada at different points in time.',
                     src: 'img/work/gc/gc3.png',
                     count: 6
                 },
                 {
-                    desc: 'Find out more details on each course.',
                     src: 'img/work/gc/gc4.png',
                     count: 6
                 },
                 {
-                    desc: 'Mobile view of course details.',
                     src: 'img/work/gc/gc5.png',
                     count: 6
                 },
                 {
-                    desc: 'Interactive map mobile view.',
                     src: 'img/work/gc/gc6.png',
                     count: 6
                 },
                 {
-                    desc: 'List view of Canadian courses at specific points in time.',
                     src: 'img/work/gc/gc7.png',
                     count: 6
                 }
@@ -517,32 +560,26 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
             count: 2,
             images: [
                 {
-                    desc: '<a target="_blank" href="https://www.redeemer.ca/" class="cta">Visit website <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/redeemer/redeemer1.png',
                     count: 2
                 },
                  {
-                    desc: '<a target="_blank" href="https://www.redeemer.ca/stories/" class="cta">Visit website <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/redeemer/redeemer2.png',
                     count: 2
                 },
                  {
-                    desc: '<a target="_blank" href="https://www.redeemer.ca/programs/art/" class="cta">Visit website <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/redeemer/redeemer3.png',
                     count: 2
                 },
                  {
-                    desc: '<a target="_blank" href="https://www.redeemer.ca/admissionscounsellor/" class="cta">Visit website <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/redeemer/redeemer4.png',
                     count: 2
                 },
-                 {
-                    desc: '<a target="_blank" href="https://www.redeemer.ca/contact/map-and-directions/campus-tour/" class="cta">Visit website <i class="fas fa-arrow-right"></i></a>',
+                {
                     src: 'img/work/redeemer/redeemer5.png',
                     count: 2
                 },
                 {
-                    desc: '<a target="_blank" href="https://www.redeemer.ca/redeemer-today/" class="cta">Visit website <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/redeemer/redeemer6.png',
                     count: 2
                 }
@@ -557,32 +594,26 @@ myApp.controller('WorkCtrl', function ($scope, $rootScope) {
             role: 'Front-end development',
             images: [
                 {
-                    desc: '<a target="_blank" href="work/ni/nissan/layout.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/ni/ni1.png',
                     count: 10
                 },
                 {
-                    desc: '<a target="_blank" href="work/ni/nissan/layout.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/ni/ni2.png',
                     count: 10
                 },
                 {
-                    desc: '<a target="_blank" href="work/ni/nissan/metrics.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/ni/ni3.png',
                     count: 10
                 },
                 {
-                    desc: '<a target="_blank" href="work/ni/nissan/global.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/ni/ni4.png',
                     count: 10
                 },
                 {
-                    desc: '<a target="_blank" href="work/ni/nissan/index.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/ni/ni5.png',
                     count: 10
                 },
                 {
-                    desc: '<a target="_blank" href="work/ni/nissan/index.html" class="cta">View prototype <i class="fas fa-arrow-right"></i></a>',
                     src: 'img/work/ni/ni6.png',
                     count: 10
                 }

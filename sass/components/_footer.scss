@@ -6,7 +6,13 @@ footer{
 	position: relative;
 	width: 100%;
 	z-index: 1000;
-	padding: 2em 0;
+	padding: 2.5em 0;
+	margin-top: 2rem;
+	background-image: linear-gradient(to right, $primary-1, $primary-3);
+	h3{
+		margin-top: 0;
+		color: #fff;
+	}
 	ul{
 		list-style-type: none;
 		padding: 0;
@@ -21,7 +27,7 @@ footer{
 			}
 			a{
 				text-decoration: none;
-				color: $grey-1;
+				color: #fff;
 				padding: .5em;
 				margin-right: 30px;
 				font-size: 14px;
@@ -38,7 +44,7 @@ footer{
 					@extend .transition;
 				}
 				&:hover, &:focus{
-					color: $primary-1;
+					color: #fff;
 					i{
 						color: #fff;
 						background-color: $primary-1;

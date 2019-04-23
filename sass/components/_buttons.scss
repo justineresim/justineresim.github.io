@@ -19,13 +19,16 @@
 	-ms-user-select: none;
 	user-select: none;
 	background-color: $btn-primary-bg;
-	border: 1px solid $btn-primary-border;
+	border: none;
 	border-radius: $btn-border-radius;
 	font-family: $btn-font-family;
 	color: $btn-primary-color;
 	text-decoration: none;
 	outline: none;
 	@extend .transition;
+	background-image: linear-gradient(to right, $primary-1, $primary-3);
+	background-size: 300%;
+	background-position: right;
 	&.g-btn-block{
 		width: 100%;
 	}
@@ -41,30 +44,27 @@
 	&:hover, &:focus {
 		text-decoration: none;
 		background-color: $btn-primary-hover-bg;
-		border: 1px solid $btn-primary-hover-border;
 		color: $btn-primary-hover-color;
 		outline: 0;
 		-webkit-box-shadow: none;
 		box-shadow: none;
+	    background-position: left;
 	}
 	&:active, &.g-active {
 		text-decoration: none;
 		background-color: $btn-primary-active-bg;
-		border: 1px solid $btn-primary-active-border;
 		color: $btn-primary-active-color;
+
 	}
 	&.g-btn-secondary{
 		background-color: $btn-secondary-bg;
-		border: 1px solid $btn-secondary-border;
 		color: $btn-secondary-color;
 		&:hover, &:focus {
 			background-color: $btn-secondary-hover-bg;
-			border: 1px solid $btn-secondary-hover-border;
 			color: $btn-secondary-hover-color;
 		}
 		&:active, &.g-active {
 			background-color: $btn-secondary-active-bg;
-			border: 1px solid $btn-secondary-active-border;
 			color: $btn-secondary-hover-color;
 		}
 	}

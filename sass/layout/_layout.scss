@@ -72,15 +72,6 @@
 
 .loading-section{
 	min-height: 1000px;
-	img{
-		display: block;
-		margin: 250px auto;
-		width: 60px;
-		height: auto;
-		@media (max-width: 600px){
-			margin: 120px auto;
-		}
-	}
 }
 
 /* home -------------------------- */
