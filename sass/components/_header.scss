@@ -4,7 +4,6 @@
 
 header{
 	padding: 0;
-	background-color: #fff;
 	ul{
 		list-style-type: none;
 		padding: 0;
@@ -28,17 +27,8 @@ header{
 				text-decoration: none;
 				margin-right: 20px;
 				font-weight: 900;
-				&:hover{
+				&:hover, &:active, &:focus{
 					color: $primary-3;
-				}
-			}
-			&.logo{
-				a{
-					padding: 20px;
-					line-height: 0;
-					img{
-						height: 30px;
-					}
 				}
 			}
 		}
@@ -48,11 +38,13 @@ header{
 body.home{
 	header li a.home{
 		border-bottom: 4px solid $grey-2;
+		color: $grey-1;
 	}
 }
 
 body.work{
 	header li a.work{
 		border-bottom: 4px solid $grey-2;
+		color: $grey-1;
 	}
 }

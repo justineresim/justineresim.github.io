@@ -1,16 +1,18 @@
 <section class="animated fadeIn g-container-lg g-section-container g-section-container-first">
-	<h1>Work</h1>
+	<h1>Work<small> {{selectedTag}}</small></h1>
+	<a ng-if="selectedTag" class="cta" href="#work">View all <i class="fas fa-long-arrow-alt-right"></i></a>
 </section>
 
 <section class="g-container-sm g-section-container">
 	<div class="margin-bottom">
-		<div ng-repeat="i in work" class="g-featured row margin-bottom">
+		<div ng-repeat="i in work | filter: workFilter" class="g-featured row margin-bottom">
 			<div class="col-2of5 sm-1of3">
 				<img class="fancy-box-trigger g-img animated zoomIn" ng-click="fancyBox(i.count)" id="fancy-box-{{i.count}}" src="{{i.image}}">
 			</div>
 			<div class="col-3of5 sm-2of3 animated fadeIn">
 				<div class="g-text">
 					<h2>{{i.title}}</h2>
+					<a class="g-tag"  href="#work?type={{tag}}" ng-repeat="tag in i.tags">#{{tag}}</a>
 					<p class="desc">{{i.text}}</p>
 					<p>
 						<a class="cta" href="work/{{i.prototype}}" target="_blank" ng-show="i.prototype"><i class="fas fa-laptop-code"></i>&nbsp;&nbsp;View prototype</a>

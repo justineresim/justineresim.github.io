@@ -13,11 +13,12 @@ $grey-1: #231f20;
 $grey-2: #3E3B42;
 $grey-3: #6A686E;
 $grey-4: #ABA8B0;
+$grey-5: #eeeeee;
 
 $primary-bg-color: #FFF;
 $secondary-bg-color: #f9f9f9;
 $tertiary-bg-color: #f4f4f4;
-$quaternary-bg-color: #eaeaea;
+$quaternary-bg-color: #fafafa;
 
 $border-color: $quaternary-bg-color;
 $border-color-2: $quaternary-bg-color;
@@ -59,8 +60,8 @@ $text-color: $grey-2;
 $text-color-light: $grey-3;
 $text-color-dark: $grey-1;
 
-$heading-link-color: $primary-4;
-$heading-hover-color: darken($primary-4, 15%);
+$heading-link-color: $grey-1;
+$heading-hover-color: $grey-1;
 
 $base-font-size: 17px;
 $base-line-height: 1.4em;
@@ -85,8 +86,8 @@ $btn-lg-font-size: 16px;
 $btn-lg-line-height: 16px;
 
 //Primary button
-$btn-primary-bg: $primary-1;
-$btn-primary-border: $primary-1;
+$btn-primary-bg: $primary-2;
+$btn-primary-border: $primary-2;
 $btn-primary-color: #fff;
 
 $btn-primary-hover-bg: $primary-1;

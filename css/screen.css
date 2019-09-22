@@ -4735,7 +4735,7 @@ a.g-link-color-secondary:hover, a.g-link-color-secondary:focus, a.g-link-color-s
 }
 
 .g-bg-color-quaternary {
-  background-color: #eaeaea;
+  background-color: #fafafa;
 }
 
 .g-bg-color-color-primary-1 {
@@ -4923,11 +4923,11 @@ a.cta:hover {
 
 hr {
   border: none;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #fafafa;
   margin: 0.7em 0 1.5em;
 }
 hr.g-secondary {
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #fafafa;
 }
 
 p {
@@ -4946,6 +4946,20 @@ ul ul, ul ol, ol ul, ol ol {
 
 img {
   max-width: 100%;
+}
+
+.g-tag {
+  font-size: 12px;
+  line-height: 12px;
+  border: 1px solid #eeeeee;
+  background-color: #eeeeee;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 4px 6px;
+  margin-right: 5px;
+}
+.g-tag:hover, .g-tag:focus {
+  background-color: #eeeeee;
 }
 
 /* ==========================================================================
@@ -4967,16 +4981,14 @@ img {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #ad3496;
+  background-color: #1c4469;
   border: none;
   border-radius: 3px;
   font-family: "Nunito Sans", sans-serif;
   color: #fff;
+  background-color: #1c4469;
   text-decoration: none;
   outline: none;
-  background-image: linear-gradient(to right, #ad3496, #4545b1);
-  background-size: 300%;
-  background-position: right;
 }
 .g-btn.g-btn-block, button.g-btn.g-btn-block {
   width: 100%;
@@ -5189,7 +5201,6 @@ footer ul li a:hover i, footer ul li a:focus i {
    ========================================================================== */
 header {
   padding: 0;
-  background-color: #fff;
 }
 header ul {
   list-style-type: none;
@@ -5217,23 +5228,18 @@ header ul li a {
   margin-right: 20px;
   font-weight: 900;
 }
-header ul li a:hover {
+header ul li a:hover, header ul li a:active, header ul li a:focus {
   color: #4545b1;
-}
-header ul li.logo a {
-  padding: 20px;
-  line-height: 0;
-}
-header ul li.logo a img {
-  height: 30px;
 }
 
 body.home header li a.home {
   border-bottom: 4px solid #3E3B42;
+  color: #231f20;
 }
 
 body.work header li a.work {
   border-bottom: 4px solid #3E3B42;
+  color: #231f20;
 }
 
 /* ==========================================================================
@@ -5245,12 +5251,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  color: #495F6D;
-  text-decoration: underline;
+  color: #231f20;
+  text-decoration: none;
 }
 h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus, h6 a:hover, h6 a:focus {
-  text-decoration: underline;
-  color: #2a373f;
+  color: #231f20;
 }
 
 h1 {
@@ -5262,13 +5267,31 @@ h1 {
 @media (max-width: 520px) {
   h1 {
     margin: .7em 0 0 0 !important;
-    font-size: 4em;
+    font-size: 3em;
     line-height: 1em !important;
   }
 }
+h1 small {
+  color: #ABA8B0;
+  font-size: .3em;
+}
 
 h2 {
-  font-size: 2.5em;
+  font-size: 3.5em;
+}
+@media (max-width: 520px) {
+  h2 {
+    font-size: 2em;
+  }
+}
+h2 i {
+  margin-left: 10px;
+  position: relative;
+  top: 5px;
+  transition: all 200ms linear;
+}
+h2 a:hover i, h2 a:focus i {
+  color: #4545b1;
 }
 
 h3 {
@@ -5917,7 +5940,7 @@ h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
   padding-bottom: 1.5rem;
 }
 .g-web-section h2, .g-app-section h2, .g-guide-section h2 {
-  margin-top: 150px !important;
+  margin-top: 180px !important;
 }
 @media (max-width: 920px) {
   .g-web-section, .g-app-section, .g-guide-section {
@@ -5932,6 +5955,15 @@ h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
   }
   .g-web-section img, .g-app-section img, .g-guide-section img {
     margin-top: 1rem;
+  }
+}
+
+.g-app-section h2 {
+  text-align: right;
+}
+@media (max-width: 920px) {
+  .g-app-section h2 {
+    text-align: center;
   }
 }
 
@@ -5965,6 +5997,7 @@ h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
 }
 .g-featured .g-img {
   width: 100%;
+  cursor: pointer;
   position: relative;
   display: block;
   transform: scale(1.3);

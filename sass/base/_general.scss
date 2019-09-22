@@ -106,7 +106,6 @@ p{
 }
 
 //lists
-
 ul, ol{
   margin: 0 0 1.4em 0;
   li{
@@ -121,4 +120,19 @@ img{
   max-width: 100%;
 }
 
+
+//tags
+.g-tag{
+  font-size: 12px;
+  line-height: 12px;
+  border: 1px solid $grey-5;
+  background-color: $grey-5;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 4px 6px;
+  margin-right: 5px;
+  &:hover, &:focus{
+    background-color: $grey-5;
+  }
+}
 

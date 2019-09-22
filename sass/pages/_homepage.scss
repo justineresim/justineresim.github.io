@@ -10,7 +10,7 @@
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
 	h2{
-		margin-top: 150px !important;
+		margin-top: 180px !important;
 	}
 	@media (max-width: $max-break-tablet) {
 		max-width: 700px;
@@ -23,6 +23,15 @@
 		}
 		img{
 			margin-top: 1rem;
+		}
+	}
+}
+
+.g-app-section{
+	h2{
+		text-align: right;
+		@media (max-width: $max-break-tablet) {
+			text-align: center;
 		}
 	}
 }
